@@ -1,4 +1,3 @@
 LAKITU_EvvGC
 ============
-
-Gimbal software / EvvGC revision 
+Open source Posistional Control for EvvGC Controller board via a Serial interface  
