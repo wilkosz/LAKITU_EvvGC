@@ -1,0 +1,171 @@
+ARM GAS  C:\cygwin64\tmp\ccDvKVrp.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"itoa.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/itoa.d -MF out/itoa.d -MP -MQ out/itoa.o -D__USES_INITFINI__
+  25              	@ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER src/sys/itoa.c -mcpu=cortex-m3
+  26              	@ -mthumb -auxbase-strip out/itoa.o -O2 -Wall -Wstrict-prototypes -Wextra
+  27              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  28              	@ -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\ccDvKVrp.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.itoa,"ax",%progbits
+  69              		.align	2
+  70              		.global	itoa
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	itoa, %function
+  74              	itoa:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77              		@ link register save eliminated.
+  78 0000 931E     		subs	r3, r2, #2	@ D.4199, base,
+  79 0002 0E2B     		cmp	r3, #14	@ D.4199,
+  80 0004 F0B4     		push	{r4, r5, r6, r7}	@
+  81 0006 26D8     		bhi	.L8	@,
+  82 0008 0A2A     		cmp	r2, #10	@ base,
+  83 000a 26D0     		beq	.L11	@,
+  84 000c 4FF0000C 		mov	ip, #0	@ value,
+  85              	.L3:
+  86 0010 164F     		ldr	r7, .L14	@ tmp172,
+  87 0012 0D46     		mov	r5, r1	@ buffer, buffer
+  88 0014 01E0     		b	.L5	@
+  89              	.L12:
+  90 0016 2046     		mov	r0, r4	@ value, value
+  91 0018 1D46     		mov	r5, r3	@ buffer, buffer
+  92              	.L5:
+  93 001a 90FBF2F4 		sdiv	r4, r0, r2	@ value, value, base
+  94 001e 02FB1403 		mls	r3, r2, r4, r0	@ rem, base, value, value
+  95 0022 FE5C     		ldrb	r6, [r7, r3]	@ zero_extendqisi2	@ tmp163, digits
+  96 0024 2B46     		mov	r3, r5	@ buffer, buffer
+  97 0026 03F8016B 		strb	r6, [r3], #1	@ tmp163, MEM[base: buffer_18, offset: 4294967295B]
+  98 002a 002C     		cmp	r4, #0	@ value
+  99 002c F3D1     		bne	.L12	@
+ 100 002e BCF1000F 		cmp	ip, #0	@ value,
+ 101 0032 17DB     		blt	.L13	@,
+ 102              	.L6:
+ 103 0034 5C1E     		subs	r4, r3, #1	@ end, buffer,
+ 104 0036 A142     		cmp	r1, r4	@ buffer, end
+ 105 0038 08D2     		bcs	.L2	@,
+ 106 003a 0A46     		mov	r2, r1	@ ivtmp.23, buffer
+ 107              	.L7:
+ 108 003c 2578     		ldrb	r5, [r4]	@ zero_extendqisi2	@ temp, MEM[base: _39, offset: 0B]
+ 109 003e 1678     		ldrb	r6, [r2]	@ zero_extendqisi2	@ D.4200, MEM[base: _40, offset: 0B]
+ 110 0040 04F80169 		strb	r6, [r4], #-1	@ D.4200, MEM[base: end_31, offset: 1B]
+ 111 0044 02F8015B 		strb	r5, [r2], #1	@ temp, MEM[base: buffer_34, offset: 4294967295B]
+ 112 0048 9442     		cmp	r4, r2	@ ivtmp.16, ivtmp.23
+ 113 004a F7D8     		bhi	.L7	@,
+ 114              	.L2:
+ARM GAS  C:\cygwin64\tmp\ccDvKVrp.s 			page 3
+
+
+ 115 004c 0022     		movs	r2, #0	@ tmp169,
+ 116 004e 1A70     		strb	r2, [r3]	@ tmp169, *buffer_4
+ 117 0050 0846     		mov	r0, r1	@, buffer
+ 118 0052 F0BC     		pop	{r4, r5, r6, r7}	@
+ 119 0054 7047     		bx	lr	@
+ 120              	.L8:
+ 121 0056 0B46     		mov	r3, r1	@ buffer, buffer
+ 122 0058 F8E7     		b	.L2	@
+ 123              	.L11:
+ 124 005a 8446     		mov	ip, r0	@ value, value
+ 125 005c 0028     		cmp	r0, #0	@ value
+ 126 005e B8BF     		it	lt
+ 127 0060 4042     		rsblt	r0, r0, #0	@ value
+ 128 0062 D5E7     		b	.L3	@
+ 129              	.L13:
+ 130 0064 2D23     		movs	r3, #45	@ tmp165,
+ 131 0066 6B70     		strb	r3, [r5, #1]	@ tmp165, MEM[(char *)buffer_35 + 1B]
+ 132 0068 AB1C     		adds	r3, r5, #2	@ buffer, buffer,
+ 133 006a E3E7     		b	.L6	@
+ 134              	.L15:
+ 135              		.align	2
+ 136              	.L14:
+ 137 006c 00000000 		.word	.LANCHOR0
+ 138              		.size	itoa, .-itoa
+ 139              		.section	.rodata.digits.4118,"a",%progbits
+ 140              		.align	2
+ 141              		.set	.LANCHOR0,. + 0
+ 142              		.type	digits.4118, %object
+ 143              		.size	digits.4118, 17
+ 144              	digits.4118:
+ 145 0000 30313233 		.ascii	"0123456789abcdef\000"
+ 145      34353637 
+ 145      38396162 
+ 145      63646566 
+ 145      00
+ 146 0011 000000   		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccDvKVrp.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 itoa.c
+C:\cygwin64\tmp\ccDvKVrp.s:69     .text.itoa:00000000 $t
+C:\cygwin64\tmp\ccDvKVrp.s:74     .text.itoa:00000000 itoa
+C:\cygwin64\tmp\ccDvKVrp.s:137    .text.itoa:0000006c $d
+C:\cygwin64\tmp\ccDvKVrp.s:140    .rodata.digits.4118:00000000 $d
+C:\cygwin64\tmp\ccDvKVrp.s:144    .rodata.digits.4118:00000000 digits.4118
+
+NO UNDEFINED SYMBOLS

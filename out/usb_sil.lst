@@ -1,0 +1,176 @@
+ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"usb_sil.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/usb_sil.d -MF out/usb_sil.d -MP -MQ out/usb_sil.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ Libraries/STM32_USB-FS-Device_Driver/src/usb_sil.c -mcpu=cortex-m3
+  27              	@ -mthumb -auxbase-strip out/usb_sil.o -O2 -Wall -Wstrict-prototypes
+  28              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  29              	@ -fsingle-precision-constant
+  30              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  31              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  32              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  33              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  34              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  35              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  36              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  37              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  38              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  39              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  40              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  41              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  42              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  43              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  44              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  45              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  46              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  47              	@ -freorder-functions -frerun-cse-after-loop
+  48              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  49              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  50              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  51              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  52              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  53              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  54              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 2
+
+
+  58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  59              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  60              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  61              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  62              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  63              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  64              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  65              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  67              	@ -munaligned-access -mvectorize-with-neon-quad
+  68              	
+  69              		.section	.text.USB_SIL_Init,"ax",%progbits
+  70              		.align	2
+  71              		.global	USB_SIL_Init
+  72              		.thumb
+  73              		.thumb_func
+  74              		.type	USB_SIL_Init, %function
+  75              	USB_SIL_Init:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79 0000 10B4     		push	{r4}	@
+  80 0002 0649     		ldr	r1, .L2	@ tmp113,
+  81 0004 064C     		ldr	r4, .L2+4	@ tmp111,
+  82 0006 074A     		ldr	r2, .L2+8	@ tmp116,
+  83 0008 0020     		movs	r0, #0	@ tmp112,
+  84 000a 4FF43643 		mov	r3, #46592	@ tmp115,
+  85 000e 2060     		str	r0, [r4]	@ tmp112, MEM[(volatile unsigned int *)1073765444B]
+  86 0010 0B80     		strh	r3, [r1]	@ movhi	@ tmp115, wInterrupt_Mask
+  87 0012 5DF8044B 		ldr	r4, [sp], #4	@,
+  88 0016 1360     		str	r3, [r2]	@ tmp115, MEM[(volatile unsigned int *)1073765440B]
+  89 0018 7047     		bx	lr	@
+  90              	.L3:
+  91 001a 00BF     		.align	2
+  92              	.L2:
+  93 001c 00000000 		.word	wInterrupt_Mask
+  94 0020 445C0040 		.word	1073765444
+  95 0024 405C0040 		.word	1073765440
+  96              		.size	USB_SIL_Init, .-USB_SIL_Init
+  97              		.section	.text.USB_SIL_Write,"ax",%progbits
+  98              		.align	2
+  99              		.global	USB_SIL_Write
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.type	USB_SIL_Write, %function
+ 103              	USB_SIL_Write:
+ 104              		@ args = 0, pretend = 0, frame = 0
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106 0000 70B5     		push	{r4, r5, r6, lr}	@
+ 107 0002 00F07F05 		and	r5, r0, #127	@ D.7010, bEpAddr,
+ 108 0006 2846     		mov	r0, r5	@, D.7010
+ 109 0008 0E46     		mov	r6, r1	@ pBufferPointer, pBufferPointer
+ 110 000a 94B2     		uxth	r4, r2	@ D.7011, wBufferSize
+ 111 000c FFF7FEFF 		bl	GetEPTxAddr	@
+ 112 0010 2246     		mov	r2, r4	@, D.7011
+ 113 0012 0146     		mov	r1, r0	@ tmp118,
+ 114 0014 3046     		mov	r0, r6	@, pBufferPointer
+ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 3
+
+
+ 115 0016 FFF7FEFF 		bl	UserToPMABufferCopy	@
+ 116 001a 2846     		mov	r0, r5	@, D.7010
+ 117 001c 2146     		mov	r1, r4	@, D.7011
+ 118 001e FFF7FEFF 		bl	SetEPTxCount	@
+ 119 0022 0020     		movs	r0, #0	@,
+ 120 0024 70BD     		pop	{r4, r5, r6, pc}	@
+ 121              		.size	USB_SIL_Write, .-USB_SIL_Write
+ 122 0026 00BF     		.section	.text.USB_SIL_Read,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	USB_SIL_Read
+ 125              		.thumb
+ 126              		.thumb_func
+ 127              		.type	USB_SIL_Read, %function
+ 128              	USB_SIL_Read:
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131 0000 70B5     		push	{r4, r5, r6, lr}	@
+ 132 0002 00F07F05 		and	r5, r0, #127	@ D.7014, bEpAddr,
+ 133 0006 2846     		mov	r0, r5	@, D.7014
+ 134 0008 0E46     		mov	r6, r1	@ pBufferPointer, pBufferPointer
+ 135 000a FFF7FEFF 		bl	GetEPRxCount	@
+ 136 000e 0446     		mov	r4, r0	@ tmp118,
+ 137 0010 2846     		mov	r0, r5	@, D.7014
+ 138 0012 FFF7FEFF 		bl	GetEPRxAddr	@
+ 139 0016 2246     		mov	r2, r4	@, tmp118
+ 140 0018 0146     		mov	r1, r0	@ tmp119,
+ 141 001a 3046     		mov	r0, r6	@, pBufferPointer
+ 142 001c FFF7FEFF 		bl	PMAToUserBufferCopy	@
+ 143 0020 2046     		mov	r0, r4	@, tmp118
+ 144 0022 70BD     		pop	{r4, r5, r6, pc}	@
+ 145              		.size	USB_SIL_Read, .-USB_SIL_Read
+ 146              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 usb_sil.c
+C:\cygwin64\tmp\ccsvT8Xs.s:70     .text.USB_SIL_Init:00000000 $t
+C:\cygwin64\tmp\ccsvT8Xs.s:75     .text.USB_SIL_Init:00000000 USB_SIL_Init
+C:\cygwin64\tmp\ccsvT8Xs.s:93     .text.USB_SIL_Init:0000001c $d
+C:\cygwin64\tmp\ccsvT8Xs.s:98     .text.USB_SIL_Write:00000000 $t
+C:\cygwin64\tmp\ccsvT8Xs.s:103    .text.USB_SIL_Write:00000000 USB_SIL_Write
+C:\cygwin64\tmp\ccsvT8Xs.s:123    .text.USB_SIL_Read:00000000 $t
+C:\cygwin64\tmp\ccsvT8Xs.s:128    .text.USB_SIL_Read:00000000 USB_SIL_Read
+
+UNDEFINED SYMBOLS
+wInterrupt_Mask
+GetEPTxAddr
+UserToPMABufferCopy
+SetEPTxCount
+GetEPRxCount
+GetEPRxAddr
+PMAToUserBufferCopy

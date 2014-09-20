@@ -1,0 +1,445 @@
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_dac.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_dac.d -MF out/stm32f10x_dac.d -MP
+  25              	@ -MQ out/stm32f10x_dac.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_dac.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.DAC_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	DAC_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	DAC_DeInit, %function
+  76              	DAC_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79 0000 08B5     		push	{r3, lr}	@
+  80 0002 4FF00050 		mov	r0, #536870912	@,
+  81 0006 0121     		movs	r1, #1	@,
+  82 0008 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+  83 000c BDE80840 		pop	{r3, lr}	@
+  84 0010 4FF00050 		mov	r0, #536870912	@,
+  85 0014 0021     		movs	r1, #0	@,
+  86 0016 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+  87              		.size	DAC_DeInit, .-DAC_DeInit
+  88 001a 00BF     		.section	.text.DAC_Init,"ax",%progbits
+  89              		.align	2
+  90              		.global	DAC_Init
+  91              		.thumb
+  92              		.thumb_func
+  93              		.type	DAC_Init, %function
+  94              	DAC_Init:
+  95              		@ args = 0, pretend = 0, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              		@ link register save eliminated.
+  98 0000 4A68     		ldr	r2, [r1, #4]	@ DAC_InitStruct_8(D)->DAC_WaveGeneration, DAC_InitStruct_8(D)->DAC_WaveGeneratio
+  99 0002 0B68     		ldr	r3, [r1]	@ DAC_InitStruct_8(D)->DAC_Trigger, DAC_InitStruct_8(D)->DAC_Trigger
+ 100 0004 30B4     		push	{r4, r5}	@
+ 101 0006 8C68     		ldr	r4, [r1, #8]	@ DAC_InitStruct_8(D)->DAC_LFSRUnmask_TriangleAmplitude, DAC_InitStruct_8(D)->DAC
+ 102 0008 1343     		orrs	r3, r3, r2	@, D.6755, DAC_InitStruct_8(D)->DAC_Trigger, DAC_InitStruct_8(D)->DAC_WaveGenerati
+ 103 000a C968     		ldr	r1, [r1, #12]	@ DAC_InitStruct_8(D)->DAC_OutputBuffer, DAC_InitStruct_8(D)->DAC_OutputBuffer
+ 104 000c 2343     		orrs	r3, r3, r4	@, D.6755, D.6755, DAC_InitStruct_8(D)->DAC_LFSRUnmask_TriangleAmplitude
+ 105 000e 40F6FE75 		movw	r5, #4094	@ tmp128,
+ 106 0012 1943     		orrs	r1, r1, r3	@, tmpreg2, DAC_InitStruct_8(D)->DAC_OutputBuffer, D.6755
+ 107 0014 8540     		lsls	r5, r5, r0	@ D.6755, tmp128, DAC_Channel
+ 108 0016 01FA00F0 		lsl	r0, r1, r0	@ D.6755, tmpreg2, DAC_Channel
+ 109 001a 044B     		ldr	r3, .L3	@ tmp126,
+ 110 001c 1A68     		ldr	r2, [r3]	@ tmpreg1, MEM[(struct DAC_TypeDef *)1073771520B].CR
+ 111 001e 22EA0501 		bic	r1, r2, r5	@ tmpreg1, tmpreg1, D.6755
+ 112 0022 0843     		orrs	r0, r0, r1	@, tmpreg1, D.6755, tmpreg1
+ 113 0024 1860     		str	r0, [r3]	@ tmpreg1, MEM[(struct DAC_TypeDef *)1073771520B].CR
+ 114 0026 30BC     		pop	{r4, r5}	@
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 3
+
+
+ 115 0028 7047     		bx	lr	@
+ 116              	.L4:
+ 117 002a 00BF     		.align	2
+ 118              	.L3:
+ 119 002c 00740040 		.word	1073771520
+ 120              		.size	DAC_Init, .-DAC_Init
+ 121              		.section	.text.DAC_StructInit,"ax",%progbits
+ 122              		.align	2
+ 123              		.global	DAC_StructInit
+ 124              		.thumb
+ 125              		.thumb_func
+ 126              		.type	DAC_StructInit, %function
+ 127              	DAC_StructInit:
+ 128              		@ args = 0, pretend = 0, frame = 0
+ 129              		@ frame_needed = 0, uses_anonymous_args = 0
+ 130              		@ link register save eliminated.
+ 131 0000 0023     		movs	r3, #0	@ tmp111,
+ 132 0002 0360     		str	r3, [r0]	@ tmp111, DAC_InitStruct_2(D)->DAC_Trigger
+ 133 0004 4360     		str	r3, [r0, #4]	@ tmp111, DAC_InitStruct_2(D)->DAC_WaveGeneration
+ 134 0006 8360     		str	r3, [r0, #8]	@ tmp111, DAC_InitStruct_2(D)->DAC_LFSRUnmask_TriangleAmplitude
+ 135 0008 C360     		str	r3, [r0, #12]	@ tmp111, DAC_InitStruct_2(D)->DAC_OutputBuffer
+ 136 000a 7047     		bx	lr	@
+ 137              		.size	DAC_StructInit, .-DAC_StructInit
+ 138              		.section	.text.DAC_Cmd,"ax",%progbits
+ 139              		.align	2
+ 140              		.global	DAC_Cmd
+ 141              		.thumb
+ 142              		.thumb_func
+ 143              		.type	DAC_Cmd, %function
+ 144              	DAC_Cmd:
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147              		@ link register save eliminated.
+ 148 0000 0123     		movs	r3, #1	@ tmp123,
+ 149 0002 03FA00F0 		lsl	r0, r3, r0	@ D.6760, tmp123, DAC_Channel
+ 150 0006 054B     		ldr	r3, .L11	@ tmp121,
+ 151 0008 1A68     		ldr	r2, [r3]	@ D.6760,
+ 152 000a 19B9     		cbnz	r1, .L10	@ NewState,
+ 153 000c 22EA0000 		bic	r0, r2, r0	@ D.6760, D.6760, D.6760
+ 154 0010 1860     		str	r0, [r3]	@ D.6760,
+ 155 0012 7047     		bx	lr	@
+ 156              	.L10:
+ 157 0014 1043     		orrs	r0, r0, r2	@, D.6760, D.6760, D.6760
+ 158 0016 1860     		str	r0, [r3]	@ D.6760,
+ 159 0018 7047     		bx	lr	@
+ 160              	.L12:
+ 161 001a 00BF     		.align	2
+ 162              	.L11:
+ 163 001c 00740040 		.word	1073771520
+ 164              		.size	DAC_Cmd, .-DAC_Cmd
+ 165              		.section	.text.DAC_DMACmd,"ax",%progbits
+ 166              		.align	2
+ 167              		.global	DAC_DMACmd
+ 168              		.thumb
+ 169              		.thumb_func
+ 170              		.type	DAC_DMACmd, %function
+ 171              	DAC_DMACmd:
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 4
+
+
+ 172              		@ args = 0, pretend = 0, frame = 0
+ 173              		@ frame_needed = 0, uses_anonymous_args = 0
+ 174              		@ link register save eliminated.
+ 175 0000 4FF48053 		mov	r3, #4096	@ tmp123,
+ 176 0004 03FA00F0 		lsl	r0, r3, r0	@ D.6763, tmp123, DAC_Channel
+ 177 0008 044B     		ldr	r3, .L17	@ tmp121,
+ 178 000a 1A68     		ldr	r2, [r3]	@ D.6763,
+ 179 000c 19B9     		cbnz	r1, .L16	@ NewState,
+ 180 000e 22EA0000 		bic	r0, r2, r0	@ D.6763, D.6763, D.6763
+ 181 0012 1860     		str	r0, [r3]	@ D.6763,
+ 182 0014 7047     		bx	lr	@
+ 183              	.L16:
+ 184 0016 1043     		orrs	r0, r0, r2	@, D.6763, D.6763, D.6763
+ 185 0018 1860     		str	r0, [r3]	@ D.6763,
+ 186 001a 7047     		bx	lr	@
+ 187              	.L18:
+ 188              		.align	2
+ 189              	.L17:
+ 190 001c 00740040 		.word	1073771520
+ 191              		.size	DAC_DMACmd, .-DAC_DMACmd
+ 192              		.section	.text.DAC_SoftwareTriggerCmd,"ax",%progbits
+ 193              		.align	2
+ 194              		.global	DAC_SoftwareTriggerCmd
+ 195              		.thumb
+ 196              		.thumb_func
+ 197              		.type	DAC_SoftwareTriggerCmd, %function
+ 198              	DAC_SoftwareTriggerCmd:
+ 199              		@ args = 0, pretend = 0, frame = 0
+ 200              		@ frame_needed = 0, uses_anonymous_args = 0
+ 201              		@ link register save eliminated.
+ 202 0000 0123     		movs	r3, #1	@ tmp126,
+ 203 0002 0009     		lsrs	r0, r0, #4	@ D.6766, DAC_Channel,
+ 204 0004 03FA00F0 		lsl	r0, r3, r0	@ D.6766, tmp126, D.6766
+ 205 0008 044B     		ldr	r3, .L23	@ tmp123,
+ 206 000a 5A68     		ldr	r2, [r3, #4]	@ D.6766,
+ 207 000c 19B9     		cbnz	r1, .L22	@ NewState,
+ 208 000e 22EA0000 		bic	r0, r2, r0	@ D.6766, D.6766, D.6766
+ 209 0012 5860     		str	r0, [r3, #4]	@ D.6766,
+ 210 0014 7047     		bx	lr	@
+ 211              	.L22:
+ 212 0016 1043     		orrs	r0, r0, r2	@, D.6766, D.6766, D.6766
+ 213 0018 5860     		str	r0, [r3, #4]	@ D.6766,
+ 214 001a 7047     		bx	lr	@
+ 215              	.L24:
+ 216              		.align	2
+ 217              	.L23:
+ 218 001c 00740040 		.word	1073771520
+ 219              		.size	DAC_SoftwareTriggerCmd, .-DAC_SoftwareTriggerCmd
+ 220              		.section	.text.DAC_DualSoftwareTriggerCmd,"ax",%progbits
+ 221              		.align	2
+ 222              		.global	DAC_DualSoftwareTriggerCmd
+ 223              		.thumb
+ 224              		.thumb_func
+ 225              		.type	DAC_DualSoftwareTriggerCmd, %function
+ 226              	DAC_DualSoftwareTriggerCmd:
+ 227              		@ args = 0, pretend = 0, frame = 0
+ 228              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 5
+
+
+ 229              		@ link register save eliminated.
+ 230 0000 054B     		ldr	r3, .L29	@ tmp115,
+ 231 0002 5A68     		ldr	r2, [r3, #4]	@ D.6770,
+ 232 0004 18B9     		cbnz	r0, .L28	@ NewState,
+ 233 0006 22F00302 		bic	r2, r2, #3	@ D.6770, D.6770,
+ 234 000a 5A60     		str	r2, [r3, #4]	@ D.6770,
+ 235 000c 7047     		bx	lr	@
+ 236              	.L28:
+ 237 000e 42F00302 		orr	r2, r2, #3	@ D.6770, D.6770,
+ 238 0012 5A60     		str	r2, [r3, #4]	@ D.6770,
+ 239 0014 7047     		bx	lr	@
+ 240              	.L30:
+ 241 0016 00BF     		.align	2
+ 242              	.L29:
+ 243 0018 00740040 		.word	1073771520
+ 244              		.size	DAC_DualSoftwareTriggerCmd, .-DAC_DualSoftwareTriggerCmd
+ 245              		.section	.text.DAC_WaveGenerationCmd,"ax",%progbits
+ 246              		.align	2
+ 247              		.global	DAC_WaveGenerationCmd
+ 248              		.thumb
+ 249              		.thumb_func
+ 250              		.type	DAC_WaveGenerationCmd, %function
+ 251              	DAC_WaveGenerationCmd:
+ 252              		@ args = 0, pretend = 0, frame = 0
+ 253              		@ frame_needed = 0, uses_anonymous_args = 0
+ 254              		@ link register save eliminated.
+ 255 0000 8140     		lsls	r1, r1, r0	@ D.6773, DAC_Wave, DAC_Channel
+ 256 0002 054B     		ldr	r3, .L35	@ tmp122,
+ 257 0004 22B9     		cbnz	r2, .L34	@ NewState,
+ 258 0006 1A68     		ldr	r2, [r3]	@ D.6773,
+ 259 0008 22EA0101 		bic	r1, r2, r1	@ D.6773, D.6773, D.6773
+ 260 000c 1960     		str	r1, [r3]	@ D.6773,
+ 261 000e 7047     		bx	lr	@
+ 262              	.L34:
+ 263 0010 1A68     		ldr	r2, [r3]	@ D.6773,
+ 264 0012 1143     		orrs	r1, r1, r2	@, D.6773, D.6773, D.6773
+ 265 0014 1960     		str	r1, [r3]	@ D.6773,
+ 266 0016 7047     		bx	lr	@
+ 267              	.L36:
+ 268              		.align	2
+ 269              	.L35:
+ 270 0018 00740040 		.word	1073771520
+ 271              		.size	DAC_WaveGenerationCmd, .-DAC_WaveGenerationCmd
+ 272              		.section	.text.DAC_SetChannel1Data,"ax",%progbits
+ 273              		.align	2
+ 274              		.global	DAC_SetChannel1Data
+ 275              		.thumb
+ 276              		.thumb_func
+ 277              		.type	DAC_SetChannel1Data, %function
+ 278              	DAC_SetChannel1Data:
+ 279              		@ args = 0, pretend = 0, frame = 8
+ 280              		@ frame_needed = 0, uses_anonymous_args = 0
+ 281              		@ link register save eliminated.
+ 282 0000 064B     		ldr	r3, .L38	@ tmp119,
+ 283 0002 82B0     		sub	sp, sp, #8	@,,
+ 284 0004 0022     		movs	r2, #0	@ tmp118,
+ 285 0006 0192     		str	r2, [sp, #4]	@ tmp118, tmp
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 6
+
+
+ 286 0008 0193     		str	r3, [sp, #4]	@ tmp119, tmp
+ 287 000a 019B     		ldr	r3, [sp, #4]	@ tmp.4, tmp
+ 288 000c 0833     		adds	r3, r3, #8	@ D.6776, tmp.4,
+ 289 000e 1844     		add	r0, r0, r3	@ tmp.5, D.6776
+ 290 0010 0190     		str	r0, [sp, #4]	@ tmp.5, tmp
+ 291 0012 019B     		ldr	r3, [sp, #4]	@ tmp.6, tmp
+ 292 0014 1960     		str	r1, [r3]	@ Data, *tmp.7_10
+ 293 0016 02B0     		add	sp, sp, #8	@,,
+ 294              		@ sp needed	@
+ 295 0018 7047     		bx	lr	@
+ 296              	.L39:
+ 297 001a 00BF     		.align	2
+ 298              	.L38:
+ 299 001c 00740040 		.word	1073771520
+ 300              		.size	DAC_SetChannel1Data, .-DAC_SetChannel1Data
+ 301              		.section	.text.DAC_SetChannel2Data,"ax",%progbits
+ 302              		.align	2
+ 303              		.global	DAC_SetChannel2Data
+ 304              		.thumb
+ 305              		.thumb_func
+ 306              		.type	DAC_SetChannel2Data, %function
+ 307              	DAC_SetChannel2Data:
+ 308              		@ args = 0, pretend = 0, frame = 8
+ 309              		@ frame_needed = 0, uses_anonymous_args = 0
+ 310              		@ link register save eliminated.
+ 311 0000 064B     		ldr	r3, .L41	@ tmp119,
+ 312 0002 82B0     		sub	sp, sp, #8	@,,
+ 313 0004 0022     		movs	r2, #0	@ tmp118,
+ 314 0006 0192     		str	r2, [sp, #4]	@ tmp118, tmp
+ 315 0008 0193     		str	r3, [sp, #4]	@ tmp119, tmp
+ 316 000a 019B     		ldr	r3, [sp, #4]	@ tmp.8, tmp
+ 317 000c 1433     		adds	r3, r3, #20	@ D.6779, tmp.8,
+ 318 000e 1844     		add	r0, r0, r3	@ tmp.9, D.6779
+ 319 0010 0190     		str	r0, [sp, #4]	@ tmp.9, tmp
+ 320 0012 019B     		ldr	r3, [sp, #4]	@ tmp.10, tmp
+ 321 0014 1960     		str	r1, [r3]	@ Data, *tmp.11_10
+ 322 0016 02B0     		add	sp, sp, #8	@,,
+ 323              		@ sp needed	@
+ 324 0018 7047     		bx	lr	@
+ 325              	.L42:
+ 326 001a 00BF     		.align	2
+ 327              	.L41:
+ 328 001c 00740040 		.word	1073771520
+ 329              		.size	DAC_SetChannel2Data, .-DAC_SetChannel2Data
+ 330              		.section	.text.DAC_SetDualChannelData,"ax",%progbits
+ 331              		.align	2
+ 332              		.global	DAC_SetDualChannelData
+ 333              		.thumb
+ 334              		.thumb_func
+ 335              		.type	DAC_SetDualChannelData, %function
+ 336              	DAC_SetDualChannelData:
+ 337              		@ args = 0, pretend = 0, frame = 0
+ 338              		@ frame_needed = 0, uses_anonymous_args = 0
+ 339              		@ link register save eliminated.
+ 340 0000 0828     		cmp	r0, #8	@ DAC_Align,
+ 341 0002 044B     		ldr	r3, .L46	@ tmp124,
+ 342 0004 0CBF     		ite	eq
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 7
+
+
+ 343 0006 42EA0121 		orreq	r1, r2, r1, lsl #8	@, data, Data1, Data2,
+ 344 000a 42EA0141 		orrne	r1, r2, r1, lsl #16	@, data, Data1, Data2,
+ 345 000e C150     		str	r1, [r0, r3]	@ data, *tmp.12_14
+ 346 0010 7047     		bx	lr	@
+ 347              	.L47:
+ 348 0012 00BF     		.align	2
+ 349              	.L46:
+ 350 0014 20740040 		.word	1073771552
+ 351              		.size	DAC_SetDualChannelData, .-DAC_SetDualChannelData
+ 352              		.section	.text.DAC_GetDataOutputValue,"ax",%progbits
+ 353              		.align	2
+ 354              		.global	DAC_GetDataOutputValue
+ 355              		.thumb
+ 356              		.thumb_func
+ 357              		.type	DAC_GetDataOutputValue, %function
+ 358              	DAC_GetDataOutputValue:
+ 359              		@ args = 0, pretend = 0, frame = 8
+ 360              		@ frame_needed = 0, uses_anonymous_args = 0
+ 361              		@ link register save eliminated.
+ 362 0000 074B     		ldr	r3, .L49	@ tmp121,
+ 363 0002 82B0     		sub	sp, sp, #8	@,,
+ 364 0004 0022     		movs	r2, #0	@ tmp120,
+ 365 0006 0192     		str	r2, [sp, #4]	@ tmp120, tmp
+ 366 0008 0193     		str	r3, [sp, #4]	@ tmp121, tmp
+ 367 000a 019B     		ldr	r3, [sp, #4]	@ tmp.13, tmp
+ 368 000c 2C33     		adds	r3, r3, #44	@ D.6785, tmp.13,
+ 369 000e 03EB9000 		add	r0, r3, r0, lsr #2	@, tmp.14, D.6785, DAC_Channel,
+ 370 0012 0190     		str	r0, [sp, #4]	@ tmp.14, tmp
+ 371 0014 019B     		ldr	r3, [sp, #4]	@ tmp.15, tmp
+ 372 0016 1868     		ldr	r0, [r3]	@ D.6785, *tmp.16_11
+ 373 0018 80B2     		uxth	r0, r0	@, D.6785
+ 374 001a 02B0     		add	sp, sp, #8	@,,
+ 375              		@ sp needed	@
+ 376 001c 7047     		bx	lr	@
+ 377              	.L50:
+ 378 001e 00BF     		.align	2
+ 379              	.L49:
+ 380 0020 00740040 		.word	1073771520
+ 381              		.size	DAC_GetDataOutputValue, .-DAC_GetDataOutputValue
+ 382              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_dac.c
+C:\cygwin64\tmp\cciFGjjR.s:71     .text.DAC_DeInit:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:76     .text.DAC_DeInit:00000000 DAC_DeInit
+C:\cygwin64\tmp\cciFGjjR.s:89     .text.DAC_Init:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:94     .text.DAC_Init:00000000 DAC_Init
+C:\cygwin64\tmp\cciFGjjR.s:119    .text.DAC_Init:0000002c $d
+C:\cygwin64\tmp\cciFGjjR.s:122    .text.DAC_StructInit:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:127    .text.DAC_StructInit:00000000 DAC_StructInit
+C:\cygwin64\tmp\cciFGjjR.s:139    .text.DAC_Cmd:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:144    .text.DAC_Cmd:00000000 DAC_Cmd
+C:\cygwin64\tmp\cciFGjjR.s:163    .text.DAC_Cmd:0000001c $d
+C:\cygwin64\tmp\cciFGjjR.s:166    .text.DAC_DMACmd:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:171    .text.DAC_DMACmd:00000000 DAC_DMACmd
+C:\cygwin64\tmp\cciFGjjR.s:190    .text.DAC_DMACmd:0000001c $d
+C:\cygwin64\tmp\cciFGjjR.s:193    .text.DAC_SoftwareTriggerCmd:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:198    .text.DAC_SoftwareTriggerCmd:00000000 DAC_SoftwareTriggerCmd
+C:\cygwin64\tmp\cciFGjjR.s:218    .text.DAC_SoftwareTriggerCmd:0000001c $d
+C:\cygwin64\tmp\cciFGjjR.s:221    .text.DAC_DualSoftwareTriggerCmd:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:226    .text.DAC_DualSoftwareTriggerCmd:00000000 DAC_DualSoftwareTriggerCmd
+C:\cygwin64\tmp\cciFGjjR.s:243    .text.DAC_DualSoftwareTriggerCmd:00000018 $d
+C:\cygwin64\tmp\cciFGjjR.s:246    .text.DAC_WaveGenerationCmd:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:251    .text.DAC_WaveGenerationCmd:00000000 DAC_WaveGenerationCmd
+C:\cygwin64\tmp\cciFGjjR.s:270    .text.DAC_WaveGenerationCmd:00000018 $d
+C:\cygwin64\tmp\cciFGjjR.s:273    .text.DAC_SetChannel1Data:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:278    .text.DAC_SetChannel1Data:00000000 DAC_SetChannel1Data
+C:\cygwin64\tmp\cciFGjjR.s:299    .text.DAC_SetChannel1Data:0000001c $d
+C:\cygwin64\tmp\cciFGjjR.s:302    .text.DAC_SetChannel2Data:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:307    .text.DAC_SetChannel2Data:00000000 DAC_SetChannel2Data
+C:\cygwin64\tmp\cciFGjjR.s:328    .text.DAC_SetChannel2Data:0000001c $d
+C:\cygwin64\tmp\cciFGjjR.s:331    .text.DAC_SetDualChannelData:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:336    .text.DAC_SetDualChannelData:00000000 DAC_SetDualChannelData
+C:\cygwin64\tmp\cciFGjjR.s:350    .text.DAC_SetDualChannelData:00000014 $d
+C:\cygwin64\tmp\cciFGjjR.s:353    .text.DAC_GetDataOutputValue:00000000 $t
+C:\cygwin64\tmp\cciFGjjR.s:358    .text.DAC_GetDataOutputValue:00000000 DAC_GetDataOutputValue
+C:\cygwin64\tmp\cciFGjjR.s:380    .text.DAC_GetDataOutputValue:00000020 $d
+
+UNDEFINED SYMBOLS
+RCC_APB1PeriphResetCmd

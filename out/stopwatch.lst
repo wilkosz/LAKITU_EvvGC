@@ -1,0 +1,153 @@
+ARM GAS  C:\cygwin64\tmp\ccKo3Hra.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stopwatch.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stopwatch.d -MF out/stopwatch.d -MP -MQ out/stopwatch.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ src/stopwatch.c -mcpu=cortex-m3 -mthumb -auxbase-strip out/stopwatch.o
+  27              	@ -O2 -Wall -Wstrict-prototypes -Wextra -std=gnu99 -ffunction-sections
+  28              	@ -fdata-sections -fverbose-asm -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\ccKo3Hra.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.StopWatchInit,"ax",%progbits
+  69              		.align	2
+  70              		.global	StopWatchInit
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	StopWatchInit, %function
+  74              	StopWatchInit:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77 0000 10B5     		push	{r4, lr}	@
+  78 0002 0446     		mov	r4, r0	@ sw, sw
+  79 0004 FFF7FEFF 		bl	micros	@
+  80 0008 2060     		str	r0, [r4]	@ D.4121, sw_4(D)->tFirst
+  81 000a 6060     		str	r0, [r4, #4]	@ D.4121, sw_4(D)->tLast
+  82 000c 10BD     		pop	{r4, pc}	@
+  83              		.size	StopWatchInit, .-StopWatchInit
+  84 000e 00BF     		.section	.text.StopWatchNow,"ax",%progbits
+  85              		.align	2
+  86              		.global	StopWatchNow
+  87              		.thumb
+  88              		.thumb_func
+  89              		.type	StopWatchNow, %function
+  90              	StopWatchNow:
+  91              		@ args = 0, pretend = 0, frame = 0
+  92              		@ frame_needed = 0, uses_anonymous_args = 0
+  93              		@ link register save eliminated.
+  94 0000 4068     		ldr	r0, [r0, #4]	@, sw_2(D)->tLast
+  95 0002 7047     		bx	lr	@
+  96              		.size	StopWatchNow, .-StopWatchNow
+  97              		.section	.text.StopWatchLap,"ax",%progbits
+  98              		.align	2
+  99              		.global	StopWatchLap
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.type	StopWatchLap, %function
+ 103              	StopWatchLap:
+ 104              		@ args = 0, pretend = 0, frame = 0
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106 0000 10B5     		push	{r4, lr}	@
+ 107 0002 0446     		mov	r4, r0	@ sw, sw
+ 108 0004 FFF7FEFF 		bl	micros	@
+ 109 0008 6368     		ldr	r3, [r4, #4]	@ sw_4(D)->tLast, sw_4(D)->tLast
+ 110 000a 6060     		str	r0, [r4, #4]	@ tNow, sw_4(D)->tLast
+ 111 000c C01A     		subs	r0, r0, r3	@, tNow, sw_4(D)->tLast
+ 112 000e 10BD     		pop	{r4, pc}	@
+ 113              		.size	StopWatchLap, .-StopWatchLap
+ 114              		.section	.text.StopWatchTotal,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\ccKo3Hra.s 			page 3
+
+
+ 115              		.align	2
+ 116              		.global	StopWatchTotal
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.type	StopWatchTotal, %function
+ 120              	StopWatchTotal:
+ 121              		@ args = 0, pretend = 0, frame = 0
+ 122              		@ frame_needed = 0, uses_anonymous_args = 0
+ 123              		@ link register save eliminated.
+ 124 0000 05C8     		ldmia	r0, {r0, r2}	@ sw,,
+ 125 0002 101A     		subs	r0, r2, r0	@, sw_2(D)->tLast, sw_2(D)->tFirst
+ 126 0004 7047     		bx	lr	@
+ 127              		.size	StopWatchTotal, .-StopWatchTotal
+ 128 0006 00BF     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccKo3Hra.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stopwatch.c
+C:\cygwin64\tmp\ccKo3Hra.s:69     .text.StopWatchInit:00000000 $t
+C:\cygwin64\tmp\ccKo3Hra.s:74     .text.StopWatchInit:00000000 StopWatchInit
+C:\cygwin64\tmp\ccKo3Hra.s:85     .text.StopWatchNow:00000000 $t
+C:\cygwin64\tmp\ccKo3Hra.s:90     .text.StopWatchNow:00000000 StopWatchNow
+C:\cygwin64\tmp\ccKo3Hra.s:98     .text.StopWatchLap:00000000 $t
+C:\cygwin64\tmp\ccKo3Hra.s:103    .text.StopWatchLap:00000000 StopWatchLap
+C:\cygwin64\tmp\ccKo3Hra.s:115    .text.StopWatchTotal:00000000 $t
+C:\cygwin64\tmp\ccKo3Hra.s:120    .text.StopWatchTotal:00000000 StopWatchTotal
+
+UNDEFINED SYMBOLS
+micros

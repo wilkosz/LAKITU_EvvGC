@@ -1,0 +1,335 @@
+ARM GAS  C:\cygwin64\tmp\cc1a6XZW.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"usb_desc.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/usb_desc.d -MF out/usb_desc.d -MP -MQ out/usb_desc.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ src/VCP/src/usb_desc.c -mcpu=cortex-m3 -mthumb
+  27              	@ -auxbase-strip out/usb_desc.o -O2 -Wall -Wstrict-prototypes -Wextra
+  28              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  29              	@ -fsingle-precision-constant
+  30              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  31              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  32              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  33              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  34              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  35              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  36              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  37              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  38              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  39              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  40              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  41              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  42              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  43              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  44              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  45              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  46              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  47              	@ -freorder-functions -frerun-cse-after-loop
+  48              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  49              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  50              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  51              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  52              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  53              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  54              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+ARM GAS  C:\cygwin64\tmp\cc1a6XZW.s 			page 2
+
+
+  58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  59              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  60              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  61              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  62              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  63              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  64              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  65              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  67              	@ -munaligned-access -mvectorize-with-neon-quad
+  68              	
+  69              		.global	Virtual_Com_Port_StringSerial
+  70              		.global	Virtual_Com_Port_StringProduct
+  71              		.global	Virtual_Com_Port_StringVendor
+  72              		.global	Virtual_Com_Port_StringLangID
+  73              		.global	Virtual_Com_Port_ConfigDescriptor
+  74              		.global	Virtual_Com_Port_DeviceDescriptor
+  75              		.section	.rodata.Virtual_Com_Port_StringVendor,"a",%progbits
+  76              		.align	2
+  77              		.type	Virtual_Com_Port_StringVendor, %object
+  78              		.size	Virtual_Com_Port_StringVendor, 38
+  79              	Virtual_Com_Port_StringVendor:
+  80 0000 26       		.byte	38
+  81 0001 03       		.byte	3
+  82 0002 53       		.byte	83
+  83 0003 00       		.byte	0
+  84 0004 54       		.byte	84
+  85 0005 00       		.byte	0
+  86 0006 4D       		.byte	77
+  87 0007 00       		.byte	0
+  88 0008 69       		.byte	105
+  89 0009 00       		.byte	0
+  90 000a 63       		.byte	99
+  91 000b 00       		.byte	0
+  92 000c 72       		.byte	114
+  93 000d 00       		.byte	0
+  94 000e 6F       		.byte	111
+  95 000f 00       		.byte	0
+  96 0010 65       		.byte	101
+  97 0011 00       		.byte	0
+  98 0012 6C       		.byte	108
+  99 0013 00       		.byte	0
+ 100 0014 65       		.byte	101
+ 101 0015 00       		.byte	0
+ 102 0016 63       		.byte	99
+ 103 0017 00       		.byte	0
+ 104 0018 74       		.byte	116
+ 105 0019 00       		.byte	0
+ 106 001a 72       		.byte	114
+ 107 001b 00       		.byte	0
+ 108 001c 6F       		.byte	111
+ 109 001d 00       		.byte	0
+ 110 001e 6E       		.byte	110
+ 111 001f 00       		.byte	0
+ 112 0020 69       		.byte	105
+ 113 0021 00       		.byte	0
+ 114 0022 63       		.byte	99
+ARM GAS  C:\cygwin64\tmp\cc1a6XZW.s 			page 3
+
+
+ 115 0023 00       		.byte	0
+ 116 0024 73       		.byte	115
+ 117 0025 00       		.byte	0
+ 118 0026 0000     		.section	.rodata.Virtual_Com_Port_DeviceDescriptor,"a",%progbits
+ 119              		.align	2
+ 120              		.type	Virtual_Com_Port_DeviceDescriptor, %object
+ 121              		.size	Virtual_Com_Port_DeviceDescriptor, 18
+ 122              	Virtual_Com_Port_DeviceDescriptor:
+ 123 0000 12       		.byte	18
+ 124 0001 01       		.byte	1
+ 125 0002 00       		.byte	0
+ 126 0003 02       		.byte	2
+ 127 0004 02       		.byte	2
+ 128 0005 00       		.byte	0
+ 129 0006 00       		.byte	0
+ 130 0007 40       		.byte	64
+ 131 0008 83       		.byte	-125
+ 132 0009 04       		.byte	4
+ 133 000a 40       		.byte	64
+ 134 000b 57       		.byte	87
+ 135 000c 00       		.byte	0
+ 136 000d 02       		.byte	2
+ 137 000e 01       		.byte	1
+ 138 000f 02       		.byte	2
+ 139 0010 03       		.byte	3
+ 140 0011 01       		.byte	1
+ 141 0012 0000     		.section	.rodata.Virtual_Com_Port_StringLangID,"a",%progbits
+ 142              		.align	2
+ 143              		.type	Virtual_Com_Port_StringLangID, %object
+ 144              		.size	Virtual_Com_Port_StringLangID, 4
+ 145              	Virtual_Com_Port_StringLangID:
+ 146 0000 04       		.byte	4
+ 147 0001 03       		.byte	3
+ 148 0002 09       		.byte	9
+ 149 0003 04       		.byte	4
+ 150              		.section	.rodata.Virtual_Com_Port_StringProduct,"a",%progbits
+ 151              		.align	2
+ 152              		.type	Virtual_Com_Port_StringProduct, %object
+ 153              		.size	Virtual_Com_Port_StringProduct, 50
+ 154              	Virtual_Com_Port_StringProduct:
+ 155 0000 32       		.byte	50
+ 156 0001 03       		.byte	3
+ 157 0002 53       		.byte	83
+ 158 0003 00       		.byte	0
+ 159 0004 54       		.byte	84
+ 160 0005 00       		.byte	0
+ 161 0006 4D       		.byte	77
+ 162 0007 00       		.byte	0
+ 163 0008 33       		.byte	51
+ 164 0009 00       		.byte	0
+ 165 000a 32       		.byte	50
+ 166 000b 00       		.byte	0
+ 167 000c 20       		.byte	32
+ 168 000d 00       		.byte	0
+ 169 000e 56       		.byte	86
+ 170 000f 00       		.byte	0
+ 171 0010 69       		.byte	105
+ARM GAS  C:\cygwin64\tmp\cc1a6XZW.s 			page 4
+
+
+ 172 0011 00       		.byte	0
+ 173 0012 72       		.byte	114
+ 174 0013 00       		.byte	0
+ 175 0014 74       		.byte	116
+ 176 0015 00       		.byte	0
+ 177 0016 75       		.byte	117
+ 178 0017 00       		.byte	0
+ 179 0018 61       		.byte	97
+ 180 0019 00       		.byte	0
+ 181 001a 6C       		.byte	108
+ 182 001b 00       		.byte	0
+ 183 001c 20       		.byte	32
+ 184 001d 00       		.byte	0
+ 185 001e 43       		.byte	67
+ 186 001f 00       		.byte	0
+ 187 0020 4F       		.byte	79
+ 188 0021 00       		.byte	0
+ 189 0022 4D       		.byte	77
+ 190 0023 00       		.byte	0
+ 191 0024 20       		.byte	32
+ 192 0025 00       		.byte	0
+ 193 0026 50       		.byte	80
+ 194 0027 00       		.byte	0
+ 195 0028 6F       		.byte	111
+ 196 0029 00       		.byte	0
+ 197 002a 72       		.byte	114
+ 198 002b 00       		.byte	0
+ 199 002c 74       		.byte	116
+ 200 002d 00       		.byte	0
+ 201 002e 20       		.byte	32
+ 202 002f 00       		.byte	0
+ 203 0030 20       		.byte	32
+ 204 0031 00       		.byte	0
+ 205 0032 0000     		.section	.data.Virtual_Com_Port_StringSerial,"aw",%progbits
+ 206              		.align	2
+ 207              		.type	Virtual_Com_Port_StringSerial, %object
+ 208              		.size	Virtual_Com_Port_StringSerial, 26
+ 209              	Virtual_Com_Port_StringSerial:
+ 210 0000 1A       		.byte	26
+ 211 0001 03       		.byte	3
+ 212 0002 53       		.byte	83
+ 213 0003 00       		.byte	0
+ 214 0004 54       		.byte	84
+ 215 0005 00       		.byte	0
+ 216 0006 4D       		.byte	77
+ 217 0007 00       		.byte	0
+ 218 0008 33       		.byte	51
+ 219 0009 00       		.byte	0
+ 220 000a 32       		.byte	50
+ 221 000b 00       		.byte	0
+ 222 000c 00000000 		.space	14
+ 222      00000000 
+ 222      00000000 
+ 222      0000
+ 223 001a 0000     		.section	.rodata.Virtual_Com_Port_ConfigDescriptor,"a",%progbits
+ 224              		.align	2
+ 225              		.type	Virtual_Com_Port_ConfigDescriptor, %object
+ARM GAS  C:\cygwin64\tmp\cc1a6XZW.s 			page 5
+
+
+ 226              		.size	Virtual_Com_Port_ConfigDescriptor, 67
+ 227              	Virtual_Com_Port_ConfigDescriptor:
+ 228 0000 09       		.byte	9
+ 229 0001 02       		.byte	2
+ 230 0002 43       		.byte	67
+ 231 0003 00       		.byte	0
+ 232 0004 02       		.byte	2
+ 233 0005 01       		.byte	1
+ 234 0006 00       		.byte	0
+ 235 0007 C0       		.byte	-64
+ 236 0008 32       		.byte	50
+ 237 0009 09       		.byte	9
+ 238 000a 04       		.byte	4
+ 239 000b 00       		.byte	0
+ 240 000c 00       		.byte	0
+ 241 000d 01       		.byte	1
+ 242 000e 02       		.byte	2
+ 243 000f 02       		.byte	2
+ 244 0010 01       		.byte	1
+ 245 0011 00       		.byte	0
+ 246 0012 05       		.byte	5
+ 247 0013 24       		.byte	36
+ 248 0014 00       		.byte	0
+ 249 0015 10       		.byte	16
+ 250 0016 01       		.byte	1
+ 251 0017 05       		.byte	5
+ 252 0018 24       		.byte	36
+ 253 0019 01       		.byte	1
+ 254 001a 00       		.byte	0
+ 255 001b 01       		.byte	1
+ 256 001c 04       		.byte	4
+ 257 001d 24       		.byte	36
+ 258 001e 02       		.byte	2
+ 259 001f 02       		.byte	2
+ 260 0020 05       		.byte	5
+ 261 0021 24       		.byte	36
+ 262 0022 06       		.byte	6
+ 263 0023 00       		.byte	0
+ 264 0024 01       		.byte	1
+ 265 0025 07       		.byte	7
+ 266 0026 05       		.byte	5
+ 267 0027 82       		.byte	-126
+ 268 0028 03       		.byte	3
+ 269 0029 08       		.byte	8
+ 270 002a 00       		.byte	0
+ 271 002b FF       		.byte	-1
+ 272 002c 09       		.byte	9
+ 273 002d 04       		.byte	4
+ 274 002e 01       		.byte	1
+ 275 002f 00       		.byte	0
+ 276 0030 02       		.byte	2
+ 277 0031 0A       		.byte	10
+ 278 0032 00       		.byte	0
+ 279 0033 00       		.byte	0
+ 280 0034 00       		.byte	0
+ 281 0035 07       		.byte	7
+ 282 0036 05       		.byte	5
+ARM GAS  C:\cygwin64\tmp\cc1a6XZW.s 			page 6
+
+
+ 283 0037 03       		.byte	3
+ 284 0038 02       		.byte	2
+ 285 0039 40       		.byte	64
+ 286 003a 00       		.byte	0
+ 287 003b 00       		.byte	0
+ 288 003c 07       		.byte	7
+ 289 003d 05       		.byte	5
+ 290 003e 81       		.byte	-127
+ 291 003f 02       		.byte	2
+ 292 0040 40       		.byte	64
+ 293 0041 00       		.byte	0
+ 294 0042 00       		.byte	0
+ 295 0043 00       		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cc1a6XZW.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 usb_desc.c
+C:\cygwin64\tmp\cc1a6XZW.s:209    .data.Virtual_Com_Port_StringSerial:00000000 Virtual_Com_Port_StringSerial
+C:\cygwin64\tmp\cc1a6XZW.s:154    .rodata.Virtual_Com_Port_StringProduct:00000000 Virtual_Com_Port_StringProduct
+C:\cygwin64\tmp\cc1a6XZW.s:79     .rodata.Virtual_Com_Port_StringVendor:00000000 Virtual_Com_Port_StringVendor
+C:\cygwin64\tmp\cc1a6XZW.s:145    .rodata.Virtual_Com_Port_StringLangID:00000000 Virtual_Com_Port_StringLangID
+C:\cygwin64\tmp\cc1a6XZW.s:227    .rodata.Virtual_Com_Port_ConfigDescriptor:00000000 Virtual_Com_Port_ConfigDescriptor
+C:\cygwin64\tmp\cc1a6XZW.s:122    .rodata.Virtual_Com_Port_DeviceDescriptor:00000000 Virtual_Com_Port_DeviceDescriptor
+C:\cygwin64\tmp\cc1a6XZW.s:76     .rodata.Virtual_Com_Port_StringVendor:00000000 $d
+C:\cygwin64\tmp\cc1a6XZW.s:119    .rodata.Virtual_Com_Port_DeviceDescriptor:00000000 $d
+C:\cygwin64\tmp\cc1a6XZW.s:142    .rodata.Virtual_Com_Port_StringLangID:00000000 $d
+C:\cygwin64\tmp\cc1a6XZW.s:151    .rodata.Virtual_Com_Port_StringProduct:00000000 $d
+C:\cygwin64\tmp\cc1a6XZW.s:206    .data.Virtual_Com_Port_StringSerial:00000000 $d
+C:\cygwin64\tmp\cc1a6XZW.s:224    .rodata.Virtual_Com_Port_ConfigDescriptor:00000000 $d
+
+NO UNDEFINED SYMBOLS

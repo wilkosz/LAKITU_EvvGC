@@ -1,0 +1,158 @@
+ARM GAS  C:\cygwin64\tmp\ccGtKV97.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_dbgmcu.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_dbgmcu.d -MF out/stm32f10x_dbgmcu.d -MP
+  25              	@ -MQ out/stm32f10x_dbgmcu.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c
+  28              	@ -mcpu=cortex-m3 -mthumb -auxbase-strip out/stm32f10x_dbgmcu.o -O2 -Wall
+  29              	@ -Wstrict-prototypes -Wextra -std=gnu99 -ffunction-sections
+  30              	@ -fdata-sections -fverbose-asm -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccGtKV97.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.DBGMCU_GetREVID,"ax",%progbits
+  71              		.align	2
+  72              		.global	DBGMCU_GetREVID
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	DBGMCU_GetREVID, %function
+  76              	DBGMCU_GetREVID:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		@ link register save eliminated.
+  80 0000 014B     		ldr	r3, .L2	@ tmp113,
+  81 0002 1868     		ldr	r0, [r3]	@ D.6615, MEM[(struct DBGMCU_TypeDef *)3758366720B].IDCODE
+  82 0004 000C     		lsrs	r0, r0, #16	@, D.6615,
+  83 0006 7047     		bx	lr	@
+  84              	.L3:
+  85              		.align	2
+  86              	.L2:
+  87 0008 002004E0 		.word	-536600576
+  88              		.size	DBGMCU_GetREVID, .-DBGMCU_GetREVID
+  89              		.section	.text.DBGMCU_GetDEVID,"ax",%progbits
+  90              		.align	2
+  91              		.global	DBGMCU_GetDEVID
+  92              		.thumb
+  93              		.thumb_func
+  94              		.type	DBGMCU_GetDEVID, %function
+  95              	DBGMCU_GetDEVID:
+  96              		@ args = 0, pretend = 0, frame = 0
+  97              		@ frame_needed = 0, uses_anonymous_args = 0
+  98              		@ link register save eliminated.
+  99 0000 024B     		ldr	r3, .L5	@ tmp113,
+ 100 0002 1868     		ldr	r0, [r3]	@ D.6619, MEM[(struct DBGMCU_TypeDef *)3758366720B].IDCODE
+ 101 0004 C0F30B00 		ubfx	r0, r0, #0, #12	@, D.6619,,
+ 102 0008 7047     		bx	lr	@
+ 103              	.L6:
+ 104 000a 00BF     		.align	2
+ 105              	.L5:
+ 106 000c 002004E0 		.word	-536600576
+ 107              		.size	DBGMCU_GetDEVID, .-DBGMCU_GetDEVID
+ 108              		.section	.text.DBGMCU_Config,"ax",%progbits
+ 109              		.align	2
+ 110              		.global	DBGMCU_Config
+ 111              		.thumb
+ 112              		.thumb_func
+ 113              		.type	DBGMCU_Config, %function
+ 114              	DBGMCU_Config:
+ARM GAS  C:\cygwin64\tmp\ccGtKV97.s 			page 3
+
+
+ 115              		@ args = 0, pretend = 0, frame = 0
+ 116              		@ frame_needed = 0, uses_anonymous_args = 0
+ 117              		@ link register save eliminated.
+ 118 0000 044B     		ldr	r3, .L12	@ tmp117,
+ 119 0002 5A68     		ldr	r2, [r3, #4]	@ D.6623,
+ 120 0004 19B9     		cbnz	r1, .L11	@ NewState,
+ 121 0006 22EA0000 		bic	r0, r2, r0	@ D.6623, D.6623, DBGMCU_Periph
+ 122 000a 5860     		str	r0, [r3, #4]	@ D.6623,
+ 123 000c 7047     		bx	lr	@
+ 124              	.L11:
+ 125 000e 1043     		orrs	r0, r0, r2	@, D.6623, DBGMCU_Periph, D.6623
+ 126 0010 5860     		str	r0, [r3, #4]	@ D.6623,
+ 127 0012 7047     		bx	lr	@
+ 128              	.L13:
+ 129              		.align	2
+ 130              	.L12:
+ 131 0014 002004E0 		.word	-536600576
+ 132              		.size	DBGMCU_Config, .-DBGMCU_Config
+ 133              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccGtKV97.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_dbgmcu.c
+C:\cygwin64\tmp\ccGtKV97.s:71     .text.DBGMCU_GetREVID:00000000 $t
+C:\cygwin64\tmp\ccGtKV97.s:76     .text.DBGMCU_GetREVID:00000000 DBGMCU_GetREVID
+C:\cygwin64\tmp\ccGtKV97.s:87     .text.DBGMCU_GetREVID:00000008 $d
+C:\cygwin64\tmp\ccGtKV97.s:90     .text.DBGMCU_GetDEVID:00000000 $t
+C:\cygwin64\tmp\ccGtKV97.s:95     .text.DBGMCU_GetDEVID:00000000 DBGMCU_GetDEVID
+C:\cygwin64\tmp\ccGtKV97.s:106    .text.DBGMCU_GetDEVID:0000000c $d
+C:\cygwin64\tmp\ccGtKV97.s:109    .text.DBGMCU_Config:00000000 $t
+C:\cygwin64\tmp\ccGtKV97.s:114    .text.DBGMCU_Config:00000000 DBGMCU_Config
+C:\cygwin64\tmp\ccGtKV97.s:131    .text.DBGMCU_Config:00000014 $d
+
+NO UNDEFINED SYMBOLS

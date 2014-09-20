@@ -1,0 +1,610 @@
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"newlib_stubs.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/newlib_stubs.d -MF out/newlib_stubs.d -MP -MQ out/newlib_stubs.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ src/newlib_stubs.c -mcpu=cortex-m3 -mthumb
+  27              	@ -auxbase-strip out/newlib_stubs.o -O2 -Wall -Wstrict-prototypes -Wextra
+  28              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  29              	@ -fsingle-precision-constant
+  30              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  31              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  32              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  33              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  34              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  35              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  36              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  37              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  38              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  39              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  40              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  41              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  42              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  43              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  44              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  45              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  46              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  47              	@ -freorder-functions -frerun-cse-after-loop
+  48              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  49              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  50              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  51              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  52              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  53              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  54              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 2
+
+
+  58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  59              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  60              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  61              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  62              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  63              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  64              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  65              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  67              	@ -munaligned-access -mvectorize-with-neon-quad
+  68              	
+  69              		.section	.text._close,"ax",%progbits
+  70              		.align	2
+  71              		.global	_close
+  72              		.thumb
+  73              		.thumb_func
+  74              		.type	_close, %function
+  75              	_close:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79 0000 4FF0FF30 		mov	r0, #-1	@,
+  80 0004 7047     		bx	lr	@
+  81              		.size	_close, .-_close
+  82 0006 00BF     		.section	.text._execve,"ax",%progbits
+  83              		.align	2
+  84              		.global	_execve
+  85              		.thumb
+  86              		.thumb_func
+  87              		.type	_execve, %function
+  88              	_execve:
+  89              		@ args = 0, pretend = 0, frame = 0
+  90              		@ frame_needed = 0, uses_anonymous_args = 0
+  91              		@ link register save eliminated.
+  92 0000 024B     		ldr	r3, .L3	@ tmp114,
+  93 0002 0C22     		movs	r2, #12	@ tmp115,
+  94 0004 1A60     		str	r2, [r3]	@ tmp115, errno
+  95 0006 4FF0FF30 		mov	r0, #-1	@,
+  96 000a 7047     		bx	lr	@
+  97              	.L4:
+  98              		.align	2
+  99              	.L3:
+ 100 000c 00000000 		.word	errno
+ 101              		.size	_execve, .-_execve
+ 102              		.section	.text._fork,"ax",%progbits
+ 103              		.align	2
+ 104              		.global	_fork
+ 105              		.thumb
+ 106              		.thumb_func
+ 107              		.type	_fork, %function
+ 108              	_fork:
+ 109              		@ args = 0, pretend = 0, frame = 0
+ 110              		@ frame_needed = 0, uses_anonymous_args = 0
+ 111              		@ link register save eliminated.
+ 112 0000 024B     		ldr	r3, .L6	@ tmp111,
+ 113 0002 0B22     		movs	r2, #11	@ tmp112,
+ 114 0004 1A60     		str	r2, [r3]	@ tmp112, errno
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 3
+
+
+ 115 0006 4FF0FF30 		mov	r0, #-1	@,
+ 116 000a 7047     		bx	lr	@
+ 117              	.L7:
+ 118              		.align	2
+ 119              	.L6:
+ 120 000c 00000000 		.word	errno
+ 121              		.size	_fork, .-_fork
+ 122              		.section	.text._fstat,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	_fstat
+ 125              		.thumb
+ 126              		.thumb_func
+ 127              		.type	_fstat, %function
+ 128              	_fstat:
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131              		@ link register save eliminated.
+ 132 0000 4FF40053 		mov	r3, #8192	@ tmp113,
+ 133 0004 4B60     		str	r3, [r1, #4]	@ tmp113, st_2(D)->st_mode
+ 134 0006 0020     		movs	r0, #0	@,
+ 135 0008 7047     		bx	lr	@
+ 136              		.size	_fstat, .-_fstat
+ 137 000a 00BF     		.section	.text._getpid,"ax",%progbits
+ 138              		.align	2
+ 139              		.global	_getpid
+ 140              		.thumb
+ 141              		.thumb_func
+ 142              		.type	_getpid, %function
+ 143              	_getpid:
+ 144              		@ args = 0, pretend = 0, frame = 0
+ 145              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146              		@ link register save eliminated.
+ 147 0000 0120     		movs	r0, #1	@,
+ 148 0002 7047     		bx	lr	@
+ 149              		.size	_getpid, .-_getpid
+ 150              		.section	.text._isatty,"ax",%progbits
+ 151              		.align	2
+ 152              		.global	_isatty
+ 153              		.thumb
+ 154              		.thumb_func
+ 155              		.type	_isatty, %function
+ 156              	_isatty:
+ 157              		@ args = 0, pretend = 0, frame = 0
+ 158              		@ frame_needed = 0, uses_anonymous_args = 0
+ 159              		@ link register save eliminated.
+ 160 0000 0228     		cmp	r0, #2	@ file,
+ 161 0002 04D9     		bls	.L14	@,
+ 162 0004 034B     		ldr	r3, .L16	@ tmp114,
+ 163 0006 0922     		movs	r2, #9	@ tmp115,
+ 164 0008 1A60     		str	r2, [r3]	@ tmp115, errno
+ 165 000a 0020     		movs	r0, #0	@ D.7317,
+ 166 000c 7047     		bx	lr	@
+ 167              	.L14:
+ 168 000e 0120     		movs	r0, #1	@ D.7317,
+ 169 0010 7047     		bx	lr	@
+ 170              	.L17:
+ 171 0012 00BF     		.align	2
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 4
+
+
+ 172              	.L16:
+ 173 0014 00000000 		.word	errno
+ 174              		.size	_isatty, .-_isatty
+ 175              		.section	.text._kill,"ax",%progbits
+ 176              		.align	2
+ 177              		.global	_kill
+ 178              		.thumb
+ 179              		.thumb_func
+ 180              		.type	_kill, %function
+ 181              	_kill:
+ 182              		@ args = 0, pretend = 0, frame = 0
+ 183              		@ frame_needed = 0, uses_anonymous_args = 0
+ 184              		@ link register save eliminated.
+ 185 0000 024B     		ldr	r3, .L19	@ tmp113,
+ 186 0002 1622     		movs	r2, #22	@ tmp114,
+ 187 0004 1A60     		str	r2, [r3]	@ tmp114, errno
+ 188 0006 4FF0FF30 		mov	r0, #-1	@,
+ 189 000a 7047     		bx	lr	@
+ 190              	.L20:
+ 191              		.align	2
+ 192              	.L19:
+ 193 000c 00000000 		.word	errno
+ 194              		.size	_kill, .-_kill
+ 195              		.section	.text._link,"ax",%progbits
+ 196              		.align	2
+ 197              		.global	_link
+ 198              		.thumb
+ 199              		.thumb_func
+ 200              		.type	_link, %function
+ 201              	_link:
+ 202              		@ args = 0, pretend = 0, frame = 0
+ 203              		@ frame_needed = 0, uses_anonymous_args = 0
+ 204              		@ link register save eliminated.
+ 205 0000 024B     		ldr	r3, .L22	@ tmp113,
+ 206 0002 1F22     		movs	r2, #31	@ tmp114,
+ 207 0004 1A60     		str	r2, [r3]	@ tmp114, errno
+ 208 0006 4FF0FF30 		mov	r0, #-1	@,
+ 209 000a 7047     		bx	lr	@
+ 210              	.L23:
+ 211              		.align	2
+ 212              	.L22:
+ 213 000c 00000000 		.word	errno
+ 214              		.size	_link, .-_link
+ 215              		.section	.text._lseek,"ax",%progbits
+ 216              		.align	2
+ 217              		.global	_lseek
+ 218              		.thumb
+ 219              		.thumb_func
+ 220              		.type	_lseek, %function
+ 221              	_lseek:
+ 222              		@ args = 0, pretend = 0, frame = 0
+ 223              		@ frame_needed = 0, uses_anonymous_args = 0
+ 224              		@ link register save eliminated.
+ 225 0000 0020     		movs	r0, #0	@,
+ 226 0002 7047     		bx	lr	@
+ 227              		.size	_lseek, .-_lseek
+ 228              		.section	.text._read,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 5
+
+
+ 229              		.align	2
+ 230              		.global	_read
+ 231              		.thumb
+ 232              		.thumb_func
+ 233              		.type	_read, %function
+ 234              	_read:
+ 235              		@ args = 0, pretend = 0, frame = 0
+ 236              		@ frame_needed = 0, uses_anonymous_args = 0
+ 237              		@ link register save eliminated.
+ 238 0000 70B4     		push	{r4, r5, r6}	@
+ 239 0002 78B9     		cbnz	r0, .L35	@ file,
+ 240 0004 002A     		cmp	r2, #0	@ len,
+ 241 0006 0BDD     		ble	.L28	@,
+ 242 0008 094C     		ldr	r4, .L36	@ tmp157,
+ 243 000a 8E18     		adds	r6, r1, r2	@ D.7339, ptr, len
+ 244 000c 2546     		mov	r5, r4	@ tmp158, tmp157
+ 245              	.L30:
+ 246 000e 2388     		ldrh	r3, [r4]	@, MEM[(struct USART_TypeDef *)1073761280B].SR
+ 247 0010 9B06     		lsls	r3, r3, #26	@, MEM[(struct USART_TypeDef *)1073761280B].SR,
+ 248 0012 FCD5     		bpl	.L30	@,
+ 249 0014 AB88     		ldrh	r3, [r5, #4]	@, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 250 0016 01F8013B 		strb	r3, [r1], #1	@ MEM[(struct USART_TypeDef *)1073761280B].DR, MEM[base: ptr_17, offset: 4294967
+ 251 001a B142     		cmp	r1, r6	@ ptr, D.7339
+ 252 001c F7D1     		bne	.L30	@,
+ 253 001e 1046     		mov	r0, r2	@ D.7336, len
+ 254              	.L28:
+ 255 0020 70BC     		pop	{r4, r5, r6}	@
+ 256 0022 7047     		bx	lr	@
+ 257              	.L35:
+ 258 0024 034B     		ldr	r3, .L36+4	@ tmp153,
+ 259 0026 0922     		movs	r2, #9	@ tmp154,
+ 260 0028 1A60     		str	r2, [r3]	@ tmp154, errno
+ 261 002a 4FF0FF30 		mov	r0, #-1	@ D.7336,
+ 262 002e F7E7     		b	.L28	@
+ 263              	.L37:
+ 264              		.align	2
+ 265              	.L36:
+ 266 0030 004C0040 		.word	1073761280
+ 267 0034 00000000 		.word	errno
+ 268              		.size	_read, .-_read
+ 269              		.section	.text._stat,"ax",%progbits
+ 270              		.align	2
+ 271              		.global	_stat
+ 272              		.thumb
+ 273              		.thumb_func
+ 274              		.type	_stat, %function
+ 275              	_stat:
+ 276              		@ args = 0, pretend = 0, frame = 0
+ 277              		@ frame_needed = 0, uses_anonymous_args = 0
+ 278              		@ link register save eliminated.
+ 279 0000 4FF40053 		mov	r3, #8192	@ tmp113,
+ 280 0004 4B60     		str	r3, [r1, #4]	@ tmp113, st_2(D)->st_mode
+ 281 0006 0020     		movs	r0, #0	@,
+ 282 0008 7047     		bx	lr	@
+ 283              		.size	_stat, .-_stat
+ 284 000a 00BF     		.section	.text._times,"ax",%progbits
+ 285              		.align	2
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 6
+
+
+ 286              		.global	_times
+ 287              		.thumb
+ 288              		.thumb_func
+ 289              		.type	_times, %function
+ 290              	_times:
+ 291              		@ args = 0, pretend = 0, frame = 0
+ 292              		@ frame_needed = 0, uses_anonymous_args = 0
+ 293              		@ link register save eliminated.
+ 294 0000 4FF0FF30 		mov	r0, #-1	@,
+ 295 0004 7047     		bx	lr	@
+ 296              		.size	_times, .-_times
+ 297 0006 00BF     		.section	.text._unlink,"ax",%progbits
+ 298              		.align	2
+ 299              		.global	_unlink
+ 300              		.thumb
+ 301              		.thumb_func
+ 302              		.type	_unlink, %function
+ 303              	_unlink:
+ 304              		@ args = 0, pretend = 0, frame = 0
+ 305              		@ frame_needed = 0, uses_anonymous_args = 0
+ 306              		@ link register save eliminated.
+ 307 0000 024B     		ldr	r3, .L41	@ tmp112,
+ 308 0002 0222     		movs	r2, #2	@ tmp113,
+ 309 0004 1A60     		str	r2, [r3]	@ tmp113, errno
+ 310 0006 4FF0FF30 		mov	r0, #-1	@,
+ 311 000a 7047     		bx	lr	@
+ 312              	.L42:
+ 313              		.align	2
+ 314              	.L41:
+ 315 000c 00000000 		.word	errno
+ 316              		.size	_unlink, .-_unlink
+ 317              		.section	.text._wait,"ax",%progbits
+ 318              		.align	2
+ 319              		.global	_wait
+ 320              		.thumb
+ 321              		.thumb_func
+ 322              		.type	_wait, %function
+ 323              	_wait:
+ 324              		@ args = 0, pretend = 0, frame = 0
+ 325              		@ frame_needed = 0, uses_anonymous_args = 0
+ 326              		@ link register save eliminated.
+ 327 0000 024B     		ldr	r3, .L44	@ tmp112,
+ 328 0002 0A22     		movs	r2, #10	@ tmp113,
+ 329 0004 1A60     		str	r2, [r3]	@ tmp113, errno
+ 330 0006 4FF0FF30 		mov	r0, #-1	@,
+ 331 000a 7047     		bx	lr	@
+ 332              	.L45:
+ 333              		.align	2
+ 334              	.L44:
+ 335 000c 00000000 		.word	errno
+ 336              		.size	_wait, .-_wait
+ 337              		.section	.text._write,"ax",%progbits
+ 338              		.align	2
+ 339              		.global	_write
+ 340              		.thumb
+ 341              		.thumb_func
+ 342              		.type	_write, %function
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 7
+
+
+ 343              	_write:
+ 344              		@ args = 0, pretend = 0, frame = 0
+ 345              		@ frame_needed = 0, uses_anonymous_args = 0
+ 346              		@ link register save eliminated.
+ 347 0000 0128     		cmp	r0, #1	@ file,
+ 348 0002 70B4     		push	{r4, r5, r6}	@
+ 349 0004 18D0     		beq	.L48	@,
+ 350 0006 0228     		cmp	r0, #2	@ file,
+ 351 0008 0FD1     		bne	.L61	@,
+ 352 000a 002A     		cmp	r2, #0	@ len,
+ 353 000c 0ADD     		ble	.L52	@,
+ 354 000e 124C     		ldr	r4, .L63	@ tmp152,
+ 355 0010 8E18     		adds	r6, r1, r2	@ D.7369, ptr, len
+ 356 0012 2546     		mov	r5, r4	@ tmp153, tmp152
+ 357              	.L57:
+ 358 0014 2388     		ldrh	r3, [r4]	@, MEM[(struct USART_TypeDef *)1073761280B].SR
+ 359 0016 5B06     		lsls	r3, r3, #25	@, MEM[(struct USART_TypeDef *)1073761280B].SR,
+ 360 0018 FCD5     		bpl	.L57	@,
+ 361 001a 11F8013B 		ldrb	r3, [r1], #1	@ zero_extendqisi2	@ D.7370, MEM[base: ptr_26, offset: 4294967295B]
+ 362 001e B142     		cmp	r1, r6	@ ptr, D.7369
+ 363 0020 AB80     		strh	r3, [r5, #4]	@ movhi	@ D.7370, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 364 0022 F7D1     		bne	.L57	@,
+ 365              	.L52:
+ 366 0024 1046     		mov	r0, r2	@ D.7368, len
+ 367              	.L62:
+ 368 0026 70BC     		pop	{r4, r5, r6}	@
+ 369 0028 7047     		bx	lr	@
+ 370              	.L61:
+ 371 002a 0C4B     		ldr	r3, .L63+4	@ tmp145,
+ 372 002c 0922     		movs	r2, #9	@ tmp146,
+ 373 002e 4FF0FF30 		mov	r0, #-1	@ D.7368,
+ 374 0032 1A60     		str	r2, [r3]	@ tmp146, errno
+ 375 0034 70BC     		pop	{r4, r5, r6}	@
+ 376 0036 7047     		bx	lr	@
+ 377              	.L48:
+ 378 0038 002A     		cmp	r2, #0	@ len,
+ 379 003a F3DD     		ble	.L52	@,
+ 380 003c 064C     		ldr	r4, .L63	@ tmp149,
+ 381 003e 8E18     		adds	r6, r1, r2	@ D.7369, ptr, len
+ 382 0040 2546     		mov	r5, r4	@ tmp150, tmp149
+ 383              	.L54:
+ 384 0042 2388     		ldrh	r3, [r4]	@, MEM[(struct USART_TypeDef *)1073761280B].SR
+ 385 0044 5806     		lsls	r0, r3, #25	@, MEM[(struct USART_TypeDef *)1073761280B].SR,
+ 386 0046 FCD5     		bpl	.L54	@,
+ 387 0048 11F8013B 		ldrb	r3, [r1], #1	@ zero_extendqisi2	@ D.7370, MEM[base: ptr_17, offset: 4294967295B]
+ 388 004c B142     		cmp	r1, r6	@ ptr, D.7369
+ 389 004e AB80     		strh	r3, [r5, #4]	@ movhi	@ D.7370, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 390 0050 F7D1     		bne	.L54	@,
+ 391 0052 1046     		mov	r0, r2	@ D.7368, len
+ 392 0054 E7E7     		b	.L62	@
+ 393              	.L64:
+ 394 0056 00BF     		.align	2
+ 395              	.L63:
+ 396 0058 004C0040 		.word	1073761280
+ 397 005c 00000000 		.word	errno
+ 398              		.size	_write, .-_write
+ 399              		.section	.text._exit,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 8
+
+
+ 400              		.align	2
+ 401              		.global	_exit
+ 402              		.thumb
+ 403              		.thumb_func
+ 404              		.type	_exit, %function
+ 405              	_exit:
+ 406              		@ Volatile: function does not return.
+ 407              		@ args = 0, pretend = 0, frame = 0
+ 408              		@ frame_needed = 0, uses_anonymous_args = 0
+ 409 0000 08B5     		push	{r3, lr}	@
+ 410 0002 0120     		movs	r0, #1	@,
+ 411 0004 0249     		ldr	r1, .L67	@,
+ 412 0006 0422     		movs	r2, #4	@,
+ 413 0008 FFF7FEFF 		bl	_write	@
+ 414              	.L66:
+ 415 000c FEE7     		b	.L66	@
+ 416              	.L68:
+ 417 000e 00BF     		.align	2
+ 418              	.L67:
+ 419 0010 00000000 		.word	.LC0
+ 420              		.size	_exit, .-_exit
+ 421              		.section	.text._sbrk,"ax",%progbits
+ 422              		.align	2
+ 423              		.global	_sbrk
+ 424              		.thumb
+ 425              		.thumb_func
+ 426              		.type	_sbrk, %function
+ 427              	_sbrk:
+ 428              		@ args = 0, pretend = 0, frame = 0
+ 429              		@ frame_needed = 0, uses_anonymous_args = 0
+ 430 0000 0D4B     		ldr	r3, .L76	@ tmp127,
+ 431 0002 10B5     		push	{r4, lr}	@
+ 432 0004 1A68     		ldr	r2, [r3]	@ heap_end.0, heap_end
+ 433 0006 0446     		mov	r4, r0	@ incr, incr
+ 434 0008 92B1     		cbz	r2, .L74	@ heap_end.0,
+ 435 000a 1046     		mov	r0, r2	@ D.7378, heap_end.0
+ 436              	.L70:
+ 437              	@ 455 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 438 000c EFF30881 		MRS r1, msp	@ result
+ 439              	
+ 440              	@ 0 "" 2
+ 441              		.thumb
+ 442 0010 0219     		adds	r2, r0, r4	@ heap_end.2, D.7378, incr
+ 443 0012 8A42     		cmp	r2, r1	@ heap_end.2, result
+ 444 0014 01D8     		bhi	.L75	@,
+ 445 0016 1A60     		str	r2, [r3]	@ heap_end.2, heap_end
+ 446 0018 10BD     		pop	{r4, pc}	@
+ 447              	.L75:
+ 448 001a 0849     		ldr	r1, .L76+4	@,
+ 449 001c 1922     		movs	r2, #25	@,
+ 450 001e 0220     		movs	r0, #2	@,
+ 451 0020 FFF7FEFF 		bl	_write	@
+ 452 0024 064B     		ldr	r3, .L76+8	@ tmp123,
+ 453 0026 0C22     		movs	r2, #12	@ tmp124,
+ 454 0028 1A60     		str	r2, [r3]	@ tmp124, errno
+ 455 002a 4FF0FF30 		mov	r0, #-1	@ D.7378,
+ 456 002e 10BD     		pop	{r4, pc}	@
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 9
+
+
+ 457              	.L74:
+ 458 0030 0448     		ldr	r0, .L76+12	@ tmp120,
+ 459 0032 1860     		str	r0, [r3]	@ tmp120, heap_end
+ 460 0034 EAE7     		b	.L70	@
+ 461              	.L77:
+ 462 0036 00BF     		.align	2
+ 463              	.L76:
+ 464 0038 00000000 		.word	.LANCHOR0
+ 465 003c 08000000 		.word	.LC1
+ 466 0040 00000000 		.word	errno
+ 467 0044 00000000 		.word	_ebss
+ 468              		.size	_sbrk, .-_sbrk
+ 469              		.section	.text._init,"ax",%progbits
+ 470              		.align	2
+ 471              		.weak	_init
+ 472              		.thumb
+ 473              		.thumb_func
+ 474              		.type	_init, %function
+ 475              	_init:
+ 476              		@ args = 0, pretend = 0, frame = 0
+ 477              		@ frame_needed = 0, uses_anonymous_args = 0
+ 478              		@ link register save eliminated.
+ 479 0000 7047     		bx	lr	@
+ 480              		.size	_init, .-_init
+ 481              		.global	environ
+ 482              		.global	__env
+ 483 0002 00BF     		.section	.bss.heap_end.7135,"aw",%nobits
+ 484              		.align	2
+ 485              		.set	.LANCHOR0,. + 0
+ 486              		.type	heap_end.7135, %object
+ 487              		.size	heap_end.7135, 4
+ 488              	heap_end.7135:
+ 489 0000 00000000 		.space	4
+ 490              		.section	.data.environ,"aw",%progbits
+ 491              		.align	2
+ 492              		.type	environ, %object
+ 493              		.size	environ, 4
+ 494              	environ:
+ 495 0000 00000000 		.word	__env
+ 496              		.section	.bss.__env,"aw",%nobits
+ 497              		.align	2
+ 498              		.type	__env, %object
+ 499              		.size	__env, 4
+ 500              	__env:
+ 501 0000 00000000 		.space	4
+ 502              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 503              		.align	2
+ 504              	.LC0:
+ 505 0000 65786974 		.ascii	"exit\000"
+ 505      00
+ 506 0005 000000   		.space	3
+ 507              	.LC1:
+ 508 0008 48656170 		.ascii	"Heap and stack collision\012\000"
+ 508      20616E64 
+ 508      20737461 
+ 508      636B2063 
+ 508      6F6C6C69 
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 10
+
+
+ 509 0022 0000     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 newlib_stubs.c
+C:\cygwin64\tmp\ccVzIMKB.s:70     .text._close:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:75     .text._close:00000000 _close
+C:\cygwin64\tmp\ccVzIMKB.s:83     .text._execve:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:88     .text._execve:00000000 _execve
+C:\cygwin64\tmp\ccVzIMKB.s:100    .text._execve:0000000c $d
+C:\cygwin64\tmp\ccVzIMKB.s:103    .text._fork:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:108    .text._fork:00000000 _fork
+C:\cygwin64\tmp\ccVzIMKB.s:120    .text._fork:0000000c $d
+C:\cygwin64\tmp\ccVzIMKB.s:123    .text._fstat:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:128    .text._fstat:00000000 _fstat
+C:\cygwin64\tmp\ccVzIMKB.s:138    .text._getpid:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:143    .text._getpid:00000000 _getpid
+C:\cygwin64\tmp\ccVzIMKB.s:151    .text._isatty:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:156    .text._isatty:00000000 _isatty
+C:\cygwin64\tmp\ccVzIMKB.s:173    .text._isatty:00000014 $d
+C:\cygwin64\tmp\ccVzIMKB.s:176    .text._kill:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:181    .text._kill:00000000 _kill
+C:\cygwin64\tmp\ccVzIMKB.s:193    .text._kill:0000000c $d
+C:\cygwin64\tmp\ccVzIMKB.s:196    .text._link:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:201    .text._link:00000000 _link
+C:\cygwin64\tmp\ccVzIMKB.s:213    .text._link:0000000c $d
+C:\cygwin64\tmp\ccVzIMKB.s:216    .text._lseek:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:221    .text._lseek:00000000 _lseek
+C:\cygwin64\tmp\ccVzIMKB.s:229    .text._read:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:234    .text._read:00000000 _read
+C:\cygwin64\tmp\ccVzIMKB.s:266    .text._read:00000030 $d
+C:\cygwin64\tmp\ccVzIMKB.s:270    .text._stat:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:275    .text._stat:00000000 _stat
+C:\cygwin64\tmp\ccVzIMKB.s:285    .text._times:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:290    .text._times:00000000 _times
+C:\cygwin64\tmp\ccVzIMKB.s:298    .text._unlink:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:303    .text._unlink:00000000 _unlink
+C:\cygwin64\tmp\ccVzIMKB.s:315    .text._unlink:0000000c $d
+C:\cygwin64\tmp\ccVzIMKB.s:318    .text._wait:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:323    .text._wait:00000000 _wait
+C:\cygwin64\tmp\ccVzIMKB.s:335    .text._wait:0000000c $d
+C:\cygwin64\tmp\ccVzIMKB.s:338    .text._write:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:343    .text._write:00000000 _write
+C:\cygwin64\tmp\ccVzIMKB.s:396    .text._write:00000058 $d
+C:\cygwin64\tmp\ccVzIMKB.s:400    .text._exit:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:405    .text._exit:00000000 _exit
+C:\cygwin64\tmp\ccVzIMKB.s:419    .text._exit:00000010 $d
+C:\cygwin64\tmp\ccVzIMKB.s:422    .text._sbrk:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:427    .text._sbrk:00000000 _sbrk
+C:\cygwin64\tmp\ccVzIMKB.s:464    .text._sbrk:00000038 $d
+C:\cygwin64\tmp\ccVzIMKB.s:470    .text._init:00000000 $t
+C:\cygwin64\tmp\ccVzIMKB.s:475    .text._init:00000000 _init
+C:\cygwin64\tmp\ccVzIMKB.s:494    .data.environ:00000000 environ
+C:\cygwin64\tmp\ccVzIMKB.s:500    .bss.__env:00000000 __env
+C:\cygwin64\tmp\ccVzIMKB.s:484    .bss.heap_end.7135:00000000 $d
+C:\cygwin64\tmp\ccVzIMKB.s:488    .bss.heap_end.7135:00000000 heap_end.7135
+C:\cygwin64\tmp\ccVzIMKB.s:491    .data.environ:00000000 $d
+C:\cygwin64\tmp\ccVzIMKB.s:497    .bss.__env:00000000 $d
+C:\cygwin64\tmp\ccVzIMKB.s:503    .rodata.str1.4:00000000 $d
+
+ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 12
+
+
+UNDEFINED SYMBOLS
+errno
+_ebss

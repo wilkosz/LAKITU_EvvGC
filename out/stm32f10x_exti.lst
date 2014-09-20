@@ -1,0 +1,337 @@
+ARM GAS  C:\cygwin64\tmp\cchbrTyR.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_exti.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_exti.d -MF out/stm32f10x_exti.d -MP
+  25              	@ -MQ out/stm32f10x_exti.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_exti.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\cchbrTyR.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.EXTI_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	EXTI_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	EXTI_DeInit, %function
+  76              	EXTI_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		@ link register save eliminated.
+  80 0000 044B     		ldr	r3, .L2	@ tmp110,
+  81 0002 0549     		ldr	r1, .L2+4	@ tmp119,
+  82 0004 0022     		movs	r2, #0	@ tmp111,
+  83 0006 1A60     		str	r2, [r3]	@ tmp111, MEM[(struct EXTI_TypeDef *)1073808384B].IMR
+  84 0008 5A60     		str	r2, [r3, #4]	@ tmp111, MEM[(struct EXTI_TypeDef *)1073808384B].EMR
+  85 000a 9A60     		str	r2, [r3, #8]	@ tmp111, MEM[(struct EXTI_TypeDef *)1073808384B].RTSR
+  86 000c DA60     		str	r2, [r3, #12]	@ tmp111, MEM[(struct EXTI_TypeDef *)1073808384B].FTSR
+  87 000e 5961     		str	r1, [r3, #20]	@ tmp119, MEM[(struct EXTI_TypeDef *)1073808384B].PR
+  88 0010 7047     		bx	lr	@
+  89              	.L3:
+  90 0012 00BF     		.align	2
+  91              	.L2:
+  92 0014 00040140 		.word	1073808384
+  93 0018 FFFF0F00 		.word	1048575
+  94              		.size	EXTI_DeInit, .-EXTI_DeInit
+  95              		.section	.text.EXTI_Init,"ax",%progbits
+  96              		.align	2
+  97              		.global	EXTI_Init
+  98              		.thumb
+  99              		.thumb_func
+ 100              		.type	EXTI_Init, %function
+ 101              	EXTI_Init:
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104              		@ link register save eliminated.
+ 105 0000 8379     		ldrb	r3, [r0, #6]	@ zero_extendqisi2	@ EXTI_InitStruct_3(D)->EXTI_LineCmd, EXTI_InitStruct_3(D)->E
+ 106 0002 30B4     		push	{r4, r5}	@
+ 107 0004 2BB3     		cbz	r3, .L5	@ EXTI_InitStruct_3(D)->EXTI_LineCmd,
+ 108 0006 1D4B     		ldr	r3, .L10	@ tmp149,
+ 109 0008 0168     		ldr	r1, [r0]	@ D.6686, EXTI_InitStruct_3(D)->EXTI_Line
+ 110 000a 1A68     		ldr	r2, [r3]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].IMR
+ 111 000c CC43     		mvns	r4, r1	@ D.6686, D.6686
+ 112 000e 2240     		ands	r2, r2, r4	@, D.6686, D.6686, D.6686
+ 113 0010 1A60     		str	r2, [r3]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].IMR
+ 114 0012 5D68     		ldr	r5, [r3, #4]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].EMR
+ARM GAS  C:\cygwin64\tmp\cchbrTyR.s 			page 3
+
+
+ 115 0014 0279     		ldrb	r2, [r0, #4]	@ zero_extendqisi2	@ D.6686, EXTI_InitStruct_3(D)->EXTI_Mode
+ 116 0016 2C40     		ands	r4, r4, r5	@, D.6686, D.6686, D.6686
+ 117 0018 02F18042 		add	r2, r2, #1073741824	@ tmp.0, D.6686,
+ 118 001c 5C60     		str	r4, [r3, #4]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].EMR
+ 119 001e 02F58232 		add	r2, r2, #66560	@ tmp.0, tmp.0,
+ 120 0022 1568     		ldr	r5, [r2]	@ D.6686, *tmp.0_16
+ 121 0024 4479     		ldrb	r4, [r0, #5]	@ zero_extendqisi2	@ D.6688, EXTI_InitStruct_3(D)->EXTI_Trigger
+ 122 0026 2943     		orrs	r1, r1, r5	@, D.6686, D.6686, D.6686
+ 123 0028 1160     		str	r1, [r2]	@ D.6686, *tmp.0_16
+ 124 002a 0268     		ldr	r2, [r0]	@ D.6686, EXTI_InitStruct_3(D)->EXTI_Line
+ 125 002c 9868     		ldr	r0, [r3, #8]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].RTSR
+ 126 002e D143     		mvns	r1, r2	@ D.6686, D.6686
+ 127 0030 0840     		ands	r0, r0, r1	@, D.6686, D.6686, D.6686
+ 128 0032 9860     		str	r0, [r3, #8]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].RTSR
+ 129 0034 D868     		ldr	r0, [r3, #12]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].FTSR
+ 130 0036 102C     		cmp	r4, #16	@ D.6688,
+ 131 0038 01EA0001 		and	r1, r1, r0	@ D.6686, D.6686, D.6686
+ 132 003c D960     		str	r1, [r3, #12]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].FTSR
+ 133 003e 14D0     		beq	.L9	@,
+ 134 0040 04F18043 		add	r3, r4, #1073741824	@ tmp.0, D.6688,
+ 135 0044 03F58233 		add	r3, r3, #66560	@ tmp.0, tmp.0,
+ 136 0048 1968     		ldr	r1, [r3]	@ D.6686, *tmp.0_37
+ 137 004a 30BC     		pop	{r4, r5}	@
+ 138 004c 0A43     		orrs	r2, r2, r1	@, D.6686, D.6686, D.6686
+ 139 004e 1A60     		str	r2, [r3]	@ D.6686,* tmp.0
+ 140 0050 7047     		bx	lr	@
+ 141              	.L5:
+ 142 0052 0379     		ldrb	r3, [r0, #4]	@ zero_extendqisi2	@ D.6686, EXTI_InitStruct_3(D)->EXTI_Mode
+ 143 0054 0168     		ldr	r1, [r0]	@ EXTI_InitStruct_3(D)->EXTI_Line, EXTI_InitStruct_3(D)->EXTI_Line
+ 144 0056 03F18043 		add	r3, r3, #1073741824	@ tmp.0, D.6686,
+ 145 005a 03F58233 		add	r3, r3, #66560	@ tmp.0, tmp.0,
+ 146 005e 1A68     		ldr	r2, [r3]	@ D.6686, *tmp.0_44
+ 147 0060 30BC     		pop	{r4, r5}	@
+ 148 0062 22EA0102 		bic	r2, r2, r1	@ D.6686, D.6686, EXTI_InitStruct_3(D)->EXTI_Line
+ 149 0066 1A60     		str	r2, [r3]	@ D.6686,* tmp.0
+ 150 0068 7047     		bx	lr	@
+ 151              	.L9:
+ 152 006a 9968     		ldr	r1, [r3, #8]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].RTSR
+ 153 006c 30BC     		pop	{r4, r5}	@
+ 154 006e 1143     		orrs	r1, r1, r2	@, D.6686, D.6686, D.6686
+ 155 0070 9960     		str	r1, [r3, #8]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].RTSR
+ 156 0072 D968     		ldr	r1, [r3, #12]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].FTSR
+ 157 0074 0A43     		orrs	r2, r2, r1	@, D.6686, D.6686, D.6686
+ 158 0076 DA60     		str	r2, [r3, #12]	@ D.6686, MEM[(struct EXTI_TypeDef *)1073808384B].FTSR
+ 159 0078 7047     		bx	lr	@
+ 160              	.L11:
+ 161 007a 00BF     		.align	2
+ 162              	.L10:
+ 163 007c 00040140 		.word	1073808384
+ 164              		.size	EXTI_Init, .-EXTI_Init
+ 165              		.section	.text.EXTI_StructInit,"ax",%progbits
+ 166              		.align	2
+ 167              		.global	EXTI_StructInit
+ 168              		.thumb
+ 169              		.thumb_func
+ 170              		.type	EXTI_StructInit, %function
+ 171              	EXTI_StructInit:
+ARM GAS  C:\cygwin64\tmp\cchbrTyR.s 			page 4
+
+
+ 172              		@ args = 0, pretend = 0, frame = 0
+ 173              		@ frame_needed = 0, uses_anonymous_args = 0
+ 174              		@ link register save eliminated.
+ 175 0000 0023     		movs	r3, #0	@ tmp111,
+ 176 0002 0C22     		movs	r2, #12	@ tmp114,
+ 177 0004 4271     		strb	r2, [r0, #5]	@ tmp114, EXTI_InitStruct_2(D)->EXTI_Trigger
+ 178 0006 0360     		str	r3, [r0]	@ tmp111, EXTI_InitStruct_2(D)->EXTI_Line
+ 179 0008 0371     		strb	r3, [r0, #4]	@ tmp111, EXTI_InitStruct_2(D)->EXTI_Mode
+ 180 000a 8371     		strb	r3, [r0, #6]	@ tmp111, EXTI_InitStruct_2(D)->EXTI_LineCmd
+ 181 000c 7047     		bx	lr	@
+ 182              		.size	EXTI_StructInit, .-EXTI_StructInit
+ 183 000e 00BF     		.section	.text.EXTI_GenerateSWInterrupt,"ax",%progbits
+ 184              		.align	2
+ 185              		.global	EXTI_GenerateSWInterrupt
+ 186              		.thumb
+ 187              		.thumb_func
+ 188              		.type	EXTI_GenerateSWInterrupt, %function
+ 189              	EXTI_GenerateSWInterrupt:
+ 190              		@ args = 0, pretend = 0, frame = 0
+ 191              		@ frame_needed = 0, uses_anonymous_args = 0
+ 192              		@ link register save eliminated.
+ 193 0000 024B     		ldr	r3, .L14	@ tmp113,
+ 194 0002 1A69     		ldr	r2, [r3, #16]	@ D.6693, MEM[(struct EXTI_TypeDef *)1073808384B].SWIER
+ 195 0004 1043     		orrs	r0, r0, r2	@, D.6693, EXTI_Line, D.6693
+ 196 0006 1861     		str	r0, [r3, #16]	@ D.6693, MEM[(struct EXTI_TypeDef *)1073808384B].SWIER
+ 197 0008 7047     		bx	lr	@
+ 198              	.L15:
+ 199 000a 00BF     		.align	2
+ 200              	.L14:
+ 201 000c 00040140 		.word	1073808384
+ 202              		.size	EXTI_GenerateSWInterrupt, .-EXTI_GenerateSWInterrupt
+ 203              		.section	.text.EXTI_GetFlagStatus,"ax",%progbits
+ 204              		.align	2
+ 205              		.global	EXTI_GetFlagStatus
+ 206              		.thumb
+ 207              		.thumb_func
+ 208              		.type	EXTI_GetFlagStatus, %function
+ 209              	EXTI_GetFlagStatus:
+ 210              		@ args = 0, pretend = 0, frame = 0
+ 211              		@ frame_needed = 0, uses_anonymous_args = 0
+ 212              		@ link register save eliminated.
+ 213 0000 034B     		ldr	r3, .L17	@ tmp116,
+ 214 0002 5B69     		ldr	r3, [r3, #20]	@ D.6696, MEM[(struct EXTI_TypeDef *)1073808384B].PR
+ 215 0004 1842     		tst	r0, r3	@ EXTI_Line, D.6696
+ 216 0006 0CBF     		ite	eq	@
+ 217 0008 0020     		moveq	r0, #0	@,
+ 218 000a 0120     		movne	r0, #1	@,
+ 219 000c 7047     		bx	lr	@
+ 220              	.L18:
+ 221 000e 00BF     		.align	2
+ 222              	.L17:
+ 223 0010 00040140 		.word	1073808384
+ 224              		.size	EXTI_GetFlagStatus, .-EXTI_GetFlagStatus
+ 225              		.section	.text.EXTI_ClearFlag,"ax",%progbits
+ 226              		.align	2
+ 227              		.global	EXTI_ClearFlag
+ 228              		.thumb
+ARM GAS  C:\cygwin64\tmp\cchbrTyR.s 			page 5
+
+
+ 229              		.thumb_func
+ 230              		.type	EXTI_ClearFlag, %function
+ 231              	EXTI_ClearFlag:
+ 232              		@ args = 0, pretend = 0, frame = 0
+ 233              		@ frame_needed = 0, uses_anonymous_args = 0
+ 234              		@ link register save eliminated.
+ 235 0000 014B     		ldr	r3, .L20	@ tmp111,
+ 236 0002 5861     		str	r0, [r3, #20]	@ EXTI_Line, MEM[(struct EXTI_TypeDef *)1073808384B].PR
+ 237 0004 7047     		bx	lr	@
+ 238              	.L21:
+ 239 0006 00BF     		.align	2
+ 240              	.L20:
+ 241 0008 00040140 		.word	1073808384
+ 242              		.size	EXTI_ClearFlag, .-EXTI_ClearFlag
+ 243              		.section	.text.EXTI_GetITStatus,"ax",%progbits
+ 244              		.align	2
+ 245              		.global	EXTI_GetITStatus
+ 246              		.thumb
+ 247              		.thumb_func
+ 248              		.type	EXTI_GetITStatus, %function
+ 249              	EXTI_GetITStatus:
+ 250              		@ args = 0, pretend = 0, frame = 0
+ 251              		@ frame_needed = 0, uses_anonymous_args = 0
+ 252              		@ link register save eliminated.
+ 253 0000 054B     		ldr	r3, .L25	@ tmp118,
+ 254 0002 1A68     		ldr	r2, [r3]	@ D.6703, MEM[(struct EXTI_TypeDef *)1073808384B].IMR
+ 255 0004 5B69     		ldr	r3, [r3, #20]	@ D.6703, MEM[(struct EXTI_TypeDef *)1073808384B].PR
+ 256 0006 0340     		ands	r3, r0, r3	@ D.6703, EXTI_Line, D.6703
+ 257 0008 04D0     		beq	.L24	@,
+ 258 000a 1042     		tst	r0, r2	@ EXTI_Line, D.6703
+ 259 000c 0CBF     		ite	eq	@
+ 260 000e 0020     		moveq	r0, #0	@, bitstatus
+ 261 0010 0120     		movne	r0, #1	@, bitstatus
+ 262 0012 7047     		bx	lr	@
+ 263              	.L24:
+ 264 0014 1846     		mov	r0, r3	@ bitstatus, D.6703
+ 265 0016 7047     		bx	lr	@
+ 266              	.L26:
+ 267              		.align	2
+ 268              	.L25:
+ 269 0018 00040140 		.word	1073808384
+ 270              		.size	EXTI_GetITStatus, .-EXTI_GetITStatus
+ 271              		.section	.text.EXTI_ClearITPendingBit,"ax",%progbits
+ 272              		.align	2
+ 273              		.global	EXTI_ClearITPendingBit
+ 274              		.thumb
+ 275              		.thumb_func
+ 276              		.type	EXTI_ClearITPendingBit, %function
+ 277              	EXTI_ClearITPendingBit:
+ 278              		@ args = 0, pretend = 0, frame = 0
+ 279              		@ frame_needed = 0, uses_anonymous_args = 0
+ 280              		@ link register save eliminated.
+ 281 0000 014B     		ldr	r3, .L28	@ tmp111,
+ 282 0002 5861     		str	r0, [r3, #20]	@ EXTI_Line, MEM[(struct EXTI_TypeDef *)1073808384B].PR
+ 283 0004 7047     		bx	lr	@
+ 284              	.L29:
+ 285 0006 00BF     		.align	2
+ARM GAS  C:\cygwin64\tmp\cchbrTyR.s 			page 6
+
+
+ 286              	.L28:
+ 287 0008 00040140 		.word	1073808384
+ 288              		.size	EXTI_ClearITPendingBit, .-EXTI_ClearITPendingBit
+ 289              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cchbrTyR.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_exti.c
+C:\cygwin64\tmp\cchbrTyR.s:71     .text.EXTI_DeInit:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:76     .text.EXTI_DeInit:00000000 EXTI_DeInit
+C:\cygwin64\tmp\cchbrTyR.s:92     .text.EXTI_DeInit:00000014 $d
+C:\cygwin64\tmp\cchbrTyR.s:96     .text.EXTI_Init:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:101    .text.EXTI_Init:00000000 EXTI_Init
+C:\cygwin64\tmp\cchbrTyR.s:163    .text.EXTI_Init:0000007c $d
+C:\cygwin64\tmp\cchbrTyR.s:166    .text.EXTI_StructInit:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:171    .text.EXTI_StructInit:00000000 EXTI_StructInit
+C:\cygwin64\tmp\cchbrTyR.s:184    .text.EXTI_GenerateSWInterrupt:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:189    .text.EXTI_GenerateSWInterrupt:00000000 EXTI_GenerateSWInterrupt
+C:\cygwin64\tmp\cchbrTyR.s:201    .text.EXTI_GenerateSWInterrupt:0000000c $d
+C:\cygwin64\tmp\cchbrTyR.s:204    .text.EXTI_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:209    .text.EXTI_GetFlagStatus:00000000 EXTI_GetFlagStatus
+C:\cygwin64\tmp\cchbrTyR.s:223    .text.EXTI_GetFlagStatus:00000010 $d
+C:\cygwin64\tmp\cchbrTyR.s:226    .text.EXTI_ClearFlag:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:231    .text.EXTI_ClearFlag:00000000 EXTI_ClearFlag
+C:\cygwin64\tmp\cchbrTyR.s:241    .text.EXTI_ClearFlag:00000008 $d
+C:\cygwin64\tmp\cchbrTyR.s:244    .text.EXTI_GetITStatus:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:249    .text.EXTI_GetITStatus:00000000 EXTI_GetITStatus
+C:\cygwin64\tmp\cchbrTyR.s:269    .text.EXTI_GetITStatus:00000018 $d
+C:\cygwin64\tmp\cchbrTyR.s:272    .text.EXTI_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\cchbrTyR.s:277    .text.EXTI_ClearITPendingBit:00000000 EXTI_ClearITPendingBit
+C:\cygwin64\tmp\cchbrTyR.s:287    .text.EXTI_ClearITPendingBit:00000008 $d
+
+NO UNDEFINED SYMBOLS

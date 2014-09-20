@@ -1,0 +1,600 @@
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"gyro.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/gyro.d -MF out/gyro.d -MP -MQ out/gyro.o -D__USES_INITFINI__
+  25              	@ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER src/gyro.c -mcpu=cortex-m3
+  26              	@ -mthumb -auxbase-strip out/gyro.o -O2 -Wall -Wstrict-prototypes -Wextra
+  27              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  28              	@ -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.MPU6050_Init,"ax",%progbits
+  69              		.align	2
+  70              		.global	MPU6050_Init
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	MPU6050_Init, %function
+  74              	MPU6050_Init:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77 0000 10B5     		push	{r4, lr}	@
+  78 0002 FFF7FEFF 		bl	I2C1_Start	@
+  79 0006 D020     		movs	r0, #208	@,
+  80 0008 FFF7FEFF 		bl	I2C1_SendByte	@
+  81 000c FFF7FEFF 		bl	I2C1_WaitAck	@
+  82 0010 7520     		movs	r0, #117	@,
+  83 0012 FFF7FEFF 		bl	I2C1_SendByte	@
+  84 0016 FFF7FEFF 		bl	I2C1_WaitAck	@
+  85 001a FFF7FEFF 		bl	I2C1_Stop	@
+  86 001e 0120     		movs	r0, #1	@,
+  87 0020 FFF7FEFF 		bl	Delay_ms	@
+  88 0024 FFF7FEFF 		bl	I2C1_Start	@
+  89 0028 D120     		movs	r0, #209	@,
+  90 002a FFF7FEFF 		bl	I2C1_SendByte	@
+  91 002e FFF7FEFF 		bl	I2C1_WaitAck	@
+  92 0032 FFF7FEFF 		bl	I2C1_ReceiveByte	@
+  93 0036 0446     		mov	r4, r0	@ tmp113,
+  94 0038 FFF7FEFF 		bl	I2C1_NoAck	@
+  95 003c FFF7FEFF 		bl	I2C1_Stop	@
+  96 0040 682C     		cmp	r4, #104	@ tmp113,
+  97 0042 40F0CB80 		bne	.L3	@,
+  98 0046 0520     		movs	r0, #5	@,
+  99 0048 FFF7FEFF 		bl	Delay_ms	@
+ 100 004c FFF7FEFF 		bl	I2C1_Start	@
+ 101 0050 D020     		movs	r0, #208	@,
+ 102 0052 FFF7FEFF 		bl	I2C1_SendByte	@
+ 103 0056 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 104 005a 6B20     		movs	r0, #107	@,
+ 105 005c FFF7FEFF 		bl	I2C1_SendByte	@
+ 106 0060 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 107 0064 8020     		movs	r0, #128	@,
+ 108 0066 FFF7FEFF 		bl	I2C1_SendByte	@
+ 109 006a FFF7FEFF 		bl	I2C1_WaitAck	@
+ 110 006e FFF7FEFF 		bl	I2C1_Stop	@
+ 111 0072 9620     		movs	r0, #150	@,
+ 112 0074 FFF7FEFF 		bl	Delay_ms	@
+ 113 0078 FFF7FEFF 		bl	I2C1_Start	@
+ 114 007c D020     		movs	r0, #208	@,
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 3
+
+
+ 115 007e FFF7FEFF 		bl	I2C1_SendByte	@
+ 116 0082 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 117 0086 6B20     		movs	r0, #107	@,
+ 118 0088 FFF7FEFF 		bl	I2C1_SendByte	@
+ 119 008c FFF7FEFF 		bl	I2C1_WaitAck	@
+ 120 0090 0320     		movs	r0, #3	@,
+ 121 0092 FFF7FEFF 		bl	I2C1_SendByte	@
+ 122 0096 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 123 009a FFF7FEFF 		bl	I2C1_Stop	@
+ 124 009e 0520     		movs	r0, #5	@,
+ 125 00a0 FFF7FEFF 		bl	Delay_ms	@
+ 126 00a4 FFF7FEFF 		bl	I2C1_Start	@
+ 127 00a8 D020     		movs	r0, #208	@,
+ 128 00aa FFF7FEFF 		bl	I2C1_SendByte	@
+ 129 00ae FFF7FEFF 		bl	I2C1_WaitAck	@
+ 130 00b2 6C20     		movs	r0, #108	@,
+ 131 00b4 FFF7FEFF 		bl	I2C1_SendByte	@
+ 132 00b8 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 133 00bc 0020     		movs	r0, #0	@,
+ 134 00be FFF7FEFF 		bl	I2C1_SendByte	@
+ 135 00c2 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 136 00c6 FFF7FEFF 		bl	I2C1_Stop	@
+ 137 00ca 0520     		movs	r0, #5	@,
+ 138 00cc FFF7FEFF 		bl	Delay_ms	@
+ 139 00d0 FFF7FEFF 		bl	I2C1_Start	@
+ 140 00d4 D020     		movs	r0, #208	@,
+ 141 00d6 FFF7FEFF 		bl	I2C1_SendByte	@
+ 142 00da FFF7FEFF 		bl	I2C1_WaitAck	@
+ 143 00de 1920     		movs	r0, #25	@,
+ 144 00e0 FFF7FEFF 		bl	I2C1_SendByte	@
+ 145 00e4 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 146 00e8 0020     		movs	r0, #0	@,
+ 147 00ea FFF7FEFF 		bl	I2C1_SendByte	@
+ 148 00ee FFF7FEFF 		bl	I2C1_WaitAck	@
+ 149 00f2 FFF7FEFF 		bl	I2C1_Stop	@
+ 150 00f6 0520     		movs	r0, #5	@,
+ 151 00f8 FFF7FEFF 		bl	Delay_ms	@
+ 152 00fc FFF7FEFF 		bl	I2C1_Start	@
+ 153 0100 D020     		movs	r0, #208	@,
+ 154 0102 FFF7FEFF 		bl	I2C1_SendByte	@
+ 155 0106 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 156 010a 1A20     		movs	r0, #26	@,
+ 157 010c FFF7FEFF 		bl	I2C1_SendByte	@
+ 158 0110 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 159 0114 0020     		movs	r0, #0	@,
+ 160 0116 FFF7FEFF 		bl	I2C1_SendByte	@
+ 161 011a FFF7FEFF 		bl	I2C1_WaitAck	@
+ 162 011e FFF7FEFF 		bl	I2C1_Stop	@
+ 163 0122 0520     		movs	r0, #5	@,
+ 164 0124 FFF7FEFF 		bl	Delay_ms	@
+ 165 0128 FFF7FEFF 		bl	I2C1_Start	@
+ 166 012c D020     		movs	r0, #208	@,
+ 167 012e FFF7FEFF 		bl	I2C1_SendByte	@
+ 168 0132 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 169 0136 1B20     		movs	r0, #27	@,
+ 170 0138 FFF7FEFF 		bl	I2C1_SendByte	@
+ 171 013c FFF7FEFF 		bl	I2C1_WaitAck	@
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 4
+
+
+ 172 0140 0020     		movs	r0, #0	@,
+ 173 0142 FFF7FEFF 		bl	I2C1_SendByte	@
+ 174 0146 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 175 014a FFF7FEFF 		bl	I2C1_Stop	@
+ 176 014e 0520     		movs	r0, #5	@,
+ 177 0150 FFF7FEFF 		bl	Delay_ms	@
+ 178 0154 FFF7FEFF 		bl	I2C1_Start	@
+ 179 0158 D020     		movs	r0, #208	@,
+ 180 015a FFF7FEFF 		bl	I2C1_SendByte	@
+ 181 015e FFF7FEFF 		bl	I2C1_WaitAck	@
+ 182 0162 1C20     		movs	r0, #28	@,
+ 183 0164 FFF7FEFF 		bl	I2C1_SendByte	@
+ 184 0168 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 185 016c 0020     		movs	r0, #0	@,
+ 186 016e FFF7FEFF 		bl	I2C1_SendByte	@
+ 187 0172 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 188 0176 FFF7FEFF 		bl	I2C1_Stop	@
+ 189 017a 0520     		movs	r0, #5	@,
+ 190 017c FFF7FEFF 		bl	Delay_ms	@
+ 191 0180 FFF7FEFF 		bl	I2C1_Start	@
+ 192 0184 D020     		movs	r0, #208	@,
+ 193 0186 FFF7FEFF 		bl	I2C1_SendByte	@
+ 194 018a FFF7FEFF 		bl	I2C1_WaitAck	@
+ 195 018e 3720     		movs	r0, #55	@,
+ 196 0190 FFF7FEFF 		bl	I2C1_SendByte	@
+ 197 0194 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 198 0198 0020     		movs	r0, #0	@,
+ 199 019a FFF7FEFF 		bl	I2C1_SendByte	@
+ 200 019e FFF7FEFF 		bl	I2C1_WaitAck	@
+ 201 01a2 FFF7FEFF 		bl	I2C1_Stop	@
+ 202 01a6 0520     		movs	r0, #5	@,
+ 203 01a8 FFF7FEFF 		bl	Delay_ms	@
+ 204 01ac FFF7FEFF 		bl	I2C1_Start	@
+ 205 01b0 D020     		movs	r0, #208	@,
+ 206 01b2 FFF7FEFF 		bl	I2C1_SendByte	@
+ 207 01b6 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 208 01ba 3820     		movs	r0, #56	@,
+ 209 01bc FFF7FEFF 		bl	I2C1_SendByte	@
+ 210 01c0 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 211 01c4 0020     		movs	r0, #0	@,
+ 212 01c6 FFF7FEFF 		bl	I2C1_SendByte	@
+ 213 01ca FFF7FEFF 		bl	I2C1_WaitAck	@
+ 214 01ce FFF7FEFF 		bl	I2C1_Stop	@
+ 215 01d2 0520     		movs	r0, #5	@,
+ 216 01d4 FFF7FEFF 		bl	Delay_ms	@
+ 217 01d8 0020     		movs	r0, #0	@ D.5036,
+ 218 01da 10BD     		pop	{r4, pc}	@
+ 219              	.L3:
+ 220 01dc 4FF0FF30 		mov	r0, #-1	@ D.5036,
+ 221 01e0 10BD     		pop	{r4, pc}	@
+ 222              		.size	MPU6050_Init, .-MPU6050_Init
+ 223 01e2 00BF     		.section	.text.MPU6050_get,"ax",%progbits
+ 224              		.align	2
+ 225              		.global	MPU6050_get
+ 226              		.thumb
+ 227              		.thumb_func
+ 228              		.type	MPU6050_get, %function
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 5
+
+
+ 229              	MPU6050_get:
+ 230              		@ args = 0, pretend = 0, frame = 0
+ 231              		@ frame_needed = 0, uses_anonymous_args = 0
+ 232 0000 70B5     		push	{r4, r5, r6, lr}	@
+ 233 0002 224C     		ldr	r4, .L10	@ tmp122,
+ 234 0004 0023     		movs	r3, #0	@ tmp123,
+ 235 0006 2360     		str	r3, [r4]	@ tmp123, I2Cerror
+ 236 0008 0E46     		mov	r6, r1	@ read, read
+ 237 000a 0546     		mov	r5, r0	@ cmd, cmd
+ 238 000c FFF7FEFF 		bl	I2C1_Start	@
+ 239 0010 D020     		movs	r0, #208	@,
+ 240 0012 FFF7FEFF 		bl	I2C1_SendByte	@
+ 241 0016 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 242 001a 2368     		ldr	r3, [r4]	@ I2Cerror, I2Cerror
+ 243 001c 03B1     		cbz	r3, .L9	@ I2Cerror,
+ 244              	.L5:
+ 245 001e 70BD     		pop	{r4, r5, r6, pc}	@
+ 246              	.L9:
+ 247 0020 E8B2     		uxtb	r0, r5	@, cmd
+ 248 0022 FFF7FEFF 		bl	I2C1_SendByte	@
+ 249 0026 FFF7FEFF 		bl	I2C1_WaitAck	@
+ 250 002a 2368     		ldr	r3, [r4]	@ I2Cerror, I2Cerror
+ 251 002c 002B     		cmp	r3, #0	@ I2Cerror
+ 252 002e F6D1     		bne	.L5	@
+ 253 0030 FFF7FEFF 		bl	I2C1_Stop	@
+ 254 0034 FFF7FEFF 		bl	I2C1_Start	@
+ 255 0038 D120     		movs	r0, #209	@,
+ 256 003a FFF7FEFF 		bl	I2C1_SendByte	@
+ 257 003e FFF7FEFF 		bl	I2C1_WaitAck	@
+ 258 0042 2368     		ldr	r3, [r4]	@ I2Cerror, I2Cerror
+ 259 0044 002B     		cmp	r3, #0	@ I2Cerror
+ 260 0046 EAD1     		bne	.L5	@
+ 261 0048 FFF7FEFF 		bl	I2C1_ReceiveByte	@
+ 262 004c 3070     		strb	r0, [r6]	@, *read_19(D)
+ 263 004e FFF7FEFF 		bl	I2C1_Ack	@
+ 264 0052 FFF7FEFF 		bl	I2C1_ReceiveByte	@
+ 265 0056 7070     		strb	r0, [r6, #1]	@, MEM[(uint8_t *)read_19(D) + 1B]
+ 266 0058 FFF7FEFF 		bl	I2C1_Ack	@
+ 267 005c FFF7FEFF 		bl	I2C1_ReceiveByte	@
+ 268 0060 B070     		strb	r0, [r6, #2]	@, MEM[(uint8_t *)read_19(D) + 2B]
+ 269 0062 FFF7FEFF 		bl	I2C1_Ack	@
+ 270 0066 FFF7FEFF 		bl	I2C1_ReceiveByte	@
+ 271 006a F070     		strb	r0, [r6, #3]	@, MEM[(uint8_t *)read_19(D) + 3B]
+ 272 006c FFF7FEFF 		bl	I2C1_Ack	@
+ 273 0070 FFF7FEFF 		bl	I2C1_ReceiveByte	@
+ 274 0074 3071     		strb	r0, [r6, #4]	@, MEM[(uint8_t *)read_19(D) + 4B]
+ 275 0076 FFF7FEFF 		bl	I2C1_Ack	@
+ 276 007a FFF7FEFF 		bl	I2C1_ReceiveByte	@
+ 277 007e 7071     		strb	r0, [r6, #5]	@, MEM[(uint8_t *)read_19(D) + 5B]
+ 278 0080 FFF7FEFF 		bl	I2C1_NoAck	@
+ 279 0084 BDE87040 		pop	{r4, r5, r6, lr}	@
+ 280 0088 FFF7FEBF 		b	I2C1_Stop	@
+ 281              	.L11:
+ 282              		.align	2
+ 283              	.L10:
+ 284 008c 00000000 		.word	I2Cerror
+ 285              		.size	MPU6050_get, .-MPU6050_get
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 6
+
+
+ 286              		.global	__aeabi_i2f
+ 287              		.section	.text.MPU6050_ACC_get,"ax",%progbits
+ 288              		.align	2
+ 289              		.global	MPU6050_ACC_get
+ 290              		.thumb
+ 291              		.thumb_func
+ 292              		.type	MPU6050_ACC_get, %function
+ 293              	MPU6050_ACC_get:
+ 294              		@ args = 0, pretend = 0, frame = 8
+ 295              		@ frame_needed = 0, uses_anonymous_args = 0
+ 296 0000 10B5     		push	{r4, lr}	@
+ 297 0002 82B0     		sub	sp, sp, #8	@,,
+ 298 0004 0446     		mov	r4, r0	@ AccData, AccData
+ 299 0006 6946     		mov	r1, sp	@,
+ 300 0008 3B20     		movs	r0, #59	@,
+ 301 000a FFF7FEFF 		bl	MPU6050_get	@
+ 302 000e 114B     		ldr	r3, .L14	@ tmp137,
+ 303 0010 1B68     		ldr	r3, [r3]	@ I2Cerror, I2Cerror
+ 304 0012 EBB9     		cbnz	r3, .L12	@ I2Cerror,
+ 305 0014 9DF80130 		ldrb	r3, [sp, #1]	@ zero_extendqisi2	@ read, read
+ 306 0018 9DF80000 		ldrb	r0, [sp]	@ zero_extendqisi2	@ D.5046, read
+ 307 001c 43EA0020 		orr	r0, r3, r0, lsl #8	@, tmp144, read, D.5046,
+ 308 0020 00B2     		sxth	r0, r0	@, tmp144
+ 309 0022 FFF7FEFF 		bl	__aeabi_i2f	@
+ 310 0026 9DF80220 		ldrb	r2, [sp, #2]	@ zero_extendqisi2	@ D.5046, read
+ 311 002a 9DF80330 		ldrb	r3, [sp, #3]	@ zero_extendqisi2	@ read, read
+ 312 002e 2060     		str	r0, [r4]	@ float	@, *AccData_13(D)
+ 313 0030 43EA0220 		orr	r0, r3, r2, lsl #8	@, tmp152, read, D.5046,
+ 314 0034 00B2     		sxth	r0, r0	@, tmp152
+ 315 0036 FFF7FEFF 		bl	__aeabi_i2f	@
+ 316 003a 9DF80420 		ldrb	r2, [sp, #4]	@ zero_extendqisi2	@ D.5046, read
+ 317 003e 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2	@ read, read
+ 318 0042 6060     		str	r0, [r4, #4]	@ float	@, MEM[(float *)AccData_13(D) + 4B]
+ 319 0044 43EA0220 		orr	r0, r3, r2, lsl #8	@, tmp160, read, D.5046,
+ 320 0048 00B2     		sxth	r0, r0	@, tmp160
+ 321 004a FFF7FEFF 		bl	__aeabi_i2f	@
+ 322 004e A060     		str	r0, [r4, #8]	@ float	@, MEM[(float *)AccData_13(D) + 8B]
+ 323              	.L12:
+ 324 0050 02B0     		add	sp, sp, #8	@,,
+ 325              		@ sp needed	@
+ 326 0052 10BD     		pop	{r4, pc}	@
+ 327              	.L15:
+ 328              		.align	2
+ 329              	.L14:
+ 330 0054 00000000 		.word	I2Cerror
+ 331              		.size	MPU6050_ACC_get, .-MPU6050_ACC_get
+ 332              		.global	__aeabi_fsub
+ 333              		.global	__aeabi_fdiv
+ 334              		.section	.text.MPU6050_Gyro_get,"ax",%progbits
+ 335              		.align	2
+ 336              		.global	MPU6050_Gyro_get
+ 337              		.thumb
+ 338              		.thumb_func
+ 339              		.type	MPU6050_Gyro_get, %function
+ 340              	MPU6050_Gyro_get:
+ 341              		@ args = 0, pretend = 0, frame = 8
+ 342              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 7
+
+
+ 343 0000 10B5     		push	{r4, lr}	@
+ 344 0002 82B0     		sub	sp, sp, #8	@,,
+ 345 0004 0446     		mov	r4, r0	@ GyroData, GyroData
+ 346 0006 6946     		mov	r1, sp	@,
+ 347 0008 4320     		movs	r0, #67	@,
+ 348 000a FFF7FEFF 		bl	MPU6050_get	@
+ 349 000e 1F4B     		ldr	r3, .L18	@ tmp146,
+ 350 0010 1B68     		ldr	r3, [r3]	@ I2Cerror, I2Cerror
+ 351 0012 002B     		cmp	r3, #0	@ I2Cerror
+ 352 0014 38D1     		bne	.L16	@
+ 353 0016 9DF80010 		ldrb	r1, [sp]	@ zero_extendqisi2	@ D.5052, read
+ 354 001a 9DF80130 		ldrb	r3, [sp, #1]	@ zero_extendqisi2	@ read, read
+ 355 001e 1C4A     		ldr	r2, .L18+4	@ tmp154,
+ 356 0020 43EA0123 		orr	r3, r3, r1, lsl #8	@, gyroADC_ROLL.3, read, D.5052,
+ 357 0024 1380     		strh	r3, [r2]	@ movhi	@ gyroADC_ROLL.3, gyroADC_ROLL
+ 358 0026 18B2     		sxth	r0, r3	@, gyroADC_ROLL.3
+ 359 0028 FFF7FEFF 		bl	__aeabi_i2f	@
+ 360 002c 194B     		ldr	r3, .L18+8	@ tmp158,
+ 361 002e 1968     		ldr	r1, [r3]	@ float	@, gyroADC_ROLL_offset
+ 362 0030 FFF7FEFF 		bl	__aeabi_fsub	@
+ 363 0034 1849     		ldr	r1, .L18+12	@,
+ 364 0036 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 365 003a 9DF80210 		ldrb	r1, [sp, #2]	@ zero_extendqisi2	@ D.5052, read
+ 366 003e 9DF80330 		ldrb	r3, [sp, #3]	@ zero_extendqisi2	@ read, read
+ 367 0042 164A     		ldr	r2, .L18+16	@ tmp167,
+ 368 0044 43EA0123 		orr	r3, r3, r1, lsl #8	@, gyroADC_PITCH.6, read, D.5052,
+ 369 0048 1380     		strh	r3, [r2]	@ movhi	@ gyroADC_PITCH.6, gyroADC_PITCH
+ 370 004a 2060     		str	r0, [r4]	@ float	@, *GyroData_17(D)
+ 371 004c 18B2     		sxth	r0, r3	@, gyroADC_PITCH.6
+ 372 004e FFF7FEFF 		bl	__aeabi_i2f	@
+ 373 0052 134B     		ldr	r3, .L18+20	@ tmp171,
+ 374 0054 1968     		ldr	r1, [r3]	@ float	@, gyroADC_PITCH_offset
+ 375 0056 FFF7FEFF 		bl	__aeabi_fsub	@
+ 376 005a 0F49     		ldr	r1, .L18+12	@,
+ 377 005c FFF7FEFF 		bl	__aeabi_fdiv	@
+ 378 0060 9DF80410 		ldrb	r1, [sp, #4]	@ zero_extendqisi2	@ D.5052, read
+ 379 0064 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2	@ read, read
+ 380 0068 0E4A     		ldr	r2, .L18+24	@ tmp180,
+ 381 006a 43EA0123 		orr	r3, r3, r1, lsl #8	@, gyroADC_YAW.9, read, D.5052,
+ 382 006e 1380     		strh	r3, [r2]	@ movhi	@ gyroADC_YAW.9, gyroADC_YAW
+ 383 0070 6060     		str	r0, [r4, #4]	@ float	@, MEM[(float *)GyroData_17(D) + 4B]
+ 384 0072 18B2     		sxth	r0, r3	@, gyroADC_YAW.9
+ 385 0074 FFF7FEFF 		bl	__aeabi_i2f	@
+ 386 0078 0B4B     		ldr	r3, .L18+28	@ tmp184,
+ 387 007a 1968     		ldr	r1, [r3]	@ float	@, gyroADC_YAW_offset
+ 388 007c FFF7FEFF 		bl	__aeabi_fsub	@
+ 389 0080 0549     		ldr	r1, .L18+12	@,
+ 390 0082 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 391 0086 A060     		str	r0, [r4, #8]	@ float	@, MEM[(float *)GyroData_17(D) + 8B]
+ 392              	.L16:
+ 393 0088 02B0     		add	sp, sp, #8	@,,
+ 394              		@ sp needed	@
+ 395 008a 10BD     		pop	{r4, pc}	@
+ 396              	.L19:
+ 397              		.align	2
+ 398              	.L18:
+ 399 008c 00000000 		.word	I2Cerror
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 8
+
+
+ 400 0090 00000000 		.word	.LANCHOR0
+ 401 0094 00000000 		.word	.LANCHOR1
+ 402 0098 FA8DEA45 		.word	1172999674
+ 403 009c 00000000 		.word	.LANCHOR2
+ 404 00a0 00000000 		.word	.LANCHOR3
+ 405 00a4 00000000 		.word	.LANCHOR4
+ 406 00a8 00000000 		.word	.LANCHOR5
+ 407              		.size	MPU6050_Gyro_get, .-MPU6050_Gyro_get
+ 408              		.global	__aeabi_fadd
+ 409              		.section	.text.MPU6050_Gyro_calibration,"ax",%progbits
+ 410              		.align	2
+ 411              		.global	MPU6050_Gyro_calibration
+ 412              		.thumb
+ 413              		.thumb_func
+ 414              		.type	MPU6050_Gyro_calibration, %function
+ 415              	MPU6050_Gyro_calibration:
+ 416              		@ args = 0, pretend = 0, frame = 16
+ 417              		@ frame_needed = 0, uses_anonymous_args = 0
+ 418 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}	@
+ 419 0004 234E     		ldr	r6, .L23	@ tmp159,
+ 420 0006 DFF89CB0 		ldr	fp, .L23+16	@ tmp158,
+ 421 000a 234D     		ldr	r5, .L23+4	@ tmp161,
+ 422 000c DFF898A0 		ldr	r10, .L23+20	@ tmp160,
+ 423 0010 224C     		ldr	r4, .L23+8	@ tmp163,
+ 424 0012 DFF89890 		ldr	r9, .L23+24	@ tmp162,
+ 425 0016 85B0     		sub	sp, sp, #20	@,,
+ 426 0018 4FF09608 		mov	r8, #150	@ D.5065,
+ 427              	.L22:
+ 428 001c 01A8     		add	r0, sp, #4	@,,
+ 429 001e FFF7FEFF 		bl	MPU6050_Gyro_get	@
+ 430 0022 BBF90000 		ldrsh	r0, [fp]	@, gyroADC_ROLL
+ 431 0026 FFF7FEFF 		bl	__aeabi_i2f	@
+ 432 002a 3168     		ldr	r1, [r6]	@ float	@, gyroADC_ROLL_offset
+ 433 002c FFF7FEFF 		bl	__aeabi_fadd	@
+ 434 0030 3060     		str	r0, [r6]	@ float	@, gyroADC_ROLL_offset
+ 435 0032 BAF90000 		ldrsh	r0, [r10]	@, gyroADC_PITCH
+ 436 0036 FFF7FEFF 		bl	__aeabi_i2f	@
+ 437 003a 2968     		ldr	r1, [r5]	@ float	@, gyroADC_PITCH_offset
+ 438 003c FFF7FEFF 		bl	__aeabi_fadd	@
+ 439 0040 2860     		str	r0, [r5]	@ float	@, gyroADC_PITCH_offset
+ 440 0042 B9F90000 		ldrsh	r0, [r9]	@, gyroADC_YAW
+ 441 0046 FFF7FEFF 		bl	__aeabi_i2f	@
+ 442 004a 2168     		ldr	r1, [r4]	@ float	@, gyroADC_YAW_offset
+ 443 004c FFF7FEFF 		bl	__aeabi_fadd	@
+ 444 0050 2060     		str	r0, [r4]	@ float	@, gyroADC_YAW_offset
+ 445 0052 0220     		movs	r0, #2	@,
+ 446 0054 FFF7FEFF 		bl	Delay_ms	@
+ 447 0058 B8F10108 		subs	r8, r8, #1	@ D.5065, D.5065,
+ 448 005c 0F4F     		ldr	r7, .L23+8	@ tmp142,
+ 449 005e DDD1     		bne	.L22	@,
+ 450 0060 0C4B     		ldr	r3, .L23	@,
+ 451 0062 0F49     		ldr	r1, .L23+12	@,
+ 452 0064 1868     		ldr	r0, [r3]	@ float	@, gyroADC_ROLL_offset
+ 453 0066 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 454 006a 0A4B     		ldr	r3, .L23	@,
+ 455 006c 0C49     		ldr	r1, .L23+12	@,
+ 456 006e 1860     		str	r0, [r3]	@ float	@, gyroADC_ROLL_offset
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 9
+
+
+ 457 0070 094B     		ldr	r3, .L23+4	@,
+ 458 0072 1868     		ldr	r0, [r3]	@ float	@, gyroADC_PITCH_offset
+ 459 0074 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 460 0078 074B     		ldr	r3, .L23+4	@,
+ 461 007a 0949     		ldr	r1, .L23+12	@,
+ 462 007c 1860     		str	r0, [r3]	@ float	@, gyroADC_PITCH_offset
+ 463 007e 3868     		ldr	r0, [r7]	@ float	@, gyroADC_YAW_offset
+ 464 0080 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 465 0084 3860     		str	r0, [r7]	@ float	@, gyroADC_YAW_offset
+ 466 0086 0520     		movs	r0, #5	@,
+ 467 0088 FFF7FEFF 		bl	Delay_ms	@
+ 468 008c 05B0     		add	sp, sp, #20	@,,
+ 469              		@ sp needed	@
+ 470 008e BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}	@
+ 471              	.L24:
+ 472 0092 00BF     		.align	2
+ 473              	.L23:
+ 474 0094 00000000 		.word	.LANCHOR1
+ 475 0098 00000000 		.word	.LANCHOR3
+ 476 009c 00000000 		.word	.LANCHOR5
+ 477 00a0 00001643 		.word	1125515264
+ 478 00a4 00000000 		.word	.LANCHOR0
+ 479 00a8 00000000 		.word	.LANCHOR2
+ 480 00ac 00000000 		.word	.LANCHOR4
+ 481              		.size	MPU6050_Gyro_calibration, .-MPU6050_Gyro_calibration
+ 482              		.section	.bss.gyroADC_PITCH,"aw",%nobits
+ 483              		.align	1
+ 484              		.set	.LANCHOR2,. + 0
+ 485              		.type	gyroADC_PITCH, %object
+ 486              		.size	gyroADC_PITCH, 2
+ 487              	gyroADC_PITCH:
+ 488 0000 0000     		.space	2
+ 489              		.section	.bss.gyroADC_YAW_offset,"aw",%nobits
+ 490              		.align	2
+ 491              		.set	.LANCHOR5,. + 0
+ 492              		.type	gyroADC_YAW_offset, %object
+ 493              		.size	gyroADC_YAW_offset, 4
+ 494              	gyroADC_YAW_offset:
+ 495 0000 00000000 		.space	4
+ 496              		.section	.bss.gyroADC_ROLL,"aw",%nobits
+ 497              		.align	1
+ 498              		.set	.LANCHOR0,. + 0
+ 499              		.type	gyroADC_ROLL, %object
+ 500              		.size	gyroADC_ROLL, 2
+ 501              	gyroADC_ROLL:
+ 502 0000 0000     		.space	2
+ 503              		.section	.bss.gyroADC_YAW,"aw",%nobits
+ 504              		.align	1
+ 505              		.set	.LANCHOR4,. + 0
+ 506              		.type	gyroADC_YAW, %object
+ 507              		.size	gyroADC_YAW, 2
+ 508              	gyroADC_YAW:
+ 509 0000 0000     		.space	2
+ 510              		.section	.bss.gyroADC_ROLL_offset,"aw",%nobits
+ 511              		.align	2
+ 512              		.set	.LANCHOR1,. + 0
+ 513              		.type	gyroADC_ROLL_offset, %object
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 10
+
+
+ 514              		.size	gyroADC_ROLL_offset, 4
+ 515              	gyroADC_ROLL_offset:
+ 516 0000 00000000 		.space	4
+ 517              		.section	.bss.gyroADC_PITCH_offset,"aw",%nobits
+ 518              		.align	2
+ 519              		.set	.LANCHOR3,. + 0
+ 520              		.type	gyroADC_PITCH_offset, %object
+ 521              		.size	gyroADC_PITCH_offset, 4
+ 522              	gyroADC_PITCH_offset:
+ 523 0000 00000000 		.space	4
+ 524              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cc5u3Hra.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 gyro.c
+C:\cygwin64\tmp\cc5u3Hra.s:69     .text.MPU6050_Init:00000000 $t
+C:\cygwin64\tmp\cc5u3Hra.s:74     .text.MPU6050_Init:00000000 MPU6050_Init
+C:\cygwin64\tmp\cc5u3Hra.s:224    .text.MPU6050_get:00000000 $t
+C:\cygwin64\tmp\cc5u3Hra.s:229    .text.MPU6050_get:00000000 MPU6050_get
+C:\cygwin64\tmp\cc5u3Hra.s:284    .text.MPU6050_get:0000008c $d
+C:\cygwin64\tmp\cc5u3Hra.s:288    .text.MPU6050_ACC_get:00000000 $t
+C:\cygwin64\tmp\cc5u3Hra.s:293    .text.MPU6050_ACC_get:00000000 MPU6050_ACC_get
+C:\cygwin64\tmp\cc5u3Hra.s:330    .text.MPU6050_ACC_get:00000054 $d
+C:\cygwin64\tmp\cc5u3Hra.s:335    .text.MPU6050_Gyro_get:00000000 $t
+C:\cygwin64\tmp\cc5u3Hra.s:340    .text.MPU6050_Gyro_get:00000000 MPU6050_Gyro_get
+C:\cygwin64\tmp\cc5u3Hra.s:399    .text.MPU6050_Gyro_get:0000008c $d
+C:\cygwin64\tmp\cc5u3Hra.s:410    .text.MPU6050_Gyro_calibration:00000000 $t
+C:\cygwin64\tmp\cc5u3Hra.s:415    .text.MPU6050_Gyro_calibration:00000000 MPU6050_Gyro_calibration
+C:\cygwin64\tmp\cc5u3Hra.s:474    .text.MPU6050_Gyro_calibration:00000094 $d
+C:\cygwin64\tmp\cc5u3Hra.s:483    .bss.gyroADC_PITCH:00000000 $d
+C:\cygwin64\tmp\cc5u3Hra.s:487    .bss.gyroADC_PITCH:00000000 gyroADC_PITCH
+C:\cygwin64\tmp\cc5u3Hra.s:490    .bss.gyroADC_YAW_offset:00000000 $d
+C:\cygwin64\tmp\cc5u3Hra.s:494    .bss.gyroADC_YAW_offset:00000000 gyroADC_YAW_offset
+C:\cygwin64\tmp\cc5u3Hra.s:497    .bss.gyroADC_ROLL:00000000 $d
+C:\cygwin64\tmp\cc5u3Hra.s:501    .bss.gyroADC_ROLL:00000000 gyroADC_ROLL
+C:\cygwin64\tmp\cc5u3Hra.s:504    .bss.gyroADC_YAW:00000000 $d
+C:\cygwin64\tmp\cc5u3Hra.s:508    .bss.gyroADC_YAW:00000000 gyroADC_YAW
+C:\cygwin64\tmp\cc5u3Hra.s:511    .bss.gyroADC_ROLL_offset:00000000 $d
+C:\cygwin64\tmp\cc5u3Hra.s:515    .bss.gyroADC_ROLL_offset:00000000 gyroADC_ROLL_offset
+C:\cygwin64\tmp\cc5u3Hra.s:518    .bss.gyroADC_PITCH_offset:00000000 $d
+C:\cygwin64\tmp\cc5u3Hra.s:522    .bss.gyroADC_PITCH_offset:00000000 gyroADC_PITCH_offset
+
+UNDEFINED SYMBOLS
+I2C1_Start
+I2C1_SendByte
+I2C1_WaitAck
+I2C1_Stop
+Delay_ms
+I2C1_ReceiveByte
+I2C1_NoAck
+I2C1_Ack
+I2Cerror
+__aeabi_i2f
+__aeabi_fsub
+__aeabi_fdiv
+__aeabi_fadd

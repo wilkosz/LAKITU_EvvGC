@@ -1,0 +1,833 @@
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_sdio.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_sdio.d -MF out/stm32f10x_sdio.d -MP
+  25              	@ -MQ out/stm32f10x_sdio.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_sdio.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.SDIO_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	SDIO_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	SDIO_DeInit, %function
+  76              	SDIO_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		@ link register save eliminated.
+  80 0000 064B     		ldr	r3, .L2	@ tmp110,
+  81 0002 0749     		ldr	r1, .L2+4	@ tmp125,
+  82 0004 0022     		movs	r2, #0	@ tmp111,
+  83 0006 1A60     		str	r2, [r3]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].POWER
+  84 0008 5A60     		str	r2, [r3, #4]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR
+  85 000a 9A60     		str	r2, [r3, #8]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].ARG
+  86 000c DA60     		str	r2, [r3, #12]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].CMD
+  87 000e 5A62     		str	r2, [r3, #36]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].DTIMER
+  88 0010 9A62     		str	r2, [r3, #40]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].DLEN
+  89 0012 DA62     		str	r2, [r3, #44]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL
+  90 0014 9963     		str	r1, [r3, #56]	@ tmp125, MEM[(struct SDIO_TypeDef *)1073840128B].ICR
+  91 0016 DA63     		str	r2, [r3, #60]	@ tmp111, MEM[(struct SDIO_TypeDef *)1073840128B].MASK
+  92 0018 7047     		bx	lr	@
+  93              	.L3:
+  94 001a 00BF     		.align	2
+  95              	.L2:
+  96 001c 00800140 		.word	1073840128
+  97 0020 FF07C000 		.word	12584959
+  98              		.size	SDIO_DeInit, .-SDIO_DeInit
+  99              		.section	.text.SDIO_Init,"ax",%progbits
+ 100              		.align	2
+ 101              		.global	SDIO_Init
+ 102              		.thumb
+ 103              		.thumb_func
+ 104              		.type	SDIO_Init, %function
+ 105              	SDIO_Init:
+ 106              		@ args = 0, pretend = 0, frame = 0
+ 107              		@ frame_needed = 0, uses_anonymous_args = 0
+ 108              		@ link register save eliminated.
+ 109 0000 30B4     		push	{r4, r5}	@
+ 110 0002 8368     		ldr	r3, [r0, #8]	@ SDIO_InitStruct_4(D)->SDIO_ClockPowerSave, SDIO_InitStruct_4(D)->SDIO_ClockPowe
+ 111 0004 4468     		ldr	r4, [r0, #4]	@ SDIO_InitStruct_4(D)->SDIO_ClockBypass, SDIO_InitStruct_4(D)->SDIO_ClockBypass
+ 112 0006 094A     		ldr	r2, .L5	@ tmp126,
+ 113 0008 C168     		ldr	r1, [r0, #12]	@ SDIO_InitStruct_4(D)->SDIO_BusWide, SDIO_InitStruct_4(D)->SDIO_BusWide
+ 114 000a 5568     		ldr	r5, [r2, #4]	@ tmpreg, MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 3
+
+
+ 115 000c 2343     		orrs	r3, r3, r4	@, D.6848, SDIO_InitStruct_4(D)->SDIO_ClockPowerSave, SDIO_InitStruct_4(D)->SDIO_C
+ 116 000e 0468     		ldr	r4, [r0]	@ SDIO_InitStruct_4(D)->SDIO_ClockEdge, SDIO_InitStruct_4(D)->SDIO_ClockEdge
+ 117 0010 0B43     		orrs	r3, r3, r1	@, D.6848, D.6848, SDIO_InitStruct_4(D)->SDIO_BusWide
+ 118 0012 0169     		ldr	r1, [r0, #16]	@ SDIO_InitStruct_4(D)->SDIO_HardwareFlowControl, SDIO_InitStruct_4(D)->SDIO_Har
+ 119 0014 1C43     		orrs	r4, r4, r3	@, D.6848, SDIO_InitStruct_4(D)->SDIO_ClockEdge, D.6848
+ 120 0016 25F4FD43 		bic	r3, r5, #32384	@ tmpreg, tmpreg,
+ 121 001a 2143     		orrs	r1, r1, r4	@, D.6848, SDIO_InitStruct_4(D)->SDIO_HardwareFlowControl, D.6848
+ 122 001c 007D     		ldrb	r0, [r0, #20]	@ zero_extendqisi2	@ D.6848, SDIO_InitStruct_4(D)->SDIO_ClockDiv
+ 123 001e 23F07F03 		bic	r3, r3, #127	@ tmpreg, tmpreg,
+ 124 0022 0B43     		orrs	r3, r3, r1	@, D.6848, tmpreg, D.6848
+ 125 0024 0343     		orrs	r3, r3, r0	@, tmpreg, D.6848, D.6848
+ 126 0026 5360     		str	r3, [r2, #4]	@ tmpreg, MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR
+ 127 0028 30BC     		pop	{r4, r5}	@
+ 128 002a 7047     		bx	lr	@
+ 129              	.L6:
+ 130              		.align	2
+ 131              	.L5:
+ 132 002c 00800140 		.word	1073840128
+ 133              		.size	SDIO_Init, .-SDIO_Init
+ 134              		.section	.text.SDIO_StructInit,"ax",%progbits
+ 135              		.align	2
+ 136              		.global	SDIO_StructInit
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.type	SDIO_StructInit, %function
+ 140              	SDIO_StructInit:
+ 141              		@ args = 0, pretend = 0, frame = 0
+ 142              		@ frame_needed = 0, uses_anonymous_args = 0
+ 143              		@ link register save eliminated.
+ 144 0000 0023     		movs	r3, #0	@ tmp111,
+ 145 0002 0375     		strb	r3, [r0, #20]	@ tmp111, SDIO_InitStruct_2(D)->SDIO_ClockDiv
+ 146 0004 0360     		str	r3, [r0]	@ tmp111, SDIO_InitStruct_2(D)->SDIO_ClockEdge
+ 147 0006 4360     		str	r3, [r0, #4]	@ tmp111, SDIO_InitStruct_2(D)->SDIO_ClockBypass
+ 148 0008 8360     		str	r3, [r0, #8]	@ tmp111, SDIO_InitStruct_2(D)->SDIO_ClockPowerSave
+ 149 000a C360     		str	r3, [r0, #12]	@ tmp111, SDIO_InitStruct_2(D)->SDIO_BusWide
+ 150 000c 0361     		str	r3, [r0, #16]	@ tmp111, SDIO_InitStruct_2(D)->SDIO_HardwareFlowControl
+ 151 000e 7047     		bx	lr	@
+ 152              		.size	SDIO_StructInit, .-SDIO_StructInit
+ 153              		.section	.text.SDIO_ClockCmd,"ax",%progbits
+ 154              		.align	2
+ 155              		.global	SDIO_ClockCmd
+ 156              		.thumb
+ 157              		.thumb_func
+ 158              		.type	SDIO_ClockCmd, %function
+ 159              	SDIO_ClockCmd:
+ 160              		@ args = 0, pretend = 0, frame = 0
+ 161              		@ frame_needed = 0, uses_anonymous_args = 0
+ 162              		@ link register save eliminated.
+ 163 0000 014B     		ldr	r3, .L9	@ tmp112,
+ 164 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110442144B]
+ 165 0004 7047     		bx	lr	@
+ 166              	.L10:
+ 167 0006 00BF     		.align	2
+ 168              	.L9:
+ 169 0008 A0003042 		.word	1110442144
+ 170              		.size	SDIO_ClockCmd, .-SDIO_ClockCmd
+ 171              		.section	.text.SDIO_SetPowerState,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 4
+
+
+ 172              		.align	2
+ 173              		.global	SDIO_SetPowerState
+ 174              		.thumb
+ 175              		.thumb_func
+ 176              		.type	SDIO_SetPowerState, %function
+ 177              	SDIO_SetPowerState:
+ 178              		@ args = 0, pretend = 0, frame = 0
+ 179              		@ frame_needed = 0, uses_anonymous_args = 0
+ 180              		@ link register save eliminated.
+ 181 0000 014B     		ldr	r3, .L12	@ tmp111,
+ 182 0002 1860     		str	r0, [r3]	@ SDIO_PowerState, MEM[(struct SDIO_TypeDef *)1073840128B].POWER
+ 183 0004 7047     		bx	lr	@
+ 184              	.L13:
+ 185 0006 00BF     		.align	2
+ 186              	.L12:
+ 187 0008 00800140 		.word	1073840128
+ 188              		.size	SDIO_SetPowerState, .-SDIO_SetPowerState
+ 189              		.section	.text.SDIO_GetPowerState,"ax",%progbits
+ 190              		.align	2
+ 191              		.global	SDIO_GetPowerState
+ 192              		.thumb
+ 193              		.thumb_func
+ 194              		.type	SDIO_GetPowerState, %function
+ 195              	SDIO_GetPowerState:
+ 196              		@ args = 0, pretend = 0, frame = 0
+ 197              		@ frame_needed = 0, uses_anonymous_args = 0
+ 198              		@ link register save eliminated.
+ 199 0000 024B     		ldr	r3, .L15	@ tmp113,
+ 200 0002 1868     		ldr	r0, [r3]	@ D.6858, MEM[(struct SDIO_TypeDef *)1073840128B].POWER
+ 201 0004 00F00300 		and	r0, r0, #3	@, D.6858,
+ 202 0008 7047     		bx	lr	@
+ 203              	.L16:
+ 204 000a 00BF     		.align	2
+ 205              	.L15:
+ 206 000c 00800140 		.word	1073840128
+ 207              		.size	SDIO_GetPowerState, .-SDIO_GetPowerState
+ 208              		.section	.text.SDIO_ITConfig,"ax",%progbits
+ 209              		.align	2
+ 210              		.global	SDIO_ITConfig
+ 211              		.thumb
+ 212              		.thumb_func
+ 213              		.type	SDIO_ITConfig, %function
+ 214              	SDIO_ITConfig:
+ 215              		@ args = 0, pretend = 0, frame = 0
+ 216              		@ frame_needed = 0, uses_anonymous_args = 0
+ 217              		@ link register save eliminated.
+ 218 0000 044B     		ldr	r3, .L22	@ tmp117,
+ 219 0002 DA6B     		ldr	r2, [r3, #60]	@ D.6862,
+ 220 0004 19B9     		cbnz	r1, .L21	@ NewState,
+ 221 0006 22EA0000 		bic	r0, r2, r0	@ D.6862, D.6862, SDIO_IT
+ 222 000a D863     		str	r0, [r3, #60]	@ D.6862,
+ 223 000c 7047     		bx	lr	@
+ 224              	.L21:
+ 225 000e 1043     		orrs	r0, r0, r2	@, D.6862, SDIO_IT, D.6862
+ 226 0010 D863     		str	r0, [r3, #60]	@ D.6862,
+ 227 0012 7047     		bx	lr	@
+ 228              	.L23:
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 5
+
+
+ 229              		.align	2
+ 230              	.L22:
+ 231 0014 00800140 		.word	1073840128
+ 232              		.size	SDIO_ITConfig, .-SDIO_ITConfig
+ 233              		.section	.text.SDIO_DMACmd,"ax",%progbits
+ 234              		.align	2
+ 235              		.global	SDIO_DMACmd
+ 236              		.thumb
+ 237              		.thumb_func
+ 238              		.type	SDIO_DMACmd, %function
+ 239              	SDIO_DMACmd:
+ 240              		@ args = 0, pretend = 0, frame = 0
+ 241              		@ frame_needed = 0, uses_anonymous_args = 0
+ 242              		@ link register save eliminated.
+ 243 0000 014B     		ldr	r3, .L25	@ tmp112,
+ 244 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110443404B]
+ 245 0004 7047     		bx	lr	@
+ 246              	.L26:
+ 247 0006 00BF     		.align	2
+ 248              	.L25:
+ 249 0008 8C053042 		.word	1110443404
+ 250              		.size	SDIO_DMACmd, .-SDIO_DMACmd
+ 251              		.section	.text.SDIO_SendCommand,"ax",%progbits
+ 252              		.align	2
+ 253              		.global	SDIO_SendCommand
+ 254              		.thumb
+ 255              		.thumb_func
+ 256              		.type	SDIO_SendCommand, %function
+ 257              	SDIO_SendCommand:
+ 258              		@ args = 0, pretend = 0, frame = 0
+ 259              		@ frame_needed = 0, uses_anonymous_args = 0
+ 260              		@ link register save eliminated.
+ 261 0000 0268     		ldr	r2, [r0]	@ D.6868, SDIO_CmdInitStruct_2(D)->SDIO_Argument
+ 262 0002 094B     		ldr	r3, .L28	@ tmp122,
+ 263 0004 30B4     		push	{r4, r5}	@
+ 264 0006 9A60     		str	r2, [r3, #8]	@ D.6868, MEM[(struct SDIO_TypeDef *)1073840128B].ARG
+ 265 0008 011D     		adds	r1, r0, #4	@,,
+ 266 000a DA68     		ldr	r2, [r3, #12]	@ tmpreg, MEM[(struct SDIO_TypeDef *)1073840128B].CMD
+ 267 000c 32C9     		ldmia	r1, {r1, r4, r5}	@,,,
+ 268 000e 0069     		ldr	r0, [r0, #16]	@ SDIO_CmdInitStruct_2(D)->SDIO_CPSM, SDIO_CmdInitStruct_2(D)->SDIO_CPSM
+ 269 0010 2143     		orrs	r1, r1, r4	@, D.6868, SDIO_CmdInitStruct_2(D)->SDIO_CmdIndex, SDIO_CmdInitStruct_2(D)->SDIO_R
+ 270 0012 2943     		orrs	r1, r1, r5	@, D.6868, D.6868, SDIO_CmdInitStruct_2(D)->SDIO_Wait
+ 271 0014 22F4FF62 		bic	r2, r2, #2040	@ tmpreg, tmpreg,
+ 272 0018 0143     		orrs	r1, r1, r0	@, D.6868, D.6868, SDIO_CmdInitStruct_2(D)->SDIO_CPSM
+ 273 001a 22F00702 		bic	r2, r2, #7	@ tmpreg, tmpreg,
+ 274 001e 0A43     		orrs	r2, r2, r1	@, tmpreg, tmpreg, D.6868
+ 275 0020 DA60     		str	r2, [r3, #12]	@ tmpreg, MEM[(struct SDIO_TypeDef *)1073840128B].CMD
+ 276 0022 30BC     		pop	{r4, r5}	@
+ 277 0024 7047     		bx	lr	@
+ 278              	.L29:
+ 279 0026 00BF     		.align	2
+ 280              	.L28:
+ 281 0028 00800140 		.word	1073840128
+ 282              		.size	SDIO_SendCommand, .-SDIO_SendCommand
+ 283              		.section	.text.SDIO_CmdStructInit,"ax",%progbits
+ 284              		.align	2
+ 285              		.global	SDIO_CmdStructInit
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 6
+
+
+ 286              		.thumb
+ 287              		.thumb_func
+ 288              		.type	SDIO_CmdStructInit, %function
+ 289              	SDIO_CmdStructInit:
+ 290              		@ args = 0, pretend = 0, frame = 0
+ 291              		@ frame_needed = 0, uses_anonymous_args = 0
+ 292              		@ link register save eliminated.
+ 293 0000 0023     		movs	r3, #0	@ tmp111,
+ 294 0002 0360     		str	r3, [r0]	@ tmp111, SDIO_CmdInitStruct_2(D)->SDIO_Argument
+ 295 0004 4360     		str	r3, [r0, #4]	@ tmp111, SDIO_CmdInitStruct_2(D)->SDIO_CmdIndex
+ 296 0006 8360     		str	r3, [r0, #8]	@ tmp111, SDIO_CmdInitStruct_2(D)->SDIO_Response
+ 297 0008 C360     		str	r3, [r0, #12]	@ tmp111, SDIO_CmdInitStruct_2(D)->SDIO_Wait
+ 298 000a 0361     		str	r3, [r0, #16]	@ tmp111, SDIO_CmdInitStruct_2(D)->SDIO_CPSM
+ 299 000c 7047     		bx	lr	@
+ 300              		.size	SDIO_CmdStructInit, .-SDIO_CmdStructInit
+ 301 000e 00BF     		.section	.text.SDIO_GetCommandResponse,"ax",%progbits
+ 302              		.align	2
+ 303              		.global	SDIO_GetCommandResponse
+ 304              		.thumb
+ 305              		.thumb_func
+ 306              		.type	SDIO_GetCommandResponse, %function
+ 307              	SDIO_GetCommandResponse:
+ 308              		@ args = 0, pretend = 0, frame = 0
+ 309              		@ frame_needed = 0, uses_anonymous_args = 0
+ 310              		@ link register save eliminated.
+ 311 0000 014B     		ldr	r3, .L32	@ tmp113,
+ 312 0002 1869     		ldr	r0, [r3, #16]	@ D.6873, MEM[(struct SDIO_TypeDef *)1073840128B].RESPCMD
+ 313 0004 C0B2     		uxtb	r0, r0	@, D.6873
+ 314 0006 7047     		bx	lr	@
+ 315              	.L33:
+ 316              		.align	2
+ 317              	.L32:
+ 318 0008 00800140 		.word	1073840128
+ 319              		.size	SDIO_GetCommandResponse, .-SDIO_GetCommandResponse
+ 320              		.section	.text.SDIO_GetResponse,"ax",%progbits
+ 321              		.align	2
+ 322              		.global	SDIO_GetResponse
+ 323              		.thumb
+ 324              		.thumb_func
+ 325              		.type	SDIO_GetResponse, %function
+ 326              	SDIO_GetResponse:
+ 327              		@ args = 0, pretend = 0, frame = 8
+ 328              		@ frame_needed = 0, uses_anonymous_args = 0
+ 329              		@ link register save eliminated.
+ 330 0000 044B     		ldr	r3, .L35	@ tmp.0,
+ 331 0002 82B0     		sub	sp, sp, #8	@,,
+ 332 0004 0344     		add	r3, r3, r0	@ tmp.0, SDIO_RESP
+ 333 0006 0022     		movs	r2, #0	@ tmp116,
+ 334 0008 0192     		str	r2, [sp, #4]	@ tmp116, tmp
+ 335 000a 0193     		str	r3, [sp, #4]	@ tmp.0, tmp
+ 336 000c 019B     		ldr	r3, [sp, #4]	@ tmp.1, tmp
+ 337 000e 1868     		ldr	r0, [r3]	@ D.6877, *tmp.2_7
+ 338 0010 02B0     		add	sp, sp, #8	@,,
+ 339              		@ sp needed	@
+ 340 0012 7047     		bx	lr	@
+ 341              	.L36:
+ 342              		.align	2
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 7
+
+
+ 343              	.L35:
+ 344 0014 14800140 		.word	1073840148
+ 345              		.size	SDIO_GetResponse, .-SDIO_GetResponse
+ 346              		.section	.text.SDIO_DataConfig,"ax",%progbits
+ 347              		.align	2
+ 348              		.global	SDIO_DataConfig
+ 349              		.thumb
+ 350              		.thumb_func
+ 351              		.type	SDIO_DataConfig, %function
+ 352              	SDIO_DataConfig:
+ 353              		@ args = 0, pretend = 0, frame = 0
+ 354              		@ frame_needed = 0, uses_anonymous_args = 0
+ 355              		@ link register save eliminated.
+ 356 0000 0268     		ldr	r2, [r0]	@ D.6880, SDIO_DataInitStruct_2(D)->SDIO_DataTimeOut
+ 357 0002 094B     		ldr	r3, .L38	@ tmp123,
+ 358 0004 30B4     		push	{r4, r5}	@
+ 359 0006 5A62     		str	r2, [r3, #36]	@ D.6880, MEM[(struct SDIO_TypeDef *)1073840128B].DTIMER
+ 360 0008 4268     		ldr	r2, [r0, #4]	@ D.6880, SDIO_DataInitStruct_2(D)->SDIO_DataLength
+ 361 000a 9A62     		str	r2, [r3, #40]	@ D.6880, MEM[(struct SDIO_TypeDef *)1073840128B].DLEN
+ 362 000c C168     		ldr	r1, [r0, #12]	@ SDIO_DataInitStruct_2(D)->SDIO_TransferDir, SDIO_DataInitStruct_2(D)->SDIO_Tra
+ 363 000e 8268     		ldr	r2, [r0, #8]	@ SDIO_DataInitStruct_2(D)->SDIO_DataBlockSize, SDIO_DataInitStruct_2(D)->SDIO_Da
+ 364 0010 0569     		ldr	r5, [r0, #16]	@ SDIO_DataInitStruct_2(D)->SDIO_TransferMode, SDIO_DataInitStruct_2(D)->SDIO_Tr
+ 365 0012 4469     		ldr	r4, [r0, #20]	@ SDIO_DataInitStruct_2(D)->SDIO_DPSM, SDIO_DataInitStruct_2(D)->SDIO_DPSM
+ 366 0014 0A43     		orrs	r2, r2, r1	@, D.6880, SDIO_DataInitStruct_2(D)->SDIO_DataBlockSize, SDIO_DataInitStruct_2(D)-
+ 367 0016 D86A     		ldr	r0, [r3, #44]	@ tmpreg, MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL
+ 368 0018 2A43     		orrs	r2, r2, r5	@, D.6880, D.6880, SDIO_DataInitStruct_2(D)->SDIO_TransferMode
+ 369 001a 2243     		orrs	r2, r2, r4	@, D.6880, D.6880, SDIO_DataInitStruct_2(D)->SDIO_DPSM
+ 370 001c 20F0F700 		bic	r0, r0, #247	@ tmpreg, tmpreg,
+ 371 0020 0243     		orrs	r2, r2, r0	@, tmpreg, D.6880, tmpreg
+ 372 0022 DA62     		str	r2, [r3, #44]	@ tmpreg, MEM[(struct SDIO_TypeDef *)1073840128B].DCTRL
+ 373 0024 30BC     		pop	{r4, r5}	@
+ 374 0026 7047     		bx	lr	@
+ 375              	.L39:
+ 376              		.align	2
+ 377              	.L38:
+ 378 0028 00800140 		.word	1073840128
+ 379              		.size	SDIO_DataConfig, .-SDIO_DataConfig
+ 380              		.section	.text.SDIO_DataStructInit,"ax",%progbits
+ 381              		.align	2
+ 382              		.global	SDIO_DataStructInit
+ 383              		.thumb
+ 384              		.thumb_func
+ 385              		.type	SDIO_DataStructInit, %function
+ 386              	SDIO_DataStructInit:
+ 387              		@ args = 0, pretend = 0, frame = 0
+ 388              		@ frame_needed = 0, uses_anonymous_args = 0
+ 389              		@ link register save eliminated.
+ 390 0000 0023     		movs	r3, #0	@ tmp112,
+ 391 0002 4FF0FF32 		mov	r2, #-1	@ tmp111,
+ 392 0006 80E80C00 		stmia	r0, {r2, r3}	@ SDIO_DataInitStruct,,
+ 393 000a 8360     		str	r3, [r0, #8]	@ tmp112, SDIO_DataInitStruct_2(D)->SDIO_DataBlockSize
+ 394 000c C360     		str	r3, [r0, #12]	@ tmp112, SDIO_DataInitStruct_2(D)->SDIO_TransferDir
+ 395 000e 0361     		str	r3, [r0, #16]	@ tmp112, SDIO_DataInitStruct_2(D)->SDIO_TransferMode
+ 396 0010 4361     		str	r3, [r0, #20]	@ tmp112, SDIO_DataInitStruct_2(D)->SDIO_DPSM
+ 397 0012 7047     		bx	lr	@
+ 398              		.size	SDIO_DataStructInit, .-SDIO_DataStructInit
+ 399              		.section	.text.SDIO_GetDataCounter,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 8
+
+
+ 400              		.align	2
+ 401              		.global	SDIO_GetDataCounter
+ 402              		.thumb
+ 403              		.thumb_func
+ 404              		.type	SDIO_GetDataCounter, %function
+ 405              	SDIO_GetDataCounter:
+ 406              		@ args = 0, pretend = 0, frame = 0
+ 407              		@ frame_needed = 0, uses_anonymous_args = 0
+ 408              		@ link register save eliminated.
+ 409 0000 014B     		ldr	r3, .L42	@ tmp112,
+ 410 0002 186B     		ldr	r0, [r3, #48]	@ D.6885, MEM[(struct SDIO_TypeDef *)1073840128B].DCOUNT
+ 411 0004 7047     		bx	lr	@
+ 412              	.L43:
+ 413 0006 00BF     		.align	2
+ 414              	.L42:
+ 415 0008 00800140 		.word	1073840128
+ 416              		.size	SDIO_GetDataCounter, .-SDIO_GetDataCounter
+ 417              		.section	.text.SDIO_ReadData,"ax",%progbits
+ 418              		.align	2
+ 419              		.global	SDIO_ReadData
+ 420              		.thumb
+ 421              		.thumb_func
+ 422              		.type	SDIO_ReadData, %function
+ 423              	SDIO_ReadData:
+ 424              		@ args = 0, pretend = 0, frame = 0
+ 425              		@ frame_needed = 0, uses_anonymous_args = 0
+ 426              		@ link register save eliminated.
+ 427 0000 014B     		ldr	r3, .L45	@ tmp112,
+ 428 0002 D3F88000 		ldr	r0, [r3, #128]	@ D.6888, MEM[(struct SDIO_TypeDef *)1073840128B].FIFO
+ 429 0006 7047     		bx	lr	@
+ 430              	.L46:
+ 431              		.align	2
+ 432              	.L45:
+ 433 0008 00800140 		.word	1073840128
+ 434              		.size	SDIO_ReadData, .-SDIO_ReadData
+ 435              		.section	.text.SDIO_WriteData,"ax",%progbits
+ 436              		.align	2
+ 437              		.global	SDIO_WriteData
+ 438              		.thumb
+ 439              		.thumb_func
+ 440              		.type	SDIO_WriteData, %function
+ 441              	SDIO_WriteData:
+ 442              		@ args = 0, pretend = 0, frame = 0
+ 443              		@ frame_needed = 0, uses_anonymous_args = 0
+ 444              		@ link register save eliminated.
+ 445 0000 014B     		ldr	r3, .L48	@ tmp111,
+ 446 0002 C3F88000 		str	r0, [r3, #128]	@ Data, MEM[(struct SDIO_TypeDef *)1073840128B].FIFO
+ 447 0006 7047     		bx	lr	@
+ 448              	.L49:
+ 449              		.align	2
+ 450              	.L48:
+ 451 0008 00800140 		.word	1073840128
+ 452              		.size	SDIO_WriteData, .-SDIO_WriteData
+ 453              		.section	.text.SDIO_GetFIFOCount,"ax",%progbits
+ 454              		.align	2
+ 455              		.global	SDIO_GetFIFOCount
+ 456              		.thumb
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 9
+
+
+ 457              		.thumb_func
+ 458              		.type	SDIO_GetFIFOCount, %function
+ 459              	SDIO_GetFIFOCount:
+ 460              		@ args = 0, pretend = 0, frame = 0
+ 461              		@ frame_needed = 0, uses_anonymous_args = 0
+ 462              		@ link register save eliminated.
+ 463 0000 014B     		ldr	r3, .L51	@ tmp112,
+ 464 0002 986C     		ldr	r0, [r3, #72]	@ D.6893, MEM[(struct SDIO_TypeDef *)1073840128B].FIFOCNT
+ 465 0004 7047     		bx	lr	@
+ 466              	.L52:
+ 467 0006 00BF     		.align	2
+ 468              	.L51:
+ 469 0008 00800140 		.word	1073840128
+ 470              		.size	SDIO_GetFIFOCount, .-SDIO_GetFIFOCount
+ 471              		.section	.text.SDIO_StartSDIOReadWait,"ax",%progbits
+ 472              		.align	2
+ 473              		.global	SDIO_StartSDIOReadWait
+ 474              		.thumb
+ 475              		.thumb_func
+ 476              		.type	SDIO_StartSDIOReadWait, %function
+ 477              	SDIO_StartSDIOReadWait:
+ 478              		@ args = 0, pretend = 0, frame = 0
+ 479              		@ frame_needed = 0, uses_anonymous_args = 0
+ 480              		@ link register save eliminated.
+ 481 0000 014B     		ldr	r3, .L54	@ tmp112,
+ 482 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110443424B]
+ 483 0004 7047     		bx	lr	@
+ 484              	.L55:
+ 485 0006 00BF     		.align	2
+ 486              	.L54:
+ 487 0008 A0053042 		.word	1110443424
+ 488              		.size	SDIO_StartSDIOReadWait, .-SDIO_StartSDIOReadWait
+ 489              		.section	.text.SDIO_StopSDIOReadWait,"ax",%progbits
+ 490              		.align	2
+ 491              		.global	SDIO_StopSDIOReadWait
+ 492              		.thumb
+ 493              		.thumb_func
+ 494              		.type	SDIO_StopSDIOReadWait, %function
+ 495              	SDIO_StopSDIOReadWait:
+ 496              		@ args = 0, pretend = 0, frame = 0
+ 497              		@ frame_needed = 0, uses_anonymous_args = 0
+ 498              		@ link register save eliminated.
+ 499 0000 014B     		ldr	r3, .L57	@ tmp112,
+ 500 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110443428B]
+ 501 0004 7047     		bx	lr	@
+ 502              	.L58:
+ 503 0006 00BF     		.align	2
+ 504              	.L57:
+ 505 0008 A4053042 		.word	1110443428
+ 506              		.size	SDIO_StopSDIOReadWait, .-SDIO_StopSDIOReadWait
+ 507              		.section	.text.SDIO_SetSDIOReadWaitMode,"ax",%progbits
+ 508              		.align	2
+ 509              		.global	SDIO_SetSDIOReadWaitMode
+ 510              		.thumb
+ 511              		.thumb_func
+ 512              		.type	SDIO_SetSDIOReadWaitMode, %function
+ 513              	SDIO_SetSDIOReadWaitMode:
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 10
+
+
+ 514              		@ args = 0, pretend = 0, frame = 0
+ 515              		@ frame_needed = 0, uses_anonymous_args = 0
+ 516              		@ link register save eliminated.
+ 517 0000 014B     		ldr	r3, .L60	@ tmp111,
+ 518 0002 1860     		str	r0, [r3]	@ SDIO_ReadWaitMode, MEM[(volatile uint32_t *)1110443432B]
+ 519 0004 7047     		bx	lr	@
+ 520              	.L61:
+ 521 0006 00BF     		.align	2
+ 522              	.L60:
+ 523 0008 A8053042 		.word	1110443432
+ 524              		.size	SDIO_SetSDIOReadWaitMode, .-SDIO_SetSDIOReadWaitMode
+ 525              		.section	.text.SDIO_SetSDIOOperation,"ax",%progbits
+ 526              		.align	2
+ 527              		.global	SDIO_SetSDIOOperation
+ 528              		.thumb
+ 529              		.thumb_func
+ 530              		.type	SDIO_SetSDIOOperation, %function
+ 531              	SDIO_SetSDIOOperation:
+ 532              		@ args = 0, pretend = 0, frame = 0
+ 533              		@ frame_needed = 0, uses_anonymous_args = 0
+ 534              		@ link register save eliminated.
+ 535 0000 014B     		ldr	r3, .L63	@ tmp112,
+ 536 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110443436B]
+ 537 0004 7047     		bx	lr	@
+ 538              	.L64:
+ 539 0006 00BF     		.align	2
+ 540              	.L63:
+ 541 0008 AC053042 		.word	1110443436
+ 542              		.size	SDIO_SetSDIOOperation, .-SDIO_SetSDIOOperation
+ 543              		.section	.text.SDIO_SendSDIOSuspendCmd,"ax",%progbits
+ 544              		.align	2
+ 545              		.global	SDIO_SendSDIOSuspendCmd
+ 546              		.thumb
+ 547              		.thumb_func
+ 548              		.type	SDIO_SendSDIOSuspendCmd, %function
+ 549              	SDIO_SendSDIOSuspendCmd:
+ 550              		@ args = 0, pretend = 0, frame = 0
+ 551              		@ frame_needed = 0, uses_anonymous_args = 0
+ 552              		@ link register save eliminated.
+ 553 0000 014B     		ldr	r3, .L66	@ tmp112,
+ 554 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110442412B]
+ 555 0004 7047     		bx	lr	@
+ 556              	.L67:
+ 557 0006 00BF     		.align	2
+ 558              	.L66:
+ 559 0008 AC013042 		.word	1110442412
+ 560              		.size	SDIO_SendSDIOSuspendCmd, .-SDIO_SendSDIOSuspendCmd
+ 561              		.section	.text.SDIO_CommandCompletionCmd,"ax",%progbits
+ 562              		.align	2
+ 563              		.global	SDIO_CommandCompletionCmd
+ 564              		.thumb
+ 565              		.thumb_func
+ 566              		.type	SDIO_CommandCompletionCmd, %function
+ 567              	SDIO_CommandCompletionCmd:
+ 568              		@ args = 0, pretend = 0, frame = 0
+ 569              		@ frame_needed = 0, uses_anonymous_args = 0
+ 570              		@ link register save eliminated.
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 11
+
+
+ 571 0000 014B     		ldr	r3, .L69	@ tmp112,
+ 572 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110442416B]
+ 573 0004 7047     		bx	lr	@
+ 574              	.L70:
+ 575 0006 00BF     		.align	2
+ 576              	.L69:
+ 577 0008 B0013042 		.word	1110442416
+ 578              		.size	SDIO_CommandCompletionCmd, .-SDIO_CommandCompletionCmd
+ 579              		.section	.text.SDIO_CEATAITCmd,"ax",%progbits
+ 580              		.align	2
+ 581              		.global	SDIO_CEATAITCmd
+ 582              		.thumb
+ 583              		.thumb_func
+ 584              		.type	SDIO_CEATAITCmd, %function
+ 585              	SDIO_CEATAITCmd:
+ 586              		@ args = 0, pretend = 0, frame = 0
+ 587              		@ frame_needed = 0, uses_anonymous_args = 0
+ 588              		@ link register save eliminated.
+ 589 0000 00F00100 		and	r0, r0, #1	@ tmp114, NewState,
+ 590 0004 024B     		ldr	r3, .L72	@ tmp117,
+ 591 0006 80F00100 		eor	r0, r0, #1	@ D.6914, tmp114,
+ 592 000a 1860     		str	r0, [r3]	@ D.6914, MEM[(volatile uint32_t *)1110442420B]
+ 593 000c 7047     		bx	lr	@
+ 594              	.L73:
+ 595 000e 00BF     		.align	2
+ 596              	.L72:
+ 597 0010 B4013042 		.word	1110442420
+ 598              		.size	SDIO_CEATAITCmd, .-SDIO_CEATAITCmd
+ 599              		.section	.text.SDIO_SendCEATACmd,"ax",%progbits
+ 600              		.align	2
+ 601              		.global	SDIO_SendCEATACmd
+ 602              		.thumb
+ 603              		.thumb_func
+ 604              		.type	SDIO_SendCEATACmd, %function
+ 605              	SDIO_SendCEATACmd:
+ 606              		@ args = 0, pretend = 0, frame = 0
+ 607              		@ frame_needed = 0, uses_anonymous_args = 0
+ 608              		@ link register save eliminated.
+ 609 0000 014B     		ldr	r3, .L75	@ tmp112,
+ 610 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1110442424B]
+ 611 0004 7047     		bx	lr	@
+ 612              	.L76:
+ 613 0006 00BF     		.align	2
+ 614              	.L75:
+ 615 0008 B8013042 		.word	1110442424
+ 616              		.size	SDIO_SendCEATACmd, .-SDIO_SendCEATACmd
+ 617              		.section	.text.SDIO_GetFlagStatus,"ax",%progbits
+ 618              		.align	2
+ 619              		.global	SDIO_GetFlagStatus
+ 620              		.thumb
+ 621              		.thumb_func
+ 622              		.type	SDIO_GetFlagStatus, %function
+ 623              	SDIO_GetFlagStatus:
+ 624              		@ args = 0, pretend = 0, frame = 0
+ 625              		@ frame_needed = 0, uses_anonymous_args = 0
+ 626              		@ link register save eliminated.
+ 627 0000 034B     		ldr	r3, .L78	@ tmp116,
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 12
+
+
+ 628 0002 5B6B     		ldr	r3, [r3, #52]	@ D.6920, MEM[(struct SDIO_TypeDef *)1073840128B].STA
+ 629 0004 1842     		tst	r0, r3	@ SDIO_FLAG, D.6920
+ 630 0006 0CBF     		ite	eq	@
+ 631 0008 0020     		moveq	r0, #0	@,
+ 632 000a 0120     		movne	r0, #1	@,
+ 633 000c 7047     		bx	lr	@
+ 634              	.L79:
+ 635 000e 00BF     		.align	2
+ 636              	.L78:
+ 637 0010 00800140 		.word	1073840128
+ 638              		.size	SDIO_GetFlagStatus, .-SDIO_GetFlagStatus
+ 639              		.section	.text.SDIO_ClearFlag,"ax",%progbits
+ 640              		.align	2
+ 641              		.global	SDIO_ClearFlag
+ 642              		.thumb
+ 643              		.thumb_func
+ 644              		.type	SDIO_ClearFlag, %function
+ 645              	SDIO_ClearFlag:
+ 646              		@ args = 0, pretend = 0, frame = 0
+ 647              		@ frame_needed = 0, uses_anonymous_args = 0
+ 648              		@ link register save eliminated.
+ 649 0000 014B     		ldr	r3, .L81	@ tmp111,
+ 650 0002 9863     		str	r0, [r3, #56]	@ SDIO_FLAG, MEM[(struct SDIO_TypeDef *)1073840128B].ICR
+ 651 0004 7047     		bx	lr	@
+ 652              	.L82:
+ 653 0006 00BF     		.align	2
+ 654              	.L81:
+ 655 0008 00800140 		.word	1073840128
+ 656              		.size	SDIO_ClearFlag, .-SDIO_ClearFlag
+ 657              		.section	.text.SDIO_GetITStatus,"ax",%progbits
+ 658              		.align	2
+ 659              		.global	SDIO_GetITStatus
+ 660              		.thumb
+ 661              		.thumb_func
+ 662              		.type	SDIO_GetITStatus, %function
+ 663              	SDIO_GetITStatus:
+ 664              		@ args = 0, pretend = 0, frame = 0
+ 665              		@ frame_needed = 0, uses_anonymous_args = 0
+ 666              		@ link register save eliminated.
+ 667 0000 034B     		ldr	r3, .L84	@ tmp116,
+ 668 0002 5B6B     		ldr	r3, [r3, #52]	@ D.6927, MEM[(struct SDIO_TypeDef *)1073840128B].STA
+ 669 0004 1842     		tst	r0, r3	@ SDIO_IT, D.6927
+ 670 0006 0CBF     		ite	eq	@
+ 671 0008 0020     		moveq	r0, #0	@,
+ 672 000a 0120     		movne	r0, #1	@,
+ 673 000c 7047     		bx	lr	@
+ 674              	.L85:
+ 675 000e 00BF     		.align	2
+ 676              	.L84:
+ 677 0010 00800140 		.word	1073840128
+ 678              		.size	SDIO_GetITStatus, .-SDIO_GetITStatus
+ 679              		.section	.text.SDIO_ClearITPendingBit,"ax",%progbits
+ 680              		.align	2
+ 681              		.global	SDIO_ClearITPendingBit
+ 682              		.thumb
+ 683              		.thumb_func
+ 684              		.type	SDIO_ClearITPendingBit, %function
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 13
+
+
+ 685              	SDIO_ClearITPendingBit:
+ 686              		@ args = 0, pretend = 0, frame = 0
+ 687              		@ frame_needed = 0, uses_anonymous_args = 0
+ 688              		@ link register save eliminated.
+ 689 0000 014B     		ldr	r3, .L87	@ tmp111,
+ 690 0002 9863     		str	r0, [r3, #56]	@ SDIO_IT, MEM[(struct SDIO_TypeDef *)1073840128B].ICR
+ 691 0004 7047     		bx	lr	@
+ 692              	.L88:
+ 693 0006 00BF     		.align	2
+ 694              	.L87:
+ 695 0008 00800140 		.word	1073840128
+ 696              		.size	SDIO_ClearITPendingBit, .-SDIO_ClearITPendingBit
+ 697              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 14
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_sdio.c
+C:\cygwin64\tmp\ccCiHVxk.s:71     .text.SDIO_DeInit:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:76     .text.SDIO_DeInit:00000000 SDIO_DeInit
+C:\cygwin64\tmp\ccCiHVxk.s:96     .text.SDIO_DeInit:0000001c $d
+C:\cygwin64\tmp\ccCiHVxk.s:100    .text.SDIO_Init:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:105    .text.SDIO_Init:00000000 SDIO_Init
+C:\cygwin64\tmp\ccCiHVxk.s:132    .text.SDIO_Init:0000002c $d
+C:\cygwin64\tmp\ccCiHVxk.s:135    .text.SDIO_StructInit:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:140    .text.SDIO_StructInit:00000000 SDIO_StructInit
+C:\cygwin64\tmp\ccCiHVxk.s:154    .text.SDIO_ClockCmd:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:159    .text.SDIO_ClockCmd:00000000 SDIO_ClockCmd
+C:\cygwin64\tmp\ccCiHVxk.s:169    .text.SDIO_ClockCmd:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:172    .text.SDIO_SetPowerState:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:177    .text.SDIO_SetPowerState:00000000 SDIO_SetPowerState
+C:\cygwin64\tmp\ccCiHVxk.s:187    .text.SDIO_SetPowerState:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:190    .text.SDIO_GetPowerState:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:195    .text.SDIO_GetPowerState:00000000 SDIO_GetPowerState
+C:\cygwin64\tmp\ccCiHVxk.s:206    .text.SDIO_GetPowerState:0000000c $d
+C:\cygwin64\tmp\ccCiHVxk.s:209    .text.SDIO_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:214    .text.SDIO_ITConfig:00000000 SDIO_ITConfig
+C:\cygwin64\tmp\ccCiHVxk.s:231    .text.SDIO_ITConfig:00000014 $d
+C:\cygwin64\tmp\ccCiHVxk.s:234    .text.SDIO_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:239    .text.SDIO_DMACmd:00000000 SDIO_DMACmd
+C:\cygwin64\tmp\ccCiHVxk.s:249    .text.SDIO_DMACmd:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:252    .text.SDIO_SendCommand:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:257    .text.SDIO_SendCommand:00000000 SDIO_SendCommand
+C:\cygwin64\tmp\ccCiHVxk.s:281    .text.SDIO_SendCommand:00000028 $d
+C:\cygwin64\tmp\ccCiHVxk.s:284    .text.SDIO_CmdStructInit:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:289    .text.SDIO_CmdStructInit:00000000 SDIO_CmdStructInit
+C:\cygwin64\tmp\ccCiHVxk.s:302    .text.SDIO_GetCommandResponse:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:307    .text.SDIO_GetCommandResponse:00000000 SDIO_GetCommandResponse
+C:\cygwin64\tmp\ccCiHVxk.s:318    .text.SDIO_GetCommandResponse:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:321    .text.SDIO_GetResponse:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:326    .text.SDIO_GetResponse:00000000 SDIO_GetResponse
+C:\cygwin64\tmp\ccCiHVxk.s:344    .text.SDIO_GetResponse:00000014 $d
+C:\cygwin64\tmp\ccCiHVxk.s:347    .text.SDIO_DataConfig:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:352    .text.SDIO_DataConfig:00000000 SDIO_DataConfig
+C:\cygwin64\tmp\ccCiHVxk.s:378    .text.SDIO_DataConfig:00000028 $d
+C:\cygwin64\tmp\ccCiHVxk.s:381    .text.SDIO_DataStructInit:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:386    .text.SDIO_DataStructInit:00000000 SDIO_DataStructInit
+C:\cygwin64\tmp\ccCiHVxk.s:400    .text.SDIO_GetDataCounter:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:405    .text.SDIO_GetDataCounter:00000000 SDIO_GetDataCounter
+C:\cygwin64\tmp\ccCiHVxk.s:415    .text.SDIO_GetDataCounter:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:418    .text.SDIO_ReadData:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:423    .text.SDIO_ReadData:00000000 SDIO_ReadData
+C:\cygwin64\tmp\ccCiHVxk.s:433    .text.SDIO_ReadData:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:436    .text.SDIO_WriteData:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:441    .text.SDIO_WriteData:00000000 SDIO_WriteData
+C:\cygwin64\tmp\ccCiHVxk.s:451    .text.SDIO_WriteData:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:454    .text.SDIO_GetFIFOCount:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:459    .text.SDIO_GetFIFOCount:00000000 SDIO_GetFIFOCount
+C:\cygwin64\tmp\ccCiHVxk.s:469    .text.SDIO_GetFIFOCount:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:472    .text.SDIO_StartSDIOReadWait:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:477    .text.SDIO_StartSDIOReadWait:00000000 SDIO_StartSDIOReadWait
+C:\cygwin64\tmp\ccCiHVxk.s:487    .text.SDIO_StartSDIOReadWait:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:490    .text.SDIO_StopSDIOReadWait:00000000 $t
+ARM GAS  C:\cygwin64\tmp\ccCiHVxk.s 			page 15
+
+
+C:\cygwin64\tmp\ccCiHVxk.s:495    .text.SDIO_StopSDIOReadWait:00000000 SDIO_StopSDIOReadWait
+C:\cygwin64\tmp\ccCiHVxk.s:505    .text.SDIO_StopSDIOReadWait:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:508    .text.SDIO_SetSDIOReadWaitMode:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:513    .text.SDIO_SetSDIOReadWaitMode:00000000 SDIO_SetSDIOReadWaitMode
+C:\cygwin64\tmp\ccCiHVxk.s:523    .text.SDIO_SetSDIOReadWaitMode:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:526    .text.SDIO_SetSDIOOperation:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:531    .text.SDIO_SetSDIOOperation:00000000 SDIO_SetSDIOOperation
+C:\cygwin64\tmp\ccCiHVxk.s:541    .text.SDIO_SetSDIOOperation:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:544    .text.SDIO_SendSDIOSuspendCmd:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:549    .text.SDIO_SendSDIOSuspendCmd:00000000 SDIO_SendSDIOSuspendCmd
+C:\cygwin64\tmp\ccCiHVxk.s:559    .text.SDIO_SendSDIOSuspendCmd:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:562    .text.SDIO_CommandCompletionCmd:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:567    .text.SDIO_CommandCompletionCmd:00000000 SDIO_CommandCompletionCmd
+C:\cygwin64\tmp\ccCiHVxk.s:577    .text.SDIO_CommandCompletionCmd:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:580    .text.SDIO_CEATAITCmd:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:585    .text.SDIO_CEATAITCmd:00000000 SDIO_CEATAITCmd
+C:\cygwin64\tmp\ccCiHVxk.s:597    .text.SDIO_CEATAITCmd:00000010 $d
+C:\cygwin64\tmp\ccCiHVxk.s:600    .text.SDIO_SendCEATACmd:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:605    .text.SDIO_SendCEATACmd:00000000 SDIO_SendCEATACmd
+C:\cygwin64\tmp\ccCiHVxk.s:615    .text.SDIO_SendCEATACmd:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:618    .text.SDIO_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:623    .text.SDIO_GetFlagStatus:00000000 SDIO_GetFlagStatus
+C:\cygwin64\tmp\ccCiHVxk.s:637    .text.SDIO_GetFlagStatus:00000010 $d
+C:\cygwin64\tmp\ccCiHVxk.s:640    .text.SDIO_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:645    .text.SDIO_ClearFlag:00000000 SDIO_ClearFlag
+C:\cygwin64\tmp\ccCiHVxk.s:655    .text.SDIO_ClearFlag:00000008 $d
+C:\cygwin64\tmp\ccCiHVxk.s:658    .text.SDIO_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:663    .text.SDIO_GetITStatus:00000000 SDIO_GetITStatus
+C:\cygwin64\tmp\ccCiHVxk.s:677    .text.SDIO_GetITStatus:00000010 $d
+C:\cygwin64\tmp\ccCiHVxk.s:680    .text.SDIO_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccCiHVxk.s:685    .text.SDIO_ClearITPendingBit:00000000 SDIO_ClearITPendingBit
+C:\cygwin64\tmp\ccCiHVxk.s:695    .text.SDIO_ClearITPendingBit:00000008 $d
+
+NO UNDEFINED SYMBOLS

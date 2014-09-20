@@ -1,0 +1,329 @@
+ARM GAS  C:\cygwin64\tmp\cctCDoyE.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"usb_int.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/usb_int.d -MF out/usb_int.d -MP -MQ out/usb_int.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ Libraries/STM32_USB-FS-Device_Driver/src/usb_int.c -mcpu=cortex-m3
+  27              	@ -mthumb -auxbase-strip out/usb_int.o -O2 -Wall -Wstrict-prototypes
+  28              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  29              	@ -fsingle-precision-constant
+  30              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  31              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  32              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  33              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  34              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  35              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  36              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  37              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  38              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  39              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  40              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  41              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  42              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  43              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  44              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  45              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  46              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  47              	@ -freorder-functions -frerun-cse-after-loop
+  48              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  49              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  50              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  51              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  52              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  53              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  54              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+ARM GAS  C:\cygwin64\tmp\cctCDoyE.s 			page 2
+
+
+  58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  59              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  60              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  61              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  62              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  63              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  64              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  65              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  67              	@ -munaligned-access -mvectorize-with-neon-quad
+  68              	
+  69              		.section	.text.CTR_LP,"ax",%progbits
+  70              		.align	2
+  71              		.global	CTR_LP
+  72              		.thumb
+  73              		.thumb_func
+  74              		.type	CTR_LP, %function
+  75              	CTR_LP:
+  76              		@ args = 0, pretend = 0, frame = 8
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}	@
+  79 0004 0023     		movs	r3, #0	@ tmp205,
+  80 0006 82B0     		sub	sp, sp, #8	@,,
+  81 0008 DFF86491 		ldr	r9, .L80+12	@ tmp366,
+  82 000c DFF87081 		ldr	r8, .L80+28	@ tmp369,
+  83 0010 544E     		ldr	r6, .L80	@ tmp370,
+  84 0012 ADF80630 		strh	r3, [sp, #6]	@ movhi	@ tmp205, wEPVal
+  85              	.L2:
+  86 0016 D8F80030 		ldr	r3, [r8]	@ D.7188, MEM[(volatile unsigned int *)1073765444B]
+  87 001a 534C     		ldr	r4, .L80+4	@ tmp212,
+  88 001c 9AB2     		uxth	r2, r3	@ wIstr.29, D.7188
+  89 001e 13F4004F 		tst	r3, #32768	@ D.7188,
+  90 0022 524F     		ldr	r7, .L80+8	@ tmp365,
+  91 0024 4BF6BF70 		movw	r0, #49087	@ _wRegVal,
+  92 0028 5149     		ldr	r1, .L80+12	@ tmp362,
+  93 002a A9F80020 		strh	r2, [r9]	@ movhi	@ wIstr.29, wIstr
+  94 002e DFF834A1 		ldr	r10, .L80	@ tmp367,
+  95 0032 00F08B80 		beq	.L1	@,
+  96 0036 0B88     		ldrh	r3, [r1]	@, wIstr
+  97 0038 4E4D     		ldr	r5, .L80+16	@ tmp368,
+  98 003a 03F00F03 		and	r3, r3, #15	@ EPindex.1, wIstr,
+  99 003e 9A00     		lsls	r2, r3, #2	@ D.7188, EPindex.1,
+ 100 0040 02F18042 		add	r2, r2, #1073741824	@ D.7190, D.7188,
+ 101 0044 02F5B842 		add	r2, r2, #23552	@ D.7190, D.7190,
+ 102 0048 2B70     		strb	r3, [r5]	@ EPindex.1, EPindex
+ 103 004a 6BBB     		cbnz	r3, .L3	@ EPindex.1,
+ 104 004c 2368     		ldr	r3, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 105 004e 9BB2     		uxth	r3, r3	@ SaveRState.3, D.7188
+ 106 0050 3380     		strh	r3, [r6]	@ movhi	@ SaveRState.3, SaveRState
+ 107 0052 3388     		ldrh	r3, [r6]	@, SaveRState
+ 108 0054 03F03003 		and	r3, r3, #48	@ SaveTState.5, SaveRState,
+ 109 0058 3B80     		strh	r3, [r7]	@ movhi	@ SaveTState.5, SaveTState
+ 110 005a 3388     		ldrh	r3, [r6]	@, SaveRState
+ 111 005c 03F44053 		and	r3, r3, #12288	@ SaveRState.7, SaveRState,
+ 112 0060 3380     		strh	r3, [r6]	@ movhi	@ SaveRState.7, SaveRState
+ 113 0062 2368     		ldr	r3, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 114 0064 1840     		ands	r0, r0, r3	@, _wRegVal, _wRegVal, D.7188
+ARM GAS  C:\cygwin64\tmp\cctCDoyE.s 			page 3
+
+
+ 115 0066 80F40050 		eor	r0, r0, #8192	@ _wRegVal, _wRegVal,
+ 116 006a 80F02000 		eor	r0, r0, #32	@ _wRegVal, _wRegVal,
+ 117 006e 40F40040 		orr	r0, r0, #32768	@ D.7188, _wRegVal,
+ 118 0072 40F08000 		orr	r0, r0, #128	@ D.7188, D.7188,
+ 119 0076 2060     		str	r0, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 120 0078 0B88     		ldrh	r3, [r1]	@, wIstr
+ 121 007a DB06     		lsls	r3, r3, #27	@, wIstr,
+ 122 007c 3DD5     		bpl	.L77	@,
+ 123 007e 2368     		ldr	r3, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 124 0080 9BB2     		uxth	r3, r3	@ wEPVal.13, D.7188
+ 125 0082 ADF80630 		strh	r3, [sp, #6]	@ movhi	@ wEPVal.13, wEPVal
+ 126 0086 BDF80630 		ldrh	r3, [sp, #6]	@, wEPVal
+ 127 008a 1D05     		lsls	r5, r3, #20	@, wEPVal,
+ 128 008c 61D4     		bmi	.L78	@,
+ 129 008e BDF80630 		ldrh	r3, [sp, #6]	@, wEPVal
+ 130 0092 1BB2     		sxth	r3, r3	@ wEPVal.19, wEPVal
+ 131 0094 002B     		cmp	r3, #0	@ wEPVal.19,
+ 132 0096 BEDA     		bge	.L2	@,
+ 133 0098 2268     		ldr	r2, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 134 009a 40F68F73 		movw	r3, #3983	@ D.7188,
+ 135 009e 1340     		ands	r3, r3, r2	@, D.7188, D.7188, D.7188
+ 136 00a0 2360     		str	r3, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 137 00a2 FFF7FEFF 		bl	Out0_Process	@
+ 138 00a6 2FE0     		b	.L74	@
+ 139              	.L3:
+ 140 00a8 1168     		ldr	r1, [r2]	@ D.7188, *_121
+ 141 00aa 89B2     		uxth	r1, r1	@ wEPVal.25, D.7188
+ 142 00ac ADF80610 		strh	r1, [sp, #6]	@ movhi	@ wEPVal.25, wEPVal
+ 143 00b0 BDF80610 		ldrh	r1, [sp, #6]	@, wEPVal
+ 144 00b4 09B2     		sxth	r1, r1	@ wEPVal.26, wEPVal
+ 145 00b6 0029     		cmp	r1, #0	@ wEPVal.26,
+ 146 00b8 14DB     		blt	.L79	@,
+ 147              	.L21:
+ 148 00ba BDF80630 		ldrh	r3, [sp, #6]	@, wEPVal
+ 149 00be 1B06     		lsls	r3, r3, #24	@, wEPVal,
+ 150 00c0 A9D5     		bpl	.L2	@,
+ 151 00c2 2978     		ldrb	r1, [r5]	@ zero_extendqisi2	@ EPindex.2, EPindex
+ 152 00c4 2C48     		ldr	r0, .L80+20	@ tmp358,
+ 153 00c6 8B00     		lsls	r3, r1, #2	@ D.7188, EPindex.2,
+ 154 00c8 03F18043 		add	r3, r3, #1073741824	@ D.7190, D.7188,
+ 155 00cc 03F5B843 		add	r3, r3, #23552	@ D.7190, D.7190,
+ 156 00d0 1C68     		ldr	r4, [r3]	@ D.7188, *_138
+ 157 00d2 48F60F72 		movw	r2, #36623	@ D.7188,
+ 158 00d6 0139     		subs	r1, r1, #1	@ tmp359, EPindex.2,
+ 159 00d8 2240     		ands	r2, r2, r4	@, D.7188, D.7188, D.7188
+ 160 00da 1A60     		str	r2, [r3]	@ D.7188, *_138
+ 161 00dc 50F82130 		ldr	r3, [r0, r1, lsl #2]	@ tmp360, pEpInt_IN
+ 162 00e0 9847     		blx	r3	@ tmp360
+ 163 00e2 98E7     		b	.L2	@
+ 164              	.L79:
+ 165 00e4 1468     		ldr	r4, [r2]	@ D.7188, *_121
+ 166 00e6 2548     		ldr	r0, .L80+24	@ tmp346,
+ 167 00e8 40F68F71 		movw	r1, #3983	@ D.7188,
+ 168 00ec 2140     		ands	r1, r1, r4	@, D.7188, D.7188, D.7188
+ 169 00ee 013B     		subs	r3, r3, #1	@ tmp347, EPindex.1,
+ 170 00f0 50F82330 		ldr	r3, [r0, r3, lsl #2]	@ tmp348, pEpInt_OUT
+ 171 00f4 1160     		str	r1, [r2]	@ D.7188, *_121
+ARM GAS  C:\cygwin64\tmp\cctCDoyE.s 			page 4
+
+
+ 172 00f6 9847     		blx	r3	@ tmp348
+ 173 00f8 DFE7     		b	.L21	@
+ 174              	.L77:
+ 175 00fa 2268     		ldr	r2, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 176 00fc 48F60F73 		movw	r3, #36623	@ D.7188,
+ 177 0100 1340     		ands	r3, r3, r2	@, D.7188, D.7188, D.7188
+ 178 0102 2360     		str	r3, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 179 0104 FFF7FEFF 		bl	In0_Process	@
+ 180              	.L74:
+ 181 0108 2168     		ldr	r1, [r4]	@ D.7188,
+ 182 010a BAF80020 		ldrh	r2, [r10]	@, SaveRState
+ 183 010e 4BF6BF73 		movw	r3, #49087	@ _wRegVal,
+ 184 0112 D404     		lsls	r4, r2, #19	@, SaveRState,
+ 185 0114 BAF80020 		ldrh	r2, [r10]	@, SaveRState
+ 186 0118 01EA0303 		and	r3, r1, r3	@ _wRegVal, D.7188, _wRegVal
+ 187 011c 48BF     		it	mi
+ 188 011e 83F48053 		eormi	r3, r3, #4096	@ _wRegVal, _wRegVal,
+ 189 0122 9004     		lsls	r0, r2, #18	@, SaveRState,
+ 190 0124 3A88     		ldrh	r2, [r7]	@, SaveTState
+ 191 0126 48BF     		it	mi
+ 192 0128 83F40053 		eormi	r3, r3, #8192	@ _wRegVal, _wRegVal,
+ 193 012c D106     		lsls	r1, r2, #27	@, SaveTState,
+ 194 012e 3A88     		ldrh	r2, [r7]	@, SaveTState
+ 195 0130 48BF     		it	mi
+ 196 0132 83F01003 		eormi	r3, r3, #16	@ _wRegVal, _wRegVal,
+ 197 0136 9206     		lsls	r2, r2, #26	@, SaveTState,
+ 198 0138 48BF     		it	mi
+ 199 013a 83F02003 		eormi	r3, r3, #32	@ _wRegVal, _wRegVal,
+ 200 013e 43F40043 		orr	r3, r3, #32768	@ tmp337, _wRegVal,
+ 201 0142 43F08003 		orr	r3, r3, #128	@ tmp337, tmp337,
+ 202 0146 084A     		ldr	r2, .L80+4	@ tmp338,
+ 203 0148 9BB2     		uxth	r3, r3	@ D.7188, tmp337
+ 204 014a 1360     		str	r3, [r2]	@ D.7188,
+ 205              	.L1:
+ 206 014c 02B0     		add	sp, sp, #8	@,,
+ 207              		@ sp needed	@
+ 208 014e BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}	@
+ 209              	.L78:
+ 210 0152 2268     		ldr	r2, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 211 0154 40F68F73 		movw	r3, #3983	@ D.7188,
+ 212 0158 1340     		ands	r3, r3, r2	@, D.7188, D.7188, D.7188
+ 213 015a 2360     		str	r3, [r4]	@ D.7188, MEM[(volatile unsigned int *)1073765376B]
+ 214 015c FFF7FEFF 		bl	Setup0_Process	@
+ 215 0160 D2E7     		b	.L74	@
+ 216              	.L81:
+ 217 0162 00BF     		.align	2
+ 218              	.L80:
+ 219 0164 00000000 		.word	SaveRState
+ 220 0168 005C0040 		.word	1073765376
+ 221 016c 00000000 		.word	SaveTState
+ 222 0170 00000000 		.word	wIstr
+ 223 0174 00000000 		.word	EPindex
+ 224 0178 00000000 		.word	pEpInt_IN
+ 225 017c 00000000 		.word	pEpInt_OUT
+ 226 0180 445C0040 		.word	1073765444
+ 227              		.size	CTR_LP, .-CTR_LP
+ 228              		.section	.text.CTR_HP,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\cctCDoyE.s 			page 5
+
+
+ 229              		.align	2
+ 230              		.global	CTR_HP
+ 231              		.thumb
+ 232              		.thumb_func
+ 233              		.type	CTR_HP, %function
+ 234              	CTR_HP:
+ 235              		@ args = 0, pretend = 0, frame = 0
+ 236              		@ frame_needed = 0, uses_anonymous_args = 0
+ 237 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}	@
+ 238 0002 174D     		ldr	r5, .L92	@ tmp156,
+ 239 0004 174C     		ldr	r4, .L92+4	@ tmp157,
+ 240 0006 184F     		ldr	r7, .L92+8	@ tmp159,
+ 241 0008 2E46     		mov	r6, r5	@ tmp158, tmp156
+ 242              	.L83:
+ 243 000a 2368     		ldr	r3, [r4]	@ D.7195, MEM[(volatile unsigned int *)1073765444B]
+ 244 000c 47F6FF71 		movw	r1, #32767	@ tmp137,
+ 245 0010 9AB2     		uxth	r2, r3	@ wIstr.35, D.7195
+ 246 0012 1B04     		lsls	r3, r3, #16	@, D.7195,
+ 247 0014 2A80     		strh	r2, [r5]	@ movhi	@ wIstr.35, wIstr
+ 248 0016 21D5     		bpl	.L82	@,
+ 249 0018 2160     		str	r1, [r4]	@ tmp137, MEM[(volatile unsigned int *)1073765444B]
+ 250 001a 3288     		ldrh	r2, [r6]	@, wIstr
+ 251 001c 02F00F02 		and	r2, r2, #15	@ EPindex.33, wIstr,
+ 252 0020 9300     		lsls	r3, r2, #2	@ D.7195, EPindex.33,
+ 253 0022 03F18043 		add	r3, r3, #1073741824	@ D.7197, D.7195,
+ 254 0026 3A70     		strb	r2, [r7]	@ EPindex.33, EPindex
+ 255 0028 03F5B843 		add	r3, r3, #23552	@ D.7197, D.7197,
+ 256 002c 1968     		ldr	r1, [r3]	@ D.7195, *_15
+ 257 002e 0804     		lsls	r0, r1, #16	@, D.7195,
+ 258 0030 0ED4     		bmi	.L91	@,
+ 259 0032 0906     		lsls	r1, r1, #24	@, D.7195,
+ 260 0034 E9D5     		bpl	.L83	@,
+ 261 0036 D3F800E0 		ldr	lr, [r3]	@ D.7195, *_15
+ 262 003a 0C48     		ldr	r0, .L92+12	@ tmp153,
+ 263 003c 48F60F71 		movw	r1, #36623	@ D.7195,
+ 264              	.L90:
+ 265 0040 0EEA0101 		and	r1, lr, r1	@ D.7195, D.7195, D.7195
+ 266 0044 013A     		subs	r2, r2, #1	@ tmp154, EPindex.33,
+ 267 0046 50F82220 		ldr	r2, [r0, r2, lsl #2]	@ tmp155,
+ 268 004a 1960     		str	r1, [r3]	@ D.7195,* D.7197
+ 269 004c 9047     		blx	r2	@ tmp155
+ 270 004e DCE7     		b	.L83	@
+ 271              	.L91:
+ 272 0050 D3F800E0 		ldr	lr, [r3]	@ D.7195, *_15
+ 273 0054 0648     		ldr	r0, .L92+16	@ tmp148,
+ 274 0056 40F68F71 		movw	r1, #3983	@ D.7195,
+ 275 005a F1E7     		b	.L90	@
+ 276              	.L82:
+ 277 005c F8BD     		pop	{r3, r4, r5, r6, r7, pc}	@
+ 278              	.L93:
+ 279 005e 00BF     		.align	2
+ 280              	.L92:
+ 281 0060 00000000 		.word	wIstr
+ 282 0064 445C0040 		.word	1073765444
+ 283 0068 00000000 		.word	EPindex
+ 284 006c 00000000 		.word	pEpInt_IN
+ 285 0070 00000000 		.word	pEpInt_OUT
+ARM GAS  C:\cygwin64\tmp\cctCDoyE.s 			page 6
+
+
+ 286              		.size	CTR_HP, .-CTR_HP
+ 287              		.comm	SaveTState,2,2
+ 288              		.comm	SaveRState,2,2
+ 289              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cctCDoyE.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 usb_int.c
+C:\cygwin64\tmp\cctCDoyE.s:70     .text.CTR_LP:00000000 $t
+C:\cygwin64\tmp\cctCDoyE.s:75     .text.CTR_LP:00000000 CTR_LP
+C:\cygwin64\tmp\cctCDoyE.s:219    .text.CTR_LP:00000164 $d
+                            *COM*:00000002 SaveRState
+                            *COM*:00000002 SaveTState
+C:\cygwin64\tmp\cctCDoyE.s:229    .text.CTR_HP:00000000 $t
+C:\cygwin64\tmp\cctCDoyE.s:234    .text.CTR_HP:00000000 CTR_HP
+C:\cygwin64\tmp\cctCDoyE.s:281    .text.CTR_HP:00000060 $d
+
+UNDEFINED SYMBOLS
+Out0_Process
+In0_Process
+Setup0_Process
+wIstr
+EPindex
+pEpInt_IN
+pEpInt_OUT

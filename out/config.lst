@@ -1,0 +1,236 @@
+ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"config.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/config.d -MF out/config.d -MP -MQ out/config.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER src/config.c
+  26              	@ -mcpu=cortex-m3 -mthumb -auxbase-strip out/config.o -O2 -Wall
+  27              	@ -Wstrict-prototypes -Wextra -std=gnu99 -ffunction-sections
+  28              	@ -fdata-sections -fverbose-asm -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.configLoad,"ax",%progbits
+  69              		.align	2
+  70              		.global	configLoad
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	configLoad, %function
+  74              	configLoad:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77 0000 38B5     		push	{r3, r4, r5, lr}	@
+  78 0002 084D     		ldr	r5, .L6	@ tmp160,
+  79 0004 0024     		movs	r4, #0	@ i,
+  80              	.L4:
+  81 0006 E0B2     		uxtb	r0, r4	@, i
+  82 0008 FFF7FEFF 		bl	ReadFromEEPROM	@
+  83 000c 0346     		mov	r3, r0	@ data,
+  84 000e FE2B     		cmp	r3, #254	@ data,
+  85 0010 98BF     		it	ls
+  86 0012 6355     		strbls	r3, [r4, r5]	@ data, MEM[symbol: configData, index: _13, offset: 0B]
+  87 0014 0520     		movs	r0, #5	@,
+  88 0016 0134     		adds	r4, r4, #1	@ i, i,
+  89 0018 FFF7FEFF 		bl	Delay_ms	@
+  90 001c 0C2C     		cmp	r4, #12	@ i,
+  91 001e F2D1     		bne	.L4	@,
+  92 0020 38BD     		pop	{r3, r4, r5, pc}	@
+  93              	.L7:
+  94 0022 00BF     		.align	2
+  95              	.L6:
+  96 0024 00000000 		.word	.LANCHOR0
+  97              		.size	configLoad, .-configLoad
+  98              		.section	.text.configSave,"ax",%progbits
+  99              		.align	2
+ 100              		.global	configSave
+ 101              		.thumb
+ 102              		.thumb_func
+ 103              		.type	configSave, %function
+ 104              	configSave:
+ 105              		@ args = 0, pretend = 0, frame = 0
+ 106              		@ frame_needed = 0, uses_anonymous_args = 0
+ 107 0000 70B5     		push	{r4, r5, r6, lr}	@
+ 108 0002 FFF7FEFF 		bl	LEDon	@
+ 109 0006 0C4E     		ldr	r6, .L15	@ tmp138,
+ 110 0008 0024     		movs	r4, #0	@ ivtmp.18,
+ 111              	.L11:
+ 112 000a E5B2     		uxtb	r5, r4	@ i, ivtmp.18
+ 113 000c 2846     		mov	r0, r5	@, i
+ 114 000e FFF7FEFF 		bl	ReadFromEEPROM	@
+ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 3
+
+
+ 115 0012 421C     		adds	r2, r0, #1	@, data,
+ 116 0014 0346     		mov	r3, r0	@ data,
+ 117 0016 05D0     		beq	.L9	@,
+ 118 0018 A15D     		ldrb	r1, [r4, r6]	@ zero_extendqisi2	@ D.4236, MEM[symbol: configData, index: ivtmp.18_15, offset:
+ 119 001a 2846     		mov	r0, r5	@, i
+ 120 001c 9942     		cmp	r1, r3	@ D.4236, data
+ 121 001e 01D0     		beq	.L9	@,
+ 122 0020 FFF7FEFF 		bl	WriteToEEPROM	@
+ 123              	.L9:
+ 124 0024 0134     		adds	r4, r4, #1	@ ivtmp.18, ivtmp.18,
+ 125 0026 0520     		movs	r0, #5	@,
+ 126 0028 FFF7FEFF 		bl	Delay_ms	@
+ 127 002c 0C2C     		cmp	r4, #12	@ ivtmp.18,
+ 128 002e ECD1     		bne	.L11	@,
+ 129 0030 BDE87040 		pop	{r4, r5, r6, lr}	@
+ 130 0034 FFF7FEBF 		b	LEDoff	@
+ 131              	.L16:
+ 132              		.align	2
+ 133              	.L15:
+ 134 0038 00000000 		.word	.LANCHOR0
+ 135              		.size	configSave, .-configSave
+ 136              		.section	.text.printConfig,"ax",%progbits
+ 137              		.align	2
+ 138              		.global	printConfig
+ 139              		.thumb
+ 140              		.thumb_func
+ 141              		.type	printConfig, %function
+ 142              	printConfig:
+ 143              		@ args = 0, pretend = 0, frame = 0
+ 144              		@ frame_needed = 0, uses_anonymous_args = 0
+ 145 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 146 0002 0948     		ldr	r0, .L20	@,
+ 147 0004 FFF7FEFF 		bl	print	@
+ 148 0008 084C     		ldr	r4, .L20+4	@ ivtmp.34,
+ 149 000a 04F10C05 		add	r5, r4, #12	@ D.4255, ivtmp.34,
+ 150              	.L19:
+ 151 000e 14F8011F 		ldrb	r1, [r4, #1]!	@ zero_extendqisi2	@, MEM[base: _15, offset: 0B]
+ 152 0012 0748     		ldr	r0, .L20+8	@,
+ 153 0014 FFF7FEFF 		bl	print	@
+ 154 0018 AC42     		cmp	r4, r5	@ ivtmp.34, D.4255
+ 155 001a F8D1     		bne	.L19	@,
+ 156 001c 0548     		ldr	r0, .L20+12	@,
+ 157 001e BDE83840 		pop	{r3, r4, r5, lr}	@
+ 158 0022 FFF7FEBF 		b	print	@
+ 159              	.L21:
+ 160 0026 00BF     		.align	2
+ 161              	.L20:
+ 162 0028 00000000 		.word	.LC0
+ 163 002c FFFFFFFF 		.word	.LANCHOR0-1
+ 164 0030 10000000 		.word	.LC1
+ 165 0034 18000000 		.word	.LC2
+ 166              		.size	printConfig, .-printConfig
+ 167              		.global	configData
+ 168              		.section	.data.configData,"aw",%progbits
+ 169              		.align	2
+ 170              		.set	.LANCHOR0,. + 0
+ 171              		.type	configData, %object
+ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 4
+
+
+ 172              		.size	configData, 12
+ 173              	configData:
+ 174 0000 05       		.byte	5
+ 175 0001 09       		.byte	9
+ 176 0002 05       		.byte	5
+ 177 0003 15       		.byte	21
+ 178 0004 1E       		.byte	30
+ 179 0005 13       		.byte	19
+ 180 0006 1E       		.byte	30
+ 181 0007 1E       		.byte	30
+ 182 0008 14       		.byte	20
+ 183 0009 31       		.byte	49
+ 184 000a 30       		.byte	48
+ 185 000b 40       		.byte	64
+ 186              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 187              		.align	2
+ 188              	.LC0:
+ 189 0000 0D0A636F 		.ascii	"\015\012config data: \000"
+ 189      6E666967 
+ 189      20646174 
+ 189      613A2000 
+ 190              	.LC1:
+ 191 0010 20253032 		.ascii	" %02X \000"
+ 191      582000
+ 192 0017 00       		.space	1
+ 193              	.LC2:
+ 194 0018 0D0A00   		.ascii	"\015\012\000"
+ 195 001b 00       		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 config.c
+C:\cygwin64\tmp\cc5TMGAf.s:69     .text.configLoad:00000000 $t
+C:\cygwin64\tmp\cc5TMGAf.s:74     .text.configLoad:00000000 configLoad
+C:\cygwin64\tmp\cc5TMGAf.s:96     .text.configLoad:00000024 $d
+C:\cygwin64\tmp\cc5TMGAf.s:99     .text.configSave:00000000 $t
+C:\cygwin64\tmp\cc5TMGAf.s:104    .text.configSave:00000000 configSave
+C:\cygwin64\tmp\cc5TMGAf.s:134    .text.configSave:00000038 $d
+C:\cygwin64\tmp\cc5TMGAf.s:137    .text.printConfig:00000000 $t
+C:\cygwin64\tmp\cc5TMGAf.s:142    .text.printConfig:00000000 printConfig
+C:\cygwin64\tmp\cc5TMGAf.s:162    .text.printConfig:00000028 $d
+C:\cygwin64\tmp\cc5TMGAf.s:173    .data.configData:00000000 configData
+C:\cygwin64\tmp\cc5TMGAf.s:169    .data.configData:00000000 $d
+C:\cygwin64\tmp\cc5TMGAf.s:187    .rodata.str1.4:00000000 $d
+
+UNDEFINED SYMBOLS
+ReadFromEEPROM
+Delay_ms
+LEDon
+WriteToEEPROM
+LEDoff
+print

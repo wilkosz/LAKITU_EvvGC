@@ -1,0 +1,384 @@
+ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_bkp.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_bkp.d -MF out/stm32f10x_bkp.d -MP
+  25              	@ -MQ out/stm32f10x_bkp.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_bkp.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.BKP_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	BKP_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	BKP_DeInit, %function
+  76              	BKP_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79 0000 08B5     		push	{r3, lr}	@
+  80 0002 0120     		movs	r0, #1	@,
+  81 0004 FFF7FEFF 		bl	RCC_BackupResetCmd	@
+  82 0008 BDE80840 		pop	{r3, lr}	@
+  83 000c 0020     		movs	r0, #0	@,
+  84 000e FFF7FEBF 		b	RCC_BackupResetCmd	@
+  85              		.size	BKP_DeInit, .-BKP_DeInit
+  86 0012 00BF     		.section	.text.BKP_TamperPinLevelConfig,"ax",%progbits
+  87              		.align	2
+  88              		.global	BKP_TamperPinLevelConfig
+  89              		.thumb
+  90              		.thumb_func
+  91              		.type	BKP_TamperPinLevelConfig, %function
+  92              	BKP_TamperPinLevelConfig:
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95              		@ link register save eliminated.
+  96 0000 014B     		ldr	r3, .L3	@ tmp112,
+  97 0002 1860     		str	r0, [r3]	@ BKP_TamperPinLevel, MEM[(volatile uint32_t *)1108182532B]
+  98 0004 7047     		bx	lr	@
+  99              	.L4:
+ 100 0006 00BF     		.align	2
+ 101              	.L3:
+ 102 0008 04860D42 		.word	1108182532
+ 103              		.size	BKP_TamperPinLevelConfig, .-BKP_TamperPinLevelConfig
+ 104              		.section	.text.BKP_TamperPinCmd,"ax",%progbits
+ 105              		.align	2
+ 106              		.global	BKP_TamperPinCmd
+ 107              		.thumb
+ 108              		.thumb_func
+ 109              		.type	BKP_TamperPinCmd, %function
+ 110              	BKP_TamperPinCmd:
+ 111              		@ args = 0, pretend = 0, frame = 0
+ 112              		@ frame_needed = 0, uses_anonymous_args = 0
+ 113              		@ link register save eliminated.
+ 114 0000 014B     		ldr	r3, .L6	@ tmp112,
+ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 3
+
+
+ 115 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108182528B]
+ 116 0004 7047     		bx	lr	@
+ 117              	.L7:
+ 118 0006 00BF     		.align	2
+ 119              	.L6:
+ 120 0008 00860D42 		.word	1108182528
+ 121              		.size	BKP_TamperPinCmd, .-BKP_TamperPinCmd
+ 122              		.section	.text.BKP_ITConfig,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	BKP_ITConfig
+ 125              		.thumb
+ 126              		.thumb_func
+ 127              		.type	BKP_ITConfig, %function
+ 128              	BKP_ITConfig:
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131              		@ link register save eliminated.
+ 132 0000 014B     		ldr	r3, .L9	@ tmp112,
+ 133 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108182664B]
+ 134 0004 7047     		bx	lr	@
+ 135              	.L10:
+ 136 0006 00BF     		.align	2
+ 137              	.L9:
+ 138 0008 88860D42 		.word	1108182664
+ 139              		.size	BKP_ITConfig, .-BKP_ITConfig
+ 140              		.section	.text.BKP_RTCOutputConfig,"ax",%progbits
+ 141              		.align	2
+ 142              		.global	BKP_RTCOutputConfig
+ 143              		.thumb
+ 144              		.thumb_func
+ 145              		.type	BKP_RTCOutputConfig, %function
+ 146              	BKP_RTCOutputConfig:
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		@ link register save eliminated.
+ 150 0000 044A     		ldr	r2, .L12	@ tmp114,
+ 151 0002 938D     		ldrh	r3, [r2, #44]	@, MEM[(struct BKP_TypeDef *)1073769472B].RTCCR
+ 152 0004 23F46073 		bic	r3, r3, #896	@ tmpreg, MEM[(struct BKP_TypeDef *)1073769472B].RTCCR,
+ 153 0008 1B04     		lsls	r3, r3, #16	@ tmpreg, tmpreg,
+ 154 000a 1B0C     		lsrs	r3, r3, #16	@ tmpreg, tmpreg,
+ 155 000c 1843     		orrs	r0, r0, r3	@, tmpreg, BKP_RTCOutputSource, tmpreg
+ 156 000e 9085     		strh	r0, [r2, #44]	@ movhi	@ tmpreg, MEM[(struct BKP_TypeDef *)1073769472B].RTCCR
+ 157 0010 7047     		bx	lr	@
+ 158              	.L13:
+ 159 0012 00BF     		.align	2
+ 160              	.L12:
+ 161 0014 006C0040 		.word	1073769472
+ 162              		.size	BKP_RTCOutputConfig, .-BKP_RTCOutputConfig
+ 163              		.section	.text.BKP_SetRTCCalibrationValue,"ax",%progbits
+ 164              		.align	2
+ 165              		.global	BKP_SetRTCCalibrationValue
+ 166              		.thumb
+ 167              		.thumb_func
+ 168              		.type	BKP_SetRTCCalibrationValue, %function
+ 169              	BKP_SetRTCCalibrationValue:
+ 170              		@ args = 0, pretend = 0, frame = 0
+ 171              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 4
+
+
+ 172              		@ link register save eliminated.
+ 173 0000 044A     		ldr	r2, .L15	@ tmp115,
+ 174 0002 938D     		ldrh	r3, [r2, #44]	@, MEM[(struct BKP_TypeDef *)1073769472B].RTCCR
+ 175 0004 23F07F03 		bic	r3, r3, #127	@ tmpreg, MEM[(struct BKP_TypeDef *)1073769472B].RTCCR,
+ 176 0008 1B04     		lsls	r3, r3, #16	@ tmpreg, tmpreg,
+ 177 000a 1B0C     		lsrs	r3, r3, #16	@ tmpreg, tmpreg,
+ 178 000c 1843     		orrs	r0, r0, r3	@, tmpreg, CalibrationValue, tmpreg
+ 179 000e 9085     		strh	r0, [r2, #44]	@ movhi	@ tmpreg, MEM[(struct BKP_TypeDef *)1073769472B].RTCCR
+ 180 0010 7047     		bx	lr	@
+ 181              	.L16:
+ 182 0012 00BF     		.align	2
+ 183              	.L15:
+ 184 0014 006C0040 		.word	1073769472
+ 185              		.size	BKP_SetRTCCalibrationValue, .-BKP_SetRTCCalibrationValue
+ 186              		.section	.text.BKP_WriteBackupRegister,"ax",%progbits
+ 187              		.align	2
+ 188              		.global	BKP_WriteBackupRegister
+ 189              		.thumb
+ 190              		.thumb_func
+ 191              		.type	BKP_WriteBackupRegister, %function
+ 192              	BKP_WriteBackupRegister:
+ 193              		@ args = 0, pretend = 0, frame = 8
+ 194              		@ frame_needed = 0, uses_anonymous_args = 0
+ 195              		@ link register save eliminated.
+ 196 0000 054B     		ldr	r3, .L18	@ tmp119,
+ 197 0002 82B0     		sub	sp, sp, #8	@,,
+ 198 0004 0022     		movs	r2, #0	@ tmp118,
+ 199 0006 0192     		str	r2, [sp, #4]	@ tmp118, tmp
+ 200 0008 0193     		str	r3, [sp, #4]	@ tmp119, tmp
+ 201 000a 019B     		ldr	r3, [sp, #4]	@ tmp.0, tmp
+ 202 000c 1844     		add	r0, r0, r3	@ tmp.1, tmp.0
+ 203 000e 0190     		str	r0, [sp, #4]	@ tmp.1, tmp
+ 204 0010 019B     		ldr	r3, [sp, #4]	@ tmp.2, tmp
+ 205 0012 1960     		str	r1, [r3]	@ Data, *tmp.3_10
+ 206 0014 02B0     		add	sp, sp, #8	@,,
+ 207              		@ sp needed	@
+ 208 0016 7047     		bx	lr	@
+ 209              	.L19:
+ 210              		.align	2
+ 211              	.L18:
+ 212 0018 006C0040 		.word	1073769472
+ 213              		.size	BKP_WriteBackupRegister, .-BKP_WriteBackupRegister
+ 214              		.section	.text.BKP_ReadBackupRegister,"ax",%progbits
+ 215              		.align	2
+ 216              		.global	BKP_ReadBackupRegister
+ 217              		.thumb
+ 218              		.thumb_func
+ 219              		.type	BKP_ReadBackupRegister, %function
+ 220              	BKP_ReadBackupRegister:
+ 221              		@ args = 0, pretend = 0, frame = 8
+ 222              		@ frame_needed = 0, uses_anonymous_args = 0
+ 223              		@ link register save eliminated.
+ 224 0000 064B     		ldr	r3, .L21	@ tmp119,
+ 225 0002 82B0     		sub	sp, sp, #8	@,,
+ 226 0004 0022     		movs	r2, #0	@ tmp118,
+ 227 0006 0192     		str	r2, [sp, #4]	@ tmp118, tmp
+ 228 0008 0193     		str	r3, [sp, #4]	@ tmp119, tmp
+ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 5
+
+
+ 229 000a 019B     		ldr	r3, [sp, #4]	@ tmp.4, tmp
+ 230 000c 1844     		add	r0, r0, r3	@ tmp.5, tmp.4
+ 231 000e 0190     		str	r0, [sp, #4]	@ tmp.5, tmp
+ 232 0010 019B     		ldr	r3, [sp, #4]	@ tmp.6, tmp
+ 233 0012 1888     		ldrh	r0, [r3]	@, *tmp.7_10
+ 234 0014 80B2     		uxth	r0, r0	@, *tmp.7_10
+ 235 0016 02B0     		add	sp, sp, #8	@,,
+ 236              		@ sp needed	@
+ 237 0018 7047     		bx	lr	@
+ 238              	.L22:
+ 239 001a 00BF     		.align	2
+ 240              	.L21:
+ 241 001c 006C0040 		.word	1073769472
+ 242              		.size	BKP_ReadBackupRegister, .-BKP_ReadBackupRegister
+ 243              		.section	.text.BKP_GetFlagStatus,"ax",%progbits
+ 244              		.align	2
+ 245              		.global	BKP_GetFlagStatus
+ 246              		.thumb
+ 247              		.thumb_func
+ 248              		.type	BKP_GetFlagStatus, %function
+ 249              	BKP_GetFlagStatus:
+ 250              		@ args = 0, pretend = 0, frame = 0
+ 251              		@ frame_needed = 0, uses_anonymous_args = 0
+ 252              		@ link register save eliminated.
+ 253 0000 014B     		ldr	r3, .L24	@ tmp113,
+ 254 0002 1868     		ldr	r0, [r3]	@ D.6706, MEM[(volatile uint32_t *)1108182688B]
+ 255 0004 C0B2     		uxtb	r0, r0	@, D.6706
+ 256 0006 7047     		bx	lr	@
+ 257              	.L25:
+ 258              		.align	2
+ 259              	.L24:
+ 260 0008 A0860D42 		.word	1108182688
+ 261              		.size	BKP_GetFlagStatus, .-BKP_GetFlagStatus
+ 262              		.section	.text.BKP_ClearFlag,"ax",%progbits
+ 263              		.align	2
+ 264              		.global	BKP_ClearFlag
+ 265              		.thumb
+ 266              		.thumb_func
+ 267              		.type	BKP_ClearFlag, %function
+ 268              	BKP_ClearFlag:
+ 269              		@ args = 0, pretend = 0, frame = 0
+ 270              		@ frame_needed = 0, uses_anonymous_args = 0
+ 271              		@ link register save eliminated.
+ 272 0000 034B     		ldr	r3, .L27	@ tmp112,
+ 273 0002 9A8E     		ldrh	r2, [r3, #52]	@, MEM[(struct BKP_TypeDef *)1073769472B].CSR
+ 274 0004 92B2     		uxth	r2, r2	@ D.6710, MEM[(struct BKP_TypeDef *)1073769472B].CSR
+ 275 0006 42F00102 		orr	r2, r2, #1	@ D.6710, D.6710,
+ 276 000a 9A86     		strh	r2, [r3, #52]	@ movhi	@ D.6710, MEM[(struct BKP_TypeDef *)1073769472B].CSR
+ 277 000c 7047     		bx	lr	@
+ 278              	.L28:
+ 279 000e 00BF     		.align	2
+ 280              	.L27:
+ 281 0010 006C0040 		.word	1073769472
+ 282              		.size	BKP_ClearFlag, .-BKP_ClearFlag
+ 283              		.section	.text.BKP_GetITStatus,"ax",%progbits
+ 284              		.align	2
+ 285              		.global	BKP_GetITStatus
+ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 6
+
+
+ 286              		.thumb
+ 287              		.thumb_func
+ 288              		.type	BKP_GetITStatus, %function
+ 289              	BKP_GetITStatus:
+ 290              		@ args = 0, pretend = 0, frame = 0
+ 291              		@ frame_needed = 0, uses_anonymous_args = 0
+ 292              		@ link register save eliminated.
+ 293 0000 014B     		ldr	r3, .L30	@ tmp113,
+ 294 0002 1868     		ldr	r0, [r3]	@ D.6713, MEM[(volatile uint32_t *)1108182692B]
+ 295 0004 C0B2     		uxtb	r0, r0	@, D.6713
+ 296 0006 7047     		bx	lr	@
+ 297              	.L31:
+ 298              		.align	2
+ 299              	.L30:
+ 300 0008 A4860D42 		.word	1108182692
+ 301              		.size	BKP_GetITStatus, .-BKP_GetITStatus
+ 302              		.section	.text.BKP_ClearITPendingBit,"ax",%progbits
+ 303              		.align	2
+ 304              		.global	BKP_ClearITPendingBit
+ 305              		.thumb
+ 306              		.thumb_func
+ 307              		.type	BKP_ClearITPendingBit, %function
+ 308              	BKP_ClearITPendingBit:
+ 309              		@ args = 0, pretend = 0, frame = 0
+ 310              		@ frame_needed = 0, uses_anonymous_args = 0
+ 311              		@ link register save eliminated.
+ 312 0000 034B     		ldr	r3, .L33	@ tmp112,
+ 313 0002 9A8E     		ldrh	r2, [r3, #52]	@, MEM[(struct BKP_TypeDef *)1073769472B].CSR
+ 314 0004 92B2     		uxth	r2, r2	@ D.6717, MEM[(struct BKP_TypeDef *)1073769472B].CSR
+ 315 0006 42F00202 		orr	r2, r2, #2	@ D.6717, D.6717,
+ 316 000a 9A86     		strh	r2, [r3, #52]	@ movhi	@ D.6717, MEM[(struct BKP_TypeDef *)1073769472B].CSR
+ 317 000c 7047     		bx	lr	@
+ 318              	.L34:
+ 319 000e 00BF     		.align	2
+ 320              	.L33:
+ 321 0010 006C0040 		.word	1073769472
+ 322              		.size	BKP_ClearITPendingBit, .-BKP_ClearITPendingBit
+ 323              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_bkp.c
+C:\cygwin64\tmp\ccHki4i4.s:71     .text.BKP_DeInit:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:76     .text.BKP_DeInit:00000000 BKP_DeInit
+C:\cygwin64\tmp\ccHki4i4.s:87     .text.BKP_TamperPinLevelConfig:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:92     .text.BKP_TamperPinLevelConfig:00000000 BKP_TamperPinLevelConfig
+C:\cygwin64\tmp\ccHki4i4.s:102    .text.BKP_TamperPinLevelConfig:00000008 $d
+C:\cygwin64\tmp\ccHki4i4.s:105    .text.BKP_TamperPinCmd:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:110    .text.BKP_TamperPinCmd:00000000 BKP_TamperPinCmd
+C:\cygwin64\tmp\ccHki4i4.s:120    .text.BKP_TamperPinCmd:00000008 $d
+C:\cygwin64\tmp\ccHki4i4.s:123    .text.BKP_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:128    .text.BKP_ITConfig:00000000 BKP_ITConfig
+C:\cygwin64\tmp\ccHki4i4.s:138    .text.BKP_ITConfig:00000008 $d
+C:\cygwin64\tmp\ccHki4i4.s:141    .text.BKP_RTCOutputConfig:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:146    .text.BKP_RTCOutputConfig:00000000 BKP_RTCOutputConfig
+C:\cygwin64\tmp\ccHki4i4.s:161    .text.BKP_RTCOutputConfig:00000014 $d
+C:\cygwin64\tmp\ccHki4i4.s:164    .text.BKP_SetRTCCalibrationValue:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:169    .text.BKP_SetRTCCalibrationValue:00000000 BKP_SetRTCCalibrationValue
+C:\cygwin64\tmp\ccHki4i4.s:184    .text.BKP_SetRTCCalibrationValue:00000014 $d
+C:\cygwin64\tmp\ccHki4i4.s:187    .text.BKP_WriteBackupRegister:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:192    .text.BKP_WriteBackupRegister:00000000 BKP_WriteBackupRegister
+C:\cygwin64\tmp\ccHki4i4.s:212    .text.BKP_WriteBackupRegister:00000018 $d
+C:\cygwin64\tmp\ccHki4i4.s:215    .text.BKP_ReadBackupRegister:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:220    .text.BKP_ReadBackupRegister:00000000 BKP_ReadBackupRegister
+C:\cygwin64\tmp\ccHki4i4.s:241    .text.BKP_ReadBackupRegister:0000001c $d
+C:\cygwin64\tmp\ccHki4i4.s:244    .text.BKP_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:249    .text.BKP_GetFlagStatus:00000000 BKP_GetFlagStatus
+C:\cygwin64\tmp\ccHki4i4.s:260    .text.BKP_GetFlagStatus:00000008 $d
+C:\cygwin64\tmp\ccHki4i4.s:263    .text.BKP_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:268    .text.BKP_ClearFlag:00000000 BKP_ClearFlag
+C:\cygwin64\tmp\ccHki4i4.s:281    .text.BKP_ClearFlag:00000010 $d
+C:\cygwin64\tmp\ccHki4i4.s:284    .text.BKP_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:289    .text.BKP_GetITStatus:00000000 BKP_GetITStatus
+C:\cygwin64\tmp\ccHki4i4.s:300    .text.BKP_GetITStatus:00000008 $d
+C:\cygwin64\tmp\ccHki4i4.s:303    .text.BKP_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccHki4i4.s:308    .text.BKP_ClearITPendingBit:00000000 BKP_ClearITPendingBit
+C:\cygwin64\tmp\ccHki4i4.s:321    .text.BKP_ClearITPendingBit:00000010 $d
+
+UNDEFINED SYMBOLS
+RCC_BackupResetCmd

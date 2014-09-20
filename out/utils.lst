@@ -1,0 +1,407 @@
+ARM GAS  C:\cygwin64\tmp\ccvKg7wm.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"utils.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/utils.d -MF out/utils.d -MP -MQ out/utils.o -D__USES_INITFINI__
+  25              	@ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER src/utils.c -mcpu=cortex-m3
+  26              	@ -mthumb -auxbase-strip out/utils.o -O2 -Wall -Wstrict-prototypes -Wextra
+  27              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  28              	@ -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\ccvKg7wm.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.LEDon,"ax",%progbits
+  69              		.align	2
+  70              		.global	LEDon
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	LEDon, %function
+  74              	LEDon:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77              		@ link register save eliminated.
+  78 0000 0248     		ldr	r0, .L2	@,
+  79 0002 4FF48051 		mov	r1, #4096	@,
+  80 0006 FFF7FEBF 		b	GPIO_SetBits	@
+  81              	.L3:
+  82 000a 00BF     		.align	2
+  83              	.L2:
+  84 000c 000C0140 		.word	1073810432
+  85              		.size	LEDon, .-LEDon
+  86              		.section	.text.LEDoff,"ax",%progbits
+  87              		.align	2
+  88              		.global	LEDoff
+  89              		.thumb
+  90              		.thumb_func
+  91              		.type	LEDoff, %function
+  92              	LEDoff:
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95              		@ link register save eliminated.
+  96 0000 0248     		ldr	r0, .L5	@,
+  97 0002 4FF48051 		mov	r1, #4096	@,
+  98 0006 FFF7FEBF 		b	GPIO_ResetBits	@
+  99              	.L6:
+ 100 000a 00BF     		.align	2
+ 101              	.L5:
+ 102 000c 000C0140 		.word	1073810432
+ 103              		.size	LEDoff, .-LEDoff
+ 104              		.section	.text.LEDtoggle,"ax",%progbits
+ 105              		.align	2
+ 106              		.global	LEDtoggle
+ 107              		.thumb
+ 108              		.thumb_func
+ 109              		.type	LEDtoggle, %function
+ 110              	LEDtoggle:
+ 111              		@ args = 0, pretend = 0, frame = 0
+ 112              		@ frame_needed = 0, uses_anonymous_args = 0
+ 113 0000 08B5     		push	{r3, lr}	@
+ 114              	@ 342 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ARM GAS  C:\cygwin64\tmp\ccvKg7wm.s 			page 3
+
+
+ 115 0002 72B6     		cpsid i
+ 116              	@ 0 "" 2
+ 117              		.thumb
+ 118 0004 0348     		ldr	r0, .L8	@,
+ 119 0006 4FF48051 		mov	r1, #4096	@,
+ 120 000a FFF7FEFF 		bl	GPIO_ToggleBits	@
+ 121              	@ 331 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 122 000e 62B6     		cpsie i
+ 123              	@ 0 "" 2
+ 124              		.thumb
+ 125 0010 08BD     		pop	{r3, pc}	@
+ 126              	.L9:
+ 127 0012 00BF     		.align	2
+ 128              	.L8:
+ 129 0014 000C0140 		.word	1073810432
+ 130              		.size	LEDtoggle, .-LEDtoggle
+ 131              		.section	.text.DEBUG_LEDon,"ax",%progbits
+ 132              		.align	2
+ 133              		.global	DEBUG_LEDon
+ 134              		.thumb
+ 135              		.thumb_func
+ 136              		.type	DEBUG_LEDon, %function
+ 137              	DEBUG_LEDon:
+ 138              		@ args = 0, pretend = 0, frame = 0
+ 139              		@ frame_needed = 0, uses_anonymous_args = 0
+ 140              		@ link register save eliminated.
+ 141 0000 0148     		ldr	r0, .L11	@,
+ 142 0002 0821     		movs	r1, #8	@,
+ 143 0004 FFF7FEBF 		b	GPIO_SetBits	@
+ 144              	.L12:
+ 145              		.align	2
+ 146              	.L11:
+ 147 0008 00080140 		.word	1073809408
+ 148              		.size	DEBUG_LEDon, .-DEBUG_LEDon
+ 149              		.section	.text.DEBUG_LEDoff,"ax",%progbits
+ 150              		.align	2
+ 151              		.global	DEBUG_LEDoff
+ 152              		.thumb
+ 153              		.thumb_func
+ 154              		.type	DEBUG_LEDoff, %function
+ 155              	DEBUG_LEDoff:
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 0, uses_anonymous_args = 0
+ 158              		@ link register save eliminated.
+ 159 0000 0148     		ldr	r0, .L14	@,
+ 160 0002 0821     		movs	r1, #8	@,
+ 161 0004 FFF7FEBF 		b	GPIO_ResetBits	@
+ 162              	.L15:
+ 163              		.align	2
+ 164              	.L14:
+ 165 0008 00080140 		.word	1073809408
+ 166              		.size	DEBUG_LEDoff, .-DEBUG_LEDoff
+ 167              		.section	.text.DEBUG_LEDtoggle,"ax",%progbits
+ 168              		.align	2
+ 169              		.global	DEBUG_LEDtoggle
+ 170              		.thumb
+ 171              		.thumb_func
+ARM GAS  C:\cygwin64\tmp\ccvKg7wm.s 			page 4
+
+
+ 172              		.type	DEBUG_LEDtoggle, %function
+ 173              	DEBUG_LEDtoggle:
+ 174              		@ args = 0, pretend = 0, frame = 0
+ 175              		@ frame_needed = 0, uses_anonymous_args = 0
+ 176 0000 08B5     		push	{r3, lr}	@
+ 177              	@ 342 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 178 0002 72B6     		cpsid i
+ 179              	@ 0 "" 2
+ 180              		.thumb
+ 181 0004 0248     		ldr	r0, .L17	@,
+ 182 0006 0821     		movs	r1, #8	@,
+ 183 0008 FFF7FEFF 		bl	GPIO_ToggleBits	@
+ 184              	@ 331 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 185 000c 62B6     		cpsie i
+ 186              	@ 0 "" 2
+ 187              		.thumb
+ 188 000e 08BD     		pop	{r3, pc}	@
+ 189              	.L18:
+ 190              		.align	2
+ 191              	.L17:
+ 192 0010 00080140 		.word	1073809408
+ 193              		.size	DEBUG_LEDtoggle, .-DEBUG_LEDtoggle
+ 194              		.section	.text.Blink,"ax",%progbits
+ 195              		.align	2
+ 196              		.global	Blink
+ 197              		.thumb
+ 198              		.thumb_func
+ 199              		.type	Blink, %function
+ 200              	Blink:
+ 201              		@ args = 0, pretend = 0, frame = 0
+ 202              		@ frame_needed = 0, uses_anonymous_args = 0
+ 203 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 204 0002 0B4C     		ldr	r4, .L20	@ tmp110,
+ 205 0004 4220     		movs	r0, #66	@,
+ 206 0006 FFF7FEFF 		bl	DEBUG_PutChar	@
+ 207 000a 2046     		mov	r0, r4	@, tmp110
+ 208 000c 4FF48051 		mov	r1, #4096	@,
+ 209 0010 FFF7FEFF 		bl	GPIO_SetBits	@
+ 210 0014 074D     		ldr	r5, .L20+4	@ tmp111,
+ 211              	@ 66 "src/utils.c" 1
+ 212 0016 2846     		   mov r0, r5          	@ tmp111
+ 213 0018 0138     		1: subs r0, #1            
+ 214 001a FDD8     		   bhi 1b                 
+ 215              		
+ 216              	@ 0 "" 2
+ 217              		.thumb
+ 218 001c 4FF48051 		mov	r1, #4096	@,
+ 219 0020 2046     		mov	r0, r4	@, tmp110
+ 220 0022 FFF7FEFF 		bl	GPIO_ResetBits	@
+ 221              	@ 66 "src/utils.c" 1
+ 222 0026 2846     		   mov r0, r5          	@ tmp111
+ 223 0028 0138     		1: subs r0, #1            
+ 224 002a FDD8     		   bhi 1b                 
+ 225              		
+ 226              	@ 0 "" 2
+ 227              		.thumb
+ 228 002c 38BD     		pop	{r3, r4, r5, pc}	@
+ARM GAS  C:\cygwin64\tmp\ccvKg7wm.s 			page 5
+
+
+ 229              	.L21:
+ 230 002e 00BF     		.align	2
+ 231              	.L20:
+ 232 0030 000C0140 		.word	1073810432
+ 233 0034 009F2400 		.word	2400000
+ 234              		.size	Blink, .-Blink
+ 235              		.section	.text.Delay_us,"ax",%progbits
+ 236              		.align	2
+ 237              		.global	Delay_us
+ 238              		.thumb
+ 239              		.thumb_func
+ 240              		.type	Delay_us, %function
+ 241              	Delay_us:
+ 242              		@ args = 0, pretend = 0, frame = 0
+ 243              		@ frame_needed = 0, uses_anonymous_args = 0
+ 244              		@ link register save eliminated.
+ 245 0000 00EB4000 		add	r0, r0, r0, lsl #1	@, us, us, us,
+ 246 0004 8300     		lsls	r3, r0, #2	@ tmp115, us,
+ 247              	@ 66 "src/utils.c" 1
+ 248 0006 1846     		   mov r0, r3          	@ tmp115
+ 249 0008 0138     		1: subs r0, #1            
+ 250 000a FDD8     		   bhi 1b                 
+ 251              		
+ 252              	@ 0 "" 2
+ 253              		.thumb
+ 254 000c 7047     		bx	lr	@
+ 255              		.size	Delay_us, .-Delay_us
+ 256 000e 00BF     		.section	.text.Delay_ms,"ax",%progbits
+ 257              		.align	2
+ 258              		.global	Delay_ms
+ 259              		.thumb
+ 260              		.thumb_func
+ 261              		.type	Delay_ms, %function
+ 262              	Delay_ms:
+ 263              		@ args = 0, pretend = 0, frame = 0
+ 264              		@ frame_needed = 0, uses_anonymous_args = 0
+ 265              		@ link register save eliminated.
+ 266 0000 42F6E063 		movw	r3, #12000	@ tmp113,
+ 267 0004 03FB00F3 		mul	r3, r3, r0	@ us, tmp113, ms
+ 268              	@ 66 "src/utils.c" 1
+ 269 0008 1846     		   mov r0, r3          	@ us
+ 270 000a 0138     		1: subs r0, #1            
+ 271 000c FDD8     		   bhi 1b                 
+ 272              		
+ 273              	@ 0 "" 2
+ 274              		.thumb
+ 275 000e 7047     		bx	lr	@
+ 276              		.size	Delay_ms, .-Delay_ms
+ 277              		.global	__aeabi_fmul
+ 278              		.section	.text.Rad2Deg,"ax",%progbits
+ 279              		.align	2
+ 280              		.global	Rad2Deg
+ 281              		.thumb
+ 282              		.thumb_func
+ 283              		.type	Rad2Deg, %function
+ 284              	Rad2Deg:
+ 285              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\cygwin64\tmp\ccvKg7wm.s 			page 6
+
+
+ 286              		@ frame_needed = 0, uses_anonymous_args = 0
+ 287 0000 08B5     		push	{r3, lr}	@
+ 288 0002 0249     		ldr	r1, .L25	@,
+ 289 0004 FFF7FEFF 		bl	__aeabi_fmul	@
+ 290 0008 08BD     		pop	{r3, pc}	@
+ 291              	.L26:
+ 292 000a 00BF     		.align	2
+ 293              	.L25:
+ 294 000c E02E6542 		.word	1113927392
+ 295              		.size	Rad2Deg, .-Rad2Deg
+ 296              		.section	.text.Deg2Rad,"ax",%progbits
+ 297              		.align	2
+ 298              		.global	Deg2Rad
+ 299              		.thumb
+ 300              		.thumb_func
+ 301              		.type	Deg2Rad, %function
+ 302              	Deg2Rad:
+ 303              		@ args = 0, pretend = 0, frame = 0
+ 304              		@ frame_needed = 0, uses_anonymous_args = 0
+ 305 0000 08B5     		push	{r3, lr}	@
+ 306 0002 0249     		ldr	r1, .L28	@,
+ 307 0004 FFF7FEFF 		bl	__aeabi_fmul	@
+ 308 0008 08BD     		pop	{r3, pc}	@
+ 309              	.L29:
+ 310 000a 00BF     		.align	2
+ 311              	.L28:
+ 312 000c 35FA8E3C 		.word	1016003125
+ 313              		.size	Deg2Rad, .-Deg2Rad
+ 314              		.global	__aeabi_fcmpge
+ 315              		.global	__aeabi_fadd
+ 316              		.global	__aeabi_fsub
+ 317              		.section	.text.Round,"ax",%progbits
+ 318              		.align	2
+ 319              		.global	Round
+ 320              		.thumb
+ 321              		.thumb_func
+ 322              		.type	Round, %function
+ 323              	Round:
+ 324              		@ args = 0, pretend = 0, frame = 0
+ 325              		@ frame_needed = 0, uses_anonymous_args = 0
+ 326 0000 10B5     		push	{r4, lr}	@
+ 327 0002 0021     		movs	r1, #0	@,
+ 328 0004 0446     		mov	r4, r0	@ x, x
+ 329 0006 FFF7FEFF 		bl	__aeabi_fcmpge	@
+ 330 000a 28B1     		cbz	r0, .L35	@,
+ 331 000c 2046     		mov	r0, r4	@, x
+ 332 000e 4FF07C51 		mov	r1, #1056964608	@,
+ 333 0012 FFF7FEFF 		bl	__aeabi_fadd	@
+ 334 0016 10BD     		pop	{r4, pc}	@
+ 335              	.L35:
+ 336 0018 2046     		mov	r0, r4	@, x
+ 337 001a 4FF07C51 		mov	r1, #1056964608	@,
+ 338 001e FFF7FEFF 		bl	__aeabi_fsub	@
+ 339 0022 10BD     		pop	{r4, pc}	@
+ 340              		.size	Round, .-Round
+ 341              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccvKg7wm.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 utils.c
+C:\cygwin64\tmp\ccvKg7wm.s:69     .text.LEDon:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:74     .text.LEDon:00000000 LEDon
+C:\cygwin64\tmp\ccvKg7wm.s:84     .text.LEDon:0000000c $d
+C:\cygwin64\tmp\ccvKg7wm.s:87     .text.LEDoff:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:92     .text.LEDoff:00000000 LEDoff
+C:\cygwin64\tmp\ccvKg7wm.s:102    .text.LEDoff:0000000c $d
+C:\cygwin64\tmp\ccvKg7wm.s:105    .text.LEDtoggle:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:110    .text.LEDtoggle:00000000 LEDtoggle
+C:\cygwin64\tmp\ccvKg7wm.s:129    .text.LEDtoggle:00000014 $d
+C:\cygwin64\tmp\ccvKg7wm.s:132    .text.DEBUG_LEDon:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:137    .text.DEBUG_LEDon:00000000 DEBUG_LEDon
+C:\cygwin64\tmp\ccvKg7wm.s:147    .text.DEBUG_LEDon:00000008 $d
+C:\cygwin64\tmp\ccvKg7wm.s:150    .text.DEBUG_LEDoff:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:155    .text.DEBUG_LEDoff:00000000 DEBUG_LEDoff
+C:\cygwin64\tmp\ccvKg7wm.s:165    .text.DEBUG_LEDoff:00000008 $d
+C:\cygwin64\tmp\ccvKg7wm.s:168    .text.DEBUG_LEDtoggle:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:173    .text.DEBUG_LEDtoggle:00000000 DEBUG_LEDtoggle
+C:\cygwin64\tmp\ccvKg7wm.s:192    .text.DEBUG_LEDtoggle:00000010 $d
+C:\cygwin64\tmp\ccvKg7wm.s:195    .text.Blink:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:200    .text.Blink:00000000 Blink
+C:\cygwin64\tmp\ccvKg7wm.s:232    .text.Blink:00000030 $d
+C:\cygwin64\tmp\ccvKg7wm.s:236    .text.Delay_us:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:241    .text.Delay_us:00000000 Delay_us
+C:\cygwin64\tmp\ccvKg7wm.s:257    .text.Delay_ms:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:262    .text.Delay_ms:00000000 Delay_ms
+C:\cygwin64\tmp\ccvKg7wm.s:279    .text.Rad2Deg:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:284    .text.Rad2Deg:00000000 Rad2Deg
+C:\cygwin64\tmp\ccvKg7wm.s:294    .text.Rad2Deg:0000000c $d
+C:\cygwin64\tmp\ccvKg7wm.s:297    .text.Deg2Rad:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:302    .text.Deg2Rad:00000000 Deg2Rad
+C:\cygwin64\tmp\ccvKg7wm.s:312    .text.Deg2Rad:0000000c $d
+C:\cygwin64\tmp\ccvKg7wm.s:318    .text.Round:00000000 $t
+C:\cygwin64\tmp\ccvKg7wm.s:323    .text.Round:00000000 Round
+
+UNDEFINED SYMBOLS
+GPIO_SetBits
+GPIO_ResetBits
+GPIO_ToggleBits
+DEBUG_PutChar
+__aeabi_fmul
+__aeabi_fcmpge
+__aeabi_fadd
+__aeabi_fsub

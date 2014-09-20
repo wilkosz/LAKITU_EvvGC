@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<macros>
+					<stringMacro name="GCCPATH" type="VALUE_TEXT" value="C:\Program Files (x86)\GNU Tools ARM Embedded\4.8 2014q2\bin"/>
+					<stringMacro name="GCCVERSION" type="VALUE_TEXT" value="4.8.4"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667" name="Debug" parent="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667">
+					<folderInfo id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.toolchain.debug.983255076" name="ARM Windows GCC (Sourcery G++ Lite)" nonInternalBuilderId="cdt.managedbuild.builder.gnu.cross">
+							<option id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.debugging.level.25996268" name="Debug level" superClass="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.debugging.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.debugging.level.max" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.target.processor.446492975" name="Processor" superClass="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.target.processor" value="org.eclipse.cdt.cross.arm.gnu.base.option.mcpu.cortex-m3" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.addtools.createlisting.1725177872" name="Create Extended Listing" superClass="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.addtools.createlisting" value="false" valueType="boolean"/>
+							<targetPlatform id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.platform.debug.311947274" isAbstract="false" name="Windows Platform"/>
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/EvvGC_api}/Debug" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="cdt.managedbuild.builder.gnu.cross.70837244" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="false" superClass="cdt.managedbuild.builder.gnu.cross"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="Libraries/STM32_USB_Device_Library/Class/audio|Libraries/STM32_USB_Device_Library/Core/src|Libraries/STM32_USB_Device_Library/Class/msc|Libraries/STM32_USB_OTG_Driver/src/usb_hcd.c|Libraries/CMSIS/RTOS|Libraries/STM32_USB_OTG_Driver/src/usb_otg.c|Original-src|Libraries/STM32_USB_OTG_Driver/src/usb_hcd_int.c|Libraries/CMSIS/DSP_Lib|Libraries/STM32_USB_OTG_Driver/src/usb_bsp_template.c|Libraries/CMSIS/Documentation|src/drv|Libraries/CMSIS/SVD|Libraries/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_if_template.c|Libraries/STM32_USB_Device_Library/Class/hid|Libraries/STM32_USB_Device_Library/Class/dfu|Libraries/CMSIS/Lib" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings">
+				<externalSettings containerId="EvvGC_api;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431" factoryId="org.eclipse.cdt.core.cfg.export.settings.sipplier"/>
+			</storageModule>
+		</cconfiguration>
+		<cconfiguration id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<macros>
+					<stringMacro name="GCCPATH" type="VALUE_TEXT" value="C:\Program Files (x86)\GNU Tools ARM Embedded\4.8 2014q2"/>
+					<stringMacro name="GCCVERSION" type="VALUE_TEXT" value="4.8.3"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.CWDLocator" id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431" name="Release" parent="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431">
+					<folderInfo id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431." name="/" resourcePath="">
+						<toolChain errorParsers="" id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.toolchain.release.1642866888" name="ARM Windows GCC (Sourcery G++ Lite)">
+							<option id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.debugging.level.421771374" name="Debug level" superClass="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.debugging.level" value="org.eclipse.cdt.cross.arm.gnu.base.option.debugging.level.none" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.target.processor.889049978" name="Processor" superClass="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.target.processor" value="org.eclipse.cdt.cross.arm.gnu.base.option.mcpu.cortex-m3" valueType="enumerated"/>
+							<option id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.addtools.createlisting.818082359" name="Create Extended Listing" superClass="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.option.addtools.createlisting" value="false" valueType="boolean"/>
+							<targetPlatform id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.platform.release.47322955" isAbstract="false" name="Windows Platform"/>
+							<builder buildPath="${workspace_loc:/EvvGC}/Release" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.builder.release.112785327" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="ARM Sourcery Windows GNU Make builder" parallelBuildOn="false"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="Libraries/STM32_USB_Device_Library/Core/src|Original-src|Libraries/CMSIS/Lib|Libraries/CMSIS/DSP_Lib|Libraries/STM32_USB_Device_Library/Class/cdc/src/usbd_cdc_if_template.c|Libraries/STM32_USB_OTG_Driver/src/usb_otg.c|Libraries/STM32_USB_OTG_Driver/src/usb_hcd.c|Libraries/STM32_USB_OTG_Driver/src/usb_hcd_int.c|Libraries/STM32_USB_OTG_Driver/src/usb_bsp_template.c|Libraries/STM32_USB_Device_Library/Class/msc|Libraries/STM32_USB_Device_Library/Class/hid|Libraries/STM32_USB_Device_Library/Class/dfu|Libraries/STM32_USB_Device_Library/Class/audio|src/drv|Libraries/CMSIS/SVD|Libraries/CMSIS/RTOS|Libraries/CMSIS/Documentation" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="EvvGC.org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.1316167820" name="ARM Cross Target Application"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/EvvGC"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/EvvGC"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431.;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.assembler.release.1148891191;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.assembler.base.input.485009131">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.cross.arm.gnu.ARM_CS_GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.release.1484577431.;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.c.compiler.release.1024277103;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.c.compiler.base.input.1844219294">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.cross.arm.gnu.ARM_CS_GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667.;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.assembler.debug.969509373;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.assembler.base.input.1577124535">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.cross.arm.gnu.ARM_CS_GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.debug.1097792667.;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.elf.c.compiler.debug.1486479780;org.eclipse.cdt.cross.arm.gnu.sourcery.windows.c.compiler.base.input.392471200">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.cross.arm.gnu.ARM_CS_GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

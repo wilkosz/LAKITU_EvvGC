@@ -1,0 +1,303 @@
+ARM GAS  C:\cygwin64\tmp\cc55YSFw.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"systick.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/systick.d -MF out/systick.d -MP -MQ out/systick.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER src/systick.c
+  26              	@ -mcpu=cortex-m3 -mthumb -auxbase-strip out/systick.o -O2 -Wall
+  27              	@ -Wstrict-prototypes -Wextra -std=gnu99 -ffunction-sections
+  28              	@ -fdata-sections -fverbose-asm -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\cc55YSFw.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.micros,"ax",%progbits
+  69              		.align	2
+  70              		.global	micros
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	micros, %function
+  74              	micros:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77              		@ link register save eliminated.
+  78 0000 30B4     		push	{r4, r5}	@
+  79 0002 104A     		ldr	r2, .L9	@ tmp141,
+  80 0004 104D     		ldr	r5, .L9+4	@ tmp142,
+  81              	.L3:
+  82 0006 1368     		ldr	r3, [r2]	@ timeMs, sysTickMillis
+  83 0008 0F4C     		ldr	r4, .L9+4	@ tmp126,
+  84 000a A868     		ldr	r0, [r5, #8]	@ cycle, MEM[(struct SysTick_Type *)3758153744B].VAL
+  85              	@ 30 "src/systick.c" 1
+  86 000c 00BF     		nop
+  87              	@ 0 "" 2
+  88              	@ 31 "src/systick.c" 1
+  89 000e 00BF     		nop
+  90              	@ 0 "" 2
+  91              		.thumb
+  92 0010 1168     		ldr	r1, [r2]	@ sysTickMillis.0, sysTickMillis
+  93 0012 8B42     		cmp	r3, r1	@ timeMs, sysTickMillis.0
+  94 0014 F7D1     		bne	.L3	@,
+  95 0016 2268     		ldr	r2, [r4]	@ D.6682, MEM[(struct SysTick_Type *)3758153744B].CTRL
+  96 0018 0B49     		ldr	r1, .L9+4	@ tmp131,
+  97 001a D203     		lsls	r2, r2, #15	@, D.6682,
+  98 001c 48BF     		it	mi
+  99 001e A068     		ldrmi	r0, [r4, #8]	@ cycle, MEM[(struct SysTick_Type *)3758153744B].VAL
+ 100 0020 0A4A     		ldr	r2, .L9+8	@ tmp135,
+ 101 0022 4968     		ldr	r1, [r1, #4]	@ D.6682, MEM[(struct SysTick_Type *)3758153744B].LOAD
+ 102 0024 1268     		ldr	r2, [r2]	@ sysTickPerUs, sysTickPerUs
+ 103 0026 01F10101 		add	r1, r1, #1	@ D.6682, D.6682,
+ 104 002a C0EB0100 		rsb	r0, r0, r1	@ D.6682, cycle, D.6682
+ 105 002e B0FBF2F0 		udiv	r0, r0, r2	@ D.6682, D.6682, sysTickPerUs
+ 106 0032 48BF     		it	mi
+ 107 0034 0133     		addmi	r3, r3, #1	@ timeMs, timeMs,
+ 108 0036 4FF47A72 		mov	r2, #1000	@ tmp140,
+ 109 003a 02FB0300 		mla	r0, r2, r3, r0	@, tmp140, timeMs, D.6682
+ 110 003e 30BC     		pop	{r4, r5}	@
+ 111 0040 7047     		bx	lr	@
+ 112              	.L10:
+ 113 0042 00BF     		.align	2
+ 114              	.L9:
+ARM GAS  C:\cygwin64\tmp\cc55YSFw.s 			page 3
+
+
+ 115 0044 00000000 		.word	.LANCHOR0
+ 116 0048 10E000E0 		.word	-536813552
+ 117 004c 00000000 		.word	.LANCHOR1
+ 118              		.size	micros, .-micros
+ 119              		.section	.text.millis,"ax",%progbits
+ 120              		.align	2
+ 121              		.global	millis
+ 122              		.thumb
+ 123              		.thumb_func
+ 124              		.type	millis, %function
+ 125              	millis:
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128              		@ link register save eliminated.
+ 129 0000 014B     		ldr	r3, .L12	@ tmp112,
+ 130 0002 1868     		ldr	r0, [r3]	@ D.6687, sysTickMillis
+ 131 0004 7047     		bx	lr	@
+ 132              	.L13:
+ 133 0006 00BF     		.align	2
+ 134              	.L12:
+ 135 0008 00000000 		.word	.LANCHOR0
+ 136              		.size	millis, .-millis
+ 137              		.section	.text.SysTick_Handler,"ax",%progbits
+ 138              		.align	2
+ 139              		.global	SysTick_Handler
+ 140              		.thumb
+ 141              		.thumb_func
+ 142              		.type	SysTick_Handler, %function
+ 143              	SysTick_Handler:
+ 144              		@ args = 0, pretend = 0, frame = 0
+ 145              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146 0000 08B5     		push	{r3, lr}	@
+ 147              	@ 342 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 148 0002 72B6     		cpsid i
+ 149              	@ 0 "" 2
+ 150              		.thumb
+ 151 0004 054B     		ldr	r3, .L19	@ tmp115,
+ 152 0006 064A     		ldr	r2, .L19+4	@ tmp114,
+ 153 0008 1268     		ldr	r2, [r2]	@ D.6690, MEM[(struct SysTick_Type *)3758153744B].CTRL
+ 154 000a 1A68     		ldr	r2, [r3]	@ sysTickMillis.2, sysTickMillis
+ 155 000c 0132     		adds	r2, r2, #1	@ sysTickMillis.3, sysTickMillis.2,
+ 156 000e 1A60     		str	r2, [r3]	@ sysTickMillis.3, sysTickMillis
+ 157              	@ 331 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 158 0010 62B6     		cpsie i
+ 159              	@ 0 "" 2
+ 160              		.thumb
+ 161 0012 044B     		ldr	r3, .L19+8	@ tmp117,
+ 162 0014 1B68     		ldr	r3, [r3]	@ systickUserCallback.4, systickUserCallback
+ 163 0016 03B1     		cbz	r3, .L14	@ systickUserCallback.4,
+ 164 0018 9847     		blx	r3	@ systickUserCallback.4
+ 165              	.L14:
+ 166 001a 08BD     		pop	{r3, pc}	@
+ 167              	.L20:
+ 168              		.align	2
+ 169              	.L19:
+ 170 001c 00000000 		.word	.LANCHOR0
+ 171 0020 10E000E0 		.word	-536813552
+ARM GAS  C:\cygwin64\tmp\cc55YSFw.s 			page 4
+
+
+ 172 0024 00000000 		.word	.LANCHOR2
+ 173              		.size	SysTick_Handler, .-SysTick_Handler
+ 174              		.section	.text.SysTickAttachCallback,"ax",%progbits
+ 175              		.align	2
+ 176              		.global	SysTickAttachCallback
+ 177              		.thumb
+ 178              		.thumb_func
+ 179              		.type	SysTickAttachCallback, %function
+ 180              	SysTickAttachCallback:
+ 181              		@ args = 0, pretend = 0, frame = 0
+ 182              		@ frame_needed = 0, uses_anonymous_args = 0
+ 183              		@ link register save eliminated.
+ 184 0000 014B     		ldr	r3, .L22	@ tmp111,
+ 185 0002 1860     		str	r0, [r3]	@ callback, systickUserCallback
+ 186 0004 7047     		bx	lr	@
+ 187              	.L23:
+ 188 0006 00BF     		.align	2
+ 189              	.L22:
+ 190 0008 00000000 		.word	.LANCHOR2
+ 191              		.size	SysTickAttachCallback, .-SysTickAttachCallback
+ 192              		.section	.text.InitSysTick,"ax",%progbits
+ 193              		.align	2
+ 194              		.global	InitSysTick
+ 195              		.thumb
+ 196              		.thumb_func
+ 197              		.type	InitSysTick, %function
+ 198              	InitSysTick:
+ 199              		@ args = 0, pretend = 0, frame = 0
+ 200              		@ frame_needed = 0, uses_anonymous_args = 0
+ 201              		@ link register save eliminated.
+ 202 0000 0E4B     		ldr	r3, .L26	@ tmp114,
+ 203 0002 0F4A     		ldr	r2, .L26+4	@ tmp121,
+ 204 0004 1B68     		ldr	r3, [r3]	@ SystemCoreClock.5, SystemCoreClock
+ 205 0006 0F49     		ldr	r1, .L26+8	@ tmp117,
+ 206 0008 A2FB0302 		umull	r0, r2, r2, r3	@, tmp120, tmp121, SystemCoreClock.5
+ 207 000c A1FB0303 		umull	r0, r3, r1, r3	@, tmp116, tmp117, SystemCoreClock.5
+ 208 0010 9209     		lsrs	r2, r2, #6	@ D.6695, tmp120,
+ 209 0012 0D49     		ldr	r1, .L26+12	@ tmp115,
+ 210 0014 013A     		subs	r2, r2, #1	@ D.6695, D.6695,
+ 211 0016 9B0C     		lsrs	r3, r3, #18	@ sysTickPerUs.6, tmp116,
+ 212 0018 B2F1807F 		cmp	r2, #16777216	@ D.6695,
+ 213 001c 30B4     		push	{r4, r5}	@
+ 214 001e 0B60     		str	r3, [r1]	@ sysTickPerUs.6, sysTickPerUs
+ 215 0020 09D2     		bcs	.L24	@,
+ 216 0022 0A4B     		ldr	r3, .L26+16	@ tmp122,
+ 217 0024 0A4C     		ldr	r4, .L26+20	@ tmp123,
+ 218 0026 F025     		movs	r5, #240	@ tmp124,
+ 219 0028 0020     		movs	r0, #0	@ tmp127,
+ 220 002a 0721     		movs	r1, #7	@ tmp129,
+ 221 002c 5A60     		str	r2, [r3, #4]	@ D.6695, MEM[(struct SysTick_Type *)3758153744B].LOAD
+ 222 002e 84F82350 		strb	r5, [r4, #35]	@ tmp124, MEM[(struct SCB_Type *)3758157056B].SHP
+ 223 0032 9860     		str	r0, [r3, #8]	@ tmp127, MEM[(struct SysTick_Type *)3758153744B].VAL
+ 224 0034 1960     		str	r1, [r3]	@ tmp129, MEM[(struct SysTick_Type *)3758153744B].CTRL
+ 225              	.L24:
+ 226 0036 30BC     		pop	{r4, r5}	@
+ 227 0038 7047     		bx	lr	@
+ 228              	.L27:
+ARM GAS  C:\cygwin64\tmp\cc55YSFw.s 			page 5
+
+
+ 229 003a 00BF     		.align	2
+ 230              	.L26:
+ 231 003c 00000000 		.word	SystemCoreClock
+ 232 0040 D34D6210 		.word	274877907
+ 233 0044 83DE1B43 		.word	1125899907
+ 234 0048 00000000 		.word	.LANCHOR1
+ 235 004c 10E000E0 		.word	-536813552
+ 236 0050 00ED00E0 		.word	-536810240
+ 237              		.size	InitSysTick, .-InitSysTick
+ 238              		.section	.bss.sysTickMillis,"aw",%nobits
+ 239              		.align	2
+ 240              		.set	.LANCHOR0,. + 0
+ 241              		.type	sysTickMillis, %object
+ 242              		.size	sysTickMillis, 4
+ 243              	sysTickMillis:
+ 244 0000 00000000 		.space	4
+ 245              		.section	.data.sysTickPerUs,"aw",%progbits
+ 246              		.align	2
+ 247              		.set	.LANCHOR1,. + 0
+ 248              		.type	sysTickPerUs, %object
+ 249              		.size	sysTickPerUs, 4
+ 250              	sysTickPerUs:
+ 251 0000 48000000 		.word	72
+ 252              		.section	.bss.systickUserCallback,"aw",%nobits
+ 253              		.align	2
+ 254              		.set	.LANCHOR2,. + 0
+ 255              		.type	systickUserCallback, %object
+ 256              		.size	systickUserCallback, 4
+ 257              	systickUserCallback:
+ 258 0000 00000000 		.space	4
+ 259              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cc55YSFw.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 systick.c
+C:\cygwin64\tmp\cc55YSFw.s:69     .text.micros:00000000 $t
+C:\cygwin64\tmp\cc55YSFw.s:74     .text.micros:00000000 micros
+C:\cygwin64\tmp\cc55YSFw.s:115    .text.micros:00000044 $d
+C:\cygwin64\tmp\cc55YSFw.s:120    .text.millis:00000000 $t
+C:\cygwin64\tmp\cc55YSFw.s:125    .text.millis:00000000 millis
+C:\cygwin64\tmp\cc55YSFw.s:135    .text.millis:00000008 $d
+C:\cygwin64\tmp\cc55YSFw.s:138    .text.SysTick_Handler:00000000 $t
+C:\cygwin64\tmp\cc55YSFw.s:143    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\cygwin64\tmp\cc55YSFw.s:170    .text.SysTick_Handler:0000001c $d
+C:\cygwin64\tmp\cc55YSFw.s:175    .text.SysTickAttachCallback:00000000 $t
+C:\cygwin64\tmp\cc55YSFw.s:180    .text.SysTickAttachCallback:00000000 SysTickAttachCallback
+C:\cygwin64\tmp\cc55YSFw.s:190    .text.SysTickAttachCallback:00000008 $d
+C:\cygwin64\tmp\cc55YSFw.s:193    .text.InitSysTick:00000000 $t
+C:\cygwin64\tmp\cc55YSFw.s:198    .text.InitSysTick:00000000 InitSysTick
+C:\cygwin64\tmp\cc55YSFw.s:231    .text.InitSysTick:0000003c $d
+C:\cygwin64\tmp\cc55YSFw.s:239    .bss.sysTickMillis:00000000 $d
+C:\cygwin64\tmp\cc55YSFw.s:243    .bss.sysTickMillis:00000000 sysTickMillis
+C:\cygwin64\tmp\cc55YSFw.s:246    .data.sysTickPerUs:00000000 $d
+C:\cygwin64\tmp\cc55YSFw.s:250    .data.sysTickPerUs:00000000 sysTickPerUs
+C:\cygwin64\tmp\cc55YSFw.s:253    .bss.systickUserCallback:00000000 $d
+C:\cygwin64\tmp\cc55YSFw.s:257    .bss.systickUserCallback:00000000 systickUserCallback
+
+UNDEFINED SYMBOLS
+SystemCoreClock

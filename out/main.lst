@@ -1,0 +1,705 @@
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"main.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/main.d -MF out/main.d -MP -MQ out/main.o -D__USES_INITFINI__
+  25              	@ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER src/main.c -mcpu=cortex-m3
+  26              	@ -mthumb -auxbase-strip out/main.o -O2 -Wall -Wstrict-prototypes -Wextra
+  27              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  28              	@ -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.WatchDog,"ax",%progbits
+  69              		.align	2
+  70              		.global	WatchDog
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	WatchDog, %function
+  74              	WatchDog:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77 0000 10B5     		push	{r4, lr}	@
+  78 0002 084C     		ldr	r4, .L4	@ tmp112,
+  79 0004 2368     		ldr	r3, [r4]	@ WatchDogCounter.0, WatchDogCounter
+  80 0006 5A1C     		adds	r2, r3, #1	@ WatchDogCounter.2, WatchDogCounter.0,
+  81 0008 B3F57A7F 		cmp	r3, #1000	@ WatchDogCounter.0,
+  82 000c 2260     		str	r2, [r4]	@ WatchDogCounter.2, WatchDogCounter
+  83 000e 08DD     		ble	.L1	@,
+  84 0010 FFF7FEFF 		bl	LEDtoggle	@
+  85 0014 FFF7FEFF 		bl	PWMOff	@
+  86 0018 5720     		movs	r0, #87	@,
+  87 001a FFF7FEFF 		bl	DEBUG_PutChar	@
+  88 001e 0023     		movs	r3, #0	@ tmp115,
+  89 0020 2360     		str	r3, [r4]	@ tmp115, WatchDogCounter
+  90              	.L1:
+  91 0022 10BD     		pop	{r4, pc}	@
+  92              	.L5:
+  93              		.align	2
+  94              	.L4:
+  95 0024 00000000 		.word	.LANCHOR0
+  96              		.size	WatchDog, .-WatchDog
+  97              		.section	.text.Periph_clock_enable,"ax",%progbits
+  98              		.align	2
+  99              		.global	Periph_clock_enable
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.type	Periph_clock_enable, %function
+ 103              	Periph_clock_enable:
+ 104              		@ args = 0, pretend = 0, frame = 0
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106 0000 08B5     		push	{r3, lr}	@
+ 107 0002 42F67D20 		movw	r0, #10877	@,
+ 108 0006 0121     		movs	r1, #1	@,
+ 109 0008 FFF7FEFF 		bl	RCC_APB2PeriphClockCmd	@
+ 110 000c 0448     		ldr	r0, .L7	@,
+ 111 000e 0121     		movs	r1, #1	@,
+ 112 0010 FFF7FEFF 		bl	RCC_APB1PeriphClockCmd	@
+ 113 0014 BDE80840 		pop	{r3, lr}	@
+ 114 0018 0120     		movs	r0, #1	@,
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 3
+
+
+ 115 001a 0146     		mov	r1, r0	@,
+ 116 001c FFF7FEBF 		b	RCC_AHBPeriphClockCmd	@
+ 117              	.L8:
+ 118              		.align	2
+ 119              	.L7:
+ 120 0020 0F000800 		.word	524303
+ 121              		.size	Periph_clock_enable, .-Periph_clock_enable
+ 122              		.section	.text.GetIdlePerf,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	GetIdlePerf
+ 125              		.thumb
+ 126              		.thumb_func
+ 127              		.type	GetIdlePerf, %function
+ 128              	GetIdlePerf:
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131              		@ link register save eliminated.
+ 132 0000 014B     		ldr	r3, .L10	@ tmp113,
+ 133 0002 1868     		ldr	r0, [r3]	@ float	@, idlePerf
+ 134 0004 7047     		bx	lr	@
+ 135              	.L11:
+ 136 0006 00BF     		.align	2
+ 137              	.L10:
+ 138 0008 00000000 		.word	.LANCHOR1
+ 139              		.size	GetIdlePerf, .-GetIdlePerf
+ 140              		.section	.text.setup,"ax",%progbits
+ 141              		.align	2
+ 142              		.global	setup
+ 143              		.thumb
+ 144              		.thumb_func
+ 145              		.type	setup, %function
+ 146              	setup:
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 150 0002 FFF7FEFF 		bl	InitSysTick	@
+ 151 0006 FFF7FEFF 		bl	Periph_clock_enable	@
+ 152 000a FFF7FEFF 		bl	GPIO_Config	@
+ 153              	@ 331 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 154 000e 62B6     		cpsie i
+ 155              	@ 0 "" 2
+ 156              		.thumb
+ 157 0010 FFF7FEFF 		bl	ComInit	@
+ 158 0014 4F48     		ldr	r0, .L33	@,
+ 159 0016 FFF7FEFF 		bl	print	@
+ 160 001a 4F48     		ldr	r0, .L33+4	@,
+ 161 001c FFF7FEFF 		bl	print	@
+ 162 0020 FFF7FEFF 		bl	PWMConfig	@
+ 163 0024 1424     		movs	r4, #20	@ D.6920,
+ 164              	.L14:
+ 165 0026 FFF7FEFF 		bl	LEDtoggle	@
+ 166 002a FFF7FEFF 		bl	DEBUG_LEDtoggle	@
+ 167 002e 6420     		movs	r0, #100	@,
+ 168 0030 FFF7FEFF 		bl	Delay_ms	@
+ 169 0034 013C     		subs	r4, r4, #1	@ D.6920, D.6920,
+ 170 0036 F6D1     		bne	.L14	@,
+ 171 0038 FFF7FEFF 		bl	LEDoff	@
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 4
+
+
+ 172 003c FFF7FEFF 		bl	GetVCPConnectMode	@
+ 173 0040 0028     		cmp	r0, #0	@
+ 174 0042 59D0     		beq	.L15	@
+ 175 0044 4548     		ldr	r0, .L33+8	@,
+ 176 0046 FFF7FEFF 		bl	print	@
+ 177 004a 40F6B830 		movw	r0, #3000	@,
+ 178 004e FFF7FEFF 		bl	Delay_ms	@
+ 179 0052 FFF7FEFF 		bl	GetVCPConnectMode	@
+ 180 0056 0128     		cmp	r0, #1	@,
+ 181 0058 77D0     		beq	.L30	@,
+ 182              	.L16:
+ 183 005a 4148     		ldr	r0, .L33+12	@,
+ 184 005c FFF7FEFF 		bl	print	@
+ 185 0060 4048     		ldr	r0, .L33+16	@,
+ 186 0062 4149     		ldr	r1, .L33+20	@,
+ 187 0064 FFF7FEFF 		bl	print	@
+ 188 0068 404B     		ldr	r3, .L33+24	@ tmp136,
+ 189 006a 414A     		ldr	r2, .L33+28	@ tmp139,
+ 190 006c 1B68     		ldr	r3, [r3]	@ D.6922, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 191 006e 1168     		ldr	r1, [r2]	@ SystemCoreClock, SystemCoreClock
+ 192 0070 13F4003F 		tst	r3, #131072	@ D.6922,
+ 193 0074 3F4B     		ldr	r3, .L33+32	@ tmp143,
+ 194 0076 18BF     		it	ne
+ 195 0078 3F48     		ldrne	r0, .L33+36	@,
+ 196 007a A3FB0121 		umull	r2, r1, r3, r1	@, tmp148, tmp149, SystemCoreClock
+ 197 007e 08BF     		it	eq
+ 198 0080 3E48     		ldreq	r0, .L33+40	@,
+ 199 0082 890C     		lsrs	r1, r1, #18	@, tmp148,
+ 200 0084 FFF7FEFF 		bl	print	@
+ 201 0088 3D48     		ldr	r0, .L33+44	@,
+ 202 008a FFF7FEFF 		bl	print	@
+ 203 008e FFF7FEFF 		bl	ADC_Config	@
+ 204 0092 3C48     		ldr	r0, .L33+48	@,
+ 205 0094 FFF7FEFF 		bl	print	@
+ 206 0098 0A24     		movs	r4, #10	@ imuRetries,
+ 207              	.L19:
+ 208 009a FFF7FEFF 		bl	MPU6050_Init	@
+ 209 009e 013C     		subs	r4, r4, #1	@ imuRetries, imuRetries,
+ 210 00a0 2146     		mov	r1, r4	@, imuRetries
+ 211 00a2 0028     		cmp	r0, #0	@
+ 212 00a4 33D0     		beq	.L31	@
+ 213 00a6 3848     		ldr	r0, .L33+52	@,
+ 214 00a8 FFF7FEFF 		bl	print	@
+ 215 00ac FFF7FEFF 		bl	Blink	@
+ 216 00b0 002C     		cmp	r4, #0	@ imuRetries
+ 217 00b2 F2D1     		bne	.L19	@
+ 218 00b4 354D     		ldr	r5, .L33+56	@ tmp167,
+ 219 00b6 3648     		ldr	r0, .L33+60	@,
+ 220 00b8 2C60     		str	r4, [r5]	@ imuRetries, gotIMU
+ 221 00ba FFF7FEFF 		bl	print	@
+ 222              	.L26:
+ 223 00be 3548     		ldr	r0, .L33+64	@,
+ 224 00c0 FFF7FEFF 		bl	print	@
+ 225 00c4 FFF7FEFF 		bl	configLoad	@
+ 226 00c8 2B68     		ldr	r3, [r5]	@ gotIMU.6, gotIMU
+ 227 00ca 23BB     		cbnz	r3, .L32	@ gotIMU.6,
+ 228              	.L22:
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 5
+
+
+ 229 00cc 3248     		ldr	r0, .L33+68	@,
+ 230 00ce FFF7FEFF 		bl	print	@
+ 231 00d2 FFF7FEFF 		bl	RC_Config	@
+ 232 00d6 FFF7FEFF 		bl	InitSinArray	@
+ 233 00da FFF7FEFF 		bl	ComFlushInput	@
+ 234 00de 0028     		cmp	r0, #0	@,
+ 235 00e0 02DD     		ble	.L25	@,
+ 236 00e2 2E48     		ldr	r0, .L33+72	@,
+ 237 00e4 FFF7FEFF 		bl	print	@
+ 238              	.L25:
+ 239 00e8 2D48     		ldr	r0, .L33+76	@,
+ 240 00ea FFF7FEFF 		bl	print	@
+ 241 00ee BDE83840 		pop	{r3, r4, r5, lr}	@
+ 242 00f2 2C48     		ldr	r0, .L33+80	@,
+ 243 00f4 FFF7FEBF 		b	SysTickAttachCallback	@
+ 244              	.L15:
+ 245 00f8 2B48     		ldr	r0, .L33+84	@,
+ 246 00fa FFF7FEFF 		bl	print	@
+ 247 00fe 40F6B830 		movw	r0, #3000	@,
+ 248 0102 FFF7FEFF 		bl	Delay_ms	@
+ 249 0106 2948     		ldr	r0, .L33+88	@,
+ 250 0108 FFF7FEFF 		bl	print	@
+ 251 010c A5E7     		b	.L16	@
+ 252              	.L31:
+ 253 010e 1F4D     		ldr	r5, .L33+56	@ tmp167,
+ 254 0110 0123     		movs	r3, #1	@ tmp154,
+ 255 0112 2B60     		str	r3, [r5]	@ tmp154, gotIMU
+ 256 0114 D3E7     		b	.L26	@
+ 257              	.L32:
+ 258 0116 2648     		ldr	r0, .L33+92	@,
+ 259 0118 FFF7FEFF 		bl	print	@
+ 260 011c 0D24     		movs	r4, #13	@ D.6920,
+ 261              	.L24:
+ 262 011e FFF7FEFF 		bl	LEDtoggle	@
+ 263 0122 4FF47A70 		mov	r0, #1000	@,
+ 264 0126 FFF7FEFF 		bl	Delay_ms	@
+ 265 012a 013C     		subs	r4, r4, #1	@ D.6920, D.6920,
+ 266 012c F7D1     		bne	.L24	@,
+ 267 012e FFF7FEFF 		bl	millis	@
+ 268 0132 0146     		mov	r1, r0	@ D.6924,
+ 269 0134 1F48     		ldr	r0, .L33+96	@,
+ 270 0136 FFF7FEFF 		bl	print	@
+ 271 013a FFF7FEFF 		bl	MPU6050_Gyro_calibration	@
+ 272 013e 1E48     		ldr	r0, .L33+100	@,
+ 273 0140 FFF7FEFF 		bl	print	@
+ 274 0144 FFF7FEFF 		bl	Init_Orientation	@
+ 275 0148 C0E7     		b	.L22	@
+ 276              	.L30:
+ 277 014a 1C48     		ldr	r0, .L33+104	@,
+ 278 014c FFF7FEFF 		bl	print	@
+ 279 0150 83E7     		b	.L16	@
+ 280              	.L34:
+ 281 0152 00BF     		.align	2
+ 282              	.L33:
+ 283 0154 00000000 		.word	.LC0
+ 284 0158 38000000 		.word	.LC1
+ 285 015c 4C000000 		.word	.LC2
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 6
+
+
+ 286 0160 00010000 		.word	.LC6
+ 287 0164 54010000 		.word	.LC7
+ 288 0168 8C010000 		.word	.LC8
+ 289 016c 00100240 		.word	1073876992
+ 290 0170 00000000 		.word	SystemCoreClock
+ 291 0174 83DE1B43 		.word	1125899907
+ 292 0178 94010000 		.word	.LC9
+ 293 017c CC010000 		.word	.LC10
+ 294 0180 08020000 		.word	.LC11
+ 295 0184 18020000 		.word	.LC12
+ 296 0188 2C020000 		.word	.LC13
+ 297 018c 00000000 		.word	.LANCHOR2
+ 298 0190 30030000 		.word	.LC21
+ 299 0194 58020000 		.word	.LC14
+ 300 0198 CC020000 		.word	.LC18
+ 301 019c DC020000 		.word	.LC19
+ 302 01a0 18030000 		.word	.LC20
+ 303 01a4 00000000 		.word	WatchDog
+ 304 01a8 9C000000 		.word	.LC4
+ 305 01ac CC000000 		.word	.LC5
+ 306 01b0 6C020000 		.word	.LC15
+ 307 01b4 94020000 		.word	.LC16
+ 308 01b8 B8020000 		.word	.LC17
+ 309 01bc 68000000 		.word	.LC3
+ 310              		.size	setup, .-setup
+ 311              		.global	__aeabi_ui2f
+ 312              		.global	__aeabi_i2f
+ 313              		.global	__aeabi_fmul
+ 314              		.global	__aeabi_fdiv
+ 315              		.section	.text.startup.main,"ax",%progbits
+ 316              		.align	2
+ 317              		.global	main
+ 318              		.thumb
+ 319              		.thumb_func
+ 320              		.type	main, %function
+ 321              	main:
+ 322              		@ args = 0, pretend = 0, frame = 0
+ 323              		@ frame_needed = 0, uses_anonymous_args = 0
+ 324 0000 2DE9F84F 		push	{r3, r4, r5, r6, r7, r8, r9, r10, fp, lr}	@
+ 325 0004 FFF7FEFF 		bl	setup	@
+ 326 0008 FFF7FEFF 		bl	millis	@
+ 327 000c 0446     		mov	r4, r0	@ t0,
+ 328              	.L37:
+ 329 000e FFF7FEFF 		bl	millis	@
+ 330 0012 8442     		cmp	r4, r0	@ t0,
+ 331 0014 FBD0     		beq	.L37	@,
+ 332 0016 FFF7FEFF 		bl	micros	@
+ 333 001a 0446     		mov	r4, r0	@ lastTime,
+ 334              	@ 342 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 335 001c 72B6     		cpsid i
+ 336              	@ 0 "" 2
+ 337              		.thumb
+ 338 001e 0027     		movs	r7, #0	@ idleLoops,
+ 339              	.L39:
+ 340 0020 FFF7FEFF 		bl	micros	@
+ 341 0024 001B     		subs	r0, r0, r4	@ timePassed,, lastTime
+ 342 0026 B0F5FA7F 		cmp	r0, #500	@ timePassed,
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 7
+
+
+ 343 002a 07F10107 		add	r7, r7, #1	@ idleLoops, idleLoops,
+ 344 002e F7D3     		bcc	.L39	@,
+ 345              	@ 331 "Libraries/CMSIS/Include/core_cmFunc.h" 1
+ 346 0030 62B6     		cpsie i
+ 347              	@ 0 "" 2
+ 348              		.thumb
+ 349 0032 FFF7FEFF 		bl	micros	@
+ 350 0036 DFF894A0 		ldr	r10, .L49+12	@ tmp148,
+ 351 003a DFF89490 		ldr	r9, .L49+16	@ tmp146,
+ 352 003e DFF894B0 		ldr	fp, .L49+20	@ tmp149,
+ 353 0042 DFF89480 		ldr	r8, .L49+24	@ tmp147,
+ 354 0046 7F00     		lsls	r7, r7, #1	@ idleMax, idleLoops,
+ 355 0048 0646     		mov	r6, r0	@ lastTime,
+ 356              	.L44:
+ 357 004a 0024     		movs	r4, #0	@ idleLoops,
+ 358              	.L41:
+ 359 004c FFF7FEFF 		bl	micros	@
+ 360 0050 0546     		mov	r5, r0	@ lastTime,
+ 361 0052 801B     		subs	r0, r0, r6	@ timePassed, lastTime, lastTime
+ 362 0054 B0F5FA6F 		cmp	r0, #2000	@ timePassed,
+ 363 0058 04F10104 		add	r4, r4, #1	@ idleLoops, idleLoops,
+ 364 005c F6D3     		bcc	.L41	@,
+ 365 005e FFF7FEFF 		bl	__aeabi_ui2f	@
+ 366 0062 0646     		mov	r6, r0	@ D.6960,
+ 367 0064 2046     		mov	r0, r4	@, idleLoops
+ 368 0066 FFF7FEFF 		bl	__aeabi_i2f	@
+ 369 006a 1549     		ldr	r1, .L49	@,
+ 370 006c FFF7FEFF 		bl	__aeabi_fmul	@
+ 371 0070 1449     		ldr	r1, .L49+4	@,
+ 372 0072 FFF7FEFF 		bl	__aeabi_fmul	@
+ 373 0076 3146     		mov	r1, r6	@, D.6960
+ 374 0078 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 375 007c 0446     		mov	r4, r0	@ D.6960,
+ 376 007e 3846     		mov	r0, r7	@, idleMax
+ 377 0080 FFF7FEFF 		bl	__aeabi_i2f	@
+ 378 0084 0146     		mov	r1, r0	@ D.6960,
+ 379 0086 2046     		mov	r0, r4	@, D.6960
+ 380 0088 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 381 008c D9F80030 		ldr	r3, [r9]	@ ConfigMode, ConfigMode
+ 382 0090 CAF80000 		str	r0, [r10]	@ float	@, idlePerf
+ 383 0094 13B9     		cbnz	r3, .L42	@ ConfigMode,
+ 384 0096 DBF80030 		ldr	r3, [fp]	@ gotIMU.9, gotIMU
+ 385 009a 53B9     		cbnz	r3, .L48	@ gotIMU.9,
+ 386              	.L42:
+ 387 009c FFF7FEFF 		bl	PWMOff	@
+ 388 00a0 FFF7FEFF 		bl	Blink	@
+ 389              	.L43:
+ 390 00a4 0023     		movs	r3, #0	@ tmp145,
+ 391 00a6 2E46     		mov	r6, r5	@ lastTime, lastTime
+ 392 00a8 C8F80030 		str	r3, [r8]	@ tmp145, WatchDogCounter
+ 393 00ac FFF7FEFF 		bl	CommHandler	@
+ 394 00b0 CBE7     		b	.L44	@
+ 395              	.L48:
+ 396 00b2 0549     		ldr	r1, .L49+8	@,
+ 397 00b4 3046     		mov	r0, r6	@, D.6960
+ 398 00b6 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 399 00ba FFF7FEFF 		bl	engineProcess	@
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 8
+
+
+ 400 00be F1E7     		b	.L43	@
+ 401              	.L50:
+ 402              		.align	2
+ 403              	.L49:
+ 404 00c0 0000C842 		.word	1120403456
+ 405 00c4 00007A44 		.word	1148846080
+ 406 00c8 00247449 		.word	1232348160
+ 407 00cc 00000000 		.word	.LANCHOR1
+ 408 00d0 00000000 		.word	ConfigMode
+ 409 00d4 00000000 		.word	.LANCHOR2
+ 410 00d8 00000000 		.word	.LANCHOR0
+ 411              		.size	main, .-main
+ 412              		.section	.bss.idlePerf,"aw",%nobits
+ 413              		.align	2
+ 414              		.set	.LANCHOR1,. + 0
+ 415              		.type	idlePerf, %object
+ 416              		.size	idlePerf, 4
+ 417              	idlePerf:
+ 418 0000 00000000 		.space	4
+ 419              		.section	.bss.WatchDogCounter,"aw",%nobits
+ 420              		.align	2
+ 421              		.set	.LANCHOR0,. + 0
+ 422              		.type	WatchDogCounter, %object
+ 423              		.size	WatchDogCounter, 4
+ 424              	WatchDogCounter:
+ 425 0000 00000000 		.space	4
+ 426              		.section	.bss.gotIMU,"aw",%nobits
+ 427              		.align	2
+ 428              		.set	.LANCHOR2,. + 0
+ 429              		.type	gotIMU, %object
+ 430              		.size	gotIMU, 4
+ 431              	gotIMU:
+ 432 0000 00000000 		.space	4
+ 433              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 434              		.align	2
+ 435              	.LC0:
+ 436 0000 0D0A0D4C 		.ascii	"\015\012\015LAKITU revision EvvGC firmware _0.0 sta"
+ 436      414B4954 
+ 436      55207265 
+ 436      76697369 
+ 436      6F6E2045 
+ 437 002a 7274696E 		.ascii	"rting up...\015\012\000"
+ 437      67207570 
+ 437      2E2E2E0D 
+ 437      0A00
+ 438              	.LC1:
+ 439 0038 696E6974 		.ascii	"init motor PWM...\015\012\000"
+ 439      206D6F74 
+ 439      6F722050 
+ 439      574D2E2E 
+ 439      2E0D0A00 
+ 440              	.LC2:
+ 441 004c 0D0A5553 		.ascii	"\015\012USB startup delay...\015\012\000"
+ 441      42207374 
+ 441      61727475 
+ 441      70206465 
+ 441      6C61792E 
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 9
+
+
+ 442 0065 000000   		.space	3
+ 443              	.LC3:
+ 444 0068 0D0A0D0A 		.ascii	"\015\012\015\012EvvGC firmware starting up, USB con"
+ 444      45767647 
+ 444      43206669 
+ 444      726D7761 
+ 444      72652073 
+ 445 008f 6E656374 		.ascii	"nected...\015\012\000"
+ 445      65642E2E 
+ 445      2E0D0A00 
+ 446 009b 00       		.space	1
+ 447              	.LC4:
+ 448 009c 0D0A4465 		.ascii	"\015\012Delaying for usb/serial driver to settle\015"
+ 448      6C617969 
+ 448      6E672066 
+ 448      6F722075 
+ 448      73622F73 
+ 449 00c7 0A00     		.ascii	"\012\000"
+ 450 00c9 000000   		.space	3
+ 451              	.LC5:
+ 452 00cc 0D0A0D0A 		.ascii	"\015\012\015\012EvvGC firmware starting up, serial "
+ 452      45767647 
+ 452      43206669 
+ 452      726D7761 
+ 452      72652073 
+ 453 00f3 61637469 		.ascii	"active...\015\012\000"
+ 453      76652E2E 
+ 453      2E0D0A00 
+ 454 00ff 00       		.space	1
+ 455              	.LC6:
+ 456 0100 67636320 		.ascii	"gcc version 4.8.4 20140526 (release) [ARM/embedded-"
+ 456      76657273 
+ 456      696F6E20 
+ 456      342E382E 
+ 456      34203230 
+ 457 0133 345F382D 		.ascii	"4_8-branch revision 211358]\015\012\000"
+ 457      6272616E 
+ 457      63682072 
+ 457      65766973 
+ 457      696F6E20 
+ 458 0151 000000   		.space	3
+ 459              	.LC7:
+ 460 0154 45767647 		.ascii	"EvvGC firmware V%s, build date Sep 19 2014 14:56:26"
+ 460      43206669 
+ 460      726D7761 
+ 460      72652056 
+ 460      25732C20 
+ 461 0187 200D0A00 		.ascii	" \015\012\000"
+ 462 018b 00       		.space	1
+ 463              	.LC8:
+ 464 018c 302E342E 		.ascii	"0.4.5.2\000"
+ 464      352E3200 
+ 465              	.LC9:
+ 466 0194 72756E6E 		.ascii	"running on external HSE clock, clock rate is %dMHz\015"
+ 466      696E6720 
+ 466      6F6E2065 
+ 466      78746572 
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 10
+
+
+ 466      6E616C20 
+ 467 01c7 0A00     		.ascii	"\012\000"
+ 468 01c9 000000   		.space	3
+ 469              	.LC10:
+ 470 01cc 4552524F 		.ascii	"ERROR: running on internal HSI clock, clock rate is"
+ 470      523A2072 
+ 470      756E6E69 
+ 470      6E67206F 
+ 470      6E20696E 
+ 471 01ff 2025644D 		.ascii	" %dMHz\015\012\000"
+ 471      487A0D0A 
+ 471      00
+ 472              	.LC11:
+ 473 0208 696E6974 		.ascii	"init ADC...\015\012\000"
+ 473      20414443 
+ 473      2E2E2E0D 
+ 473      0A00
+ 474 0216 0000     		.space	2
+ 475              	.LC12:
+ 476 0218 696E6974 		.ascii	"init MPU6050...\015\012\000"
+ 476      204D5055 
+ 476      36303530 
+ 476      2E2E2E0D 
+ 476      0A00
+ 477 022a 0000     		.space	2
+ 478              	.LC13:
+ 479 022c 696E6974 		.ascii	"init MPU6050 failed, retries left: %d...\015\012\000"
+ 479      204D5055 
+ 479      36303530 
+ 479      20666169 
+ 479      6C65642C 
+ 480 0257 00       		.space	1
+ 481              	.LC14:
+ 482 0258 6C6F6164 		.ascii	"loading config...\015\012\000"
+ 482      696E6720 
+ 482      636F6E66 
+ 482      69672E2E 
+ 482      2E0D0A00 
+ 483              	.LC15:
+ 484 026c 70617573 		.ascii	"pausing for the gimbal to settle...\015\012\000"
+ 484      696E6720 
+ 484      666F7220 
+ 484      74686520 
+ 484      67696D62 
+ 485 0292 0000     		.space	2
+ 486              	.LC16:
+ 487 0294 63616C69 		.ascii	"calibrating MPU6050 at %ums...\015\012\000"
+ 487      62726174 
+ 487      696E6720 
+ 487      4D505536 
+ 487      30353020 
+ 488 02b5 000000   		.space	3
+ 489              	.LC17:
+ 490 02b8 496E6974 		.ascii	"Init Orientation\012\015\000"
+ 490      204F7269 
+ 490      656E7461 
+ 490      74696F6E 
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 11
+
+
+ 490      0A0D00
+ 491 02cb 00       		.space	1
+ 492              	.LC18:
+ 493 02cc 696E6974 		.ascii	"init RC...\015\012\000"
+ 493      2052432E 
+ 493      2E2E0D0A 
+ 493      00
+ 494 02d9 000000   		.space	3
+ 495              	.LC19:
+ 496 02dc 72656D6F 		.ascii	"removed %d pending characters from communications i"
+ 496      76656420 
+ 496      25642070 
+ 496      656E6469 
+ 496      6E672063 
+ 497 030f 6E707574 		.ascii	"nput\015\012\000"
+ 497      0D0A00
+ 498 0316 0000     		.space	2
+ 499              	.LC20:
+ 500 0318 656E7465 		.ascii	"entering main loop...\015\012\000"
+ 500      72696E67 
+ 500      206D6169 
+ 500      6E206C6F 
+ 500      6F702E2E 
+ 501              	.LC21:
+ 502 0330 0D0A5741 		.ascii	"\015\012WARNING: MPU6050 init failed, entering conf"
+ 502      524E494E 
+ 502      473A204D 
+ 502      50553630 
+ 502      35302069 
+ 503 035d 69677261 		.ascii	"igration mode only...\015\012\015\012\000"
+ 503      74696F6E 
+ 503      206D6F64 
+ 503      65206F6E 
+ 503      6C792E2E 
+ 504 0377 00       		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\cygwin64\tmp\cc4ZrgRC.s:69     .text.WatchDog:00000000 $t
+C:\cygwin64\tmp\cc4ZrgRC.s:74     .text.WatchDog:00000000 WatchDog
+C:\cygwin64\tmp\cc4ZrgRC.s:95     .text.WatchDog:00000024 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:98     .text.Periph_clock_enable:00000000 $t
+C:\cygwin64\tmp\cc4ZrgRC.s:103    .text.Periph_clock_enable:00000000 Periph_clock_enable
+C:\cygwin64\tmp\cc4ZrgRC.s:120    .text.Periph_clock_enable:00000020 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:123    .text.GetIdlePerf:00000000 $t
+C:\cygwin64\tmp\cc4ZrgRC.s:128    .text.GetIdlePerf:00000000 GetIdlePerf
+C:\cygwin64\tmp\cc4ZrgRC.s:138    .text.GetIdlePerf:00000008 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:141    .text.setup:00000000 $t
+C:\cygwin64\tmp\cc4ZrgRC.s:146    .text.setup:00000000 setup
+C:\cygwin64\tmp\cc4ZrgRC.s:283    .text.setup:00000154 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:316    .text.startup.main:00000000 $t
+C:\cygwin64\tmp\cc4ZrgRC.s:321    .text.startup.main:00000000 main
+C:\cygwin64\tmp\cc4ZrgRC.s:404    .text.startup.main:000000c0 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:413    .bss.idlePerf:00000000 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:417    .bss.idlePerf:00000000 idlePerf
+C:\cygwin64\tmp\cc4ZrgRC.s:420    .bss.WatchDogCounter:00000000 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:424    .bss.WatchDogCounter:00000000 WatchDogCounter
+C:\cygwin64\tmp\cc4ZrgRC.s:427    .bss.gotIMU:00000000 $d
+C:\cygwin64\tmp\cc4ZrgRC.s:431    .bss.gotIMU:00000000 gotIMU
+C:\cygwin64\tmp\cc4ZrgRC.s:434    .rodata.str1.4:00000000 $d
+
+UNDEFINED SYMBOLS
+LEDtoggle
+PWMOff
+DEBUG_PutChar
+RCC_APB2PeriphClockCmd
+RCC_APB1PeriphClockCmd
+RCC_AHBPeriphClockCmd
+InitSysTick
+GPIO_Config
+ComInit
+print
+PWMConfig
+DEBUG_LEDtoggle
+Delay_ms
+LEDoff
+GetVCPConnectMode
+ADC_Config
+MPU6050_Init
+Blink
+configLoad
+RC_Config
+InitSinArray
+ComFlushInput
+SysTickAttachCallback
+millis
+MPU6050_Gyro_calibration
+Init_Orientation
+SystemCoreClock
+__aeabi_ui2f
+__aeabi_i2f
+__aeabi_fmul
+__aeabi_fdiv
+ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 13
+
+
+micros
+CommHandler
+engineProcess
+ConfigMode

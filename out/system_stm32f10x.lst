@@ -1,0 +1,337 @@
+ARM GAS  C:\cygwin64\tmp\ccyGDqBV.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"system_stm32f10x.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/system_stm32f10x.d -MF out/system_stm32f10x.d -MP
+  25              	@ -MQ out/system_stm32f10x.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER src/system_stm32f10x.c -mcpu=cortex-m3 -mthumb
+  27              	@ -auxbase-strip out/system_stm32f10x.o -O2 -Wall -Wstrict-prototypes
+  28              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  29              	@ -fsingle-precision-constant
+  30              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  31              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  32              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  33              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  34              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  35              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  36              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  37              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  38              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  39              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  40              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  41              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  42              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  43              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  44              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  45              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  46              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  47              	@ -freorder-functions -frerun-cse-after-loop
+  48              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  49              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  50              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  51              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  52              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  53              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  54              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+ARM GAS  C:\cygwin64\tmp\ccyGDqBV.s 			page 2
+
+
+  58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  59              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  60              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  61              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  62              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  63              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  64              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  65              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  67              	@ -munaligned-access -mvectorize-with-neon-quad
+  68              	
+  69              		.section	.text.SystemCoreClockUpdate,"ax",%progbits
+  70              		.align	2
+  71              		.global	SystemCoreClockUpdate
+  72              		.thumb
+  73              		.thumb_func
+  74              		.type	SystemCoreClockUpdate, %function
+  75              	SystemCoreClockUpdate:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79 0000 114B     		ldr	r3, .L10	@ tmp130,
+  80 0002 5A68     		ldr	r2, [r3, #4]	@ D.6738, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+  81 0004 02F00C02 		and	r2, r2, #12	@ tmp, D.6738,
+  82 0008 082A     		cmp	r2, #8	@ tmp,
+  83 000a 0ED1     		bne	.L7	@,
+  84 000c 5A68     		ldr	r2, [r3, #4]	@ D.6738, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+  85 000e 5968     		ldr	r1, [r3, #4]	@ D.6738, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+  86 0010 C2F38342 		ubfx	r2, r2, #18, #4	@ D.6738, D.6738,,
+  87 0014 C903     		lsls	r1, r1, #15	@, D.6738,
+  88 0016 02F10202 		add	r2, r2, #2	@ pllmull, D.6738,
+  89 001a 11D5     		bpl	.L8	@,
+  90 001c 5B68     		ldr	r3, [r3, #4]	@ D.6738, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+  91 001e 9B03     		lsls	r3, r3, #14	@, D.6738,
+  92 0020 0ED4     		bmi	.L8	@,
+  93 0022 0A4B     		ldr	r3, .L10+4	@ tmp140,
+  94 0024 03FB02F2 		mul	r2, r3, r2	@ D.6740, tmp140, pllmull
+  95 0028 00E0     		b	.L2	@
+  96              	.L7:
+  97 002a 084A     		ldr	r2, .L10+4	@ D.6740,
+  98              	.L2:
+  99 002c 064B     		ldr	r3, .L10	@ tmp141,
+ 100 002e 0848     		ldr	r0, .L10+8	@ tmp143,
+ 101 0030 5968     		ldr	r1, [r3, #4]	@ D.6738, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 102 0032 084B     		ldr	r3, .L10+12	@ tmp147,
+ 103 0034 C1F30311 		ubfx	r1, r1, #4, #4	@ D.6738, D.6738,,
+ 104 0038 415C     		ldrb	r1, [r0, r1]	@ zero_extendqisi2	@ tmp146, AHBPrescTable
+ 105 003a CA40     		lsrs	r2, r2, r1	@ SystemCoreClock.11, D.6740, tmp146
+ 106 003c 1A60     		str	r2, [r3]	@ SystemCoreClock.11, SystemCoreClock
+ 107 003e 7047     		bx	lr	@
+ 108              	.L8:
+ 109 0040 054B     		ldr	r3, .L10+16	@ tmp139,
+ 110 0042 03FB02F2 		mul	r2, r3, r2	@ D.6740, tmp139, pllmull
+ 111 0046 F1E7     		b	.L2	@
+ 112              	.L11:
+ 113              		.align	2
+ 114              	.L10:
+ARM GAS  C:\cygwin64\tmp\ccyGDqBV.s 			page 3
+
+
+ 115 0048 00100240 		.word	1073876992
+ 116 004c 00127A00 		.word	8000000
+ 117 0050 00000000 		.word	.LANCHOR0
+ 118 0054 00000000 		.word	.LANCHOR1
+ 119 0058 00093D00 		.word	4000000
+ 120              		.size	SystemCoreClockUpdate, .-SystemCoreClockUpdate
+ 121              		.section	.text.SystemInit,"ax",%progbits
+ 122              		.align	2
+ 123              		.global	SystemInit
+ 124              		.thumb
+ 125              		.thumb_func
+ 126              		.type	SystemInit, %function
+ 127              	SystemInit:
+ 128              		@ args = 0, pretend = 0, frame = 8
+ 129              		@ frame_needed = 0, uses_anonymous_args = 0
+ 130 0000 494B     		ldr	r3, .L34	@ tmp180,
+ 131 0002 10B5     		push	{r4, lr}	@
+ 132 0004 1968     		ldr	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 133 0006 494A     		ldr	r2, .L34+4	@ D.6751,
+ 134 0008 41F00101 		orr	r1, r1, #1	@ D.6751, D.6751,
+ 135 000c 1960     		str	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 136 000e 5968     		ldr	r1, [r3, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 137 0010 82B0     		sub	sp, sp, #8	@,,
+ 138 0012 0A40     		ands	r2, r2, r1	@, D.6751, D.6751, D.6751
+ 139 0014 5A60     		str	r2, [r3, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 140 0016 1968     		ldr	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 141 0018 0020     		movs	r0, #0	@ tmp194,
+ 142 001a 21F08471 		bic	r1, r1, #17301504	@ D.6751, D.6751,
+ 143 001e 21F48031 		bic	r1, r1, #65536	@ D.6751, D.6751,
+ 144 0022 1960     		str	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 145 0024 1968     		ldr	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 146 0026 4FF41F04 		mov	r4, #10420224	@ tmp193,
+ 147 002a 21F48021 		bic	r1, r1, #262144	@ D.6751, D.6751,
+ 148 002e 1960     		str	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 149 0030 5968     		ldr	r1, [r3, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 150 0032 1A46     		mov	r2, r3	@ tmp260, tmp180
+ 151 0034 21F4FE01 		bic	r1, r1, #8323072	@ D.6751, D.6751,
+ 152 0038 5960     		str	r1, [r3, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 153 003a 9C60     		str	r4, [r3, #8]	@ tmp193, MEM[(struct RCC_TypeDef *)1073876992B].CIR
+ 154 003c 0090     		str	r0, [sp]	@ tmp194, StartUpCounter
+ 155 003e 0190     		str	r0, [sp, #4]	@ tmp194, HSEStatus
+ 156 0040 1968     		ldr	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 157 0042 41F48031 		orr	r1, r1, #65536	@ D.6751, D.6751,
+ 158 0046 1960     		str	r1, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 159 0048 03E0     		b	.L14	@
+ 160              	.L32:
+ 161 004a 009B     		ldr	r3, [sp]	@ StartUpCounter.5, StartUpCounter
+ 162 004c B3F5A06F 		cmp	r3, #1280	@ StartUpCounter.5,
+ 163 0050 09D0     		beq	.L13	@,
+ 164              	.L14:
+ 165 0052 1368     		ldr	r3, [r2]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 166 0054 03F40033 		and	r3, r3, #131072	@ HSEStatus.1, D.6751,
+ 167 0058 0193     		str	r3, [sp, #4]	@ HSEStatus.1, HSEStatus
+ 168 005a 009B     		ldr	r3, [sp]	@ StartUpCounter.2, StartUpCounter
+ 169 005c 0133     		adds	r3, r3, #1	@ StartUpCounter.3, StartUpCounter.2,
+ 170 005e 0093     		str	r3, [sp]	@ StartUpCounter.3, StartUpCounter
+ 171 0060 019B     		ldr	r3, [sp, #4]	@ HSEStatus.4, HSEStatus
+ARM GAS  C:\cygwin64\tmp\ccyGDqBV.s 			page 4
+
+
+ 172 0062 002B     		cmp	r3, #0	@ HSEStatus.4
+ 173 0064 F1D0     		beq	.L32	@
+ 174              	.L13:
+ 175 0066 304B     		ldr	r3, .L34	@ tmp199,
+ 176 0068 314A     		ldr	r2, .L34+8	@ tmp203,
+ 177 006a 1B68     		ldr	r3, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 178 006c 13F40033 		ands	r3, r3, #131072	@ D.6751, D.6751,
+ 179 0070 18BF     		it	ne
+ 180 0072 0123     		movne	r3, #1	@ tmp201,
+ 181 0074 0193     		str	r3, [sp, #4]	@ D.6751, HSEStatus
+ 182 0076 019B     		ldr	r3, [sp, #4]	@ HSEStatus.6, HSEStatus
+ 183 0078 1068     		ldr	r0, [r2]	@ D.6751,
+ 184 007a 012B     		cmp	r3, #1	@ HSEStatus.6,
+ 185 007c 40F01000 		orr	r0, r0, #16	@ D.6751, D.6751,
+ 186 0080 1060     		str	r0, [r2]	@ D.6751,
+ 187 0082 1068     		ldr	r0, [r2]	@ D.6751,
+ 188 0084 284B     		ldr	r3, .L34	@ tmp209,
+ 189 0086 20F00300 		bic	r0, r0, #3	@ D.6751, D.6751,
+ 190 008a 1060     		str	r0, [r2]	@ D.6751,
+ 191 008c 1068     		ldr	r0, [r2]	@ D.6751,
+ 192 008e 1946     		mov	r1, r3	@ tmp257, tmp209
+ 193 0090 40F00200 		orr	r0, r0, #2	@ D.6751, D.6751,
+ 194 0094 1060     		str	r0, [r2]	@ D.6751,
+ 195 0096 5A68     		ldr	r2, [r3, #4]	@ D.6751,
+ 196 0098 5A60     		str	r2, [r3, #4]	@ D.6751,
+ 197 009a 5A68     		ldr	r2, [r3, #4]	@ D.6751,
+ 198 009c 5A60     		str	r2, [r3, #4]	@ D.6751,
+ 199 009e 5A68     		ldr	r2, [r3, #4]	@ D.6751,
+ 200 00a0 42F48062 		orr	r2, r2, #1024	@ D.6751, D.6751,
+ 201 00a4 5A60     		str	r2, [r3, #4]	@ D.6751,
+ 202 00a6 5A68     		ldr	r2, [r3, #4]	@ D.6751,
+ 203 00a8 22F47C12 		bic	r2, r2, #4128768	@ D.6751, D.6751,
+ 204 00ac 5A60     		str	r2, [r3, #4]	@ D.6751,
+ 205 00ae 5A68     		ldr	r2, [r3, #4]	@ D.6751,
+ 206 00b0 1FD0     		beq	.L33	@,
+ 207 00b2 42F46012 		orr	r2, r2, #3670016	@ D.6751, D.6751,
+ 208 00b6 5A60     		str	r2, [r3, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 209 00b8 1A68     		ldr	r2, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 210 00ba 42F08072 		orr	r2, r2, #16777216	@ D.6751, D.6751,
+ 211 00be 1A60     		str	r2, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 212              	.L23:
+ 213 00c0 0B68     		ldr	r3, [r1]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 214 00c2 194A     		ldr	r2, .L34	@ tmp247,
+ 215 00c4 9B01     		lsls	r3, r3, #6	@, D.6751,
+ 216 00c6 FBD5     		bpl	.L23	@,
+ 217 00c8 5368     		ldr	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 218 00ca 1146     		mov	r1, r2	@ tmp258, tmp247
+ 219 00cc 23F00303 		bic	r3, r3, #3	@ D.6751, D.6751,
+ 220 00d0 5360     		str	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 221 00d2 5368     		ldr	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 222 00d4 43F00203 		orr	r3, r3, #2	@ D.6751, D.6751,
+ 223 00d8 5360     		str	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 224              	.L25:
+ 225 00da 4B68     		ldr	r3, [r1, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 226 00dc 03F00C03 		and	r3, r3, #12	@ D.6751, D.6751,
+ 227 00e0 082B     		cmp	r3, #8	@ D.6751,
+ 228 00e2 FAD1     		bne	.L25	@,
+ARM GAS  C:\cygwin64\tmp\ccyGDqBV.s 			page 5
+
+
+ 229 00e4 FFF7FEFF 		bl	SystemCoreClockUpdate	@
+ 230              	.L20:
+ 231 00e8 124A     		ldr	r2, .L34+12	@ g_pfnVectors.0,
+ 232 00ea 134B     		ldr	r3, .L34+16	@ tmp255,
+ 233 00ec 9A60     		str	r2, [r3, #8]	@ g_pfnVectors.0, MEM[(struct SCB_Type *)3758157056B].VTOR
+ 234 00ee 02B0     		add	sp, sp, #8	@,,
+ 235              		@ sp needed	@
+ 236 00f0 10BD     		pop	{r4, pc}	@
+ 237              	.L33:
+ 238 00f2 42F4E812 		orr	r2, r2, #1900544	@ D.6751, D.6751,
+ 239 00f6 5A60     		str	r2, [r3, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 240 00f8 1A68     		ldr	r2, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 241 00fa 42F08072 		orr	r2, r2, #16777216	@ D.6751, D.6751,
+ 242 00fe 1A60     		str	r2, [r3]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 243              	.L19:
+ 244 0100 0B68     		ldr	r3, [r1]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CR
+ 245 0102 094A     		ldr	r2, .L34	@ tmp221,
+ 246 0104 9801     		lsls	r0, r3, #6	@, D.6751,
+ 247 0106 FBD5     		bpl	.L19	@,
+ 248 0108 5368     		ldr	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 249 010a 1146     		mov	r1, r2	@ tmp256, tmp221
+ 250 010c 23F00303 		bic	r3, r3, #3	@ D.6751, D.6751,
+ 251 0110 5360     		str	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 252 0112 5368     		ldr	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 253 0114 43F00203 		orr	r3, r3, #2	@ D.6751, D.6751,
+ 254 0118 5360     		str	r3, [r2, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 255              	.L21:
+ 256 011a 4B68     		ldr	r3, [r1, #4]	@ D.6751, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
+ 257 011c 03F00C03 		and	r3, r3, #12	@ D.6751, D.6751,
+ 258 0120 082B     		cmp	r3, #8	@ D.6751,
+ 259 0122 FAD1     		bne	.L21	@,
+ 260 0124 E0E7     		b	.L20	@
+ 261              	.L35:
+ 262 0126 00BF     		.align	2
+ 263              	.L34:
+ 264 0128 00100240 		.word	1073876992
+ 265 012c 0000FFF8 		.word	-117506048
+ 266 0130 00200240 		.word	1073881088
+ 267 0134 00000000 		.word	g_pfnVectors
+ 268 0138 00ED00E0 		.word	-536810240
+ 269              		.size	SystemInit, .-SystemInit
+ 270              		.global	AHBPrescTable
+ 271              		.global	SystemCoreClock
+ 272              		.section	.data.AHBPrescTable,"aw",%progbits
+ 273              		.align	2
+ 274              		.set	.LANCHOR0,. + 0
+ 275              		.type	AHBPrescTable, %object
+ 276              		.size	AHBPrescTable, 16
+ 277              	AHBPrescTable:
+ 278 0000 00       		.byte	0
+ 279 0001 00       		.byte	0
+ 280 0002 00       		.byte	0
+ 281 0003 00       		.byte	0
+ 282 0004 00       		.byte	0
+ 283 0005 00       		.byte	0
+ 284 0006 00       		.byte	0
+ 285 0007 00       		.byte	0
+ARM GAS  C:\cygwin64\tmp\ccyGDqBV.s 			page 6
+
+
+ 286 0008 01       		.byte	1
+ 287 0009 02       		.byte	2
+ 288 000a 03       		.byte	3
+ 289 000b 04       		.byte	4
+ 290 000c 06       		.byte	6
+ 291 000d 07       		.byte	7
+ 292 000e 08       		.byte	8
+ 293 000f 09       		.byte	9
+ 294              		.section	.data.SystemCoreClock,"aw",%progbits
+ 295              		.align	2
+ 296              		.set	.LANCHOR1,. + 0
+ 297              		.type	SystemCoreClock, %object
+ 298              		.size	SystemCoreClock, 4
+ 299              	SystemCoreClock:
+ 300 0000 00A24A04 		.word	72000000
+ 301              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccyGDqBV.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 system_stm32f10x.c
+C:\cygwin64\tmp\ccyGDqBV.s:70     .text.SystemCoreClockUpdate:00000000 $t
+C:\cygwin64\tmp\ccyGDqBV.s:75     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
+C:\cygwin64\tmp\ccyGDqBV.s:115    .text.SystemCoreClockUpdate:00000048 $d
+C:\cygwin64\tmp\ccyGDqBV.s:122    .text.SystemInit:00000000 $t
+C:\cygwin64\tmp\ccyGDqBV.s:127    .text.SystemInit:00000000 SystemInit
+C:\cygwin64\tmp\ccyGDqBV.s:264    .text.SystemInit:00000128 $d
+C:\cygwin64\tmp\ccyGDqBV.s:277    .data.AHBPrescTable:00000000 AHBPrescTable
+C:\cygwin64\tmp\ccyGDqBV.s:299    .data.SystemCoreClock:00000000 SystemCoreClock
+C:\cygwin64\tmp\ccyGDqBV.s:273    .data.AHBPrescTable:00000000 $d
+C:\cygwin64\tmp\ccyGDqBV.s:295    .data.SystemCoreClock:00000000 $d
+
+UNDEFINED SYMBOLS
+g_pfnVectors

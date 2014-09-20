@@ -1,0 +1,331 @@
+ARM GAS  C:\cygwin64\tmp\ccD4ehsd.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_pwr.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_pwr.d -MF out/stm32f10x_pwr.d -MP
+  25              	@ -MQ out/stm32f10x_pwr.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_pwr.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccD4ehsd.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.PWR_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	PWR_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	PWR_DeInit, %function
+  76              	PWR_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79 0000 08B5     		push	{r3, lr}	@
+  80 0002 4FF08050 		mov	r0, #268435456	@,
+  81 0006 0121     		movs	r1, #1	@,
+  82 0008 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+  83 000c BDE80840 		pop	{r3, lr}	@
+  84 0010 4FF08050 		mov	r0, #268435456	@,
+  85 0014 0021     		movs	r1, #0	@,
+  86 0016 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+  87              		.size	PWR_DeInit, .-PWR_DeInit
+  88 001a 00BF     		.section	.text.PWR_BackupAccessCmd,"ax",%progbits
+  89              		.align	2
+  90              		.global	PWR_BackupAccessCmd
+  91              		.thumb
+  92              		.thumb_func
+  93              		.type	PWR_BackupAccessCmd, %function
+  94              	PWR_BackupAccessCmd:
+  95              		@ args = 0, pretend = 0, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              		@ link register save eliminated.
+  98 0000 014B     		ldr	r3, .L3	@ tmp112,
+  99 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108213792B]
+ 100 0004 7047     		bx	lr	@
+ 101              	.L4:
+ 102 0006 00BF     		.align	2
+ 103              	.L3:
+ 104 0008 20000E42 		.word	1108213792
+ 105              		.size	PWR_BackupAccessCmd, .-PWR_BackupAccessCmd
+ 106              		.section	.text.PWR_PVDCmd,"ax",%progbits
+ 107              		.align	2
+ 108              		.global	PWR_PVDCmd
+ 109              		.thumb
+ 110              		.thumb_func
+ 111              		.type	PWR_PVDCmd, %function
+ 112              	PWR_PVDCmd:
+ 113              		@ args = 0, pretend = 0, frame = 0
+ 114              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccD4ehsd.s 			page 3
+
+
+ 115              		@ link register save eliminated.
+ 116 0000 014B     		ldr	r3, .L6	@ tmp112,
+ 117 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108213776B]
+ 118 0004 7047     		bx	lr	@
+ 119              	.L7:
+ 120 0006 00BF     		.align	2
+ 121              	.L6:
+ 122 0008 10000E42 		.word	1108213776
+ 123              		.size	PWR_PVDCmd, .-PWR_PVDCmd
+ 124              		.section	.text.PWR_PVDLevelConfig,"ax",%progbits
+ 125              		.align	2
+ 126              		.global	PWR_PVDLevelConfig
+ 127              		.thumb
+ 128              		.thumb_func
+ 129              		.type	PWR_PVDLevelConfig, %function
+ 130              	PWR_PVDLevelConfig:
+ 131              		@ args = 0, pretend = 0, frame = 0
+ 132              		@ frame_needed = 0, uses_anonymous_args = 0
+ 133              		@ link register save eliminated.
+ 134 0000 034B     		ldr	r3, .L9	@ tmp114,
+ 135 0002 1A68     		ldr	r2, [r3]	@ tmpreg, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 136 0004 22F0E002 		bic	r2, r2, #224	@ tmpreg, tmpreg,
+ 137 0008 1043     		orrs	r0, r0, r2	@, tmpreg, PWR_PVDLevel, tmpreg
+ 138 000a 1860     		str	r0, [r3]	@ tmpreg, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 139 000c 7047     		bx	lr	@
+ 140              	.L10:
+ 141 000e 00BF     		.align	2
+ 142              	.L9:
+ 143 0010 00700040 		.word	1073770496
+ 144              		.size	PWR_PVDLevelConfig, .-PWR_PVDLevelConfig
+ 145              		.section	.text.PWR_WakeUpPinCmd,"ax",%progbits
+ 146              		.align	2
+ 147              		.global	PWR_WakeUpPinCmd
+ 148              		.thumb
+ 149              		.thumb_func
+ 150              		.type	PWR_WakeUpPinCmd, %function
+ 151              	PWR_WakeUpPinCmd:
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154              		@ link register save eliminated.
+ 155 0000 014B     		ldr	r3, .L12	@ tmp112,
+ 156 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108213920B]
+ 157 0004 7047     		bx	lr	@
+ 158              	.L13:
+ 159 0006 00BF     		.align	2
+ 160              	.L12:
+ 161 0008 A0000E42 		.word	1108213920
+ 162              		.size	PWR_WakeUpPinCmd, .-PWR_WakeUpPinCmd
+ 163              		.section	.text.PWR_EnterSTOPMode,"ax",%progbits
+ 164              		.align	2
+ 165              		.global	PWR_EnterSTOPMode
+ 166              		.thumb
+ 167              		.thumb_func
+ 168              		.type	PWR_EnterSTOPMode, %function
+ 169              	PWR_EnterSTOPMode:
+ 170              		@ args = 0, pretend = 0, frame = 0
+ 171              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccD4ehsd.s 			page 4
+
+
+ 172              		@ link register save eliminated.
+ 173 0000 0C4A     		ldr	r2, .L19	@ tmp119,
+ 174 0002 10B4     		push	{r4}	@
+ 175 0004 1468     		ldr	r4, [r2]	@ tmpreg, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 176 0006 0C4B     		ldr	r3, .L19+4	@ tmp121,
+ 177 0008 24F00304 		bic	r4, r4, #3	@ tmpreg, tmpreg,
+ 178 000c 2043     		orrs	r0, r0, r4	@, tmpreg, PWR_Regulator, tmpreg
+ 179 000e 1060     		str	r0, [r2]	@ tmpreg, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 180 0010 1A69     		ldr	r2, [r3, #16]	@ D.6684, MEM[(struct SCB_Type *)3758157056B].SCR
+ 181 0012 0129     		cmp	r1, #1	@ PWR_STOPEntry,
+ 182 0014 42F00402 		orr	r2, r2, #4	@ D.6684, D.6684,
+ 183 0018 1A61     		str	r2, [r3, #16]	@ D.6684, MEM[(struct SCB_Type *)3758157056B].SCR
+ 184 001a 08D0     		beq	.L18	@,
+ 185              	@ 349 "Libraries/CMSIS/Include/core_cmInstr.h" 1
+ 186 001c 20BF     		wfe
+ 187              	@ 0 "" 2
+ 188              		.thumb
+ 189              	.L16:
+ 190 001e 064B     		ldr	r3, .L19+4	@ tmp123,
+ 191 0020 5DF8044B 		ldr	r4, [sp], #4	@,
+ 192 0024 1A69     		ldr	r2, [r3, #16]	@ D.6684, MEM[(struct SCB_Type *)3758157056B].SCR
+ 193 0026 22F00402 		bic	r2, r2, #4	@ D.6684, D.6684,
+ 194 002a 1A61     		str	r2, [r3, #16]	@ D.6684, MEM[(struct SCB_Type *)3758157056B].SCR
+ 195 002c 7047     		bx	lr	@
+ 196              	.L18:
+ 197              	@ 338 "Libraries/CMSIS/Include/core_cmInstr.h" 1
+ 198 002e 30BF     		wfi
+ 199              	@ 0 "" 2
+ 200              		.thumb
+ 201 0030 F5E7     		b	.L16	@
+ 202              	.L20:
+ 203 0032 00BF     		.align	2
+ 204              	.L19:
+ 205 0034 00700040 		.word	1073770496
+ 206 0038 00ED00E0 		.word	-536810240
+ 207              		.size	PWR_EnterSTOPMode, .-PWR_EnterSTOPMode
+ 208              		.section	.text.PWR_EnterSTANDBYMode,"ax",%progbits
+ 209              		.align	2
+ 210              		.global	PWR_EnterSTANDBYMode
+ 211              		.thumb
+ 212              		.thumb_func
+ 213              		.type	PWR_EnterSTANDBYMode, %function
+ 214              	PWR_EnterSTANDBYMode:
+ 215              		@ args = 0, pretend = 0, frame = 0
+ 216              		@ frame_needed = 0, uses_anonymous_args = 0
+ 217              		@ link register save eliminated.
+ 218 0000 074B     		ldr	r3, .L22	@ tmp116,
+ 219 0002 084A     		ldr	r2, .L22+4	@ tmp120,
+ 220 0004 1968     		ldr	r1, [r3]	@ D.6687, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 221 0006 41F00401 		orr	r1, r1, #4	@ D.6687, D.6687,
+ 222 000a 1960     		str	r1, [r3]	@ D.6687, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 223 000c 1968     		ldr	r1, [r3]	@ D.6687, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 224 000e 41F00201 		orr	r1, r1, #2	@ D.6687, D.6687,
+ 225 0012 1960     		str	r1, [r3]	@ D.6687, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 226 0014 1369     		ldr	r3, [r2, #16]	@ D.6687, MEM[(struct SCB_Type *)3758157056B].SCR
+ 227 0016 43F00403 		orr	r3, r3, #4	@ D.6687, D.6687,
+ 228 001a 1361     		str	r3, [r2, #16]	@ D.6687, MEM[(struct SCB_Type *)3758157056B].SCR
+ARM GAS  C:\cygwin64\tmp\ccD4ehsd.s 			page 5
+
+
+ 229              	@ 338 "Libraries/CMSIS/Include/core_cmInstr.h" 1
+ 230 001c 30BF     		wfi
+ 231              	@ 0 "" 2
+ 232              		.thumb
+ 233 001e 7047     		bx	lr	@
+ 234              	.L23:
+ 235              		.align	2
+ 236              	.L22:
+ 237 0020 00700040 		.word	1073770496
+ 238 0024 00ED00E0 		.word	-536810240
+ 239              		.size	PWR_EnterSTANDBYMode, .-PWR_EnterSTANDBYMode
+ 240              		.section	.text.PWR_GetFlagStatus,"ax",%progbits
+ 241              		.align	2
+ 242              		.global	PWR_GetFlagStatus
+ 243              		.thumb
+ 244              		.thumb_func
+ 245              		.type	PWR_GetFlagStatus, %function
+ 246              	PWR_GetFlagStatus:
+ 247              		@ args = 0, pretend = 0, frame = 0
+ 248              		@ frame_needed = 0, uses_anonymous_args = 0
+ 249              		@ link register save eliminated.
+ 250 0000 034B     		ldr	r3, .L25	@ tmp116,
+ 251 0002 5B68     		ldr	r3, [r3, #4]	@ D.6690, MEM[(struct PWR_TypeDef *)1073770496B].CSR
+ 252 0004 1842     		tst	r0, r3	@ PWR_FLAG, D.6690
+ 253 0006 0CBF     		ite	eq	@
+ 254 0008 0020     		moveq	r0, #0	@,
+ 255 000a 0120     		movne	r0, #1	@,
+ 256 000c 7047     		bx	lr	@
+ 257              	.L26:
+ 258 000e 00BF     		.align	2
+ 259              	.L25:
+ 260 0010 00700040 		.word	1073770496
+ 261              		.size	PWR_GetFlagStatus, .-PWR_GetFlagStatus
+ 262              		.section	.text.PWR_ClearFlag,"ax",%progbits
+ 263              		.align	2
+ 264              		.global	PWR_ClearFlag
+ 265              		.thumb
+ 266              		.thumb_func
+ 267              		.type	PWR_ClearFlag, %function
+ 268              	PWR_ClearFlag:
+ 269              		@ args = 0, pretend = 0, frame = 0
+ 270              		@ frame_needed = 0, uses_anonymous_args = 0
+ 271              		@ link register save eliminated.
+ 272 0000 024B     		ldr	r3, .L28	@ tmp114,
+ 273 0002 1A68     		ldr	r2, [r3]	@ D.6695, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 274 0004 42EA8000 		orr	r0, r2, r0, lsl #2	@, D.6695, D.6695, PWR_FLAG,
+ 275 0008 1860     		str	r0, [r3]	@ D.6695, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 276 000a 7047     		bx	lr	@
+ 277              	.L29:
+ 278              		.align	2
+ 279              	.L28:
+ 280 000c 00700040 		.word	1073770496
+ 281              		.size	PWR_ClearFlag, .-PWR_ClearFlag
+ 282              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccD4ehsd.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_pwr.c
+C:\cygwin64\tmp\ccD4ehsd.s:71     .text.PWR_DeInit:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:76     .text.PWR_DeInit:00000000 PWR_DeInit
+C:\cygwin64\tmp\ccD4ehsd.s:89     .text.PWR_BackupAccessCmd:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:94     .text.PWR_BackupAccessCmd:00000000 PWR_BackupAccessCmd
+C:\cygwin64\tmp\ccD4ehsd.s:104    .text.PWR_BackupAccessCmd:00000008 $d
+C:\cygwin64\tmp\ccD4ehsd.s:107    .text.PWR_PVDCmd:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:112    .text.PWR_PVDCmd:00000000 PWR_PVDCmd
+C:\cygwin64\tmp\ccD4ehsd.s:122    .text.PWR_PVDCmd:00000008 $d
+C:\cygwin64\tmp\ccD4ehsd.s:125    .text.PWR_PVDLevelConfig:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:130    .text.PWR_PVDLevelConfig:00000000 PWR_PVDLevelConfig
+C:\cygwin64\tmp\ccD4ehsd.s:143    .text.PWR_PVDLevelConfig:00000010 $d
+C:\cygwin64\tmp\ccD4ehsd.s:146    .text.PWR_WakeUpPinCmd:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:151    .text.PWR_WakeUpPinCmd:00000000 PWR_WakeUpPinCmd
+C:\cygwin64\tmp\ccD4ehsd.s:161    .text.PWR_WakeUpPinCmd:00000008 $d
+C:\cygwin64\tmp\ccD4ehsd.s:164    .text.PWR_EnterSTOPMode:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:169    .text.PWR_EnterSTOPMode:00000000 PWR_EnterSTOPMode
+C:\cygwin64\tmp\ccD4ehsd.s:205    .text.PWR_EnterSTOPMode:00000034 $d
+C:\cygwin64\tmp\ccD4ehsd.s:209    .text.PWR_EnterSTANDBYMode:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:214    .text.PWR_EnterSTANDBYMode:00000000 PWR_EnterSTANDBYMode
+C:\cygwin64\tmp\ccD4ehsd.s:237    .text.PWR_EnterSTANDBYMode:00000020 $d
+C:\cygwin64\tmp\ccD4ehsd.s:241    .text.PWR_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:246    .text.PWR_GetFlagStatus:00000000 PWR_GetFlagStatus
+C:\cygwin64\tmp\ccD4ehsd.s:260    .text.PWR_GetFlagStatus:00000010 $d
+C:\cygwin64\tmp\ccD4ehsd.s:263    .text.PWR_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccD4ehsd.s:268    .text.PWR_ClearFlag:00000000 PWR_ClearFlag
+C:\cygwin64\tmp\ccD4ehsd.s:280    .text.PWR_ClearFlag:0000000c $d
+
+UNDEFINED SYMBOLS
+RCC_APB1PeriphResetCmd

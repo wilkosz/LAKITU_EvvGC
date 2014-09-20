@@ -1,0 +1,238 @@
+ARM GAS  C:\cygwin64\tmp\cccAY4Ne.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32_it.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32_it.d -MF out/stm32_it.d -MP -MQ out/stm32_it.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ src/stm32_it.c -mcpu=cortex-m3 -mthumb -auxbase-strip out/stm32_it.o -O2
+  27              	@ -Wall -Wstrict-prototypes -Wextra -std=gnu99 -ffunction-sections
+  28              	@ -fdata-sections -fverbose-asm -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\cccAY4Ne.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.NMI_Handler,"ax",%progbits
+  69              		.align	2
+  70              		.global	NMI_Handler
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	NMI_Handler, %function
+  74              	NMI_Handler:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77              		@ link register save eliminated.
+  78 0000 7047     		bx	lr	@
+  79              		.size	NMI_Handler, .-NMI_Handler
+  80 0002 00BF     		.section	.text.HardFault_Handler,"ax",%progbits
+  81              		.align	2
+  82              		.global	HardFault_Handler
+  83              		.thumb
+  84              		.thumb_func
+  85              		.type	HardFault_Handler, %function
+  86              	HardFault_Handler:
+  87              		@ Volatile: function does not return.
+  88              		@ args = 0, pretend = 0, frame = 0
+  89              		@ frame_needed = 0, uses_anonymous_args = 0
+  90              		@ link register save eliminated.
+  91              	.L3:
+  92 0000 FEE7     		b	.L3	@
+  93              		.size	HardFault_Handler, .-HardFault_Handler
+  94 0002 00BF     		.section	.text.MemManage_Handler,"ax",%progbits
+  95              		.align	2
+  96              		.global	MemManage_Handler
+  97              		.thumb
+  98              		.thumb_func
+  99              		.type	MemManage_Handler, %function
+ 100              	MemManage_Handler:
+ 101              		@ Volatile: function does not return.
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104              		@ link register save eliminated.
+ 105              	.L5:
+ 106 0000 FEE7     		b	.L5	@
+ 107              		.size	MemManage_Handler, .-MemManage_Handler
+ 108 0002 00BF     		.section	.text.BusFault_Handler,"ax",%progbits
+ 109              		.align	2
+ 110              		.global	BusFault_Handler
+ 111              		.thumb
+ 112              		.thumb_func
+ 113              		.type	BusFault_Handler, %function
+ 114              	BusFault_Handler:
+ARM GAS  C:\cygwin64\tmp\cccAY4Ne.s 			page 3
+
+
+ 115              		@ Volatile: function does not return.
+ 116              		@ args = 0, pretend = 0, frame = 0
+ 117              		@ frame_needed = 0, uses_anonymous_args = 0
+ 118              		@ link register save eliminated.
+ 119              	.L7:
+ 120 0000 FEE7     		b	.L7	@
+ 121              		.size	BusFault_Handler, .-BusFault_Handler
+ 122 0002 00BF     		.section	.text.UsageFault_Handler,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	UsageFault_Handler
+ 125              		.thumb
+ 126              		.thumb_func
+ 127              		.type	UsageFault_Handler, %function
+ 128              	UsageFault_Handler:
+ 129              		@ Volatile: function does not return.
+ 130              		@ args = 0, pretend = 0, frame = 0
+ 131              		@ frame_needed = 0, uses_anonymous_args = 0
+ 132              		@ link register save eliminated.
+ 133              	.L9:
+ 134 0000 FEE7     		b	.L9	@
+ 135              		.size	UsageFault_Handler, .-UsageFault_Handler
+ 136 0002 00BF     		.section	.text.SVC_Handler,"ax",%progbits
+ 137              		.align	2
+ 138              		.global	SVC_Handler
+ 139              		.thumb
+ 140              		.thumb_func
+ 141              		.type	SVC_Handler, %function
+ 142              	SVC_Handler:
+ 143              		@ args = 0, pretend = 0, frame = 0
+ 144              		@ frame_needed = 0, uses_anonymous_args = 0
+ 145              		@ link register save eliminated.
+ 146 0000 7047     		bx	lr	@
+ 147              		.size	SVC_Handler, .-SVC_Handler
+ 148 0002 00BF     		.section	.text.DebugMon_Handler,"ax",%progbits
+ 149              		.align	2
+ 150              		.global	DebugMon_Handler
+ 151              		.thumb
+ 152              		.thumb_func
+ 153              		.type	DebugMon_Handler, %function
+ 154              	DebugMon_Handler:
+ 155              		@ args = 0, pretend = 0, frame = 0
+ 156              		@ frame_needed = 0, uses_anonymous_args = 0
+ 157              		@ link register save eliminated.
+ 158 0000 7047     		bx	lr	@
+ 159              		.size	DebugMon_Handler, .-DebugMon_Handler
+ 160 0002 00BF     		.section	.text.PendSV_Handler,"ax",%progbits
+ 161              		.align	2
+ 162              		.global	PendSV_Handler
+ 163              		.thumb
+ 164              		.thumb_func
+ 165              		.type	PendSV_Handler, %function
+ 166              	PendSV_Handler:
+ 167              		@ args = 0, pretend = 0, frame = 0
+ 168              		@ frame_needed = 0, uses_anonymous_args = 0
+ 169              		@ link register save eliminated.
+ 170 0000 7047     		bx	lr	@
+ 171              		.size	PendSV_Handler, .-PendSV_Handler
+ARM GAS  C:\cygwin64\tmp\cccAY4Ne.s 			page 4
+
+
+ 172 0002 00BF     		.section	.text.USB_LP_CAN1_RX0_IRQHandler,"ax",%progbits
+ 173              		.align	2
+ 174              		.global	USB_LP_CAN1_RX0_IRQHandler
+ 175              		.thumb
+ 176              		.thumb_func
+ 177              		.type	USB_LP_CAN1_RX0_IRQHandler, %function
+ 178              	USB_LP_CAN1_RX0_IRQHandler:
+ 179              		@ args = 0, pretend = 0, frame = 0
+ 180              		@ frame_needed = 0, uses_anonymous_args = 0
+ 181              		@ link register save eliminated.
+ 182 0000 FFF7FEBF 		b	USB_Istr	@
+ 183              		.size	USB_LP_CAN1_RX0_IRQHandler, .-USB_LP_CAN1_RX0_IRQHandler
+ 184              		.section	.text.USBWakeUp_IRQHandler,"ax",%progbits
+ 185              		.align	2
+ 186              		.global	USBWakeUp_IRQHandler
+ 187              		.thumb
+ 188              		.thumb_func
+ 189              		.type	USBWakeUp_IRQHandler, %function
+ 190              	USBWakeUp_IRQHandler:
+ 191              		@ args = 0, pretend = 0, frame = 0
+ 192              		@ frame_needed = 0, uses_anonymous_args = 0
+ 193              		@ link register save eliminated.
+ 194 0000 4FF48020 		mov	r0, #262144	@,
+ 195 0004 FFF7FEBF 		b	EXTI_ClearITPendingBit	@
+ 196              		.size	USBWakeUp_IRQHandler, .-USBWakeUp_IRQHandler
+ 197              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cccAY4Ne.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32_it.c
+C:\cygwin64\tmp\cccAY4Ne.s:69     .text.NMI_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:74     .text.NMI_Handler:00000000 NMI_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:81     .text.HardFault_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:86     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:95     .text.MemManage_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:100    .text.MemManage_Handler:00000000 MemManage_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:109    .text.BusFault_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:114    .text.BusFault_Handler:00000000 BusFault_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:123    .text.UsageFault_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:128    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:137    .text.SVC_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:142    .text.SVC_Handler:00000000 SVC_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:149    .text.DebugMon_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:154    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:161    .text.PendSV_Handler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:166    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\cygwin64\tmp\cccAY4Ne.s:173    .text.USB_LP_CAN1_RX0_IRQHandler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:178    .text.USB_LP_CAN1_RX0_IRQHandler:00000000 USB_LP_CAN1_RX0_IRQHandler
+C:\cygwin64\tmp\cccAY4Ne.s:185    .text.USBWakeUp_IRQHandler:00000000 $t
+C:\cygwin64\tmp\cccAY4Ne.s:190    .text.USBWakeUp_IRQHandler:00000000 USBWakeUp_IRQHandler
+
+UNDEFINED SYMBOLS
+USB_Istr
+EXTI_ClearITPendingBit

@@ -1,0 +1,226 @@
+ARM GAS  C:\cygwin64\tmp\cciIM89p.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_crc.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_crc.d -MF out/stm32f10x_crc.d -MP
+  25              	@ -MQ out/stm32f10x_crc.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_crc.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\cciIM89p.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.CRC_ResetDR,"ax",%progbits
+  71              		.align	2
+  72              		.global	CRC_ResetDR
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	CRC_ResetDR, %function
+  76              	CRC_ResetDR:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		@ link register save eliminated.
+  80 0000 014B     		ldr	r3, .L2	@ tmp110,
+  81 0002 0122     		movs	r2, #1	@ tmp111,
+  82 0004 9A60     		str	r2, [r3, #8]	@ tmp111, MEM[(struct CRC_TypeDef *)1073885184B].CR
+  83 0006 7047     		bx	lr	@
+  84              	.L3:
+  85              		.align	2
+  86              	.L2:
+  87 0008 00300240 		.word	1073885184
+  88              		.size	CRC_ResetDR, .-CRC_ResetDR
+  89              		.section	.text.CRC_CalcCRC,"ax",%progbits
+  90              		.align	2
+  91              		.global	CRC_CalcCRC
+  92              		.thumb
+  93              		.thumb_func
+  94              		.type	CRC_CalcCRC, %function
+  95              	CRC_CalcCRC:
+  96              		@ args = 0, pretend = 0, frame = 0
+  97              		@ frame_needed = 0, uses_anonymous_args = 0
+  98              		@ link register save eliminated.
+  99 0000 014B     		ldr	r3, .L5	@ tmp113,
+ 100 0002 1860     		str	r0, [r3]	@ Data, MEM[(struct CRC_TypeDef *)1073885184B].DR
+ 101 0004 1868     		ldr	r0, [r3]	@ D.6636, MEM[(struct CRC_TypeDef *)1073885184B].DR
+ 102 0006 7047     		bx	lr	@
+ 103              	.L6:
+ 104              		.align	2
+ 105              	.L5:
+ 106 0008 00300240 		.word	1073885184
+ 107              		.size	CRC_CalcCRC, .-CRC_CalcCRC
+ 108              		.section	.text.CRC_CalcBlockCRC,"ax",%progbits
+ 109              		.align	2
+ 110              		.global	CRC_CalcBlockCRC
+ 111              		.thumb
+ 112              		.thumb_func
+ 113              		.type	CRC_CalcBlockCRC, %function
+ 114              	CRC_CalcBlockCRC:
+ARM GAS  C:\cygwin64\tmp\cciIM89p.s 			page 3
+
+
+ 115              		@ args = 0, pretend = 0, frame = 0
+ 116              		@ frame_needed = 0, uses_anonymous_args = 0
+ 117              		@ link register save eliminated.
+ 118 0000 39B1     		cbz	r1, .L9	@ BufferLength,
+ 119 0002 054A     		ldr	r2, .L14	@ tmp146,
+ 120 0004 00EB8101 		add	r1, r0, r1, lsl #2	@, D.6651, ivtmp.16, BufferLength,
+ 121              	.L10:
+ 122 0008 50F8043B 		ldr	r3, [r0], #4	@ D.6648, MEM[base: _12, offset: 0B]
+ 123 000c 8842     		cmp	r0, r1	@ ivtmp.16, D.6651
+ 124 000e 1360     		str	r3, [r2]	@ D.6648, MEM[(struct CRC_TypeDef *)1073885184B].DR
+ 125 0010 FAD1     		bne	.L10	@,
+ 126              	.L9:
+ 127 0012 014B     		ldr	r3, .L14	@ tmp142,
+ 128 0014 1868     		ldr	r0, [r3]	@ D.6649, MEM[(struct CRC_TypeDef *)1073885184B].DR
+ 129 0016 7047     		bx	lr	@
+ 130              	.L15:
+ 131              		.align	2
+ 132              	.L14:
+ 133 0018 00300240 		.word	1073885184
+ 134              		.size	CRC_CalcBlockCRC, .-CRC_CalcBlockCRC
+ 135              		.section	.text.CRC_GetCRC,"ax",%progbits
+ 136              		.align	2
+ 137              		.global	CRC_GetCRC
+ 138              		.thumb
+ 139              		.thumb_func
+ 140              		.type	CRC_GetCRC, %function
+ 141              	CRC_GetCRC:
+ 142              		@ args = 0, pretend = 0, frame = 0
+ 143              		@ frame_needed = 0, uses_anonymous_args = 0
+ 144              		@ link register save eliminated.
+ 145 0000 014B     		ldr	r3, .L17	@ tmp112,
+ 146 0002 1868     		ldr	r0, [r3]	@ D.6654, MEM[(struct CRC_TypeDef *)1073885184B].DR
+ 147 0004 7047     		bx	lr	@
+ 148              	.L18:
+ 149 0006 00BF     		.align	2
+ 150              	.L17:
+ 151 0008 00300240 		.word	1073885184
+ 152              		.size	CRC_GetCRC, .-CRC_GetCRC
+ 153              		.section	.text.CRC_SetIDRegister,"ax",%progbits
+ 154              		.align	2
+ 155              		.global	CRC_SetIDRegister
+ 156              		.thumb
+ 157              		.thumb_func
+ 158              		.type	CRC_SetIDRegister, %function
+ 159              	CRC_SetIDRegister:
+ 160              		@ args = 0, pretend = 0, frame = 0
+ 161              		@ frame_needed = 0, uses_anonymous_args = 0
+ 162              		@ link register save eliminated.
+ 163 0000 014B     		ldr	r3, .L20	@ tmp111,
+ 164 0002 1871     		strb	r0, [r3, #4]	@ IDValue, MEM[(struct CRC_TypeDef *)1073885184B].IDR
+ 165 0004 7047     		bx	lr	@
+ 166              	.L21:
+ 167 0006 00BF     		.align	2
+ 168              	.L20:
+ 169 0008 00300240 		.word	1073885184
+ 170              		.size	CRC_SetIDRegister, .-CRC_SetIDRegister
+ 171              		.section	.text.CRC_GetIDRegister,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\cciIM89p.s 			page 4
+
+
+ 172              		.align	2
+ 173              		.global	CRC_GetIDRegister
+ 174              		.thumb
+ 175              		.thumb_func
+ 176              		.type	CRC_GetIDRegister, %function
+ 177              	CRC_GetIDRegister:
+ 178              		@ args = 0, pretend = 0, frame = 0
+ 179              		@ frame_needed = 0, uses_anonymous_args = 0
+ 180              		@ link register save eliminated.
+ 181 0000 014B     		ldr	r3, .L23	@ tmp112,
+ 182 0002 1879     		ldrb	r0, [r3, #4]	@ zero_extendqisi2	@ MEM[(struct CRC_TypeDef *)1073885184B].IDR, MEM[(struct CRC
+ 183 0004 7047     		bx	lr	@
+ 184              	.L24:
+ 185 0006 00BF     		.align	2
+ 186              	.L23:
+ 187 0008 00300240 		.word	1073885184
+ 188              		.size	CRC_GetIDRegister, .-CRC_GetIDRegister
+ 189              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cciIM89p.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_crc.c
+C:\cygwin64\tmp\cciIM89p.s:71     .text.CRC_ResetDR:00000000 $t
+C:\cygwin64\tmp\cciIM89p.s:76     .text.CRC_ResetDR:00000000 CRC_ResetDR
+C:\cygwin64\tmp\cciIM89p.s:87     .text.CRC_ResetDR:00000008 $d
+C:\cygwin64\tmp\cciIM89p.s:90     .text.CRC_CalcCRC:00000000 $t
+C:\cygwin64\tmp\cciIM89p.s:95     .text.CRC_CalcCRC:00000000 CRC_CalcCRC
+C:\cygwin64\tmp\cciIM89p.s:106    .text.CRC_CalcCRC:00000008 $d
+C:\cygwin64\tmp\cciIM89p.s:109    .text.CRC_CalcBlockCRC:00000000 $t
+C:\cygwin64\tmp\cciIM89p.s:114    .text.CRC_CalcBlockCRC:00000000 CRC_CalcBlockCRC
+C:\cygwin64\tmp\cciIM89p.s:133    .text.CRC_CalcBlockCRC:00000018 $d
+C:\cygwin64\tmp\cciIM89p.s:136    .text.CRC_GetCRC:00000000 $t
+C:\cygwin64\tmp\cciIM89p.s:141    .text.CRC_GetCRC:00000000 CRC_GetCRC
+C:\cygwin64\tmp\cciIM89p.s:151    .text.CRC_GetCRC:00000008 $d
+C:\cygwin64\tmp\cciIM89p.s:154    .text.CRC_SetIDRegister:00000000 $t
+C:\cygwin64\tmp\cciIM89p.s:159    .text.CRC_SetIDRegister:00000000 CRC_SetIDRegister
+C:\cygwin64\tmp\cciIM89p.s:169    .text.CRC_SetIDRegister:00000008 $d
+C:\cygwin64\tmp\cciIM89p.s:172    .text.CRC_GetIDRegister:00000000 $t
+C:\cygwin64\tmp\cciIM89p.s:177    .text.CRC_GetIDRegister:00000000 CRC_GetIDRegister
+C:\cygwin64\tmp\cciIM89p.s:187    .text.CRC_GetIDRegister:00000008 $d
+
+NO UNDEFINED SYMBOLS

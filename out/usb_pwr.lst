@@ -1,0 +1,467 @@
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"usb_pwr.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/usb_pwr.d -MF out/usb_pwr.d -MP -MQ out/usb_pwr.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ src/VCP/src/usb_pwr.c -mcpu=cortex-m3 -mthumb
+  27              	@ -auxbase-strip out/usb_pwr.o -O2 -Wall -Wstrict-prototypes -Wextra
+  28              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  29              	@ -fsingle-precision-constant
+  30              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  31              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  32              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  33              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  34              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  35              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  36              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  37              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  38              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  39              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  40              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  41              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  42              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  43              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  44              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  45              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  46              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  47              	@ -freorder-functions -frerun-cse-after-loop
+  48              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  49              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  50              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  51              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  52              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  53              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  54              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 2
+
+
+  58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  59              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  60              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  61              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  62              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  63              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  64              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  65              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  67              	@ -munaligned-access -mvectorize-with-neon-quad
+  68              	
+  69              		.section	.text.PowerOn,"ax",%progbits
+  70              		.align	2
+  71              		.global	PowerOn
+  72              		.thumb
+  73              		.thumb_func
+  74              		.type	PowerOn, %function
+  75              	PowerOn:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78 0000 38B5     		push	{r3, r4, r5, lr}	@
+  79 0002 0120     		movs	r0, #1	@,
+  80 0004 FFF7FEFF 		bl	USB_Cable_Config	@
+  81 0008 064D     		ldr	r5, .L2	@ tmp115,
+  82 000a 074B     		ldr	r3, .L2+4	@ tmp111,
+  83 000c 074C     		ldr	r4, .L2+8	@ tmp117,
+  84 000e 0022     		movs	r2, #0	@ tmp114,
+  85 0010 4FF4E051 		mov	r1, #7168	@ tmp119,
+  86 0014 0120     		movs	r0, #1	@ tmp112,
+  87 0016 1860     		str	r0, [r3]	@ tmp112, MEM[(volatile unsigned int *)1073765440B]
+  88 0018 1A60     		str	r2, [r3]	@ tmp114, MEM[(volatile unsigned int *)1073765440B]
+  89 001a 1046     		mov	r0, r2	@, tmp114
+  90 001c 2A60     		str	r2, [r5]	@ tmp114, MEM[(volatile unsigned int *)1073765444B]
+  91 001e 2180     		strh	r1, [r4]	@ movhi	@ tmp119, wInterrupt_Mask
+  92 0020 1960     		str	r1, [r3]	@ tmp119, MEM[(volatile unsigned int *)1073765440B]
+  93 0022 38BD     		pop	{r3, r4, r5, pc}	@
+  94              	.L3:
+  95              		.align	2
+  96              	.L2:
+  97 0024 445C0040 		.word	1073765444
+  98 0028 405C0040 		.word	1073765440
+  99 002c 00000000 		.word	wInterrupt_Mask
+ 100              		.size	PowerOn, .-PowerOn
+ 101              		.section	.text.PowerOff,"ax",%progbits
+ 102              		.align	2
+ 103              		.global	PowerOff
+ 104              		.thumb
+ 105              		.thumb_func
+ 106              		.type	PowerOff, %function
+ 107              	PowerOff:
+ 108              		@ args = 0, pretend = 0, frame = 0
+ 109              		@ frame_needed = 0, uses_anonymous_args = 0
+ 110 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 111 0002 064D     		ldr	r5, .L5	@ tmp111,
+ 112 0004 064B     		ldr	r3, .L5+4	@ tmp113,
+ 113 0006 0024     		movs	r4, #0	@ tmp114,
+ 114 0008 0122     		movs	r2, #1	@ tmp112,
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 3
+
+
+ 115 000a 2A60     		str	r2, [r5]	@ tmp112, MEM[(volatile unsigned int *)1073765440B]
+ 116 000c 2046     		mov	r0, r4	@, tmp114
+ 117 000e 1C60     		str	r4, [r3]	@ tmp114, MEM[(volatile unsigned int *)1073765444B]
+ 118 0010 FFF7FEFF 		bl	USB_Cable_Config	@
+ 119 0014 0323     		movs	r3, #3	@ tmp116,
+ 120 0016 2046     		mov	r0, r4	@, tmp114
+ 121 0018 2B60     		str	r3, [r5]	@ tmp116, MEM[(volatile unsigned int *)1073765440B]
+ 122 001a 38BD     		pop	{r3, r4, r5, pc}	@
+ 123              	.L6:
+ 124              		.align	2
+ 125              	.L5:
+ 126 001c 405C0040 		.word	1073765440
+ 127 0020 445C0040 		.word	1073765444
+ 128              		.size	PowerOff, .-PowerOff
+ 129              		.section	.text.Suspend,"ax",%progbits
+ 130              		.align	2
+ 131              		.global	Suspend
+ 132              		.thumb
+ 133              		.thumb_func
+ 134              		.type	Suspend, %function
+ 135              	Suspend:
+ 136              		@ args = 0, pretend = 0, frame = 8
+ 137              		@ frame_needed = 0, uses_anonymous_args = 0
+ 138              		@ link register save eliminated.
+ 139 0000 70B4     		push	{r4, r5, r6}	@
+ 140 0002 324A     		ldr	r2, .L20	@ tmp159,
+ 141 0004 83B0     		sub	sp, sp, #12	@,,
+ 142 0006 0023     		movs	r3, #0	@ tmp158,
+ 143 0008 0193     		str	r3, [sp, #4]	@ tmp158, savePWR_CR
+ 144 000a 1468     		ldr	r4, [r2]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 145 000c 3049     		ldr	r1, .L20+4	@ tmp199,
+ 146 000e 403A     		subs	r2, r2, #64	@ ivtmp.29, ivtmp.29,
+ 147 0010 A4B2     		uxth	r4, r4	@ wCNTR, D.7157
+ 148              	.L9:
+ 149 0012 52F8040B 		ldr	r0, [r2], #4	@ D.7157, *_11
+ 150 0016 80B2     		uxth	r0, r0	@ D.7159, D.7157
+ 151 0018 41F82300 		str	r0, [r1, r3, lsl #2]	@ D.7159, EP
+ 152 001c 0133     		adds	r3, r3, #1	@ i, i,
+ 153 001e 082B     		cmp	r3, #8	@ i,
+ 154 0020 F7D1     		bne	.L9	@,
+ 155 0022 24F00105 		bic	r5, r4, #1	@ tmp167, wCNTR,
+ 156 0026 294B     		ldr	r3, .L20	@ tmp162,
+ 157 0028 44F48060 		orr	r0, r4, #1024	@ D.7157, wCNTR,
+ 158 002c ADB2     		uxth	r5, r5	@ D.7161, tmp167
+ 159 002e 0446     		mov	r4, r0	@ D.7157, D.7157
+ 160 0030 45F48066 		orr	r6, r5, #1024	@ D.7157, D.7161,
+ 161 0034 40F00100 		orr	r0, r0, #1	@ D.7157, D.7157,
+ 162 0038 264A     		ldr	r2, .L20+8	@ tmp200,
+ 163 003a 1C60     		str	r4, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 164 003c 1860     		str	r0, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 165 003e 1E60     		str	r6, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 166              	.L11:
+ 167 0040 1368     		ldr	r3, [r2]	@ D.7157, MEM[(volatile unsigned int *)1073765444B]
+ 168 0042 2448     		ldr	r0, .L20+8	@ tmp170,
+ 169 0044 5E05     		lsls	r6, r3, #21	@, D.7157,
+ 170 0046 FBD5     		bpl	.L11	@,
+ 171 0048 4FF6FF33 		movw	r3, #64511	@ tmp174,
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 4
+
+
+ 172 004c 224A     		ldr	r2, .L20+12	@ ivtmp.21,
+ 173 004e 0360     		str	r3, [r0]	@ tmp174, MEM[(volatile unsigned int *)1073765444B]
+ 174 0050 0023     		movs	r3, #0	@ i,
+ 175              	.L13:
+ 176 0052 51F82300 		ldr	r0, [r1, r3, lsl #2]	@ D.7159, EP
+ 177 0056 0133     		adds	r3, r3, #1	@ i, i,
+ 178 0058 80B2     		uxth	r0, r0	@ D.7157, D.7159
+ 179 005a 082B     		cmp	r3, #8	@ i,
+ 180 005c 42F8040B 		str	r0, [r2], #4	@ D.7157, *_30
+ 181 0060 F7D1     		bne	.L13	@,
+ 182 0062 1A4B     		ldr	r3, .L20	@ tmp177,
+ 183 0064 45F48165 		orr	r5, r5, #1032	@ D.7157, D.7161,
+ 184 0068 1D60     		str	r5, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 185 006a 1A68     		ldr	r2, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 186 006c 1B49     		ldr	r1, .L20+16	@ tmp181,
+ 187 006e 92B2     		uxth	r2, r2	@ wCNTR, D.7157
+ 188 0070 42F00402 		orr	r2, r2, #4	@ D.7157, wCNTR,
+ 189 0074 1A60     		str	r2, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 190 0076 0868     		ldr	r0, [r1]	@ savePWR_CR.1, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 191 0078 194A     		ldr	r2, .L20+20	@ tmp184,
+ 192 007a 0190     		str	r0, [sp, #4]	@ savePWR_CR.1, savePWR_CR
+ 193 007c 0C68     		ldr	r4, [r1]	@ tmpreg, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 194 007e 1548     		ldr	r0, .L20+8	@ tmp186,
+ 195 0080 24F00304 		bic	r4, r4, #3	@ tmpreg, tmpreg,
+ 196 0084 44F00104 		orr	r4, r4, #1	@ tmpreg, tmpreg,
+ 197 0088 0C60     		str	r4, [r1]	@ tmpreg, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 198 008a 1469     		ldr	r4, [r2, #16]	@ D.7159, MEM[(struct SCB_Type *)3758157056B].SCR
+ 199 008c 44F00404 		orr	r4, r4, #4	@ D.7159, D.7159,
+ 200 0090 1461     		str	r4, [r2, #16]	@ D.7159, MEM[(struct SCB_Type *)3758157056B].SCR
+ 201 0092 0468     		ldr	r4, [r0]	@ D.7157, MEM[(volatile unsigned int *)1073765444B]
+ 202 0094 E404     		lsls	r4, r4, #19	@, D.7157,
+ 203 0096 10D5     		bpl	.L19	@,
+ 204 0098 4EF6FF74 		movw	r4, #61439	@ tmp192,
+ 205 009c 0460     		str	r4, [r0]	@ tmp192, MEM[(volatile unsigned int *)1073765444B]
+ 206 009e 1C68     		ldr	r4, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 207 00a0 4FF6F770 		movw	r0, #65527	@ D.7157,
+ 208 00a4 2040     		ands	r0, r0, r4	@, D.7157, D.7157, D.7157
+ 209 00a6 1860     		str	r0, [r3]	@ D.7157, MEM[(volatile unsigned int *)1073765440B]
+ 210 00a8 019B     		ldr	r3, [sp, #4]	@ savePWR_CR.2, savePWR_CR
+ 211 00aa 0B60     		str	r3, [r1]	@ savePWR_CR.2, MEM[(struct PWR_TypeDef *)1073770496B].CR
+ 212 00ac 1369     		ldr	r3, [r2, #16]	@ D.7159,
+ 213 00ae 23F00403 		bic	r3, r3, #4	@ D.7159, D.7159,
+ 214 00b2 1361     		str	r3, [r2, #16]	@ D.7159,
+ 215 00b4 03B0     		add	sp, sp, #12	@,,
+ 216              		@ sp needed	@
+ 217 00b6 70BC     		pop	{r4, r5, r6}	@
+ 218 00b8 7047     		bx	lr	@
+ 219              	.L19:
+ 220              	@ 338 "Libraries/CMSIS/Include/core_cmInstr.h" 1
+ 221 00ba 30BF     		wfi
+ 222              	@ 0 "" 2
+ 223              		.thumb
+ 224 00bc 1369     		ldr	r3, [r2, #16]	@ D.7159,
+ 225 00be 23F00403 		bic	r3, r3, #4	@ D.7159, D.7159,
+ 226 00c2 1361     		str	r3, [r2, #16]	@ D.7159,
+ 227 00c4 03B0     		add	sp, sp, #12	@,,
+ 228              		@ sp needed	@
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 5
+
+
+ 229 00c6 70BC     		pop	{r4, r5, r6}	@
+ 230 00c8 7047     		bx	lr	@
+ 231              	.L21:
+ 232 00ca 00BF     		.align	2
+ 233              	.L20:
+ 234 00cc 405C0040 		.word	1073765440
+ 235 00d0 00000000 		.word	EP
+ 236 00d4 445C0040 		.word	1073765444
+ 237 00d8 005C0040 		.word	1073765376
+ 238 00dc 00700040 		.word	1073770496
+ 239 00e0 00ED00E0 		.word	-536810240
+ 240              		.size	Suspend, .-Suspend
+ 241              		.section	.text.Resume_Init,"ax",%progbits
+ 242              		.align	2
+ 243              		.global	Resume_Init
+ 244              		.thumb
+ 245              		.thumb_func
+ 246              		.type	Resume_Init, %function
+ 247              	Resume_Init:
+ 248              		@ args = 0, pretend = 0, frame = 0
+ 249              		@ frame_needed = 0, uses_anonymous_args = 0
+ 250 0000 10B5     		push	{r4, lr}	@
+ 251 0002 064C     		ldr	r4, .L23	@ tmp114,
+ 252 0004 4FF6FB73 		movw	r3, #65531	@ D.7164,
+ 253 0008 2268     		ldr	r2, [r4]	@ D.7164, MEM[(volatile unsigned int *)1073765440B]
+ 254 000a 1340     		ands	r3, r3, r2	@, D.7164, D.7164, D.7164
+ 255 000c 2360     		str	r3, [r4]	@ D.7164, MEM[(volatile unsigned int *)1073765440B]
+ 256 000e FFF7FEFF 		bl	Leave_LowPowerMode	@
+ 257 0012 4FF43643 		mov	r3, #46592	@ tmp118,
+ 258 0016 2360     		str	r3, [r4]	@ tmp118, MEM[(volatile unsigned int *)1073765440B]
+ 259 0018 10BD     		pop	{r4, pc}	@
+ 260              	.L24:
+ 261 001a 00BF     		.align	2
+ 262              	.L23:
+ 263 001c 405C0040 		.word	1073765440
+ 264              		.size	Resume_Init, .-Resume_Init
+ 265              		.section	.text.Resume,"ax",%progbits
+ 266              		.align	2
+ 267              		.global	Resume
+ 268              		.thumb
+ 269              		.thumb_func
+ 270              		.type	Resume, %function
+ 271              	Resume:
+ 272              		@ args = 0, pretend = 0, frame = 0
+ 273              		@ frame_needed = 0, uses_anonymous_args = 0
+ 274 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 275 0002 324C     		ldr	r4, .L43	@ tmp213,
+ 276 0004 0728     		cmp	r0, #7	@ eResumeSetVal,
+ 277 0006 18BF     		it	ne
+ 278 0008 2070     		strbne	r0, [r4]	@ eResumeSetVal, ResumeS.eState
+ 279 000a 2378     		ldrb	r3, [r4]	@ zero_extendqisi2	@ ResumeS.eState, ResumeS.eState
+ 280 000c 052B     		cmp	r3, #5	@ ResumeS.eState,
+ 281 000e 4BD8     		bhi	.L27	@
+ 282 0010 DFE803F0 		tbb	[pc, r3]	@ ResumeS.eState
+ 283              	.L29:
+ 284 0014 18       		.byte	(.L28-.L29)/2
+ 285 0015 1F       		.byte	(.L30-.L29)/2
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 6
+
+
+ 286 0016 30       		.byte	(.L31-.L29)/2
+ 287 0017 35       		.byte	(.L32-.L29)/2
+ 288 0018 3F       		.byte	(.L33-.L29)/2
+ 289 0019 03       		.byte	(.L34-.L29)/2
+ 290              		.p2align 1
+ 291              	.L34:
+ 292 001a 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2	@ ResumeS.bESOFcnt, ResumeS.bESOFcnt
+ 293 001c 2B49     		ldr	r1, .L43	@ tmp191,
+ 294 001e 013B     		subs	r3, r3, #1	@ tmp195, ResumeS.bESOFcnt,
+ 295 0020 DBB2     		uxtb	r3, r3	@ D.7168, tmp195
+ 296 0022 6370     		strb	r3, [r4, #1]	@ D.7168, ResumeS.bESOFcnt
+ 297 0024 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2	@ ResumeS.bESOFcnt, ResumeS.bESOFcnt
+ 298 0026 03F0FF02 		and	r2, r3, #255	@ D.7168, ResumeS.bESOFcnt,
+ 299 002a 002B     		cmp	r3, #0	@ ResumeS.bESOFcnt
+ 300 002c 3ED1     		bne	.L25	@
+ 301 002e 2848     		ldr	r0, .L43+4	@ tmp202,
+ 302 0030 4FF6EF73 		movw	r3, #65519	@ D.7169,
+ 303 0034 0568     		ldr	r5, [r0]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 304 0036 274C     		ldr	r4, .L43+8	@ tmp208,
+ 305 0038 2B40     		ands	r3, r3, r5	@, D.7169, D.7169, D.7169
+ 306 003a 0625     		movs	r5, #6	@ tmp206,
+ 307 003c 0360     		str	r3, [r0]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 308 003e 0D70     		strb	r5, [r1]	@ tmp206, ResumeS.eState
+ 309 0040 2260     		str	r2, [r4]	@ D.7168, remotewakeupon
+ 310 0042 38BD     		pop	{r3, r4, r5, pc}	@
+ 311              	.L28:
+ 312 0044 234B     		ldr	r3, .L43+8	@ tmp140,
+ 313 0046 1B68     		ldr	r3, [r3]	@ remotewakeupon.3, remotewakeupon
+ 314 0048 002B     		cmp	r3, #0	@ remotewakeupon.3
+ 315 004a 30D0     		beq	.L42	@
+ 316 004c 0523     		movs	r3, #5	@ tmp150,
+ 317 004e 2370     		strb	r3, [r4]	@ tmp150,
+ 318 0050 38BD     		pop	{r3, r4, r5, pc}	@
+ 319              	.L30:
+ 320 0052 1F4D     		ldr	r5, .L43+4	@ tmp152,
+ 321 0054 4FF6FB73 		movw	r3, #65531	@ D.7169,
+ 322 0058 2A68     		ldr	r2, [r5]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 323 005a 1340     		ands	r3, r3, r2	@, D.7169, D.7169, D.7169
+ 324 005c 2B60     		str	r3, [r5]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 325 005e FFF7FEFF 		bl	Leave_LowPowerMode	@
+ 326 0062 1C4B     		ldr	r3, .L43+8	@ tmp160,
+ 327 0064 4FF43640 		mov	r0, #46592	@ tmp156,
+ 328 0068 0421     		movs	r1, #4	@ tmp158,
+ 329 006a 0122     		movs	r2, #1	@ tmp161,
+ 330 006c 2860     		str	r0, [r5]	@ tmp156, MEM[(volatile unsigned int *)1073765440B]
+ 331 006e 2170     		strb	r1, [r4]	@ tmp158, ResumeS.eState
+ 332 0070 1A60     		str	r2, [r3]	@ tmp161, remotewakeupon
+ 333 0072 38BD     		pop	{r3, r4, r5, pc}	@
+ 334              	.L31:
+ 335 0074 0222     		movs	r2, #2	@ tmp163,
+ 336 0076 0323     		movs	r3, #3	@ tmp166,
+ 337 0078 6270     		strb	r2, [r4, #1]	@ tmp163, ResumeS.bESOFcnt
+ 338 007a 2370     		strb	r3, [r4]	@ tmp166,
+ 339 007c 38BD     		pop	{r3, r4, r5, pc}	@
+ 340              	.L32:
+ 341 007e 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2	@ ResumeS.bESOFcnt, ResumeS.bESOFcnt
+ 342 0080 124A     		ldr	r2, .L43	@ tmp168,
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 7
+
+
+ 343 0082 013B     		subs	r3, r3, #1	@ tmp172, ResumeS.bESOFcnt,
+ 344 0084 DBB2     		uxtb	r3, r3	@ D.7168, tmp172
+ 345 0086 6370     		strb	r3, [r4, #1]	@ D.7168, ResumeS.bESOFcnt
+ 346 0088 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2	@ ResumeS.bESOFcnt, ResumeS.bESOFcnt
+ 347 008a 7BB9     		cbnz	r3, .L25	@ ResumeS.bESOFcnt,
+ 348 008c 0423     		movs	r3, #4	@ tmp180,
+ 349 008e 1370     		strb	r3, [r2]	@ tmp180, ResumeS.eState
+ 350 0090 38BD     		pop	{r3, r4, r5, pc}	@
+ 351              	.L33:
+ 352 0092 0F4B     		ldr	r3, .L43+4	@ tmp182,
+ 353 0094 0521     		movs	r1, #5	@ tmp186,
+ 354 0096 1868     		ldr	r0, [r3]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 355 0098 0A22     		movs	r2, #10	@ tmp189,
+ 356 009a 80B2     		uxth	r0, r0	@ wCNTR, D.7169
+ 357 009c 40F01000 		orr	r0, r0, #16	@ D.7169, wCNTR,
+ 358 00a0 1860     		str	r0, [r3]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 359 00a2 2170     		strb	r1, [r4]	@ tmp186, ResumeS.eState
+ 360 00a4 6270     		strb	r2, [r4, #1]	@ tmp189, ResumeS.bESOFcnt
+ 361 00a6 38BD     		pop	{r3, r4, r5, pc}	@
+ 362              	.L27:
+ 363 00a8 0623     		movs	r3, #6	@ tmp211,
+ 364 00aa 2370     		strb	r3, [r4]	@ tmp211,
+ 365              	.L25:
+ 366 00ac 38BD     		pop	{r3, r4, r5, pc}	@
+ 367              	.L42:
+ 368 00ae 084D     		ldr	r5, .L43+4	@ tmp141,
+ 369 00b0 4FF6FB73 		movw	r3, #65531	@ D.7169,
+ 370 00b4 2A68     		ldr	r2, [r5]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 371 00b6 1340     		ands	r3, r3, r2	@, D.7169, D.7169, D.7169
+ 372 00b8 2B60     		str	r3, [r5]	@ D.7169, MEM[(volatile unsigned int *)1073765440B]
+ 373 00ba FFF7FEFF 		bl	Leave_LowPowerMode	@
+ 374 00be 4FF43642 		mov	r2, #46592	@ tmp145,
+ 375 00c2 0623     		movs	r3, #6	@ tmp147,
+ 376 00c4 2A60     		str	r2, [r5]	@ tmp145, MEM[(volatile unsigned int *)1073765440B]
+ 377 00c6 2370     		strb	r3, [r4]	@ tmp147,
+ 378 00c8 38BD     		pop	{r3, r4, r5, pc}	@
+ 379              	.L44:
+ 380 00ca 00BF     		.align	2
+ 381              	.L43:
+ 382 00cc 00000000 		.word	ResumeS
+ 383 00d0 405C0040 		.word	1073765440
+ 384 00d4 00000000 		.word	.LANCHOR0
+ 385              		.size	Resume, .-Resume
+ 386              		.global	remotewakeupon
+ 387              		.comm	ResumeS,2,4
+ 388              		.comm	EP,32,4
+ 389              		.global	fSuspendEnabled
+ 390              		.global	bDeviceState
+ 391              		.section	.data.fSuspendEnabled,"aw",%progbits
+ 392              		.type	fSuspendEnabled, %object
+ 393              		.size	fSuspendEnabled, 1
+ 394              	fSuspendEnabled:
+ 395 0000 01       		.byte	1
+ 396              		.section	.bss.bDeviceState,"aw",%nobits
+ 397              		.align	2
+ 398              		.type	bDeviceState, %object
+ 399              		.size	bDeviceState, 4
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 8
+
+
+ 400              	bDeviceState:
+ 401 0000 00000000 		.space	4
+ 402              		.section	.bss.remotewakeupon,"aw",%nobits
+ 403              		.align	2
+ 404              		.set	.LANCHOR0,. + 0
+ 405              		.type	remotewakeupon, %object
+ 406              		.size	remotewakeupon, 4
+ 407              	remotewakeupon:
+ 408 0000 00000000 		.space	4
+ 409              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccALxgi3.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 usb_pwr.c
+C:\cygwin64\tmp\ccALxgi3.s:70     .text.PowerOn:00000000 $t
+C:\cygwin64\tmp\ccALxgi3.s:75     .text.PowerOn:00000000 PowerOn
+C:\cygwin64\tmp\ccALxgi3.s:97     .text.PowerOn:00000024 $d
+C:\cygwin64\tmp\ccALxgi3.s:102    .text.PowerOff:00000000 $t
+C:\cygwin64\tmp\ccALxgi3.s:107    .text.PowerOff:00000000 PowerOff
+C:\cygwin64\tmp\ccALxgi3.s:126    .text.PowerOff:0000001c $d
+C:\cygwin64\tmp\ccALxgi3.s:130    .text.Suspend:00000000 $t
+C:\cygwin64\tmp\ccALxgi3.s:135    .text.Suspend:00000000 Suspend
+C:\cygwin64\tmp\ccALxgi3.s:234    .text.Suspend:000000cc $d
+                            *COM*:00000020 EP
+C:\cygwin64\tmp\ccALxgi3.s:242    .text.Resume_Init:00000000 $t
+C:\cygwin64\tmp\ccALxgi3.s:247    .text.Resume_Init:00000000 Resume_Init
+C:\cygwin64\tmp\ccALxgi3.s:263    .text.Resume_Init:0000001c $d
+C:\cygwin64\tmp\ccALxgi3.s:266    .text.Resume:00000000 $t
+C:\cygwin64\tmp\ccALxgi3.s:271    .text.Resume:00000000 Resume
+C:\cygwin64\tmp\ccALxgi3.s:284    .text.Resume:00000014 $d
+C:\cygwin64\tmp\ccALxgi3.s:290    .text.Resume:0000001a $t
+C:\cygwin64\tmp\ccALxgi3.s:382    .text.Resume:000000cc $d
+                            *COM*:00000002 ResumeS
+C:\cygwin64\tmp\ccALxgi3.s:407    .bss.remotewakeupon:00000000 remotewakeupon
+C:\cygwin64\tmp\ccALxgi3.s:394    .data.fSuspendEnabled:00000000 fSuspendEnabled
+C:\cygwin64\tmp\ccALxgi3.s:400    .bss.bDeviceState:00000000 bDeviceState
+C:\cygwin64\tmp\ccALxgi3.s:397    .bss.bDeviceState:00000000 $d
+C:\cygwin64\tmp\ccALxgi3.s:403    .bss.remotewakeupon:00000000 $d
+
+UNDEFINED SYMBOLS
+USB_Cable_Config
+wInterrupt_Mask
+Leave_LowPowerMode

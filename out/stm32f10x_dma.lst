@@ -1,0 +1,471 @@
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_dma.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_dma.d -MF out/stm32f10x_dma.d -MP
+  25              	@ -MQ out/stm32f10x_dma.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_dma.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.DMA_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	DMA_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	DMA_DeInit, %function
+  76              	DMA_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		@ link register save eliminated.
+  80 0000 0368     		ldr	r3, [r0]	@ D.6783, DMAy_Channelx_3(D)->CCR
+  81 0002 3349     		ldr	r1, .L23	@ tmp142,
+  82 0004 4FF6FE72 		movw	r2, #65534	@ D.6783,
+  83 0008 1A40     		ands	r2, r2, r3	@, D.6783, D.6783, D.6783
+  84 000a 8842     		cmp	r0, r1	@ DMAy_Channelx, tmp142
+  85 000c 4FF00003 		mov	r3, #0	@ tmp138,
+  86 0010 0260     		str	r2, [r0]	@ D.6783, DMAy_Channelx_3(D)->CCR
+  87 0012 0360     		str	r3, [r0]	@ tmp138, DMAy_Channelx_3(D)->CCR
+  88 0014 4360     		str	r3, [r0, #4]	@ tmp138, DMAy_Channelx_3(D)->CNDTR
+  89 0016 8360     		str	r3, [r0, #8]	@ tmp138, DMAy_Channelx_3(D)->CPAR
+  90 0018 C360     		str	r3, [r0, #12]	@ tmp138, DMAy_Channelx_3(D)->CMAR
+  91 001a 44D0     		beq	.L19	@,
+  92 001c 2D4B     		ldr	r3, .L23+4	@ tmp145,
+  93 001e 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp145
+  94 0020 25D0     		beq	.L14	@,
+  95 0022 2D4B     		ldr	r3, .L23+8	@ tmp148,
+  96 0024 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp148
+  97 0026 30D0     		beq	.L15	@,
+  98 0028 2C4B     		ldr	r3, .L23+12	@ tmp151,
+  99 002a 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp151
+ 100 002c 34D0     		beq	.L16	@,
+ 101 002e 2C4B     		ldr	r3, .L23+16	@ tmp154,
+ 102 0030 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp154
+ 103 0032 23D0     		beq	.L17	@,
+ 104 0034 2B4B     		ldr	r3, .L23+20	@ tmp157,
+ 105 0036 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp157
+ 106 0038 3BD0     		beq	.L20	@,
+ 107 003a 2B4B     		ldr	r3, .L23+24	@ tmp160,
+ 108 003c 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp160
+ 109 003e 0FD0     		beq	.L21	@,
+ 110 0040 2A4B     		ldr	r3, .L23+28	@ tmp163,
+ 111 0042 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp163
+ 112 0044 3CD0     		beq	.L22	@,
+ 113 0046 2A4B     		ldr	r3, .L23+32	@ tmp166,
+ 114 0048 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp166
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 3
+
+
+ 115 004a 10D0     		beq	.L14	@,
+ 116 004c 294B     		ldr	r3, .L23+36	@ tmp169,
+ 117 004e 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp169
+ 118 0050 1BD0     		beq	.L15	@,
+ 119 0052 294B     		ldr	r3, .L23+40	@ tmp172,
+ 120 0054 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp172
+ 121 0056 1FD0     		beq	.L16	@,
+ 122 0058 284B     		ldr	r3, .L23+44	@ tmp175,
+ 123 005a 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp175
+ 124 005c 0ED0     		beq	.L17	@,
+ 125 005e 7047     		bx	lr	@
+ 126              	.L21:
+ 127 0060 53F87C2C 		ldr	r2, [r3, #-124]	@ D.6783, MEM[(struct DMA_TypeDef *)1073872896B].IFCR
+ 128 0064 42F07062 		orr	r2, r2, #251658240	@ D.6783, D.6783,
+ 129 0068 43F87C2C 		str	r2, [r3, #-124]	@ D.6783, MEM[(struct DMA_TypeDef *)1073872896B].IFCR
+ 130 006c 7047     		bx	lr	@
+ 131              	.L14:
+ 132 006e 53F8182C 		ldr	r2, [r3, #-24]	@ D.6783,
+ 133 0072 42F0F002 		orr	r2, r2, #240	@ D.6783, D.6783,
+ 134 0076 43F8182C 		str	r2, [r3, #-24]	@ D.6783,
+ 135 007a 7047     		bx	lr	@
+ 136              	.L17:
+ 137 007c 53F8542C 		ldr	r2, [r3, #-84]	@ D.6783,
+ 138 0080 42F47022 		orr	r2, r2, #983040	@ D.6783, D.6783,
+ 139 0084 43F8542C 		str	r2, [r3, #-84]	@ D.6783,
+ 140 0088 7047     		bx	lr	@
+ 141              	.L15:
+ 142 008a 53F82C2C 		ldr	r2, [r3, #-44]	@ D.6783,
+ 143 008e 42F47062 		orr	r2, r2, #3840	@ D.6783, D.6783,
+ 144 0092 43F82C2C 		str	r2, [r3, #-44]	@ D.6783,
+ 145 0096 7047     		bx	lr	@
+ 146              	.L16:
+ 147 0098 53F8402C 		ldr	r2, [r3, #-64]	@ D.6783,
+ 148 009c 42F47042 		orr	r2, r2, #61440	@ D.6783, D.6783,
+ 149 00a0 43F8402C 		str	r2, [r3, #-64]	@ D.6783,
+ 150 00a4 7047     		bx	lr	@
+ 151              	.L19:
+ 152 00a6 164B     		ldr	r3, .L23+48	@ tmp143,
+ 153 00a8 5A68     		ldr	r2, [r3, #4]	@ D.6783, MEM[(struct DMA_TypeDef *)1073872896B].IFCR
+ 154 00aa 42F00F02 		orr	r2, r2, #15	@ D.6783, D.6783,
+ 155 00ae 5A60     		str	r2, [r3, #4]	@ D.6783, MEM[(struct DMA_TypeDef *)1073872896B].IFCR
+ 156 00b0 7047     		bx	lr	@
+ 157              	.L20:
+ 158 00b2 53F8682C 		ldr	r2, [r3, #-104]	@ D.6783, MEM[(struct DMA_TypeDef *)1073872896B].IFCR
+ 159 00b6 42F47002 		orr	r2, r2, #15728640	@ D.6783, D.6783,
+ 160 00ba 43F8682C 		str	r2, [r3, #-104]	@ D.6783, MEM[(struct DMA_TypeDef *)1073872896B].IFCR
+ 161 00be 7047     		bx	lr	@
+ 162              	.L22:
+ 163 00c0 53F8042C 		ldr	r2, [r3, #-4]	@ D.6783, MEM[(struct DMA_TypeDef *)1073873920B].IFCR
+ 164 00c4 42F00F02 		orr	r2, r2, #15	@ D.6783, D.6783,
+ 165 00c8 43F8042C 		str	r2, [r3, #-4]	@ D.6783, MEM[(struct DMA_TypeDef *)1073873920B].IFCR
+ 166 00cc 7047     		bx	lr	@
+ 167              	.L24:
+ 168 00ce 00BF     		.align	2
+ 169              	.L23:
+ 170 00d0 08000240 		.word	1073872904
+ 171 00d4 1C000240 		.word	1073872924
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 4
+
+
+ 172 00d8 30000240 		.word	1073872944
+ 173 00dc 44000240 		.word	1073872964
+ 174 00e0 58000240 		.word	1073872984
+ 175 00e4 6C000240 		.word	1073873004
+ 176 00e8 80000240 		.word	1073873024
+ 177 00ec 08040240 		.word	1073873928
+ 178 00f0 1C040240 		.word	1073873948
+ 179 00f4 30040240 		.word	1073873968
+ 180 00f8 44040240 		.word	1073873988
+ 181 00fc 58040240 		.word	1073874008
+ 182 0100 00000240 		.word	1073872896
+ 183              		.size	DMA_DeInit, .-DMA_DeInit
+ 184              		.section	.text.DMA_Init,"ax",%progbits
+ 185              		.align	2
+ 186              		.global	DMA_Init
+ 187              		.thumb
+ 188              		.thumb_func
+ 189              		.type	DMA_Init, %function
+ 190              	DMA_Init:
+ 191              		@ args = 0, pretend = 0, frame = 0
+ 192              		@ frame_needed = 0, uses_anonymous_args = 0
+ 193              		@ link register save eliminated.
+ 194 0000 8A68     		ldr	r2, [r1, #8]	@ DMA_InitStruct_5(D)->DMA_DIR, DMA_InitStruct_5(D)->DMA_DIR
+ 195 0002 F0B4     		push	{r4, r5, r6, r7}	@
+ 196 0004 0C6A     		ldr	r4, [r1, #32]	@ DMA_InitStruct_5(D)->DMA_Mode, DMA_InitStruct_5(D)->DMA_Mode
+ 197 0006 0B69     		ldr	r3, [r1, #16]	@ DMA_InitStruct_5(D)->DMA_PeripheralInc, DMA_InitStruct_5(D)->DMA_PeripheralInc
+ 198 0008 1443     		orrs	r4, r4, r2	@, D.6786, DMA_InitStruct_5(D)->DMA_Mode, DMA_InitStruct_5(D)->DMA_DIR
+ 199 000a 4A69     		ldr	r2, [r1, #20]	@ DMA_InitStruct_5(D)->DMA_MemoryInc, DMA_InitStruct_5(D)->DMA_MemoryInc
+ 200 000c 1C43     		orrs	r4, r4, r3	@, D.6786, D.6786, DMA_InitStruct_5(D)->DMA_PeripheralInc
+ 201 000e 8B69     		ldr	r3, [r1, #24]	@ DMA_InitStruct_5(D)->DMA_PeripheralDataSize, DMA_InitStruct_5(D)->DMA_Peripher
+ 202 0010 CE69     		ldr	r6, [r1, #28]	@ DMA_InitStruct_5(D)->DMA_MemoryDataSize, DMA_InitStruct_5(D)->DMA_MemoryDataSi
+ 203 0012 2243     		orrs	r2, r2, r4	@, D.6786, DMA_InitStruct_5(D)->DMA_MemoryInc, D.6786
+ 204 0014 0768     		ldr	r7, [r0]	@ tmpreg, DMAy_Channelx_2(D)->CCR
+ 205 0016 4D6A     		ldr	r5, [r1, #36]	@ DMA_InitStruct_5(D)->DMA_Priority, DMA_InitStruct_5(D)->DMA_Priority
+ 206 0018 1343     		orrs	r3, r3, r2	@, D.6786, DMA_InitStruct_5(D)->DMA_PeripheralDataSize, D.6786
+ 207 001a 8C6A     		ldr	r4, [r1, #40]	@ DMA_InitStruct_5(D)->DMA_M2M, DMA_InitStruct_5(D)->DMA_M2M
+ 208 001c 1E43     		orrs	r6, r6, r3	@, D.6786, DMA_InitStruct_5(D)->DMA_MemoryDataSize, D.6786
+ 209 001e 3543     		orrs	r5, r5, r6	@, D.6786, DMA_InitStruct_5(D)->DMA_Priority, D.6786
+ 210 0020 27F4FF43 		bic	r3, r7, #32640	@ tmpreg, tmpreg,
+ 211 0024 CE68     		ldr	r6, [r1, #12]	@ D.6786, DMA_InitStruct_5(D)->DMA_BufferSize
+ 212 0026 0F68     		ldr	r7, [r1]	@ D.6786, DMA_InitStruct_5(D)->DMA_PeripheralBaseAddr
+ 213 0028 4A68     		ldr	r2, [r1, #4]	@ D.6786, DMA_InitStruct_5(D)->DMA_MemoryBaseAddr
+ 214 002a 2C43     		orrs	r4, r4, r5	@, D.6786, DMA_InitStruct_5(D)->DMA_M2M, D.6786
+ 215 002c 23F07003 		bic	r3, r3, #112	@ tmpreg, tmpreg,
+ 216 0030 2343     		orrs	r3, r3, r4	@, tmpreg, tmpreg, D.6786
+ 217 0032 0360     		str	r3, [r0]	@ tmpreg, DMAy_Channelx_2(D)->CCR
+ 218 0034 4660     		str	r6, [r0, #4]	@ D.6786, DMAy_Channelx_2(D)->CNDTR
+ 219 0036 8760     		str	r7, [r0, #8]	@ D.6786, DMAy_Channelx_2(D)->CPAR
+ 220 0038 C260     		str	r2, [r0, #12]	@ D.6786, DMAy_Channelx_2(D)->CMAR
+ 221 003a F0BC     		pop	{r4, r5, r6, r7}	@
+ 222 003c 7047     		bx	lr	@
+ 223              		.size	DMA_Init, .-DMA_Init
+ 224 003e 00BF     		.section	.text.DMA_StructInit,"ax",%progbits
+ 225              		.align	2
+ 226              		.global	DMA_StructInit
+ 227              		.thumb
+ 228              		.thumb_func
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 5
+
+
+ 229              		.type	DMA_StructInit, %function
+ 230              	DMA_StructInit:
+ 231              		@ args = 0, pretend = 0, frame = 0
+ 232              		@ frame_needed = 0, uses_anonymous_args = 0
+ 233              		@ link register save eliminated.
+ 234 0000 0023     		movs	r3, #0	@ tmp111,
+ 235 0002 0360     		str	r3, [r0]	@ tmp111, DMA_InitStruct_2(D)->DMA_PeripheralBaseAddr
+ 236 0004 4360     		str	r3, [r0, #4]	@ tmp111, DMA_InitStruct_2(D)->DMA_MemoryBaseAddr
+ 237 0006 8360     		str	r3, [r0, #8]	@ tmp111, DMA_InitStruct_2(D)->DMA_DIR
+ 238 0008 C360     		str	r3, [r0, #12]	@ tmp111, DMA_InitStruct_2(D)->DMA_BufferSize
+ 239 000a 0361     		str	r3, [r0, #16]	@ tmp111, DMA_InitStruct_2(D)->DMA_PeripheralInc
+ 240 000c 4361     		str	r3, [r0, #20]	@ tmp111, DMA_InitStruct_2(D)->DMA_MemoryInc
+ 241 000e 8361     		str	r3, [r0, #24]	@ tmp111, DMA_InitStruct_2(D)->DMA_PeripheralDataSize
+ 242 0010 C361     		str	r3, [r0, #28]	@ tmp111, DMA_InitStruct_2(D)->DMA_MemoryDataSize
+ 243 0012 0362     		str	r3, [r0, #32]	@ tmp111, DMA_InitStruct_2(D)->DMA_Mode
+ 244 0014 4362     		str	r3, [r0, #36]	@ tmp111, DMA_InitStruct_2(D)->DMA_Priority
+ 245 0016 8362     		str	r3, [r0, #40]	@ tmp111, DMA_InitStruct_2(D)->DMA_M2M
+ 246 0018 7047     		bx	lr	@
+ 247              		.size	DMA_StructInit, .-DMA_StructInit
+ 248 001a 00BF     		.section	.text.DMA_Cmd,"ax",%progbits
+ 249              		.align	2
+ 250              		.global	DMA_Cmd
+ 251              		.thumb
+ 252              		.thumb_func
+ 253              		.type	DMA_Cmd, %function
+ 254              	DMA_Cmd:
+ 255              		@ args = 0, pretend = 0, frame = 0
+ 256              		@ frame_needed = 0, uses_anonymous_args = 0
+ 257              		@ link register save eliminated.
+ 258 0000 29B9     		cbnz	r1, .L30	@ NewState,
+ 259 0002 0268     		ldr	r2, [r0]	@ D.6791, DMAy_Channelx_4(D)->CCR
+ 260 0004 4FF6FE73 		movw	r3, #65534	@ D.6791,
+ 261 0008 1340     		ands	r3, r3, r2	@, D.6791, D.6791, D.6791
+ 262 000a 0360     		str	r3, [r0]	@ D.6791,* DMAy_Channelx
+ 263 000c 7047     		bx	lr	@
+ 264              	.L30:
+ 265 000e 0368     		ldr	r3, [r0]	@ D.6791, DMAy_Channelx_4(D)->CCR
+ 266 0010 43F00103 		orr	r3, r3, #1	@ D.6791, D.6791,
+ 267 0014 0360     		str	r3, [r0]	@ D.6791,* DMAy_Channelx
+ 268 0016 7047     		bx	lr	@
+ 269              		.size	DMA_Cmd, .-DMA_Cmd
+ 270              		.section	.text.DMA_ITConfig,"ax",%progbits
+ 271              		.align	2
+ 272              		.global	DMA_ITConfig
+ 273              		.thumb
+ 274              		.thumb_func
+ 275              		.type	DMA_ITConfig, %function
+ 276              	DMA_ITConfig:
+ 277              		@ args = 0, pretend = 0, frame = 0
+ 278              		@ frame_needed = 0, uses_anonymous_args = 0
+ 279              		@ link register save eliminated.
+ 280 0000 0368     		ldr	r3, [r0]	@ D.6794,* DMAy_Channelx
+ 281 0002 1AB9     		cbnz	r2, .L34	@ NewState,
+ 282 0004 23EA0101 		bic	r1, r3, r1	@ D.6794, D.6794, DMA_IT
+ 283 0008 0160     		str	r1, [r0]	@ D.6794,* DMAy_Channelx
+ 284 000a 7047     		bx	lr	@
+ 285              	.L34:
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 6
+
+
+ 286 000c 1943     		orrs	r1, r1, r3	@, D.6794, DMA_IT, D.6794
+ 287 000e 0160     		str	r1, [r0]	@ D.6794,* DMAy_Channelx
+ 288 0010 7047     		bx	lr	@
+ 289              		.size	DMA_ITConfig, .-DMA_ITConfig
+ 290 0012 00BF     		.section	.text.DMA_SetCurrDataCounter,"ax",%progbits
+ 291              		.align	2
+ 292              		.global	DMA_SetCurrDataCounter
+ 293              		.thumb
+ 294              		.thumb_func
+ 295              		.type	DMA_SetCurrDataCounter, %function
+ 296              	DMA_SetCurrDataCounter:
+ 297              		@ args = 0, pretend = 0, frame = 0
+ 298              		@ frame_needed = 0, uses_anonymous_args = 0
+ 299              		@ link register save eliminated.
+ 300 0000 4160     		str	r1, [r0, #4]	@ DataNumber, DMAy_Channelx_4(D)->CNDTR
+ 301 0002 7047     		bx	lr	@
+ 302              		.size	DMA_SetCurrDataCounter, .-DMA_SetCurrDataCounter
+ 303              		.section	.text.DMA_GetCurrDataCounter,"ax",%progbits
+ 304              		.align	2
+ 305              		.global	DMA_GetCurrDataCounter
+ 306              		.thumb
+ 307              		.thumb_func
+ 308              		.type	DMA_GetCurrDataCounter, %function
+ 309              	DMA_GetCurrDataCounter:
+ 310              		@ args = 0, pretend = 0, frame = 0
+ 311              		@ frame_needed = 0, uses_anonymous_args = 0
+ 312              		@ link register save eliminated.
+ 313 0000 4068     		ldr	r0, [r0, #4]	@ D.6800, DMAy_Channelx_2(D)->CNDTR
+ 314 0002 80B2     		uxth	r0, r0	@, D.6800
+ 315 0004 7047     		bx	lr	@
+ 316              		.size	DMA_GetCurrDataCounter, .-DMA_GetCurrDataCounter
+ 317 0006 00BF     		.section	.text.DMA_GetFlagStatus,"ax",%progbits
+ 318              		.align	2
+ 319              		.global	DMA_GetFlagStatus
+ 320              		.thumb
+ 321              		.thumb_func
+ 322              		.type	DMA_GetFlagStatus, %function
+ 323              	DMA_GetFlagStatus:
+ 324              		@ args = 0, pretend = 0, frame = 0
+ 325              		@ frame_needed = 0, uses_anonymous_args = 0
+ 326              		@ link register save eliminated.
+ 327 0000 C300     		lsls	r3, r0, #3	@, DMAy_FLAG,
+ 328 0002 4CBF     		ite	mi
+ 329 0004 034B     		ldrmi	r3, .L40	@ tmp118,
+ 330 0006 044B     		ldrpl	r3, .L40+4	@ tmp119,
+ 331 0008 1B68     		ldr	r3, [r3]	@ tmpreg,
+ 332 000a 0342     		tst	r3, r0	@ tmpreg, DMAy_FLAG
+ 333 000c 0CBF     		ite	eq	@
+ 334 000e 0020     		moveq	r0, #0	@,
+ 335 0010 0120     		movne	r0, #1	@,
+ 336 0012 7047     		bx	lr	@
+ 337              	.L41:
+ 338              		.align	2
+ 339              	.L40:
+ 340 0014 00040240 		.word	1073873920
+ 341 0018 00000240 		.word	1073872896
+ 342              		.size	DMA_GetFlagStatus, .-DMA_GetFlagStatus
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 7
+
+
+ 343              		.section	.text.DMA_ClearFlag,"ax",%progbits
+ 344              		.align	2
+ 345              		.global	DMA_ClearFlag
+ 346              		.thumb
+ 347              		.thumb_func
+ 348              		.type	DMA_ClearFlag, %function
+ 349              	DMA_ClearFlag:
+ 350              		@ args = 0, pretend = 0, frame = 0
+ 351              		@ frame_needed = 0, uses_anonymous_args = 0
+ 352              		@ link register save eliminated.
+ 353 0000 C300     		lsls	r3, r0, #3	@, DMAy_FLAG,
+ 354 0002 4CBF     		ite	mi
+ 355 0004 014B     		ldrmi	r3, .L45	@ tmp113,
+ 356 0006 024B     		ldrpl	r3, .L45+4	@ tmp114,
+ 357 0008 5860     		str	r0, [r3, #4]	@ DMAy_FLAG,
+ 358 000a 7047     		bx	lr	@
+ 359              	.L46:
+ 360              		.align	2
+ 361              	.L45:
+ 362 000c 00040240 		.word	1073873920
+ 363 0010 00000240 		.word	1073872896
+ 364              		.size	DMA_ClearFlag, .-DMA_ClearFlag
+ 365              		.section	.text.DMA_GetITStatus,"ax",%progbits
+ 366              		.align	2
+ 367              		.global	DMA_GetITStatus
+ 368              		.thumb
+ 369              		.thumb_func
+ 370              		.type	DMA_GetITStatus, %function
+ 371              	DMA_GetITStatus:
+ 372              		@ args = 0, pretend = 0, frame = 0
+ 373              		@ frame_needed = 0, uses_anonymous_args = 0
+ 374              		@ link register save eliminated.
+ 375 0000 C300     		lsls	r3, r0, #3	@, DMAy_IT,
+ 376 0002 4CBF     		ite	mi
+ 377 0004 034B     		ldrmi	r3, .L50	@ tmp118,
+ 378 0006 044B     		ldrpl	r3, .L50+4	@ tmp119,
+ 379 0008 1B68     		ldr	r3, [r3]	@ tmpreg,
+ 380 000a 0342     		tst	r3, r0	@ tmpreg, DMAy_IT
+ 381 000c 0CBF     		ite	eq	@
+ 382 000e 0020     		moveq	r0, #0	@,
+ 383 0010 0120     		movne	r0, #1	@,
+ 384 0012 7047     		bx	lr	@
+ 385              	.L51:
+ 386              		.align	2
+ 387              	.L50:
+ 388 0014 00040240 		.word	1073873920
+ 389 0018 00000240 		.word	1073872896
+ 390              		.size	DMA_GetITStatus, .-DMA_GetITStatus
+ 391              		.section	.text.DMA_ClearITPendingBit,"ax",%progbits
+ 392              		.align	2
+ 393              		.global	DMA_ClearITPendingBit
+ 394              		.thumb
+ 395              		.thumb_func
+ 396              		.type	DMA_ClearITPendingBit, %function
+ 397              	DMA_ClearITPendingBit:
+ 398              		@ args = 0, pretend = 0, frame = 0
+ 399              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 8
+
+
+ 400              		@ link register save eliminated.
+ 401 0000 C300     		lsls	r3, r0, #3	@, DMAy_IT,
+ 402 0002 4CBF     		ite	mi
+ 403 0004 014B     		ldrmi	r3, .L55	@ tmp113,
+ 404 0006 024B     		ldrpl	r3, .L55+4	@ tmp114,
+ 405 0008 5860     		str	r0, [r3, #4]	@ DMAy_IT,
+ 406 000a 7047     		bx	lr	@
+ 407              	.L56:
+ 408              		.align	2
+ 409              	.L55:
+ 410 000c 00040240 		.word	1073873920
+ 411 0010 00000240 		.word	1073872896
+ 412              		.size	DMA_ClearITPendingBit, .-DMA_ClearITPendingBit
+ 413              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccs6wpXh.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_dma.c
+C:\cygwin64\tmp\ccs6wpXh.s:71     .text.DMA_DeInit:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:76     .text.DMA_DeInit:00000000 DMA_DeInit
+C:\cygwin64\tmp\ccs6wpXh.s:170    .text.DMA_DeInit:000000d0 $d
+C:\cygwin64\tmp\ccs6wpXh.s:185    .text.DMA_Init:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:190    .text.DMA_Init:00000000 DMA_Init
+C:\cygwin64\tmp\ccs6wpXh.s:225    .text.DMA_StructInit:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:230    .text.DMA_StructInit:00000000 DMA_StructInit
+C:\cygwin64\tmp\ccs6wpXh.s:249    .text.DMA_Cmd:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:254    .text.DMA_Cmd:00000000 DMA_Cmd
+C:\cygwin64\tmp\ccs6wpXh.s:271    .text.DMA_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:276    .text.DMA_ITConfig:00000000 DMA_ITConfig
+C:\cygwin64\tmp\ccs6wpXh.s:291    .text.DMA_SetCurrDataCounter:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:296    .text.DMA_SetCurrDataCounter:00000000 DMA_SetCurrDataCounter
+C:\cygwin64\tmp\ccs6wpXh.s:304    .text.DMA_GetCurrDataCounter:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:309    .text.DMA_GetCurrDataCounter:00000000 DMA_GetCurrDataCounter
+C:\cygwin64\tmp\ccs6wpXh.s:318    .text.DMA_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:323    .text.DMA_GetFlagStatus:00000000 DMA_GetFlagStatus
+C:\cygwin64\tmp\ccs6wpXh.s:340    .text.DMA_GetFlagStatus:00000014 $d
+C:\cygwin64\tmp\ccs6wpXh.s:344    .text.DMA_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:349    .text.DMA_ClearFlag:00000000 DMA_ClearFlag
+C:\cygwin64\tmp\ccs6wpXh.s:362    .text.DMA_ClearFlag:0000000c $d
+C:\cygwin64\tmp\ccs6wpXh.s:366    .text.DMA_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:371    .text.DMA_GetITStatus:00000000 DMA_GetITStatus
+C:\cygwin64\tmp\ccs6wpXh.s:388    .text.DMA_GetITStatus:00000014 $d
+C:\cygwin64\tmp\ccs6wpXh.s:392    .text.DMA_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccs6wpXh.s:397    .text.DMA_ClearITPendingBit:00000000 DMA_ClearITPendingBit
+C:\cygwin64\tmp\ccs6wpXh.s:410    .text.DMA_ClearITPendingBit:0000000c $d
+
+NO UNDEFINED SYMBOLS

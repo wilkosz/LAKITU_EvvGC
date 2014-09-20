@@ -1,0 +1,2926 @@
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_tim.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_tim.d -MF out/stm32f10x_tim.d -MP
+  25              	@ -MQ out/stm32f10x_tim.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_tim.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.TI1_Config,"ax",%progbits
+  71              		.align	2
+  72              		.thumb
+  73              		.thumb_func
+  74              		.type	TI1_Config, %function
+  75              	TI1_Config:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79 0000 70B4     		push	{r4, r5, r6}	@
+  80 0002 048C     		ldrh	r4, [r0, #32]	@, TIMx_3(D)->CCER
+  81 0004 1A4D     		ldr	r5, .L9	@ tmp141,
+  82 0006 24F00104 		bic	r4, r4, #1	@ D.7730, TIMx_3(D)->CCER,
+  83 000a 2404     		lsls	r4, r4, #16	@ D.7730, D.7730,
+  84 000c 240C     		lsrs	r4, r4, #16	@ D.7730, D.7730,
+  85 000e 0484     		strh	r4, [r0, #32]	@ movhi	@ D.7730, TIMx_3(D)->CCER
+  86 0010 068B     		ldrh	r6, [r0, #24]	@, TIMx_3(D)->CCMR1
+  87 0012 048C     		ldrh	r4, [r0, #32]	@, TIMx_3(D)->CCER
+  88 0014 B6B2     		uxth	r6, r6	@ tmpccmr1, TIMx_3(D)->CCMR1
+  89 0016 26F0F306 		bic	r6, r6, #243	@ tmp135, tmpccmr1,
+  90 001a 3243     		orrs	r2, r2, r6	@, D.7730, TIM_ICSelection, tmp135
+  91 001c 42EA0313 		orr	r3, r2, r3, lsl #4	@, tmp140, D.7730, TIM_ICFilter,
+  92 0020 A842     		cmp	r0, r5	@ TIMx, tmp141
+  93 0022 9EB2     		uxth	r6, r3	@ tmpccmr1, tmp140
+  94 0024 A4B2     		uxth	r4, r4	@ tmpccer, TIMx_3(D)->CCER
+  95 0026 1AD0     		beq	.L2	@,
+  96 0028 124B     		ldr	r3, .L9+4	@ tmp142,
+  97 002a 9842     		cmp	r0, r3	@ TIMx, tmp142
+  98 002c 17D0     		beq	.L2	@,
+  99 002e B0F1804F 		cmp	r0, #1073741824	@ TIMx,
+ 100 0032 14D0     		beq	.L2	@,
+ 101 0034 A3F59833 		sub	r3, r3, #77824	@ tmp143, tmp143,
+ 102 0038 9842     		cmp	r0, r3	@ TIMx, tmp143
+ 103 003a 10D0     		beq	.L2	@,
+ 104 003c 03F58063 		add	r3, r3, #1024	@ tmp144, tmp144,
+ 105 0040 9842     		cmp	r0, r3	@ TIMx, tmp144
+ 106 0042 0CD0     		beq	.L2	@,
+ 107 0044 03F58063 		add	r3, r3, #1024	@ tmp145, tmp145,
+ 108 0048 9842     		cmp	r0, r3	@ TIMx, tmp145
+ 109 004a 08D0     		beq	.L2	@,
+ 110 004c 24F00A04 		bic	r4, r4, #10	@ tmp150, tmpccer,
+ 111 0050 44F00104 		orr	r4, r4, #1	@ D.7730, tmp150,
+ 112 0054 2143     		orrs	r1, r1, r4	@, tmpccer, TIM_ICPolarity, D.7730
+ 113 0056 0683     		strh	r6, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_3(D)->CCMR1
+ 114 0058 0184     		strh	r1, [r0, #32]	@ movhi	@ tmpccer, TIMx_3(D)->CCER
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 3
+
+
+ 115 005a 70BC     		pop	{r4, r5, r6}	@
+ 116 005c 7047     		bx	lr	@
+ 117              	.L2:
+ 118 005e 24F00204 		bic	r4, r4, #2	@ tmp146, tmpccer,
+ 119 0062 44F00104 		orr	r4, r4, #1	@ D.7730, tmp146,
+ 120 0066 2143     		orrs	r1, r1, r4	@, tmpccer, TIM_ICPolarity, D.7730
+ 121 0068 0683     		strh	r6, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_3(D)->CCMR1
+ 122 006a 0184     		strh	r1, [r0, #32]	@ movhi	@ tmpccer, TIMx_3(D)->CCER
+ 123 006c 70BC     		pop	{r4, r5, r6}	@
+ 124 006e 7047     		bx	lr	@
+ 125              	.L10:
+ 126              		.align	2
+ 127              	.L9:
+ 128 0070 002C0140 		.word	1073818624
+ 129 0074 00340140 		.word	1073820672
+ 130              		.size	TI1_Config, .-TI1_Config
+ 131              		.section	.text.TI2_Config,"ax",%progbits
+ 132              		.align	2
+ 133              		.thumb
+ 134              		.thumb_func
+ 135              		.type	TI2_Config, %function
+ 136              	TI2_Config:
+ 137              		@ args = 0, pretend = 0, frame = 0
+ 138              		@ frame_needed = 0, uses_anonymous_args = 0
+ 139              		@ link register save eliminated.
+ 140 0000 70B4     		push	{r4, r5, r6}	@
+ 141 0002 048C     		ldrh	r4, [r0, #32]	@, TIMx_3(D)->CCER
+ 142 0004 1C4D     		ldr	r5, .L18	@ tmp146,
+ 143 0006 24F01004 		bic	r4, r4, #16	@ D.7733, TIMx_3(D)->CCER,
+ 144 000a 2404     		lsls	r4, r4, #16	@ D.7733, D.7733,
+ 145 000c 240C     		lsrs	r4, r4, #16	@ D.7733, D.7733,
+ 146 000e 0484     		strh	r4, [r0, #32]	@ movhi	@ D.7733, TIMx_3(D)->CCER
+ 147 0010 048B     		ldrh	r4, [r0, #24]	@, TIMx_3(D)->CCMR1
+ 148 0012 068C     		ldrh	r6, [r0, #32]	@, TIMx_3(D)->CCER
+ 149 0014 24F44074 		bic	r4, r4, #768	@ tmpccmr1, TIMx_3(D)->CCMR1,
+ 150 0018 2405     		lsls	r4, r4, #20	@ tmpccmr1, tmpccmr1,
+ 151 001a 240D     		lsrs	r4, r4, #20	@ tmpccmr1, tmpccmr1,
+ 152 001c 44EA0222 		orr	r2, r4, r2, lsl #8	@, tmp142, tmpccmr1, TIM_ICSelection,
+ 153 0020 42EA0333 		orr	r3, r2, r3, lsl #12	@, tmpccmr1, tmp142, TIM_ICFilter,
+ 154 0024 A842     		cmp	r0, r5	@ TIMx, tmp146
+ 155 0026 9BB2     		uxth	r3, r3	@ tmpccmr1, tmpccmr1
+ 156 0028 B6B2     		uxth	r6, r6	@ tmpccer, TIMx_3(D)->CCER
+ 157 002a 1AD0     		beq	.L12	@,
+ 158 002c 134A     		ldr	r2, .L18+4	@ tmp147,
+ 159 002e 9042     		cmp	r0, r2	@ TIMx, tmp147
+ 160 0030 17D0     		beq	.L12	@,
+ 161 0032 B0F1804F 		cmp	r0, #1073741824	@ TIMx,
+ 162 0036 14D0     		beq	.L12	@,
+ 163 0038 A2F59832 		sub	r2, r2, #77824	@ tmp148, tmp148,
+ 164 003c 9042     		cmp	r0, r2	@ TIMx, tmp148
+ 165 003e 10D0     		beq	.L12	@,
+ 166 0040 02F58062 		add	r2, r2, #1024	@ tmp149, tmp149,
+ 167 0044 9042     		cmp	r0, r2	@ TIMx, tmp149
+ 168 0046 0CD0     		beq	.L12	@,
+ 169 0048 02F58062 		add	r2, r2, #1024	@ tmp150, tmp150,
+ 170 004c 9042     		cmp	r0, r2	@ TIMx, tmp150
+ 171 004e 08D0     		beq	.L12	@,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 4
+
+
+ 172 0050 26F0A006 		bic	r6, r6, #160	@ tmp157, tmpccer,
+ 173 0054 46F01006 		orr	r6, r6, #16	@ D.7733, tmp157,
+ 174 0058 3143     		orrs	r1, r1, r6	@, tmpccer, TIM_ICPolarity, D.7733
+ 175 005a 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_3(D)->CCMR1
+ 176 005c 70BC     		pop	{r4, r5, r6}	@
+ 177 005e 0184     		strh	r1, [r0, #32]	@ movhi	@ tmpccer, TIMx_3(D)->CCER
+ 178 0060 7047     		bx	lr	@
+ 179              	.L12:
+ 180 0062 26F02006 		bic	r6, r6, #32	@ tmp151, tmpccer,
+ 181 0066 46F01006 		orr	r6, r6, #16	@ D.7733, tmp151,
+ 182 006a 46EA0111 		orr	r1, r6, r1, lsl #4	@, tmp156, D.7733, TIM_ICPolarity,
+ 183 006e 89B2     		uxth	r1, r1	@ tmpccer, tmp156
+ 184 0070 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_3(D)->CCMR1
+ 185 0072 70BC     		pop	{r4, r5, r6}	@
+ 186 0074 0184     		strh	r1, [r0, #32]	@ movhi	@ tmpccer, TIMx_3(D)->CCER
+ 187 0076 7047     		bx	lr	@
+ 188              	.L19:
+ 189              		.align	2
+ 190              	.L18:
+ 191 0078 002C0140 		.word	1073818624
+ 192 007c 00340140 		.word	1073820672
+ 193              		.size	TI2_Config, .-TI2_Config
+ 194              		.section	.text.TIM_DeInit,"ax",%progbits
+ 195              		.align	2
+ 196              		.global	TIM_DeInit
+ 197              		.thumb
+ 198              		.thumb_func
+ 199              		.type	TIM_DeInit, %function
+ 200              	TIM_DeInit:
+ 201              		@ args = 0, pretend = 0, frame = 0
+ 202              		@ frame_needed = 0, uses_anonymous_args = 0
+ 203 0000 08B5     		push	{r3, lr}	@
+ 204 0002 7C4B     		ldr	r3, .L55	@ tmp111,
+ 205 0004 9842     		cmp	r0, r3	@ TIMx, tmp111
+ 206 0006 50D0     		beq	.L38	@,
+ 207 0008 B0F1804F 		cmp	r0, #1073741824	@ TIMx,
+ 208 000c 59D0     		beq	.L39	@,
+ 209 000e 7A4B     		ldr	r3, .L55+4	@ tmp112,
+ 210 0010 9842     		cmp	r0, r3	@ TIMx, tmp112
+ 211 0012 60D0     		beq	.L40	@,
+ 212 0014 794B     		ldr	r3, .L55+8	@ tmp113,
+ 213 0016 9842     		cmp	r0, r3	@ TIMx, tmp113
+ 214 0018 67D0     		beq	.L41	@,
+ 215 001a 794B     		ldr	r3, .L55+12	@ tmp114,
+ 216 001c 9842     		cmp	r0, r3	@ TIMx, tmp114
+ 217 001e 6ED0     		beq	.L42	@,
+ 218 0020 784B     		ldr	r3, .L55+16	@ tmp115,
+ 219 0022 9842     		cmp	r0, r3	@ TIMx, tmp115
+ 220 0024 75D0     		beq	.L43	@,
+ 221 0026 784B     		ldr	r3, .L55+20	@ tmp116,
+ 222 0028 9842     		cmp	r0, r3	@ TIMx, tmp116
+ 223 002a 7CD0     		beq	.L44	@,
+ 224 002c 774B     		ldr	r3, .L55+24	@ tmp117,
+ 225 002e 9842     		cmp	r0, r3	@ TIMx, tmp117
+ 226 0030 00F08380 		beq	.L45	@,
+ 227 0034 764B     		ldr	r3, .L55+28	@ tmp118,
+ 228 0036 9842     		cmp	r0, r3	@ TIMx, tmp118
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 5
+
+
+ 229 0038 00F08B80 		beq	.L46	@,
+ 230 003c 754B     		ldr	r3, .L55+32	@ tmp119,
+ 231 003e 9842     		cmp	r0, r3	@ TIMx, tmp119
+ 232 0040 00F09380 		beq	.L47	@,
+ 233 0044 744B     		ldr	r3, .L55+36	@ tmp120,
+ 234 0046 9842     		cmp	r0, r3	@ TIMx, tmp120
+ 235 0048 00F09B80 		beq	.L48	@,
+ 236 004c 734B     		ldr	r3, .L55+40	@ tmp121,
+ 237 004e 9842     		cmp	r0, r3	@ TIMx, tmp121
+ 238 0050 00F0A380 		beq	.L49	@,
+ 239 0054 724B     		ldr	r3, .L55+44	@ tmp122,
+ 240 0056 9842     		cmp	r0, r3	@ TIMx, tmp122
+ 241 0058 00F0A980 		beq	.L50	@,
+ 242 005c 714B     		ldr	r3, .L55+48	@ tmp123,
+ 243 005e 9842     		cmp	r0, r3	@ TIMx, tmp123
+ 244 0060 00F0AF80 		beq	.L51	@,
+ 245 0064 704B     		ldr	r3, .L55+52	@ tmp124,
+ 246 0066 9842     		cmp	r0, r3	@ TIMx, tmp124
+ 247 0068 00F0B780 		beq	.L52	@,
+ 248 006c 6F4B     		ldr	r3, .L55+56	@ tmp125,
+ 249 006e 9842     		cmp	r0, r3	@ TIMx, tmp125
+ 250 0070 03D0     		beq	.L53	@,
+ 251 0072 6F4B     		ldr	r3, .L55+60	@ tmp126,
+ 252 0074 9842     		cmp	r0, r3	@ TIMx, tmp126
+ 253 0076 0CD0     		beq	.L54	@,
+ 254 0078 08BD     		pop	{r3, pc}	@
+ 255              	.L53:
+ 256 007a 4FF40030 		mov	r0, #131072	@,
+ 257 007e 0121     		movs	r1, #1	@,
+ 258 0080 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 259 0084 BDE80840 		pop	{r3, lr}	@
+ 260 0088 4FF40030 		mov	r0, #131072	@,
+ 261 008c 0021     		movs	r1, #0	@,
+ 262 008e FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ 263              	.L54:
+ 264 0092 4FF48020 		mov	r0, #262144	@,
+ 265 0096 0121     		movs	r1, #1	@,
+ 266 0098 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 267 009c BDE80840 		pop	{r3, lr}	@
+ 268 00a0 4FF48020 		mov	r0, #262144	@,
+ 269 00a4 0021     		movs	r1, #0	@,
+ 270 00a6 FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ 271              	.L38:
+ 272 00aa 4FF40060 		mov	r0, #2048	@,
+ 273 00ae 0121     		movs	r1, #1	@,
+ 274 00b0 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 275 00b4 BDE80840 		pop	{r3, lr}	@
+ 276 00b8 4FF40060 		mov	r0, #2048	@,
+ 277 00bc 0021     		movs	r1, #0	@,
+ 278 00be FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ 279              	.L39:
+ 280 00c2 0120     		movs	r0, #1	@,
+ 281 00c4 0146     		mov	r1, r0	@,
+ 282 00c6 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 283 00ca BDE80840 		pop	{r3, lr}	@
+ 284 00ce 0120     		movs	r0, #1	@,
+ 285 00d0 0021     		movs	r1, #0	@,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 6
+
+
+ 286 00d2 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 287              	.L40:
+ 288 00d6 0220     		movs	r0, #2	@,
+ 289 00d8 0121     		movs	r1, #1	@,
+ 290 00da FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 291 00de BDE80840 		pop	{r3, lr}	@
+ 292 00e2 0220     		movs	r0, #2	@,
+ 293 00e4 0021     		movs	r1, #0	@,
+ 294 00e6 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 295              	.L41:
+ 296 00ea 0420     		movs	r0, #4	@,
+ 297 00ec 0121     		movs	r1, #1	@,
+ 298 00ee FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 299 00f2 BDE80840 		pop	{r3, lr}	@
+ 300 00f6 0420     		movs	r0, #4	@,
+ 301 00f8 0021     		movs	r1, #0	@,
+ 302 00fa FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 303              	.L42:
+ 304 00fe 0820     		movs	r0, #8	@,
+ 305 0100 0121     		movs	r1, #1	@,
+ 306 0102 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 307 0106 BDE80840 		pop	{r3, lr}	@
+ 308 010a 0820     		movs	r0, #8	@,
+ 309 010c 0021     		movs	r1, #0	@,
+ 310 010e FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 311              	.L43:
+ 312 0112 1020     		movs	r0, #16	@,
+ 313 0114 0121     		movs	r1, #1	@,
+ 314 0116 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 315 011a BDE80840 		pop	{r3, lr}	@
+ 316 011e 1020     		movs	r0, #16	@,
+ 317 0120 0021     		movs	r1, #0	@,
+ 318 0122 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 319              	.L44:
+ 320 0126 2020     		movs	r0, #32	@,
+ 321 0128 0121     		movs	r1, #1	@,
+ 322 012a FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 323 012e BDE80840 		pop	{r3, lr}	@
+ 324 0132 2020     		movs	r0, #32	@,
+ 325 0134 0021     		movs	r1, #0	@,
+ 326 0136 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 327              	.L45:
+ 328 013a 4FF40050 		mov	r0, #8192	@,
+ 329 013e 0121     		movs	r1, #1	@,
+ 330 0140 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 331 0144 BDE80840 		pop	{r3, lr}	@
+ 332 0148 4FF40050 		mov	r0, #8192	@,
+ 333 014c 0021     		movs	r1, #0	@,
+ 334 014e FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ 335              	.L46:
+ 336 0152 4FF40020 		mov	r0, #524288	@,
+ 337 0156 0121     		movs	r1, #1	@,
+ 338 0158 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 339 015c BDE80840 		pop	{r3, lr}	@
+ 340 0160 4FF40020 		mov	r0, #524288	@,
+ 341 0164 0021     		movs	r1, #0	@,
+ 342 0166 FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 7
+
+
+ 343              	.L47:
+ 344 016a 4FF48010 		mov	r0, #1048576	@,
+ 345 016e 0121     		movs	r1, #1	@,
+ 346 0170 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 347 0174 BDE80840 		pop	{r3, lr}	@
+ 348 0178 4FF48010 		mov	r0, #1048576	@,
+ 349 017c 0021     		movs	r1, #0	@,
+ 350 017e FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ 351              	.L48:
+ 352 0182 4FF40010 		mov	r0, #2097152	@,
+ 353 0186 0121     		movs	r1, #1	@,
+ 354 0188 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 355 018c BDE80840 		pop	{r3, lr}	@
+ 356 0190 4FF40010 		mov	r0, #2097152	@,
+ 357 0194 0021     		movs	r1, #0	@,
+ 358 0196 FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ 359              	.L49:
+ 360 019a 4020     		movs	r0, #64	@,
+ 361 019c 0121     		movs	r1, #1	@,
+ 362 019e FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 363 01a2 BDE80840 		pop	{r3, lr}	@
+ 364 01a6 4020     		movs	r0, #64	@,
+ 365 01a8 0021     		movs	r1, #0	@,
+ 366 01aa FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 367              	.L50:
+ 368 01ae 8020     		movs	r0, #128	@,
+ 369 01b0 0121     		movs	r1, #1	@,
+ 370 01b2 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 371 01b6 BDE80840 		pop	{r3, lr}	@
+ 372 01ba 8020     		movs	r0, #128	@,
+ 373 01bc 0021     		movs	r1, #0	@,
+ 374 01be FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 375              	.L51:
+ 376 01c2 4FF48070 		mov	r0, #256	@,
+ 377 01c6 0121     		movs	r1, #1	@,
+ 378 01c8 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+ 379 01cc BDE80840 		pop	{r3, lr}	@
+ 380 01d0 4FF48070 		mov	r0, #256	@,
+ 381 01d4 0021     		movs	r1, #0	@,
+ 382 01d6 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+ 383              	.L52:
+ 384 01da 4FF48030 		mov	r0, #65536	@,
+ 385 01de 0121     		movs	r1, #1	@,
+ 386 01e0 FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
+ 387 01e4 BDE80840 		pop	{r3, lr}	@
+ 388 01e8 4FF48030 		mov	r0, #65536	@,
+ 389 01ec 0021     		movs	r1, #0	@,
+ 390 01ee FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
+ 391              	.L56:
+ 392 01f2 00BF     		.align	2
+ 393              	.L55:
+ 394 01f4 002C0140 		.word	1073818624
+ 395 01f8 00040040 		.word	1073742848
+ 396 01fc 00080040 		.word	1073743872
+ 397 0200 000C0040 		.word	1073744896
+ 398 0204 00100040 		.word	1073745920
+ 399 0208 00140040 		.word	1073746944
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 8
+
+
+ 400 020c 00340140 		.word	1073820672
+ 401 0210 004C0140 		.word	1073826816
+ 402 0214 00500140 		.word	1073827840
+ 403 0218 00540140 		.word	1073828864
+ 404 021c 00180040 		.word	1073747968
+ 405 0220 001C0040 		.word	1073748992
+ 406 0224 00200040 		.word	1073750016
+ 407 0228 00400140 		.word	1073823744
+ 408 022c 00440140 		.word	1073824768
+ 409 0230 00480140 		.word	1073825792
+ 410              		.size	TIM_DeInit, .-TIM_DeInit
+ 411              		.section	.text.TIM_TimeBaseInit,"ax",%progbits
+ 412              		.align	2
+ 413              		.global	TIM_TimeBaseInit
+ 414              		.thumb
+ 415              		.thumb_func
+ 416              		.type	TIM_TimeBaseInit, %function
+ 417              	TIM_TimeBaseInit:
+ 418              		@ args = 0, pretend = 0, frame = 0
+ 419              		@ frame_needed = 0, uses_anonymous_args = 0
+ 420              		@ link register save eliminated.
+ 421 0000 294A     		ldr	r2, .L69	@ tmp127,
+ 422 0002 0388     		ldrh	r3, [r0]	@, TIMx_5(D)->CR1
+ 423 0004 9042     		cmp	r0, r2	@ TIMx, tmp127
+ 424 0006 70B4     		push	{r4, r5, r6}	@
+ 425 0008 9BB2     		uxth	r3, r3	@ tmpcr1, TIMx_5(D)->CR1
+ 426 000a 12D0     		beq	.L58	@,
+ 427 000c 02F50062 		add	r2, r2, #2048	@ tmp128, tmp128,
+ 428 0010 9042     		cmp	r0, r2	@ TIMx, tmp128
+ 429 0012 0ED0     		beq	.L58	@,
+ 430 0014 B0F1804F 		cmp	r0, #1073741824	@ TIMx,
+ 431 0018 0BD0     		beq	.L58	@,
+ 432 001a A2F59832 		sub	r2, r2, #77824	@ tmp129, tmp129,
+ 433 001e 9042     		cmp	r0, r2	@ TIMx, tmp129
+ 434 0020 07D0     		beq	.L58	@,
+ 435 0022 02F58062 		add	r2, r2, #1024	@ tmp130, tmp130,
+ 436 0026 9042     		cmp	r0, r2	@ TIMx, tmp130
+ 437 0028 03D0     		beq	.L58	@,
+ 438 002a 02F58062 		add	r2, r2, #1024	@ tmp131, tmp131,
+ 439 002e 9042     		cmp	r0, r2	@ TIMx, tmp131
+ 440 0030 03D1     		bne	.L59	@,
+ 441              	.L58:
+ 442 0032 4A88     		ldrh	r2, [r1, #2]	@ tmp134, TIM_TimeBaseInitStruct_8(D)->TIM_CounterMode
+ 443 0034 23F07003 		bic	r3, r3, #112	@ tmp132, tmpcr1,
+ 444 0038 1343     		orrs	r3, r3, r2	@, tmpcr1, tmp132, tmp134
+ 445              	.L59:
+ 446 003a 1C4A     		ldr	r2, .L69+4	@ tmp135,
+ 447 003c 9042     		cmp	r0, r2	@ TIMx, tmp135
+ 448 003e 2AD0     		beq	.L61	@,
+ 449 0040 02F58062 		add	r2, r2, #1024	@ tmp136, tmp136,
+ 450 0044 9042     		cmp	r0, r2	@ TIMx, tmp136
+ 451 0046 26D0     		beq	.L61	@,
+ 452 0048 CE88     		ldrh	r6, [r1, #6]	@ tmp139, TIM_TimeBaseInitStruct_8(D)->TIM_ClockDivision
+ 453 004a 23F44073 		bic	r3, r3, #768	@ tmp137, tmpcr1,
+ 454 004e 8D88     		ldrh	r5, [r1, #4]	@ D.7738, TIM_TimeBaseInitStruct_8(D)->TIM_Period
+ 455 0050 0C88     		ldrh	r4, [r1]	@ D.7738, TIM_TimeBaseInitStruct_8(D)->TIM_Prescaler
+ 456 0052 9BB2     		uxth	r3, r3	@ tmpcr1, tmp137
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 9
+
+
+ 457 0054 02F58C32 		add	r2, r2, #71680	@ tmp143, tmp143,
+ 458 0058 3343     		orrs	r3, r3, r6	@, tmpcr1, tmpcr1, tmp139
+ 459 005a 9042     		cmp	r0, r2	@ TIMx, tmp143
+ 460 005c 0380     		strh	r3, [r0]	@ movhi	@ tmpcr1, TIMx_5(D)->CR1
+ 461 005e 8585     		strh	r5, [r0, #44]	@ movhi	@ D.7738, TIMx_5(D)->ARR
+ 462 0060 0485     		strh	r4, [r0, #40]	@ movhi	@ D.7738, TIMx_5(D)->PSC
+ 463 0062 12D0     		beq	.L64	@,
+ 464 0064 124B     		ldr	r3, .L69+8	@ tmp147,
+ 465 0066 9842     		cmp	r0, r3	@ TIMx, tmp147
+ 466 0068 0FD0     		beq	.L64	@,
+ 467 006a 03F54063 		add	r3, r3, #3072	@ tmp148, tmp148,
+ 468 006e 9842     		cmp	r0, r3	@ TIMx, tmp148
+ 469 0070 0BD0     		beq	.L64	@,
+ 470 0072 03F58063 		add	r3, r3, #1024	@ tmp149, tmp149,
+ 471 0076 9842     		cmp	r0, r3	@ TIMx, tmp149
+ 472 0078 07D0     		beq	.L64	@,
+ 473 007a 03F58063 		add	r3, r3, #1024	@ tmp150, tmp150,
+ 474 007e 9842     		cmp	r0, r3	@ TIMx, tmp150
+ 475 0080 03D0     		beq	.L64	@,
+ 476 0082 70BC     		pop	{r4, r5, r6}	@
+ 477 0084 0123     		movs	r3, #1	@ tmp152,
+ 478 0086 8382     		strh	r3, [r0, #20]	@ movhi	@ tmp152, TIMx_5(D)->EGR
+ 479 0088 7047     		bx	lr	@
+ 480              	.L64:
+ 481 008a 0B7A     		ldrb	r3, [r1, #8]	@ zero_extendqisi2	@ D.7738, TIM_TimeBaseInitStruct_8(D)->TIM_RepetitionCounter
+ 482 008c 70BC     		pop	{r4, r5, r6}	@
+ 483 008e 0386     		strh	r3, [r0, #48]	@ movhi	@ D.7738, TIMx_5(D)->RCR
+ 484 0090 0123     		movs	r3, #1	@ tmp152,
+ 485 0092 8382     		strh	r3, [r0, #20]	@ movhi	@ tmp152, TIMx_5(D)->EGR
+ 486 0094 7047     		bx	lr	@
+ 487              	.L61:
+ 488 0096 0380     		strh	r3, [r0]	@ movhi	@ tmpcr1,* TIMx
+ 489 0098 8B88     		ldrh	r3, [r1, #4]	@ D.7738, TIM_TimeBaseInitStruct_8(D)->TIM_Period
+ 490 009a 70BC     		pop	{r4, r5, r6}	@
+ 491 009c 8385     		strh	r3, [r0, #44]	@ movhi	@ D.7738,
+ 492 009e 0B88     		ldrh	r3, [r1]	@ D.7738, TIM_TimeBaseInitStruct_8(D)->TIM_Prescaler
+ 493 00a0 0385     		strh	r3, [r0, #40]	@ movhi	@ D.7738,
+ 494 00a2 0123     		movs	r3, #1	@ tmp152,
+ 495 00a4 8382     		strh	r3, [r0, #20]	@ movhi	@ tmp152, TIMx_5(D)->EGR
+ 496 00a6 7047     		bx	lr	@
+ 497              	.L70:
+ 498              		.align	2
+ 499              	.L69:
+ 500 00a8 002C0140 		.word	1073818624
+ 501 00ac 00100040 		.word	1073745920
+ 502 00b0 00340140 		.word	1073820672
+ 503              		.size	TIM_TimeBaseInit, .-TIM_TimeBaseInit
+ 504              		.section	.text.TIM_OC1Init,"ax",%progbits
+ 505              		.align	2
+ 506              		.global	TIM_OC1Init
+ 507              		.thumb
+ 508              		.thumb_func
+ 509              		.type	TIM_OC1Init, %function
+ 510              	TIM_OC1Init:
+ 511              		@ args = 0, pretend = 0, frame = 0
+ 512              		@ frame_needed = 0, uses_anonymous_args = 0
+ 513              		@ link register save eliminated.
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 10
+
+
+ 514 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_4(D)->CCER
+ 515 0002 F0B4     		push	{r4, r5, r6, r7}	@
+ 516 0004 23F00103 		bic	r3, r3, #1	@ D.7742, TIMx_4(D)->CCER,
+ 517 0008 1B04     		lsls	r3, r3, #16	@ D.7742, D.7742,
+ 518 000a 1B0C     		lsrs	r3, r3, #16	@ D.7742, D.7742,
+ 519 000c 0384     		strh	r3, [r0, #32]	@ movhi	@ D.7742, TIMx_4(D)->CCER
+ 520 000e 028C     		ldrh	r2, [r0, #32]	@, TIMx_4(D)->CCER
+ 521 0010 0D89     		ldrh	r5, [r1, #8]	@, TIM_OCInitStruct_12(D)->TIM_OCPolarity
+ 522 0012 8488     		ldrh	r4, [r0, #4]	@, TIMx_4(D)->CR2
+ 523 0014 4F88     		ldrh	r7, [r1, #2]	@, TIM_OCInitStruct_12(D)->TIM_OutputState
+ 524 0016 038B     		ldrh	r3, [r0, #24]	@, TIMx_4(D)->CCMR1
+ 525 0018 2F43     		orrs	r7, r7, r5	@, tmp151, TIM_OCInitStruct_12(D)->TIM_OutputState, TIM_OCInitStruct_12(D)->TIM_OC
+ 526 001a 22F00202 		bic	r2, r2, #2	@ tmpccer, TIMx_4(D)->CCER,
+ 527 001e 23F07303 		bic	r3, r3, #115	@ tmpccmrx, TIMx_4(D)->CCMR1,
+ 528 0022 1A4D     		ldr	r5, .L74	@ tmp153,
+ 529 0024 1204     		lsls	r2, r2, #16	@ tmpccer, tmpccer,
+ 530 0026 1B04     		lsls	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 531 0028 0E88     		ldrh	r6, [r1]	@ tmp147, TIM_OCInitStruct_12(D)->TIM_OCMode
+ 532 002a 120C     		lsrs	r2, r2, #16	@ tmpccer, tmpccer,
+ 533 002c BFB2     		uxth	r7, r7	@ tmpccer, tmp151
+ 534 002e 1B0C     		lsrs	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 535 0030 A842     		cmp	r0, r5	@ TIMx, tmp153
+ 536 0032 47EA0202 		orr	r2, r7, r2	@ tmpccer, tmpccer, tmpccer
+ 537 0036 A4B2     		uxth	r4, r4	@ tmpcr2, TIMx_4(D)->CR2
+ 538 0038 43EA0603 		orr	r3, r3, r6	@ tmpccmrx, tmpccmrx, tmp147
+ 539 003c 16D0     		beq	.L72	@,
+ 540 003e 05F50065 		add	r5, r5, #2048	@ tmp154, tmp154,
+ 541 0042 A842     		cmp	r0, r5	@ TIMx, tmp154
+ 542 0044 12D0     		beq	.L72	@,
+ 543 0046 05F54065 		add	r5, r5, #3072	@ tmp155, tmp155,
+ 544 004a A842     		cmp	r0, r5	@ TIMx, tmp155
+ 545 004c 0ED0     		beq	.L72	@,
+ 546 004e 05F58065 		add	r5, r5, #1024	@ tmp156, tmp156,
+ 547 0052 A842     		cmp	r0, r5	@ TIMx, tmp156
+ 548 0054 0AD0     		beq	.L72	@,
+ 549 0056 05F58065 		add	r5, r5, #1024	@ tmp157, tmp157,
+ 550 005a A842     		cmp	r0, r5	@ TIMx, tmp157
+ 551 005c 06D0     		beq	.L72	@,
+ 552              	.L73:
+ 553 005e C988     		ldrh	r1, [r1, #6]	@ D.7742, TIM_OCInitStruct_12(D)->TIM_Pulse
+ 554 0060 8480     		strh	r4, [r0, #4]	@ movhi	@ tmpcr2, TIMx_4(D)->CR2
+ 555 0062 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmrx, TIMx_4(D)->CCMR1
+ 556 0064 F0BC     		pop	{r4, r5, r6, r7}	@
+ 557 0066 8186     		strh	r1, [r0, #52]	@ movhi	@ D.7742, TIMx_4(D)->CCR1
+ 558 0068 0284     		strh	r2, [r0, #32]	@ movhi	@ tmpccer, TIMx_4(D)->CCER
+ 559 006a 7047     		bx	lr	@
+ 560              	.L72:
+ 561 006c 4E89     		ldrh	r6, [r1, #10]	@ tmp160, TIM_OCInitStruct_12(D)->TIM_OCNPolarity
+ 562 006e CF89     		ldrh	r7, [r1, #14]	@, TIM_OCInitStruct_12(D)->TIM_OCNIdleState
+ 563 0070 8D89     		ldrh	r5, [r1, #12]	@, TIM_OCInitStruct_12(D)->TIM_OCIdleState
+ 564 0072 22F00802 		bic	r2, r2, #8	@ tmp158, tmpccer,
+ 565 0076 3243     		orrs	r2, r2, r6	@, tmpccer, tmp158, tmp160
+ 566 0078 3D43     		orrs	r5, r5, r7	@, tmp167, TIM_OCInitStruct_12(D)->TIM_OCIdleState, TIM_OCInitStruct_12(D)->TIM_OC
+ 567 007a 8E88     		ldrh	r6, [r1, #4]	@ tmp163, TIM_OCInitStruct_12(D)->TIM_OutputNState
+ 568 007c 24F44074 		bic	r4, r4, #768	@ tmp164, tmpcr2,
+ 569 0080 22F00402 		bic	r2, r2, #4	@ tmp161, tmpccer,
+ 570 0084 ADB2     		uxth	r5, r5	@ tmpcr2, tmp167
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 11
+
+
+ 571 0086 3243     		orrs	r2, r2, r6	@, tmpccer, tmp161, tmp163
+ 572 0088 2C43     		orrs	r4, r4, r5	@, tmpcr2, tmp164, tmpcr2
+ 573 008a E8E7     		b	.L73	@
+ 574              	.L75:
+ 575              		.align	2
+ 576              	.L74:
+ 577 008c 002C0140 		.word	1073818624
+ 578              		.size	TIM_OC1Init, .-TIM_OC1Init
+ 579              		.section	.text.TIM_OC2Init,"ax",%progbits
+ 580              		.align	2
+ 581              		.global	TIM_OC2Init
+ 582              		.thumb
+ 583              		.thumb_func
+ 584              		.type	TIM_OC2Init, %function
+ 585              	TIM_OC2Init:
+ 586              		@ args = 0, pretend = 0, frame = 0
+ 587              		@ frame_needed = 0, uses_anonymous_args = 0
+ 588              		@ link register save eliminated.
+ 589 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_4(D)->CCER
+ 590 0002 F0B4     		push	{r4, r5, r6, r7}	@
+ 591 0004 23F01003 		bic	r3, r3, #16	@ D.7745, TIMx_4(D)->CCER,
+ 592 0008 1B04     		lsls	r3, r3, #16	@ D.7745, D.7745,
+ 593 000a 1B0C     		lsrs	r3, r3, #16	@ D.7745, D.7745,
+ 594 000c 0384     		strh	r3, [r0, #32]	@ movhi	@ D.7745, TIMx_4(D)->CCER
+ 595 000e 028C     		ldrh	r2, [r0, #32]	@, TIMx_4(D)->CCER
+ 596 0010 8488     		ldrh	r4, [r0, #4]	@, TIMx_4(D)->CR2
+ 597 0012 22F02002 		bic	r2, r2, #32	@ tmpccer, TIMx_4(D)->CCER,
+ 598 0016 038B     		ldrh	r3, [r0, #24]	@, TIMx_4(D)->CCMR1
+ 599 0018 0D89     		ldrh	r5, [r1, #8]	@, TIM_OCInitStruct_12(D)->TIM_OCPolarity
+ 600 001a 1204     		lsls	r2, r2, #16	@ tmpccer, tmpccer,
+ 601 001c 23F4E643 		bic	r3, r3, #29440	@ tmpccmrx, TIMx_4(D)->CCMR1,
+ 602 0020 120C     		lsrs	r2, r2, #16	@ tmpccer, tmpccer,
+ 603 0022 42EA0512 		orr	r2, r2, r5, lsl #4	@, tmp161, tmpccer, TIM_OCInitStruct_12(D)->TIM_OCPolarity,
+ 604 0026 4F88     		ldrh	r7, [r1, #2]	@, TIM_OCInitStruct_12(D)->TIM_OutputState
+ 605 0028 1B04     		lsls	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 606 002a 0E88     		ldrh	r6, [r1]	@, TIM_OCInitStruct_12(D)->TIM_OCMode
+ 607 002c 174D     		ldr	r5, .L79	@ tmp166,
+ 608 002e 1B0C     		lsrs	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 609 0030 42EA0712 		orr	r2, r2, r7, lsl #4	@, tmpccer, tmp161, TIM_OCInitStruct_12(D)->TIM_OutputState,
+ 610 0034 43EA0623 		orr	r3, r3, r6, lsl #8	@, tmp156, tmpccmrx, TIM_OCInitStruct_12(D)->TIM_OCMode,
+ 611 0038 A842     		cmp	r0, r5	@ TIMx, tmp166
+ 612 003a 92B2     		uxth	r2, r2	@ tmpccer, tmpccer
+ 613 003c A4B2     		uxth	r4, r4	@ tmpcr2, TIMx_4(D)->CR2
+ 614 003e 9BB2     		uxth	r3, r3	@ tmpccmrx, tmp156
+ 615 0040 0AD0     		beq	.L77	@,
+ 616 0042 05F50065 		add	r5, r5, #2048	@ tmp167, tmp167,
+ 617 0046 A842     		cmp	r0, r5	@ TIMx, tmp167
+ 618 0048 06D0     		beq	.L77	@,
+ 619              	.L78:
+ 620 004a C988     		ldrh	r1, [r1, #6]	@ D.7745, TIM_OCInitStruct_12(D)->TIM_Pulse
+ 621 004c 8480     		strh	r4, [r0, #4]	@ movhi	@ tmpcr2, TIMx_4(D)->CR2
+ 622 004e 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmrx, TIMx_4(D)->CCMR1
+ 623 0050 F0BC     		pop	{r4, r5, r6, r7}	@
+ 624 0052 0187     		strh	r1, [r0, #56]	@ movhi	@ D.7745, TIMx_4(D)->CCR2
+ 625 0054 0284     		strh	r2, [r0, #32]	@ movhi	@ tmpccer, TIMx_4(D)->CCER
+ 626 0056 7047     		bx	lr	@
+ 627              	.L77:
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 12
+
+
+ 628 0058 22F08002 		bic	r2, r2, #128	@ tmp168, tmpccer,
+ 629 005c B1F80AC0 		ldrh	ip, [r1, #10]	@, TIM_OCInitStruct_12(D)->TIM_OCNPolarity
+ 630 0060 92B2     		uxth	r2, r2	@ tmpccer, tmp168
+ 631 0062 8F89     		ldrh	r7, [r1, #12]	@, TIM_OCInitStruct_12(D)->TIM_OCIdleState
+ 632 0064 42EA0C1C 		orr	ip, r2, ip, lsl #4	@, tmp172, tmpccer, TIM_OCInitStruct_12(D)->TIM_OCNPolarity,
+ 633 0068 24F44064 		bic	r4, r4, #3072	@ tmp178, tmpcr2,
+ 634 006c 4FF6BF75 		movw	r5, #65471	@ tmpccer,
+ 635 0070 8A88     		ldrh	r2, [r1, #4]	@, TIM_OCInitStruct_12(D)->TIM_OutputNState
+ 636 0072 CE89     		ldrh	r6, [r1, #14]	@, TIM_OCInitStruct_12(D)->TIM_OCNIdleState
+ 637 0074 0CEA0505 		and	r5, ip, r5	@ tmpccer, tmp172, tmpccer
+ 638 0078 44EA8704 		orr	r4, r4, r7, lsl #2	@, tmp182, tmp178, TIM_OCInitStruct_12(D)->TIM_OCIdleState,
+ 639 007c 45EA0212 		orr	r2, r5, r2, lsl #4	@, tmp177, tmpccer, TIM_OCInitStruct_12(D)->TIM_OutputNState,
+ 640 0080 44EA8604 		orr	r4, r4, r6, lsl #2	@, tmpcr2, tmp182, TIM_OCInitStruct_12(D)->TIM_OCNIdleState,
+ 641 0084 92B2     		uxth	r2, r2	@ tmpccer, tmp177
+ 642 0086 A4B2     		uxth	r4, r4	@ tmpcr2, tmpcr2
+ 643 0088 DFE7     		b	.L78	@
+ 644              	.L80:
+ 645 008a 00BF     		.align	2
+ 646              	.L79:
+ 647 008c 002C0140 		.word	1073818624
+ 648              		.size	TIM_OC2Init, .-TIM_OC2Init
+ 649              		.section	.text.TIM_OC3Init,"ax",%progbits
+ 650              		.align	2
+ 651              		.global	TIM_OC3Init
+ 652              		.thumb
+ 653              		.thumb_func
+ 654              		.type	TIM_OC3Init, %function
+ 655              	TIM_OC3Init:
+ 656              		@ args = 0, pretend = 0, frame = 0
+ 657              		@ frame_needed = 0, uses_anonymous_args = 0
+ 658              		@ link register save eliminated.
+ 659 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_4(D)->CCER
+ 660 0002 F0B4     		push	{r4, r5, r6, r7}	@
+ 661 0004 23F48073 		bic	r3, r3, #256	@ D.7748, TIMx_4(D)->CCER,
+ 662 0008 1B04     		lsls	r3, r3, #16	@ D.7748, D.7748,
+ 663 000a 1B0C     		lsrs	r3, r3, #16	@ D.7748, D.7748,
+ 664 000c 0384     		strh	r3, [r0, #32]	@ movhi	@ D.7748, TIMx_4(D)->CCER
+ 665 000e 028C     		ldrh	r2, [r0, #32]	@, TIMx_4(D)->CCER
+ 666 0010 0D89     		ldrh	r5, [r1, #8]	@, TIM_OCInitStruct_12(D)->TIM_OCPolarity
+ 667 0012 22F40072 		bic	r2, r2, #512	@ tmpccer, TIMx_4(D)->CCER,
+ 668 0016 8488     		ldrh	r4, [r0, #4]	@, TIMx_4(D)->CR2
+ 669 0018 1204     		lsls	r2, r2, #16	@ tmpccer, tmpccer,
+ 670 001a 838B     		ldrh	r3, [r0, #28]	@, TIMx_4(D)->CCMR2
+ 671 001c 120C     		lsrs	r2, r2, #16	@ tmpccer, tmpccer,
+ 672 001e 42EA0522 		orr	r2, r2, r5, lsl #8	@, tmp158, tmpccer, TIM_OCInitStruct_12(D)->TIM_OCPolarity,
+ 673 0022 4F88     		ldrh	r7, [r1, #2]	@, TIM_OCInitStruct_12(D)->TIM_OutputState
+ 674 0024 23F07303 		bic	r3, r3, #115	@ tmpccmrx, TIMx_4(D)->CCMR2,
+ 675 0028 174D     		ldr	r5, .L84	@ tmp163,
+ 676 002a 1B04     		lsls	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 677 002c 0E88     		ldrh	r6, [r1]	@ tmp153, TIM_OCInitStruct_12(D)->TIM_OCMode
+ 678 002e 42EA0722 		orr	r2, r2, r7, lsl #8	@, tmpccer, tmp158, TIM_OCInitStruct_12(D)->TIM_OutputState,
+ 679 0032 1B0C     		lsrs	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 680 0034 A842     		cmp	r0, r5	@ TIMx, tmp163
+ 681 0036 92B2     		uxth	r2, r2	@ tmpccer, tmpccer
+ 682 0038 A4B2     		uxth	r4, r4	@ tmpcr2, TIMx_4(D)->CR2
+ 683 003a 43EA0603 		orr	r3, r3, r6	@ tmpccmrx, tmpccmrx, tmp153
+ 684 003e 0AD0     		beq	.L82	@,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 13
+
+
+ 685 0040 05F50065 		add	r5, r5, #2048	@ tmp164, tmp164,
+ 686 0044 A842     		cmp	r0, r5	@ TIMx, tmp164
+ 687 0046 06D0     		beq	.L82	@,
+ 688              	.L83:
+ 689 0048 C988     		ldrh	r1, [r1, #6]	@ D.7748, TIM_OCInitStruct_12(D)->TIM_Pulse
+ 690 004a 8480     		strh	r4, [r0, #4]	@ movhi	@ tmpcr2, TIMx_4(D)->CR2
+ 691 004c 8383     		strh	r3, [r0, #28]	@ movhi	@ tmpccmrx, TIMx_4(D)->CCMR2
+ 692 004e F0BC     		pop	{r4, r5, r6, r7}	@
+ 693 0050 8187     		strh	r1, [r0, #60]	@ movhi	@ D.7748, TIMx_4(D)->CCR3
+ 694 0052 0284     		strh	r2, [r0, #32]	@ movhi	@ tmpccer, TIMx_4(D)->CCER
+ 695 0054 7047     		bx	lr	@
+ 696              	.L82:
+ 697 0056 22F40062 		bic	r2, r2, #2048	@ tmp165, tmpccer,
+ 698 005a B1F80AC0 		ldrh	ip, [r1, #10]	@, TIM_OCInitStruct_12(D)->TIM_OCNPolarity
+ 699 005e 92B2     		uxth	r2, r2	@ tmpccer, tmp165
+ 700 0060 8F89     		ldrh	r7, [r1, #12]	@, TIM_OCInitStruct_12(D)->TIM_OCIdleState
+ 701 0062 42EA0C2C 		orr	ip, r2, ip, lsl #8	@, tmp169, tmpccer, TIM_OCInitStruct_12(D)->TIM_OCNPolarity,
+ 702 0066 24F44054 		bic	r4, r4, #12288	@ tmp175, tmpcr2,
+ 703 006a 4FF6FF35 		movw	r5, #64511	@ tmpccer,
+ 704 006e 8A88     		ldrh	r2, [r1, #4]	@, TIM_OCInitStruct_12(D)->TIM_OutputNState
+ 705 0070 CE89     		ldrh	r6, [r1, #14]	@, TIM_OCInitStruct_12(D)->TIM_OCNIdleState
+ 706 0072 0CEA0505 		and	r5, ip, r5	@ tmpccer, tmp169, tmpccer
+ 707 0076 44EA0714 		orr	r4, r4, r7, lsl #4	@, tmp179, tmp175, TIM_OCInitStruct_12(D)->TIM_OCIdleState,
+ 708 007a 45EA0222 		orr	r2, r5, r2, lsl #8	@, tmp174, tmpccer, TIM_OCInitStruct_12(D)->TIM_OutputNState,
+ 709 007e 44EA0614 		orr	r4, r4, r6, lsl #4	@, tmpcr2, tmp179, TIM_OCInitStruct_12(D)->TIM_OCNIdleState,
+ 710 0082 92B2     		uxth	r2, r2	@ tmpccer, tmp174
+ 711 0084 A4B2     		uxth	r4, r4	@ tmpcr2, tmpcr2
+ 712 0086 DFE7     		b	.L83	@
+ 713              	.L85:
+ 714              		.align	2
+ 715              	.L84:
+ 716 0088 002C0140 		.word	1073818624
+ 717              		.size	TIM_OC3Init, .-TIM_OC3Init
+ 718              		.section	.text.TIM_OC4Init,"ax",%progbits
+ 719              		.align	2
+ 720              		.global	TIM_OC4Init
+ 721              		.thumb
+ 722              		.thumb_func
+ 723              		.type	TIM_OC4Init, %function
+ 724              	TIM_OC4Init:
+ 725              		@ args = 0, pretend = 0, frame = 0
+ 726              		@ frame_needed = 0, uses_anonymous_args = 0
+ 727              		@ link register save eliminated.
+ 728 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_3(D)->CCER
+ 729 0002 F0B4     		push	{r4, r5, r6, r7}	@
+ 730 0004 23F48053 		bic	r3, r3, #4096	@ D.7751, TIMx_3(D)->CCER,
+ 731 0008 1B04     		lsls	r3, r3, #16	@ D.7751, D.7751,
+ 732 000a 1B0C     		lsrs	r3, r3, #16	@ D.7751, D.7751,
+ 733 000c 0384     		strh	r3, [r0, #32]	@ movhi	@ D.7751, TIMx_3(D)->CCER
+ 734 000e 028C     		ldrh	r2, [r0, #32]	@, TIMx_3(D)->CCER
+ 735 0010 8488     		ldrh	r4, [r0, #4]	@, TIMx_3(D)->CR2
+ 736 0012 22F40052 		bic	r2, r2, #8192	@ tmpccer, TIMx_3(D)->CCER,
+ 737 0016 838B     		ldrh	r3, [r0, #28]	@, TIMx_3(D)->CCMR2
+ 738 0018 0D89     		ldrh	r5, [r1, #8]	@, TIM_OCInitStruct_11(D)->TIM_OCPolarity
+ 739 001a 1204     		lsls	r2, r2, #16	@ tmpccer, tmpccer,
+ 740 001c 23F4E643 		bic	r3, r3, #29440	@ tmpccmrx, TIMx_3(D)->CCMR2,
+ 741 0020 120C     		lsrs	r2, r2, #16	@ tmpccer, tmpccer,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 14
+
+
+ 742 0022 42EA0532 		orr	r2, r2, r5, lsl #12	@, tmp151, tmpccer, TIM_OCInitStruct_11(D)->TIM_OCPolarity,
+ 743 0026 4F88     		ldrh	r7, [r1, #2]	@, TIM_OCInitStruct_11(D)->TIM_OutputState
+ 744 0028 1B04     		lsls	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 745 002a 0E88     		ldrh	r6, [r1]	@, TIM_OCInitStruct_11(D)->TIM_OCMode
+ 746 002c 0E4D     		ldr	r5, .L89	@ tmp156,
+ 747 002e 1B0C     		lsrs	r3, r3, #16	@ tmpccmrx, tmpccmrx,
+ 748 0030 42EA0732 		orr	r2, r2, r7, lsl #12	@, tmpccer, tmp151, TIM_OCInitStruct_11(D)->TIM_OutputState,
+ 749 0034 43EA0623 		orr	r3, r3, r6, lsl #8	@, tmp146, tmpccmrx, TIM_OCInitStruct_11(D)->TIM_OCMode,
+ 750 0038 A842     		cmp	r0, r5	@ TIMx, tmp156
+ 751 003a 92B2     		uxth	r2, r2	@ tmpccer, tmpccer
+ 752 003c A4B2     		uxth	r4, r4	@ tmpcr2, TIMx_3(D)->CR2
+ 753 003e 9BB2     		uxth	r3, r3	@ tmpccmrx, tmp146
+ 754 0040 0BD0     		beq	.L87	@,
+ 755 0042 05F50065 		add	r5, r5, #2048	@ tmp157, tmp157,
+ 756 0046 A842     		cmp	r0, r5	@ TIMx, tmp157
+ 757 0048 07D0     		beq	.L87	@,
+ 758              	.L88:
+ 759 004a C988     		ldrh	r1, [r1, #6]	@ D.7751, TIM_OCInitStruct_11(D)->TIM_Pulse
+ 760 004c 8480     		strh	r4, [r0, #4]	@ movhi	@ tmpcr2, TIMx_3(D)->CR2
+ 761 004e 8383     		strh	r3, [r0, #28]	@ movhi	@ tmpccmrx, TIMx_3(D)->CCMR2
+ 762 0050 F0BC     		pop	{r4, r5, r6, r7}	@
+ 763 0052 A0F84010 		strh	r1, [r0, #64]	@ movhi	@ D.7751, TIMx_3(D)->CCR4
+ 764 0056 0284     		strh	r2, [r0, #32]	@ movhi	@ tmpccer, TIMx_3(D)->CCER
+ 765 0058 7047     		bx	lr	@
+ 766              	.L87:
+ 767 005a 8D89     		ldrh	r5, [r1, #12]	@, TIM_OCInitStruct_11(D)->TIM_OCIdleState
+ 768 005c 24F48044 		bic	r4, r4, #16384	@ tmp158, tmpcr2,
+ 769 0060 44EA8514 		orr	r4, r4, r5, lsl #6	@, tmp162, tmp158, TIM_OCInitStruct_11(D)->TIM_OCIdleState,
+ 770 0064 A4B2     		uxth	r4, r4	@ tmpcr2, tmp162
+ 771 0066 F0E7     		b	.L88	@
+ 772              	.L90:
+ 773              		.align	2
+ 774              	.L89:
+ 775 0068 002C0140 		.word	1073818624
+ 776              		.size	TIM_OC4Init, .-TIM_OC4Init
+ 777              		.section	.text.TIM_ICInit,"ax",%progbits
+ 778              		.align	2
+ 779              		.global	TIM_ICInit
+ 780              		.thumb
+ 781              		.thumb_func
+ 782              		.type	TIM_ICInit, %function
+ 783              	TIM_ICInit:
+ 784              		@ args = 0, pretend = 0, frame = 0
+ 785              		@ frame_needed = 0, uses_anonymous_args = 0
+ 786 0000 0B88     		ldrh	r3, [r1]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_Channel
+ 787 0002 70B5     		push	{r4, r5, r6, lr}	@
+ 788 0004 0D46     		mov	r5, r1	@ TIM_ICInitStruct, TIM_ICInitStruct
+ 789 0006 0446     		mov	r4, r0	@ TIMx, TIMx
+ 790 0008 002B     		cmp	r3, #0	@ D.7768
+ 791 000a 4DD0     		beq	.L108	@
+ 792 000c 042B     		cmp	r3, #4	@ D.7768,
+ 793 000e 00F09980 		beq	.L109	@,
+ 794 0012 082B     		cmp	r3, #8	@ D.7768,
+ 795 0014 59D0     		beq	.L110	@,
+ 796 0016 028C     		ldrh	r2, [r0, #32]	@, TIMx_8(D)->CCER
+ 797 0018 2E89     		ldrh	r6, [r5, #8]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICFilter
+ 798 001a 22F48052 		bic	r2, r2, #4096	@ D.7768, TIMx_8(D)->CCER,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 15
+
+
+ 799 001e 1204     		lsls	r2, r2, #16	@ D.7768, D.7768,
+ 800 0020 120C     		lsrs	r2, r2, #16	@ D.7768, D.7768,
+ 801 0022 4888     		ldrh	r0, [r1, #2]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICPolarity
+ 802 0024 8988     		ldrh	r1, [r1, #4]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICSelection
+ 803 0026 2284     		strh	r2, [r4, #32]	@ movhi	@ D.7768, TIMx_8(D)->CCER
+ 804 0028 A38B     		ldrh	r3, [r4, #28]	@, TIMx_8(D)->CCMR2
+ 805 002a 544A     		ldr	r2, .L111	@ tmp256,
+ 806 002c 23F44073 		bic	r3, r3, #768	@ tmpccmr2, TIMx_8(D)->CCMR2,
+ 807 0030 1B05     		lsls	r3, r3, #20	@ tmpccmr2, tmpccmr2,
+ 808 0032 1B0D     		lsrs	r3, r3, #20	@ tmpccmr2, tmpccmr2,
+ 809 0034 43EA0123 		orr	r3, r3, r1, lsl #8	@, tmp252, tmpccmr2, D.7768,
+ 810 0038 218C     		ldrh	r1, [r4, #32]	@, TIMx_8(D)->CCER
+ 811 003a 43EA0633 		orr	r3, r3, r6, lsl #12	@, tmpccmr2, tmp252, D.7768,
+ 812 003e 9442     		cmp	r4, r2	@ TIMx, tmp256
+ 813 0040 9BB2     		uxth	r3, r3	@ tmpccmr2, tmpccmr2
+ 814 0042 89B2     		uxth	r1, r1	@ tmpccer, TIMx_8(D)->CCER
+ 815 0044 28D0     		beq	.L99	@,
+ 816 0046 02F50062 		add	r2, r2, #2048	@ tmp257, tmp257,
+ 817 004a 9442     		cmp	r4, r2	@ TIMx, tmp257
+ 818 004c 24D0     		beq	.L99	@,
+ 819 004e B4F1804F 		cmp	r4, #1073741824	@ TIMx,
+ 820 0052 21D0     		beq	.L99	@,
+ 821 0054 A2F59832 		sub	r2, r2, #77824	@ tmp258, tmp258,
+ 822 0058 9442     		cmp	r4, r2	@ TIMx, tmp258
+ 823 005a 1DD0     		beq	.L99	@,
+ 824 005c 02F58062 		add	r2, r2, #1024	@ tmp259, tmp259,
+ 825 0060 9442     		cmp	r4, r2	@ TIMx, tmp259
+ 826 0062 19D0     		beq	.L99	@,
+ 827 0064 02F58062 		add	r2, r2, #1024	@ tmp260, tmp260,
+ 828 0068 9442     		cmp	r4, r2	@ TIMx, tmp260
+ 829 006a 15D0     		beq	.L99	@,
+ 830 006c 47F6FF52 		movw	r2, #32255	@ tmpccer,
+ 831 0070 40F48050 		orr	r0, r0, #4096	@ tmp270, D.7768,
+ 832 0074 0A40     		ands	r2, r2, r1	@, tmpccer, tmpccer, tmpccer
+ 833 0076 0243     		orrs	r2, r2, r0	@, tmpccer, tmpccer, tmp270
+ 834              	.L101:
+ 835 0078 A383     		strh	r3, [r4, #28]	@ movhi	@ tmpccmr2, TIMx_8(D)->CCMR2
+ 836 007a 2284     		strh	r2, [r4, #32]	@ movhi	@ tmpccer, TIMx_8(D)->CCER
+ 837 007c A38B     		ldrh	r3, [r4, #28]	@, TIMx_8(D)->CCMR2
+ 838 007e EA88     		ldrh	r2, [r5, #6]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICPrescaler
+ 839 0080 23F44063 		bic	r3, r3, #3072	@ D.7768, TIMx_8(D)->CCMR2,
+ 840 0084 1B04     		lsls	r3, r3, #16	@ D.7768, D.7768,
+ 841 0086 1B0C     		lsrs	r3, r3, #16	@ D.7768, D.7768,
+ 842 0088 A383     		strh	r3, [r4, #28]	@ movhi	@ D.7768, TIMx_8(D)->CCMR2
+ 843 008a A38B     		ldrh	r3, [r4, #28]	@, TIMx_8(D)->CCMR2
+ 844 008c 9BB2     		uxth	r3, r3	@ D.7768, TIMx_8(D)->CCMR2
+ 845 008e 43EA0223 		orr	r3, r3, r2, lsl #8	@, tmp283, D.7768, D.7768,
+ 846 0092 9BB2     		uxth	r3, r3	@ D.7768, tmp283
+ 847 0094 A383     		strh	r3, [r4, #28]	@ movhi	@ D.7768,
+ 848 0096 70BD     		pop	{r4, r5, r6, pc}	@
+ 849              	.L99:
+ 850 0098 21F40052 		bic	r2, r1, #8192	@ tmp262, tmpccer,
+ 851 009c 42EA0032 		orr	r2, r2, r0, lsl #12	@, tmp265, tmp262, D.7768,
+ 852 00a0 92B2     		uxth	r2, r2	@ D.7768, tmp265
+ 853 00a2 42F48052 		orr	r2, r2, #4096	@ tmpccer, D.7768,
+ 854 00a6 E7E7     		b	.L101	@
+ 855              	.L108:
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 16
+
+
+ 856 00a8 AA88     		ldrh	r2, [r5, #4]	@, TIM_ICInitStruct_3(D)->TIM_ICSelection
+ 857 00aa 2B89     		ldrh	r3, [r5, #8]	@, TIM_ICInitStruct_3(D)->TIM_ICFilter
+ 858 00ac 4988     		ldrh	r1, [r1, #2]	@, TIM_ICInitStruct_3(D)->TIM_ICPolarity
+ 859 00ae FFF7FEFF 		bl	TI1_Config	@
+ 860 00b2 238B     		ldrh	r3, [r4, #24]	@, TIMx_8(D)->CCMR1
+ 861 00b4 EA88     		ldrh	r2, [r5, #6]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICPrescaler
+ 862 00b6 23F00C03 		bic	r3, r3, #12	@ D.7768, TIMx_8(D)->CCMR1,
+ 863 00ba 1B04     		lsls	r3, r3, #16	@ D.7768, D.7768,
+ 864 00bc 1B0C     		lsrs	r3, r3, #16	@ D.7768, D.7768,
+ 865 00be 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7768, TIMx_8(D)->CCMR1
+ 866 00c0 238B     		ldrh	r3, [r4, #24]	@, TIMx_8(D)->CCMR1
+ 867 00c2 9BB2     		uxth	r3, r3	@ D.7768, TIMx_8(D)->CCMR1
+ 868 00c4 1343     		orrs	r3, r3, r2	@, D.7768, D.7768, D.7768
+ 869 00c6 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7768,
+ 870 00c8 70BD     		pop	{r4, r5, r6, pc}	@
+ 871              	.L110:
+ 872 00ca 038C     		ldrh	r3, [r0, #32]	@, TIMx_8(D)->CCER
+ 873 00cc 4E88     		ldrh	r6, [r1, #2]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICPolarity
+ 874 00ce 23F48073 		bic	r3, r3, #256	@ D.7768, TIMx_8(D)->CCER,
+ 875 00d2 1B04     		lsls	r3, r3, #16	@ D.7768, D.7768,
+ 876 00d4 1B0C     		lsrs	r3, r3, #16	@ D.7768, D.7768,
+ 877 00d6 8888     		ldrh	r0, [r1, #4]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICSelection
+ 878 00d8 0989     		ldrh	r1, [r1, #8]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICFilter
+ 879 00da 2384     		strh	r3, [r4, #32]	@ movhi	@ D.7768, TIMx_8(D)->CCER
+ 880 00dc A38B     		ldrh	r3, [r4, #28]	@, TIMx_8(D)->CCMR2
+ 881 00de 274A     		ldr	r2, .L111	@ tmp214,
+ 882 00e0 9BB2     		uxth	r3, r3	@ tmpccmr2, TIMx_8(D)->CCMR2
+ 883 00e2 23F0F303 		bic	r3, r3, #243	@ tmp208, tmpccmr2,
+ 884 00e6 43EA0113 		orr	r3, r3, r1, lsl #4	@, tmp212, tmp208, D.7768,
+ 885 00ea 218C     		ldrh	r1, [r4, #32]	@, TIMx_8(D)->CCER
+ 886 00ec 9BB2     		uxth	r3, r3	@ D.7768, tmp212
+ 887 00ee 9442     		cmp	r4, r2	@ TIMx, tmp214
+ 888 00f0 43EA0003 		orr	r3, r3, r0	@ tmpccmr2, D.7768, D.7768
+ 889 00f4 89B2     		uxth	r1, r1	@ tmpccer, TIMx_8(D)->CCER
+ 890 00f6 38D0     		beq	.L96	@,
+ 891 00f8 02F50062 		add	r2, r2, #2048	@ tmp215, tmp215,
+ 892 00fc 9442     		cmp	r4, r2	@ TIMx, tmp215
+ 893 00fe 34D0     		beq	.L96	@,
+ 894 0100 B4F1804F 		cmp	r4, #1073741824	@ TIMx,
+ 895 0104 31D0     		beq	.L96	@,
+ 896 0106 A2F59832 		sub	r2, r2, #77824	@ tmp216, tmp216,
+ 897 010a 9442     		cmp	r4, r2	@ TIMx, tmp216
+ 898 010c 2DD0     		beq	.L96	@,
+ 899 010e 02F58062 		add	r2, r2, #1024	@ tmp217, tmp217,
+ 900 0112 9442     		cmp	r4, r2	@ TIMx, tmp217
+ 901 0114 29D0     		beq	.L96	@,
+ 902 0116 02F58062 		add	r2, r2, #1024	@ tmp218, tmp218,
+ 903 011a 9442     		cmp	r4, r2	@ TIMx, tmp218
+ 904 011c 25D0     		beq	.L96	@,
+ 905 011e 21F42061 		bic	r1, r1, #2560	@ tmp225, tmpccer,
+ 906 0122 46F48076 		orr	r6, r6, #256	@ tmp226, D.7768,
+ 907 0126 0E43     		orrs	r6, r6, r1	@, tmpccer, tmp226, tmp225
+ 908              	.L98:
+ 909 0128 A383     		strh	r3, [r4, #28]	@ movhi	@ tmpccmr2, TIMx_8(D)->CCMR2
+ 910 012a 2684     		strh	r6, [r4, #32]	@ movhi	@ tmpccer, TIMx_8(D)->CCER
+ 911 012c A38B     		ldrh	r3, [r4, #28]	@, TIMx_8(D)->CCMR2
+ 912 012e EA88     		ldrh	r2, [r5, #6]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICPrescaler
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 17
+
+
+ 913 0130 23F00C03 		bic	r3, r3, #12	@ D.7768, TIMx_8(D)->CCMR2,
+ 914 0134 1B04     		lsls	r3, r3, #16	@ D.7768, D.7768,
+ 915 0136 1B0C     		lsrs	r3, r3, #16	@ D.7768, D.7768,
+ 916 0138 A383     		strh	r3, [r4, #28]	@ movhi	@ D.7768, TIMx_8(D)->CCMR2
+ 917 013a A38B     		ldrh	r3, [r4, #28]	@, TIMx_8(D)->CCMR2
+ 918 013c 9BB2     		uxth	r3, r3	@ D.7768, TIMx_8(D)->CCMR2
+ 919 013e 1343     		orrs	r3, r3, r2	@, D.7768, D.7768, D.7768
+ 920 0140 A383     		strh	r3, [r4, #28]	@ movhi	@ D.7768,
+ 921 0142 70BD     		pop	{r4, r5, r6, pc}	@
+ 922              	.L109:
+ 923 0144 AA88     		ldrh	r2, [r5, #4]	@, TIM_ICInitStruct_3(D)->TIM_ICSelection
+ 924 0146 2B89     		ldrh	r3, [r5, #8]	@, TIM_ICInitStruct_3(D)->TIM_ICFilter
+ 925 0148 4988     		ldrh	r1, [r1, #2]	@, TIM_ICInitStruct_3(D)->TIM_ICPolarity
+ 926 014a FFF7FEFF 		bl	TI2_Config	@
+ 927 014e 238B     		ldrh	r3, [r4, #24]	@, TIMx_8(D)->CCMR1
+ 928 0150 EA88     		ldrh	r2, [r5, #6]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICPrescaler
+ 929 0152 23F44063 		bic	r3, r3, #3072	@ D.7768, TIMx_8(D)->CCMR1,
+ 930 0156 1B04     		lsls	r3, r3, #16	@ D.7768, D.7768,
+ 931 0158 1B0C     		lsrs	r3, r3, #16	@ D.7768, D.7768,
+ 932 015a 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7768, TIMx_8(D)->CCMR1
+ 933 015c 238B     		ldrh	r3, [r4, #24]	@, TIMx_8(D)->CCMR1
+ 934 015e 9BB2     		uxth	r3, r3	@ D.7768, TIMx_8(D)->CCMR1
+ 935 0160 43EA0223 		orr	r3, r3, r2, lsl #8	@, tmp198, D.7768, D.7768,
+ 936 0164 9BB2     		uxth	r3, r3	@ D.7768, tmp198
+ 937 0166 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7768,
+ 938 0168 70BD     		pop	{r4, r5, r6, pc}	@
+ 939              	.L96:
+ 940 016a 21F40071 		bic	r1, r1, #512	@ tmp220, tmpccer,
+ 941 016e 41EA0626 		orr	r6, r1, r6, lsl #8	@, tmp223, tmp220, D.7768,
+ 942 0172 B6B2     		uxth	r6, r6	@ D.7768, tmp223
+ 943 0174 46F48076 		orr	r6, r6, #256	@ tmpccer, D.7768,
+ 944 0178 D6E7     		b	.L98	@
+ 945              	.L112:
+ 946 017a 00BF     		.align	2
+ 947              	.L111:
+ 948 017c 002C0140 		.word	1073818624
+ 949              		.size	TIM_ICInit, .-TIM_ICInit
+ 950              		.section	.text.TIM_PWMIConfig,"ax",%progbits
+ 951              		.align	2
+ 952              		.global	TIM_PWMIConfig
+ 953              		.thumb
+ 954              		.thumb_func
+ 955              		.type	TIM_PWMIConfig, %function
+ 956              	TIM_PWMIConfig:
+ 957              		@ args = 0, pretend = 0, frame = 0
+ 958              		@ frame_needed = 0, uses_anonymous_args = 0
+ 959 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}	@
+ 960 0002 0D46     		mov	r5, r1	@ TIM_ICInitStruct, TIM_ICInitStruct
+ 961 0004 4988     		ldrh	r1, [r1, #2]	@ D.7771, TIM_ICInitStruct_5(D)->TIM_ICPolarity
+ 962 0006 AB88     		ldrh	r3, [r5, #4]	@ D.7771, TIM_ICInitStruct_5(D)->TIM_ICSelection
+ 963 0008 0029     		cmp	r1, #0	@ D.7771,
+ 964 000a 2A88     		ldrh	r2, [r5]	@ TIM_ICInitStruct_5(D)->TIM_Channel, TIM_ICInitStruct_5(D)->TIM_Channel
+ 965 000c 14BF     		ite	ne	@
+ 966 000e 0027     		movne	r7, #0	@, icoppositepolarity,
+ 967 0010 0227     		moveq	r7, #2	@, icoppositepolarity,
+ 968 0012 012B     		cmp	r3, #1	@ D.7771,
+ 969 0014 14BF     		ite	ne	@
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 18
+
+
+ 970 0016 0126     		movne	r6, #1	@, icoppositeselection,
+ 971 0018 0226     		moveq	r6, #2	@, icoppositeselection,
+ 972 001a 0446     		mov	r4, r0	@ TIMx, TIMx
+ 973 001c 12B3     		cbz	r2, .L120	@ TIM_ICInitStruct_5(D)->TIM_Channel,
+ 974 001e 1A46     		mov	r2, r3	@, D.7771
+ 975 0020 2B89     		ldrh	r3, [r5, #8]	@, TIM_ICInitStruct_5(D)->TIM_ICFilter
+ 976 0022 FFF7FEFF 		bl	TI2_Config	@
+ 977 0026 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 978 0028 EA88     		ldrh	r2, [r5, #6]	@ D.7771, TIM_ICInitStruct_5(D)->TIM_ICPrescaler
+ 979 002a 23F44063 		bic	r3, r3, #3072	@ D.7771, TIMx_10(D)->CCMR1,
+ 980 002e 1B04     		lsls	r3, r3, #16	@ D.7771, D.7771,
+ 981 0030 1B0C     		lsrs	r3, r3, #16	@ D.7771, D.7771,
+ 982 0032 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771, TIMx_10(D)->CCMR1
+ 983 0034 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 984 0036 3946     		mov	r1, r7	@, icoppositepolarity
+ 985 0038 9BB2     		uxth	r3, r3	@ D.7771, TIMx_10(D)->CCMR1
+ 986 003a 43EA0223 		orr	r3, r3, r2, lsl #8	@, tmp173, D.7771, D.7771,
+ 987 003e 9BB2     		uxth	r3, r3	@ D.7771, tmp173
+ 988 0040 3246     		mov	r2, r6	@, icoppositeselection
+ 989 0042 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771, TIMx_10(D)->CCMR1
+ 990 0044 2046     		mov	r0, r4	@, TIMx
+ 991 0046 2B89     		ldrh	r3, [r5, #8]	@, TIM_ICInitStruct_5(D)->TIM_ICFilter
+ 992 0048 FFF7FEFF 		bl	TI1_Config	@
+ 993 004c 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 994 004e EA88     		ldrh	r2, [r5, #6]	@ D.7771, TIM_ICInitStruct_5(D)->TIM_ICPrescaler
+ 995 0050 23F00C03 		bic	r3, r3, #12	@ D.7771, TIMx_10(D)->CCMR1,
+ 996 0054 1B04     		lsls	r3, r3, #16	@ D.7771, D.7771,
+ 997 0056 1B0C     		lsrs	r3, r3, #16	@ D.7771, D.7771,
+ 998 0058 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771, TIMx_10(D)->CCMR1
+ 999 005a 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 1000 005c 9BB2     		uxth	r3, r3	@ D.7771, TIMx_10(D)->CCMR1
+ 1001 005e 1343     		orrs	r3, r3, r2	@, D.7771, D.7771, D.7771
+ 1002 0060 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771,
+ 1003 0062 F8BD     		pop	{r3, r4, r5, r6, r7, pc}	@
+ 1004              	.L120:
+ 1005 0064 1A46     		mov	r2, r3	@, D.7771
+ 1006 0066 2B89     		ldrh	r3, [r5, #8]	@, TIM_ICInitStruct_5(D)->TIM_ICFilter
+ 1007 0068 FFF7FEFF 		bl	TI1_Config	@
+ 1008 006c 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 1009 006e EA88     		ldrh	r2, [r5, #6]	@ D.7771, TIM_ICInitStruct_5(D)->TIM_ICPrescaler
+ 1010 0070 23F00C03 		bic	r3, r3, #12	@ D.7771, TIMx_10(D)->CCMR1,
+ 1011 0074 1B04     		lsls	r3, r3, #16	@ D.7771, D.7771,
+ 1012 0076 1B0C     		lsrs	r3, r3, #16	@ D.7771, D.7771,
+ 1013 0078 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771, TIMx_10(D)->CCMR1
+ 1014 007a 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 1015 007c 3946     		mov	r1, r7	@, icoppositepolarity
+ 1016 007e 9BB2     		uxth	r3, r3	@ D.7771, TIMx_10(D)->CCMR1
+ 1017 0080 1343     		orrs	r3, r3, r2	@, D.7771, D.7771, D.7771
+ 1018 0082 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771, TIMx_10(D)->CCMR1
+ 1019 0084 3246     		mov	r2, r6	@, icoppositeselection
+ 1020 0086 2B89     		ldrh	r3, [r5, #8]	@, TIM_ICInitStruct_5(D)->TIM_ICFilter
+ 1021 0088 2046     		mov	r0, r4	@, TIMx
+ 1022 008a FFF7FEFF 		bl	TI2_Config	@
+ 1023 008e 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 1024 0090 EA88     		ldrh	r2, [r5, #6]	@ D.7771, TIM_ICInitStruct_5(D)->TIM_ICPrescaler
+ 1025 0092 23F44063 		bic	r3, r3, #3072	@ D.7771, TIMx_10(D)->CCMR1,
+ 1026 0096 1B04     		lsls	r3, r3, #16	@ D.7771, D.7771,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 19
+
+
+ 1027 0098 1B0C     		lsrs	r3, r3, #16	@ D.7771, D.7771,
+ 1028 009a 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771, TIMx_10(D)->CCMR1
+ 1029 009c 238B     		ldrh	r3, [r4, #24]	@, TIMx_10(D)->CCMR1
+ 1030 009e 9BB2     		uxth	r3, r3	@ D.7771, TIMx_10(D)->CCMR1
+ 1031 00a0 43EA0223 		orr	r3, r3, r2, lsl #8	@, tmp162, D.7771, D.7771,
+ 1032 00a4 9BB2     		uxth	r3, r3	@ D.7771, tmp162
+ 1033 00a6 2383     		strh	r3, [r4, #24]	@ movhi	@ D.7771,
+ 1034 00a8 F8BD     		pop	{r3, r4, r5, r6, r7, pc}	@
+ 1035              		.size	TIM_PWMIConfig, .-TIM_PWMIConfig
+ 1036 00aa 00BF     		.section	.text.TIM_BDTRConfig,"ax",%progbits
+ 1037              		.align	2
+ 1038              		.global	TIM_BDTRConfig
+ 1039              		.thumb
+ 1040              		.thumb_func
+ 1041              		.type	TIM_BDTRConfig, %function
+ 1042              	TIM_BDTRConfig:
+ 1043              		@ args = 0, pretend = 0, frame = 0
+ 1044              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1045              		@ link register save eliminated.
+ 1046 0000 10B4     		push	{r4}	@
+ 1047 0002 0B88     		ldrh	r3, [r1]	@, TIM_BDTRInitStruct_2(D)->TIM_OSSRState
+ 1048 0004 4C88     		ldrh	r4, [r1, #2]	@, TIM_BDTRInitStruct_2(D)->TIM_OSSIState
+ 1049 0006 8A88     		ldrh	r2, [r1, #4]	@, TIM_BDTRInitStruct_2(D)->TIM_LOCKLevel
+ 1050 0008 2343     		orrs	r3, r3, r4	@, tmp127, TIM_BDTRInitStruct_2(D)->TIM_OSSRState, TIM_BDTRInitStruct_2(D)->TIM_OS
+ 1051 000a CC88     		ldrh	r4, [r1, #6]	@, TIM_BDTRInitStruct_2(D)->TIM_DeadTime
+ 1052 000c 1343     		orrs	r3, r3, r2	@, tmp130, tmp127, TIM_BDTRInitStruct_2(D)->TIM_LOCKLevel
+ 1053 000e 0A89     		ldrh	r2, [r1, #8]	@, TIM_BDTRInitStruct_2(D)->TIM_Break
+ 1054 0010 2343     		orrs	r3, r3, r4	@, tmp133, tmp130, TIM_BDTRInitStruct_2(D)->TIM_DeadTime
+ 1055 0012 4C89     		ldrh	r4, [r1, #10]	@, TIM_BDTRInitStruct_2(D)->TIM_BreakPolarity
+ 1056 0014 1343     		orrs	r3, r3, r2	@, tmp136, tmp133, TIM_BDTRInitStruct_2(D)->TIM_Break
+ 1057 0016 8A89     		ldrh	r2, [r1, #12]	@, TIM_BDTRInitStruct_2(D)->TIM_AutomaticOutput
+ 1058 0018 2343     		orrs	r3, r3, r4	@, tmp139, tmp136, TIM_BDTRInitStruct_2(D)->TIM_BreakPolarity
+ 1059 001a 1343     		orrs	r3, r3, r2	@, tmp142, tmp139, TIM_BDTRInitStruct_2(D)->TIM_AutomaticOutput
+ 1060 001c 9BB2     		uxth	r3, r3	@ D.7774, tmp142
+ 1061 001e A0F84430 		strh	r3, [r0, #68]	@ movhi	@ D.7774, TIMx_16(D)->BDTR
+ 1062 0022 5DF8044B 		ldr	r4, [sp], #4	@,
+ 1063 0026 7047     		bx	lr	@
+ 1064              		.size	TIM_BDTRConfig, .-TIM_BDTRConfig
+ 1065              		.section	.text.TIM_TimeBaseStructInit,"ax",%progbits
+ 1066              		.align	2
+ 1067              		.global	TIM_TimeBaseStructInit
+ 1068              		.thumb
+ 1069              		.thumb_func
+ 1070              		.type	TIM_TimeBaseStructInit, %function
+ 1071              	TIM_TimeBaseStructInit:
+ 1072              		@ args = 0, pretend = 0, frame = 0
+ 1073              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1074              		@ link register save eliminated.
+ 1075 0000 0023     		movs	r3, #0	@ tmp114,
+ 1076 0002 4FF6FF72 		movw	r2, #65535	@ tmp112,
+ 1077 0006 8280     		strh	r2, [r0, #4]	@ movhi	@ tmp112, TIM_TimeBaseInitStruct_2(D)->TIM_Period
+ 1078 0008 0380     		strh	r3, [r0]	@ movhi	@ tmp114, TIM_TimeBaseInitStruct_2(D)->TIM_Prescaler
+ 1079 000a C380     		strh	r3, [r0, #6]	@ movhi	@ tmp114, TIM_TimeBaseInitStruct_2(D)->TIM_ClockDivision
+ 1080 000c 4380     		strh	r3, [r0, #2]	@ movhi	@ tmp114, TIM_TimeBaseInitStruct_2(D)->TIM_CounterMode
+ 1081 000e 0372     		strb	r3, [r0, #8]	@ tmp114, TIM_TimeBaseInitStruct_2(D)->TIM_RepetitionCounter
+ 1082 0010 7047     		bx	lr	@
+ 1083              		.size	TIM_TimeBaseStructInit, .-TIM_TimeBaseStructInit
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 20
+
+
+ 1084 0012 00BF     		.section	.text.TIM_OCStructInit,"ax",%progbits
+ 1085              		.align	2
+ 1086              		.global	TIM_OCStructInit
+ 1087              		.thumb
+ 1088              		.thumb_func
+ 1089              		.type	TIM_OCStructInit, %function
+ 1090              	TIM_OCStructInit:
+ 1091              		@ args = 0, pretend = 0, frame = 0
+ 1092              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1093              		@ link register save eliminated.
+ 1094 0000 0023     		movs	r3, #0	@ tmp112,
+ 1095 0002 0380     		strh	r3, [r0]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_OCMode
+ 1096 0004 4380     		strh	r3, [r0, #2]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_OutputState
+ 1097 0006 8380     		strh	r3, [r0, #4]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_OutputNState
+ 1098 0008 C380     		strh	r3, [r0, #6]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_Pulse
+ 1099 000a 0381     		strh	r3, [r0, #8]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_OCPolarity
+ 1100 000c 4381     		strh	r3, [r0, #10]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_OCNPolarity
+ 1101 000e 8381     		strh	r3, [r0, #12]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_OCIdleState
+ 1102 0010 C381     		strh	r3, [r0, #14]	@ movhi	@ tmp112, TIM_OCInitStruct_2(D)->TIM_OCNIdleState
+ 1103 0012 7047     		bx	lr	@
+ 1104              		.size	TIM_OCStructInit, .-TIM_OCStructInit
+ 1105              		.section	.text.TIM_ICStructInit,"ax",%progbits
+ 1106              		.align	2
+ 1107              		.global	TIM_ICStructInit
+ 1108              		.thumb
+ 1109              		.thumb_func
+ 1110              		.type	TIM_ICStructInit, %function
+ 1111              	TIM_ICStructInit:
+ 1112              		@ args = 0, pretend = 0, frame = 0
+ 1113              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1114              		@ link register save eliminated.
+ 1115 0000 0023     		movs	r3, #0	@ tmp112,
+ 1116 0002 0122     		movs	r2, #1	@ tmp116,
+ 1117 0004 8280     		strh	r2, [r0, #4]	@ movhi	@ tmp116, TIM_ICInitStruct_2(D)->TIM_ICSelection
+ 1118 0006 0380     		strh	r3, [r0]	@ movhi	@ tmp112, TIM_ICInitStruct_2(D)->TIM_Channel
+ 1119 0008 4380     		strh	r3, [r0, #2]	@ movhi	@ tmp112, TIM_ICInitStruct_2(D)->TIM_ICPolarity
+ 1120 000a C380     		strh	r3, [r0, #6]	@ movhi	@ tmp112, TIM_ICInitStruct_2(D)->TIM_ICPrescaler
+ 1121 000c 0381     		strh	r3, [r0, #8]	@ movhi	@ tmp112, TIM_ICInitStruct_2(D)->TIM_ICFilter
+ 1122 000e 7047     		bx	lr	@
+ 1123              		.size	TIM_ICStructInit, .-TIM_ICStructInit
+ 1124              		.section	.text.TIM_BDTRStructInit,"ax",%progbits
+ 1125              		.align	2
+ 1126              		.global	TIM_BDTRStructInit
+ 1127              		.thumb
+ 1128              		.thumb_func
+ 1129              		.type	TIM_BDTRStructInit, %function
+ 1130              	TIM_BDTRStructInit:
+ 1131              		@ args = 0, pretend = 0, frame = 0
+ 1132              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1133              		@ link register save eliminated.
+ 1134 0000 0023     		movs	r3, #0	@ tmp112,
+ 1135 0002 0380     		strh	r3, [r0]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_OSSRState
+ 1136 0004 4380     		strh	r3, [r0, #2]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_OSSIState
+ 1137 0006 8380     		strh	r3, [r0, #4]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_LOCKLevel
+ 1138 0008 C380     		strh	r3, [r0, #6]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_DeadTime
+ 1139 000a 0381     		strh	r3, [r0, #8]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_Break
+ 1140 000c 4381     		strh	r3, [r0, #10]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_BreakPolarity
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 21
+
+
+ 1141 000e 8381     		strh	r3, [r0, #12]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_AutomaticOutput
+ 1142 0010 7047     		bx	lr	@
+ 1143              		.size	TIM_BDTRStructInit, .-TIM_BDTRStructInit
+ 1144 0012 00BF     		.section	.text.TIM_Cmd,"ax",%progbits
+ 1145              		.align	2
+ 1146              		.global	TIM_Cmd
+ 1147              		.thumb
+ 1148              		.thumb_func
+ 1149              		.type	TIM_Cmd, %function
+ 1150              	TIM_Cmd:
+ 1151              		@ args = 0, pretend = 0, frame = 0
+ 1152              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1153              		@ link register save eliminated.
+ 1154 0000 0388     		ldrh	r3, [r0]	@,* TIMx
+ 1155 0002 29B9     		cbnz	r1, .L129	@ NewState,
+ 1156 0004 23F00103 		bic	r3, r3, #1	@ D.7785, TIMx_4(D)->CR1,
+ 1157 0008 1B04     		lsls	r3, r3, #16	@ D.7785, D.7785,
+ 1158 000a 1B0C     		lsrs	r3, r3, #16	@ D.7785, D.7785,
+ 1159 000c 0380     		strh	r3, [r0]	@ movhi	@ D.7785,* TIMx
+ 1160 000e 7047     		bx	lr	@
+ 1161              	.L129:
+ 1162 0010 9BB2     		uxth	r3, r3	@ D.7785, TIMx_4(D)->CR1
+ 1163 0012 43F00103 		orr	r3, r3, #1	@ D.7785, D.7785,
+ 1164 0016 0380     		strh	r3, [r0]	@ movhi	@ D.7785,* TIMx
+ 1165 0018 7047     		bx	lr	@
+ 1166              		.size	TIM_Cmd, .-TIM_Cmd
+ 1167 001a 00BF     		.section	.text.TIM_CtrlPWMOutputs,"ax",%progbits
+ 1168              		.align	2
+ 1169              		.global	TIM_CtrlPWMOutputs
+ 1170              		.thumb
+ 1171              		.thumb_func
+ 1172              		.type	TIM_CtrlPWMOutputs, %function
+ 1173              	TIM_CtrlPWMOutputs:
+ 1174              		@ args = 0, pretend = 0, frame = 0
+ 1175              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1176              		@ link register save eliminated.
+ 1177 0000 B0F84430 		ldrh	r3, [r0, #68]	@,
+ 1178 0004 21B9     		cbnz	r1, .L133	@ NewState,
+ 1179 0006 C3F30E03 		ubfx	r3, r3, #0, #15	@ D.7788, TIMx_4(D)->BDTR,,
+ 1180 000a A0F84430 		strh	r3, [r0, #68]	@ movhi	@ D.7788,
+ 1181 000e 7047     		bx	lr	@
+ 1182              	.L133:
+ 1183 0010 6FEA4343 		mvn	r3, r3, lsl #17	@ tmp118, TIMx_4(D)->BDTR,
+ 1184 0014 6FEA5343 		mvn	r3, r3, lsr #17	@ tmp118, tmp118,
+ 1185 0018 9BB2     		uxth	r3, r3	@ D.7788, tmp118
+ 1186 001a A0F84430 		strh	r3, [r0, #68]	@ movhi	@ D.7788,
+ 1187 001e 7047     		bx	lr	@
+ 1188              		.size	TIM_CtrlPWMOutputs, .-TIM_CtrlPWMOutputs
+ 1189              		.section	.text.TIM_ITConfig,"ax",%progbits
+ 1190              		.align	2
+ 1191              		.global	TIM_ITConfig
+ 1192              		.thumb
+ 1193              		.thumb_func
+ 1194              		.type	TIM_ITConfig, %function
+ 1195              	TIM_ITConfig:
+ 1196              		@ args = 0, pretend = 0, frame = 0
+ 1197              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 22
+
+
+ 1198              		@ link register save eliminated.
+ 1199 0000 8389     		ldrh	r3, [r0, #12]	@,
+ 1200 0002 9BB2     		uxth	r3, r3	@ D.7791, TIMx_4(D)->DIER
+ 1201 0004 1AB9     		cbnz	r2, .L137	@ NewState,
+ 1202 0006 23EA0101 		bic	r1, r3, r1	@ D.7791, D.7791, TIM_IT
+ 1203 000a 8181     		strh	r1, [r0, #12]	@ movhi	@ D.7791,
+ 1204 000c 7047     		bx	lr	@
+ 1205              	.L137:
+ 1206 000e 1943     		orrs	r1, r1, r3	@, D.7791, TIM_IT, D.7791
+ 1207 0010 8181     		strh	r1, [r0, #12]	@ movhi	@ D.7791,
+ 1208 0012 7047     		bx	lr	@
+ 1209              		.size	TIM_ITConfig, .-TIM_ITConfig
+ 1210              		.section	.text.TIM_GenerateEvent,"ax",%progbits
+ 1211              		.align	2
+ 1212              		.global	TIM_GenerateEvent
+ 1213              		.thumb
+ 1214              		.thumb_func
+ 1215              		.type	TIM_GenerateEvent, %function
+ 1216              	TIM_GenerateEvent:
+ 1217              		@ args = 0, pretend = 0, frame = 0
+ 1218              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1219              		@ link register save eliminated.
+ 1220 0000 8182     		strh	r1, [r0, #20]	@ movhi	@ TIM_EventSource, TIMx_2(D)->EGR
+ 1221 0002 7047     		bx	lr	@
+ 1222              		.size	TIM_GenerateEvent, .-TIM_GenerateEvent
+ 1223              		.section	.text.TIM_DMAConfig,"ax",%progbits
+ 1224              		.align	2
+ 1225              		.global	TIM_DMAConfig
+ 1226              		.thumb
+ 1227              		.thumb_func
+ 1228              		.type	TIM_DMAConfig, %function
+ 1229              	TIM_DMAConfig:
+ 1230              		@ args = 0, pretend = 0, frame = 0
+ 1231              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1232              		@ link register save eliminated.
+ 1233 0000 0A43     		orrs	r2, r2, r1	@, D.7796, TIM_DMABurstLength, TIM_DMABase
+ 1234 0002 A0F84820 		strh	r2, [r0, #72]	@ movhi	@ D.7796, TIMx_5(D)->DCR
+ 1235 0006 7047     		bx	lr	@
+ 1236              		.size	TIM_DMAConfig, .-TIM_DMAConfig
+ 1237              		.section	.text.TIM_DMACmd,"ax",%progbits
+ 1238              		.align	2
+ 1239              		.global	TIM_DMACmd
+ 1240              		.thumb
+ 1241              		.thumb_func
+ 1242              		.type	TIM_DMACmd, %function
+ 1243              	TIM_DMACmd:
+ 1244              		@ args = 0, pretend = 0, frame = 0
+ 1245              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1246              		@ link register save eliminated.
+ 1247 0000 8389     		ldrh	r3, [r0, #12]	@,
+ 1248 0002 9BB2     		uxth	r3, r3	@ D.7799, TIMx_4(D)->DIER
+ 1249 0004 1AB9     		cbnz	r2, .L143	@ NewState,
+ 1250 0006 23EA0101 		bic	r1, r3, r1	@ D.7799, D.7799, TIM_DMASource
+ 1251 000a 8181     		strh	r1, [r0, #12]	@ movhi	@ D.7799,
+ 1252 000c 7047     		bx	lr	@
+ 1253              	.L143:
+ 1254 000e 1943     		orrs	r1, r1, r3	@, D.7799, TIM_DMASource, D.7799
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 23
+
+
+ 1255 0010 8181     		strh	r1, [r0, #12]	@ movhi	@ D.7799,
+ 1256 0012 7047     		bx	lr	@
+ 1257              		.size	TIM_DMACmd, .-TIM_DMACmd
+ 1258              		.section	.text.TIM_InternalClockConfig,"ax",%progbits
+ 1259              		.align	2
+ 1260              		.global	TIM_InternalClockConfig
+ 1261              		.thumb
+ 1262              		.thumb_func
+ 1263              		.type	TIM_InternalClockConfig, %function
+ 1264              	TIM_InternalClockConfig:
+ 1265              		@ args = 0, pretend = 0, frame = 0
+ 1266              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1267              		@ link register save eliminated.
+ 1268 0000 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 1269 0002 23F00703 		bic	r3, r3, #7	@ D.7802, TIMx_2(D)->SMCR,
+ 1270 0006 1B04     		lsls	r3, r3, #16	@ D.7802, D.7802,
+ 1271 0008 1B0C     		lsrs	r3, r3, #16	@ D.7802, D.7802,
+ 1272 000a 0381     		strh	r3, [r0, #8]	@ movhi	@ D.7802, TIMx_2(D)->SMCR
+ 1273 000c 7047     		bx	lr	@
+ 1274              		.size	TIM_InternalClockConfig, .-TIM_InternalClockConfig
+ 1275 000e 00BF     		.section	.text.TIM_ITRxExternalClockConfig,"ax",%progbits
+ 1276              		.align	2
+ 1277              		.global	TIM_ITRxExternalClockConfig
+ 1278              		.thumb
+ 1279              		.thumb_func
+ 1280              		.type	TIM_ITRxExternalClockConfig, %function
+ 1281              	TIM_ITRxExternalClockConfig:
+ 1282              		@ args = 0, pretend = 0, frame = 0
+ 1283              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1284              		@ link register save eliminated.
+ 1285 0000 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 1286 0002 23F07003 		bic	r3, r3, #112	@ tmpsmcr, TIMx_2(D)->SMCR,
+ 1287 0006 1B04     		lsls	r3, r3, #16	@ tmpsmcr, tmpsmcr,
+ 1288 0008 1B0C     		lsrs	r3, r3, #16	@ tmpsmcr, tmpsmcr,
+ 1289 000a 1943     		orrs	r1, r1, r3	@, tmpsmcr, TIM_InputTriggerSource, tmpsmcr
+ 1290 000c 0181     		strh	r1, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_2(D)->SMCR
+ 1291 000e 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 1292 0010 9BB2     		uxth	r3, r3	@ D.7805, TIMx_2(D)->SMCR
+ 1293 0012 43F00703 		orr	r3, r3, #7	@ D.7805, D.7805,
+ 1294 0016 0381     		strh	r3, [r0, #8]	@ movhi	@ D.7805, TIMx_2(D)->SMCR
+ 1295 0018 7047     		bx	lr	@
+ 1296              		.size	TIM_ITRxExternalClockConfig, .-TIM_ITRxExternalClockConfig
+ 1297 001a 00BF     		.section	.text.TIM_TIxExternalClockConfig,"ax",%progbits
+ 1298              		.align	2
+ 1299              		.global	TIM_TIxExternalClockConfig
+ 1300              		.thumb
+ 1301              		.thumb_func
+ 1302              		.type	TIM_TIxExternalClockConfig, %function
+ 1303              	TIM_TIxExternalClockConfig:
+ 1304              		@ args = 0, pretend = 0, frame = 0
+ 1305              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1306 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 1307 0002 0D46     		mov	r5, r1	@ TIM_TIxExternalCLKSource, TIM_TIxExternalCLKSource
+ 1308 0004 602D     		cmp	r5, #96	@ TIM_TIxExternalCLKSource,
+ 1309 0006 1146     		mov	r1, r2	@, TIM_ICPolarity
+ 1310 0008 0446     		mov	r4, r0	@ TIMx, TIMx
+ 1311 000a 4FF00102 		mov	r2, #1	@,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 24
+
+
+ 1312 000e 0ED0     		beq	.L149	@,
+ 1313 0010 FFF7FEFF 		bl	TI1_Config	@
+ 1314              	.L148:
+ 1315 0014 2389     		ldrh	r3, [r4, #8]	@, TIMx_4(D)->SMCR
+ 1316 0016 23F07003 		bic	r3, r3, #112	@ tmpsmcr, TIMx_4(D)->SMCR,
+ 1317 001a 1B04     		lsls	r3, r3, #16	@ tmpsmcr, tmpsmcr,
+ 1318 001c 1B0C     		lsrs	r3, r3, #16	@ tmpsmcr, tmpsmcr,
+ 1319 001e 2B43     		orrs	r3, r3, r5	@, tmpsmcr, tmpsmcr, TIM_TIxExternalCLKSource
+ 1320 0020 2381     		strh	r3, [r4, #8]	@ movhi	@ tmpsmcr, TIMx_4(D)->SMCR
+ 1321 0022 2389     		ldrh	r3, [r4, #8]	@, TIMx_4(D)->SMCR
+ 1322 0024 9BB2     		uxth	r3, r3	@ D.7808, TIMx_4(D)->SMCR
+ 1323 0026 43F00703 		orr	r3, r3, #7	@ D.7808, D.7808,
+ 1324 002a 2381     		strh	r3, [r4, #8]	@ movhi	@ D.7808, TIMx_4(D)->SMCR
+ 1325 002c 38BD     		pop	{r3, r4, r5, pc}	@
+ 1326              	.L149:
+ 1327 002e FFF7FEFF 		bl	TI2_Config	@
+ 1328 0032 EFE7     		b	.L148	@
+ 1329              		.size	TIM_TIxExternalClockConfig, .-TIM_TIxExternalClockConfig
+ 1330              		.section	.text.TIM_ETRClockMode1Config,"ax",%progbits
+ 1331              		.align	2
+ 1332              		.global	TIM_ETRClockMode1Config
+ 1333              		.thumb
+ 1334              		.thumb_func
+ 1335              		.type	TIM_ETRClockMode1Config, %function
+ 1336              	TIM_ETRClockMode1Config:
+ 1337              		@ args = 0, pretend = 0, frame = 0
+ 1338              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1339              		@ link register save eliminated.
+ 1340 0000 10B4     		push	{r4}	@
+ 1341 0002 0489     		ldrh	r4, [r0, #8]	@, TIMx_3(D)->SMCR
+ 1342 0004 42EA0323 		orr	r3, r2, r3, lsl #8	@, tmp127, TIM_ExtTRGPolarity, ExtTRGFilter,
+ 1343 0008 E4B2     		uxtb	r4, r4	@ tmpsmcr, TIMx_3(D)->SMCR
+ 1344 000a 1C43     		orrs	r4, r4, r3	@, tmp131, tmpsmcr, tmp127
+ 1345 000c A4B2     		uxth	r4, r4	@ D.7812, tmp131
+ 1346 000e 2143     		orrs	r1, r1, r4	@, tmpsmcr, TIM_ExtTRGPrescaler, D.7812
+ 1347 0010 0181     		strh	r1, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_3(D)->SMCR
+ 1348 0012 0389     		ldrh	r3, [r0, #8]	@, TIMx_3(D)->SMCR
+ 1349 0014 5DF8044B 		ldr	r4, [sp], #4	@,
+ 1350 0018 23F07703 		bic	r3, r3, #119	@ D.7811, TIMx_3(D)->SMCR,
+ 1351 001c 1B04     		lsls	r3, r3, #16	@ D.7811, D.7811,
+ 1352 001e 1B0C     		lsrs	r3, r3, #16	@ D.7811, D.7811,
+ 1353 0020 43F07703 		orr	r3, r3, #119	@ tmpsmcr, D.7811,
+ 1354 0024 0381     		strh	r3, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_3(D)->SMCR
+ 1355 0026 7047     		bx	lr	@
+ 1356              		.size	TIM_ETRClockMode1Config, .-TIM_ETRClockMode1Config
+ 1357              		.section	.text.TIM_ETRClockMode2Config,"ax",%progbits
+ 1358              		.align	2
+ 1359              		.global	TIM_ETRClockMode2Config
+ 1360              		.thumb
+ 1361              		.thumb_func
+ 1362              		.type	TIM_ETRClockMode2Config, %function
+ 1363              	TIM_ETRClockMode2Config:
+ 1364              		@ args = 0, pretend = 0, frame = 0
+ 1365              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1366              		@ link register save eliminated.
+ 1367 0000 10B4     		push	{r4}	@
+ 1368 0002 0489     		ldrh	r4, [r0, #8]	@, TIMx_2(D)->SMCR
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 25
+
+
+ 1369 0004 42EA0323 		orr	r3, r2, r3, lsl #8	@, tmp126, TIM_ExtTRGPolarity, ExtTRGFilter,
+ 1370 0008 E4B2     		uxtb	r4, r4	@ tmpsmcr, TIMx_2(D)->SMCR
+ 1371 000a 1C43     		orrs	r4, r4, r3	@, tmp130, tmpsmcr, tmp126
+ 1372 000c A4B2     		uxth	r4, r4	@ D.7815, tmp130
+ 1373 000e 2143     		orrs	r1, r1, r4	@, tmpsmcr, TIM_ExtTRGPrescaler, D.7815
+ 1374 0010 0181     		strh	r1, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_2(D)->SMCR
+ 1375 0012 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 1376 0014 5DF8044B 		ldr	r4, [sp], #4	@,
+ 1377 0018 9BB2     		uxth	r3, r3	@ D.7815, TIMx_2(D)->SMCR
+ 1378 001a 43F48043 		orr	r3, r3, #16384	@ D.7815, D.7815,
+ 1379 001e 0381     		strh	r3, [r0, #8]	@ movhi	@ D.7815, TIMx_2(D)->SMCR
+ 1380 0020 7047     		bx	lr	@
+ 1381              		.size	TIM_ETRClockMode2Config, .-TIM_ETRClockMode2Config
+ 1382 0022 00BF     		.section	.text.TIM_ETRConfig,"ax",%progbits
+ 1383              		.align	2
+ 1384              		.global	TIM_ETRConfig
+ 1385              		.thumb
+ 1386              		.thumb_func
+ 1387              		.type	TIM_ETRConfig, %function
+ 1388              	TIM_ETRConfig:
+ 1389              		@ args = 0, pretend = 0, frame = 0
+ 1390              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1391              		@ link register save eliminated.
+ 1392 0000 10B4     		push	{r4}	@
+ 1393 0002 0489     		ldrh	r4, [r0, #8]	@, TIMx_2(D)->SMCR
+ 1394 0004 E4B2     		uxtb	r4, r4	@ tmpsmcr, TIMx_2(D)->SMCR
+ 1395 0006 2143     		orrs	r1, r1, r4	@, tmp124, TIM_ExtTRGPrescaler, tmpsmcr
+ 1396 0008 0A43     		orrs	r2, r2, r1	@, D.7818, TIM_ExtTRGPolarity, tmp124
+ 1397 000a 42EA0323 		orr	r3, r2, r3, lsl #8	@, tmp129, D.7818, ExtTRGFilter,
+ 1398 000e 9CB2     		uxth	r4, r3	@ tmpsmcr, tmp129
+ 1399 0010 0481     		strh	r4, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_2(D)->SMCR
+ 1400 0012 5DF8044B 		ldr	r4, [sp], #4	@,
+ 1401 0016 7047     		bx	lr	@
+ 1402              		.size	TIM_ETRConfig, .-TIM_ETRConfig
+ 1403              		.section	.text.TIM_PrescalerConfig,"ax",%progbits
+ 1404              		.align	2
+ 1405              		.global	TIM_PrescalerConfig
+ 1406              		.thumb
+ 1407              		.thumb_func
+ 1408              		.type	TIM_PrescalerConfig, %function
+ 1409              	TIM_PrescalerConfig:
+ 1410              		@ args = 0, pretend = 0, frame = 0
+ 1411              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1412              		@ link register save eliminated.
+ 1413 0000 0185     		strh	r1, [r0, #40]	@ movhi	@ Prescaler, TIMx_2(D)->PSC
+ 1414 0002 8282     		strh	r2, [r0, #20]	@ movhi	@ TIM_PSCReloadMode, TIMx_2(D)->EGR
+ 1415 0004 7047     		bx	lr	@
+ 1416              		.size	TIM_PrescalerConfig, .-TIM_PrescalerConfig
+ 1417 0006 00BF     		.section	.text.TIM_CounterModeConfig,"ax",%progbits
+ 1418              		.align	2
+ 1419              		.global	TIM_CounterModeConfig
+ 1420              		.thumb
+ 1421              		.thumb_func
+ 1422              		.type	TIM_CounterModeConfig, %function
+ 1423              	TIM_CounterModeConfig:
+ 1424              		@ args = 0, pretend = 0, frame = 0
+ 1425              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 26
+
+
+ 1426              		@ link register save eliminated.
+ 1427 0000 0388     		ldrh	r3, [r0]	@, TIMx_2(D)->CR1
+ 1428 0002 23F07003 		bic	r3, r3, #112	@ tmpcr1, TIMx_2(D)->CR1,
+ 1429 0006 1B04     		lsls	r3, r3, #16	@ tmpcr1, tmpcr1,
+ 1430 0008 1B0C     		lsrs	r3, r3, #16	@ tmpcr1, tmpcr1,
+ 1431 000a 1943     		orrs	r1, r1, r3	@, tmpcr1, TIM_CounterMode, tmpcr1
+ 1432 000c 0180     		strh	r1, [r0]	@ movhi	@ tmpcr1, TIMx_2(D)->CR1
+ 1433 000e 7047     		bx	lr	@
+ 1434              		.size	TIM_CounterModeConfig, .-TIM_CounterModeConfig
+ 1435              		.section	.text.TIM_SelectInputTrigger,"ax",%progbits
+ 1436              		.align	2
+ 1437              		.global	TIM_SelectInputTrigger
+ 1438              		.thumb
+ 1439              		.thumb_func
+ 1440              		.type	TIM_SelectInputTrigger, %function
+ 1441              	TIM_SelectInputTrigger:
+ 1442              		@ args = 0, pretend = 0, frame = 0
+ 1443              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1444              		@ link register save eliminated.
+ 1445 0000 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 1446 0002 23F07003 		bic	r3, r3, #112	@ tmpsmcr, TIMx_2(D)->SMCR,
+ 1447 0006 1B04     		lsls	r3, r3, #16	@ tmpsmcr, tmpsmcr,
+ 1448 0008 1B0C     		lsrs	r3, r3, #16	@ tmpsmcr, tmpsmcr,
+ 1449 000a 1943     		orrs	r1, r1, r3	@, tmpsmcr, TIM_InputTriggerSource, tmpsmcr
+ 1450 000c 0181     		strh	r1, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_2(D)->SMCR
+ 1451 000e 7047     		bx	lr	@
+ 1452              		.size	TIM_SelectInputTrigger, .-TIM_SelectInputTrigger
+ 1453              		.section	.text.TIM_EncoderInterfaceConfig,"ax",%progbits
+ 1454              		.align	2
+ 1455              		.global	TIM_EncoderInterfaceConfig
+ 1456              		.thumb
+ 1457              		.thumb_func
+ 1458              		.type	TIM_EncoderInterfaceConfig, %function
+ 1459              	TIM_EncoderInterfaceConfig:
+ 1460              		@ args = 0, pretend = 0, frame = 0
+ 1461              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1462              		@ link register save eliminated.
+ 1463 0000 70B4     		push	{r4, r5, r6}	@
+ 1464 0002 0589     		ldrh	r5, [r0, #8]	@, TIMx_2(D)->SMCR
+ 1465 0004 048B     		ldrh	r4, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1466 0006 068C     		ldrh	r6, [r0, #32]	@, TIMx_2(D)->CCER
+ 1467 0008 24F44074 		bic	r4, r4, #768	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1468 000c 24F00304 		bic	r4, r4, #3	@ tmpccmr1, tmpccmr1,
+ 1469 0010 B6B2     		uxth	r6, r6	@ tmpccer, TIMx_2(D)->CCER
+ 1470 0012 26F02206 		bic	r6, r6, #34	@ tmp138, tmpccer,
+ 1471 0016 25F00705 		bic	r5, r5, #7	@ tmpsmcr, TIMx_2(D)->SMCR,
+ 1472 001a 2404     		lsls	r4, r4, #16	@ tmpccmr1, tmpccmr1,
+ 1473 001c 3243     		orrs	r2, r2, r6	@, D.7827, TIM_IC1Polarity, tmp138
+ 1474 001e 2D04     		lsls	r5, r5, #16	@ tmpsmcr, tmpsmcr,
+ 1475 0020 240C     		lsrs	r4, r4, #16	@ tmpccmr1, tmpccmr1,
+ 1476 0022 2D0C     		lsrs	r5, r5, #16	@ tmpsmcr, tmpsmcr,
+ 1477 0024 44F48074 		orr	r4, r4, #256	@ tmpccmr1, tmpccmr1,
+ 1478 0028 42EA0313 		orr	r3, r2, r3, lsl #4	@, tmp143, D.7827, TIM_IC2Polarity,
+ 1479 002c 2943     		orrs	r1, r1, r5	@, tmpsmcr, TIM_EncoderMode, tmpsmcr
+ 1480 002e 44F00104 		orr	r4, r4, #1	@ tmpccmr1, tmpccmr1,
+ 1481 0032 9EB2     		uxth	r6, r3	@ tmpccer, tmp143
+ 1482 0034 0181     		strh	r1, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_2(D)->SMCR
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 27
+
+
+ 1483 0036 0483     		strh	r4, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1484 0038 0684     		strh	r6, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 1485 003a 70BC     		pop	{r4, r5, r6}	@
+ 1486 003c 7047     		bx	lr	@
+ 1487              		.size	TIM_EncoderInterfaceConfig, .-TIM_EncoderInterfaceConfig
+ 1488 003e 00BF     		.section	.text.TIM_ForcedOC1Config,"ax",%progbits
+ 1489              		.align	2
+ 1490              		.global	TIM_ForcedOC1Config
+ 1491              		.thumb
+ 1492              		.thumb_func
+ 1493              		.type	TIM_ForcedOC1Config, %function
+ 1494              	TIM_ForcedOC1Config:
+ 1495              		@ args = 0, pretend = 0, frame = 0
+ 1496              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1497              		@ link register save eliminated.
+ 1498 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1499 0002 23F07003 		bic	r3, r3, #112	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1500 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1501 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1502 000a 1943     		orrs	r1, r1, r3	@, tmpccmr1, TIM_ForcedAction, tmpccmr1
+ 1503 000c 0183     		strh	r1, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1504 000e 7047     		bx	lr	@
+ 1505              		.size	TIM_ForcedOC1Config, .-TIM_ForcedOC1Config
+ 1506              		.section	.text.TIM_ForcedOC2Config,"ax",%progbits
+ 1507              		.align	2
+ 1508              		.global	TIM_ForcedOC2Config
+ 1509              		.thumb
+ 1510              		.thumb_func
+ 1511              		.type	TIM_ForcedOC2Config, %function
+ 1512              	TIM_ForcedOC2Config:
+ 1513              		@ args = 0, pretend = 0, frame = 0
+ 1514              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1515              		@ link register save eliminated.
+ 1516 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1517 0002 23F4E043 		bic	r3, r3, #28672	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1518 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1519 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1520 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr1, TIM_ForcedAction,
+ 1521 000e 8BB2     		uxth	r3, r1	@ tmpccmr1, tmp121
+ 1522 0010 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1523 0012 7047     		bx	lr	@
+ 1524              		.size	TIM_ForcedOC2Config, .-TIM_ForcedOC2Config
+ 1525              		.section	.text.TIM_ForcedOC3Config,"ax",%progbits
+ 1526              		.align	2
+ 1527              		.global	TIM_ForcedOC3Config
+ 1528              		.thumb
+ 1529              		.thumb_func
+ 1530              		.type	TIM_ForcedOC3Config, %function
+ 1531              	TIM_ForcedOC3Config:
+ 1532              		@ args = 0, pretend = 0, frame = 0
+ 1533              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1534              		@ link register save eliminated.
+ 1535 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1536 0002 23F07003 		bic	r3, r3, #112	@ tmpccmr2, TIMx_2(D)->CCMR2,
+ 1537 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1538 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1539 000a 1943     		orrs	r1, r1, r3	@, tmpccmr2, TIM_ForcedAction, tmpccmr2
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 28
+
+
+ 1540 000c 8183     		strh	r1, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1541 000e 7047     		bx	lr	@
+ 1542              		.size	TIM_ForcedOC3Config, .-TIM_ForcedOC3Config
+ 1543              		.section	.text.TIM_ForcedOC4Config,"ax",%progbits
+ 1544              		.align	2
+ 1545              		.global	TIM_ForcedOC4Config
+ 1546              		.thumb
+ 1547              		.thumb_func
+ 1548              		.type	TIM_ForcedOC4Config, %function
+ 1549              	TIM_ForcedOC4Config:
+ 1550              		@ args = 0, pretend = 0, frame = 0
+ 1551              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1552              		@ link register save eliminated.
+ 1553 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1554 0002 23F4E043 		bic	r3, r3, #28672	@ tmpccmr2, TIMx_2(D)->CCMR2,
+ 1555 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1556 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1557 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr2, TIM_ForcedAction,
+ 1558 000e 8BB2     		uxth	r3, r1	@ tmpccmr2, tmp121
+ 1559 0010 8383     		strh	r3, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1560 0012 7047     		bx	lr	@
+ 1561              		.size	TIM_ForcedOC4Config, .-TIM_ForcedOC4Config
+ 1562              		.section	.text.TIM_ARRPreloadConfig,"ax",%progbits
+ 1563              		.align	2
+ 1564              		.global	TIM_ARRPreloadConfig
+ 1565              		.thumb
+ 1566              		.thumb_func
+ 1567              		.type	TIM_ARRPreloadConfig, %function
+ 1568              	TIM_ARRPreloadConfig:
+ 1569              		@ args = 0, pretend = 0, frame = 0
+ 1570              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1571              		@ link register save eliminated.
+ 1572 0000 0388     		ldrh	r3, [r0]	@,* TIMx
+ 1573 0002 29B9     		cbnz	r1, .L164	@ NewState,
+ 1574 0004 23F08003 		bic	r3, r3, #128	@ D.7840, TIMx_4(D)->CR1,
+ 1575 0008 1B04     		lsls	r3, r3, #16	@ D.7840, D.7840,
+ 1576 000a 1B0C     		lsrs	r3, r3, #16	@ D.7840, D.7840,
+ 1577 000c 0380     		strh	r3, [r0]	@ movhi	@ D.7840,* TIMx
+ 1578 000e 7047     		bx	lr	@
+ 1579              	.L164:
+ 1580 0010 9BB2     		uxth	r3, r3	@ D.7840, TIMx_4(D)->CR1
+ 1581 0012 43F08003 		orr	r3, r3, #128	@ D.7840, D.7840,
+ 1582 0016 0380     		strh	r3, [r0]	@ movhi	@ D.7840,* TIMx
+ 1583 0018 7047     		bx	lr	@
+ 1584              		.size	TIM_ARRPreloadConfig, .-TIM_ARRPreloadConfig
+ 1585 001a 00BF     		.section	.text.TIM_SelectCOM,"ax",%progbits
+ 1586              		.align	2
+ 1587              		.global	TIM_SelectCOM
+ 1588              		.thumb
+ 1589              		.thumb_func
+ 1590              		.type	TIM_SelectCOM, %function
+ 1591              	TIM_SelectCOM:
+ 1592              		@ args = 0, pretend = 0, frame = 0
+ 1593              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1594              		@ link register save eliminated.
+ 1595 0000 8388     		ldrh	r3, [r0, #4]	@,
+ 1596 0002 29B9     		cbnz	r1, .L168	@ NewState,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 29
+
+
+ 1597 0004 23F00403 		bic	r3, r3, #4	@ D.7843, TIMx_4(D)->CR2,
+ 1598 0008 1B04     		lsls	r3, r3, #16	@ D.7843, D.7843,
+ 1599 000a 1B0C     		lsrs	r3, r3, #16	@ D.7843, D.7843,
+ 1600 000c 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7843,
+ 1601 000e 7047     		bx	lr	@
+ 1602              	.L168:
+ 1603 0010 9BB2     		uxth	r3, r3	@ D.7843, TIMx_4(D)->CR2
+ 1604 0012 43F00403 		orr	r3, r3, #4	@ D.7843, D.7843,
+ 1605 0016 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7843,
+ 1606 0018 7047     		bx	lr	@
+ 1607              		.size	TIM_SelectCOM, .-TIM_SelectCOM
+ 1608 001a 00BF     		.section	.text.TIM_SelectCCDMA,"ax",%progbits
+ 1609              		.align	2
+ 1610              		.global	TIM_SelectCCDMA
+ 1611              		.thumb
+ 1612              		.thumb_func
+ 1613              		.type	TIM_SelectCCDMA, %function
+ 1614              	TIM_SelectCCDMA:
+ 1615              		@ args = 0, pretend = 0, frame = 0
+ 1616              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1617              		@ link register save eliminated.
+ 1618 0000 8388     		ldrh	r3, [r0, #4]	@,
+ 1619 0002 29B9     		cbnz	r1, .L172	@ NewState,
+ 1620 0004 23F00803 		bic	r3, r3, #8	@ D.7846, TIMx_4(D)->CR2,
+ 1621 0008 1B04     		lsls	r3, r3, #16	@ D.7846, D.7846,
+ 1622 000a 1B0C     		lsrs	r3, r3, #16	@ D.7846, D.7846,
+ 1623 000c 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7846,
+ 1624 000e 7047     		bx	lr	@
+ 1625              	.L172:
+ 1626 0010 9BB2     		uxth	r3, r3	@ D.7846, TIMx_4(D)->CR2
+ 1627 0012 43F00803 		orr	r3, r3, #8	@ D.7846, D.7846,
+ 1628 0016 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7846,
+ 1629 0018 7047     		bx	lr	@
+ 1630              		.size	TIM_SelectCCDMA, .-TIM_SelectCCDMA
+ 1631 001a 00BF     		.section	.text.TIM_CCPreloadControl,"ax",%progbits
+ 1632              		.align	2
+ 1633              		.global	TIM_CCPreloadControl
+ 1634              		.thumb
+ 1635              		.thumb_func
+ 1636              		.type	TIM_CCPreloadControl, %function
+ 1637              	TIM_CCPreloadControl:
+ 1638              		@ args = 0, pretend = 0, frame = 0
+ 1639              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1640              		@ link register save eliminated.
+ 1641 0000 8388     		ldrh	r3, [r0, #4]	@,
+ 1642 0002 29B9     		cbnz	r1, .L176	@ NewState,
+ 1643 0004 23F00103 		bic	r3, r3, #1	@ D.7849, TIMx_4(D)->CR2,
+ 1644 0008 1B04     		lsls	r3, r3, #16	@ D.7849, D.7849,
+ 1645 000a 1B0C     		lsrs	r3, r3, #16	@ D.7849, D.7849,
+ 1646 000c 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7849,
+ 1647 000e 7047     		bx	lr	@
+ 1648              	.L176:
+ 1649 0010 9BB2     		uxth	r3, r3	@ D.7849, TIMx_4(D)->CR2
+ 1650 0012 43F00103 		orr	r3, r3, #1	@ D.7849, D.7849,
+ 1651 0016 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7849,
+ 1652 0018 7047     		bx	lr	@
+ 1653              		.size	TIM_CCPreloadControl, .-TIM_CCPreloadControl
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 30
+
+
+ 1654 001a 00BF     		.section	.text.TIM_OC1PreloadConfig,"ax",%progbits
+ 1655              		.align	2
+ 1656              		.global	TIM_OC1PreloadConfig
+ 1657              		.thumb
+ 1658              		.thumb_func
+ 1659              		.type	TIM_OC1PreloadConfig, %function
+ 1660              	TIM_OC1PreloadConfig:
+ 1661              		@ args = 0, pretend = 0, frame = 0
+ 1662              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1663              		@ link register save eliminated.
+ 1664 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1665 0002 23F00803 		bic	r3, r3, #8	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1666 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1667 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1668 000a 1943     		orrs	r1, r1, r3	@, tmpccmr1, TIM_OCPreload, tmpccmr1
+ 1669 000c 0183     		strh	r1, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1670 000e 7047     		bx	lr	@
+ 1671              		.size	TIM_OC1PreloadConfig, .-TIM_OC1PreloadConfig
+ 1672              		.section	.text.TIM_OC2PreloadConfig,"ax",%progbits
+ 1673              		.align	2
+ 1674              		.global	TIM_OC2PreloadConfig
+ 1675              		.thumb
+ 1676              		.thumb_func
+ 1677              		.type	TIM_OC2PreloadConfig, %function
+ 1678              	TIM_OC2PreloadConfig:
+ 1679              		@ args = 0, pretend = 0, frame = 0
+ 1680              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1681              		@ link register save eliminated.
+ 1682 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1683 0002 23F40063 		bic	r3, r3, #2048	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1684 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1685 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1686 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr1, TIM_OCPreload,
+ 1687 000e 8BB2     		uxth	r3, r1	@ tmpccmr1, tmp121
+ 1688 0010 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1689 0012 7047     		bx	lr	@
+ 1690              		.size	TIM_OC2PreloadConfig, .-TIM_OC2PreloadConfig
+ 1691              		.section	.text.TIM_OC3PreloadConfig,"ax",%progbits
+ 1692              		.align	2
+ 1693              		.global	TIM_OC3PreloadConfig
+ 1694              		.thumb
+ 1695              		.thumb_func
+ 1696              		.type	TIM_OC3PreloadConfig, %function
+ 1697              	TIM_OC3PreloadConfig:
+ 1698              		@ args = 0, pretend = 0, frame = 0
+ 1699              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1700              		@ link register save eliminated.
+ 1701 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1702 0002 23F00803 		bic	r3, r3, #8	@ tmpccmr2, TIMx_2(D)->CCMR2,
+ 1703 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1704 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1705 000a 1943     		orrs	r1, r1, r3	@, tmpccmr2, TIM_OCPreload, tmpccmr2
+ 1706 000c 8183     		strh	r1, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1707 000e 7047     		bx	lr	@
+ 1708              		.size	TIM_OC3PreloadConfig, .-TIM_OC3PreloadConfig
+ 1709              		.section	.text.TIM_OC4PreloadConfig,"ax",%progbits
+ 1710              		.align	2
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 31
+
+
+ 1711              		.global	TIM_OC4PreloadConfig
+ 1712              		.thumb
+ 1713              		.thumb_func
+ 1714              		.type	TIM_OC4PreloadConfig, %function
+ 1715              	TIM_OC4PreloadConfig:
+ 1716              		@ args = 0, pretend = 0, frame = 0
+ 1717              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1718              		@ link register save eliminated.
+ 1719 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1720 0002 23F40063 		bic	r3, r3, #2048	@ tmpccmr2, TIMx_2(D)->CCMR2,
+ 1721 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1722 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1723 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr2, TIM_OCPreload,
+ 1724 000e 8BB2     		uxth	r3, r1	@ tmpccmr2, tmp121
+ 1725 0010 8383     		strh	r3, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1726 0012 7047     		bx	lr	@
+ 1727              		.size	TIM_OC4PreloadConfig, .-TIM_OC4PreloadConfig
+ 1728              		.section	.text.TIM_OC1FastConfig,"ax",%progbits
+ 1729              		.align	2
+ 1730              		.global	TIM_OC1FastConfig
+ 1731              		.thumb
+ 1732              		.thumb_func
+ 1733              		.type	TIM_OC1FastConfig, %function
+ 1734              	TIM_OC1FastConfig:
+ 1735              		@ args = 0, pretend = 0, frame = 0
+ 1736              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1737              		@ link register save eliminated.
+ 1738 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1739 0002 23F00403 		bic	r3, r3, #4	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1740 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1741 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1742 000a 1943     		orrs	r1, r1, r3	@, tmpccmr1, TIM_OCFast, tmpccmr1
+ 1743 000c 0183     		strh	r1, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1744 000e 7047     		bx	lr	@
+ 1745              		.size	TIM_OC1FastConfig, .-TIM_OC1FastConfig
+ 1746              		.section	.text.TIM_OC2FastConfig,"ax",%progbits
+ 1747              		.align	2
+ 1748              		.global	TIM_OC2FastConfig
+ 1749              		.thumb
+ 1750              		.thumb_func
+ 1751              		.type	TIM_OC2FastConfig, %function
+ 1752              	TIM_OC2FastConfig:
+ 1753              		@ args = 0, pretend = 0, frame = 0
+ 1754              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1755              		@ link register save eliminated.
+ 1756 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1757 0002 23F48063 		bic	r3, r3, #1024	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1758 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1759 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1760 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr1, TIM_OCFast,
+ 1761 000e 8BB2     		uxth	r3, r1	@ tmpccmr1, tmp121
+ 1762 0010 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1763 0012 7047     		bx	lr	@
+ 1764              		.size	TIM_OC2FastConfig, .-TIM_OC2FastConfig
+ 1765              		.section	.text.TIM_OC3FastConfig,"ax",%progbits
+ 1766              		.align	2
+ 1767              		.global	TIM_OC3FastConfig
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 32
+
+
+ 1768              		.thumb
+ 1769              		.thumb_func
+ 1770              		.type	TIM_OC3FastConfig, %function
+ 1771              	TIM_OC3FastConfig:
+ 1772              		@ args = 0, pretend = 0, frame = 0
+ 1773              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1774              		@ link register save eliminated.
+ 1775 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1776 0002 23F00403 		bic	r3, r3, #4	@ tmpccmr2, TIMx_2(D)->CCMR2,
+ 1777 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1778 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1779 000a 1943     		orrs	r1, r1, r3	@, tmpccmr2, TIM_OCFast, tmpccmr2
+ 1780 000c 8183     		strh	r1, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1781 000e 7047     		bx	lr	@
+ 1782              		.size	TIM_OC3FastConfig, .-TIM_OC3FastConfig
+ 1783              		.section	.text.TIM_OC4FastConfig,"ax",%progbits
+ 1784              		.align	2
+ 1785              		.global	TIM_OC4FastConfig
+ 1786              		.thumb
+ 1787              		.thumb_func
+ 1788              		.type	TIM_OC4FastConfig, %function
+ 1789              	TIM_OC4FastConfig:
+ 1790              		@ args = 0, pretend = 0, frame = 0
+ 1791              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1792              		@ link register save eliminated.
+ 1793 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1794 0002 23F48063 		bic	r3, r3, #1024	@ tmpccmr2, TIMx_2(D)->CCMR2,
+ 1795 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1796 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1797 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr2, TIM_OCFast,
+ 1798 000e 8BB2     		uxth	r3, r1	@ tmpccmr2, tmp121
+ 1799 0010 8383     		strh	r3, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1800 0012 7047     		bx	lr	@
+ 1801              		.size	TIM_OC4FastConfig, .-TIM_OC4FastConfig
+ 1802              		.section	.text.TIM_ClearOC1Ref,"ax",%progbits
+ 1803              		.align	2
+ 1804              		.global	TIM_ClearOC1Ref
+ 1805              		.thumb
+ 1806              		.thumb_func
+ 1807              		.type	TIM_ClearOC1Ref, %function
+ 1808              	TIM_ClearOC1Ref:
+ 1809              		@ args = 0, pretend = 0, frame = 0
+ 1810              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1811              		@ link register save eliminated.
+ 1812 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1813 0002 23F08003 		bic	r3, r3, #128	@ tmpccmr1, TIMx_2(D)->CCMR1,
+ 1814 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1815 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr1, tmpccmr1,
+ 1816 000a 1943     		orrs	r1, r1, r3	@, tmpccmr1, TIM_OCClear, tmpccmr1
+ 1817 000c 0183     		strh	r1, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1818 000e 7047     		bx	lr	@
+ 1819              		.size	TIM_ClearOC1Ref, .-TIM_ClearOC1Ref
+ 1820              		.section	.text.TIM_ClearOC2Ref,"ax",%progbits
+ 1821              		.align	2
+ 1822              		.global	TIM_ClearOC2Ref
+ 1823              		.thumb
+ 1824              		.thumb_func
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 33
+
+
+ 1825              		.type	TIM_ClearOC2Ref, %function
+ 1826              	TIM_ClearOC2Ref:
+ 1827              		@ args = 0, pretend = 0, frame = 0
+ 1828              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1829              		@ link register save eliminated.
+ 1830 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 1831 0002 C3F30E03 		ubfx	r3, r3, #0, #15	@ tmpccmr1, TIMx_2(D)->CCMR1,,
+ 1832 0006 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr1, TIM_OCClear,
+ 1833 000a 8BB2     		uxth	r3, r1	@ tmpccmr1, tmp121
+ 1834 000c 0383     		strh	r3, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
+ 1835 000e 7047     		bx	lr	@
+ 1836              		.size	TIM_ClearOC2Ref, .-TIM_ClearOC2Ref
+ 1837              		.section	.text.TIM_ClearOC3Ref,"ax",%progbits
+ 1838              		.align	2
+ 1839              		.global	TIM_ClearOC3Ref
+ 1840              		.thumb
+ 1841              		.thumb_func
+ 1842              		.type	TIM_ClearOC3Ref, %function
+ 1843              	TIM_ClearOC3Ref:
+ 1844              		@ args = 0, pretend = 0, frame = 0
+ 1845              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1846              		@ link register save eliminated.
+ 1847 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1848 0002 23F08003 		bic	r3, r3, #128	@ tmpccmr2, TIMx_2(D)->CCMR2,
+ 1849 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1850 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
+ 1851 000a 1943     		orrs	r1, r1, r3	@, tmpccmr2, TIM_OCClear, tmpccmr2
+ 1852 000c 8183     		strh	r1, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1853 000e 7047     		bx	lr	@
+ 1854              		.size	TIM_ClearOC3Ref, .-TIM_ClearOC3Ref
+ 1855              		.section	.text.TIM_ClearOC4Ref,"ax",%progbits
+ 1856              		.align	2
+ 1857              		.global	TIM_ClearOC4Ref
+ 1858              		.thumb
+ 1859              		.thumb_func
+ 1860              		.type	TIM_ClearOC4Ref, %function
+ 1861              	TIM_ClearOC4Ref:
+ 1862              		@ args = 0, pretend = 0, frame = 0
+ 1863              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1864              		@ link register save eliminated.
+ 1865 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 1866 0002 C3F30E03 		ubfx	r3, r3, #0, #15	@ tmpccmr2, TIMx_2(D)->CCMR2,,
+ 1867 0006 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccmr2, TIM_OCClear,
+ 1868 000a 8BB2     		uxth	r3, r1	@ tmpccmr2, tmp121
+ 1869 000c 8383     		strh	r3, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
+ 1870 000e 7047     		bx	lr	@
+ 1871              		.size	TIM_ClearOC4Ref, .-TIM_ClearOC4Ref
+ 1872              		.section	.text.TIM_OC1PolarityConfig,"ax",%progbits
+ 1873              		.align	2
+ 1874              		.global	TIM_OC1PolarityConfig
+ 1875              		.thumb
+ 1876              		.thumb_func
+ 1877              		.type	TIM_OC1PolarityConfig, %function
+ 1878              	TIM_OC1PolarityConfig:
+ 1879              		@ args = 0, pretend = 0, frame = 0
+ 1880              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1881              		@ link register save eliminated.
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 34
+
+
+ 1882 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
+ 1883 0002 23F00203 		bic	r3, r3, #2	@ tmpccer, TIMx_2(D)->CCER,
+ 1884 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
+ 1885 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccer, tmpccer,
+ 1886 000a 1943     		orrs	r1, r1, r3	@, tmpccer, TIM_OCPolarity, tmpccer
+ 1887 000c 0184     		strh	r1, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 1888 000e 7047     		bx	lr	@
+ 1889              		.size	TIM_OC1PolarityConfig, .-TIM_OC1PolarityConfig
+ 1890              		.section	.text.TIM_OC1NPolarityConfig,"ax",%progbits
+ 1891              		.align	2
+ 1892              		.global	TIM_OC1NPolarityConfig
+ 1893              		.thumb
+ 1894              		.thumb_func
+ 1895              		.type	TIM_OC1NPolarityConfig, %function
+ 1896              	TIM_OC1NPolarityConfig:
+ 1897              		@ args = 0, pretend = 0, frame = 0
+ 1898              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1899              		@ link register save eliminated.
+ 1900 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
+ 1901 0002 23F00803 		bic	r3, r3, #8	@ tmpccer, TIMx_2(D)->CCER,
+ 1902 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
+ 1903 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccer, tmpccer,
+ 1904 000a 1943     		orrs	r1, r1, r3	@, tmpccer, TIM_OCNPolarity, tmpccer
+ 1905 000c 0184     		strh	r1, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 1906 000e 7047     		bx	lr	@
+ 1907              		.size	TIM_OC1NPolarityConfig, .-TIM_OC1NPolarityConfig
+ 1908              		.section	.text.TIM_OC2PolarityConfig,"ax",%progbits
+ 1909              		.align	2
+ 1910              		.global	TIM_OC2PolarityConfig
+ 1911              		.thumb
+ 1912              		.thumb_func
+ 1913              		.type	TIM_OC2PolarityConfig, %function
+ 1914              	TIM_OC2PolarityConfig:
+ 1915              		@ args = 0, pretend = 0, frame = 0
+ 1916              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1917              		@ link register save eliminated.
+ 1918 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
+ 1919 0002 23F02003 		bic	r3, r3, #32	@ tmpccer, TIMx_2(D)->CCER,
+ 1920 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
+ 1921 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccer, tmpccer,
+ 1922 000a 43EA0111 		orr	r1, r3, r1, lsl #4	@, tmp121, tmpccer, TIM_OCPolarity,
+ 1923 000e 8BB2     		uxth	r3, r1	@ tmpccer, tmp121
+ 1924 0010 0384     		strh	r3, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 1925 0012 7047     		bx	lr	@
+ 1926              		.size	TIM_OC2PolarityConfig, .-TIM_OC2PolarityConfig
+ 1927              		.section	.text.TIM_OC2NPolarityConfig,"ax",%progbits
+ 1928              		.align	2
+ 1929              		.global	TIM_OC2NPolarityConfig
+ 1930              		.thumb
+ 1931              		.thumb_func
+ 1932              		.type	TIM_OC2NPolarityConfig, %function
+ 1933              	TIM_OC2NPolarityConfig:
+ 1934              		@ args = 0, pretend = 0, frame = 0
+ 1935              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1936              		@ link register save eliminated.
+ 1937 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
+ 1938 0002 23F08003 		bic	r3, r3, #128	@ tmpccer, TIMx_2(D)->CCER,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 35
+
+
+ 1939 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
+ 1940 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccer, tmpccer,
+ 1941 000a 43EA0111 		orr	r1, r3, r1, lsl #4	@, tmp121, tmpccer, TIM_OCNPolarity,
+ 1942 000e 8BB2     		uxth	r3, r1	@ tmpccer, tmp121
+ 1943 0010 0384     		strh	r3, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 1944 0012 7047     		bx	lr	@
+ 1945              		.size	TIM_OC2NPolarityConfig, .-TIM_OC2NPolarityConfig
+ 1946              		.section	.text.TIM_OC3PolarityConfig,"ax",%progbits
+ 1947              		.align	2
+ 1948              		.global	TIM_OC3PolarityConfig
+ 1949              		.thumb
+ 1950              		.thumb_func
+ 1951              		.type	TIM_OC3PolarityConfig, %function
+ 1952              	TIM_OC3PolarityConfig:
+ 1953              		@ args = 0, pretend = 0, frame = 0
+ 1954              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1955              		@ link register save eliminated.
+ 1956 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
+ 1957 0002 23F40073 		bic	r3, r3, #512	@ tmpccer, TIMx_2(D)->CCER,
+ 1958 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
+ 1959 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccer, tmpccer,
+ 1960 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccer, TIM_OCPolarity,
+ 1961 000e 8BB2     		uxth	r3, r1	@ tmpccer, tmp121
+ 1962 0010 0384     		strh	r3, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 1963 0012 7047     		bx	lr	@
+ 1964              		.size	TIM_OC3PolarityConfig, .-TIM_OC3PolarityConfig
+ 1965              		.section	.text.TIM_OC3NPolarityConfig,"ax",%progbits
+ 1966              		.align	2
+ 1967              		.global	TIM_OC3NPolarityConfig
+ 1968              		.thumb
+ 1969              		.thumb_func
+ 1970              		.type	TIM_OC3NPolarityConfig, %function
+ 1971              	TIM_OC3NPolarityConfig:
+ 1972              		@ args = 0, pretend = 0, frame = 0
+ 1973              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1974              		@ link register save eliminated.
+ 1975 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
+ 1976 0002 23F40063 		bic	r3, r3, #2048	@ tmpccer, TIMx_2(D)->CCER,
+ 1977 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
+ 1978 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccer, tmpccer,
+ 1979 000a 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp121, tmpccer, TIM_OCNPolarity,
+ 1980 000e 8BB2     		uxth	r3, r1	@ tmpccer, tmp121
+ 1981 0010 0384     		strh	r3, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 1982 0012 7047     		bx	lr	@
+ 1983              		.size	TIM_OC3NPolarityConfig, .-TIM_OC3NPolarityConfig
+ 1984              		.section	.text.TIM_OC4PolarityConfig,"ax",%progbits
+ 1985              		.align	2
+ 1986              		.global	TIM_OC4PolarityConfig
+ 1987              		.thumb
+ 1988              		.thumb_func
+ 1989              		.type	TIM_OC4PolarityConfig, %function
+ 1990              	TIM_OC4PolarityConfig:
+ 1991              		@ args = 0, pretend = 0, frame = 0
+ 1992              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1993              		@ link register save eliminated.
+ 1994 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
+ 1995 0002 23F40053 		bic	r3, r3, #8192	@ tmpccer, TIMx_2(D)->CCER,
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 36
+
+
+ 1996 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
+ 1997 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccer, tmpccer,
+ 1998 000a 43EA0131 		orr	r1, r3, r1, lsl #12	@, tmp121, tmpccer, TIM_OCPolarity,
+ 1999 000e 8BB2     		uxth	r3, r1	@ tmpccer, tmp121
+ 2000 0010 0384     		strh	r3, [r0, #32]	@ movhi	@ tmpccer, TIMx_2(D)->CCER
+ 2001 0012 7047     		bx	lr	@
+ 2002              		.size	TIM_OC4PolarityConfig, .-TIM_OC4PolarityConfig
+ 2003              		.section	.text.TIM_CCxCmd,"ax",%progbits
+ 2004              		.align	2
+ 2005              		.global	TIM_CCxCmd
+ 2006              		.thumb
+ 2007              		.thumb_func
+ 2008              		.type	TIM_CCxCmd, %function
+ 2009              	TIM_CCxCmd:
+ 2010              		@ args = 0, pretend = 0, frame = 0
+ 2011              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2012              		@ link register save eliminated.
+ 2013 0000 0123     		movs	r3, #1	@ tmp127,
+ 2014 0002 8B40     		lsls	r3, r3, r1	@ D.7901, tmp127, TIM_Channel
+ 2015 0004 8A40     		lsls	r2, r2, r1	@ D.7901, TIM_CCx, TIM_Channel
+ 2016 0006 018C     		ldrh	r1, [r0, #32]	@, TIMx_6(D)->CCER
+ 2017 0008 89B2     		uxth	r1, r1	@ D.7902, TIMx_6(D)->CCER
+ 2018 000a 21EA0303 		bic	r3, r1, r3	@ D.7902, D.7902, D.7901
+ 2019 000e 0384     		strh	r3, [r0, #32]	@ movhi	@ D.7902, TIMx_6(D)->CCER
+ 2020 0010 018C     		ldrh	r1, [r0, #32]	@, TIMx_6(D)->CCER
+ 2021 0012 0A43     		orrs	r2, r2, r1	@, tmp137, D.7901, TIMx_6(D)->CCER
+ 2022 0014 92B2     		uxth	r2, r2	@ D.7902, tmp137
+ 2023 0016 0284     		strh	r2, [r0, #32]	@ movhi	@ D.7902, TIMx_6(D)->CCER
+ 2024 0018 7047     		bx	lr	@
+ 2025              		.size	TIM_CCxCmd, .-TIM_CCxCmd
+ 2026 001a 00BF     		.section	.text.TIM_CCxNCmd,"ax",%progbits
+ 2027              		.align	2
+ 2028              		.global	TIM_CCxNCmd
+ 2029              		.thumb
+ 2030              		.thumb_func
+ 2031              		.type	TIM_CCxNCmd, %function
+ 2032              	TIM_CCxNCmd:
+ 2033              		@ args = 0, pretend = 0, frame = 0
+ 2034              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2035              		@ link register save eliminated.
+ 2036 0000 0423     		movs	r3, #4	@ tmp127,
+ 2037 0002 8B40     		lsls	r3, r3, r1	@ D.7905, tmp127, TIM_Channel
+ 2038 0004 8A40     		lsls	r2, r2, r1	@ D.7905, TIM_CCxN, TIM_Channel
+ 2039 0006 018C     		ldrh	r1, [r0, #32]	@, TIMx_6(D)->CCER
+ 2040 0008 89B2     		uxth	r1, r1	@ D.7906, TIMx_6(D)->CCER
+ 2041 000a 21EA0303 		bic	r3, r1, r3	@ D.7906, D.7906, D.7905
+ 2042 000e 0384     		strh	r3, [r0, #32]	@ movhi	@ D.7906, TIMx_6(D)->CCER
+ 2043 0010 018C     		ldrh	r1, [r0, #32]	@, TIMx_6(D)->CCER
+ 2044 0012 0A43     		orrs	r2, r2, r1	@, tmp137, D.7905, TIMx_6(D)->CCER
+ 2045 0014 92B2     		uxth	r2, r2	@ D.7906, tmp137
+ 2046 0016 0284     		strh	r2, [r0, #32]	@ movhi	@ D.7906, TIMx_6(D)->CCER
+ 2047 0018 7047     		bx	lr	@
+ 2048              		.size	TIM_CCxNCmd, .-TIM_CCxNCmd
+ 2049 001a 00BF     		.section	.text.TIM_SelectOCxM,"ax",%progbits
+ 2050              		.align	2
+ 2051              		.global	TIM_SelectOCxM
+ 2052              		.thumb
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 37
+
+
+ 2053              		.thumb_func
+ 2054              		.type	TIM_SelectOCxM, %function
+ 2055              	TIM_SelectOCxM:
+ 2056              		@ args = 0, pretend = 0, frame = 0
+ 2057              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2058              		@ link register save eliminated.
+ 2059 0000 0123     		movs	r3, #1	@ tmp145,
+ 2060 0002 8B40     		lsls	r3, r3, r1	@ D.7909, tmp145, TIM_Channel
+ 2061 0004 30B4     		push	{r4, r5}	@
+ 2062 0006 058C     		ldrh	r5, [r0, #32]	@, TIMx_2(D)->CCER
+ 2063 0008 21F00804 		bic	r4, r1, #8	@ tmp151, TIM_Channel,
+ 2064 000c ADB2     		uxth	r5, r5	@ D.7910, TIMx_2(D)->CCER
+ 2065 000e 25EA0303 		bic	r3, r5, r3	@ D.7910, D.7910, D.7909
+ 2066 0012 0384     		strh	r3, [r0, #32]	@ movhi	@ D.7910, TIMx_2(D)->CCER
+ 2067 0014 1830     		adds	r0, r0, #24	@ tmp, TIMx,
+ 2068 0016 6CB1     		cbz	r4, .L201	@ tmp151,
+ 2069 0018 0439     		subs	r1, r1, #4	@ tmp156, TIM_Channel,
+ 2070 001a C1F34E01 		ubfx	r1, r1, #1, #15	@ D.7911, tmp156,,
+ 2071 001e 0B58     		ldr	r3, [r1, r0]	@ D.7911, *tmp.0_18
+ 2072 0020 1202     		lsls	r2, r2, #8	@ tmp160, TIM_OCMode,
+ 2073 0022 23F4E043 		bic	r3, r3, #28672	@ D.7911, D.7911,
+ 2074 0026 0B50     		str	r3, [r1, r0]	@ D.7911, *tmp.0_18
+ 2075 0028 0B58     		ldr	r3, [r1, r0]	@ D.7911, *tmp.0_18
+ 2076 002a 92B2     		uxth	r2, r2	@ D.7911, tmp160
+ 2077 002c 1A43     		orrs	r2, r2, r3	@, D.7911, D.7911, D.7911
+ 2078 002e 0A50     		str	r2, [r1, r0]	@ D.7911,* tmp
+ 2079 0030 30BC     		pop	{r4, r5}	@
+ 2080 0032 7047     		bx	lr	@
+ 2081              	.L201:
+ 2082 0034 4908     		lsrs	r1, r1, #1	@ D.7911, TIM_Channel,
+ 2083 0036 4358     		ldr	r3, [r0, r1]	@ D.7911, *tmp.0_31
+ 2084 0038 30BC     		pop	{r4, r5}	@
+ 2085 003a 23F07003 		bic	r3, r3, #112	@ D.7911, D.7911,
+ 2086 003e 4350     		str	r3, [r0, r1]	@ D.7911, *tmp.0_31
+ 2087 0040 4358     		ldr	r3, [r0, r1]	@ D.7911, *tmp.0_31
+ 2088 0042 1A43     		orrs	r2, r2, r3	@, D.7911, TIM_OCMode, D.7911
+ 2089 0044 4250     		str	r2, [r0, r1]	@ D.7911,* D.7911
+ 2090 0046 7047     		bx	lr	@
+ 2091              		.size	TIM_SelectOCxM, .-TIM_SelectOCxM
+ 2092              		.section	.text.TIM_UpdateDisableConfig,"ax",%progbits
+ 2093              		.align	2
+ 2094              		.global	TIM_UpdateDisableConfig
+ 2095              		.thumb
+ 2096              		.thumb_func
+ 2097              		.type	TIM_UpdateDisableConfig, %function
+ 2098              	TIM_UpdateDisableConfig:
+ 2099              		@ args = 0, pretend = 0, frame = 0
+ 2100              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2101              		@ link register save eliminated.
+ 2102 0000 0388     		ldrh	r3, [r0]	@,* TIMx
+ 2103 0002 29B9     		cbnz	r1, .L205	@ NewState,
+ 2104 0004 23F00203 		bic	r3, r3, #2	@ D.7914, TIMx_4(D)->CR1,
+ 2105 0008 1B04     		lsls	r3, r3, #16	@ D.7914, D.7914,
+ 2106 000a 1B0C     		lsrs	r3, r3, #16	@ D.7914, D.7914,
+ 2107 000c 0380     		strh	r3, [r0]	@ movhi	@ D.7914,* TIMx
+ 2108 000e 7047     		bx	lr	@
+ 2109              	.L205:
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 38
+
+
+ 2110 0010 9BB2     		uxth	r3, r3	@ D.7914, TIMx_4(D)->CR1
+ 2111 0012 43F00203 		orr	r3, r3, #2	@ D.7914, D.7914,
+ 2112 0016 0380     		strh	r3, [r0]	@ movhi	@ D.7914,* TIMx
+ 2113 0018 7047     		bx	lr	@
+ 2114              		.size	TIM_UpdateDisableConfig, .-TIM_UpdateDisableConfig
+ 2115 001a 00BF     		.section	.text.TIM_UpdateRequestConfig,"ax",%progbits
+ 2116              		.align	2
+ 2117              		.global	TIM_UpdateRequestConfig
+ 2118              		.thumb
+ 2119              		.thumb_func
+ 2120              		.type	TIM_UpdateRequestConfig, %function
+ 2121              	TIM_UpdateRequestConfig:
+ 2122              		@ args = 0, pretend = 0, frame = 0
+ 2123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2124              		@ link register save eliminated.
+ 2125 0000 0388     		ldrh	r3, [r0]	@,* TIMx
+ 2126 0002 29B9     		cbnz	r1, .L209	@ TIM_UpdateSource,
+ 2127 0004 23F00403 		bic	r3, r3, #4	@ D.7917, TIMx_4(D)->CR1,
+ 2128 0008 1B04     		lsls	r3, r3, #16	@ D.7917, D.7917,
+ 2129 000a 1B0C     		lsrs	r3, r3, #16	@ D.7917, D.7917,
+ 2130 000c 0380     		strh	r3, [r0]	@ movhi	@ D.7917,* TIMx
+ 2131 000e 7047     		bx	lr	@
+ 2132              	.L209:
+ 2133 0010 9BB2     		uxth	r3, r3	@ D.7917, TIMx_4(D)->CR1
+ 2134 0012 43F00403 		orr	r3, r3, #4	@ D.7917, D.7917,
+ 2135 0016 0380     		strh	r3, [r0]	@ movhi	@ D.7917,* TIMx
+ 2136 0018 7047     		bx	lr	@
+ 2137              		.size	TIM_UpdateRequestConfig, .-TIM_UpdateRequestConfig
+ 2138 001a 00BF     		.section	.text.TIM_SelectHallSensor,"ax",%progbits
+ 2139              		.align	2
+ 2140              		.global	TIM_SelectHallSensor
+ 2141              		.thumb
+ 2142              		.thumb_func
+ 2143              		.type	TIM_SelectHallSensor, %function
+ 2144              	TIM_SelectHallSensor:
+ 2145              		@ args = 0, pretend = 0, frame = 0
+ 2146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2147              		@ link register save eliminated.
+ 2148 0000 8388     		ldrh	r3, [r0, #4]	@,
+ 2149 0002 29B9     		cbnz	r1, .L213	@ NewState,
+ 2150 0004 23F08003 		bic	r3, r3, #128	@ D.7920, TIMx_4(D)->CR2,
+ 2151 0008 1B04     		lsls	r3, r3, #16	@ D.7920, D.7920,
+ 2152 000a 1B0C     		lsrs	r3, r3, #16	@ D.7920, D.7920,
+ 2153 000c 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7920,
+ 2154 000e 7047     		bx	lr	@
+ 2155              	.L213:
+ 2156 0010 9BB2     		uxth	r3, r3	@ D.7920, TIMx_4(D)->CR2
+ 2157 0012 43F08003 		orr	r3, r3, #128	@ D.7920, D.7920,
+ 2158 0016 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7920,
+ 2159 0018 7047     		bx	lr	@
+ 2160              		.size	TIM_SelectHallSensor, .-TIM_SelectHallSensor
+ 2161 001a 00BF     		.section	.text.TIM_SelectOnePulseMode,"ax",%progbits
+ 2162              		.align	2
+ 2163              		.global	TIM_SelectOnePulseMode
+ 2164              		.thumb
+ 2165              		.thumb_func
+ 2166              		.type	TIM_SelectOnePulseMode, %function
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 39
+
+
+ 2167              	TIM_SelectOnePulseMode:
+ 2168              		@ args = 0, pretend = 0, frame = 0
+ 2169              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2170              		@ link register save eliminated.
+ 2171 0000 0388     		ldrh	r3, [r0]	@, TIMx_2(D)->CR1
+ 2172 0002 23F00803 		bic	r3, r3, #8	@ D.7923, TIMx_2(D)->CR1,
+ 2173 0006 1B04     		lsls	r3, r3, #16	@ D.7923, D.7923,
+ 2174 0008 1B0C     		lsrs	r3, r3, #16	@ D.7923, D.7923,
+ 2175 000a 0380     		strh	r3, [r0]	@ movhi	@ D.7923, TIMx_2(D)->CR1
+ 2176 000c 0388     		ldrh	r3, [r0]	@, TIMx_2(D)->CR1
+ 2177 000e 9BB2     		uxth	r3, r3	@ D.7923, TIMx_2(D)->CR1
+ 2178 0010 1943     		orrs	r1, r1, r3	@, D.7923, TIM_OPMode, D.7923
+ 2179 0012 0180     		strh	r1, [r0]	@ movhi	@ D.7923, TIMx_2(D)->CR1
+ 2180 0014 7047     		bx	lr	@
+ 2181              		.size	TIM_SelectOnePulseMode, .-TIM_SelectOnePulseMode
+ 2182 0016 00BF     		.section	.text.TIM_SelectOutputTrigger,"ax",%progbits
+ 2183              		.align	2
+ 2184              		.global	TIM_SelectOutputTrigger
+ 2185              		.thumb
+ 2186              		.thumb_func
+ 2187              		.type	TIM_SelectOutputTrigger, %function
+ 2188              	TIM_SelectOutputTrigger:
+ 2189              		@ args = 0, pretend = 0, frame = 0
+ 2190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2191              		@ link register save eliminated.
+ 2192 0000 8388     		ldrh	r3, [r0, #4]	@, TIMx_2(D)->CR2
+ 2193 0002 23F07003 		bic	r3, r3, #112	@ D.7926, TIMx_2(D)->CR2,
+ 2194 0006 1B04     		lsls	r3, r3, #16	@ D.7926, D.7926,
+ 2195 0008 1B0C     		lsrs	r3, r3, #16	@ D.7926, D.7926,
+ 2196 000a 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7926, TIMx_2(D)->CR2
+ 2197 000c 8388     		ldrh	r3, [r0, #4]	@, TIMx_2(D)->CR2
+ 2198 000e 9BB2     		uxth	r3, r3	@ D.7926, TIMx_2(D)->CR2
+ 2199 0010 1943     		orrs	r1, r1, r3	@, D.7926, TIM_TRGOSource, D.7926
+ 2200 0012 8180     		strh	r1, [r0, #4]	@ movhi	@ D.7926, TIMx_2(D)->CR2
+ 2201 0014 7047     		bx	lr	@
+ 2202              		.size	TIM_SelectOutputTrigger, .-TIM_SelectOutputTrigger
+ 2203 0016 00BF     		.section	.text.TIM_SelectSlaveMode,"ax",%progbits
+ 2204              		.align	2
+ 2205              		.global	TIM_SelectSlaveMode
+ 2206              		.thumb
+ 2207              		.thumb_func
+ 2208              		.type	TIM_SelectSlaveMode, %function
+ 2209              	TIM_SelectSlaveMode:
+ 2210              		@ args = 0, pretend = 0, frame = 0
+ 2211              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2212              		@ link register save eliminated.
+ 2213 0000 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 2214 0002 23F00703 		bic	r3, r3, #7	@ D.7929, TIMx_2(D)->SMCR,
+ 2215 0006 1B04     		lsls	r3, r3, #16	@ D.7929, D.7929,
+ 2216 0008 1B0C     		lsrs	r3, r3, #16	@ D.7929, D.7929,
+ 2217 000a 0381     		strh	r3, [r0, #8]	@ movhi	@ D.7929, TIMx_2(D)->SMCR
+ 2218 000c 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 2219 000e 9BB2     		uxth	r3, r3	@ D.7929, TIMx_2(D)->SMCR
+ 2220 0010 1943     		orrs	r1, r1, r3	@, D.7929, TIM_SlaveMode, D.7929
+ 2221 0012 0181     		strh	r1, [r0, #8]	@ movhi	@ D.7929, TIMx_2(D)->SMCR
+ 2222 0014 7047     		bx	lr	@
+ 2223              		.size	TIM_SelectSlaveMode, .-TIM_SelectSlaveMode
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 40
+
+
+ 2224 0016 00BF     		.section	.text.TIM_SelectMasterSlaveMode,"ax",%progbits
+ 2225              		.align	2
+ 2226              		.global	TIM_SelectMasterSlaveMode
+ 2227              		.thumb
+ 2228              		.thumb_func
+ 2229              		.type	TIM_SelectMasterSlaveMode, %function
+ 2230              	TIM_SelectMasterSlaveMode:
+ 2231              		@ args = 0, pretend = 0, frame = 0
+ 2232              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2233              		@ link register save eliminated.
+ 2234 0000 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 2235 0002 23F08003 		bic	r3, r3, #128	@ D.7932, TIMx_2(D)->SMCR,
+ 2236 0006 1B04     		lsls	r3, r3, #16	@ D.7932, D.7932,
+ 2237 0008 1B0C     		lsrs	r3, r3, #16	@ D.7932, D.7932,
+ 2238 000a 0381     		strh	r3, [r0, #8]	@ movhi	@ D.7932, TIMx_2(D)->SMCR
+ 2239 000c 0389     		ldrh	r3, [r0, #8]	@, TIMx_2(D)->SMCR
+ 2240 000e 9BB2     		uxth	r3, r3	@ D.7932, TIMx_2(D)->SMCR
+ 2241 0010 1943     		orrs	r1, r1, r3	@, D.7932, TIM_MasterSlaveMode, D.7932
+ 2242 0012 0181     		strh	r1, [r0, #8]	@ movhi	@ D.7932, TIMx_2(D)->SMCR
+ 2243 0014 7047     		bx	lr	@
+ 2244              		.size	TIM_SelectMasterSlaveMode, .-TIM_SelectMasterSlaveMode
+ 2245 0016 00BF     		.section	.text.TIM_SetCounter,"ax",%progbits
+ 2246              		.align	2
+ 2247              		.global	TIM_SetCounter
+ 2248              		.thumb
+ 2249              		.thumb_func
+ 2250              		.type	TIM_SetCounter, %function
+ 2251              	TIM_SetCounter:
+ 2252              		@ args = 0, pretend = 0, frame = 0
+ 2253              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2254              		@ link register save eliminated.
+ 2255 0000 8184     		strh	r1, [r0, #36]	@ movhi	@ Counter, TIMx_2(D)->CNT
+ 2256 0002 7047     		bx	lr	@
+ 2257              		.size	TIM_SetCounter, .-TIM_SetCounter
+ 2258              		.section	.text.TIM_SetAutoreload,"ax",%progbits
+ 2259              		.align	2
+ 2260              		.global	TIM_SetAutoreload
+ 2261              		.thumb
+ 2262              		.thumb_func
+ 2263              		.type	TIM_SetAutoreload, %function
+ 2264              	TIM_SetAutoreload:
+ 2265              		@ args = 0, pretend = 0, frame = 0
+ 2266              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2267              		@ link register save eliminated.
+ 2268 0000 8185     		strh	r1, [r0, #44]	@ movhi	@ Autoreload, TIMx_2(D)->ARR
+ 2269 0002 7047     		bx	lr	@
+ 2270              		.size	TIM_SetAutoreload, .-TIM_SetAutoreload
+ 2271              		.section	.text.TIM_SetCompare1,"ax",%progbits
+ 2272              		.align	2
+ 2273              		.global	TIM_SetCompare1
+ 2274              		.thumb
+ 2275              		.thumb_func
+ 2276              		.type	TIM_SetCompare1, %function
+ 2277              	TIM_SetCompare1:
+ 2278              		@ args = 0, pretend = 0, frame = 0
+ 2279              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2280              		@ link register save eliminated.
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 41
+
+
+ 2281 0000 8186     		strh	r1, [r0, #52]	@ movhi	@ Compare1, TIMx_2(D)->CCR1
+ 2282 0002 7047     		bx	lr	@
+ 2283              		.size	TIM_SetCompare1, .-TIM_SetCompare1
+ 2284              		.section	.text.TIM_SetCompare2,"ax",%progbits
+ 2285              		.align	2
+ 2286              		.global	TIM_SetCompare2
+ 2287              		.thumb
+ 2288              		.thumb_func
+ 2289              		.type	TIM_SetCompare2, %function
+ 2290              	TIM_SetCompare2:
+ 2291              		@ args = 0, pretend = 0, frame = 0
+ 2292              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2293              		@ link register save eliminated.
+ 2294 0000 0187     		strh	r1, [r0, #56]	@ movhi	@ Compare2, TIMx_2(D)->CCR2
+ 2295 0002 7047     		bx	lr	@
+ 2296              		.size	TIM_SetCompare2, .-TIM_SetCompare2
+ 2297              		.section	.text.TIM_SetCompare3,"ax",%progbits
+ 2298              		.align	2
+ 2299              		.global	TIM_SetCompare3
+ 2300              		.thumb
+ 2301              		.thumb_func
+ 2302              		.type	TIM_SetCompare3, %function
+ 2303              	TIM_SetCompare3:
+ 2304              		@ args = 0, pretend = 0, frame = 0
+ 2305              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2306              		@ link register save eliminated.
+ 2307 0000 8187     		strh	r1, [r0, #60]	@ movhi	@ Compare3, TIMx_2(D)->CCR3
+ 2308 0002 7047     		bx	lr	@
+ 2309              		.size	TIM_SetCompare3, .-TIM_SetCompare3
+ 2310              		.section	.text.TIM_SetCompare4,"ax",%progbits
+ 2311              		.align	2
+ 2312              		.global	TIM_SetCompare4
+ 2313              		.thumb
+ 2314              		.thumb_func
+ 2315              		.type	TIM_SetCompare4, %function
+ 2316              	TIM_SetCompare4:
+ 2317              		@ args = 0, pretend = 0, frame = 0
+ 2318              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2319              		@ link register save eliminated.
+ 2320 0000 A0F84010 		strh	r1, [r0, #64]	@ movhi	@ Compare4, TIMx_2(D)->CCR4
+ 2321 0004 7047     		bx	lr	@
+ 2322              		.size	TIM_SetCompare4, .-TIM_SetCompare4
+ 2323 0006 00BF     		.section	.text.TIM_SetIC1Prescaler,"ax",%progbits
+ 2324              		.align	2
+ 2325              		.global	TIM_SetIC1Prescaler
+ 2326              		.thumb
+ 2327              		.thumb_func
+ 2328              		.type	TIM_SetIC1Prescaler, %function
+ 2329              	TIM_SetIC1Prescaler:
+ 2330              		@ args = 0, pretend = 0, frame = 0
+ 2331              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2332              		@ link register save eliminated.
+ 2333 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 2334 0002 23F00C03 		bic	r3, r3, #12	@ D.7947, TIMx_2(D)->CCMR1,
+ 2335 0006 1B04     		lsls	r3, r3, #16	@ D.7947, D.7947,
+ 2336 0008 1B0C     		lsrs	r3, r3, #16	@ D.7947, D.7947,
+ 2337 000a 0383     		strh	r3, [r0, #24]	@ movhi	@ D.7947, TIMx_2(D)->CCMR1
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 42
+
+
+ 2338 000c 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 2339 000e 9BB2     		uxth	r3, r3	@ D.7947, TIMx_2(D)->CCMR1
+ 2340 0010 1943     		orrs	r1, r1, r3	@, D.7947, TIM_ICPSC, D.7947
+ 2341 0012 0183     		strh	r1, [r0, #24]	@ movhi	@ D.7947, TIMx_2(D)->CCMR1
+ 2342 0014 7047     		bx	lr	@
+ 2343              		.size	TIM_SetIC1Prescaler, .-TIM_SetIC1Prescaler
+ 2344 0016 00BF     		.section	.text.TIM_SetIC2Prescaler,"ax",%progbits
+ 2345              		.align	2
+ 2346              		.global	TIM_SetIC2Prescaler
+ 2347              		.thumb
+ 2348              		.thumb_func
+ 2349              		.type	TIM_SetIC2Prescaler, %function
+ 2350              	TIM_SetIC2Prescaler:
+ 2351              		@ args = 0, pretend = 0, frame = 0
+ 2352              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2353              		@ link register save eliminated.
+ 2354 0000 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 2355 0002 23F44063 		bic	r3, r3, #3072	@ D.7950, TIMx_2(D)->CCMR1,
+ 2356 0006 1B04     		lsls	r3, r3, #16	@ D.7950, D.7950,
+ 2357 0008 1B0C     		lsrs	r3, r3, #16	@ D.7950, D.7950,
+ 2358 000a 0383     		strh	r3, [r0, #24]	@ movhi	@ D.7950, TIMx_2(D)->CCMR1
+ 2359 000c 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
+ 2360 000e 9BB2     		uxth	r3, r3	@ D.7950, TIMx_2(D)->CCMR1
+ 2361 0010 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp125, D.7950, TIM_ICPSC,
+ 2362 0014 8BB2     		uxth	r3, r1	@ D.7950, tmp125
+ 2363 0016 0383     		strh	r3, [r0, #24]	@ movhi	@ D.7950, TIMx_2(D)->CCMR1
+ 2364 0018 7047     		bx	lr	@
+ 2365              		.size	TIM_SetIC2Prescaler, .-TIM_SetIC2Prescaler
+ 2366 001a 00BF     		.section	.text.TIM_SetIC3Prescaler,"ax",%progbits
+ 2367              		.align	2
+ 2368              		.global	TIM_SetIC3Prescaler
+ 2369              		.thumb
+ 2370              		.thumb_func
+ 2371              		.type	TIM_SetIC3Prescaler, %function
+ 2372              	TIM_SetIC3Prescaler:
+ 2373              		@ args = 0, pretend = 0, frame = 0
+ 2374              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2375              		@ link register save eliminated.
+ 2376 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 2377 0002 23F00C03 		bic	r3, r3, #12	@ D.7953, TIMx_2(D)->CCMR2,
+ 2378 0006 1B04     		lsls	r3, r3, #16	@ D.7953, D.7953,
+ 2379 0008 1B0C     		lsrs	r3, r3, #16	@ D.7953, D.7953,
+ 2380 000a 8383     		strh	r3, [r0, #28]	@ movhi	@ D.7953, TIMx_2(D)->CCMR2
+ 2381 000c 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 2382 000e 9BB2     		uxth	r3, r3	@ D.7953, TIMx_2(D)->CCMR2
+ 2383 0010 1943     		orrs	r1, r1, r3	@, D.7953, TIM_ICPSC, D.7953
+ 2384 0012 8183     		strh	r1, [r0, #28]	@ movhi	@ D.7953, TIMx_2(D)->CCMR2
+ 2385 0014 7047     		bx	lr	@
+ 2386              		.size	TIM_SetIC3Prescaler, .-TIM_SetIC3Prescaler
+ 2387 0016 00BF     		.section	.text.TIM_SetIC4Prescaler,"ax",%progbits
+ 2388              		.align	2
+ 2389              		.global	TIM_SetIC4Prescaler
+ 2390              		.thumb
+ 2391              		.thumb_func
+ 2392              		.type	TIM_SetIC4Prescaler, %function
+ 2393              	TIM_SetIC4Prescaler:
+ 2394              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 43
+
+
+ 2395              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2396              		@ link register save eliminated.
+ 2397 0000 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 2398 0002 23F44063 		bic	r3, r3, #3072	@ D.7956, TIMx_2(D)->CCMR2,
+ 2399 0006 1B04     		lsls	r3, r3, #16	@ D.7956, D.7956,
+ 2400 0008 1B0C     		lsrs	r3, r3, #16	@ D.7956, D.7956,
+ 2401 000a 8383     		strh	r3, [r0, #28]	@ movhi	@ D.7956, TIMx_2(D)->CCMR2
+ 2402 000c 838B     		ldrh	r3, [r0, #28]	@, TIMx_2(D)->CCMR2
+ 2403 000e 9BB2     		uxth	r3, r3	@ D.7956, TIMx_2(D)->CCMR2
+ 2404 0010 43EA0121 		orr	r1, r3, r1, lsl #8	@, tmp125, D.7956, TIM_ICPSC,
+ 2405 0014 8BB2     		uxth	r3, r1	@ D.7956, tmp125
+ 2406 0016 8383     		strh	r3, [r0, #28]	@ movhi	@ D.7956, TIMx_2(D)->CCMR2
+ 2407 0018 7047     		bx	lr	@
+ 2408              		.size	TIM_SetIC4Prescaler, .-TIM_SetIC4Prescaler
+ 2409 001a 00BF     		.section	.text.TIM_SetClockDivision,"ax",%progbits
+ 2410              		.align	2
+ 2411              		.global	TIM_SetClockDivision
+ 2412              		.thumb
+ 2413              		.thumb_func
+ 2414              		.type	TIM_SetClockDivision, %function
+ 2415              	TIM_SetClockDivision:
+ 2416              		@ args = 0, pretend = 0, frame = 0
+ 2417              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2418              		@ link register save eliminated.
+ 2419 0000 0388     		ldrh	r3, [r0]	@, TIMx_2(D)->CR1
+ 2420 0002 23F44073 		bic	r3, r3, #768	@ D.7959, TIMx_2(D)->CR1,
+ 2421 0006 1B04     		lsls	r3, r3, #16	@ D.7959, D.7959,
+ 2422 0008 1B0C     		lsrs	r3, r3, #16	@ D.7959, D.7959,
+ 2423 000a 0380     		strh	r3, [r0]	@ movhi	@ D.7959, TIMx_2(D)->CR1
+ 2424 000c 0388     		ldrh	r3, [r0]	@, TIMx_2(D)->CR1
+ 2425 000e 9BB2     		uxth	r3, r3	@ D.7959, TIMx_2(D)->CR1
+ 2426 0010 1943     		orrs	r1, r1, r3	@, D.7959, TIM_CKD, D.7959
+ 2427 0012 0180     		strh	r1, [r0]	@ movhi	@ D.7959, TIMx_2(D)->CR1
+ 2428 0014 7047     		bx	lr	@
+ 2429              		.size	TIM_SetClockDivision, .-TIM_SetClockDivision
+ 2430 0016 00BF     		.section	.text.TIM_GetCapture1,"ax",%progbits
+ 2431              		.align	2
+ 2432              		.global	TIM_GetCapture1
+ 2433              		.thumb
+ 2434              		.thumb_func
+ 2435              		.type	TIM_GetCapture1, %function
+ 2436              	TIM_GetCapture1:
+ 2437              		@ args = 0, pretend = 0, frame = 0
+ 2438              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2439              		@ link register save eliminated.
+ 2440 0000 808E     		ldrh	r0, [r0, #52]	@, TIMx_2(D)->CCR1
+ 2441 0002 80B2     		uxth	r0, r0	@, TIMx_2(D)->CCR1
+ 2442 0004 7047     		bx	lr	@
+ 2443              		.size	TIM_GetCapture1, .-TIM_GetCapture1
+ 2444 0006 00BF     		.section	.text.TIM_GetCapture2,"ax",%progbits
+ 2445              		.align	2
+ 2446              		.global	TIM_GetCapture2
+ 2447              		.thumb
+ 2448              		.thumb_func
+ 2449              		.type	TIM_GetCapture2, %function
+ 2450              	TIM_GetCapture2:
+ 2451              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 44
+
+
+ 2452              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2453              		@ link register save eliminated.
+ 2454 0000 008F     		ldrh	r0, [r0, #56]	@, TIMx_2(D)->CCR2
+ 2455 0002 80B2     		uxth	r0, r0	@, TIMx_2(D)->CCR2
+ 2456 0004 7047     		bx	lr	@
+ 2457              		.size	TIM_GetCapture2, .-TIM_GetCapture2
+ 2458 0006 00BF     		.section	.text.TIM_GetCapture3,"ax",%progbits
+ 2459              		.align	2
+ 2460              		.global	TIM_GetCapture3
+ 2461              		.thumb
+ 2462              		.thumb_func
+ 2463              		.type	TIM_GetCapture3, %function
+ 2464              	TIM_GetCapture3:
+ 2465              		@ args = 0, pretend = 0, frame = 0
+ 2466              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2467              		@ link register save eliminated.
+ 2468 0000 808F     		ldrh	r0, [r0, #60]	@, TIMx_2(D)->CCR3
+ 2469 0002 80B2     		uxth	r0, r0	@, TIMx_2(D)->CCR3
+ 2470 0004 7047     		bx	lr	@
+ 2471              		.size	TIM_GetCapture3, .-TIM_GetCapture3
+ 2472 0006 00BF     		.section	.text.TIM_GetCapture4,"ax",%progbits
+ 2473              		.align	2
+ 2474              		.global	TIM_GetCapture4
+ 2475              		.thumb
+ 2476              		.thumb_func
+ 2477              		.type	TIM_GetCapture4, %function
+ 2478              	TIM_GetCapture4:
+ 2479              		@ args = 0, pretend = 0, frame = 0
+ 2480              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2481              		@ link register save eliminated.
+ 2482 0000 B0F84000 		ldrh	r0, [r0, #64]	@, TIMx_2(D)->CCR4
+ 2483 0004 80B2     		uxth	r0, r0	@, TIMx_2(D)->CCR4
+ 2484 0006 7047     		bx	lr	@
+ 2485              		.size	TIM_GetCapture4, .-TIM_GetCapture4
+ 2486              		.section	.text.TIM_GetCounter,"ax",%progbits
+ 2487              		.align	2
+ 2488              		.global	TIM_GetCounter
+ 2489              		.thumb
+ 2490              		.thumb_func
+ 2491              		.type	TIM_GetCounter, %function
+ 2492              	TIM_GetCounter:
+ 2493              		@ args = 0, pretend = 0, frame = 0
+ 2494              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2495              		@ link register save eliminated.
+ 2496 0000 808C     		ldrh	r0, [r0, #36]	@, TIMx_2(D)->CNT
+ 2497 0002 80B2     		uxth	r0, r0	@, TIMx_2(D)->CNT
+ 2498 0004 7047     		bx	lr	@
+ 2499              		.size	TIM_GetCounter, .-TIM_GetCounter
+ 2500 0006 00BF     		.section	.text.TIM_GetPrescaler,"ax",%progbits
+ 2501              		.align	2
+ 2502              		.global	TIM_GetPrescaler
+ 2503              		.thumb
+ 2504              		.thumb_func
+ 2505              		.type	TIM_GetPrescaler, %function
+ 2506              	TIM_GetPrescaler:
+ 2507              		@ args = 0, pretend = 0, frame = 0
+ 2508              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 45
+
+
+ 2509              		@ link register save eliminated.
+ 2510 0000 008D     		ldrh	r0, [r0, #40]	@, TIMx_2(D)->PSC
+ 2511 0002 80B2     		uxth	r0, r0	@, TIMx_2(D)->PSC
+ 2512 0004 7047     		bx	lr	@
+ 2513              		.size	TIM_GetPrescaler, .-TIM_GetPrescaler
+ 2514 0006 00BF     		.section	.text.TIM_GetFlagStatus,"ax",%progbits
+ 2515              		.align	2
+ 2516              		.global	TIM_GetFlagStatus
+ 2517              		.thumb
+ 2518              		.thumb_func
+ 2519              		.type	TIM_GetFlagStatus, %function
+ 2520              	TIM_GetFlagStatus:
+ 2521              		@ args = 0, pretend = 0, frame = 0
+ 2522              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2523              		@ link register save eliminated.
+ 2524 0000 038A     		ldrh	r3, [r0, #16]	@, TIMx_3(D)->SR
+ 2525 0002 1942     		tst	r1, r3	@ TIM_FLAG, TIMx_3(D)->SR
+ 2526 0004 0CBF     		ite	eq	@
+ 2527 0006 0020     		moveq	r0, #0	@,
+ 2528 0008 0120     		movne	r0, #1	@,
+ 2529 000a 7047     		bx	lr	@
+ 2530              		.size	TIM_GetFlagStatus, .-TIM_GetFlagStatus
+ 2531              		.section	.text.TIM_ClearFlag,"ax",%progbits
+ 2532              		.align	2
+ 2533              		.global	TIM_ClearFlag
+ 2534              		.thumb
+ 2535              		.thumb_func
+ 2536              		.type	TIM_ClearFlag, %function
+ 2537              	TIM_ClearFlag:
+ 2538              		@ args = 0, pretend = 0, frame = 0
+ 2539              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2540              		@ link register save eliminated.
+ 2541 0000 C943     		mvns	r1, r1	@ tmp113, TIM_FLAG
+ 2542 0002 89B2     		uxth	r1, r1	@ D.7985, tmp113
+ 2543 0004 0182     		strh	r1, [r0, #16]	@ movhi	@ D.7985, TIMx_4(D)->SR
+ 2544 0006 7047     		bx	lr	@
+ 2545              		.size	TIM_ClearFlag, .-TIM_ClearFlag
+ 2546              		.section	.text.TIM_GetITStatus,"ax",%progbits
+ 2547              		.align	2
+ 2548              		.global	TIM_GetITStatus
+ 2549              		.thumb
+ 2550              		.thumb_func
+ 2551              		.type	TIM_GetITStatus, %function
+ 2552              	TIM_GetITStatus:
+ 2553              		@ args = 0, pretend = 0, frame = 0
+ 2554              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2555              		@ link register save eliminated.
+ 2556 0000 038A     		ldrh	r3, [r0, #16]	@, TIMx_3(D)->SR
+ 2557 0002 8289     		ldrh	r2, [r0, #12]	@, TIMx_3(D)->DIER
+ 2558 0004 11EA0300 		ands	r0, r1, r3	@ tmp125, TIM_IT, TIMx_3(D)->SR
+ 2559 0008 92B2     		uxth	r2, r2	@ D.7988, TIMx_3(D)->DIER
+ 2560 000a 03D0     		beq	.L238	@,
+ 2561 000c 1142     		tst	r1, r2	@ TIM_IT, D.7988
+ 2562 000e 0CBF     		ite	eq	@
+ 2563 0010 0020     		moveq	r0, #0	@, bitstatus
+ 2564 0012 0120     		movne	r0, #1	@, bitstatus
+ 2565              	.L238:
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 46
+
+
+ 2566 0014 7047     		bx	lr	@
+ 2567              		.size	TIM_GetITStatus, .-TIM_GetITStatus
+ 2568 0016 00BF     		.section	.text.TIM_ClearITPendingBit,"ax",%progbits
+ 2569              		.align	2
+ 2570              		.global	TIM_ClearITPendingBit
+ 2571              		.thumb
+ 2572              		.thumb_func
+ 2573              		.type	TIM_ClearITPendingBit, %function
+ 2574              	TIM_ClearITPendingBit:
+ 2575              		@ args = 0, pretend = 0, frame = 0
+ 2576              		@ frame_needed = 0, uses_anonymous_args = 0
+ 2577              		@ link register save eliminated.
+ 2578 0000 C943     		mvns	r1, r1	@ tmp113, TIM_IT
+ 2579 0002 89B2     		uxth	r1, r1	@ D.7992, tmp113
+ 2580 0004 0182     		strh	r1, [r0, #16]	@ movhi	@ D.7992, TIMx_4(D)->SR
+ 2581 0006 7047     		bx	lr	@
+ 2582              		.size	TIM_ClearITPendingBit, .-TIM_ClearITPendingBit
+ 2583              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 47
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_tim.c
+C:\cygwin64\tmp\ccJ0qO7B.s:71     .text.TI1_Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:75     .text.TI1_Config:00000000 TI1_Config
+C:\cygwin64\tmp\ccJ0qO7B.s:128    .text.TI1_Config:00000070 $d
+C:\cygwin64\tmp\ccJ0qO7B.s:132    .text.TI2_Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:136    .text.TI2_Config:00000000 TI2_Config
+C:\cygwin64\tmp\ccJ0qO7B.s:191    .text.TI2_Config:00000078 $d
+C:\cygwin64\tmp\ccJ0qO7B.s:195    .text.TIM_DeInit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:200    .text.TIM_DeInit:00000000 TIM_DeInit
+C:\cygwin64\tmp\ccJ0qO7B.s:394    .text.TIM_DeInit:000001f4 $d
+C:\cygwin64\tmp\ccJ0qO7B.s:412    .text.TIM_TimeBaseInit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:417    .text.TIM_TimeBaseInit:00000000 TIM_TimeBaseInit
+C:\cygwin64\tmp\ccJ0qO7B.s:500    .text.TIM_TimeBaseInit:000000a8 $d
+C:\cygwin64\tmp\ccJ0qO7B.s:505    .text.TIM_OC1Init:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:510    .text.TIM_OC1Init:00000000 TIM_OC1Init
+C:\cygwin64\tmp\ccJ0qO7B.s:577    .text.TIM_OC1Init:0000008c $d
+C:\cygwin64\tmp\ccJ0qO7B.s:580    .text.TIM_OC2Init:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:585    .text.TIM_OC2Init:00000000 TIM_OC2Init
+C:\cygwin64\tmp\ccJ0qO7B.s:647    .text.TIM_OC2Init:0000008c $d
+C:\cygwin64\tmp\ccJ0qO7B.s:650    .text.TIM_OC3Init:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:655    .text.TIM_OC3Init:00000000 TIM_OC3Init
+C:\cygwin64\tmp\ccJ0qO7B.s:716    .text.TIM_OC3Init:00000088 $d
+C:\cygwin64\tmp\ccJ0qO7B.s:719    .text.TIM_OC4Init:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:724    .text.TIM_OC4Init:00000000 TIM_OC4Init
+C:\cygwin64\tmp\ccJ0qO7B.s:775    .text.TIM_OC4Init:00000068 $d
+C:\cygwin64\tmp\ccJ0qO7B.s:778    .text.TIM_ICInit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:783    .text.TIM_ICInit:00000000 TIM_ICInit
+C:\cygwin64\tmp\ccJ0qO7B.s:948    .text.TIM_ICInit:0000017c $d
+C:\cygwin64\tmp\ccJ0qO7B.s:951    .text.TIM_PWMIConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:956    .text.TIM_PWMIConfig:00000000 TIM_PWMIConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1037   .text.TIM_BDTRConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1042   .text.TIM_BDTRConfig:00000000 TIM_BDTRConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1066   .text.TIM_TimeBaseStructInit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1071   .text.TIM_TimeBaseStructInit:00000000 TIM_TimeBaseStructInit
+C:\cygwin64\tmp\ccJ0qO7B.s:1085   .text.TIM_OCStructInit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1090   .text.TIM_OCStructInit:00000000 TIM_OCStructInit
+C:\cygwin64\tmp\ccJ0qO7B.s:1106   .text.TIM_ICStructInit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1111   .text.TIM_ICStructInit:00000000 TIM_ICStructInit
+C:\cygwin64\tmp\ccJ0qO7B.s:1125   .text.TIM_BDTRStructInit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1130   .text.TIM_BDTRStructInit:00000000 TIM_BDTRStructInit
+C:\cygwin64\tmp\ccJ0qO7B.s:1145   .text.TIM_Cmd:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1150   .text.TIM_Cmd:00000000 TIM_Cmd
+C:\cygwin64\tmp\ccJ0qO7B.s:1168   .text.TIM_CtrlPWMOutputs:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1173   .text.TIM_CtrlPWMOutputs:00000000 TIM_CtrlPWMOutputs
+C:\cygwin64\tmp\ccJ0qO7B.s:1190   .text.TIM_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1195   .text.TIM_ITConfig:00000000 TIM_ITConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1211   .text.TIM_GenerateEvent:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1216   .text.TIM_GenerateEvent:00000000 TIM_GenerateEvent
+C:\cygwin64\tmp\ccJ0qO7B.s:1224   .text.TIM_DMAConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1229   .text.TIM_DMAConfig:00000000 TIM_DMAConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1238   .text.TIM_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1243   .text.TIM_DMACmd:00000000 TIM_DMACmd
+C:\cygwin64\tmp\ccJ0qO7B.s:1259   .text.TIM_InternalClockConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1264   .text.TIM_InternalClockConfig:00000000 TIM_InternalClockConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1276   .text.TIM_ITRxExternalClockConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1281   .text.TIM_ITRxExternalClockConfig:00000000 TIM_ITRxExternalClockConfig
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 48
+
+
+C:\cygwin64\tmp\ccJ0qO7B.s:1298   .text.TIM_TIxExternalClockConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1303   .text.TIM_TIxExternalClockConfig:00000000 TIM_TIxExternalClockConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1331   .text.TIM_ETRClockMode1Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1336   .text.TIM_ETRClockMode1Config:00000000 TIM_ETRClockMode1Config
+C:\cygwin64\tmp\ccJ0qO7B.s:1358   .text.TIM_ETRClockMode2Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1363   .text.TIM_ETRClockMode2Config:00000000 TIM_ETRClockMode2Config
+C:\cygwin64\tmp\ccJ0qO7B.s:1383   .text.TIM_ETRConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1388   .text.TIM_ETRConfig:00000000 TIM_ETRConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1404   .text.TIM_PrescalerConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1409   .text.TIM_PrescalerConfig:00000000 TIM_PrescalerConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1418   .text.TIM_CounterModeConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1423   .text.TIM_CounterModeConfig:00000000 TIM_CounterModeConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1436   .text.TIM_SelectInputTrigger:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1441   .text.TIM_SelectInputTrigger:00000000 TIM_SelectInputTrigger
+C:\cygwin64\tmp\ccJ0qO7B.s:1454   .text.TIM_EncoderInterfaceConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1459   .text.TIM_EncoderInterfaceConfig:00000000 TIM_EncoderInterfaceConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1489   .text.TIM_ForcedOC1Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1494   .text.TIM_ForcedOC1Config:00000000 TIM_ForcedOC1Config
+C:\cygwin64\tmp\ccJ0qO7B.s:1507   .text.TIM_ForcedOC2Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1512   .text.TIM_ForcedOC2Config:00000000 TIM_ForcedOC2Config
+C:\cygwin64\tmp\ccJ0qO7B.s:1526   .text.TIM_ForcedOC3Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1531   .text.TIM_ForcedOC3Config:00000000 TIM_ForcedOC3Config
+C:\cygwin64\tmp\ccJ0qO7B.s:1544   .text.TIM_ForcedOC4Config:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1549   .text.TIM_ForcedOC4Config:00000000 TIM_ForcedOC4Config
+C:\cygwin64\tmp\ccJ0qO7B.s:1563   .text.TIM_ARRPreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1568   .text.TIM_ARRPreloadConfig:00000000 TIM_ARRPreloadConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1586   .text.TIM_SelectCOM:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1591   .text.TIM_SelectCOM:00000000 TIM_SelectCOM
+C:\cygwin64\tmp\ccJ0qO7B.s:1609   .text.TIM_SelectCCDMA:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1614   .text.TIM_SelectCCDMA:00000000 TIM_SelectCCDMA
+C:\cygwin64\tmp\ccJ0qO7B.s:1632   .text.TIM_CCPreloadControl:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1637   .text.TIM_CCPreloadControl:00000000 TIM_CCPreloadControl
+C:\cygwin64\tmp\ccJ0qO7B.s:1655   .text.TIM_OC1PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1660   .text.TIM_OC1PreloadConfig:00000000 TIM_OC1PreloadConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1673   .text.TIM_OC2PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1678   .text.TIM_OC2PreloadConfig:00000000 TIM_OC2PreloadConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1692   .text.TIM_OC3PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1697   .text.TIM_OC3PreloadConfig:00000000 TIM_OC3PreloadConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1710   .text.TIM_OC4PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1715   .text.TIM_OC4PreloadConfig:00000000 TIM_OC4PreloadConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1729   .text.TIM_OC1FastConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1734   .text.TIM_OC1FastConfig:00000000 TIM_OC1FastConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1747   .text.TIM_OC2FastConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1752   .text.TIM_OC2FastConfig:00000000 TIM_OC2FastConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1766   .text.TIM_OC3FastConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1771   .text.TIM_OC3FastConfig:00000000 TIM_OC3FastConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1784   .text.TIM_OC4FastConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1789   .text.TIM_OC4FastConfig:00000000 TIM_OC4FastConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1803   .text.TIM_ClearOC1Ref:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1808   .text.TIM_ClearOC1Ref:00000000 TIM_ClearOC1Ref
+C:\cygwin64\tmp\ccJ0qO7B.s:1821   .text.TIM_ClearOC2Ref:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1826   .text.TIM_ClearOC2Ref:00000000 TIM_ClearOC2Ref
+C:\cygwin64\tmp\ccJ0qO7B.s:1838   .text.TIM_ClearOC3Ref:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1843   .text.TIM_ClearOC3Ref:00000000 TIM_ClearOC3Ref
+C:\cygwin64\tmp\ccJ0qO7B.s:1856   .text.TIM_ClearOC4Ref:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1861   .text.TIM_ClearOC4Ref:00000000 TIM_ClearOC4Ref
+C:\cygwin64\tmp\ccJ0qO7B.s:1873   .text.TIM_OC1PolarityConfig:00000000 $t
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 49
+
+
+C:\cygwin64\tmp\ccJ0qO7B.s:1878   .text.TIM_OC1PolarityConfig:00000000 TIM_OC1PolarityConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1891   .text.TIM_OC1NPolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1896   .text.TIM_OC1NPolarityConfig:00000000 TIM_OC1NPolarityConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1909   .text.TIM_OC2PolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1914   .text.TIM_OC2PolarityConfig:00000000 TIM_OC2PolarityConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1928   .text.TIM_OC2NPolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1933   .text.TIM_OC2NPolarityConfig:00000000 TIM_OC2NPolarityConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1947   .text.TIM_OC3PolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1952   .text.TIM_OC3PolarityConfig:00000000 TIM_OC3PolarityConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1966   .text.TIM_OC3NPolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1971   .text.TIM_OC3NPolarityConfig:00000000 TIM_OC3NPolarityConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:1985   .text.TIM_OC4PolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:1990   .text.TIM_OC4PolarityConfig:00000000 TIM_OC4PolarityConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:2004   .text.TIM_CCxCmd:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2009   .text.TIM_CCxCmd:00000000 TIM_CCxCmd
+C:\cygwin64\tmp\ccJ0qO7B.s:2027   .text.TIM_CCxNCmd:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2032   .text.TIM_CCxNCmd:00000000 TIM_CCxNCmd
+C:\cygwin64\tmp\ccJ0qO7B.s:2050   .text.TIM_SelectOCxM:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2055   .text.TIM_SelectOCxM:00000000 TIM_SelectOCxM
+C:\cygwin64\tmp\ccJ0qO7B.s:2093   .text.TIM_UpdateDisableConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2098   .text.TIM_UpdateDisableConfig:00000000 TIM_UpdateDisableConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:2116   .text.TIM_UpdateRequestConfig:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2121   .text.TIM_UpdateRequestConfig:00000000 TIM_UpdateRequestConfig
+C:\cygwin64\tmp\ccJ0qO7B.s:2139   .text.TIM_SelectHallSensor:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2144   .text.TIM_SelectHallSensor:00000000 TIM_SelectHallSensor
+C:\cygwin64\tmp\ccJ0qO7B.s:2162   .text.TIM_SelectOnePulseMode:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2167   .text.TIM_SelectOnePulseMode:00000000 TIM_SelectOnePulseMode
+C:\cygwin64\tmp\ccJ0qO7B.s:2183   .text.TIM_SelectOutputTrigger:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2188   .text.TIM_SelectOutputTrigger:00000000 TIM_SelectOutputTrigger
+C:\cygwin64\tmp\ccJ0qO7B.s:2204   .text.TIM_SelectSlaveMode:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2209   .text.TIM_SelectSlaveMode:00000000 TIM_SelectSlaveMode
+C:\cygwin64\tmp\ccJ0qO7B.s:2225   .text.TIM_SelectMasterSlaveMode:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2230   .text.TIM_SelectMasterSlaveMode:00000000 TIM_SelectMasterSlaveMode
+C:\cygwin64\tmp\ccJ0qO7B.s:2246   .text.TIM_SetCounter:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2251   .text.TIM_SetCounter:00000000 TIM_SetCounter
+C:\cygwin64\tmp\ccJ0qO7B.s:2259   .text.TIM_SetAutoreload:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2264   .text.TIM_SetAutoreload:00000000 TIM_SetAutoreload
+C:\cygwin64\tmp\ccJ0qO7B.s:2272   .text.TIM_SetCompare1:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2277   .text.TIM_SetCompare1:00000000 TIM_SetCompare1
+C:\cygwin64\tmp\ccJ0qO7B.s:2285   .text.TIM_SetCompare2:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2290   .text.TIM_SetCompare2:00000000 TIM_SetCompare2
+C:\cygwin64\tmp\ccJ0qO7B.s:2298   .text.TIM_SetCompare3:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2303   .text.TIM_SetCompare3:00000000 TIM_SetCompare3
+C:\cygwin64\tmp\ccJ0qO7B.s:2311   .text.TIM_SetCompare4:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2316   .text.TIM_SetCompare4:00000000 TIM_SetCompare4
+C:\cygwin64\tmp\ccJ0qO7B.s:2324   .text.TIM_SetIC1Prescaler:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2329   .text.TIM_SetIC1Prescaler:00000000 TIM_SetIC1Prescaler
+C:\cygwin64\tmp\ccJ0qO7B.s:2345   .text.TIM_SetIC2Prescaler:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2350   .text.TIM_SetIC2Prescaler:00000000 TIM_SetIC2Prescaler
+C:\cygwin64\tmp\ccJ0qO7B.s:2367   .text.TIM_SetIC3Prescaler:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2372   .text.TIM_SetIC3Prescaler:00000000 TIM_SetIC3Prescaler
+C:\cygwin64\tmp\ccJ0qO7B.s:2388   .text.TIM_SetIC4Prescaler:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2393   .text.TIM_SetIC4Prescaler:00000000 TIM_SetIC4Prescaler
+C:\cygwin64\tmp\ccJ0qO7B.s:2410   .text.TIM_SetClockDivision:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2415   .text.TIM_SetClockDivision:00000000 TIM_SetClockDivision
+C:\cygwin64\tmp\ccJ0qO7B.s:2431   .text.TIM_GetCapture1:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2436   .text.TIM_GetCapture1:00000000 TIM_GetCapture1
+ARM GAS  C:\cygwin64\tmp\ccJ0qO7B.s 			page 50
+
+
+C:\cygwin64\tmp\ccJ0qO7B.s:2445   .text.TIM_GetCapture2:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2450   .text.TIM_GetCapture2:00000000 TIM_GetCapture2
+C:\cygwin64\tmp\ccJ0qO7B.s:2459   .text.TIM_GetCapture3:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2464   .text.TIM_GetCapture3:00000000 TIM_GetCapture3
+C:\cygwin64\tmp\ccJ0qO7B.s:2473   .text.TIM_GetCapture4:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2478   .text.TIM_GetCapture4:00000000 TIM_GetCapture4
+C:\cygwin64\tmp\ccJ0qO7B.s:2487   .text.TIM_GetCounter:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2492   .text.TIM_GetCounter:00000000 TIM_GetCounter
+C:\cygwin64\tmp\ccJ0qO7B.s:2501   .text.TIM_GetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2506   .text.TIM_GetPrescaler:00000000 TIM_GetPrescaler
+C:\cygwin64\tmp\ccJ0qO7B.s:2515   .text.TIM_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2520   .text.TIM_GetFlagStatus:00000000 TIM_GetFlagStatus
+C:\cygwin64\tmp\ccJ0qO7B.s:2532   .text.TIM_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2537   .text.TIM_ClearFlag:00000000 TIM_ClearFlag
+C:\cygwin64\tmp\ccJ0qO7B.s:2547   .text.TIM_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2552   .text.TIM_GetITStatus:00000000 TIM_GetITStatus
+C:\cygwin64\tmp\ccJ0qO7B.s:2569   .text.TIM_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccJ0qO7B.s:2574   .text.TIM_ClearITPendingBit:00000000 TIM_ClearITPendingBit
+
+UNDEFINED SYMBOLS
+RCC_APB2PeriphResetCmd
+RCC_APB1PeriphResetCmd

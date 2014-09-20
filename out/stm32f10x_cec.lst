@@ -1,0 +1,439 @@
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_cec.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_cec.d -MF out/stm32f10x_cec.d -MP
+  25              	@ -MQ out/stm32f10x_cec.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_cec.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.CEC_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	CEC_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	CEC_DeInit, %function
+  76              	CEC_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79 0000 08B5     		push	{r3, lr}	@
+  80 0002 4FF08040 		mov	r0, #1073741824	@,
+  81 0006 0121     		movs	r1, #1	@,
+  82 0008 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+  83 000c BDE80840 		pop	{r3, lr}	@
+  84 0010 4FF08040 		mov	r0, #1073741824	@,
+  85 0014 0021     		movs	r1, #0	@,
+  86 0016 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+  87              		.size	CEC_DeInit, .-CEC_DeInit
+  88 001a 00BF     		.section	.text.CEC_Init,"ax",%progbits
+  89              		.align	2
+  90              		.global	CEC_Init
+  91              		.thumb
+  92              		.thumb_func
+  93              		.type	CEC_Init, %function
+  94              	CEC_Init:
+  95              		@ args = 0, pretend = 0, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              		@ link register save eliminated.
+  98 0000 064B     		ldr	r3, .L3	@ tmp119,
+  99 0002 10B4     		push	{r4}	@
+ 100 0004 0188     		ldrh	r1, [r0]	@, CEC_InitStruct_5(D)->CEC_BitTimingMode
+ 101 0006 4488     		ldrh	r4, [r0, #2]	@, CEC_InitStruct_5(D)->CEC_BitPeriodMode
+ 102 0008 1A68     		ldr	r2, [r3]	@ D.6762, MEM[(struct CEC_TypeDef *)1073772544B].CFGR
+ 103 000a 2143     		orrs	r1, r1, r4	@, tmp123, CEC_InitStruct_5(D)->CEC_BitTimingMode, CEC_InitStruct_5(D)->CEC_BitPer
+ 104 000c 02F0F302 		and	r2, r2, #243	@ tmpreg, D.6762,
+ 105 0010 0A43     		orrs	r2, r2, r1	@, tmp125, tmpreg, tmp123
+ 106 0012 92B2     		uxth	r2, r2	@ D.6762, tmp125
+ 107 0014 1A60     		str	r2, [r3]	@ D.6762, MEM[(struct CEC_TypeDef *)1073772544B].CFGR
+ 108 0016 5DF8044B 		ldr	r4, [sp], #4	@,
+ 109 001a 7047     		bx	lr	@
+ 110              	.L4:
+ 111              		.align	2
+ 112              	.L3:
+ 113 001c 00780040 		.word	1073772544
+ 114              		.size	CEC_Init, .-CEC_Init
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 3
+
+
+ 115              		.section	.text.CEC_Cmd,"ax",%progbits
+ 116              		.align	2
+ 117              		.global	CEC_Cmd
+ 118              		.thumb
+ 119              		.thumb_func
+ 120              		.type	CEC_Cmd, %function
+ 121              	CEC_Cmd:
+ 122              		@ args = 0, pretend = 0, frame = 0
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		@ link register save eliminated.
+ 125 0000 034B     		ldr	r3, .L12	@ tmp114,
+ 126 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108279296B]
+ 127 0004 18B9     		cbnz	r0, .L5	@ NewState,
+ 128 0006 034A     		ldr	r2, .L12+4	@ tmp117,
+ 129              	.L7:
+ 130 0008 1368     		ldr	r3, [r2]	@ D.6766, MEM[(struct CEC_TypeDef *)1073772544B].CFGR
+ 131 000a DB07     		lsls	r3, r3, #31	@, D.6766,
+ 132 000c FCD4     		bmi	.L7	@,
+ 133              	.L5:
+ 134 000e 7047     		bx	lr	@
+ 135              	.L13:
+ 136              		.align	2
+ 137              	.L12:
+ 138 0010 00000F42 		.word	1108279296
+ 139 0014 00780040 		.word	1073772544
+ 140              		.size	CEC_Cmd, .-CEC_Cmd
+ 141              		.section	.text.CEC_ITConfig,"ax",%progbits
+ 142              		.align	2
+ 143              		.global	CEC_ITConfig
+ 144              		.thumb
+ 145              		.thumb_func
+ 146              		.type	CEC_ITConfig, %function
+ 147              	CEC_ITConfig:
+ 148              		@ args = 0, pretend = 0, frame = 0
+ 149              		@ frame_needed = 0, uses_anonymous_args = 0
+ 150              		@ link register save eliminated.
+ 151 0000 014B     		ldr	r3, .L15	@ tmp112,
+ 152 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108279300B]
+ 153 0004 7047     		bx	lr	@
+ 154              	.L16:
+ 155 0006 00BF     		.align	2
+ 156              	.L15:
+ 157 0008 04000F42 		.word	1108279300
+ 158              		.size	CEC_ITConfig, .-CEC_ITConfig
+ 159              		.section	.text.CEC_OwnAddressConfig,"ax",%progbits
+ 160              		.align	2
+ 161              		.global	CEC_OwnAddressConfig
+ 162              		.thumb
+ 163              		.thumb_func
+ 164              		.type	CEC_OwnAddressConfig, %function
+ 165              	CEC_OwnAddressConfig:
+ 166              		@ args = 0, pretend = 0, frame = 0
+ 167              		@ frame_needed = 0, uses_anonymous_args = 0
+ 168              		@ link register save eliminated.
+ 169 0000 014B     		ldr	r3, .L18	@ tmp112,
+ 170 0002 5860     		str	r0, [r3, #4]	@ CEC_OwnAddress, MEM[(struct CEC_TypeDef *)1073772544B].OAR
+ 171 0004 7047     		bx	lr	@
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 4
+
+
+ 172              	.L19:
+ 173 0006 00BF     		.align	2
+ 174              	.L18:
+ 175 0008 00780040 		.word	1073772544
+ 176              		.size	CEC_OwnAddressConfig, .-CEC_OwnAddressConfig
+ 177              		.section	.text.CEC_SetPrescaler,"ax",%progbits
+ 178              		.align	2
+ 179              		.global	CEC_SetPrescaler
+ 180              		.thumb
+ 181              		.thumb_func
+ 182              		.type	CEC_SetPrescaler, %function
+ 183              	CEC_SetPrescaler:
+ 184              		@ args = 0, pretend = 0, frame = 0
+ 185              		@ frame_needed = 0, uses_anonymous_args = 0
+ 186              		@ link register save eliminated.
+ 187 0000 014B     		ldr	r3, .L21	@ tmp112,
+ 188 0002 9860     		str	r0, [r3, #8]	@ CEC_Prescaler, MEM[(struct CEC_TypeDef *)1073772544B].PRES
+ 189 0004 7047     		bx	lr	@
+ 190              	.L22:
+ 191 0006 00BF     		.align	2
+ 192              	.L21:
+ 193 0008 00780040 		.word	1073772544
+ 194              		.size	CEC_SetPrescaler, .-CEC_SetPrescaler
+ 195              		.section	.text.CEC_SendDataByte,"ax",%progbits
+ 196              		.align	2
+ 197              		.global	CEC_SendDataByte
+ 198              		.thumb
+ 199              		.thumb_func
+ 200              		.type	CEC_SendDataByte, %function
+ 201              	CEC_SendDataByte:
+ 202              		@ args = 0, pretend = 0, frame = 0
+ 203              		@ frame_needed = 0, uses_anonymous_args = 0
+ 204              		@ link register save eliminated.
+ 205 0000 014B     		ldr	r3, .L24	@ tmp112,
+ 206 0002 5861     		str	r0, [r3, #20]	@ Data, MEM[(struct CEC_TypeDef *)1073772544B].TXD
+ 207 0004 7047     		bx	lr	@
+ 208              	.L25:
+ 209 0006 00BF     		.align	2
+ 210              	.L24:
+ 211 0008 00780040 		.word	1073772544
+ 212              		.size	CEC_SendDataByte, .-CEC_SendDataByte
+ 213              		.section	.text.CEC_ReceiveDataByte,"ax",%progbits
+ 214              		.align	2
+ 215              		.global	CEC_ReceiveDataByte
+ 216              		.thumb
+ 217              		.thumb_func
+ 218              		.type	CEC_ReceiveDataByte, %function
+ 219              	CEC_ReceiveDataByte:
+ 220              		@ args = 0, pretend = 0, frame = 0
+ 221              		@ frame_needed = 0, uses_anonymous_args = 0
+ 222              		@ link register save eliminated.
+ 223 0000 014B     		ldr	r3, .L27	@ tmp113,
+ 224 0002 9869     		ldr	r0, [r3, #24]	@ D.6781, MEM[(struct CEC_TypeDef *)1073772544B].RXD
+ 225 0004 C0B2     		uxtb	r0, r0	@, D.6781
+ 226 0006 7047     		bx	lr	@
+ 227              	.L28:
+ 228              		.align	2
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 5
+
+
+ 229              	.L27:
+ 230 0008 00780040 		.word	1073772544
+ 231              		.size	CEC_ReceiveDataByte, .-CEC_ReceiveDataByte
+ 232              		.section	.text.CEC_StartOfMessage,"ax",%progbits
+ 233              		.align	2
+ 234              		.global	CEC_StartOfMessage
+ 235              		.thumb
+ 236              		.thumb_func
+ 237              		.type	CEC_StartOfMessage, %function
+ 238              	CEC_StartOfMessage:
+ 239              		@ args = 0, pretend = 0, frame = 0
+ 240              		@ frame_needed = 0, uses_anonymous_args = 0
+ 241              		@ link register save eliminated.
+ 242 0000 014B     		ldr	r3, .L30	@ tmp110,
+ 243 0002 0122     		movs	r2, #1	@ tmp111,
+ 244 0004 1A60     		str	r2, [r3]	@ tmp111, MEM[(volatile uint32_t *)1108279808B]
+ 245 0006 7047     		bx	lr	@
+ 246              	.L31:
+ 247              		.align	2
+ 248              	.L30:
+ 249 0008 00020F42 		.word	1108279808
+ 250              		.size	CEC_StartOfMessage, .-CEC_StartOfMessage
+ 251              		.section	.text.CEC_EndOfMessageCmd,"ax",%progbits
+ 252              		.align	2
+ 253              		.global	CEC_EndOfMessageCmd
+ 254              		.thumb
+ 255              		.thumb_func
+ 256              		.type	CEC_EndOfMessageCmd, %function
+ 257              	CEC_EndOfMessageCmd:
+ 258              		@ args = 0, pretend = 0, frame = 0
+ 259              		@ frame_needed = 0, uses_anonymous_args = 0
+ 260              		@ link register save eliminated.
+ 261 0000 014B     		ldr	r3, .L33	@ tmp112,
+ 262 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108279812B]
+ 263 0004 7047     		bx	lr	@
+ 264              	.L34:
+ 265 0006 00BF     		.align	2
+ 266              	.L33:
+ 267 0008 04020F42 		.word	1108279812
+ 268              		.size	CEC_EndOfMessageCmd, .-CEC_EndOfMessageCmd
+ 269              		.section	.text.CEC_GetFlagStatus,"ax",%progbits
+ 270              		.align	2
+ 271              		.global	CEC_GetFlagStatus
+ 272              		.thumb
+ 273              		.thumb_func
+ 274              		.type	CEC_GetFlagStatus, %function
+ 275              	CEC_GetFlagStatus:
+ 276              		@ args = 0, pretend = 0, frame = 0
+ 277              		@ frame_needed = 0, uses_anonymous_args = 0
+ 278              		@ link register save eliminated.
+ 279 0000 20F07F43 		bic	r3, r0, #-16777216	@ CEC_FLAG, CEC_FLAG,
+ 280 0004 000F     		lsrs	r0, r0, #28	@, CEC_FLAG,
+ 281 0006 16BF     		itet	ne
+ 282 0008 044A     		ldrne	r2, .L38	@ D.6790,
+ 283 000a 054A     		ldreq	r2, .L38+4	@ D.6790,
+ 284 000c 1B0C     		lsrne	r3, r3, #16	@ CEC_FLAG, CEC_FLAG,
+ 285 000e 1268     		ldr	r2, [r2]	@ D.6791, *_2
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 6
+
+
+ 286 0010 1A42     		tst	r2, r3	@ D.6791, CEC_FLAG
+ 287 0012 0CBF     		ite	eq	@
+ 288 0014 0020     		moveq	r0, #0	@,
+ 289 0016 0120     		movne	r0, #1	@,
+ 290 0018 7047     		bx	lr	@
+ 291              	.L39:
+ 292 001a 00BF     		.align	2
+ 293              	.L38:
+ 294 001c 0C780040 		.word	1073772556
+ 295 0020 10780040 		.word	1073772560
+ 296              		.size	CEC_GetFlagStatus, .-CEC_GetFlagStatus
+ 297              		.section	.text.CEC_ClearFlag,"ax",%progbits
+ 298              		.align	2
+ 299              		.global	CEC_ClearFlag
+ 300              		.thumb
+ 301              		.thumb_func
+ 302              		.type	CEC_ClearFlag, %function
+ 303              	CEC_ClearFlag:
+ 304              		@ args = 0, pretend = 0, frame = 0
+ 305              		@ frame_needed = 0, uses_anonymous_args = 0
+ 306              		@ link register save eliminated.
+ 307 0000 054B     		ldr	r3, .L41	@ tmp118,
+ 308 0002 C043     		mvns	r0, r0	@ D.6796, CEC_FLAG
+ 309 0004 1A69     		ldr	r2, [r3, #16]	@ D.6796, MEM[(struct CEC_TypeDef *)1073772544B].CSR
+ 310 0006 20F00300 		bic	r0, r0, #3	@ D.6796, D.6796,
+ 311 000a 1969     		ldr	r1, [r3, #16]	@ D.6796, MEM[(struct CEC_TypeDef *)1073772544B].CSR
+ 312 000c 02F00202 		and	r2, r2, #2	@ tmp, D.6796,
+ 313 0010 0243     		orrs	r2, r2, r0	@, D.6796, tmp, D.6796
+ 314 0012 0A40     		ands	r2, r2, r1	@, D.6796, D.6796, D.6796
+ 315 0014 1A61     		str	r2, [r3, #16]	@ D.6796, MEM[(struct CEC_TypeDef *)1073772544B].CSR
+ 316 0016 7047     		bx	lr	@
+ 317              	.L42:
+ 318              		.align	2
+ 319              	.L41:
+ 320 0018 00780040 		.word	1073772544
+ 321              		.size	CEC_ClearFlag, .-CEC_ClearFlag
+ 322              		.section	.text.CEC_GetITStatus,"ax",%progbits
+ 323              		.align	2
+ 324              		.global	CEC_GetITStatus
+ 325              		.thumb
+ 326              		.thumb_func
+ 327              		.type	CEC_GetITStatus, %function
+ 328              	CEC_GetITStatus:
+ 329              		@ args = 0, pretend = 0, frame = 0
+ 330              		@ frame_needed = 0, uses_anonymous_args = 0
+ 331              		@ link register save eliminated.
+ 332 0000 034A     		ldr	r2, .L46	@ tmp119,
+ 333 0002 1168     		ldr	r1, [r2]	@ D.6799, MEM[(struct CEC_TypeDef *)1073772544B].CFGR
+ 334 0004 1369     		ldr	r3, [r2, #16]	@ D.6799, MEM[(struct CEC_TypeDef *)1073772544B].CSR
+ 335 0006 1840     		ands	r0, r0, r3	@ D.6799, CEC_IT, D.6799
+ 336 0008 18BF     		it	ne
+ 337 000a C1F34000 		ubfxne	r0, r1, #1, #1	@ bitstatus, D.6799,,
+ 338 000e 7047     		bx	lr	@
+ 339              	.L47:
+ 340              		.align	2
+ 341              	.L46:
+ 342 0010 00780040 		.word	1073772544
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 7
+
+
+ 343              		.size	CEC_GetITStatus, .-CEC_GetITStatus
+ 344              		.section	.text.CEC_ClearITPendingBit,"ax",%progbits
+ 345              		.align	2
+ 346              		.global	CEC_ClearITPendingBit
+ 347              		.thumb
+ 348              		.thumb_func
+ 349              		.type	CEC_ClearITPendingBit, %function
+ 350              	CEC_ClearITPendingBit:
+ 351              		@ args = 0, pretend = 0, frame = 0
+ 352              		@ frame_needed = 0, uses_anonymous_args = 0
+ 353              		@ link register save eliminated.
+ 354 0000 054B     		ldr	r3, .L49	@ tmp119,
+ 355 0002 C043     		mvns	r0, r0	@ D.6803, CEC_IT
+ 356 0004 1A69     		ldr	r2, [r3, #16]	@ D.6803, MEM[(struct CEC_TypeDef *)1073772544B].CSR
+ 357 0006 20F00300 		bic	r0, r0, #3	@ D.6803, D.6803,
+ 358 000a 1969     		ldr	r1, [r3, #16]	@ D.6803, MEM[(struct CEC_TypeDef *)1073772544B].CSR
+ 359 000c 02F00202 		and	r2, r2, #2	@ tmp, D.6803,
+ 360 0010 0243     		orrs	r2, r2, r0	@, D.6803, tmp, D.6803
+ 361 0012 0A40     		ands	r2, r2, r1	@, D.6803, D.6803, D.6803
+ 362 0014 1A61     		str	r2, [r3, #16]	@ D.6803, MEM[(struct CEC_TypeDef *)1073772544B].CSR
+ 363 0016 7047     		bx	lr	@
+ 364              	.L50:
+ 365              		.align	2
+ 366              	.L49:
+ 367 0018 00780040 		.word	1073772544
+ 368              		.size	CEC_ClearITPendingBit, .-CEC_ClearITPendingBit
+ 369              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccjn1Ylb.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_cec.c
+C:\cygwin64\tmp\ccjn1Ylb.s:71     .text.CEC_DeInit:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:76     .text.CEC_DeInit:00000000 CEC_DeInit
+C:\cygwin64\tmp\ccjn1Ylb.s:89     .text.CEC_Init:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:94     .text.CEC_Init:00000000 CEC_Init
+C:\cygwin64\tmp\ccjn1Ylb.s:113    .text.CEC_Init:0000001c $d
+C:\cygwin64\tmp\ccjn1Ylb.s:116    .text.CEC_Cmd:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:121    .text.CEC_Cmd:00000000 CEC_Cmd
+C:\cygwin64\tmp\ccjn1Ylb.s:138    .text.CEC_Cmd:00000010 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:142    .text.CEC_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:147    .text.CEC_ITConfig:00000000 CEC_ITConfig
+C:\cygwin64\tmp\ccjn1Ylb.s:157    .text.CEC_ITConfig:00000008 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:160    .text.CEC_OwnAddressConfig:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:165    .text.CEC_OwnAddressConfig:00000000 CEC_OwnAddressConfig
+C:\cygwin64\tmp\ccjn1Ylb.s:175    .text.CEC_OwnAddressConfig:00000008 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:178    .text.CEC_SetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:183    .text.CEC_SetPrescaler:00000000 CEC_SetPrescaler
+C:\cygwin64\tmp\ccjn1Ylb.s:193    .text.CEC_SetPrescaler:00000008 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:196    .text.CEC_SendDataByte:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:201    .text.CEC_SendDataByte:00000000 CEC_SendDataByte
+C:\cygwin64\tmp\ccjn1Ylb.s:211    .text.CEC_SendDataByte:00000008 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:214    .text.CEC_ReceiveDataByte:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:219    .text.CEC_ReceiveDataByte:00000000 CEC_ReceiveDataByte
+C:\cygwin64\tmp\ccjn1Ylb.s:230    .text.CEC_ReceiveDataByte:00000008 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:233    .text.CEC_StartOfMessage:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:238    .text.CEC_StartOfMessage:00000000 CEC_StartOfMessage
+C:\cygwin64\tmp\ccjn1Ylb.s:249    .text.CEC_StartOfMessage:00000008 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:252    .text.CEC_EndOfMessageCmd:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:257    .text.CEC_EndOfMessageCmd:00000000 CEC_EndOfMessageCmd
+C:\cygwin64\tmp\ccjn1Ylb.s:267    .text.CEC_EndOfMessageCmd:00000008 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:270    .text.CEC_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:275    .text.CEC_GetFlagStatus:00000000 CEC_GetFlagStatus
+C:\cygwin64\tmp\ccjn1Ylb.s:294    .text.CEC_GetFlagStatus:0000001c $d
+C:\cygwin64\tmp\ccjn1Ylb.s:298    .text.CEC_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:303    .text.CEC_ClearFlag:00000000 CEC_ClearFlag
+C:\cygwin64\tmp\ccjn1Ylb.s:320    .text.CEC_ClearFlag:00000018 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:323    .text.CEC_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:328    .text.CEC_GetITStatus:00000000 CEC_GetITStatus
+C:\cygwin64\tmp\ccjn1Ylb.s:342    .text.CEC_GetITStatus:00000010 $d
+C:\cygwin64\tmp\ccjn1Ylb.s:345    .text.CEC_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccjn1Ylb.s:350    .text.CEC_ClearITPendingBit:00000000 CEC_ClearITPendingBit
+C:\cygwin64\tmp\ccjn1Ylb.s:367    .text.CEC_ClearITPendingBit:00000018 $d
+
+UNDEFINED SYMBOLS
+RCC_APB1PeriphResetCmd

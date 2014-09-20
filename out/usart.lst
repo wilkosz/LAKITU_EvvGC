@@ -1,0 +1,588 @@
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"usart.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/usart.d -MF out/usart.d -MP -MQ out/usart.o -D__USES_INITFINI__
+  25              	@ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER src/usart.c -mcpu=cortex-m3
+  26              	@ -mthumb -auxbase-strip out/usart.o -O2 -Wall -Wstrict-prototypes -Wextra
+  27              	@ -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  28              	@ -fsingle-precision-constant
+  29              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  30              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  31              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  32              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  33              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  34              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  35              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  36              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  37              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  38              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  39              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  40              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  41              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  42              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  43              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  44              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  45              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  46              	@ -freorder-functions -frerun-cse-after-loop
+  47              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  48              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  49              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  50              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  51              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  52              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  53              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  54              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 2
+
+
+  58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  59              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  60              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  61              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  62              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  63              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  64              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  65              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  66              	@ -munaligned-access -mvectorize-with-neon-quad
+  67              	
+  68              		.section	.text.UART4EnableTxInterrupt,"ax",%progbits
+  69              		.align	2
+  70              		.global	UART4EnableTxInterrupt
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	UART4EnableTxInterrupt, %function
+  74              	UART4EnableTxInterrupt:
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 0, uses_anonymous_args = 0
+  77              		@ link register save eliminated.
+  78 0000 0248     		ldr	r0, .L2	@,
+  79 0002 40F22771 		movw	r1, #1831	@,
+  80 0006 0122     		movs	r2, #1	@,
+  81 0008 FFF7FEBF 		b	USART_ITConfig	@
+  82              	.L3:
+  83              		.align	2
+  84              	.L2:
+  85 000c 004C0040 		.word	1073761280
+  86              		.size	UART4EnableTxInterrupt, .-UART4EnableTxInterrupt
+  87              		.section	.text.InitUart4BufferIRQ,"ax",%progbits
+  88              		.align	2
+  89              		.global	InitUart4BufferIRQ
+  90              		.thumb
+  91              		.thumb_func
+  92              		.type	InitUart4BufferIRQ, %function
+  93              	InitUart4BufferIRQ:
+  94              		@ args = 0, pretend = 0, frame = 8
+  95              		@ frame_needed = 0, uses_anonymous_args = 0
+  96 0000 00B5     		push	{lr}	@
+  97 0002 4FF4A060 		mov	r0, #1280	@,
+  98 0006 83B0     		sub	sp, sp, #12	@,,
+  99 0008 FFF7FEFF 		bl	NVIC_PriorityGroupConfig	@
+ 100 000c 0123     		movs	r3, #1	@ tmp112,
+ 101 000e 3421     		movs	r1, #52	@ tmp110,
+ 102 0010 0022     		movs	r2, #0	@ tmp114,
+ 103 0012 01A8     		add	r0, sp, #4	@,,
+ 104 0014 8DF80410 		strb	r1, [sp, #4]	@ tmp110, NVIC_InitStructure.NVIC_IRQChannel
+ 105 0018 8DF80530 		strb	r3, [sp, #5]	@ tmp112, NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority
+ 106 001c 8DF80730 		strb	r3, [sp, #7]	@ tmp112, NVIC_InitStructure.NVIC_IRQChannelCmd
+ 107 0020 8DF80620 		strb	r2, [sp, #6]	@ tmp114, NVIC_InitStructure.NVIC_IRQChannelSubPriority
+ 108 0024 FFF7FEFF 		bl	NVIC_Init	@
+ 109 0028 03B0     		add	sp, sp, #12	@,,
+ 110              		@ sp needed	@
+ 111 002a 5DF804FB 		ldr	pc, [sp], #4	@
+ 112              		.size	InitUart4BufferIRQ, .-InitUart4BufferIRQ
+ 113 002e 00BF     		.section	.text.USART_GetChar,"ax",%progbits
+ 114              		.align	2
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 3
+
+
+ 115              		.global	USART_GetChar
+ 116              		.thumb
+ 117              		.thumb_func
+ 118              		.type	USART_GetChar, %function
+ 119              	USART_GetChar:
+ 120              		@ args = 0, pretend = 0, frame = 0
+ 121              		@ frame_needed = 0, uses_anonymous_args = 0
+ 122              		@ link register save eliminated.
+ 123 0000 0148     		ldr	r0, .L6	@,
+ 124 0002 FFF7FEBF 		b	RingBufferGet	@
+ 125              	.L7:
+ 126 0006 00BF     		.align	2
+ 127              	.L6:
+ 128 0008 00000000 		.word	.LANCHOR0
+ 129              		.size	USART_GetChar, .-USART_GetChar
+ 130              		.section	.text.USART_Peek,"ax",%progbits
+ 131              		.align	2
+ 132              		.global	USART_Peek
+ 133              		.thumb
+ 134              		.thumb_func
+ 135              		.type	USART_Peek, %function
+ 136              	USART_Peek:
+ 137              		@ args = 0, pretend = 0, frame = 0
+ 138              		@ frame_needed = 0, uses_anonymous_args = 0
+ 139              		@ link register save eliminated.
+ 140 0000 0148     		ldr	r0, .L9	@,
+ 141 0002 FFF7FEBF 		b	RingBufferPeek	@
+ 142              	.L10:
+ 143 0006 00BF     		.align	2
+ 144              	.L9:
+ 145 0008 00000000 		.word	.LANCHOR0
+ 146              		.size	USART_Peek, .-USART_Peek
+ 147              		.section	.text.USART_Available,"ax",%progbits
+ 148              		.align	2
+ 149              		.global	USART_Available
+ 150              		.thumb
+ 151              		.thumb_func
+ 152              		.type	USART_Available, %function
+ 153              	USART_Available:
+ 154              		@ args = 0, pretend = 0, frame = 0
+ 155              		@ frame_needed = 0, uses_anonymous_args = 0
+ 156              		@ link register save eliminated.
+ 157 0000 0148     		ldr	r0, .L12	@,
+ 158 0002 FFF7FEBF 		b	RingBufferFillLevel	@
+ 159              	.L13:
+ 160 0006 00BF     		.align	2
+ 161              	.L12:
+ 162 0008 00000000 		.word	.LANCHOR0
+ 163              		.size	USART_Available, .-USART_Available
+ 164              		.section	.text.USART_Flush,"ax",%progbits
+ 165              		.align	2
+ 166              		.global	USART_Flush
+ 167              		.thumb
+ 168              		.thumb_func
+ 169              		.type	USART_Flush, %function
+ 170              	USART_Flush:
+ 171              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 4
+
+
+ 172              		@ frame_needed = 0, uses_anonymous_args = 0
+ 173 0000 08B5     		push	{r3, lr}	@
+ 174              	.L16:
+ 175 0002 0348     		ldr	r0, .L18	@,
+ 176 0004 FFF7FEFF 		bl	RingBufferFillLevel	@
+ 177 0008 0028     		cmp	r0, #0	@
+ 178 000a FAD1     		bne	.L16	@
+ 179 000c 08BD     		pop	{r3, pc}	@
+ 180              	.L19:
+ 181 000e 00BF     		.align	2
+ 182              	.L18:
+ 183 0010 00000000 		.word	.LANCHOR1
+ 184              		.size	USART_Flush, .-USART_Flush
+ 185              		.section	.text.USART_PutCharDirect,"ax",%progbits
+ 186              		.align	2
+ 187              		.global	USART_PutCharDirect
+ 188              		.thumb
+ 189              		.thumb_func
+ 190              		.type	USART_PutCharDirect, %function
+ 191              	USART_PutCharDirect:
+ 192              		@ args = 0, pretend = 0, frame = 0
+ 193              		@ frame_needed = 0, uses_anonymous_args = 0
+ 194              		@ link register save eliminated.
+ 195 0000 034A     		ldr	r2, .L23	@ tmp121,
+ 196              	.L22:
+ 197 0002 1388     		ldrh	r3, [r2]	@, MEM[(struct USART_TypeDef *)1073761280B].SR
+ 198 0004 0249     		ldr	r1, .L23	@ tmp114,
+ 199 0006 1B06     		lsls	r3, r3, #24	@, MEM[(struct USART_TypeDef *)1073761280B].SR,
+ 200 0008 FBD5     		bpl	.L22	@,
+ 201 000a 8880     		strh	r0, [r1, #4]	@ movhi	@ ch, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 202 000c 7047     		bx	lr	@
+ 203              	.L24:
+ 204 000e 00BF     		.align	2
+ 205              	.L23:
+ 206 0010 004C0040 		.word	1073761280
+ 207              		.size	USART_PutCharDirect, .-USART_PutCharDirect
+ 208              		.section	.text.USART_PutChar,"ax",%progbits
+ 209              		.align	2
+ 210              		.global	USART_PutChar
+ 211              		.thumb
+ 212              		.thumb_func
+ 213              		.type	USART_PutChar, %function
+ 214              	USART_PutChar:
+ 215              		@ args = 0, pretend = 0, frame = 0
+ 216              		@ frame_needed = 0, uses_anonymous_args = 0
+ 217              		@ link register save eliminated.
+ 218 0000 0146     		mov	r1, r0	@ ch, ch
+ 219 0002 0122     		movs	r2, #1	@,
+ 220 0004 0148     		ldr	r0, .L26	@,
+ 221 0006 FFF7FEBF 		b	RingBufferPut	@
+ 222              	.L27:
+ 223 000a 00BF     		.align	2
+ 224              	.L26:
+ 225 000c 00000000 		.word	.LANCHOR1
+ 226              		.size	USART_PutChar, .-USART_PutChar
+ 227              		.section	.text.USART_PutStringDirect,"ax",%progbits
+ 228              		.align	2
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 5
+
+
+ 229              		.global	USART_PutStringDirect
+ 230              		.thumb
+ 231              		.thumb_func
+ 232              		.type	USART_PutStringDirect, %function
+ 233              	USART_PutStringDirect:
+ 234              		@ args = 0, pretend = 0, frame = 0
+ 235              		@ frame_needed = 0, uses_anonymous_args = 0
+ 236              		@ link register save eliminated.
+ 237 0000 0178     		ldrb	r1, [r0]	@ zero_extendqisi2	@ D.6841, *str_3(D)
+ 238 0002 10B4     		push	{r4}	@
+ 239 0004 49B1     		cbz	r1, .L28	@ D.6841,
+ 240 0006 064A     		ldr	r2, .L37	@ tmp148,
+ 241 0008 1446     		mov	r4, r2	@ tmp149, tmp148
+ 242              	.L31:
+ 243 000a 1388     		ldrh	r3, [r2]	@, MEM[(struct USART_TypeDef *)1073761280B].SR
+ 244 000c 1B06     		lsls	r3, r3, #24	@, MEM[(struct USART_TypeDef *)1073761280B].SR,
+ 245 000e FCD5     		bpl	.L31	@,
+ 246 0010 A180     		strh	r1, [r4, #4]	@ movhi	@ D.6841, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 247 0012 10F8011F 		ldrb	r1, [r0, #1]!	@ zero_extendqisi2	@ D.6841, MEM[base: _12, offset: 1B]
+ 248 0016 0029     		cmp	r1, #0	@ D.6841
+ 249 0018 F7D1     		bne	.L31	@
+ 250              	.L28:
+ 251 001a 5DF8044B 		ldr	r4, [sp], #4	@,
+ 252 001e 7047     		bx	lr	@
+ 253              	.L38:
+ 254              		.align	2
+ 255              	.L37:
+ 256 0020 004C0040 		.word	1073761280
+ 257              		.size	USART_PutStringDirect, .-USART_PutStringDirect
+ 258              		.section	.text.USART_PutString,"ax",%progbits
+ 259              		.align	2
+ 260              		.global	USART_PutString
+ 261              		.thumb
+ 262              		.thumb_func
+ 263              		.type	USART_PutString, %function
+ 264              	USART_PutString:
+ 265              		@ args = 0, pretend = 0, frame = 0
+ 266              		@ frame_needed = 0, uses_anonymous_args = 0
+ 267 0000 10B5     		push	{r4, lr}	@
+ 268 0002 0178     		ldrb	r1, [r0]	@ zero_extendqisi2	@ D.6855, *str_3(D)
+ 269 0004 41B1     		cbz	r1, .L39	@ D.6855,
+ 270 0006 0446     		mov	r4, r0	@ ivtmp.53, str
+ 271              	.L42:
+ 272 0008 0448     		ldr	r0, .L46	@,
+ 273 000a 0122     		movs	r2, #1	@,
+ 274 000c FFF7FEFF 		bl	RingBufferPut	@
+ 275 0010 14F8011F 		ldrb	r1, [r4, #1]!	@ zero_extendqisi2	@ D.6855, MEM[base: _9, offset: 1B]
+ 276 0014 0029     		cmp	r1, #0	@ D.6855
+ 277 0016 F7D1     		bne	.L42	@
+ 278              	.L39:
+ 279 0018 10BD     		pop	{r4, pc}	@
+ 280              	.L47:
+ 281 001a 00BF     		.align	2
+ 282              	.L46:
+ 283 001c 00000000 		.word	.LANCHOR1
+ 284              		.size	USART_PutString, .-USART_PutString
+ 285              		.section	.text.UART4_IRQHandler,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 6
+
+
+ 286              		.align	2
+ 287              		.global	UART4_IRQHandler
+ 288              		.thumb
+ 289              		.thumb_func
+ 290              		.type	UART4_IRQHandler, %function
+ 291              	UART4_IRQHandler:
+ 292              		@ args = 0, pretend = 0, frame = 0
+ 293              		@ frame_needed = 0, uses_anonymous_args = 0
+ 294 0000 264B     		ldr	r3, .L64	@ tmp140,
+ 295 0002 274A     		ldr	r2, .L64+4	@ tmp138,
+ 296 0004 70B5     		push	{r4, r5, r6, lr}	@
+ 297 0006 1968     		ldr	r1, [r3]	@ IrqCntUart4, IrqCntUart4
+ 298 0008 1588     		ldrh	r5, [r2]	@, MEM[(struct USART_TypeDef *)1073761280B].SR
+ 299 000a 0131     		adds	r1, r1, #1	@ IrqCntUart4.1, IrqCntUart4,
+ 300 000c ADB2     		uxth	r5, r5	@ D.6859, MEM[(struct USART_TypeDef *)1073761280B].SR
+ 301 000e 1960     		str	r1, [r3]	@ IrqCntUart4.1, IrqCntUart4
+ 302 0010 2906     		lsls	r1, r5, #24	@, D.6859,
+ 303 0012 13D5     		bpl	.L49	@,
+ 304 0014 234C     		ldr	r4, .L64+8	@ tmp147,
+ 305 0016 2168     		ldr	r1, [r4]	@ D.6860, RingBufferUART4TX.Read
+ 306 0018 6368     		ldr	r3, [r4, #4]	@ D.6860, RingBufferUART4TX.Write
+ 307 001a 9942     		cmp	r1, r3	@ D.6860, D.6860
+ 308 001c 2DD0     		beq	.L50	@,
+ 309 001e 2368     		ldr	r3, [r4]	@ D.6860, RingBufferUART4TX.Read
+ 310 0020 2046     		mov	r0, r4	@, tmp147
+ 311 0022 2344     		add	r3, r3, r4	@ tmp151, tmp147
+ 312 0024 1B7B     		ldrb	r3, [r3, #12]	@ zero_extendqisi2	@ D.6859, RingBufferUART4TX.Buffer
+ 313 0026 9380     		strh	r3, [r2, #4]	@ movhi	@ D.6859, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 314 0028 2668     		ldr	r6, [r4]	@ D.6860, RingBufferUART4TX.Read
+ 315 002a FFF7FEFF 		bl	RingBufferSize	@
+ 316 002e 0136     		adds	r6, r6, #1	@ D.6860, D.6860,
+ 317 0030 8642     		cmp	r6, r0	@ D.6860,
+ 318 0032 16BF     		itet	ne
+ 319 0034 2368     		ldrne	r3, [r4]	@ D.6860, RingBufferUART4TX.Read
+ 320 0036 0023     		moveq	r3, #0	@ tmp160,
+ 321 0038 0133     		addne	r3, r3, #1	@ D.6860, D.6860,
+ 322 003a 2360     		str	r3, [r4]	@ D.6860,
+ 323              	.L49:
+ 324 003c AB06     		lsls	r3, r5, #26	@, D.6859,
+ 325 003e 00D4     		bmi	.L61	@,
+ 326 0040 70BD     		pop	{r4, r5, r6, pc}	@
+ 327              	.L61:
+ 328 0042 174B     		ldr	r3, .L64+4	@ tmp167,
+ 329 0044 184C     		ldr	r4, .L64+12	@ tmp170,
+ 330 0046 9B88     		ldrh	r3, [r3, #4]	@, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 331 0048 2046     		mov	r0, r4	@, tmp170
+ 332 004a 9EB2     		uxth	r6, r3	@ D.6859, MEM[(struct USART_TypeDef *)1073761280B].DR
+ 333 004c FFF7FEFF 		bl	RingBufferFillLevel	@
+ 334 0050 0546     		mov	r5, r0	@ D.6860,
+ 335 0052 2046     		mov	r0, r4	@, tmp170
+ 336 0054 FFF7FEFF 		bl	RingBufferSize	@
+ 337 0058 6B1C     		adds	r3, r5, #1	@ D.6860, D.6860,
+ 338 005a 8342     		cmp	r3, r0	@ D.6860,
+ 339 005c 16D0     		beq	.L62	@,
+ 340 005e 6368     		ldr	r3, [r4, #4]	@ D.6860, RingBufferUART4RX.Write
+ 341 0060 2046     		mov	r0, r4	@, tmp170
+ 342 0062 2344     		add	r3, r3, r4	@ tmp177, tmp170
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 7
+
+
+ 343 0064 6568     		ldr	r5, [r4, #4]	@ D.6860, RingBufferUART4RX.Write
+ 344 0066 1E73     		strb	r6, [r3, #12]	@ D.6859, RingBufferUART4RX.Buffer
+ 345 0068 FFF7FEFF 		bl	RingBufferSize	@
+ 346 006c 0135     		adds	r5, r5, #1	@ D.6860, D.6860,
+ 347 006e 8542     		cmp	r5, r0	@ D.6860,
+ 348 0070 10D0     		beq	.L63	@,
+ 349 0072 6368     		ldr	r3, [r4, #4]	@ D.6860, RingBufferUART4RX.Write
+ 350 0074 0133     		adds	r3, r3, #1	@ D.6860, D.6860,
+ 351 0076 6360     		str	r3, [r4, #4]	@ D.6860,
+ 352 0078 70BD     		pop	{r4, r5, r6, pc}	@
+ 353              	.L50:
+ 354 007a 1046     		mov	r0, r2	@, tmp138
+ 355 007c 40F22771 		movw	r1, #1831	@,
+ 356 0080 0022     		movs	r2, #0	@,
+ 357 0082 FFF7FEFF 		bl	USART_ITConfig	@
+ 358              	@ 156 "src/usart.c" 1
+ 359 0086 00BF     		nop
+ 360              	@ 0 "" 2
+ 361              	@ 157 "src/usart.c" 1
+ 362 0088 00BF     		nop
+ 363              	@ 0 "" 2
+ 364              		.thumb
+ 365 008a D7E7     		b	.L49	@
+ 366              	.L62:
+ 367 008c A368     		ldr	r3, [r4, #8]	@ D.6860, RingBufferUART4RX.Overrun
+ 368 008e 0133     		adds	r3, r3, #1	@ D.6860, D.6860,
+ 369 0090 A360     		str	r3, [r4, #8]	@ D.6860, RingBufferUART4RX.Overrun
+ 370 0092 70BD     		pop	{r4, r5, r6, pc}	@
+ 371              	.L63:
+ 372 0094 0023     		movs	r3, #0	@ tmp183,
+ 373 0096 6360     		str	r3, [r4, #4]	@ tmp183,
+ 374 0098 70BD     		pop	{r4, r5, r6, pc}	@
+ 375              	.L65:
+ 376 009a 00BF     		.align	2
+ 377              	.L64:
+ 378 009c 00000000 		.word	IrqCntUart4
+ 379 00a0 004C0040 		.word	1073761280
+ 380 00a4 00000000 		.word	.LANCHOR1
+ 381 00a8 00000000 		.word	.LANCHOR0
+ 382              		.size	UART4_IRQHandler, .-UART4_IRQHandler
+ 383              		.section	.text.InitUart4Buffer,"ax",%progbits
+ 384              		.align	2
+ 385              		.global	InitUart4Buffer
+ 386              		.thumb
+ 387              		.thumb_func
+ 388              		.type	InitUart4Buffer, %function
+ 389              	InitUart4Buffer:
+ 390              		@ args = 0, pretend = 0, frame = 0
+ 391              		@ frame_needed = 0, uses_anonymous_args = 0
+ 392 0000 08B5     		push	{r3, lr}	@
+ 393 0002 0548     		ldr	r0, .L67	@,
+ 394 0004 0549     		ldr	r1, .L67+4	@,
+ 395 0006 FFF7FEFF 		bl	RingBufferInit	@
+ 396 000a BDE80840 		pop	{r3, lr}	@
+ 397 000e 0448     		ldr	r0, .L67+8	@,
+ 398 0010 0021     		movs	r1, #0	@,
+ 399 0012 FFF7FEBF 		b	RingBufferInit	@
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 8
+
+
+ 400              	.L68:
+ 401 0016 00BF     		.align	2
+ 402              	.L67:
+ 403 0018 00000000 		.word	.LANCHOR1
+ 404 001c 00000000 		.word	UART4EnableTxInterrupt
+ 405 0020 00000000 		.word	.LANCHOR0
+ 406              		.size	InitUart4Buffer, .-InitUart4Buffer
+ 407              		.section	.text.Usart4Init,"ax",%progbits
+ 408              		.align	2
+ 409              		.global	Usart4Init
+ 410              		.thumb
+ 411              		.thumb_func
+ 412              		.type	Usart4Init, %function
+ 413              	Usart4Init:
+ 414              		@ args = 0, pretend = 0, frame = 32
+ 415              		@ frame_needed = 0, uses_anonymous_args = 0
+ 416 0000 30B5     		push	{r4, r5, lr}	@
+ 417 0002 234D     		ldr	r5, .L70	@ tmp116,
+ 418 0004 89B0     		sub	sp, sp, #36	@,,
+ 419 0006 2846     		mov	r0, r5	@, tmp116
+ 420 0008 01A9     		add	r1, sp, #4	@,,
+ 421 000a 1822     		movs	r2, #24	@ tmp112,
+ 422 000c 0323     		movs	r3, #3	@ tmp114,
+ 423 000e 4FF48064 		mov	r4, #1024	@ tmp111,
+ 424 0012 ADF80440 		strh	r4, [sp, #4]	@ movhi	@ tmp111, GPIO_InitStructure.GPIO_Pin
+ 425 0016 8DF80720 		strb	r2, [sp, #7]	@ tmp112, GPIO_InitStructure.GPIO_Mode
+ 426 001a 1E4C     		ldr	r4, .L70+4	@ tmp125,
+ 427 001c 8DF80630 		strb	r3, [sp, #6]	@ tmp114, GPIO_InitStructure.GPIO_Speed
+ 428 0020 FFF7FEFF 		bl	GPIO_Init	@
+ 429 0024 4FF40062 		mov	r2, #2048	@ tmp119,
+ 430 0028 2823     		movs	r3, #40	@ tmp120,
+ 431 002a 01A9     		add	r1, sp, #4	@,,
+ 432 002c 2846     		mov	r0, r5	@, tmp116
+ 433 002e ADF80420 		strh	r2, [sp, #4]	@ movhi	@ tmp119, GPIO_InitStructure.GPIO_Pin
+ 434 0032 8DF80730 		strb	r3, [sp, #7]	@ tmp120, GPIO_InitStructure.GPIO_Mode
+ 435 0036 FFF7FEFF 		bl	GPIO_Init	@
+ 436 003a 02A8     		add	r0, sp, #8	@,,
+ 437 003c FFF7FEFF 		bl	USART_ClockStructInit	@
+ 438 0040 02A9     		add	r1, sp, #8	@,,
+ 439 0042 2046     		mov	r0, r4	@, tmp125
+ 440 0044 FFF7FEFF 		bl	USART_ClockInit	@
+ 441 0048 4FF41655 		mov	r5, #9600	@ tmp127,
+ 442 004c 0023     		movs	r3, #0	@ tmp129,
+ 443 004e 2046     		mov	r0, r4	@, tmp125
+ 444 0050 0C22     		movs	r2, #12	@ tmp135,
+ 445 0052 04A9     		add	r1, sp, #16	@,,
+ 446 0054 ADF81430 		strh	r3, [sp, #20]	@ movhi	@ tmp129, USART_InitStructure.USART_WordLength
+ 447 0058 ADF81630 		strh	r3, [sp, #22]	@ movhi	@ tmp129, USART_InitStructure.USART_StopBits
+ 448 005c ADF81830 		strh	r3, [sp, #24]	@ movhi	@ tmp129, USART_InitStructure.USART_Parity
+ 449 0060 ADF81C30 		strh	r3, [sp, #28]	@ movhi	@ tmp129, USART_InitStructure.USART_HardwareFlowControl
+ 450 0064 ADF81A20 		strh	r2, [sp, #26]	@ movhi	@ tmp135, USART_InitStructure.USART_Mode
+ 451 0068 0495     		str	r5, [sp, #16]	@ tmp127, USART_InitStructure.USART_BaudRate
+ 452 006a FFF7FEFF 		bl	USART_Init	@
+ 453 006e 0122     		movs	r2, #1	@,
+ 454 0070 2046     		mov	r0, r4	@, tmp125
+ 455 0072 40F22551 		movw	r1, #1317	@,
+ 456 0076 FFF7FEFF 		bl	USART_ITConfig	@
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 9
+
+
+ 457 007a 2046     		mov	r0, r4	@, tmp125
+ 458 007c 0121     		movs	r1, #1	@,
+ 459 007e FFF7FEFF 		bl	USART_Cmd	@
+ 460 0082 FFF7FEFF 		bl	InitUart4Buffer	@
+ 461 0086 FFF7FEFF 		bl	InitUart4BufferIRQ	@
+ 462 008a 09B0     		add	sp, sp, #36	@,,
+ 463              		@ sp needed	@
+ 464 008c 30BD     		pop	{r4, r5, pc}	@
+ 465              	.L71:
+ 466 008e 00BF     		.align	2
+ 467              	.L70:
+ 468 0090 00100140 		.word	1073811456
+ 469 0094 004C0040 		.word	1073761280
+ 470              		.size	Usart4Init, .-Usart4Init
+ 471              		.comm	IrqCntUart4,4,4
+ 472              		.section	.bss.RingBufferUART4TX,"aw",%nobits
+ 473              		.align	2
+ 474              		.set	.LANCHOR1,. + 0
+ 475              		.type	RingBufferUART4TX, %object
+ 476              		.size	RingBufferUART4TX, 528
+ 477              	RingBufferUART4TX:
+ 478 0000 00000000 		.space	528
+ 478      00000000 
+ 478      00000000 
+ 478      00000000 
+ 478      00000000 
+ 479              		.section	.bss.RingBufferUART4RX,"aw",%nobits
+ 480              		.align	2
+ 481              		.set	.LANCHOR0,. + 0
+ 482              		.type	RingBufferUART4RX, %object
+ 483              		.size	RingBufferUART4RX, 528
+ 484              	RingBufferUART4RX:
+ 485 0000 00000000 		.space	528
+ 485      00000000 
+ 485      00000000 
+ 485      00000000 
+ 485      00000000 
+ 486              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 usart.c
+C:\cygwin64\tmp\cc3sgp1S.s:69     .text.UART4EnableTxInterrupt:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:74     .text.UART4EnableTxInterrupt:00000000 UART4EnableTxInterrupt
+C:\cygwin64\tmp\cc3sgp1S.s:85     .text.UART4EnableTxInterrupt:0000000c $d
+C:\cygwin64\tmp\cc3sgp1S.s:88     .text.InitUart4BufferIRQ:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:93     .text.InitUart4BufferIRQ:00000000 InitUart4BufferIRQ
+C:\cygwin64\tmp\cc3sgp1S.s:114    .text.USART_GetChar:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:119    .text.USART_GetChar:00000000 USART_GetChar
+C:\cygwin64\tmp\cc3sgp1S.s:128    .text.USART_GetChar:00000008 $d
+C:\cygwin64\tmp\cc3sgp1S.s:131    .text.USART_Peek:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:136    .text.USART_Peek:00000000 USART_Peek
+C:\cygwin64\tmp\cc3sgp1S.s:145    .text.USART_Peek:00000008 $d
+C:\cygwin64\tmp\cc3sgp1S.s:148    .text.USART_Available:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:153    .text.USART_Available:00000000 USART_Available
+C:\cygwin64\tmp\cc3sgp1S.s:162    .text.USART_Available:00000008 $d
+C:\cygwin64\tmp\cc3sgp1S.s:165    .text.USART_Flush:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:170    .text.USART_Flush:00000000 USART_Flush
+C:\cygwin64\tmp\cc3sgp1S.s:183    .text.USART_Flush:00000010 $d
+C:\cygwin64\tmp\cc3sgp1S.s:186    .text.USART_PutCharDirect:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:191    .text.USART_PutCharDirect:00000000 USART_PutCharDirect
+C:\cygwin64\tmp\cc3sgp1S.s:206    .text.USART_PutCharDirect:00000010 $d
+C:\cygwin64\tmp\cc3sgp1S.s:209    .text.USART_PutChar:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:214    .text.USART_PutChar:00000000 USART_PutChar
+C:\cygwin64\tmp\cc3sgp1S.s:225    .text.USART_PutChar:0000000c $d
+C:\cygwin64\tmp\cc3sgp1S.s:228    .text.USART_PutStringDirect:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:233    .text.USART_PutStringDirect:00000000 USART_PutStringDirect
+C:\cygwin64\tmp\cc3sgp1S.s:256    .text.USART_PutStringDirect:00000020 $d
+C:\cygwin64\tmp\cc3sgp1S.s:259    .text.USART_PutString:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:264    .text.USART_PutString:00000000 USART_PutString
+C:\cygwin64\tmp\cc3sgp1S.s:283    .text.USART_PutString:0000001c $d
+C:\cygwin64\tmp\cc3sgp1S.s:286    .text.UART4_IRQHandler:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:291    .text.UART4_IRQHandler:00000000 UART4_IRQHandler
+C:\cygwin64\tmp\cc3sgp1S.s:378    .text.UART4_IRQHandler:0000009c $d
+                            *COM*:00000004 IrqCntUart4
+C:\cygwin64\tmp\cc3sgp1S.s:384    .text.InitUart4Buffer:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:389    .text.InitUart4Buffer:00000000 InitUart4Buffer
+C:\cygwin64\tmp\cc3sgp1S.s:403    .text.InitUart4Buffer:00000018 $d
+C:\cygwin64\tmp\cc3sgp1S.s:408    .text.Usart4Init:00000000 $t
+C:\cygwin64\tmp\cc3sgp1S.s:413    .text.Usart4Init:00000000 Usart4Init
+C:\cygwin64\tmp\cc3sgp1S.s:468    .text.Usart4Init:00000090 $d
+C:\cygwin64\tmp\cc3sgp1S.s:473    .bss.RingBufferUART4TX:00000000 $d
+C:\cygwin64\tmp\cc3sgp1S.s:477    .bss.RingBufferUART4TX:00000000 RingBufferUART4TX
+C:\cygwin64\tmp\cc3sgp1S.s:480    .bss.RingBufferUART4RX:00000000 $d
+C:\cygwin64\tmp\cc3sgp1S.s:484    .bss.RingBufferUART4RX:00000000 RingBufferUART4RX
+
+UNDEFINED SYMBOLS
+USART_ITConfig
+NVIC_PriorityGroupConfig
+NVIC_Init
+RingBufferGet
+RingBufferPeek
+RingBufferFillLevel
+RingBufferPut
+RingBufferSize
+RingBufferInit
+GPIO_Init
+ARM GAS  C:\cygwin64\tmp\cc3sgp1S.s 			page 11
+
+
+USART_ClockStructInit
+USART_ClockInit
+USART_Init
+USART_Cmd

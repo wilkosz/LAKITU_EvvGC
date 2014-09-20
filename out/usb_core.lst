@@ -1,0 +1,1481 @@
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"usb_core.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/usb_core.d -MF out/usb_core.d -MP -MQ out/usb_core.o
+  25              	@ -D__USES_INITFINI__ -D STM32F10X_HD -D USE_STDPERIPH_DRIVER
+  26              	@ Libraries/STM32_USB-FS-Device_Driver/src/usb_core.c -mcpu=cortex-m3
+  27              	@ -mthumb -auxbase-strip out/usb_core.o -O2 -Wall -Wstrict-prototypes
+  28              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  29              	@ -fsingle-precision-constant
+  30              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  31              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  32              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  33              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  34              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  35              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  36              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  37              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  38              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  39              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  40              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  41              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  42              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  43              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  44              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  45              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  46              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  47              	@ -freorder-functions -frerun-cse-after-loop
+  48              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  49              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  50              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  51              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  52              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  53              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  54              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+  57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 2
+
+
+  58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  59              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  60              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  61              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  62              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  63              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  64              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  65              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  67              	@ -munaligned-access -mvectorize-with-neon-quad
+  68              	
+  69              		.section	.text.Standard_GetConfiguration,"ax",%progbits
+  70              		.align	2
+  71              		.global	Standard_GetConfiguration
+  72              		.thumb
+  73              		.thumb_func
+  74              		.type	Standard_GetConfiguration, %function
+  75              	Standard_GetConfiguration:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78 0000 08B5     		push	{r3, lr}	@
+  79 0002 38B1     		cbz	r0, .L5	@ Length,
+  80 0004 064B     		ldr	r3, .L6	@ tmp122,
+  81 0006 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests, pUser_Standard_Requests
+  82 0008 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests.1_7->User_GetConfiguration, pUser_Standard_Requests.1_7->Us
+  83 000a 9847     		blx	r3	@ pUser_Standard_Requests.1_7->User_GetConfiguration
+  84 000c 054B     		ldr	r3, .L6+4	@ tmp124,
+  85 000e 1868     		ldr	r0, [r3]	@ pInformation, pInformation
+  86 0010 0A30     		adds	r0, r0, #10	@ D.7748, pInformation,
+  87 0012 08BD     		pop	{r3, pc}	@
+  88              	.L5:
+  89 0014 034B     		ldr	r3, .L6+4	@ tmp118,
+  90 0016 0122     		movs	r2, #1	@ tmp120,
+  91 0018 1B68     		ldr	r3, [r3]	@ pInformation, pInformation
+  92 001a 1A82     		strh	r2, [r3, #16]	@ movhi	@ tmp120, pInformation.0_5->Ctrl_Info.Usb_wLength
+  93 001c 08BD     		pop	{r3, pc}	@
+  94              	.L7:
+  95 001e 00BF     		.align	2
+  96              	.L6:
+  97 0020 00000000 		.word	pUser_Standard_Requests
+  98 0024 00000000 		.word	pInformation
+  99              		.size	Standard_GetConfiguration, .-Standard_GetConfiguration
+ 100              		.section	.text.Standard_GetInterface,"ax",%progbits
+ 101              		.align	2
+ 102              		.global	Standard_GetInterface
+ 103              		.thumb
+ 104              		.thumb_func
+ 105              		.type	Standard_GetInterface, %function
+ 106              	Standard_GetInterface:
+ 107              		@ args = 0, pretend = 0, frame = 0
+ 108              		@ frame_needed = 0, uses_anonymous_args = 0
+ 109 0000 08B5     		push	{r3, lr}	@
+ 110 0002 38B1     		cbz	r0, .L11	@ Length,
+ 111 0004 064B     		ldr	r3, .L12	@ tmp122,
+ 112 0006 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 113 0008 9B68     		ldr	r3, [r3, #8]	@ pUser_Standard_Requests.5_7->User_GetInterface, pUser_Standard_Requests.5_7->Us
+ 114 000a 9847     		blx	r3	@ pUser_Standard_Requests.5_7->User_GetInterface
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 3
+
+
+ 115 000c 054B     		ldr	r3, .L12+4	@ tmp124,
+ 116 000e 1868     		ldr	r0, [r3]	@ pInformation, pInformation
+ 117 0010 0C30     		adds	r0, r0, #12	@ D.7752, pInformation,
+ 118 0012 08BD     		pop	{r3, pc}	@
+ 119              	.L11:
+ 120 0014 034B     		ldr	r3, .L12+4	@ tmp118,
+ 121 0016 0122     		movs	r2, #1	@ tmp120,
+ 122 0018 1B68     		ldr	r3, [r3]	@ pInformation, pInformation
+ 123 001a 1A82     		strh	r2, [r3, #16]	@ movhi	@ tmp120, pInformation.4_5->Ctrl_Info.Usb_wLength
+ 124 001c 08BD     		pop	{r3, pc}	@
+ 125              	.L13:
+ 126 001e 00BF     		.align	2
+ 127              	.L12:
+ 128 0020 00000000 		.word	pUser_Standard_Requests
+ 129 0024 00000000 		.word	pInformation
+ 130              		.size	Standard_GetInterface, .-Standard_GetInterface
+ 131              		.section	.text.Standard_GetStatus,"ax",%progbits
+ 132              		.align	2
+ 133              		.global	Standard_GetStatus
+ 134              		.thumb
+ 135              		.thumb_func
+ 136              		.type	Standard_GetStatus, %function
+ 137              	Standard_GetStatus:
+ 138              		@ args = 0, pretend = 0, frame = 0
+ 139              		@ frame_needed = 0, uses_anonymous_args = 0
+ 140 0000 08B5     		push	{r3, lr}	@
+ 141 0002 224B     		ldr	r3, .L32	@ tmp143,
+ 142 0004 0028     		cmp	r0, #0	@ Length
+ 143 0006 32D0     		beq	.L29	@
+ 144 0008 2148     		ldr	r0, .L32+4	@ D.7756,
+ 145 000a 1A68     		ldr	r2, [r3]	@ pInformation.9, pInformation
+ 146 000c 0021     		movs	r1, #0	@ tmp148,
+ 147 000e 0180     		strh	r1, [r0]	@ movhi	@ tmp148, StatusInfo.w
+ 148 0010 1378     		ldrb	r3, [r2]	@ zero_extendqisi2	@ pInformation.9_10->USBbmRequestType, pInformation.9_10->USBbmRe
+ 149 0012 13F07F03 		ands	r3, r3, #127	@ D.7757, pInformation.9_10->USBbmRequestType,
+ 150 0016 16D0     		beq	.L30	@,
+ 151 0018 012B     		cmp	r3, #1	@ D.7757,
+ 152 001a 27D0     		beq	.L16	@,
+ 153 001c 022B     		cmp	r3, #2	@ D.7757,
+ 154 001e 24D1     		bne	.L25	@,
+ 155 0020 5379     		ldrb	r3, [r2, #5]	@ zero_extendqisi2	@ wIndex0, pInformation.9_10->USBwIndexs.bw.bb0
+ 156 0022 03F00F02 		and	r2, r3, #15	@ Related_Endpoint, wIndex0,
+ 157 0026 1B06     		lsls	r3, r3, #24	@, wIndex0,
+ 158 0028 25D4     		bmi	.L31	@,
+ 159 002a 9300     		lsls	r3, r2, #2	@ D.7759, Related_Endpoint,
+ 160 002c 03F18043 		add	r3, r3, #1073741824	@ D.7760, D.7759,
+ 161 0030 03F5B843 		add	r3, r3, #23552	@ D.7760, D.7760,
+ 162 0034 1B68     		ldr	r3, [r3]	@ D.7759, *_35
+ 163 0036 03F44053 		and	r3, r3, #12288	@ D.7761, D.7759,
+ 164 003a B3F5805F 		cmp	r3, #4096	@ D.7761,
+ 165 003e 0ED1     		bne	.L21	@,
+ 166              	.L23:
+ 167 0040 0123     		movs	r3, #1	@ tmp176,
+ 168 0042 0370     		strb	r3, [r0]	@ tmp176, StatusInfo.bw.bb1
+ 169 0044 0BE0     		b	.L21	@
+ 170              	.L30:
+ 171 0046 537A     		ldrb	r3, [r2, #9]	@ zero_extendqisi2	@ Feature, pInformation.9_10->Current_Feature
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 4
+
+
+ 172 0048 9A06     		lsls	r2, r3, #26	@, Feature,
+ 173 004a 54BF     		ite	pl
+ 174 004c 0278     		ldrbpl	r2, [r0]	@ zero_extendqisi2	@ D.7758, StatusInfo.bw.bb1
+ 175 004e 0222     		movmi	r2, #2	@ D.7758,
+ 176 0050 5906     		lsls	r1, r3, #25	@, Feature,
+ 177 0052 4CBF     		ite	mi
+ 178 0054 42F00102 		orrmi	r2, r2, #1	@ tmp164, D.7758,
+ 179 0058 22F00102 		bicpl	r2, r2, #1	@ tmp167, D.7758,
+ 180 005c 0270     		strb	r2, [r0]	@ tmp167, StatusInfo.bw.bb1
+ 181              	.L21:
+ 182 005e 0D4B     		ldr	r3, .L32+8	@ tmp183,
+ 183 0060 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 184 0062 1B69     		ldr	r3, [r3, #16]	@ pUser_Standard_Requests.11_40->User_GetStatus, pUser_Standard_Requests.11_40->
+ 185 0064 9847     		blx	r3	@ pUser_Standard_Requests.11_40->User_GetStatus
+ 186 0066 0A48     		ldr	r0, .L32+4	@ D.7756,
+ 187 0068 08BD     		pop	{r3, pc}	@
+ 188              	.L25:
+ 189 006a 0846     		mov	r0, r1	@ D.7756, tmp148
+ 190              	.L16:
+ 191 006c 08BD     		pop	{r3, pc}	@
+ 192              	.L29:
+ 193 006e 1B68     		ldr	r3, [r3]	@ pInformation, pInformation
+ 194 0070 0222     		movs	r2, #2	@ tmp145,
+ 195 0072 1A82     		strh	r2, [r3, #16]	@ movhi	@ tmp145, pInformation.9_7->Ctrl_Info.Usb_wLength
+ 196 0074 08BD     		pop	{r3, pc}	@
+ 197              	.L31:
+ 198 0076 9200     		lsls	r2, r2, #2	@ D.7759, Related_Endpoint,
+ 199 0078 02F18042 		add	r2, r2, #1073741824	@ D.7760, D.7759,
+ 200 007c 02F5B842 		add	r2, r2, #23552	@ D.7760, D.7760,
+ 201 0080 1368     		ldr	r3, [r2]	@ D.7759, *_28
+ 202 0082 03F03003 		and	r3, r3, #48	@ D.7761, D.7759,
+ 203 0086 102B     		cmp	r3, #16	@ D.7761,
+ 204 0088 E9D1     		bne	.L21	@,
+ 205 008a D9E7     		b	.L23	@
+ 206              	.L33:
+ 207              		.align	2
+ 208              	.L32:
+ 209 008c 00000000 		.word	pInformation
+ 210 0090 00000000 		.word	StatusInfo
+ 211 0094 00000000 		.word	pUser_Standard_Requests
+ 212              		.size	Standard_GetStatus, .-Standard_GetStatus
+ 213              		.section	.text.DataStageIn,"ax",%progbits
+ 214              		.align	2
+ 215              		.thumb
+ 216              		.thumb_func
+ 217              		.type	DataStageIn, %function
+ 218              	DataStageIn:
+ 219              		@ args = 0, pretend = 0, frame = 0
+ 220              		@ frame_needed = 0, uses_anonymous_args = 0
+ 221 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}	@
+ 222 0004 264F     		ldr	r7, .L45	@ tmp169,
+ 223 0006 3C68     		ldr	r4, [r7]	@ pInformation.27, pInformation
+ 224 0008 238A     		ldrh	r3, [r4, #16]	@ Length, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].Usb_wLength
+ 225 000a 267A     		ldrb	r6, [r4, #8]	@ zero_extendqisi2	@ D.7771, pInformation.27_6->ControlState
+ 226 000c 23B9     		cbnz	r3, .L35	@ Length,
+ 227 000e 042E     		cmp	r6, #4	@ D.7771,
+ 228 0010 2DD0     		beq	.L43	@,
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 5
+
+
+ 229 0012 A58A     		ldrh	r5, [r4, #20]	@ Length, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].PacketSize
+ 230              	.L40:
+ 231 0014 0426     		movs	r6, #4	@ D.7771,
+ 232 0016 03E0     		b	.L39	@
+ 233              	.L35:
+ 234 0018 A58A     		ldrh	r5, [r4, #20]	@ Length, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].PacketSize
+ 235 001a AB42     		cmp	r3, r5	@ Length, Length
+ 236 001c FAD9     		bls	.L40	@,
+ 237 001e 0226     		movs	r6, #2	@ D.7771,
+ 238              	.L39:
+ 239 0020 9D42     		cmp	r5, r3	@ Length, Length
+ 240 0022 28BF     		it	cs
+ 241 0024 1D46     		movcs	r5, r3	@ D.7766, Length
+ 242 0026 2846     		mov	r0, r5	@, D.7766
+ 243 0028 A369     		ldr	r3, [r4, #24]	@ MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].CopyData, MEM[(struct END
+ 244 002a 9847     		blx	r3	@ MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].CopyData
+ 245 002c 8046     		mov	r8, r0	@ DataBuffer,
+ 246 002e 0020     		movs	r0, #0	@,
+ 247 0030 FFF7FEFF 		bl	GetEPTxAddr	@
+ 248 0034 2A46     		mov	r2, r5	@, D.7766
+ 249 0036 0146     		mov	r1, r0	@ tmp154,
+ 250 0038 4046     		mov	r0, r8	@, DataBuffer
+ 251 003a FFF7FEFF 		bl	UserToPMABufferCopy	@
+ 252 003e 2946     		mov	r1, r5	@, D.7766
+ 253 0040 0020     		movs	r0, #0	@,
+ 254 0042 FFF7FEFF 		bl	SetEPTxCount	@
+ 255 0046 618A     		ldrh	r1, [r4, #18]	@, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].Usb_wOffset
+ 256 0048 B4F810C0 		ldrh	ip, [r4, #16]	@, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].Usb_wLength
+ 257 004c 1548     		ldr	r0, .L45+4	@ tmp161,
+ 258 004e 164B     		ldr	r3, .L45+8	@ tmp164,
+ 259 0050 C5EB0C0C 		rsb	ip, r5, ip	@ tmp156, D.7766, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].Usb_wLength
+ 260 0054 3A68     		ldr	r2, [r7]	@ D.7765, pInformation
+ 261 0056 0D44     		add	r5, r5, r1	@ tmp159, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].Usb_wOffset
+ 262 0058 3027     		movs	r7, #48	@ tmp163,
+ 263 005a 4FF44051 		mov	r1, #12288	@ tmp166,
+ 264 005e 0780     		strh	r7, [r0]	@ movhi	@ tmp163, SaveTState
+ 265 0060 A4F810C0 		strh	ip, [r4, #16]	@ movhi	@ tmp156, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].Usb_wLen
+ 266 0064 6582     		strh	r5, [r4, #18]	@ movhi	@ tmp159, MEM[(struct ENDPOINT_INFO *)pInformation.27_6 + 16B].Usb_wOff
+ 267 0066 1980     		strh	r1, [r3]	@ movhi	@ tmp166, SaveRState
+ 268              	.L38:
+ 269 0068 1672     		strb	r6, [r2, #8]	@ D.7771, _46->ControlState
+ 270 006a BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}	@
+ 271              	.L43:
+ 272 006e 0F49     		ldr	r1, .L45+12	@ tmp135,
+ 273 0070 0A78     		ldrb	r2, [r1]	@ zero_extendqisi2	@ Data_Mul_MaxPacketSize, Data_Mul_MaxPacketSize
+ 274 0072 012A     		cmp	r2, #1	@ Data_Mul_MaxPacketSize,
+ 275 0074 07D0     		beq	.L44	@,
+ 276 0076 0B4B     		ldr	r3, .L45+4	@ tmp149,
+ 277 0078 2246     		mov	r2, r4	@ D.7765, pInformation.27
+ 278 007a 0726     		movs	r6, #7	@ D.7771,
+ 279 007c 1021     		movs	r1, #16	@ tmp151,
+ 280 007e 1672     		strb	r6, [r2, #8]	@ D.7771, _46->ControlState
+ 281 0080 1980     		strh	r1, [r3]	@ movhi	@ tmp151, SaveTState
+ 282 0082 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}	@
+ 283              	.L44:
+ 284 0086 0A48     		ldr	r0, .L45+16	@ tmp137,
+ 285 0088 0A4A     		ldr	r2, .L45+20	@ tmp139,
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 6
+
+
+ 286 008a 0568     		ldr	r5, [r0]	@ D.7767, MEM[(volatile unsigned int *)1073765456B]
+ 287 008c 0548     		ldr	r0, .L45+4	@ tmp143,
+ 288 008e ADB2     		uxth	r5, r5	@ D.7767, D.7767
+ 289 0090 2A44     		add	r2, r2, r5	@ tmp139, D.7767
+ 290 0092 5700     		lsls	r7, r2, #1	@ tmp141, tmp139,
+ 291 0094 3025     		movs	r5, #48	@ tmp145,
+ 292 0096 3B60     		str	r3, [r7]	@ Length, *_16
+ 293 0098 2246     		mov	r2, r4	@ D.7765, pInformation.27
+ 294 009a 0B70     		strb	r3, [r1]	@ Length, Data_Mul_MaxPacketSize
+ 295 009c 0580     		strh	r5, [r0]	@ movhi	@ tmp145, SaveTState
+ 296 009e E3E7     		b	.L38	@
+ 297              	.L46:
+ 298              		.align	2
+ 299              	.L45:
+ 300 00a0 00000000 		.word	pInformation
+ 301 00a4 00000000 		.word	SaveTState
+ 302 00a8 00000000 		.word	SaveRState
+ 303 00ac 00000000 		.word	.LANCHOR0
+ 304 00b0 505C0040 		.word	1073765456
+ 305 00b4 02300020 		.word	536883202
+ 306              		.size	DataStageIn, .-DataStageIn
+ 307              		.section	.text.Standard_SetConfiguration,"ax",%progbits
+ 308              		.align	2
+ 309              		.global	Standard_SetConfiguration
+ 310              		.thumb
+ 311              		.thumb_func
+ 312              		.type	Standard_SetConfiguration, %function
+ 313              	Standard_SetConfiguration:
+ 314              		@ args = 0, pretend = 0, frame = 0
+ 315              		@ frame_needed = 0, uses_anonymous_args = 0
+ 316 0000 10B5     		push	{r4, lr}	@
+ 317 0002 0B4B     		ldr	r3, .L53	@ tmp119,
+ 318 0004 0B4A     		ldr	r2, .L53+4	@ tmp120,
+ 319 0006 1B68     		ldr	r3, [r3]	@ pInformation.2, pInformation
+ 320 0008 5178     		ldrb	r1, [r2, #1]	@ zero_extendqisi2	@ Device_Table.Total_Configuration, Device_Table.Total_Config
+ 321 000a DA78     		ldrb	r2, [r3, #3]	@ zero_extendqisi2	@ D.7775, pInformation.2_4->USBwValues.bw.bb0
+ 322 000c 9142     		cmp	r1, r2	@ Device_Table.Total_Configuration, D.7775
+ 323 000e 01D2     		bcs	.L52	@,
+ 324              	.L51:
+ 325 0010 0220     		movs	r0, #2	@ D.7774,
+ 326 0012 10BD     		pop	{r4, pc}	@
+ 327              	.L52:
+ 328 0014 9978     		ldrb	r1, [r3, #2]	@ zero_extendqisi2	@ pInformation.2_4->USBwValues.bw.bb1, pInformation.2_4->USBw
+ 329 0016 0029     		cmp	r1, #0	@ pInformation.2_4->USBwValues.bw.bb1
+ 330 0018 FAD1     		bne	.L51	@
+ 331 001a 9C88     		ldrh	r4, [r3, #4]	@ pInformation.2_4->USBwIndexs.w, pInformation.2_4->USBwIndexs.w
+ 332 001c 002C     		cmp	r4, #0	@ pInformation.2_4->USBwIndexs.w
+ 333 001e F7D1     		bne	.L51	@
+ 334 0020 0549     		ldr	r1, .L53+8	@ tmp126,
+ 335 0022 9A72     		strb	r2, [r3, #10]	@ D.7775, pInformation.2_4->Current_Configuration
+ 336 0024 0B68     		ldr	r3, [r1]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 337 0026 5B68     		ldr	r3, [r3, #4]	@ pUser_Standard_Requests.3_10->User_SetConfiguration, pUser_Standard_Requests.3_
+ 338 0028 9847     		blx	r3	@ pUser_Standard_Requests.3_10->User_SetConfiguration
+ 339 002a 2046     		mov	r0, r4	@ D.7774, pInformation.2_4->USBwIndexs.w
+ 340 002c 10BD     		pop	{r4, pc}	@
+ 341              	.L54:
+ 342 002e 00BF     		.align	2
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 7
+
+
+ 343              	.L53:
+ 344 0030 00000000 		.word	pInformation
+ 345 0034 00000000 		.word	Device_Table
+ 346 0038 00000000 		.word	pUser_Standard_Requests
+ 347              		.size	Standard_SetConfiguration, .-Standard_SetConfiguration
+ 348              		.section	.text.Standard_SetInterface,"ax",%progbits
+ 349              		.align	2
+ 350              		.global	Standard_SetInterface
+ 351              		.thumb
+ 352              		.thumb_func
+ 353              		.type	Standard_SetInterface, %function
+ 354              	Standard_SetInterface:
+ 355              		@ args = 0, pretend = 0, frame = 0
+ 356              		@ frame_needed = 0, uses_anonymous_args = 0
+ 357 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 358 0002 104A     		ldr	r2, .L62	@ tmp129,
+ 359 0004 104C     		ldr	r4, .L62+4	@ tmp127,
+ 360 0006 1268     		ldr	r2, [r2]	@ pProperty, pProperty
+ 361 0008 2368     		ldr	r3, [r4]	@ pInformation.7, pInformation
+ 362 000a 5879     		ldrb	r0, [r3, #5]	@ zero_extendqisi2	@, pInformation.7_6->USBwIndexs.bw.bb0
+ 363 000c D978     		ldrb	r1, [r3, #3]	@ zero_extendqisi2	@, pInformation.7_6->USBwValues.bw.bb0
+ 364 000e 9369     		ldr	r3, [r2, #24]	@ pProperty.6_4->Class_Get_Interface_Setting, pProperty.6_4->Class_Get_Interface
+ 365 0010 9847     		blx	r3	@ pProperty.6_4->Class_Get_Interface_Setting
+ 366 0012 2368     		ldr	r3, [r4]	@ pInformation.7, pInformation
+ 367 0014 9A7A     		ldrb	r2, [r3, #10]	@ zero_extendqisi2	@ pInformation.7_11->Current_Configuration, pInformation.7_1
+ 368 0016 0AB9     		cbnz	r2, .L61	@ pInformation.7_11->Current_Configuration,
+ 369              	.L60:
+ 370 0018 0220     		movs	r0, #2	@ D.7780,
+ 371 001a 38BD     		pop	{r3, r4, r5, pc}	@
+ 372              	.L61:
+ 373 001c 0028     		cmp	r0, #0	@ tmp133
+ 374 001e FBD1     		bne	.L60	@
+ 375 0020 1A79     		ldrb	r2, [r3, #4]	@ zero_extendqisi2	@ pInformation.7_11->USBwIndexs.bw.bb1, pInformation.7_11->US
+ 376 0022 002A     		cmp	r2, #0	@ pInformation.7_11->USBwIndexs.bw.bb1
+ 377 0024 F8D1     		bne	.L60	@
+ 378 0026 9D78     		ldrb	r5, [r3, #2]	@ zero_extendqisi2	@ pInformation.7_11->USBwValues.bw.bb1, pInformation.7_11->US
+ 379 0028 002D     		cmp	r5, #0	@ pInformation.7_11->USBwValues.bw.bb1
+ 380 002a F5D1     		bne	.L60	@
+ 381 002c 074B     		ldr	r3, .L62+8	@ tmp139,
+ 382 002e 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 383 0030 DB68     		ldr	r3, [r3, #12]	@ pUser_Standard_Requests.8_15->User_SetInterface, pUser_Standard_Requests.8_15-
+ 384 0032 9847     		blx	r3	@ pUser_Standard_Requests.8_15->User_SetInterface
+ 385 0034 2368     		ldr	r3, [r4]	@ pInformation.7, pInformation
+ 386 0036 2846     		mov	r0, r5	@ D.7780, pInformation.7_11->USBwValues.bw.bb1
+ 387 0038 5979     		ldrb	r1, [r3, #5]	@ zero_extendqisi2	@ pInformation.7_18->USBwIndexs.bw.bb0, pInformation.7_18->US
+ 388 003a DA78     		ldrb	r2, [r3, #3]	@ zero_extendqisi2	@ pInformation.7_18->USBwValues.bw.bb0, pInformation.7_18->US
+ 389 003c D972     		strb	r1, [r3, #11]	@ pInformation.7_18->USBwIndexs.bw.bb0, pInformation.7_18->Current_Interface
+ 390 003e 1A73     		strb	r2, [r3, #12]	@ pInformation.7_18->USBwValues.bw.bb0, pInformation.7_18->Current_AlternateSet
+ 391 0040 38BD     		pop	{r3, r4, r5, pc}	@
+ 392              	.L63:
+ 393 0042 00BF     		.align	2
+ 394              	.L62:
+ 395 0044 00000000 		.word	pProperty
+ 396 0048 00000000 		.word	pInformation
+ 397 004c 00000000 		.word	pUser_Standard_Requests
+ 398              		.size	Standard_SetInterface, .-Standard_SetInterface
+ 399              		.section	.text.Standard_ClearFeature,"ax",%progbits
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 8
+
+
+ 400              		.align	2
+ 401              		.global	Standard_ClearFeature
+ 402              		.thumb
+ 403              		.thumb_func
+ 404              		.type	Standard_ClearFeature, %function
+ 405              	Standard_ClearFeature:
+ 406              		@ args = 0, pretend = 0, frame = 0
+ 407              		@ frame_needed = 0, uses_anonymous_args = 0
+ 408 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 409 0002 324B     		ldr	r3, .L82	@ tmp165,
+ 410 0004 1B68     		ldr	r3, [r3]	@ pInformation.12, pInformation
+ 411 0006 1878     		ldrb	r0, [r3]	@ zero_extendqisi2	@ pInformation.12_6->USBbmRequestType, pInformation.12_6->USBbmRe
+ 412 0008 10F07F00 		ands	r0, r0, #127	@ Type_Rec, pInformation.12_6->USBbmRequestType,
+ 413 000c 03D0     		beq	.L79	@,
+ 414 000e 0228     		cmp	r0, #2	@ Type_Rec,
+ 415 0010 06D0     		beq	.L80	@,
+ 416              	.L77:
+ 417 0012 0220     		movs	r0, #2	@ D.7786,
+ 418              	.L66:
+ 419 0014 38BD     		pop	{r3, r4, r5, pc}	@
+ 420              	.L79:
+ 421 0016 5A7A     		ldrb	r2, [r3, #9]	@ zero_extendqisi2	@ pInformation.12_6->Current_Feature, pInformation.12_6->Curr
+ 422 0018 22F02002 		bic	r2, r2, #32	@ tmp171, pInformation.12_6->Current_Feature,
+ 423 001c 5A72     		strb	r2, [r3, #9]	@ tmp171, pInformation.12_6->Current_Feature
+ 424 001e 38BD     		pop	{r3, r4, r5, pc}	@
+ 425              	.L80:
+ 426 0020 5A88     		ldrh	r2, [r3, #2]	@ pInformation.12_6->USBwValues.w, pInformation.12_6->USBwValues.w
+ 427 0022 002A     		cmp	r2, #0	@ pInformation.12_6->USBwValues.w
+ 428 0024 F6D1     		bne	.L66	@
+ 429 0026 1A79     		ldrb	r2, [r3, #4]	@ zero_extendqisi2	@ pInformation.12_6->USBwIndexs.bw.bb1, pInformation.12_6->US
+ 430 0028 002A     		cmp	r2, #0	@ pInformation.12_6->USBwIndexs.bw.bb1
+ 431 002a F3D1     		bne	.L66	@
+ 432 002c 5A79     		ldrb	r2, [r3, #5]	@ zero_extendqisi2	@ D.7787, pInformation.12_6->USBwIndexs.bw.bb0
+ 433 002e 22F08000 		bic	r0, r2, #128	@ Related_Endpoint, D.7787,
+ 434 0032 8400     		lsls	r4, r0, #2	@ D.7790, Related_Endpoint,
+ 435 0034 04F18041 		add	r1, r4, #1073741824	@ D.7791, D.7790,
+ 436 0038 1506     		lsls	r5, r2, #24	@, D.7787,
+ 437 003a 01F5B841 		add	r1, r1, #23552	@ D.7791, D.7791,
+ 438 003e 56BF     		itet	pl
+ 439 0040 0968     		ldrpl	r1, [r1]	@ D.7792, *_24
+ 440 0042 0D68     		ldrmi	r5, [r1]	@ D.7792, *_20
+ 441 0044 01F44055 		andpl	r5, r1, #12288	@ Status, D.7792,
+ 442 0048 2149     		ldr	r1, .L82+4	@ tmp180,
+ 443 004a 48BF     		it	mi
+ 444 004c 05F03005 		andmi	r5, r5, #48	@ Status, D.7792,
+ 445 0050 0978     		ldrb	r1, [r1]	@ zero_extendqisi2	@ D.7790, Device_Table.Total_Endpoint
+ 446 0052 8842     		cmp	r0, r1	@ Related_Endpoint, D.7790
+ 447 0054 DDD2     		bcs	.L77	@,
+ 448 0056 002D     		cmp	r5, #0	@ Status
+ 449 0058 DBD0     		beq	.L77	@
+ 450 005a 9B7A     		ldrb	r3, [r3, #10]	@ zero_extendqisi2	@ pInformation.12_6->Current_Configuration, pInformation.12_
+ 451 005c 002B     		cmp	r3, #0	@ pInformation.12_6->Current_Configuration
+ 452 005e D8D0     		beq	.L77	@
+ 453 0060 04F18044 		add	r4, r4, #1073741824	@ D.7791, D.7790,
+ 454 0064 04F5B844 		add	r4, r4, #23552	@ D.7791, D.7791,
+ 455 0068 1206     		lsls	r2, r2, #24	@, D.7787,
+ 456 006a 2368     		ldr	r3, [r4]	@ D.7792,* D.7791
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 9
+
+
+ 457 006c 09D5     		bpl	.L69	@,
+ 458 006e 03F03003 		and	r3, r3, #48	@ D.7793, D.7792,
+ 459 0072 102B     		cmp	r3, #16	@ D.7793,
+ 460 0074 1ED0     		beq	.L81	@,
+ 461              	.L70:
+ 462 0076 174B     		ldr	r3, .L82+8	@ tmp216,
+ 463 0078 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 464 007a 5B69     		ldr	r3, [r3, #20]	@ pUser_Standard_Requests.13_64->User_ClearFeature, pUser_Standard_Requests.13_6
+ 465 007c 9847     		blx	r3	@ pUser_Standard_Requests.13_64->User_ClearFeature
+ 466 007e 0020     		movs	r0, #0	@ D.7786,
+ 467 0080 38BD     		pop	{r3, r4, r5, pc}	@
+ 468              	.L69:
+ 469 0082 03F44053 		and	r3, r3, #12288	@ D.7793, D.7792,
+ 470 0086 B3F5805F 		cmp	r3, #4096	@ D.7793,
+ 471 008a F4D1     		bne	.L70	@,
+ 472 008c D8B9     		cbnz	r0, .L71	@ Related_Endpoint,
+ 473 008e 124B     		ldr	r3, .L82+12	@ tmp194,
+ 474 0090 93F82C10 		ldrb	r1, [r3, #44]	@ zero_extendqisi2	@, Device_Property.MaxPacketSize
+ 475 0094 FFF7FEFF 		bl	SetEPRxCount	@
+ 476              	.L78:
+ 477 0098 2368     		ldr	r3, [r4]	@ D.7792,* D.7791
+ 478 009a 23F48043 		bic	r3, r3, #16384	@ tmp208, D.7792,
+ 479 009e 23F07003 		bic	r3, r3, #112	@ tmp208, tmp208,
+ 480 00a2 9BB2     		uxth	r3, r3	@ _wRegVal, tmp208
+ 481 00a4 83F44053 		eor	r3, r3, #12288	@ tmp210, _wRegVal,
+ 482 00a8 43F40043 		orr	r3, r3, #32768	@ D.7792, tmp210,
+ 483 00ac 43F08003 		orr	r3, r3, #128	@ D.7792, D.7792,
+ 484 00b0 2360     		str	r3, [r4]	@ D.7792,* D.7791
+ 485 00b2 E0E7     		b	.L70	@
+ 486              	.L81:
+ 487 00b4 C4B2     		uxtb	r4, r0	@ D.7787, Related_Endpoint
+ 488 00b6 2046     		mov	r0, r4	@, D.7787
+ 489 00b8 FFF7FEFF 		bl	ClearDTOG_TX	@
+ 490 00bc 2046     		mov	r0, r4	@, D.7787
+ 491 00be 3021     		movs	r1, #48	@,
+ 492 00c0 FFF7FEFF 		bl	SetEPTxStatus	@
+ 493 00c4 D7E7     		b	.L70	@
+ 494              	.L71:
+ 495 00c6 FFF7FEFF 		bl	ClearDTOG_RX	@
+ 496 00ca E5E7     		b	.L78	@
+ 497              	.L83:
+ 498              		.align	2
+ 499              	.L82:
+ 500 00cc 00000000 		.word	pInformation
+ 501 00d0 00000000 		.word	Device_Table
+ 502 00d4 00000000 		.word	pUser_Standard_Requests
+ 503 00d8 00000000 		.word	Device_Property
+ 504              		.size	Standard_ClearFeature, .-Standard_ClearFeature
+ 505              		.section	.text.Standard_SetEndPointFeature,"ax",%progbits
+ 506              		.align	2
+ 507              		.global	Standard_SetEndPointFeature
+ 508              		.thumb
+ 509              		.thumb_func
+ 510              		.type	Standard_SetEndPointFeature, %function
+ 511              	Standard_SetEndPointFeature:
+ 512              		@ args = 0, pretend = 0, frame = 0
+ 513              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 10
+
+
+ 514 0000 38B5     		push	{r3, r4, r5, lr}	@
+ 515 0002 244B     		ldr	r3, .L95	@ tmp147,
+ 516 0004 1868     		ldr	r0, [r3]	@ pInformation.14, pInformation
+ 517 0006 4379     		ldrb	r3, [r0, #5]	@ zero_extendqisi2	@ D.7798, pInformation.14_6->USBwIndexs.bw.bb0
+ 518 0008 23F08002 		bic	r2, r3, #128	@ Related_Endpoint, D.7798,
+ 519 000c 9400     		lsls	r4, r2, #2	@ D.7800, Related_Endpoint,
+ 520 000e 04F18041 		add	r1, r4, #1073741824	@ D.7801, D.7800,
+ 521 0012 1D06     		lsls	r5, r3, #24	@, D.7798,
+ 522 0014 01F5B841 		add	r1, r1, #23552	@ D.7801, D.7801,
+ 523 0018 56BF     		itet	pl
+ 524 001a 0968     		ldrpl	r1, [r1]	@ D.7802, *_16
+ 525 001c 0D68     		ldrmi	r5, [r1]	@ D.7802, *_12
+ 526 001e 01F44055 		andpl	r5, r1, #12288	@ Status, D.7802,
+ 527 0022 1D49     		ldr	r1, .L95+4	@ tmp153,
+ 528 0024 48BF     		it	mi
+ 529 0026 05F03005 		andmi	r5, r5, #48	@ Status, D.7802,
+ 530 002a 0978     		ldrb	r1, [r1]	@ zero_extendqisi2	@ D.7800, Device_Table.Total_Endpoint
+ 531 002c 8A42     		cmp	r2, r1	@ Related_Endpoint, D.7800
+ 532 002e 01D3     		bcc	.L94	@,
+ 533              	.L93:
+ 534 0030 0220     		movs	r0, #2	@ D.7797,
+ 535 0032 38BD     		pop	{r3, r4, r5, pc}	@
+ 536              	.L94:
+ 537 0034 4288     		ldrh	r2, [r0, #2]	@ pInformation.14_6->USBwValues.w, pInformation.14_6->USBwValues.w
+ 538 0036 002A     		cmp	r2, #0	@ pInformation.14_6->USBwValues.w
+ 539 0038 FAD1     		bne	.L93	@
+ 540 003a 002D     		cmp	r5, #0	@ Status
+ 541 003c F8D0     		beq	.L93	@
+ 542 003e 827A     		ldrb	r2, [r0, #10]	@ zero_extendqisi2	@ pInformation.14_6->Current_Configuration, pInformation.14_
+ 543 0040 002A     		cmp	r2, #0	@ pInformation.14_6->Current_Configuration
+ 544 0042 F5D0     		beq	.L93	@
+ 545 0044 04F18044 		add	r4, r4, #1073741824	@ D.7801, D.7800,
+ 546 0048 04F5B844 		add	r4, r4, #23552	@ D.7801, D.7801,
+ 547 004c 13F0800F 		tst	r3, #128	@ D.7798,
+ 548 0050 2368     		ldr	r3, [r4]	@ D.7802,* D.7801
+ 549 0052 11D0     		beq	.L88	@,
+ 550 0054 23F4E043 		bic	r3, r3, #28672	@ tmp163, D.7802,
+ 551 0058 23F04003 		bic	r3, r3, #64	@ tmp163, tmp163,
+ 552 005c 9BB2     		uxth	r3, r3	@ _wRegVal, tmp163
+ 553 005e 83F01003 		eor	r3, r3, #16	@ tmp165, _wRegVal,
+ 554 0062 43F40043 		orr	r3, r3, #32768	@ D.7802, tmp165,
+ 555 0066 43F08003 		orr	r3, r3, #128	@ D.7802, D.7802,
+ 556 006a 2360     		str	r3, [r4]	@ D.7802,* D.7801
+ 557              	.L89:
+ 558 006c 0B4B     		ldr	r3, .L95+8	@ tmp181,
+ 559 006e 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 560 0070 9B69     		ldr	r3, [r3, #24]	@ pUser_Standard_Requests.15_41->User_SetEndPointFeature, pUser_Standard_Request
+ 561 0072 9847     		blx	r3	@ pUser_Standard_Requests.15_41->User_SetEndPointFeature
+ 562 0074 0020     		movs	r0, #0	@ D.7797,
+ 563 0076 38BD     		pop	{r3, r4, r5, pc}	@
+ 564              	.L88:
+ 565 0078 23F48043 		bic	r3, r3, #16384	@ tmp173, D.7802,
+ 566 007c 23F07003 		bic	r3, r3, #112	@ tmp173, tmp173,
+ 567 0080 9BB2     		uxth	r3, r3	@ _wRegVal, tmp173
+ 568 0082 83F48053 		eor	r3, r3, #4096	@ tmp175, _wRegVal,
+ 569 0086 43F40043 		orr	r3, r3, #32768	@ D.7802, tmp175,
+ 570 008a 43F08003 		orr	r3, r3, #128	@ D.7802, D.7802,
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 11
+
+
+ 571 008e 2360     		str	r3, [r4]	@ D.7802,* D.7801
+ 572 0090 ECE7     		b	.L89	@
+ 573              	.L96:
+ 574 0092 00BF     		.align	2
+ 575              	.L95:
+ 576 0094 00000000 		.word	pInformation
+ 577 0098 00000000 		.word	Device_Table
+ 578 009c 00000000 		.word	pUser_Standard_Requests
+ 579              		.size	Standard_SetEndPointFeature, .-Standard_SetEndPointFeature
+ 580              		.section	.text.Standard_SetDeviceFeature,"ax",%progbits
+ 581              		.align	2
+ 582              		.global	Standard_SetDeviceFeature
+ 583              		.thumb
+ 584              		.thumb_func
+ 585              		.type	Standard_SetDeviceFeature, %function
+ 586              	Standard_SetDeviceFeature:
+ 587              		@ args = 0, pretend = 0, frame = 0
+ 588              		@ frame_needed = 0, uses_anonymous_args = 0
+ 589 0000 08B5     		push	{r3, lr}	@
+ 590 0002 064B     		ldr	r3, .L98	@ tmp116,
+ 591 0004 064A     		ldr	r2, .L98+4	@ tmp122,
+ 592 0006 1B68     		ldr	r3, [r3]	@ pInformation.16, pInformation
+ 593 0008 1268     		ldr	r2, [r2]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 594 000a 597A     		ldrb	r1, [r3, #9]	@ zero_extendqisi2	@ pInformation.16_2->Current_Feature, pInformation.16_2->Curr
+ 595 000c 41F02001 		orr	r1, r1, #32	@ tmp119, pInformation.16_2->Current_Feature,
+ 596 0010 5972     		strb	r1, [r3, #9]	@ tmp119, pInformation.16_2->Current_Feature
+ 597 0012 D369     		ldr	r3, [r2, #28]	@ pUser_Standard_Requests.17_6->User_SetDeviceFeature, pUser_Standard_Requests.1
+ 598 0014 9847     		blx	r3	@ pUser_Standard_Requests.17_6->User_SetDeviceFeature
+ 599 0016 0020     		movs	r0, #0	@,
+ 600 0018 08BD     		pop	{r3, pc}	@
+ 601              	.L99:
+ 602 001a 00BF     		.align	2
+ 603              	.L98:
+ 604 001c 00000000 		.word	pInformation
+ 605 0020 00000000 		.word	pUser_Standard_Requests
+ 606              		.size	Standard_SetDeviceFeature, .-Standard_SetDeviceFeature
+ 607              		.section	.text.Standard_GetDescriptorData,"ax",%progbits
+ 608              		.align	2
+ 609              		.global	Standard_GetDescriptorData
+ 610              		.thumb
+ 611              		.thumb_func
+ 612              		.type	Standard_GetDescriptorData, %function
+ 613              	Standard_GetDescriptorData:
+ 614              		@ args = 0, pretend = 0, frame = 0
+ 615              		@ frame_needed = 0, uses_anonymous_args = 0
+ 616              		@ link register save eliminated.
+ 617 0000 054B     		ldr	r3, .L104	@ tmp120,
+ 618 0002 1B68     		ldr	r3, [r3]	@ pInformation.18, pInformation
+ 619 0004 5A8A     		ldrh	r2, [r3, #18]	@ D.7812, pInformation.18_4->Ctrl_Info.Usb_wOffset
+ 620 0006 10B1     		cbz	r0, .L103	@ Length,
+ 621 0008 0868     		ldr	r0, [r1]	@ pDesc_8(D)->Descriptor, pDesc_8(D)->Descriptor
+ 622 000a 1044     		add	r0, r0, r2	@ D.7811, D.7812
+ 623 000c 7047     		bx	lr	@
+ 624              	.L103:
+ 625 000e 8988     		ldrh	r1, [r1, #4]	@, pDesc_8(D)->Descriptor_Size
+ 626 0010 8A1A     		subs	r2, r1, r2	@ tmp122, pDesc_8(D)->Descriptor_Size, D.7812
+ 627 0012 1A82     		strh	r2, [r3, #16]	@ movhi	@ tmp122, pInformation.18_4->Ctrl_Info.Usb_wLength
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 12
+
+
+ 628 0014 7047     		bx	lr	@
+ 629              	.L105:
+ 630 0016 00BF     		.align	2
+ 631              	.L104:
+ 632 0018 00000000 		.word	pInformation
+ 633              		.size	Standard_GetDescriptorData, .-Standard_GetDescriptorData
+ 634              		.section	.text.Post0_Process,"ax",%progbits
+ 635              		.align	2
+ 636              		.global	Post0_Process
+ 637              		.thumb
+ 638              		.thumb_func
+ 639              		.type	Post0_Process, %function
+ 640              	Post0_Process:
+ 641              		@ args = 0, pretend = 0, frame = 0
+ 642              		@ frame_needed = 0, uses_anonymous_args = 0
+ 643 0000 10B5     		push	{r4, lr}	@
+ 644 0002 0B4B     		ldr	r3, .L108	@ tmp117,
+ 645 0004 0020     		movs	r0, #0	@,
+ 646 0006 93F82C10 		ldrb	r1, [r3, #44]	@ zero_extendqisi2	@, Device_Property.MaxPacketSize
+ 647 000a FFF7FEFF 		bl	SetEPRxCount	@
+ 648 000e 094B     		ldr	r3, .L108+4	@ tmp122,
+ 649 0010 1B68     		ldr	r3, [r3]	@ pInformation, pInformation
+ 650 0012 187A     		ldrb	r0, [r3, #8]	@ zero_extendqisi2	@ D.7815, pInformation.36_6->ControlState
+ 651 0014 0828     		cmp	r0, #8	@ D.7815,
+ 652 0016 06D1     		bne	.L107	@,
+ 653 0018 0749     		ldr	r1, .L108+8	@ tmp123,
+ 654 001a 084B     		ldr	r3, .L108+12	@ tmp126,
+ 655 001c 4FF48054 		mov	r4, #4096	@ tmp125,
+ 656 0020 1022     		movs	r2, #16	@ tmp128,
+ 657 0022 0C80     		strh	r4, [r1]	@ movhi	@ tmp125, SaveRState
+ 658 0024 1A80     		strh	r2, [r3]	@ movhi	@ tmp128, SaveTState
+ 659              	.L107:
+ 660 0026 B0F10903 		subs	r3, r0, #9	@, D.7815,
+ 661 002a 5842     		rsbs	r0, r3, #0	@,,
+ 662 002c 5841     		adcs	r0, r0, r3	@,,
+ 663 002e 10BD     		pop	{r4, pc}	@
+ 664              	.L109:
+ 665              		.align	2
+ 666              	.L108:
+ 667 0030 00000000 		.word	Device_Property
+ 668 0034 00000000 		.word	pInformation
+ 669 0038 00000000 		.word	SaveRState
+ 670 003c 00000000 		.word	SaveTState
+ 671              		.size	Post0_Process, .-Post0_Process
+ 672              		.section	.text.Setup0_Process,"ax",%progbits
+ 673              		.align	2
+ 674              		.global	Setup0_Process
+ 675              		.thumb
+ 676              		.thumb_func
+ 677              		.type	Setup0_Process, %function
+ 678              	Setup0_Process:
+ 679              		@ args = 0, pretend = 0, frame = 8
+ 680              		@ frame_needed = 0, uses_anonymous_args = 0
+ 681 0000 70B5     		push	{r4, r5, r6, lr}	@
+ 682 0002 A94B     		ldr	r3, .L225	@ tmp240,
+ 683 0004 A94D     		ldr	r5, .L225+4	@ tmp419,
+ 684 0006 1A68     		ldr	r2, [r3]	@ D.7840, MEM[(volatile unsigned int *)1073765456B]
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 13
+
+
+ 685 0008 2C68     		ldr	r4, [r5]	@ pInformation.19, pInformation
+ 686 000a A94B     		ldr	r3, .L225+8	@ tmp242,
+ 687 000c 92B2     		uxth	r2, r2	@ D.7840, D.7840
+ 688 000e 1344     		add	r3, r3, r2	@ tmp242, D.7840
+ 689 0010 227A     		ldrb	r2, [r4, #8]	@ zero_extendqisi2	@ pInformation.19_15->ControlState, pInformation.19_15->Contr
+ 690 0012 5B00     		lsls	r3, r3, #1	@ tmp244, tmp242,
+ 691 0014 092A     		cmp	r2, #9	@ pInformation.19_15->ControlState,
+ 692 0016 82B0     		sub	sp, sp, #8	@,,
+ 693 0018 1E68     		ldr	r6, [r3]	@ D.7843, *_8
+ 694 001a 47D0     		beq	.L208	@,
+ 695 001c B6B2     		uxth	r6, r6	@ D.7843, D.7843
+ 696 001e 7600     		lsls	r6, r6, #1	@ D.7844, D.7843,
+ 697 0020 06F18046 		add	r6, r6, #1073741824	@ D.7846, D.7844,
+ 698 0024 06F5C046 		add	r6, r6, #24576	@ D.7846, D.7846,
+ 699 0028 3378     		ldrb	r3, [r6]	@ zero_extendqisi2	@ D.7847, *_14
+ 700 002a 2370     		strb	r3, [r4]	@ D.7847, pInformation.19_15->USBbmRequestType
+ 701 002c 7378     		ldrb	r3, [r6, #1]	@ zero_extendqisi2	@ D.7847, MEM[(uint8_t *)_14 + 1B]
+ 702 002e 6370     		strb	r3, [r4, #1]	@ D.7847, pInformation.19_15->USBbRequest
+ 703 0030 B088     		ldrh	r0, [r6, #4]	@, MEM[(uint16_t *)_14 + 4B]
+ 704 0032 FFF7FEFF 		bl	ByteSwap	@
+ 705 0036 6080     		strh	r0, [r4, #2]	@ movhi	@, pInformation.19_15->USBwValues.w
+ 706 0038 3089     		ldrh	r0, [r6, #8]	@, MEM[(uint16_t *)_14 + 8B]
+ 707 003a 2C68     		ldr	r4, [r5]	@ pInformation.19, pInformation
+ 708 003c FFF7FEFF 		bl	ByteSwap	@
+ 709 0040 A080     		strh	r0, [r4, #4]	@ movhi	@, pInformation.19_32->USBwIndexs.w
+ 710 0042 B289     		ldrh	r2, [r6, #12]	@ D.7850, MEM[(uint16_t *)_14 + 12B]
+ 711 0044 2B68     		ldr	r3, [r5]	@ pInformation.19, pInformation
+ 712 0046 0121     		movs	r1, #1	@ tmp261,
+ 713 0048 DA80     		strh	r2, [r3, #6]	@ movhi	@ D.7850, pInformation.19_39->USBwLengths.w
+ 714 004a 1972     		strb	r1, [r3, #8]	@ tmp261, _217->ControlState
+ 715 004c 002A     		cmp	r2, #0	@ D.7850
+ 716 004e 33D0     		beq	.L209	@
+ 717              	.L113:
+ 718 0050 5878     		ldrb	r0, [r3, #1]	@ zero_extendqisi2	@ D.7847, _217->USBbRequest
+ 719 0052 0628     		cmp	r0, #6	@ D.7847,
+ 720 0054 00F08680 		beq	.L210	@,
+ 721 0058 0028     		cmp	r0, #0	@ D.7847
+ 722 005a 46D1     		bne	.L135	@
+ 723 005c 5988     		ldrh	r1, [r3, #2]	@ _217->USBwValues.w, _217->USBwValues.w
+ 724 005e 0029     		cmp	r1, #0	@ _217->USBwValues.w
+ 725 0060 00F09380 		beq	.L195	@
+ 726              	.L206:
+ 727 0064 934C     		ldr	r4, .L225+12	@ tmp418,
+ 728              	.L145:
+ 729 0066 2368     		ldr	r3, [r4]	@ pProperty, pProperty
+ 730 0068 1B69     		ldr	r3, [r3, #16]	@ pProperty.23_142->Class_Data_Setup, pProperty.23_142->Class_Data_Setup
+ 731 006a 9847     		blx	r3	@ pProperty.23_142->Class_Data_Setup
+ 732 006c 0328     		cmp	r0, #3	@ tmp375,
+ 733 006e 2B68     		ldr	r3, [r5]	@ pInformation, pInformation
+ 734 0070 4BD0     		beq	.L146	@,
+ 735 0072 1A8A     		ldrh	r2, [r3, #16]	@ D.7850, pInformation.22_148->Ctrl_Info.Usb_wLength
+ 736 0074 4FF6FF71 		movw	r1, #65535	@ tmp381,
+ 737 0078 8A42     		cmp	r2, r1	@ D.7850, tmp381
+ 738 007a 46D0     		beq	.L146	@,
+ 739 007c 0228     		cmp	r0, #2	@ tmp375,
+ 740 007e 0FD0     		beq	.L150	@,
+ 741              	.L147:
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 14
+
+
+ 742 0080 72B1     		cbz	r2, .L150	@ D.7850,
+ 743 0082 93F90010 		ldrsb	r1, [r3]	@ pInformation.22_171->USBbmRequestType, pInformation.22_171->USBbmRequestType
+ 744 0086 0029     		cmp	r1, #0	@ pInformation.22_171->USBbmRequestType,
+ 745 0088 C0F2B480 		blt	.L211	@,
+ 746 008c 8A49     		ldr	r1, .L225+16	@ tmp413,
+ 747 008e 4FF44050 		mov	r0, #12288	@ tmp415,
+ 748 0092 0322     		movs	r2, #3	@ tmp411,
+ 749 0094 0880     		strh	r0, [r1]	@ movhi	@ tmp415,
+ 750 0096 1A72     		strb	r2, [r3, #8]	@ tmp411,
+ 751              	.L216:
+ 752 0098 FFF7FEFF 		bl	Post0_Process	@
+ 753 009c 02B0     		add	sp, sp, #8	@,,
+ 754              		@ sp needed	@
+ 755 009e 70BD     		pop	{r4, r5, r6, pc}	@
+ 756              	.L150:
+ 757 00a0 0822     		movs	r2, #8	@ tmp384,
+ 758 00a2 1A72     		strb	r2, [r3, #8]	@ tmp384,
+ 759              	.L129:
+ 760 00a4 FFF7FEFF 		bl	Post0_Process	@
+ 761 00a8 02B0     		add	sp, sp, #8	@,,
+ 762              		@ sp needed	@
+ 763 00aa 70BD     		pop	{r4, r5, r6, pc}	@
+ 764              	.L208:
+ 765 00ac E288     		ldrh	r2, [r4, #6]	@ D.7850, pInformation.19_15->USBwLengths.w
+ 766 00ae 2346     		mov	r3, r4	@ D.7857, pInformation.19
+ 767 00b0 0121     		movs	r1, #1	@ tmp261,
+ 768 00b2 1972     		strb	r1, [r3, #8]	@ tmp261, _217->ControlState
+ 769 00b4 002A     		cmp	r2, #0	@ D.7850
+ 770 00b6 CBD1     		bne	.L113	@
+ 771              	.L209:
+ 772 00b8 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2	@ _217->USBbmRequestType, _217->USBbmRequestType
+ 773 00ba 5C78     		ldrb	r4, [r3, #1]	@ zero_extendqisi2	@ D.7847, _217->USBbRequest
+ 774 00bc 12F07F02 		ands	r2, r2, #127	@ D.7847, _217->USBbmRequestType,
+ 775 00c0 29D0     		beq	.L212	@,
+ 776 00c2 012A     		cmp	r2, #1	@ D.7847,
+ 777 00c4 00F0AC80 		beq	.L213	@,
+ 778 00c8 022A     		cmp	r2, #2	@ D.7847,
+ 779 00ca 00F0CE80 		beq	.L214	@,
+ 780              	.L124:
+ 781 00ce 794B     		ldr	r3, .L225+12	@ tmp273,
+ 782 00d0 2046     		mov	r0, r4	@, D.7847
+ 783 00d2 1B68     		ldr	r3, [r3]	@ pProperty, pProperty
+ 784 00d4 5B69     		ldr	r3, [r3, #20]	@ pProperty.21_75->Class_NoData_Setup, pProperty.21_75->Class_NoData_Setup
+ 785 00d6 9847     		blx	r3	@ pProperty.21_75->Class_NoData_Setup
+ 786 00d8 0328     		cmp	r0, #3	@ tmp275,
+ 787 00da 00F00181 		beq	.L215	@,
+ 788 00de 2B68     		ldr	r3, [r5]	@ D.7857, pInformation
+ 789 00e0 0028     		cmp	r0, #0	@ tmp275
+ 790 00e2 31D0     		beq	.L157	@
+ 791              	.L162:
+ 792              	.L118:
+ 793 00e4 0822     		movs	r2, #8	@ D.7847,
+ 794 00e6 1A72     		strb	r2, [r3, #8]	@ tmp411,
+ 795 00e8 D6E7     		b	.L216	@
+ 796              	.L135:
+ 797 00ea 0828     		cmp	r0, #8	@ D.7847,
+ 798 00ec 5FD1     		bne	.L143	@,
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 15
+
+
+ 799 00ee 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2	@ _217->USBbmRequestType, _217->USBbmRequestType
+ 800 00f0 5206     		lsls	r2, r2, #25	@, _217->USBbmRequestType,
+ 801 00f2 B7D1     		bne	.L206	@,
+ 802 00f4 714A     		ldr	r2, .L225+20	@ CopyRoutine,
+ 803              	.L158:
+ 804 00f6 0020     		movs	r0, #0	@ tmp369,
+ 805 00f8 9A61     		str	r2, [r3, #24]	@ CopyRoutine, _236->Ctrl_Info.CopyData
+ 806 00fa 5882     		strh	r0, [r3, #18]	@ movhi	@ tmp369, _236->Ctrl_Info.Usb_wOffset
+ 807 00fc 9047     		blx	r2	@ CopyRoutine
+ 808 00fe 2B68     		ldr	r3, [r5]	@ pInformation.22, pInformation
+ 809 0100 4FF6FF71 		movw	r1, #65535	@ tmp371,
+ 810 0104 1A8A     		ldrh	r2, [r3, #16]	@ D.7850, pInformation.22_228->Ctrl_Info.Usb_wLength
+ 811 0106 8A42     		cmp	r2, r1	@ D.7850, tmp371
+ 812 0108 BAD1     		bne	.L147	@,
+ 813              	.L146:
+ 814 010a 0922     		movs	r2, #9	@ tmp382,
+ 815 010c 1A72     		strb	r2, [r3, #8]	@ tmp382,
+ 816 010e FFF7FEFF 		bl	Post0_Process	@
+ 817 0112 02B0     		add	sp, sp, #8	@,,
+ 818              		@ sp needed	@
+ 819 0114 70BD     		pop	{r4, r5, r6, pc}	@
+ 820              	.L212:
+ 821 0116 092C     		cmp	r4, #9	@ D.7847,
+ 822 0118 00F0C280 		beq	.L217	@,
+ 823 011c 052C     		cmp	r4, #5	@ D.7847,
+ 824 011e 00F09280 		beq	.L218	@,
+ 825 0122 032C     		cmp	r4, #3	@ D.7847,
+ 826 0124 00F0AA80 		beq	.L219	@,
+ 827 0128 012C     		cmp	r4, #1	@ D.7847,
+ 828 012a D0D1     		bne	.L124	@,
+ 829 012c DA78     		ldrb	r2, [r3, #3]	@ zero_extendqisi2	@ _217->USBwValues.bw.bb0, _217->USBwValues.bw.bb0
+ 830 012e 012A     		cmp	r2, #1	@ _217->USBwValues.bw.bb0,
+ 831 0130 CDD1     		bne	.L124	@,
+ 832 0132 9A88     		ldrh	r2, [r3, #4]	@ _217->USBwIndexs.w, _217->USBwIndexs.w
+ 833 0134 002A     		cmp	r2, #0	@ _217->USBwIndexs.w
+ 834 0136 CAD1     		bne	.L124	@
+ 835 0138 5B7A     		ldrb	r3, [r3, #9]	@ zero_extendqisi2	@ _217->Current_Feature, _217->Current_Feature
+ 836 013a 9906     		lsls	r1, r3, #26	@, _217->Current_Feature,
+ 837 013c C7D5     		bpl	.L124	@,
+ 838              	.L126:
+ 839 013e FFF7FEFF 		bl	Standard_ClearFeature	@
+ 840              	.L116:
+ 841 0142 0028     		cmp	r0, #0	@ Result
+ 842 0144 C3D1     		bne	.L124	@
+ 843 0146 2B68     		ldr	r3, [r5]	@ D.7857, pInformation
+ 844              	.L157:
+ 845 0148 5749     		ldr	r1, .L225	@ tmp299,
+ 846 014a 5D4A     		ldr	r2, .L225+24	@ tmp301,
+ 847 014c 0868     		ldr	r0, [r1]	@ D.7840, MEM[(volatile unsigned int *)1073765456B]
+ 848 014e 0024     		movs	r4, #0	@ tmp304,
+ 849 0150 80B2     		uxth	r0, r0	@ D.7840, D.7840
+ 850 0152 0244     		add	r2, r2, r0	@ tmp301, D.7840
+ 851 0154 5200     		lsls	r2, r2, #1	@ tmp303, tmp301,
+ 852 0156 5B49     		ldr	r1, .L225+28	@ tmp305,
+ 853 0158 1460     		str	r4, [r2]	@ tmp304, *_84
+ 854 015a 3020     		movs	r0, #48	@ tmp307,
+ 855 015c 0622     		movs	r2, #6	@ D.7847,
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 16
+
+
+ 856 015e 0880     		strh	r0, [r1]	@ movhi	@ tmp307,
+ 857 0160 1A72     		strb	r2, [r3, #8]	@ tmp411,
+ 858 0162 99E7     		b	.L216	@
+ 859              	.L210:
+ 860 0164 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2	@ _217->USBbmRequestType, _217->USBbmRequestType
+ 861 0166 5206     		lsls	r2, r2, #25	@, _217->USBbmRequestType,
+ 862 0168 7FF47CAF 		bne	.L206	@,
+ 863 016c 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2	@ wValue1, _217->USBwValues.bw.bb1
+ 864 016e 514C     		ldr	r4, .L225+12	@ tmp418,
+ 865 0170 012A     		cmp	r2, #1	@ wValue1,
+ 866 0172 00F0AF80 		beq	.L220	@,
+ 867 0176 022A     		cmp	r2, #2	@ wValue1,
+ 868 0178 5FD0     		beq	.L221	@,
+ 869 017a 032A     		cmp	r2, #3	@ wValue1,
+ 870 017c 7FF473AF 		bne	.L145	@,
+ 871 0180 2268     		ldr	r2, [r4]	@ pProperty, pProperty
+ 872 0182 526A     		ldr	r2, [r2, #36]	@ CopyRoutine, pProperty.23_98->GetStringDescriptor
+ 873 0184 002A     		cmp	r2, #0	@ CopyRoutine
+ 874 0186 B6D1     		bne	.L158	@
+ 875 0188 6DE7     		b	.L145	@
+ 876              	.L195:
+ 877 018a 5A68     		ldr	r2, [r3, #4]	@ *_217, *_217
+ 878 018c 22F47F42 		bic	r2, r2, #65280	@ D.7840, *_217,
+ 879 0190 B2F5003F 		cmp	r2, #131072	@ D.7840,
+ 880 0194 7FF466AF 		bne	.L206	@,
+ 881 0198 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2	@ _217->USBbmRequestType, _217->USBbmRequestType
+ 882 019a 12F07F02 		ands	r2, r2, #127	@ D.7847, _217->USBbmRequestType,
+ 883 019e 40F0A380 		bne	.L136	@,
+ 884 01a2 9A88     		ldrh	r2, [r3, #4]	@ _217->USBwIndexs.w, _217->USBwIndexs.w
+ 885 01a4 002A     		cmp	r2, #0	@ _217->USBwIndexs.w
+ 886 01a6 7FF45DAF 		bne	.L206	@
+ 887              	.L165:
+ 888 01aa 474A     		ldr	r2, .L225+32	@ CopyRoutine,
+ 889 01ac A3E7     		b	.L158	@
+ 890              	.L143:
+ 891 01ae 0A28     		cmp	r0, #10	@ D.7847,
+ 892 01b0 7FF458AF 		bne	.L206	@,
+ 893 01b4 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2	@ _217->USBbmRequestType, _217->USBbmRequestType
+ 894 01b6 02F07F02 		and	r2, r2, #127	@ tmp355, _217->USBbmRequestType,
+ 895 01ba 012A     		cmp	r2, #1	@ tmp355,
+ 896 01bc 7FF452AF 		bne	.L206	@,
+ 897 01c0 9A7A     		ldrb	r2, [r3, #10]	@ zero_extendqisi2	@ _217->Current_Configuration, _217->Current_Configuration
+ 898 01c2 002A     		cmp	r2, #0	@ _217->Current_Configuration
+ 899 01c4 3FF44EAF 		beq	.L206	@
+ 900 01c8 5988     		ldrh	r1, [r3, #2]	@ _217->USBwValues.w, _217->USBwValues.w
+ 901 01ca 0029     		cmp	r1, #0	@ _217->USBwValues.w
+ 902 01cc 7FF44AAF 		bne	.L206	@
+ 903 01d0 5A68     		ldr	r2, [r3, #4]	@ *_217, *_217
+ 904 01d2 384C     		ldr	r4, .L225+12	@ tmp418,
+ 905 01d4 22F47F42 		bic	r2, r2, #65280	@ D.7840, *_217,
+ 906 01d8 B2F5803F 		cmp	r2, #65536	@ D.7840,
+ 907 01dc 7FF443AF 		bne	.L145	@,
+ 908 01e0 5879     		ldrb	r0, [r3, #5]	@ zero_extendqisi2	@, _217->USBwIndexs.bw.bb0
+ 909 01e2 2368     		ldr	r3, [r4]	@ pProperty, pProperty
+ 910 01e4 9B69     		ldr	r3, [r3, #24]	@ pProperty.23_136->Class_Get_Interface_Setting, pProperty.23_136->Class_Get_Int
+ 911 01e6 9847     		blx	r3	@ pProperty.23_136->Class_Get_Interface_Setting
+ 912 01e8 2B68     		ldr	r3, [r5]	@ D.7857, pInformation
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 17
+
+
+ 913 01ea 0028     		cmp	r0, #0	@
+ 914 01ec 00F0BD80 		beq	.L144	@
+ 915 01f0 5878     		ldrb	r0, [r3, #1]	@ zero_extendqisi2	@ D.7847,
+ 916 01f2 38E7     		b	.L145	@
+ 917              	.L211:
+ 918 01f4 D988     		ldrh	r1, [r3, #6]	@ D.7850, pInformation.22_171->USBwLengths.w
+ 919 01f6 0191     		str	r1, [sp, #4]	@ D.7850, wLength
+ 920 01f8 0198     		ldr	r0, [sp, #4]	@ wLength.25, wLength
+ 921 01fa 8242     		cmp	r2, r0	@ D.7850, wLength.25
+ 922 01fc 16D8     		bhi	.L222	@,
+ 923 01fe 8A42     		cmp	r2, r1	@ D.7850, D.7850
+ 924 0200 80F09580 		bcs	.L223	@,
+ 925 0204 2B49     		ldr	r1, .L225+12	@ tmp397,
+ 926 0206 0968     		ldr	r1, [r1]	@ pProperty, pProperty
+ 927 0208 91F82C10 		ldrb	r1, [r1, #44]	@ zero_extendqisi2	@ D.7850, pProperty.23_159->MaxPacketSize
+ 928 020c 8A42     		cmp	r2, r1	@ D.7850, D.7850
+ 929 020e 80F09380 		bcs	.L156	@,
+ 930 0212 2E4A     		ldr	r2, .L225+36	@ tmp398,
+ 931 0214 0020     		movs	r0, #0	@ tmp399,
+ 932 0216 1070     		strb	r0, [r2]	@ tmp399, Data_Mul_MaxPacketSize
+ 933              	.L154:
+ 934 0218 9982     		strh	r1, [r3, #20]	@ movhi	@ D.7850, pInformation.22_171->Ctrl_Info.PacketSize
+ 935 021a FFF7FEFF 		bl	DataStageIn	@
+ 936 021e 41E7     		b	.L129	@
+ 937              	.L213:
+ 938 0220 0B2C     		cmp	r4, #11	@ D.7847,
+ 939 0222 7FF454AF 		bne	.L124	@,
+ 940 0226 FFF7FEFF 		bl	Standard_SetInterface	@
+ 941 022a 8AE7     		b	.L116	@
+ 942              	.L222:
+ 943 022c 214A     		ldr	r2, .L225+12	@ tmp389,
+ 944 022e 0199     		ldr	r1, [sp, #4]	@ wLength.26, wLength
+ 945 0230 1268     		ldr	r2, [r2]	@ pProperty, pProperty
+ 946 0232 1982     		strh	r1, [r3, #16]	@ movhi	@ wLength.26, pInformation.22_171->Ctrl_Info.Usb_wLength
+ 947 0234 92F82C10 		ldrb	r1, [r2, #44]	@ zero_extendqisi2	@ D.7850,
+ 948 0238 EEE7     		b	.L154	@
+ 949              	.L221:
+ 950 023a 2268     		ldr	r2, [r4]	@ pProperty, pProperty
+ 951 023c 126A     		ldr	r2, [r2, #32]	@ CopyRoutine, pProperty.23_96->GetConfigDescriptor
+ 952 023e 002A     		cmp	r2, #0	@ CopyRoutine
+ 953 0240 7FF459AF 		bne	.L158	@
+ 954 0244 0FE7     		b	.L145	@
+ 955              	.L218:
+ 956 0246 93F90320 		ldrsb	r2, [r3, #3]	@ _217->USBwValues.bw.bb0, _217->USBwValues.bw.bb0
+ 957 024a 002A     		cmp	r2, #0	@ _217->USBwValues.bw.bb0,
+ 958 024c FFF64AAF 		blt	.L162	@,
+ 959 0250 9A78     		ldrb	r2, [r3, #2]	@ zero_extendqisi2	@ _217->USBwValues.bw.bb1, _217->USBwValues.bw.bb1
+ 960 0252 002A     		cmp	r2, #0	@ _217->USBwValues.bw.bb1
+ 961 0254 7FF446AF 		bne	.L162	@
+ 962 0258 9A88     		ldrh	r2, [r3, #4]	@ _217->USBwIndexs.w, _217->USBwIndexs.w
+ 963 025a 002A     		cmp	r2, #0	@ _217->USBwIndexs.w
+ 964 025c 7FF442AF 		bne	.L162	@
+ 965 0260 9A7A     		ldrb	r2, [r3, #10]	@ zero_extendqisi2	@ _217->Current_Configuration, _217->Current_Configuration
+ 966 0262 002A     		cmp	r2, #0	@ _217->Current_Configuration
+ 967 0264 3FF470AF 		beq	.L157	@
+ 968 0268 3CE7     		b	.L162	@
+ 969              	.L214:
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 18
+
+
+ 970 026a 012C     		cmp	r4, #1	@ D.7847,
+ 971 026c 3FF467AF 		beq	.L126	@,
+ 972 0270 032C     		cmp	r4, #3	@ D.7847,
+ 973 0272 7FF42CAF 		bne	.L124	@,
+ 974 0276 FFF7FEFF 		bl	Standard_SetEndPointFeature	@
+ 975 027a 62E7     		b	.L116	@
+ 976              	.L219:
+ 977 027c DA78     		ldrb	r2, [r3, #3]	@ zero_extendqisi2	@ _217->USBwValues.bw.bb0, _217->USBwValues.bw.bb0
+ 978 027e 012A     		cmp	r2, #1	@ _217->USBwValues.bw.bb0,
+ 979 0280 7FF425AF 		bne	.L124	@,
+ 980 0284 9A88     		ldrh	r2, [r3, #4]	@ _217->USBwIndexs.w, _217->USBwIndexs.w
+ 981 0286 002A     		cmp	r2, #0	@ _217->USBwIndexs.w
+ 982 0288 7FF421AF 		bne	.L124	@
+ 983 028c 597A     		ldrb	r1, [r3, #9]	@ zero_extendqisi2	@ _217->Current_Feature, _217->Current_Feature
+ 984 028e 104A     		ldr	r2, .L225+40	@ tmp282,
+ 985 0290 41F02001 		orr	r1, r1, #32	@ tmp279, _217->Current_Feature,
+ 986 0294 1268     		ldr	r2, [r2]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 987 0296 5972     		strb	r1, [r3, #9]	@ tmp279, _217->Current_Feature
+ 988 0298 D369     		ldr	r3, [r2, #28]	@ pUser_Standard_Requests.17_64->User_SetDeviceFeature, pUser_Standard_Requests.
+ 989 029a 9847     		blx	r3	@ pUser_Standard_Requests.17_64->User_SetDeviceFeature
+ 990 029c 2B68     		ldr	r3, [r5]	@ D.7857, pInformation
+ 991 029e 53E7     		b	.L157	@
+ 992              	.L217:
+ 993 02a0 FFF7FEFF 		bl	Standard_SetConfiguration	@
+ 994 02a4 4DE7     		b	.L116	@
+ 995              	.L226:
+ 996 02a6 00BF     		.align	2
+ 997              	.L225:
+ 998 02a8 505C0040 		.word	1073765456
+ 999 02ac 00000000 		.word	pInformation
+ 1000 02b0 04300020 		.word	536883204
+ 1001 02b4 00000000 		.word	pProperty
+ 1002 02b8 00000000 		.word	SaveRState
+ 1003 02bc 00000000 		.word	Standard_GetConfiguration
+ 1004 02c0 02300020 		.word	536883202
+ 1005 02c4 00000000 		.word	SaveTState
+ 1006 02c8 00000000 		.word	Standard_GetStatus
+ 1007 02cc 00000000 		.word	.LANCHOR0
+ 1008 02d0 00000000 		.word	pUser_Standard_Requests
+ 1009              	.L220:
+ 1010 02d4 2268     		ldr	r2, [r4]	@ pProperty, pProperty
+ 1011 02d6 D269     		ldr	r2, [r2, #28]	@ CopyRoutine, pProperty.23_94->GetDeviceDescriptor
+ 1012 02d8 002A     		cmp	r2, #0	@ CopyRoutine
+ 1013 02da 7FF40CAF 		bne	.L158	@
+ 1014 02de C2E6     		b	.L145	@
+ 1015              	.L215:
+ 1016 02e0 2B68     		ldr	r3, [r5]	@ D.7857, pInformation
+ 1017 02e2 0922     		movs	r2, #9	@ D.7847,
+ 1018 02e4 1A72     		strb	r2, [r3, #8]	@ tmp411,
+ 1019 02e6 D7E6     		b	.L216	@
+ 1020              	.L136:
+ 1021 02e8 012A     		cmp	r2, #1	@ D.7847,
+ 1022 02ea 30D0     		beq	.L224	@,
+ 1023 02ec 022A     		cmp	r2, #2	@ D.7847,
+ 1024 02ee 7FF4B9AE 		bne	.L206	@,
+ 1025 02f2 5A79     		ldrb	r2, [r3, #5]	@ zero_extendqisi2	@ D.7847, _217->USBwIndexs.bw.bb0
+ 1026 02f4 02F00F04 		and	r4, r2, #15	@ Related_Endpoint, D.7847,
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 19
+
+
+ 1027 02f8 A100     		lsls	r1, r4, #2	@ D.7843, Related_Endpoint,
+ 1028 02fa 01F18041 		add	r1, r1, #1073741824	@ D.7856, D.7843,
+ 1029 02fe 1606     		lsls	r6, r2, #24	@, D.7847,
+ 1030 0300 01F5B841 		add	r1, r1, #23552	@ D.7856, D.7856,
+ 1031 0304 56BF     		itet	pl
+ 1032 0306 0968     		ldrpl	r1, [r1]	@ D.7840, *_122
+ 1033 0308 0E68     		ldrmi	r6, [r1]	@ D.7840, *_118
+ 1034 030a 01F44056 		andpl	r6, r1, #12288	@ Status, D.7840,
+ 1035 030e 1849     		ldr	r1, .L227	@ tmp342,
+ 1036 0310 48BF     		it	mi
+ 1037 0312 06F03006 		andmi	r6, r6, #48	@ Status, D.7840,
+ 1038 0316 0978     		ldrb	r1, [r1]	@ zero_extendqisi2	@ D.7843, Device_Table.Total_Endpoint
+ 1039 0318 8C42     		cmp	r4, r1	@ Related_Endpoint, D.7843
+ 1040 031a BFF4A3AE 		bcs	.L206	@,
+ 1041 031e 12F0700F 		tst	r2, #112	@ D.7847,
+ 1042 0322 7FF49FAE 		bne	.L206	@,
+ 1043 0326 002E     		cmp	r6, #0	@ Status
+ 1044 0328 7FF43FAF 		bne	.L165	@
+ 1045 032c 9AE6     		b	.L206	@
+ 1046              	.L223:
+ 1047 032e 114A     		ldr	r2, .L227+4	@ tmp393,
+ 1048 0330 1268     		ldr	r2, [r2]	@ pProperty, pProperty
+ 1049 0332 92F82C10 		ldrb	r1, [r2, #44]	@ zero_extendqisi2	@ D.7850,
+ 1050 0336 6FE7     		b	.L154	@
+ 1051              	.L156:
+ 1052 0338 92FBF1F0 		sdiv	r0, r2, r1	@ tmp404, D.7850, D.7850
+ 1053 033c 01FB1022 		mls	r2, r1, r0, r2	@ D.7844, D.7850, tmp404, D.7850
+ 1054 0340 002A     		cmp	r2, #0	@ D.7844
+ 1055 0342 7FF469AF 		bne	.L154	@
+ 1056 0346 0C4A     		ldr	r2, .L227+8	@ tmp407,
+ 1057 0348 0120     		movs	r0, #1	@ tmp408,
+ 1058 034a 1070     		strb	r0, [r2]	@ tmp408, Data_Mul_MaxPacketSize
+ 1059 034c 64E7     		b	.L154	@
+ 1060              	.L224:
+ 1061 034e 094C     		ldr	r4, .L227+4	@ tmp418,
+ 1062 0350 5879     		ldrb	r0, [r3, #5]	@ zero_extendqisi2	@, _217->USBwIndexs.bw.bb0
+ 1063 0352 2368     		ldr	r3, [r4]	@ pProperty, pProperty
+ 1064 0354 9B69     		ldr	r3, [r3, #24]	@ pProperty.23_106->Class_Get_Interface_Setting, pProperty.23_106->Class_Get_Int
+ 1065 0356 9847     		blx	r3	@ pProperty.23_106->Class_Get_Interface_Setting
+ 1066 0358 20B9     		cbnz	r0, .L140	@,
+ 1067 035a 2B68     		ldr	r3, [r5]	@ pInformation.22, pInformation
+ 1068 035c 9A7A     		ldrb	r2, [r3, #10]	@ zero_extendqisi2	@ pInformation.22_110->Current_Configuration, pInformation.2
+ 1069 035e 002A     		cmp	r2, #0	@ pInformation.22_110->Current_Configuration
+ 1070 0360 7FF423AF 		bne	.L165	@
+ 1071              	.L140:
+ 1072 0364 2B68     		ldr	r3, [r5]	@ pInformation, pInformation
+ 1073 0366 5878     		ldrb	r0, [r3, #1]	@ zero_extendqisi2	@ D.7847,
+ 1074 0368 7DE6     		b	.L145	@
+ 1075              	.L144:
+ 1076 036a 044A     		ldr	r2, .L227+12	@ CopyRoutine,
+ 1077 036c C3E6     		b	.L158	@
+ 1078              	.L228:
+ 1079 036e 00BF     		.align	2
+ 1080              	.L227:
+ 1081 0370 00000000 		.word	Device_Table
+ 1082 0374 00000000 		.word	pProperty
+ 1083 0378 00000000 		.word	.LANCHOR0
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 20
+
+
+ 1084 037c 00000000 		.word	Standard_GetInterface
+ 1085              		.size	Setup0_Process, .-Setup0_Process
+ 1086              		.section	.text.Out0_Process,"ax",%progbits
+ 1087              		.align	2
+ 1088              		.global	Out0_Process
+ 1089              		.thumb
+ 1090              		.thumb_func
+ 1091              		.type	Out0_Process, %function
+ 1092              	Out0_Process:
+ 1093              		@ args = 0, pretend = 0, frame = 0
+ 1094              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1095 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}	@
+ 1096 0002 314D     		ldr	r5, .L261	@ tmp186,
+ 1097 0004 2C68     		ldr	r4, [r5]	@ pInformation.33, pInformation
+ 1098 0006 237A     		ldrb	r3, [r4, #8]	@ zero_extendqisi2	@ ControlState, pInformation.33_4->ControlState
+ 1099 0008 022B     		cmp	r3, #2	@ ControlState,
+ 1100 000a 07D0     		beq	.L241	@,
+ 1101 000c 042B     		cmp	r3, #4	@ ControlState,
+ 1102 000e 05D0     		beq	.L241	@,
+ 1103 0010 032B     		cmp	r3, #3	@ ControlState,
+ 1104 0012 09D0     		beq	.L231	@,
+ 1105 0014 052B     		cmp	r3, #5	@ ControlState,
+ 1106 0016 07D0     		beq	.L231	@,
+ 1107 0018 072B     		cmp	r3, #7	@ ControlState,
+ 1108 001a 0ED0     		beq	.L258	@,
+ 1109              	.L241:
+ 1110 001c 0823     		movs	r3, #8	@ D.7865,
+ 1111              	.L230:
+ 1112 001e 2372     		strb	r3, [r4, #8]	@ D.7865, _72->ControlState
+ 1113 0020 BDE8F840 		pop	{r3, r4, r5, r6, r7, lr}	@
+ 1114 0024 FFF7FEBF 		b	Post0_Process	@
+ 1115              	.L231:
+ 1116 0028 A169     		ldr	r1, [r4, #24]	@ D.7867, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].CopyData
+ 1117 002a 238A     		ldrh	r3, [r4, #16]	@ D.7866, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wLength
+ 1118 002c 11B3     		cbz	r1, .L233	@ D.7867,
+ 1119 002e 5BB9     		cbnz	r3, .L259	@ D.7866,
+ 1120              	.L234:
+ 1121 0030 A38A     		ldrh	r3, [r4, #20]	@ MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].PacketSize, MEM[(struct 
+ 1122 0032 002B     		cmp	r3, #0	@ MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].PacketSize
+ 1123 0034 3FD0     		beq	.L238	@
+ 1124 0036 254A     		ldr	r2, .L261+4	@ tmp185,
+ 1125 0038 2EE0     		b	.L237	@
+ 1126              	.L258:
+ 1127 003a 254B     		ldr	r3, .L261+8	@ tmp179,
+ 1128 003c 1B68     		ldr	r3, [r3]	@ pProperty, pProperty
+ 1129 003e DB68     		ldr	r3, [r3, #12]	@ pProperty.34_7->Process_Status_OUT, pProperty.34_7->Process_Status_OUT
+ 1130 0040 9847     		blx	r3	@ pProperty.34_7->Process_Status_OUT
+ 1131 0042 2C68     		ldr	r4, [r5]	@ D.7871, pInformation
+ 1132 0044 0823     		movs	r3, #8	@ D.7865,
+ 1133 0046 EAE7     		b	.L230	@
+ 1134              	.L259:
+ 1135 0048 A68A     		ldrh	r6, [r4, #20]	@ Length, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].PacketSize
+ 1136 004a 9E42     		cmp	r6, r3	@ Length, D.7866
+ 1137 004c 28BF     		it	cs
+ 1138 004e 1E46     		movcs	r6, r3	@ D.7866, D.7866
+ 1139 0050 3046     		mov	r0, r6	@, D.7866
+ 1140 0052 8847     		blx	r1	@ D.7867
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 21
+
+
+ 1141 0054 228A     		ldrh	r2, [r4, #16]	@, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wLength
+ 1142 0056 638A     		ldrh	r3, [r4, #18]	@, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wOffset
+ 1143 0058 921B     		subs	r2, r2, r6	@ tmp147, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wLength, D.7866
+ 1144 005a 3344     		add	r3, r3, r6	@ tmp150, D.7866
+ 1145 005c 6382     		strh	r3, [r4, #18]	@ movhi	@ tmp150, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wOff
+ 1146 005e 0746     		mov	r7, r0	@ Buffer,
+ 1147 0060 2282     		strh	r2, [r4, #16]	@ movhi	@ tmp147, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wLen
+ 1148 0062 0020     		movs	r0, #0	@,
+ 1149 0064 FFF7FEFF 		bl	GetEPRxAddr	@
+ 1150 0068 3246     		mov	r2, r6	@, D.7866
+ 1151 006a 0146     		mov	r1, r0	@ tmp152,
+ 1152 006c 3846     		mov	r0, r7	@, Buffer
+ 1153 006e FFF7FEFF 		bl	PMAToUserBufferCopy	@
+ 1154 0072 238A     		ldrh	r3, [r4, #16]	@ D.7866, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wLength
+ 1155              	.L233:
+ 1156 0074 002B     		cmp	r3, #0	@ D.7866
+ 1157 0076 DBD0     		beq	.L234	@
+ 1158 0078 164B     		ldr	r3, .L261+12	@ tmp153,
+ 1159 007a 0020     		movs	r0, #0	@,
+ 1160 007c 4FF44052 		mov	r2, #12288	@ tmp155,
+ 1161 0080 0146     		mov	r1, r0	@,
+ 1162 0082 1A80     		strh	r2, [r3]	@ movhi	@ tmp155, SaveRState
+ 1163 0084 FFF7FEFF 		bl	SetEPTxCount	@
+ 1164 0088 238A     		ldrh	r3, [r4, #16]	@ D.7866, MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].Usb_wLength
+ 1165 008a A18A     		ldrh	r1, [r4, #20]	@ MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].PacketSize, MEM[(struct 
+ 1166 008c 0F4A     		ldr	r2, .L261+4	@ tmp185,
+ 1167 008e 3020     		movs	r0, #48	@ tmp158,
+ 1168 0090 9942     		cmp	r1, r3	@ MEM[(struct ENDPOINT_INFO *)pInformation.33_4 + 16B].PacketSize, D.7866
+ 1169 0092 1080     		strh	r0, [r2]	@ movhi	@ tmp158, SaveTState
+ 1170 0094 0FD9     		bls	.L238	@,
+ 1171 0096 93B9     		cbnz	r3, .L260	@ D.7866,
+ 1172              	.L237:
+ 1173 0098 2C68     		ldr	r4, [r5]	@ pInformation.35, pInformation
+ 1174 009a 0621     		movs	r1, #6	@ tmp167,
+ 1175 009c 0E4B     		ldr	r3, .L261+16	@ tmp169,
+ 1176 009e 2172     		strb	r1, [r4, #8]	@ tmp167, pInformation.35_38->ControlState
+ 1177 00a0 1968     		ldr	r1, [r3]	@ D.7868, MEM[(volatile unsigned int *)1073765456B]
+ 1178 00a2 0E4B     		ldr	r3, .L261+20	@ tmp171,
+ 1179 00a4 89B2     		uxth	r1, r1	@ D.7868, D.7868
+ 1180 00a6 0B44     		add	r3, r3, r1	@ tmp171, D.7868
+ 1181 00a8 5B00     		lsls	r3, r3, #1	@ tmp173, tmp171,
+ 1182 00aa 0021     		movs	r1, #0	@ tmp174,
+ 1183 00ac 1960     		str	r1, [r3]	@ tmp174, *_44
+ 1184 00ae 3021     		movs	r1, #48	@ tmp177,
+ 1185 00b0 237A     		ldrb	r3, [r4, #8]	@ zero_extendqisi2	@ D.7865, pInformation.35_38->ControlState
+ 1186 00b2 1180     		strh	r1, [r2]	@ movhi	@ tmp177, SaveTState
+ 1187 00b4 B3E7     		b	.L230	@
+ 1188              	.L238:
+ 1189 00b6 2C68     		ldr	r4, [r5]	@ pInformation.35, pInformation
+ 1190 00b8 0323     		movs	r3, #3	@ tmp161,
+ 1191 00ba 2372     		strb	r3, [r4, #8]	@ tmp161,
+ 1192 00bc AFE7     		b	.L230	@
+ 1193              	.L260:
+ 1194 00be 2C68     		ldr	r4, [r5]	@ pInformation.35, pInformation
+ 1195 00c0 0523     		movs	r3, #5	@ tmp164,
+ 1196 00c2 2372     		strb	r3, [r4, #8]	@ tmp164,
+ 1197 00c4 ABE7     		b	.L230	@
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 22
+
+
+ 1198              	.L262:
+ 1199 00c6 00BF     		.align	2
+ 1200              	.L261:
+ 1201 00c8 00000000 		.word	pInformation
+ 1202 00cc 00000000 		.word	SaveTState
+ 1203 00d0 00000000 		.word	pProperty
+ 1204 00d4 00000000 		.word	SaveRState
+ 1205 00d8 505C0040 		.word	1073765456
+ 1206 00dc 02300020 		.word	536883202
+ 1207              		.size	Out0_Process, .-Out0_Process
+ 1208              		.section	.text.SetDeviceAddress,"ax",%progbits
+ 1209              		.align	2
+ 1210              		.global	SetDeviceAddress
+ 1211              		.thumb
+ 1212              		.thumb_func
+ 1213              		.type	SetDeviceAddress, %function
+ 1214              	SetDeviceAddress:
+ 1215              		@ args = 0, pretend = 0, frame = 0
+ 1216              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1217              		@ link register save eliminated.
+ 1218 0000 70B4     		push	{r4, r5, r6}	@
+ 1219 0002 0C4B     		ldr	r3, .L269	@ tmp126,
+ 1220 0004 1E78     		ldrb	r6, [r3]	@ zero_extendqisi2	@ nEP, Device_Table.Total_Endpoint
+ 1221 0006 7EB1     		cbz	r6, .L265	@ nEP,
+ 1222 0008 0B4C     		ldr	r4, .L269+4	@ ivtmp.87,
+ 1223 000a 0023     		movs	r3, #0	@ i,
+ 1224              	.L266:
+ 1225 000c 2568     		ldr	r5, [r4]	@ D.7881, *_8
+ 1226 000e 43F40041 		orr	r1, r3, #32768	@ D.7882, i,
+ 1227 0012 40F60F72 		movw	r2, #3855	@ D.7882,
+ 1228 0016 2A40     		ands	r2, r2, r5	@, D.7882, D.7882, D.7881
+ 1229 0018 41F08001 		orr	r1, r1, #128	@ D.7882, D.7882,
+ 1230 001c 0133     		adds	r3, r3, #1	@ i, i,
+ 1231 001e 0A43     		orrs	r2, r2, r1	@, D.7881, D.7882, D.7882
+ 1232 0020 9E42     		cmp	r6, r3	@ nEP, i
+ 1233 0022 44F8042B 		str	r2, [r4], #4	@ D.7881, *_8
+ 1234 0026 F1D8     		bhi	.L266	@,
+ 1235              	.L265:
+ 1236 0028 044B     		ldr	r3, .L269+8	@ tmp128,
+ 1237 002a 40F08000 		orr	r0, r0, #128	@ D.7881, Val,
+ 1238 002e 1860     		str	r0, [r3]	@ D.7881, MEM[(volatile unsigned int *)1073765452B]
+ 1239 0030 70BC     		pop	{r4, r5, r6}	@
+ 1240 0032 7047     		bx	lr	@
+ 1241              	.L270:
+ 1242              		.align	2
+ 1243              	.L269:
+ 1244 0034 00000000 		.word	Device_Table
+ 1245 0038 005C0040 		.word	1073765376
+ 1246 003c 4C5C0040 		.word	1073765452
+ 1247              		.size	SetDeviceAddress, .-SetDeviceAddress
+ 1248              		.section	.text.In0_Process,"ax",%progbits
+ 1249              		.align	2
+ 1250              		.global	In0_Process
+ 1251              		.thumb
+ 1252              		.thumb_func
+ 1253              		.type	In0_Process, %function
+ 1254              	In0_Process:
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 23
+
+
+ 1255              		@ args = 0, pretend = 0, frame = 0
+ 1256              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1257 0000 10B5     		push	{r4, lr}	@
+ 1258 0002 184C     		ldr	r4, .L282	@ tmp144,
+ 1259 0004 2268     		ldr	r2, [r4]	@ pInformation.30, pInformation
+ 1260 0006 137A     		ldrb	r3, [r2, #8]	@ zero_extendqisi2	@ ControlState, pInformation.30_5->ControlState
+ 1261 0008 022B     		cmp	r3, #2	@ ControlState,
+ 1262 000a 17D0     		beq	.L272	@,
+ 1263 000c 042B     		cmp	r3, #4	@ ControlState,
+ 1264 000e 15D0     		beq	.L272	@,
+ 1265 0010 062B     		cmp	r3, #6	@ ControlState,
+ 1266 0012 05D0     		beq	.L280	@,
+ 1267 0014 0823     		movs	r3, #8	@ D.7885,
+ 1268 0016 1372     		strb	r3, [r2, #8]	@ D.7885, _31->ControlState
+ 1269 0018 BDE81040 		pop	{r4, lr}	@
+ 1270 001c FFF7FEBF 		b	Post0_Process	@
+ 1271              	.L280:
+ 1272 0020 5378     		ldrb	r3, [r2, #1]	@ zero_extendqisi2	@ pInformation.30_5->USBbRequest, pInformation.30_5->USBbRequ
+ 1273 0022 052B     		cmp	r3, #5	@ pInformation.30_5->USBbRequest,
+ 1274 0024 13D0     		beq	.L281	@,
+ 1275              	.L275:
+ 1276 0026 104B     		ldr	r3, .L282+4	@ tmp139,
+ 1277 0028 1B68     		ldr	r3, [r3]	@ pProperty, pProperty
+ 1278 002a 9B68     		ldr	r3, [r3, #8]	@ pProperty.32_15->Process_Status_IN, pProperty.32_15->Process_Status_IN
+ 1279 002c 9847     		blx	r3	@ pProperty.32_15->Process_Status_IN
+ 1280 002e 2268     		ldr	r2, [r4]	@ D.7888, pInformation
+ 1281 0030 0823     		movs	r3, #8	@ D.7885,
+ 1282 0032 1372     		strb	r3, [r2, #8]	@ D.7885, _31->ControlState
+ 1283 0034 BDE81040 		pop	{r4, lr}	@
+ 1284 0038 FFF7FEBF 		b	Post0_Process	@
+ 1285              	.L272:
+ 1286 003c FFF7FEFF 		bl	DataStageIn	@
+ 1287 0040 2268     		ldr	r2, [r4]	@ pInformation.30, pInformation
+ 1288 0042 137A     		ldrb	r3, [r2, #8]	@ zero_extendqisi2	@ D.7885, pInformation.30_19->ControlState
+ 1289 0044 1372     		strb	r3, [r2, #8]	@ D.7885, _31->ControlState
+ 1290 0046 BDE81040 		pop	{r4, lr}	@
+ 1291 004a FFF7FEBF 		b	Post0_Process	@
+ 1292              	.L281:
+ 1293 004e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2	@ pInformation.30_5->USBbmRequestType, pInformation.30_5->USBbmRe
+ 1294 0050 5B06     		lsls	r3, r3, #25	@, pInformation.30_5->USBbmRequestType,
+ 1295 0052 E8D1     		bne	.L275	@,
+ 1296 0054 D078     		ldrb	r0, [r2, #3]	@ zero_extendqisi2	@, pInformation.30_5->USBwValues.bw.bb0
+ 1297 0056 FFF7FEFF 		bl	SetDeviceAddress	@
+ 1298 005a 044B     		ldr	r3, .L282+8	@ tmp136,
+ 1299 005c 1B68     		ldr	r3, [r3]	@ pUser_Standard_Requests, pUser_Standard_Requests
+ 1300 005e 1B6A     		ldr	r3, [r3, #32]	@ pUser_Standard_Requests.31_12->User_SetDeviceAddress, pUser_Standard_Requests.
+ 1301 0060 9847     		blx	r3	@ pUser_Standard_Requests.31_12->User_SetDeviceAddress
+ 1302 0062 E0E7     		b	.L275	@
+ 1303              	.L283:
+ 1304              		.align	2
+ 1305              	.L282:
+ 1306 0064 00000000 		.word	pInformation
+ 1307 0068 00000000 		.word	pProperty
+ 1308 006c 00000000 		.word	pUser_Standard_Requests
+ 1309              		.size	In0_Process, .-In0_Process
+ 1310              		.section	.text.NOP_Process,"ax",%progbits
+ 1311              		.align	2
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 24
+
+
+ 1312              		.global	NOP_Process
+ 1313              		.thumb
+ 1314              		.thumb_func
+ 1315              		.type	NOP_Process, %function
+ 1316              	NOP_Process:
+ 1317              		@ args = 0, pretend = 0, frame = 0
+ 1318              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1319              		@ link register save eliminated.
+ 1320 0000 7047     		bx	lr	@
+ 1321              		.size	NOP_Process, .-NOP_Process
+ 1322              		.global	Data_Mul_MaxPacketSize
+ 1323              		.comm	StatusInfo,2,4
+ 1324 0002 00BF     		.section	.bss.Data_Mul_MaxPacketSize,"aw",%nobits
+ 1325              		.set	.LANCHOR0,. + 0
+ 1326              		.type	Data_Mul_MaxPacketSize, %object
+ 1327              		.size	Data_Mul_MaxPacketSize, 1
+ 1328              	Data_Mul_MaxPacketSize:
+ 1329 0000 00       		.space	1
+ 1330              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 25
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 usb_core.c
+C:\cygwin64\tmp\ccDhbtte.s:70     .text.Standard_GetConfiguration:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:75     .text.Standard_GetConfiguration:00000000 Standard_GetConfiguration
+C:\cygwin64\tmp\ccDhbtte.s:97     .text.Standard_GetConfiguration:00000020 $d
+C:\cygwin64\tmp\ccDhbtte.s:101    .text.Standard_GetInterface:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:106    .text.Standard_GetInterface:00000000 Standard_GetInterface
+C:\cygwin64\tmp\ccDhbtte.s:128    .text.Standard_GetInterface:00000020 $d
+C:\cygwin64\tmp\ccDhbtte.s:132    .text.Standard_GetStatus:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:137    .text.Standard_GetStatus:00000000 Standard_GetStatus
+C:\cygwin64\tmp\ccDhbtte.s:209    .text.Standard_GetStatus:0000008c $d
+                            *COM*:00000002 StatusInfo
+C:\cygwin64\tmp\ccDhbtte.s:214    .text.DataStageIn:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:218    .text.DataStageIn:00000000 DataStageIn
+C:\cygwin64\tmp\ccDhbtte.s:300    .text.DataStageIn:000000a0 $d
+C:\cygwin64\tmp\ccDhbtte.s:308    .text.Standard_SetConfiguration:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:313    .text.Standard_SetConfiguration:00000000 Standard_SetConfiguration
+C:\cygwin64\tmp\ccDhbtte.s:344    .text.Standard_SetConfiguration:00000030 $d
+C:\cygwin64\tmp\ccDhbtte.s:349    .text.Standard_SetInterface:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:354    .text.Standard_SetInterface:00000000 Standard_SetInterface
+C:\cygwin64\tmp\ccDhbtte.s:395    .text.Standard_SetInterface:00000044 $d
+C:\cygwin64\tmp\ccDhbtte.s:400    .text.Standard_ClearFeature:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:405    .text.Standard_ClearFeature:00000000 Standard_ClearFeature
+C:\cygwin64\tmp\ccDhbtte.s:500    .text.Standard_ClearFeature:000000cc $d
+C:\cygwin64\tmp\ccDhbtte.s:506    .text.Standard_SetEndPointFeature:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:511    .text.Standard_SetEndPointFeature:00000000 Standard_SetEndPointFeature
+C:\cygwin64\tmp\ccDhbtte.s:576    .text.Standard_SetEndPointFeature:00000094 $d
+C:\cygwin64\tmp\ccDhbtte.s:581    .text.Standard_SetDeviceFeature:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:586    .text.Standard_SetDeviceFeature:00000000 Standard_SetDeviceFeature
+C:\cygwin64\tmp\ccDhbtte.s:604    .text.Standard_SetDeviceFeature:0000001c $d
+C:\cygwin64\tmp\ccDhbtte.s:608    .text.Standard_GetDescriptorData:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:613    .text.Standard_GetDescriptorData:00000000 Standard_GetDescriptorData
+C:\cygwin64\tmp\ccDhbtte.s:632    .text.Standard_GetDescriptorData:00000018 $d
+C:\cygwin64\tmp\ccDhbtte.s:635    .text.Post0_Process:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:640    .text.Post0_Process:00000000 Post0_Process
+C:\cygwin64\tmp\ccDhbtte.s:667    .text.Post0_Process:00000030 $d
+C:\cygwin64\tmp\ccDhbtte.s:673    .text.Setup0_Process:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:678    .text.Setup0_Process:00000000 Setup0_Process
+C:\cygwin64\tmp\ccDhbtte.s:998    .text.Setup0_Process:000002a8 $d
+C:\cygwin64\tmp\ccDhbtte.s:1010   .text.Setup0_Process:000002d4 $t
+C:\cygwin64\tmp\ccDhbtte.s:1081   .text.Setup0_Process:00000370 $d
+C:\cygwin64\tmp\ccDhbtte.s:1087   .text.Out0_Process:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:1092   .text.Out0_Process:00000000 Out0_Process
+C:\cygwin64\tmp\ccDhbtte.s:1201   .text.Out0_Process:000000c8 $d
+C:\cygwin64\tmp\ccDhbtte.s:1209   .text.SetDeviceAddress:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:1214   .text.SetDeviceAddress:00000000 SetDeviceAddress
+C:\cygwin64\tmp\ccDhbtte.s:1244   .text.SetDeviceAddress:00000034 $d
+C:\cygwin64\tmp\ccDhbtte.s:1249   .text.In0_Process:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:1254   .text.In0_Process:00000000 In0_Process
+C:\cygwin64\tmp\ccDhbtte.s:1306   .text.In0_Process:00000064 $d
+C:\cygwin64\tmp\ccDhbtte.s:1311   .text.NOP_Process:00000000 $t
+C:\cygwin64\tmp\ccDhbtte.s:1316   .text.NOP_Process:00000000 NOP_Process
+C:\cygwin64\tmp\ccDhbtte.s:1328   .bss.Data_Mul_MaxPacketSize:00000000 Data_Mul_MaxPacketSize
+C:\cygwin64\tmp\ccDhbtte.s:1329   .bss.Data_Mul_MaxPacketSize:00000000 $d
+
+UNDEFINED SYMBOLS
+pUser_Standard_Requests
+ARM GAS  C:\cygwin64\tmp\ccDhbtte.s 			page 26
+
+
+pInformation
+GetEPTxAddr
+UserToPMABufferCopy
+SetEPTxCount
+SaveTState
+SaveRState
+Device_Table
+pProperty
+SetEPRxCount
+ClearDTOG_TX
+SetEPTxStatus
+ClearDTOG_RX
+Device_Property
+ByteSwap
+GetEPRxAddr
+PMAToUserBufferCopy

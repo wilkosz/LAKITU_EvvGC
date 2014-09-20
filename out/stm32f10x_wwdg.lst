@@ -1,0 +1,281 @@
+ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1	@ Tag_ABI_FP_denormal
+   5              		.eabi_attribute 21, 1	@ Tag_ABI_FP_exceptions
+   6              		.eabi_attribute 23, 3	@ Tag_ABI_FP_number_model
+   7              		.eabi_attribute 24, 1	@ Tag_ABI_align8_needed
+   8              		.eabi_attribute 25, 1	@ Tag_ABI_align8_preserved
+   9              		.eabi_attribute 26, 1	@ Tag_ABI_enum_size
+  10              		.eabi_attribute 30, 2	@ Tag_ABI_optimization_goals
+  11              		.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
+  12              		.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
+  13              		.file	"stm32f10x_wwdg.c"
+  14              	@ GNU C (GNU Tools for ARM Embedded Processors) version 4.8.4 20140526 (release) [ARM/embedded-4_8-
+  15              	@	compiled by GNU C version 4.6.4, GMP version 4.3.2, MPFR version 2.4.2, MPC version 0.8.1
+  16              	@ GGC heuristics: --param ggc-min-expand=99 --param ggc-min-heapsize=131015
+  17              	@ options passed:  -I . -I src -I Libraries -I Libraries/CMSIS/Include
+  18              	@ -I Libraries/CMSIS/Device/ST/STM32F10x/Include
+  19              	@ -I Libraries/STM32F10x_StdPeriph_Driver/inc
+  20              	@ -I Libraries/STM32_USB-FS-Device_Driver/inc -I src/VCP/inc
+  21              	@ -imultilib armv7-m
+  22              	@ -iprefix c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../lib/gcc/arm-none-eabi/4.
+  23              	@ -isysroot c:\program files (x86)\gnu tools arm embedded\4.8 2014q2\bin\../arm-none-eabi
+  24              	@ -MD out/stm32f10x_wwdg.d -MF out/stm32f10x_wwdg.d -MP
+  25              	@ -MQ out/stm32f10x_wwdg.o -D__USES_INITFINI__ -D STM32F10X_HD
+  26              	@ -D USE_STDPERIPH_DRIVER
+  27              	@ Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c -mcpu=cortex-m3
+  28              	@ -mthumb -auxbase-strip out/stm32f10x_wwdg.o -O2 -Wall -Wstrict-prototypes
+  29              	@ -Wextra -std=gnu99 -ffunction-sections -fdata-sections -fverbose-asm
+  30              	@ -fsingle-precision-constant
+  31              	@ options enabled:  -faggressive-loop-optimizations -fauto-inc-dec
+  32              	@ -fbranch-count-reg -fcaller-saves -fcombine-stack-adjustments -fcommon
+  33              	@ -fcompare-elim -fcprop-registers -fcrossjumping -fcse-follow-jumps
+  34              	@ -fdata-sections -fdefer-pop -fdelete-null-pointer-checks -fdevirtualize
+  35              	@ -fdwarf2-cfi-asm -fearly-inlining -feliminate-unused-debug-types
+  36              	@ -fexpensive-optimizations -fforward-propagate -ffunction-cse
+  37              	@ -ffunction-sections -fgcse -fgcse-lm -fgnu-runtime
+  38              	@ -fguess-branch-probability -fhoist-adjacent-loads -fident -fif-conversion
+  39              	@ -fif-conversion2 -findirect-inlining -finline -finline-atomics
+  40              	@ -finline-functions-called-once -finline-small-functions -fipa-cp
+  41              	@ -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+  42              	@ -fira-hoist-pressure -fira-share-save-slots -fira-share-spill-slots
+  43              	@ -fivopts -fkeep-static-consts -fleading-underscore -fmath-errno
+  44              	@ -fmerge-constants -fmerge-debug-strings -fmove-loop-invariants
+  45              	@ -fomit-frame-pointer -foptimize-register-move -foptimize-sibling-calls
+  46              	@ -foptimize-strlen -fpartial-inlining -fpeephole -fpeephole2
+  47              	@ -fprefetch-loop-arrays -freg-struct-return -fregmove -freorder-blocks
+  48              	@ -freorder-functions -frerun-cse-after-loop
+  49              	@ -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+  50              	@ -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+  51              	@ -fsched-pressure -fsched-rank-heuristic -fsched-spec
+  52              	@ -fsched-spec-insn-heuristic -fsched-stalled-insns-dep -fschedule-insns
+  53              	@ -fschedule-insns2 -fsection-anchors -fshow-column -fshrink-wrap
+  54              	@ -fsigned-zeros -fsingle-precision-constant -fsplit-ivs-in-unroller
+  55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
+  56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
+  57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
+ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 2
+
+
+  58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
+  59              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+  60              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+  61              	@ -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+  62              	@ -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+  63              	@ -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+  64              	@ -ftree-slsr -ftree-sra -ftree-switch-conversion -ftree-tail-merge
+  65              	@ -ftree-ter -ftree-vect-loop-version -ftree-vrp -funit-at-a-time
+  66              	@ -fverbose-asm -fzero-initialized-in-bss -mfix-cortex-m3-ldrd
+  67              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
+  68              	@ -munaligned-access -mvectorize-with-neon-quad
+  69              	
+  70              		.section	.text.WWDG_DeInit,"ax",%progbits
+  71              		.align	2
+  72              		.global	WWDG_DeInit
+  73              		.thumb
+  74              		.thumb_func
+  75              		.type	WWDG_DeInit, %function
+  76              	WWDG_DeInit:
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79 0000 08B5     		push	{r3, lr}	@
+  80 0002 4FF40060 		mov	r0, #2048	@,
+  81 0006 0121     		movs	r1, #1	@,
+  82 0008 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
+  83 000c BDE80840 		pop	{r3, lr}	@
+  84 0010 4FF40060 		mov	r0, #2048	@,
+  85 0014 0021     		movs	r1, #0	@,
+  86 0016 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
+  87              		.size	WWDG_DeInit, .-WWDG_DeInit
+  88 001a 00BF     		.section	.text.WWDG_SetPrescaler,"ax",%progbits
+  89              		.align	2
+  90              		.global	WWDG_SetPrescaler
+  91              		.thumb
+  92              		.thumb_func
+  93              		.type	WWDG_SetPrescaler, %function
+  94              	WWDG_SetPrescaler:
+  95              		@ args = 0, pretend = 0, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              		@ link register save eliminated.
+  98 0000 034B     		ldr	r3, .L3	@ tmp114,
+  99 0002 5A68     		ldr	r2, [r3, #4]	@ D.6648, MEM[(struct WWDG_TypeDef *)1073753088B].CFR
+ 100 0004 22F4C072 		bic	r2, r2, #384	@ tmpreg, D.6648,
+ 101 0008 1043     		orrs	r0, r0, r2	@, tmpreg, WWDG_Prescaler, tmpreg
+ 102 000a 5860     		str	r0, [r3, #4]	@ tmpreg, MEM[(struct WWDG_TypeDef *)1073753088B].CFR
+ 103 000c 7047     		bx	lr	@
+ 104              	.L4:
+ 105 000e 00BF     		.align	2
+ 106              	.L3:
+ 107 0010 002C0040 		.word	1073753088
+ 108              		.size	WWDG_SetPrescaler, .-WWDG_SetPrescaler
+ 109              		.section	.text.WWDG_SetWindowValue,"ax",%progbits
+ 110              		.align	2
+ 111              		.global	WWDG_SetWindowValue
+ 112              		.thumb
+ 113              		.thumb_func
+ 114              		.type	WWDG_SetWindowValue, %function
+ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 3
+
+
+ 115              	WWDG_SetWindowValue:
+ 116              		@ args = 0, pretend = 0, frame = 8
+ 117              		@ frame_needed = 0, uses_anonymous_args = 0
+ 118              		@ link register save eliminated.
+ 119 0000 82B0     		sub	sp, sp, #8	@,,
+ 120 0002 084B     		ldr	r3, .L6	@ tmp119,
+ 121 0004 0022     		movs	r2, #0	@ tmp118,
+ 122 0006 0192     		str	r2, [sp, #4]	@ tmp118, tmpreg
+ 123 0008 5A68     		ldr	r2, [r3, #4]	@ D.6652, MEM[(struct WWDG_TypeDef *)1073753088B].CFR
+ 124 000a 00F07F00 		and	r0, r0, #127	@ D.6652, WindowValue,
+ 125 000e 22F07F02 		bic	r2, r2, #127	@ tmpreg.0, D.6652,
+ 126 0012 0192     		str	r2, [sp, #4]	@ tmpreg.0, tmpreg
+ 127 0014 019A     		ldr	r2, [sp, #4]	@ tmpreg.1, tmpreg
+ 128 0016 1043     		orrs	r0, r0, r2	@, tmpreg.2, D.6652, tmpreg.1
+ 129 0018 0190     		str	r0, [sp, #4]	@ tmpreg.2, tmpreg
+ 130 001a 019A     		ldr	r2, [sp, #4]	@ tmpreg.3, tmpreg
+ 131 001c 5A60     		str	r2, [r3, #4]	@ tmpreg.3, MEM[(struct WWDG_TypeDef *)1073753088B].CFR
+ 132 001e 02B0     		add	sp, sp, #8	@,,
+ 133              		@ sp needed	@
+ 134 0020 7047     		bx	lr	@
+ 135              	.L7:
+ 136 0022 00BF     		.align	2
+ 137              	.L6:
+ 138 0024 002C0040 		.word	1073753088
+ 139              		.size	WWDG_SetWindowValue, .-WWDG_SetWindowValue
+ 140              		.section	.text.WWDG_EnableIT,"ax",%progbits
+ 141              		.align	2
+ 142              		.global	WWDG_EnableIT
+ 143              		.thumb
+ 144              		.thumb_func
+ 145              		.type	WWDG_EnableIT, %function
+ 146              	WWDG_EnableIT:
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		@ link register save eliminated.
+ 150 0000 014B     		ldr	r3, .L9	@ tmp110,
+ 151 0002 0122     		movs	r2, #1	@ tmp111,
+ 152 0004 1A60     		str	r2, [r3]	@ tmp111, MEM[(volatile uint32_t *)1107656868B]
+ 153 0006 7047     		bx	lr	@
+ 154              	.L10:
+ 155              		.align	2
+ 156              	.L9:
+ 157 0008 A4800542 		.word	1107656868
+ 158              		.size	WWDG_EnableIT, .-WWDG_EnableIT
+ 159              		.section	.text.WWDG_SetCounter,"ax",%progbits
+ 160              		.align	2
+ 161              		.global	WWDG_SetCounter
+ 162              		.thumb
+ 163              		.thumb_func
+ 164              		.type	WWDG_SetCounter, %function
+ 165              	WWDG_SetCounter:
+ 166              		@ args = 0, pretend = 0, frame = 0
+ 167              		@ frame_needed = 0, uses_anonymous_args = 0
+ 168              		@ link register save eliminated.
+ 169 0000 024B     		ldr	r3, .L12	@ tmp114,
+ 170 0002 00F07F00 		and	r0, r0, #127	@ D.6658, Counter,
+ 171 0006 1860     		str	r0, [r3]	@ D.6658, MEM[(struct WWDG_TypeDef *)1073753088B].CR
+ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 4
+
+
+ 172 0008 7047     		bx	lr	@
+ 173              	.L13:
+ 174 000a 00BF     		.align	2
+ 175              	.L12:
+ 176 000c 002C0040 		.word	1073753088
+ 177              		.size	WWDG_SetCounter, .-WWDG_SetCounter
+ 178              		.section	.text.WWDG_Enable,"ax",%progbits
+ 179              		.align	2
+ 180              		.global	WWDG_Enable
+ 181              		.thumb
+ 182              		.thumb_func
+ 183              		.type	WWDG_Enable, %function
+ 184              	WWDG_Enable:
+ 185              		@ args = 0, pretend = 0, frame = 0
+ 186              		@ frame_needed = 0, uses_anonymous_args = 0
+ 187              		@ link register save eliminated.
+ 188 0000 024B     		ldr	r3, .L15	@ tmp114,
+ 189 0002 40F08000 		orr	r0, r0, #128	@ D.6662, Counter,
+ 190 0006 1860     		str	r0, [r3]	@ D.6662, MEM[(struct WWDG_TypeDef *)1073753088B].CR
+ 191 0008 7047     		bx	lr	@
+ 192              	.L16:
+ 193 000a 00BF     		.align	2
+ 194              	.L15:
+ 195 000c 002C0040 		.word	1073753088
+ 196              		.size	WWDG_Enable, .-WWDG_Enable
+ 197              		.section	.text.WWDG_GetFlagStatus,"ax",%progbits
+ 198              		.align	2
+ 199              		.global	WWDG_GetFlagStatus
+ 200              		.thumb
+ 201              		.thumb_func
+ 202              		.type	WWDG_GetFlagStatus, %function
+ 203              	WWDG_GetFlagStatus:
+ 204              		@ args = 0, pretend = 0, frame = 0
+ 205              		@ frame_needed = 0, uses_anonymous_args = 0
+ 206              		@ link register save eliminated.
+ 207 0000 014B     		ldr	r3, .L18	@ tmp113,
+ 208 0002 9868     		ldr	r0, [r3, #8]	@ D.6665, MEM[(struct WWDG_TypeDef *)1073753088B].SR
+ 209 0004 C0B2     		uxtb	r0, r0	@, D.6665
+ 210 0006 7047     		bx	lr	@
+ 211              	.L19:
+ 212              		.align	2
+ 213              	.L18:
+ 214 0008 002C0040 		.word	1073753088
+ 215              		.size	WWDG_GetFlagStatus, .-WWDG_GetFlagStatus
+ 216              		.section	.text.WWDG_ClearFlag,"ax",%progbits
+ 217              		.align	2
+ 218              		.global	WWDG_ClearFlag
+ 219              		.thumb
+ 220              		.thumb_func
+ 221              		.type	WWDG_ClearFlag, %function
+ 222              	WWDG_ClearFlag:
+ 223              		@ args = 0, pretend = 0, frame = 0
+ 224              		@ frame_needed = 0, uses_anonymous_args = 0
+ 225              		@ link register save eliminated.
+ 226 0000 014B     		ldr	r3, .L21	@ tmp110,
+ 227 0002 0022     		movs	r2, #0	@ tmp111,
+ 228 0004 9A60     		str	r2, [r3, #8]	@ tmp111, MEM[(struct WWDG_TypeDef *)1073753088B].SR
+ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 5
+
+
+ 229 0006 7047     		bx	lr	@
+ 230              	.L22:
+ 231              		.align	2
+ 232              	.L21:
+ 233 0008 002C0040 		.word	1073753088
+ 234              		.size	WWDG_ClearFlag, .-WWDG_ClearFlag
+ 235              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32f10x_wwdg.c
+C:\cygwin64\tmp\ccZE0HPm.s:71     .text.WWDG_DeInit:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:76     .text.WWDG_DeInit:00000000 WWDG_DeInit
+C:\cygwin64\tmp\ccZE0HPm.s:89     .text.WWDG_SetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:94     .text.WWDG_SetPrescaler:00000000 WWDG_SetPrescaler
+C:\cygwin64\tmp\ccZE0HPm.s:107    .text.WWDG_SetPrescaler:00000010 $d
+C:\cygwin64\tmp\ccZE0HPm.s:110    .text.WWDG_SetWindowValue:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:115    .text.WWDG_SetWindowValue:00000000 WWDG_SetWindowValue
+C:\cygwin64\tmp\ccZE0HPm.s:138    .text.WWDG_SetWindowValue:00000024 $d
+C:\cygwin64\tmp\ccZE0HPm.s:141    .text.WWDG_EnableIT:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:146    .text.WWDG_EnableIT:00000000 WWDG_EnableIT
+C:\cygwin64\tmp\ccZE0HPm.s:157    .text.WWDG_EnableIT:00000008 $d
+C:\cygwin64\tmp\ccZE0HPm.s:160    .text.WWDG_SetCounter:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:165    .text.WWDG_SetCounter:00000000 WWDG_SetCounter
+C:\cygwin64\tmp\ccZE0HPm.s:176    .text.WWDG_SetCounter:0000000c $d
+C:\cygwin64\tmp\ccZE0HPm.s:179    .text.WWDG_Enable:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:184    .text.WWDG_Enable:00000000 WWDG_Enable
+C:\cygwin64\tmp\ccZE0HPm.s:195    .text.WWDG_Enable:0000000c $d
+C:\cygwin64\tmp\ccZE0HPm.s:198    .text.WWDG_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:203    .text.WWDG_GetFlagStatus:00000000 WWDG_GetFlagStatus
+C:\cygwin64\tmp\ccZE0HPm.s:214    .text.WWDG_GetFlagStatus:00000008 $d
+C:\cygwin64\tmp\ccZE0HPm.s:217    .text.WWDG_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccZE0HPm.s:222    .text.WWDG_ClearFlag:00000000 WWDG_ClearFlag
+C:\cygwin64\tmp\ccZE0HPm.s:233    .text.WWDG_ClearFlag:00000008 $d
+
+UNDEFINED SYMBOLS
+RCC_APB1PeriphResetCmd
