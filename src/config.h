@@ -13,7 +13,6 @@
 #define LAKITU_PITCH_UB 30
 #define LAKITU_PITCH_LB -30
 
-
 extern char configData[CONFIGDATASIZE];
 
 void configLoad(void);

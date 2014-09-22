@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 1
+ARM GAS  C:\cygwin64\tmp\cc1JCMfc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 2
+ARM GAS  C:\cygwin64\tmp\cc1JCMfc.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 1
  112              	.L8:
  113 001e 134B     		ldr	r3, .L9+4	@ tmp144,
  114 0020 4478     		ldrb	r4, [r0, #1]	@ zero_extendqisi2	@ D.6663, NVIC_InitStruct_3(D)->NVIC_IRQChannelPreemptionPrio
-ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 3
+ARM GAS  C:\cygwin64\tmp\cc1JCMfc.s 			page 3
 
 
  115 0022 DB68     		ldr	r3, [r3, #12]	@ D.6663, MEM[(struct SCB_Type *)3758157056B].AIRCR
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 1
  169              		.global	NVIC_SystemLPConfig
  170              		.thumb
  171              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 4
+ARM GAS  C:\cygwin64\tmp\cc1JCMfc.s 			page 4
 
 
  172              		.type	NVIC_SystemLPConfig, %function
@@ -225,25 +225,25 @@ ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 1
  213 0014 10E000E0 		.word	-536813552
  214              		.size	SysTick_CLKSourceConfig, .-SysTick_CLKSourceConfig
  215              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccqJZHx5.s 			page 5
+ARM GAS  C:\cygwin64\tmp\cc1JCMfc.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 misc.c
-C:\cygwin64\tmp\ccqJZHx5.s:70     .text.NVIC_PriorityGroupConfig:00000000 $t
-C:\cygwin64\tmp\ccqJZHx5.s:75     .text.NVIC_PriorityGroupConfig:00000000 NVIC_PriorityGroupConfig
-C:\cygwin64\tmp\ccqJZHx5.s:87     .text.NVIC_PriorityGroupConfig:00000010 $d
-C:\cygwin64\tmp\ccqJZHx5.s:90     .text.NVIC_Init:00000000 $t
-C:\cygwin64\tmp\ccqJZHx5.s:95     .text.NVIC_Init:00000000 NVIC_Init
-C:\cygwin64\tmp\ccqJZHx5.s:143    .text.NVIC_Init:00000068 $d
-C:\cygwin64\tmp\ccqJZHx5.s:147    .text.NVIC_SetVectorTable:00000000 $t
-C:\cygwin64\tmp\ccqJZHx5.s:152    .text.NVIC_SetVectorTable:00000000 NVIC_SetVectorTable
-C:\cygwin64\tmp\ccqJZHx5.s:165    .text.NVIC_SetVectorTable:00000010 $d
-C:\cygwin64\tmp\ccqJZHx5.s:168    .text.NVIC_SystemLPConfig:00000000 $t
-C:\cygwin64\tmp\ccqJZHx5.s:173    .text.NVIC_SystemLPConfig:00000000 NVIC_SystemLPConfig
-C:\cygwin64\tmp\ccqJZHx5.s:190    .text.NVIC_SystemLPConfig:00000014 $d
-C:\cygwin64\tmp\ccqJZHx5.s:193    .text.SysTick_CLKSourceConfig:00000000 $t
-C:\cygwin64\tmp\ccqJZHx5.s:198    .text.SysTick_CLKSourceConfig:00000000 SysTick_CLKSourceConfig
-C:\cygwin64\tmp\ccqJZHx5.s:213    .text.SysTick_CLKSourceConfig:00000014 $d
+C:\cygwin64\tmp\cc1JCMfc.s:70     .text.NVIC_PriorityGroupConfig:00000000 $t
+C:\cygwin64\tmp\cc1JCMfc.s:75     .text.NVIC_PriorityGroupConfig:00000000 NVIC_PriorityGroupConfig
+C:\cygwin64\tmp\cc1JCMfc.s:87     .text.NVIC_PriorityGroupConfig:00000010 $d
+C:\cygwin64\tmp\cc1JCMfc.s:90     .text.NVIC_Init:00000000 $t
+C:\cygwin64\tmp\cc1JCMfc.s:95     .text.NVIC_Init:00000000 NVIC_Init
+C:\cygwin64\tmp\cc1JCMfc.s:143    .text.NVIC_Init:00000068 $d
+C:\cygwin64\tmp\cc1JCMfc.s:147    .text.NVIC_SetVectorTable:00000000 $t
+C:\cygwin64\tmp\cc1JCMfc.s:152    .text.NVIC_SetVectorTable:00000000 NVIC_SetVectorTable
+C:\cygwin64\tmp\cc1JCMfc.s:165    .text.NVIC_SetVectorTable:00000010 $d
+C:\cygwin64\tmp\cc1JCMfc.s:168    .text.NVIC_SystemLPConfig:00000000 $t
+C:\cygwin64\tmp\cc1JCMfc.s:173    .text.NVIC_SystemLPConfig:00000000 NVIC_SystemLPConfig
+C:\cygwin64\tmp\cc1JCMfc.s:190    .text.NVIC_SystemLPConfig:00000014 $d
+C:\cygwin64\tmp\cc1JCMfc.s:193    .text.SysTick_CLKSourceConfig:00000000 $t
+C:\cygwin64\tmp\cc1JCMfc.s:198    .text.SysTick_CLKSourceConfig:00000000 SysTick_CLKSourceConfig
+C:\cygwin64\tmp\cc1JCMfc.s:213    .text.SysTick_CLKSourceConfig:00000014 $d
 
 NO UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  112              		.type	RCC_HSEConfig, %function
  113              	RCC_HSEConfig:
  114              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 3
 
 
  115              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  169 001c 054B     		ldr	r3, .L23	@ tmp127,
  170 001e 1868     		ldr	r0, [r3]	@ statusreg, MEM[(struct RCC_TypeDef *)1073876992B].CR
  171 0020 C0F34040 		ubfx	r0, r0, #17, #1	@ D.6986, statusreg,,
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 4
 
 
  172 0024 02B0     		add	sp, sp, #8	@,,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  226              		.align	2
  227              		.global	RCC_PLLConfig
  228              		.thumb
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 5
 
 
  229              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  283              	.L38:
  284 0010 00100240 		.word	1073876992
  285              		.size	RCC_SYSCLKConfig, .-RCC_SYSCLKConfig
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 6
 
 
  286              		.section	.text.RCC_GetSYSCLKSource,"ax",%progbits
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  340 000a 5860     		str	r0, [r3, #4]	@ tmpreg, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
  341 000c 7047     		bx	lr	@
  342              	.L48:
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 7
 
 
  343 000e 00BF     		.align	2
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  397              		.thumb_func
  398              		.type	RCC_USBCLKConfig, %function
  399              	RCC_USBCLKConfig:
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 8
 
 
  400              		@ args = 0, pretend = 0, frame = 0
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  454 0016 7047     		bx	lr	@
  455              	.L66:
  456 0018 1870     		strb	r0, [r3]	@ RCC_LSE, MEM[(volatile uint8_t *)1073877024B]
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 9
 
 
  457 001a 7047     		bx	lr	@
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  511 0000 014B     		ldr	r3, .L78	@ tmp112,
  512 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1111622716B]
  513 0004 7047     		bx	lr	@
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 10
 
 
  514              	.L79:
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  568 0056 4B68     		ldr	r3, [r1, #4]	@ D.7034, MEM[(struct RCC_TypeDef *)1073876992B].CFGR
  569 0058 C2F38342 		ubfx	r2, r2, #18, #4	@ D.7034, D.7034,,
  570 005c DC03     		lsls	r4, r3, #15	@, D.7034,
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 11
 
 
  571 005e 02F10202 		add	r2, r2, #2	@ pllmull, D.7034,
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  625              	RCC_APB2PeriphClockCmd:
  626              		@ args = 0, pretend = 0, frame = 0
  627              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 12
 
 
  628              		@ link register save eliminated.
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  682 0006 22EA0000 		bic	r0, r2, r0	@ D.7047, D.7047, RCC_APB2Periph
  683 000a D860     		str	r0, [r3, #12]	@ D.7047,
  684 000c 7047     		bx	lr	@
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 13
 
 
  685              	.L113:
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  739              		.global	RCC_ClockSecuritySystemCmd
  740              		.thumb
  741              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 14
 
 
  742              		.type	RCC_ClockSecuritySystemCmd, %function
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  796 001e 044B     		ldr	r3, .L136	@ tmp121,
  797 0020 00F01F00 		and	r0, r0, #31	@ tmp.4, RCC_FLAG,
  798 0024 1B68     		ldr	r3, [r3]	@ statusreg, MEM[(struct RCC_TypeDef *)1073876992B].CR
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 15
 
 
  799 0026 23FA00F0 		lsr	r0, r3, r0	@ D.7063, statusreg, tmp.4
@@ -898,7 +898,7 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  853              		.thumb_func
  854              		.type	RCC_ClearITPendingBit, %function
  855              	RCC_ClearITPendingBit:
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 16
 
 
  856              		@ args = 0, pretend = 0, frame = 0
@@ -945,113 +945,113 @@ ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 1
  897 000e 08       		.byte	8
  898 000f 09       		.byte	9
  899              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_rcc.c
-C:\cygwin64\tmp\cc8KqAEV.s:71     .text.RCC_DeInit:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:76     .text.RCC_DeInit:00000000 RCC_DeInit
-C:\cygwin64\tmp\cc8KqAEV.s:104    .text.RCC_DeInit:00000038 $d
-C:\cygwin64\tmp\cc8KqAEV.s:108    .text.RCC_HSEConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:113    .text.RCC_HSEConfig:00000000 RCC_HSEConfig
-C:\cygwin64\tmp\cc8KqAEV.s:142    .text.RCC_HSEConfig:00000034 $d
-C:\cygwin64\tmp\cc8KqAEV.s:145    .text.RCC_WaitForHSEStartUp:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:150    .text.RCC_WaitForHSEStartUp:00000000 RCC_WaitForHSEStartUp
-C:\cygwin64\tmp\cc8KqAEV.s:184    .text.RCC_WaitForHSEStartUp:00000034 $d
-C:\cygwin64\tmp\cc8KqAEV.s:187    .text.RCC_AdjustHSICalibrationValue:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:192    .text.RCC_AdjustHSICalibrationValue:00000000 RCC_AdjustHSICalibrationValue
-C:\cygwin64\tmp\cc8KqAEV.s:205    .text.RCC_AdjustHSICalibrationValue:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:208    .text.RCC_HSICmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:213    .text.RCC_HSICmd:00000000 RCC_HSICmd
-C:\cygwin64\tmp\cc8KqAEV.s:223    .text.RCC_HSICmd:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:226    .text.RCC_PLLConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:231    .text.RCC_PLLConfig:00000000 RCC_PLLConfig
-C:\cygwin64\tmp\cc8KqAEV.s:245    .text.RCC_PLLConfig:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:248    .text.RCC_PLLCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:253    .text.RCC_PLLCmd:00000000 RCC_PLLCmd
-C:\cygwin64\tmp\cc8KqAEV.s:263    .text.RCC_PLLCmd:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:266    .text.RCC_SYSCLKConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:271    .text.RCC_SYSCLKConfig:00000000 RCC_SYSCLKConfig
-C:\cygwin64\tmp\cc8KqAEV.s:284    .text.RCC_SYSCLKConfig:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:287    .text.RCC_GetSYSCLKSource:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:292    .text.RCC_GetSYSCLKSource:00000000 RCC_GetSYSCLKSource
-C:\cygwin64\tmp\cc8KqAEV.s:303    .text.RCC_GetSYSCLKSource:0000000c $d
-C:\cygwin64\tmp\cc8KqAEV.s:306    .text.RCC_HCLKConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:311    .text.RCC_HCLKConfig:00000000 RCC_HCLKConfig
-C:\cygwin64\tmp\cc8KqAEV.s:324    .text.RCC_HCLKConfig:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:327    .text.RCC_PCLK1Config:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:332    .text.RCC_PCLK1Config:00000000 RCC_PCLK1Config
-C:\cygwin64\tmp\cc8KqAEV.s:345    .text.RCC_PCLK1Config:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:348    .text.RCC_PCLK2Config:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:353    .text.RCC_PCLK2Config:00000000 RCC_PCLK2Config
-C:\cygwin64\tmp\cc8KqAEV.s:366    .text.RCC_PCLK2Config:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:369    .text.RCC_ITConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:374    .text.RCC_ITConfig:00000000 RCC_ITConfig
-C:\cygwin64\tmp\cc8KqAEV.s:391    .text.RCC_ITConfig:00000014 $d
-C:\cygwin64\tmp\cc8KqAEV.s:394    .text.RCC_USBCLKConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:399    .text.RCC_USBCLKConfig:00000000 RCC_USBCLKConfig
-C:\cygwin64\tmp\cc8KqAEV.s:409    .text.RCC_USBCLKConfig:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:412    .text.RCC_ADCCLKConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:417    .text.RCC_ADCCLKConfig:00000000 RCC_ADCCLKConfig
-C:\cygwin64\tmp\cc8KqAEV.s:430    .text.RCC_ADCCLKConfig:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:433    .text.RCC_LSEConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:438    .text.RCC_LSEConfig:00000000 RCC_LSEConfig
-C:\cygwin64\tmp\cc8KqAEV.s:461    .text.RCC_LSEConfig:0000001c $d
-C:\cygwin64\tmp\cc8KqAEV.s:464    .text.RCC_LSICmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:469    .text.RCC_LSICmd:00000000 RCC_LSICmd
-C:\cygwin64\tmp\cc8KqAEV.s:479    .text.RCC_LSICmd:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:482    .text.RCC_RTCCLKConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:487    .text.RCC_RTCCLKConfig:00000000 RCC_RTCCLKConfig
-C:\cygwin64\tmp\cc8KqAEV.s:499    .text.RCC_RTCCLKConfig:0000000c $d
-C:\cygwin64\tmp\cc8KqAEV.s:502    .text.RCC_RTCCLKCmd:00000000 $t
-ARM GAS  C:\cygwin64\tmp\cc8KqAEV.s 			page 18
+C:\cygwin64\tmp\ccjmLH4W.s:71     .text.RCC_DeInit:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:76     .text.RCC_DeInit:00000000 RCC_DeInit
+C:\cygwin64\tmp\ccjmLH4W.s:104    .text.RCC_DeInit:00000038 $d
+C:\cygwin64\tmp\ccjmLH4W.s:108    .text.RCC_HSEConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:113    .text.RCC_HSEConfig:00000000 RCC_HSEConfig
+C:\cygwin64\tmp\ccjmLH4W.s:142    .text.RCC_HSEConfig:00000034 $d
+C:\cygwin64\tmp\ccjmLH4W.s:145    .text.RCC_WaitForHSEStartUp:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:150    .text.RCC_WaitForHSEStartUp:00000000 RCC_WaitForHSEStartUp
+C:\cygwin64\tmp\ccjmLH4W.s:184    .text.RCC_WaitForHSEStartUp:00000034 $d
+C:\cygwin64\tmp\ccjmLH4W.s:187    .text.RCC_AdjustHSICalibrationValue:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:192    .text.RCC_AdjustHSICalibrationValue:00000000 RCC_AdjustHSICalibrationValue
+C:\cygwin64\tmp\ccjmLH4W.s:205    .text.RCC_AdjustHSICalibrationValue:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:208    .text.RCC_HSICmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:213    .text.RCC_HSICmd:00000000 RCC_HSICmd
+C:\cygwin64\tmp\ccjmLH4W.s:223    .text.RCC_HSICmd:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:226    .text.RCC_PLLConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:231    .text.RCC_PLLConfig:00000000 RCC_PLLConfig
+C:\cygwin64\tmp\ccjmLH4W.s:245    .text.RCC_PLLConfig:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:248    .text.RCC_PLLCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:253    .text.RCC_PLLCmd:00000000 RCC_PLLCmd
+C:\cygwin64\tmp\ccjmLH4W.s:263    .text.RCC_PLLCmd:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:266    .text.RCC_SYSCLKConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:271    .text.RCC_SYSCLKConfig:00000000 RCC_SYSCLKConfig
+C:\cygwin64\tmp\ccjmLH4W.s:284    .text.RCC_SYSCLKConfig:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:287    .text.RCC_GetSYSCLKSource:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:292    .text.RCC_GetSYSCLKSource:00000000 RCC_GetSYSCLKSource
+C:\cygwin64\tmp\ccjmLH4W.s:303    .text.RCC_GetSYSCLKSource:0000000c $d
+C:\cygwin64\tmp\ccjmLH4W.s:306    .text.RCC_HCLKConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:311    .text.RCC_HCLKConfig:00000000 RCC_HCLKConfig
+C:\cygwin64\tmp\ccjmLH4W.s:324    .text.RCC_HCLKConfig:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:327    .text.RCC_PCLK1Config:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:332    .text.RCC_PCLK1Config:00000000 RCC_PCLK1Config
+C:\cygwin64\tmp\ccjmLH4W.s:345    .text.RCC_PCLK1Config:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:348    .text.RCC_PCLK2Config:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:353    .text.RCC_PCLK2Config:00000000 RCC_PCLK2Config
+C:\cygwin64\tmp\ccjmLH4W.s:366    .text.RCC_PCLK2Config:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:369    .text.RCC_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:374    .text.RCC_ITConfig:00000000 RCC_ITConfig
+C:\cygwin64\tmp\ccjmLH4W.s:391    .text.RCC_ITConfig:00000014 $d
+C:\cygwin64\tmp\ccjmLH4W.s:394    .text.RCC_USBCLKConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:399    .text.RCC_USBCLKConfig:00000000 RCC_USBCLKConfig
+C:\cygwin64\tmp\ccjmLH4W.s:409    .text.RCC_USBCLKConfig:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:412    .text.RCC_ADCCLKConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:417    .text.RCC_ADCCLKConfig:00000000 RCC_ADCCLKConfig
+C:\cygwin64\tmp\ccjmLH4W.s:430    .text.RCC_ADCCLKConfig:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:433    .text.RCC_LSEConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:438    .text.RCC_LSEConfig:00000000 RCC_LSEConfig
+C:\cygwin64\tmp\ccjmLH4W.s:461    .text.RCC_LSEConfig:0000001c $d
+C:\cygwin64\tmp\ccjmLH4W.s:464    .text.RCC_LSICmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:469    .text.RCC_LSICmd:00000000 RCC_LSICmd
+C:\cygwin64\tmp\ccjmLH4W.s:479    .text.RCC_LSICmd:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:482    .text.RCC_RTCCLKConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:487    .text.RCC_RTCCLKConfig:00000000 RCC_RTCCLKConfig
+C:\cygwin64\tmp\ccjmLH4W.s:499    .text.RCC_RTCCLKConfig:0000000c $d
+C:\cygwin64\tmp\ccjmLH4W.s:502    .text.RCC_RTCCLKCmd:00000000 $t
+ARM GAS  C:\cygwin64\tmp\ccjmLH4W.s 			page 18
 
 
-C:\cygwin64\tmp\cc8KqAEV.s:507    .text.RCC_RTCCLKCmd:00000000 RCC_RTCCLKCmd
-C:\cygwin64\tmp\cc8KqAEV.s:517    .text.RCC_RTCCLKCmd:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:520    .text.RCC_GetClocksFreq:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:525    .text.RCC_GetClocksFreq:00000000 RCC_GetClocksFreq
-C:\cygwin64\tmp\cc8KqAEV.s:588    .text.RCC_GetClocksFreq:00000080 $d
-C:\cygwin64\tmp\cc8KqAEV.s:595    .text.RCC_AHBPeriphClockCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:600    .text.RCC_AHBPeriphClockCmd:00000000 RCC_AHBPeriphClockCmd
-C:\cygwin64\tmp\cc8KqAEV.s:617    .text.RCC_AHBPeriphClockCmd:00000014 $d
-C:\cygwin64\tmp\cc8KqAEV.s:620    .text.RCC_APB2PeriphClockCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:625    .text.RCC_APB2PeriphClockCmd:00000000 RCC_APB2PeriphClockCmd
-C:\cygwin64\tmp\cc8KqAEV.s:642    .text.RCC_APB2PeriphClockCmd:00000014 $d
-C:\cygwin64\tmp\cc8KqAEV.s:645    .text.RCC_APB1PeriphClockCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:650    .text.RCC_APB1PeriphClockCmd:00000000 RCC_APB1PeriphClockCmd
-C:\cygwin64\tmp\cc8KqAEV.s:667    .text.RCC_APB1PeriphClockCmd:00000014 $d
-C:\cygwin64\tmp\cc8KqAEV.s:670    .text.RCC_APB2PeriphResetCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:675    .text.RCC_APB2PeriphResetCmd:00000000 RCC_APB2PeriphResetCmd
-C:\cygwin64\tmp\cc8KqAEV.s:692    .text.RCC_APB2PeriphResetCmd:00000014 $d
-C:\cygwin64\tmp\cc8KqAEV.s:695    .text.RCC_APB1PeriphResetCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:700    .text.RCC_APB1PeriphResetCmd:00000000 RCC_APB1PeriphResetCmd
-C:\cygwin64\tmp\cc8KqAEV.s:717    .text.RCC_APB1PeriphResetCmd:00000014 $d
-C:\cygwin64\tmp\cc8KqAEV.s:720    .text.RCC_BackupResetCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:725    .text.RCC_BackupResetCmd:00000000 RCC_BackupResetCmd
-C:\cygwin64\tmp\cc8KqAEV.s:735    .text.RCC_BackupResetCmd:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:738    .text.RCC_ClockSecuritySystemCmd:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:743    .text.RCC_ClockSecuritySystemCmd:00000000 RCC_ClockSecuritySystemCmd
-C:\cygwin64\tmp\cc8KqAEV.s:753    .text.RCC_ClockSecuritySystemCmd:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:756    .text.RCC_MCOConfig:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:761    .text.RCC_MCOConfig:00000000 RCC_MCOConfig
-C:\cygwin64\tmp\cc8KqAEV.s:771    .text.RCC_MCOConfig:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:774    .text.RCC_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:779    .text.RCC_GetFlagStatus:00000000 RCC_GetFlagStatus
-C:\cygwin64\tmp\cc8KqAEV.s:805    .text.RCC_GetFlagStatus:00000030 $d
-C:\cygwin64\tmp\cc8KqAEV.s:808    .text.RCC_ClearFlag:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:813    .text.RCC_ClearFlag:00000000 RCC_ClearFlag
-C:\cygwin64\tmp\cc8KqAEV.s:825    .text.RCC_ClearFlag:0000000c $d
-C:\cygwin64\tmp\cc8KqAEV.s:828    .text.RCC_GetITStatus:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:833    .text.RCC_GetITStatus:00000000 RCC_GetITStatus
-C:\cygwin64\tmp\cc8KqAEV.s:847    .text.RCC_GetITStatus:00000010 $d
-C:\cygwin64\tmp\cc8KqAEV.s:850    .text.RCC_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\cc8KqAEV.s:855    .text.RCC_ClearITPendingBit:00000000 RCC_ClearITPendingBit
-C:\cygwin64\tmp\cc8KqAEV.s:865    .text.RCC_ClearITPendingBit:00000008 $d
-C:\cygwin64\tmp\cc8KqAEV.s:868    .data.ADCPrescTable:00000000 $d
-C:\cygwin64\tmp\cc8KqAEV.s:872    .data.ADCPrescTable:00000000 ADCPrescTable
-C:\cygwin64\tmp\cc8KqAEV.s:878    .data.APBAHBPrescTable:00000000 $d
-C:\cygwin64\tmp\cc8KqAEV.s:882    .data.APBAHBPrescTable:00000000 APBAHBPrescTable
+C:\cygwin64\tmp\ccjmLH4W.s:507    .text.RCC_RTCCLKCmd:00000000 RCC_RTCCLKCmd
+C:\cygwin64\tmp\ccjmLH4W.s:517    .text.RCC_RTCCLKCmd:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:520    .text.RCC_GetClocksFreq:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:525    .text.RCC_GetClocksFreq:00000000 RCC_GetClocksFreq
+C:\cygwin64\tmp\ccjmLH4W.s:588    .text.RCC_GetClocksFreq:00000080 $d
+C:\cygwin64\tmp\ccjmLH4W.s:595    .text.RCC_AHBPeriphClockCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:600    .text.RCC_AHBPeriphClockCmd:00000000 RCC_AHBPeriphClockCmd
+C:\cygwin64\tmp\ccjmLH4W.s:617    .text.RCC_AHBPeriphClockCmd:00000014 $d
+C:\cygwin64\tmp\ccjmLH4W.s:620    .text.RCC_APB2PeriphClockCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:625    .text.RCC_APB2PeriphClockCmd:00000000 RCC_APB2PeriphClockCmd
+C:\cygwin64\tmp\ccjmLH4W.s:642    .text.RCC_APB2PeriphClockCmd:00000014 $d
+C:\cygwin64\tmp\ccjmLH4W.s:645    .text.RCC_APB1PeriphClockCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:650    .text.RCC_APB1PeriphClockCmd:00000000 RCC_APB1PeriphClockCmd
+C:\cygwin64\tmp\ccjmLH4W.s:667    .text.RCC_APB1PeriphClockCmd:00000014 $d
+C:\cygwin64\tmp\ccjmLH4W.s:670    .text.RCC_APB2PeriphResetCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:675    .text.RCC_APB2PeriphResetCmd:00000000 RCC_APB2PeriphResetCmd
+C:\cygwin64\tmp\ccjmLH4W.s:692    .text.RCC_APB2PeriphResetCmd:00000014 $d
+C:\cygwin64\tmp\ccjmLH4W.s:695    .text.RCC_APB1PeriphResetCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:700    .text.RCC_APB1PeriphResetCmd:00000000 RCC_APB1PeriphResetCmd
+C:\cygwin64\tmp\ccjmLH4W.s:717    .text.RCC_APB1PeriphResetCmd:00000014 $d
+C:\cygwin64\tmp\ccjmLH4W.s:720    .text.RCC_BackupResetCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:725    .text.RCC_BackupResetCmd:00000000 RCC_BackupResetCmd
+C:\cygwin64\tmp\ccjmLH4W.s:735    .text.RCC_BackupResetCmd:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:738    .text.RCC_ClockSecuritySystemCmd:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:743    .text.RCC_ClockSecuritySystemCmd:00000000 RCC_ClockSecuritySystemCmd
+C:\cygwin64\tmp\ccjmLH4W.s:753    .text.RCC_ClockSecuritySystemCmd:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:756    .text.RCC_MCOConfig:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:761    .text.RCC_MCOConfig:00000000 RCC_MCOConfig
+C:\cygwin64\tmp\ccjmLH4W.s:771    .text.RCC_MCOConfig:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:774    .text.RCC_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:779    .text.RCC_GetFlagStatus:00000000 RCC_GetFlagStatus
+C:\cygwin64\tmp\ccjmLH4W.s:805    .text.RCC_GetFlagStatus:00000030 $d
+C:\cygwin64\tmp\ccjmLH4W.s:808    .text.RCC_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:813    .text.RCC_ClearFlag:00000000 RCC_ClearFlag
+C:\cygwin64\tmp\ccjmLH4W.s:825    .text.RCC_ClearFlag:0000000c $d
+C:\cygwin64\tmp\ccjmLH4W.s:828    .text.RCC_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:833    .text.RCC_GetITStatus:00000000 RCC_GetITStatus
+C:\cygwin64\tmp\ccjmLH4W.s:847    .text.RCC_GetITStatus:00000010 $d
+C:\cygwin64\tmp\ccjmLH4W.s:850    .text.RCC_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccjmLH4W.s:855    .text.RCC_ClearITPendingBit:00000000 RCC_ClearITPendingBit
+C:\cygwin64\tmp\ccjmLH4W.s:865    .text.RCC_ClearITPendingBit:00000008 $d
+C:\cygwin64\tmp\ccjmLH4W.s:868    .data.ADCPrescTable:00000000 $d
+C:\cygwin64\tmp\ccjmLH4W.s:872    .data.ADCPrescTable:00000000 ADCPrescTable
+C:\cygwin64\tmp\ccjmLH4W.s:878    .data.APBAHBPrescTable:00000000 $d
+C:\cygwin64\tmp\ccjmLH4W.s:882    .data.APBAHBPrescTable:00000000 APBAHBPrescTable
 
 NO UNDEFINED SYMBOLS

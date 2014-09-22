@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  112              		@ link register save eliminated.
  113 0000 1028     		cmp	r0, #16	@ FSMC_Bank,
  114 0002 0CBF     		ite	eq
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 3
 
 
  115 0004 054B     		ldreq	r3, .L12	@ tmp111,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  169 0006 F0B4     		push	{r4, r5, r6, r7}	@
  170 0008 43EA0106 		orr	r6, r3, r1	@ D.7028, D.7028, FSMC_NORSRAMInitStruct_4(D)->FSMC_DataAddressMux
  171 000c 0169     		ldr	r1, [r0, #16]	@ FSMC_NORSRAMInitStruct_4(D)->FSMC_BurstAccessMode, FSMC_NORSRAMInitStruct_4(D)
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 4
 
 
  172 000e 1643     		orrs	r6, r6, r2	@, D.7028, D.7028, FSMC_NORSRAMInitStruct_4(D)->FSMC_MemoryDataWidth
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  226              	.L22:
  227 0092 836B     		ldr	r3, [r0, #56]	@ D.7029, FSMC_NORSRAMInitStruct_4(D)->FSMC_WriteTimingStruct
  228 0094 094D     		ldr	r5, .L23	@ tmp228,
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 5
 
 
  229 0096 1968     		ldr	r1, [r3]	@ _54->FSMC_AddressSetupTime, _54->FSMC_AddressSetupTime
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  283 0042 48EA0228 		orr	r8, r8, r2, lsl #8	@, D.7034, D.7034,,
  284 0046 48EA0502 		orr	r2, r8, r5	@ D.7034, D.7034, _29->FSMC_SetupTime
  285 004a 1028     		cmp	r0, #16	@ FSMC_NANDInitStruct_3(D)->FSMC_Bank,
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 6
 
 
  286 004c 42EA0362 		orr	r2, r2, r3, lsl #24	@, tmppatt, D.7034, _29->FSMC_HiZSetupTime,
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  340 0040 3143     		orrs	r1, r1, r6	@, D.7038, D.7038, _24->FSMC_SetupTime
  341 0042 4269     		ldr	r2, [r0, #20]	@ D.7039, FSMC_PCCARDInitStruct_2(D)->FSMC_IOSpaceTimingStruct
  342 0044 41EA0561 		orr	r1, r1, r5, lsl #24	@, D.7038, D.7038, _24->FSMC_HiZSetupTime,
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 7
 
 
  343 0048 D960     		str	r1, [r3, #12]	@ D.7038, MEM[(struct FSMC_Bank4_TypeDef *)2684354720B].PATT4
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  397 003e 6261     		str	r2, [r4, #20]	@ tmp126, _16->FSMC_DataLatency
  398 0040 A560     		str	r5, [r4, #8]	@ tmp128, _16->FSMC_DataSetupTime
  399 0042 8D60     		str	r5, [r1, #8]	@ tmp128, _24->FSMC_DataSetupTime
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 8
 
 
  400 0044 0A60     		str	r2, [r1]	@ tmp126, _24->FSMC_AddressSetupTime
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  454 0002 0169     		ldr	r1, [r0, #16]	@ D.7048, FSMC_PCCARDInitStruct_2(D)->FSMC_AttributeSpaceTimingStruct
  455 0004 C468     		ldr	r4, [r0, #12]	@ D.7048, FSMC_PCCARDInitStruct_2(D)->FSMC_CommonSpaceTimingStruct
  456 0006 4269     		ldr	r2, [r0, #20]	@ D.7048, FSMC_PCCARDInitStruct_2(D)->FSMC_IOSpaceTimingStruct
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 9
 
 
  457 0008 FC23     		movs	r3, #252	@ tmp117,
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  511              	FSMC_NANDCmd:
  512              		@ args = 0, pretend = 0, frame = 0
  513              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 10
 
 
  514              		@ link register save eliminated.
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  568 0020 FBFF0F00 		.word	1048571
  569              		.size	FSMC_PCCARDCmd, .-FSMC_PCCARDCmd
  570              		.section	.text.FSMC_NANDECCCmd,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 11
 
 
  571              		.align	2
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  625 000c 600000A0 		.word	-1610612640
  626 0010 800000A0 		.word	-1610612608
  627              		.size	FSMC_GetECC, .-FSMC_GetECC
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 12
 
 
  628              		.section	.text.FSMC_ITConfig,"ax",%progbits
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  682              		.thumb
  683              		.thumb_func
  684              		.type	FSMC_GetFlagStatus, %function
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 13
 
 
  685              	FSMC_GetFlagStatus:
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  739              	.L91:
  740              		.align	2
  741              	.L90:
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 14
 
 
  742 0024 800000A0 		.word	-1610612608
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  796 0008 0CBF     		ite	eq
  797 000a 064B     		ldreq	r3, .L106	@ tmp128,
  798 000c 064B     		ldrne	r3, .L106+4	@ tmp132,
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 15
 
 
  799 000e 5A68     		ldr	r2, [r3, #4]	@ D.7082,
@@ -859,67 +859,67 @@ ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 1
  814 002c 600000A0 		.word	-1610612640
  815              		.size	FSMC_ClearITPendingBit, .-FSMC_ClearITPendingBit
  816              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_fsmc.c
-C:\cygwin64\tmp\ccXg1JXy.s:71     .text.FSMC_NORSRAMDeInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:76     .text.FSMC_NORSRAMDeInit:00000000 FSMC_NORSRAMDeInit
-C:\cygwin64\tmp\ccXg1JXy.s:101    .text.FSMC_NORSRAMDeInit:00000034 $d
-C:\cygwin64\tmp\ccXg1JXy.s:104    .text.FSMC_NANDDeInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:109    .text.FSMC_NANDDeInit:00000000 FSMC_NANDDeInit
-C:\cygwin64\tmp\ccXg1JXy.s:128    .text.FSMC_NANDDeInit:0000001c $d
-C:\cygwin64\tmp\ccXg1JXy.s:132    .text.FSMC_PCCARDDeInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:137    .text.FSMC_PCCARDDeInit:00000000 FSMC_PCCARDDeInit
-C:\cygwin64\tmp\ccXg1JXy.s:154    .text.FSMC_PCCARDDeInit:00000018 $d
-C:\cygwin64\tmp\ccXg1JXy.s:157    .text.FSMC_NORSRAMInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:162    .text.FSMC_NORSRAMInit:00000000 FSMC_NORSRAMInit
-C:\cygwin64\tmp\ccXg1JXy.s:246    .text.FSMC_NORSRAMInit:000000bc $d
-C:\cygwin64\tmp\ccXg1JXy.s:249    .text.FSMC_NANDInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:254    .text.FSMC_NANDInit:00000000 FSMC_NANDInit
-C:\cygwin64\tmp\ccXg1JXy.s:302    .text.FSMC_NANDInit:00000074 $d
-C:\cygwin64\tmp\ccXg1JXy.s:306    .text.FSMC_PCCARDInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:311    .text.FSMC_PCCARDInit:00000000 FSMC_PCCARDInit
-C:\cygwin64\tmp\ccXg1JXy.s:358    .text.FSMC_PCCARDInit:00000064 $d
-C:\cygwin64\tmp\ccXg1JXy.s:361    .text.FSMC_NORSRAMStructInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:366    .text.FSMC_NORSRAMStructInit:00000000 FSMC_NORSRAMStructInit
-C:\cygwin64\tmp\ccXg1JXy.s:410    .text.FSMC_NANDStructInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:415    .text.FSMC_NANDStructInit:00000000 FSMC_NANDStructInit
-C:\cygwin64\tmp\ccXg1JXy.s:444    .text.FSMC_PCCARDStructInit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:449    .text.FSMC_PCCARDStructInit:00000000 FSMC_PCCARDStructInit
-C:\cygwin64\tmp\ccXg1JXy.s:478    .text.FSMC_NORSRAMCmd:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:483    .text.FSMC_NORSRAMCmd:00000000 FSMC_NORSRAMCmd
-C:\cygwin64\tmp\ccXg1JXy.s:503    .text.FSMC_NORSRAMCmd:0000001c $d
-C:\cygwin64\tmp\ccXg1JXy.s:506    .text.FSMC_NANDCmd:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:511    .text.FSMC_NANDCmd:00000000 FSMC_NANDCmd
-C:\cygwin64\tmp\ccXg1JXy.s:537    .text.FSMC_NANDCmd:00000028 $d
-C:\cygwin64\tmp\ccXg1JXy.s:542    .text.FSMC_PCCARDCmd:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:547    .text.FSMC_PCCARDCmd:00000000 FSMC_PCCARDCmd
-C:\cygwin64\tmp\ccXg1JXy.s:567    .text.FSMC_PCCARDCmd:0000001c $d
-C:\cygwin64\tmp\ccXg1JXy.s:571    .text.FSMC_NANDECCCmd:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:576    .text.FSMC_NANDECCCmd:00000000 FSMC_NANDECCCmd
-C:\cygwin64\tmp\ccXg1JXy.s:602    .text.FSMC_NANDECCCmd:00000028 $d
-C:\cygwin64\tmp\ccXg1JXy.s:607    .text.FSMC_GetECC:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:612    .text.FSMC_GetECC:00000000 FSMC_GetECC
-C:\cygwin64\tmp\ccXg1JXy.s:625    .text.FSMC_GetECC:0000000c $d
-C:\cygwin64\tmp\ccXg1JXy.s:629    .text.FSMC_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:634    .text.FSMC_ITConfig:00000000 FSMC_ITConfig
-C:\cygwin64\tmp\ccXg1JXy.s:675    .text.FSMC_ITConfig:00000048 $d
-C:\cygwin64\tmp\ccXg1JXy.s:680    .text.FSMC_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:685    .text.FSMC_GetFlagStatus:00000000 FSMC_GetFlagStatus
-C:\cygwin64\tmp\ccXg1JXy.s:709    .text.FSMC_GetFlagStatus:00000020 $d
-C:\cygwin64\tmp\ccXg1JXy.s:714    .text.FSMC_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:719    .text.FSMC_ClearFlag:00000000 FSMC_ClearFlag
-C:\cygwin64\tmp\ccXg1JXy.s:742    .text.FSMC_ClearFlag:00000024 $d
-C:\cygwin64\tmp\ccXg1JXy.s:747    .text.FSMC_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:752    .text.FSMC_GetITStatus:00000000 FSMC_GetITStatus
-C:\cygwin64\tmp\ccXg1JXy.s:779    .text.FSMC_GetITStatus:00000028 $d
-C:\cygwin64\tmp\ccXg1JXy.s:784    .text.FSMC_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccXg1JXy.s:789    .text.FSMC_ClearITPendingBit:00000000 FSMC_ClearITPendingBit
-C:\cygwin64\tmp\ccXg1JXy.s:812    .text.FSMC_ClearITPendingBit:00000024 $d
+C:\cygwin64\tmp\ccejcIvH.s:71     .text.FSMC_NORSRAMDeInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:76     .text.FSMC_NORSRAMDeInit:00000000 FSMC_NORSRAMDeInit
+C:\cygwin64\tmp\ccejcIvH.s:101    .text.FSMC_NORSRAMDeInit:00000034 $d
+C:\cygwin64\tmp\ccejcIvH.s:104    .text.FSMC_NANDDeInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:109    .text.FSMC_NANDDeInit:00000000 FSMC_NANDDeInit
+C:\cygwin64\tmp\ccejcIvH.s:128    .text.FSMC_NANDDeInit:0000001c $d
+C:\cygwin64\tmp\ccejcIvH.s:132    .text.FSMC_PCCARDDeInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:137    .text.FSMC_PCCARDDeInit:00000000 FSMC_PCCARDDeInit
+C:\cygwin64\tmp\ccejcIvH.s:154    .text.FSMC_PCCARDDeInit:00000018 $d
+C:\cygwin64\tmp\ccejcIvH.s:157    .text.FSMC_NORSRAMInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:162    .text.FSMC_NORSRAMInit:00000000 FSMC_NORSRAMInit
+C:\cygwin64\tmp\ccejcIvH.s:246    .text.FSMC_NORSRAMInit:000000bc $d
+C:\cygwin64\tmp\ccejcIvH.s:249    .text.FSMC_NANDInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:254    .text.FSMC_NANDInit:00000000 FSMC_NANDInit
+C:\cygwin64\tmp\ccejcIvH.s:302    .text.FSMC_NANDInit:00000074 $d
+C:\cygwin64\tmp\ccejcIvH.s:306    .text.FSMC_PCCARDInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:311    .text.FSMC_PCCARDInit:00000000 FSMC_PCCARDInit
+C:\cygwin64\tmp\ccejcIvH.s:358    .text.FSMC_PCCARDInit:00000064 $d
+C:\cygwin64\tmp\ccejcIvH.s:361    .text.FSMC_NORSRAMStructInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:366    .text.FSMC_NORSRAMStructInit:00000000 FSMC_NORSRAMStructInit
+C:\cygwin64\tmp\ccejcIvH.s:410    .text.FSMC_NANDStructInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:415    .text.FSMC_NANDStructInit:00000000 FSMC_NANDStructInit
+C:\cygwin64\tmp\ccejcIvH.s:444    .text.FSMC_PCCARDStructInit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:449    .text.FSMC_PCCARDStructInit:00000000 FSMC_PCCARDStructInit
+C:\cygwin64\tmp\ccejcIvH.s:478    .text.FSMC_NORSRAMCmd:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:483    .text.FSMC_NORSRAMCmd:00000000 FSMC_NORSRAMCmd
+C:\cygwin64\tmp\ccejcIvH.s:503    .text.FSMC_NORSRAMCmd:0000001c $d
+C:\cygwin64\tmp\ccejcIvH.s:506    .text.FSMC_NANDCmd:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:511    .text.FSMC_NANDCmd:00000000 FSMC_NANDCmd
+C:\cygwin64\tmp\ccejcIvH.s:537    .text.FSMC_NANDCmd:00000028 $d
+C:\cygwin64\tmp\ccejcIvH.s:542    .text.FSMC_PCCARDCmd:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:547    .text.FSMC_PCCARDCmd:00000000 FSMC_PCCARDCmd
+C:\cygwin64\tmp\ccejcIvH.s:567    .text.FSMC_PCCARDCmd:0000001c $d
+C:\cygwin64\tmp\ccejcIvH.s:571    .text.FSMC_NANDECCCmd:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:576    .text.FSMC_NANDECCCmd:00000000 FSMC_NANDECCCmd
+C:\cygwin64\tmp\ccejcIvH.s:602    .text.FSMC_NANDECCCmd:00000028 $d
+C:\cygwin64\tmp\ccejcIvH.s:607    .text.FSMC_GetECC:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:612    .text.FSMC_GetECC:00000000 FSMC_GetECC
+C:\cygwin64\tmp\ccejcIvH.s:625    .text.FSMC_GetECC:0000000c $d
+C:\cygwin64\tmp\ccejcIvH.s:629    .text.FSMC_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:634    .text.FSMC_ITConfig:00000000 FSMC_ITConfig
+C:\cygwin64\tmp\ccejcIvH.s:675    .text.FSMC_ITConfig:00000048 $d
+C:\cygwin64\tmp\ccejcIvH.s:680    .text.FSMC_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:685    .text.FSMC_GetFlagStatus:00000000 FSMC_GetFlagStatus
+C:\cygwin64\tmp\ccejcIvH.s:709    .text.FSMC_GetFlagStatus:00000020 $d
+C:\cygwin64\tmp\ccejcIvH.s:714    .text.FSMC_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:719    .text.FSMC_ClearFlag:00000000 FSMC_ClearFlag
+C:\cygwin64\tmp\ccejcIvH.s:742    .text.FSMC_ClearFlag:00000024 $d
+C:\cygwin64\tmp\ccejcIvH.s:747    .text.FSMC_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:752    .text.FSMC_GetITStatus:00000000 FSMC_GetITStatus
+C:\cygwin64\tmp\ccejcIvH.s:779    .text.FSMC_GetITStatus:00000028 $d
+C:\cygwin64\tmp\ccejcIvH.s:784    .text.FSMC_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccejcIvH.s:789    .text.FSMC_ClearITPendingBit:00000000 FSMC_ClearITPendingBit
+C:\cygwin64\tmp\ccejcIvH.s:812    .text.FSMC_ClearITPendingBit:00000024 $d
 
-ARM GAS  C:\cygwin64\tmp\ccXg1JXy.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccejcIvH.s 			page 17
 
 
 NO UNDEFINED SYMBOLS

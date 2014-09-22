@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
  112              	.L10:
  113 000e 00BF     		.align	2
  114              	.L9:
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 3
 
 
  115 0010 00280040 		.word	1073752064
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
  169              		.align	2
  170              		.global	RTC_SetCounter
  171              		.thumb
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 4
 
 
  172              		.thumb_func
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
  226 0024 00280040 		.word	1073752064
  227              		.size	RTC_SetPrescaler, .-RTC_SetPrescaler
  228              		.section	.text.RTC_SetAlarm,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 5
 
 
  229              		.align	2
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
  283              		.thumb
  284              		.thumb_func
  285              		.type	RTC_WaitForLastTask, %function
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 6
 
 
  286              	RTC_WaitForLastTask:
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
  340 0004 1842     		tst	r0, r3	@ RTC_FLAG, MEM[(struct RTC_TypeDef *)1073752064B].CRL
  341 0006 0CBF     		ite	eq	@
  342 0008 0020     		moveq	r0, #0	@,
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 7
 
 
  343 000a 0120     		movne	r0, #1	@,
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
  397              		.align	2
  398              	.L50:
  399 001c 00280040 		.word	1073752064
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 8
 
 
  400              		.size	RTC_GetITStatus, .-RTC_GetITStatus
@@ -444,52 +444,52 @@ ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 1
  420 0010 00280040 		.word	1073752064
  421              		.size	RTC_ClearITPendingBit, .-RTC_ClearITPendingBit
  422              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccwsCXrf.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccIgVWi1.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_rtc.c
-C:\cygwin64\tmp\ccwsCXrf.s:71     .text.RTC_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:76     .text.RTC_ITConfig:00000000 RTC_ITConfig
-C:\cygwin64\tmp\ccwsCXrf.s:94     .text.RTC_ITConfig:00000018 $d
-C:\cygwin64\tmp\ccwsCXrf.s:97     .text.RTC_EnterConfigMode:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:102    .text.RTC_EnterConfigMode:00000000 RTC_EnterConfigMode
-C:\cygwin64\tmp\ccwsCXrf.s:115    .text.RTC_EnterConfigMode:00000010 $d
-C:\cygwin64\tmp\ccwsCXrf.s:118    .text.RTC_ExitConfigMode:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:123    .text.RTC_ExitConfigMode:00000000 RTC_ExitConfigMode
-C:\cygwin64\tmp\ccwsCXrf.s:137    .text.RTC_ExitConfigMode:00000010 $d
-C:\cygwin64\tmp\ccwsCXrf.s:140    .text.RTC_GetCounter:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:145    .text.RTC_GetCounter:00000000 RTC_GetCounter
-C:\cygwin64\tmp\ccwsCXrf.s:166    .text.RTC_GetCounter:00000020 $d
-C:\cygwin64\tmp\ccwsCXrf.s:169    .text.RTC_SetCounter:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:174    .text.RTC_SetCounter:00000000 RTC_SetCounter
-C:\cygwin64\tmp\ccwsCXrf.s:196    .text.RTC_SetCounter:00000024 $d
-C:\cygwin64\tmp\ccwsCXrf.s:199    .text.RTC_SetPrescaler:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:204    .text.RTC_SetPrescaler:00000000 RTC_SetPrescaler
-C:\cygwin64\tmp\ccwsCXrf.s:226    .text.RTC_SetPrescaler:00000024 $d
-C:\cygwin64\tmp\ccwsCXrf.s:229    .text.RTC_SetAlarm:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:234    .text.RTC_SetAlarm:00000000 RTC_SetAlarm
-C:\cygwin64\tmp\ccwsCXrf.s:256    .text.RTC_SetAlarm:00000024 $d
-C:\cygwin64\tmp\ccwsCXrf.s:259    .text.RTC_GetDivider:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:264    .text.RTC_GetDivider:00000000 RTC_GetDivider
-C:\cygwin64\tmp\ccwsCXrf.s:278    .text.RTC_GetDivider:00000014 $d
-C:\cygwin64\tmp\ccwsCXrf.s:281    .text.RTC_WaitForLastTask:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:286    .text.RTC_WaitForLastTask:00000000 RTC_WaitForLastTask
-C:\cygwin64\tmp\ccwsCXrf.s:299    .text.RTC_WaitForLastTask:0000000c $d
-C:\cygwin64\tmp\ccwsCXrf.s:302    .text.RTC_WaitForSynchro:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:307    .text.RTC_WaitForSynchro:00000000 RTC_WaitForSynchro
-C:\cygwin64\tmp\ccwsCXrf.s:326    .text.RTC_WaitForSynchro:00000018 $d
-C:\cygwin64\tmp\ccwsCXrf.s:329    .text.RTC_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:334    .text.RTC_GetFlagStatus:00000000 RTC_GetFlagStatus
-C:\cygwin64\tmp\ccwsCXrf.s:348    .text.RTC_GetFlagStatus:00000010 $d
-C:\cygwin64\tmp\ccwsCXrf.s:351    .text.RTC_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:356    .text.RTC_ClearFlag:00000000 RTC_ClearFlag
-C:\cygwin64\tmp\ccwsCXrf.s:369    .text.RTC_ClearFlag:00000010 $d
-C:\cygwin64\tmp\ccwsCXrf.s:372    .text.RTC_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:377    .text.RTC_GetITStatus:00000000 RTC_GetITStatus
-C:\cygwin64\tmp\ccwsCXrf.s:399    .text.RTC_GetITStatus:0000001c $d
-C:\cygwin64\tmp\ccwsCXrf.s:402    .text.RTC_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccwsCXrf.s:407    .text.RTC_ClearITPendingBit:00000000 RTC_ClearITPendingBit
-C:\cygwin64\tmp\ccwsCXrf.s:420    .text.RTC_ClearITPendingBit:00000010 $d
+C:\cygwin64\tmp\ccIgVWi1.s:71     .text.RTC_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:76     .text.RTC_ITConfig:00000000 RTC_ITConfig
+C:\cygwin64\tmp\ccIgVWi1.s:94     .text.RTC_ITConfig:00000018 $d
+C:\cygwin64\tmp\ccIgVWi1.s:97     .text.RTC_EnterConfigMode:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:102    .text.RTC_EnterConfigMode:00000000 RTC_EnterConfigMode
+C:\cygwin64\tmp\ccIgVWi1.s:115    .text.RTC_EnterConfigMode:00000010 $d
+C:\cygwin64\tmp\ccIgVWi1.s:118    .text.RTC_ExitConfigMode:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:123    .text.RTC_ExitConfigMode:00000000 RTC_ExitConfigMode
+C:\cygwin64\tmp\ccIgVWi1.s:137    .text.RTC_ExitConfigMode:00000010 $d
+C:\cygwin64\tmp\ccIgVWi1.s:140    .text.RTC_GetCounter:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:145    .text.RTC_GetCounter:00000000 RTC_GetCounter
+C:\cygwin64\tmp\ccIgVWi1.s:166    .text.RTC_GetCounter:00000020 $d
+C:\cygwin64\tmp\ccIgVWi1.s:169    .text.RTC_SetCounter:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:174    .text.RTC_SetCounter:00000000 RTC_SetCounter
+C:\cygwin64\tmp\ccIgVWi1.s:196    .text.RTC_SetCounter:00000024 $d
+C:\cygwin64\tmp\ccIgVWi1.s:199    .text.RTC_SetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:204    .text.RTC_SetPrescaler:00000000 RTC_SetPrescaler
+C:\cygwin64\tmp\ccIgVWi1.s:226    .text.RTC_SetPrescaler:00000024 $d
+C:\cygwin64\tmp\ccIgVWi1.s:229    .text.RTC_SetAlarm:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:234    .text.RTC_SetAlarm:00000000 RTC_SetAlarm
+C:\cygwin64\tmp\ccIgVWi1.s:256    .text.RTC_SetAlarm:00000024 $d
+C:\cygwin64\tmp\ccIgVWi1.s:259    .text.RTC_GetDivider:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:264    .text.RTC_GetDivider:00000000 RTC_GetDivider
+C:\cygwin64\tmp\ccIgVWi1.s:278    .text.RTC_GetDivider:00000014 $d
+C:\cygwin64\tmp\ccIgVWi1.s:281    .text.RTC_WaitForLastTask:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:286    .text.RTC_WaitForLastTask:00000000 RTC_WaitForLastTask
+C:\cygwin64\tmp\ccIgVWi1.s:299    .text.RTC_WaitForLastTask:0000000c $d
+C:\cygwin64\tmp\ccIgVWi1.s:302    .text.RTC_WaitForSynchro:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:307    .text.RTC_WaitForSynchro:00000000 RTC_WaitForSynchro
+C:\cygwin64\tmp\ccIgVWi1.s:326    .text.RTC_WaitForSynchro:00000018 $d
+C:\cygwin64\tmp\ccIgVWi1.s:329    .text.RTC_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:334    .text.RTC_GetFlagStatus:00000000 RTC_GetFlagStatus
+C:\cygwin64\tmp\ccIgVWi1.s:348    .text.RTC_GetFlagStatus:00000010 $d
+C:\cygwin64\tmp\ccIgVWi1.s:351    .text.RTC_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:356    .text.RTC_ClearFlag:00000000 RTC_ClearFlag
+C:\cygwin64\tmp\ccIgVWi1.s:369    .text.RTC_ClearFlag:00000010 $d
+C:\cygwin64\tmp\ccIgVWi1.s:372    .text.RTC_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:377    .text.RTC_GetITStatus:00000000 RTC_GetITStatus
+C:\cygwin64\tmp\ccIgVWi1.s:399    .text.RTC_GetITStatus:0000001c $d
+C:\cygwin64\tmp\ccIgVWi1.s:402    .text.RTC_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccIgVWi1.s:407    .text.RTC_ClearITPendingBit:00000000 RTC_ClearITPendingBit
+C:\cygwin64\tmp\ccIgVWi1.s:420    .text.RTC_ClearITPendingBit:00000010 $d
 
 NO UNDEFINED SYMBOLS

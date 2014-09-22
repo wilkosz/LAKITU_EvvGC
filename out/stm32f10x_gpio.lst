@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  112 0048 0121     		movs	r1, #1	@,
  113 004a FFF7FEFF 		bl	RCC_APB2PeriphResetCmd	@
  114 004e BDE80840 		pop	{r3, lr}	@
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 3
 
 
  115 0052 0420     		movs	r0, #4	@,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  169              		.section	.text.GPIO_AFIODeInit,"ax",%progbits
  170              		.align	2
  171              		.global	GPIO_AFIODeInit
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 4
 
 
  172              		.thumb
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  226 004a 282D     		cmp	r5, #40	@ D.6865,
  227 004c 4CEA020C 		orr	ip, ip, r2	@ tmpreg, tmpreg, D.6868
  228 0050 35D0     		beq	.L39	@,
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 5
 
 
  229 0052 482D     		cmp	r5, #72	@ D.6865,
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  283              		.thumb
  284              		.thumb_func
  285              		.type	GPIO_StructInit, %function
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 6
 
 
  286              	GPIO_StructInit:
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  340 0002 1942     		tst	r1, r3	@ GPIO_Pin, D.6883
  341 0004 0CBF     		ite	eq	@
  342 0006 0020     		moveq	r0, #0	@,
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 7
 
 
  343 0008 0120     		movne	r0, #1	@,
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  397 0002 4161     		str	r1, [r0, #20]	@ GPIO_Pin, GPIOx_6(D)->BRR
  398 0004 7047     		bx	lr	@
  399              	.L52:
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 8
 
 
  400 0006 0161     		str	r1, [r0, #16]	@ GPIO_Pin, GPIOx_6(D)->BSRR
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  454              		.type	GPIO_EventOutputConfig, %function
  455              	GPIO_EventOutputConfig:
  456              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 9
 
 
  457              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  511 0016 1FD0     		beq	.L74	@,
  512 0018 C202     		lsls	r2, r0, #11	@, GPIO_Remap,
  513 001a 14D5     		bpl	.L67	@,
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 10
 
 
  514 001c C0F30342 		ubfx	r2, r0, #16, #4	@ tmpmask, GPIO_Remap,,
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  568 0012 01F18041 		add	r1, r1, #1073741824	@ D.6925, D.6924,
  569 0016 01F58031 		add	r1, r1, #65536	@ D.6925, D.6925,
  570 001a 8868     		ldr	r0, [r1, #8]	@ D.6923, MEM[(struct AFIO_TypeDef *)_21 + 8B]
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 11
 
 
  571 001c 20EA0202 		bic	r2, r0, r2	@ D.6923, D.6923, tmp
@@ -627,54 +627,54 @@ ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 1
  594 0008 DC002042 		.word	1109393628
  595              		.size	GPIO_ETH_MediaInterfaceConfig, .-GPIO_ETH_MediaInterfaceConfig
  596              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccX2Zmah.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccOfGNub.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_gpio.c
-C:\cygwin64\tmp\ccX2Zmah.s:71     .text.GPIO_DeInit:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:76     .text.GPIO_DeInit:00000000 GPIO_DeInit
-C:\cygwin64\tmp\ccX2Zmah.s:161    .text.GPIO_DeInit:000000c0 $d
-C:\cygwin64\tmp\ccX2Zmah.s:170    .text.GPIO_AFIODeInit:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:175    .text.GPIO_AFIODeInit:00000000 GPIO_AFIODeInit
-C:\cygwin64\tmp\ccX2Zmah.s:188    .text.GPIO_Init:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:193    .text.GPIO_Init:00000000 GPIO_Init
-C:\cygwin64\tmp\ccX2Zmah.s:281    .text.GPIO_StructInit:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:286    .text.GPIO_StructInit:00000000 GPIO_StructInit
-C:\cygwin64\tmp\ccX2Zmah.s:299    .text.GPIO_ReadInputDataBit:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:304    .text.GPIO_ReadInputDataBit:00000000 GPIO_ReadInputDataBit
-C:\cygwin64\tmp\ccX2Zmah.s:316    .text.GPIO_ReadInputData:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:321    .text.GPIO_ReadInputData:00000000 GPIO_ReadInputData
-C:\cygwin64\tmp\ccX2Zmah.s:330    .text.GPIO_ReadOutputDataBit:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:335    .text.GPIO_ReadOutputDataBit:00000000 GPIO_ReadOutputDataBit
-C:\cygwin64\tmp\ccX2Zmah.s:347    .text.GPIO_ReadOutputData:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:352    .text.GPIO_ReadOutputData:00000000 GPIO_ReadOutputData
-C:\cygwin64\tmp\ccX2Zmah.s:361    .text.GPIO_SetBits:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:366    .text.GPIO_SetBits:00000000 GPIO_SetBits
-C:\cygwin64\tmp\ccX2Zmah.s:374    .text.GPIO_ResetBits:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:379    .text.GPIO_ResetBits:00000000 GPIO_ResetBits
-C:\cygwin64\tmp\ccX2Zmah.s:387    .text.GPIO_WriteBit:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:392    .text.GPIO_WriteBit:00000000 GPIO_WriteBit
-C:\cygwin64\tmp\ccX2Zmah.s:404    .text.GPIO_Write:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:409    .text.GPIO_Write:00000000 GPIO_Write
-C:\cygwin64\tmp\ccX2Zmah.s:417    .text.GPIO_ToggleBits:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:422    .text.GPIO_ToggleBits:00000000 GPIO_ToggleBits
-C:\cygwin64\tmp\ccX2Zmah.s:432    .text.GPIO_PinLockConfig:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:437    .text.GPIO_PinLockConfig:00000000 GPIO_PinLockConfig
-C:\cygwin64\tmp\ccX2Zmah.s:450    .text.GPIO_EventOutputConfig:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:455    .text.GPIO_EventOutputConfig:00000000 GPIO_EventOutputConfig
-C:\cygwin64\tmp\ccX2Zmah.s:472    .text.GPIO_EventOutputConfig:0000001c $d
-C:\cygwin64\tmp\ccX2Zmah.s:475    .text.GPIO_EventOutputCmd:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:480    .text.GPIO_EventOutputCmd:00000000 GPIO_EventOutputCmd
-C:\cygwin64\tmp\ccX2Zmah.s:490    .text.GPIO_EventOutputCmd:00000008 $d
-C:\cygwin64\tmp\ccX2Zmah.s:493    .text.GPIO_PinRemapConfig:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:498    .text.GPIO_PinRemapConfig:00000000 GPIO_PinRemapConfig
-C:\cygwin64\tmp\ccX2Zmah.s:550    .text.GPIO_PinRemapConfig:00000068 $d
-C:\cygwin64\tmp\ccX2Zmah.s:553    .text.GPIO_EXTILineConfig:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:558    .text.GPIO_EXTILineConfig:00000000 GPIO_EXTILineConfig
-C:\cygwin64\tmp\ccX2Zmah.s:579    .text.GPIO_ETH_MediaInterfaceConfig:00000000 $t
-C:\cygwin64\tmp\ccX2Zmah.s:584    .text.GPIO_ETH_MediaInterfaceConfig:00000000 GPIO_ETH_MediaInterfaceConfig
-C:\cygwin64\tmp\ccX2Zmah.s:594    .text.GPIO_ETH_MediaInterfaceConfig:00000008 $d
+C:\cygwin64\tmp\ccOfGNub.s:71     .text.GPIO_DeInit:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:76     .text.GPIO_DeInit:00000000 GPIO_DeInit
+C:\cygwin64\tmp\ccOfGNub.s:161    .text.GPIO_DeInit:000000c0 $d
+C:\cygwin64\tmp\ccOfGNub.s:170    .text.GPIO_AFIODeInit:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:175    .text.GPIO_AFIODeInit:00000000 GPIO_AFIODeInit
+C:\cygwin64\tmp\ccOfGNub.s:188    .text.GPIO_Init:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:193    .text.GPIO_Init:00000000 GPIO_Init
+C:\cygwin64\tmp\ccOfGNub.s:281    .text.GPIO_StructInit:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:286    .text.GPIO_StructInit:00000000 GPIO_StructInit
+C:\cygwin64\tmp\ccOfGNub.s:299    .text.GPIO_ReadInputDataBit:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:304    .text.GPIO_ReadInputDataBit:00000000 GPIO_ReadInputDataBit
+C:\cygwin64\tmp\ccOfGNub.s:316    .text.GPIO_ReadInputData:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:321    .text.GPIO_ReadInputData:00000000 GPIO_ReadInputData
+C:\cygwin64\tmp\ccOfGNub.s:330    .text.GPIO_ReadOutputDataBit:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:335    .text.GPIO_ReadOutputDataBit:00000000 GPIO_ReadOutputDataBit
+C:\cygwin64\tmp\ccOfGNub.s:347    .text.GPIO_ReadOutputData:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:352    .text.GPIO_ReadOutputData:00000000 GPIO_ReadOutputData
+C:\cygwin64\tmp\ccOfGNub.s:361    .text.GPIO_SetBits:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:366    .text.GPIO_SetBits:00000000 GPIO_SetBits
+C:\cygwin64\tmp\ccOfGNub.s:374    .text.GPIO_ResetBits:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:379    .text.GPIO_ResetBits:00000000 GPIO_ResetBits
+C:\cygwin64\tmp\ccOfGNub.s:387    .text.GPIO_WriteBit:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:392    .text.GPIO_WriteBit:00000000 GPIO_WriteBit
+C:\cygwin64\tmp\ccOfGNub.s:404    .text.GPIO_Write:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:409    .text.GPIO_Write:00000000 GPIO_Write
+C:\cygwin64\tmp\ccOfGNub.s:417    .text.GPIO_ToggleBits:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:422    .text.GPIO_ToggleBits:00000000 GPIO_ToggleBits
+C:\cygwin64\tmp\ccOfGNub.s:432    .text.GPIO_PinLockConfig:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:437    .text.GPIO_PinLockConfig:00000000 GPIO_PinLockConfig
+C:\cygwin64\tmp\ccOfGNub.s:450    .text.GPIO_EventOutputConfig:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:455    .text.GPIO_EventOutputConfig:00000000 GPIO_EventOutputConfig
+C:\cygwin64\tmp\ccOfGNub.s:472    .text.GPIO_EventOutputConfig:0000001c $d
+C:\cygwin64\tmp\ccOfGNub.s:475    .text.GPIO_EventOutputCmd:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:480    .text.GPIO_EventOutputCmd:00000000 GPIO_EventOutputCmd
+C:\cygwin64\tmp\ccOfGNub.s:490    .text.GPIO_EventOutputCmd:00000008 $d
+C:\cygwin64\tmp\ccOfGNub.s:493    .text.GPIO_PinRemapConfig:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:498    .text.GPIO_PinRemapConfig:00000000 GPIO_PinRemapConfig
+C:\cygwin64\tmp\ccOfGNub.s:550    .text.GPIO_PinRemapConfig:00000068 $d
+C:\cygwin64\tmp\ccOfGNub.s:553    .text.GPIO_EXTILineConfig:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:558    .text.GPIO_EXTILineConfig:00000000 GPIO_EXTILineConfig
+C:\cygwin64\tmp\ccOfGNub.s:579    .text.GPIO_ETH_MediaInterfaceConfig:00000000 $t
+C:\cygwin64\tmp\ccOfGNub.s:584    .text.GPIO_ETH_MediaInterfaceConfig:00000000 GPIO_ETH_MediaInterfaceConfig
+C:\cygwin64\tmp\ccOfGNub.s:594    .text.GPIO_ETH_MediaInterfaceConfig:00000008 $d
 
 UNDEFINED SYMBOLS
 RCC_APB2PeriphResetCmd

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  112 0058 0021     		movs	r1, #0	@,
  113 005a FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
  114              	.L10:
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 3
 
 
  115 005e 00BF     		.align	2
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  169              		@ args = 0, pretend = 0, frame = 24
  170              		@ frame_needed = 0, uses_anonymous_args = 0
  171 0000 838B     		ldrh	r3, [r0, #28]	@, SPIx_9(D)->I2SCFGR
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 4
 
 
  172 0002 F0B5     		push	{r4, r5, r6, r7, lr}	@
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  226 0080 3943     		orrs	r1, r1, r7	@, tmp212, tmp209, I2S_InitStruct_15(D)->I2S_DataFormat
  227 0082 1343     		orrs	r3, r3, r2	@, tmp201, D.6914, D.6914
  228 0084 0143     		orrs	r1, r1, r0	@, tmp214, tmp212, I2S_InitStruct_15(D)->I2S_CPOL
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 5
 
 
  229 0086 9BB2     		uxth	r3, r3	@ D.6914, tmp201
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  283              	I2S_StructInit:
  284              		@ args = 0, pretend = 0, frame = 0
  285              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 6
 
 
  286              		@ link register save eliminated.
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  340 0016 8383     		strh	r3, [r0, #28]	@ movhi	@ D.6926,
  341 0018 7047     		bx	lr	@
  342              		.size	I2S_Cmd, .-I2S_Cmd
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 7
 
 
  343 001a 00BF     		.section	.text.SPI_I2S_ITConfig,"ax",%progbits
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  397              		@ frame_needed = 0, uses_anonymous_args = 0
  398              		@ link register save eliminated.
  399 0000 8181     		strh	r1, [r0, #12]	@ movhi	@ Data, SPIx_2(D)->DR
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 8
 
 
  400 0002 7047     		bx	lr	@
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  454 0008 1B04     		lsls	r3, r3, #16	@ D.6945, D.6945,
  455 000a 1B0C     		lsrs	r3, r3, #16	@ D.6945, D.6945,
  456 000c 8380     		strh	r3, [r0, #4]	@ movhi	@ D.6945,
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 9
 
 
  457 000e 7047     		bx	lr	@
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  511 0000 0388     		ldrh	r3, [r0]	@,* SPIx
  512 0002 29B9     		cbnz	r1, .L57	@ NewState,
  513 0004 23F40053 		bic	r3, r3, #8192	@ D.6954, SPIx_4(D)->CR1,
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 10
 
 
  514 0008 1B04     		lsls	r3, r3, #16	@ D.6954, D.6954,
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  568 0008 23F48043 		bic	r3, r3, #16384	@ D.6962, SPIx_4(D)->CR1,
  569 000c 1B04     		lsls	r3, r3, #16	@ D.6962, D.6962,
  570 000e 1B0C     		lsrs	r3, r3, #16	@ D.6962, D.6962,
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 11
 
 
  571 0010 0380     		strh	r3, [r0]	@ movhi	@ D.6962,* SPIx
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  625 000c 8488     		ldrh	r4, [r0, #4]	@, SPIx_12(D)->CR2
  626 000e 0089     		ldrh	r0, [r0, #8]	@, SPIx_12(D)->SR
  627 0010 A4B2     		uxth	r4, r4	@ D.6976, SPIx_12(D)->CR2
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 12
 
 
  628 0012 80B2     		uxth	r0, r0	@ D.6976, SPIx_12(D)->SR
@@ -693,59 +693,59 @@ ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 1
  657 000e 7047     		bx	lr	@
  658              		.size	SPI_I2S_ClearITPendingBit, .-SPI_I2S_ClearITPendingBit
  659              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccpNdjle.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccZMu0nk.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_spi.c
-C:\cygwin64\tmp\ccpNdjle.s:71     .text.SPI_I2S_DeInit:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:76     .text.SPI_I2S_DeInit:00000000 SPI_I2S_DeInit
-C:\cygwin64\tmp\ccpNdjle.s:117    .text.SPI_I2S_DeInit:00000060 $d
-C:\cygwin64\tmp\ccpNdjle.s:122    .text.SPI_Init:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:127    .text.SPI_Init:00000000 SPI_Init
-C:\cygwin64\tmp\ccpNdjle.s:163    .text.I2S_Init:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:168    .text.I2S_Init:00000000 I2S_Init
-C:\cygwin64\tmp\ccpNdjle.s:252    .text.I2S_Init:000000ac $d
-C:\cygwin64\tmp\ccpNdjle.s:255    .text.SPI_StructInit:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:260    .text.SPI_StructInit:00000000 SPI_StructInit
-C:\cygwin64\tmp\ccpNdjle.s:278    .text.I2S_StructInit:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:283    .text.I2S_StructInit:00000000 I2S_StructInit
-C:\cygwin64\tmp\ccpNdjle.s:298    .text.SPI_Cmd:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:303    .text.SPI_Cmd:00000000 SPI_Cmd
-C:\cygwin64\tmp\ccpNdjle.s:321    .text.I2S_Cmd:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:326    .text.I2S_Cmd:00000000 I2S_Cmd
-C:\cygwin64\tmp\ccpNdjle.s:344    .text.SPI_I2S_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:349    .text.SPI_I2S_ITConfig:00000000 SPI_I2S_ITConfig
-C:\cygwin64\tmp\ccpNdjle.s:369    .text.SPI_I2S_DMACmd:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:374    .text.SPI_I2S_DMACmd:00000000 SPI_I2S_DMACmd
-C:\cygwin64\tmp\ccpNdjle.s:390    .text.SPI_I2S_SendData:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:395    .text.SPI_I2S_SendData:00000000 SPI_I2S_SendData
-C:\cygwin64\tmp\ccpNdjle.s:403    .text.SPI_I2S_ReceiveData:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:408    .text.SPI_I2S_ReceiveData:00000000 SPI_I2S_ReceiveData
-C:\cygwin64\tmp\ccpNdjle.s:417    .text.SPI_NSSInternalSoftwareConfig:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:422    .text.SPI_NSSInternalSoftwareConfig:00000000 SPI_NSSInternalSoftwareConfig
-C:\cygwin64\tmp\ccpNdjle.s:442    .text.SPI_SSOutputCmd:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:447    .text.SPI_SSOutputCmd:00000000 SPI_SSOutputCmd
-C:\cygwin64\tmp\ccpNdjle.s:465    .text.SPI_DataSizeConfig:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:470    .text.SPI_DataSizeConfig:00000000 SPI_DataSizeConfig
-C:\cygwin64\tmp\ccpNdjle.s:486    .text.SPI_TransmitCRC:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:491    .text.SPI_TransmitCRC:00000000 SPI_TransmitCRC
-C:\cygwin64\tmp\ccpNdjle.s:502    .text.SPI_CalculateCRC:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:507    .text.SPI_CalculateCRC:00000000 SPI_CalculateCRC
-C:\cygwin64\tmp\ccpNdjle.s:525    .text.SPI_GetCRC:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:530    .text.SPI_GetCRC:00000000 SPI_GetCRC
-C:\cygwin64\tmp\ccpNdjle.s:542    .text.SPI_GetCRCPolynomial:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:547    .text.SPI_GetCRCPolynomial:00000000 SPI_GetCRCPolynomial
-C:\cygwin64\tmp\ccpNdjle.s:556    .text.SPI_BiDirectionalLineConfig:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:561    .text.SPI_BiDirectionalLineConfig:00000000 SPI_BiDirectionalLineConfig
-C:\cygwin64\tmp\ccpNdjle.s:580    .text.SPI_I2S_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:585    .text.SPI_I2S_GetFlagStatus:00000000 SPI_I2S_GetFlagStatus
-C:\cygwin64\tmp\ccpNdjle.s:597    .text.SPI_I2S_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:602    .text.SPI_I2S_ClearFlag:00000000 SPI_I2S_ClearFlag
-C:\cygwin64\tmp\ccpNdjle.s:612    .text.SPI_I2S_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:617    .text.SPI_I2S_GetITStatus:00000000 SPI_I2S_GetITStatus
-C:\cygwin64\tmp\ccpNdjle.s:642    .text.SPI_I2S_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccpNdjle.s:647    .text.SPI_I2S_ClearITPendingBit:00000000 SPI_I2S_ClearITPendingBit
+C:\cygwin64\tmp\ccZMu0nk.s:71     .text.SPI_I2S_DeInit:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:76     .text.SPI_I2S_DeInit:00000000 SPI_I2S_DeInit
+C:\cygwin64\tmp\ccZMu0nk.s:117    .text.SPI_I2S_DeInit:00000060 $d
+C:\cygwin64\tmp\ccZMu0nk.s:122    .text.SPI_Init:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:127    .text.SPI_Init:00000000 SPI_Init
+C:\cygwin64\tmp\ccZMu0nk.s:163    .text.I2S_Init:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:168    .text.I2S_Init:00000000 I2S_Init
+C:\cygwin64\tmp\ccZMu0nk.s:252    .text.I2S_Init:000000ac $d
+C:\cygwin64\tmp\ccZMu0nk.s:255    .text.SPI_StructInit:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:260    .text.SPI_StructInit:00000000 SPI_StructInit
+C:\cygwin64\tmp\ccZMu0nk.s:278    .text.I2S_StructInit:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:283    .text.I2S_StructInit:00000000 I2S_StructInit
+C:\cygwin64\tmp\ccZMu0nk.s:298    .text.SPI_Cmd:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:303    .text.SPI_Cmd:00000000 SPI_Cmd
+C:\cygwin64\tmp\ccZMu0nk.s:321    .text.I2S_Cmd:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:326    .text.I2S_Cmd:00000000 I2S_Cmd
+C:\cygwin64\tmp\ccZMu0nk.s:344    .text.SPI_I2S_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:349    .text.SPI_I2S_ITConfig:00000000 SPI_I2S_ITConfig
+C:\cygwin64\tmp\ccZMu0nk.s:369    .text.SPI_I2S_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:374    .text.SPI_I2S_DMACmd:00000000 SPI_I2S_DMACmd
+C:\cygwin64\tmp\ccZMu0nk.s:390    .text.SPI_I2S_SendData:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:395    .text.SPI_I2S_SendData:00000000 SPI_I2S_SendData
+C:\cygwin64\tmp\ccZMu0nk.s:403    .text.SPI_I2S_ReceiveData:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:408    .text.SPI_I2S_ReceiveData:00000000 SPI_I2S_ReceiveData
+C:\cygwin64\tmp\ccZMu0nk.s:417    .text.SPI_NSSInternalSoftwareConfig:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:422    .text.SPI_NSSInternalSoftwareConfig:00000000 SPI_NSSInternalSoftwareConfig
+C:\cygwin64\tmp\ccZMu0nk.s:442    .text.SPI_SSOutputCmd:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:447    .text.SPI_SSOutputCmd:00000000 SPI_SSOutputCmd
+C:\cygwin64\tmp\ccZMu0nk.s:465    .text.SPI_DataSizeConfig:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:470    .text.SPI_DataSizeConfig:00000000 SPI_DataSizeConfig
+C:\cygwin64\tmp\ccZMu0nk.s:486    .text.SPI_TransmitCRC:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:491    .text.SPI_TransmitCRC:00000000 SPI_TransmitCRC
+C:\cygwin64\tmp\ccZMu0nk.s:502    .text.SPI_CalculateCRC:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:507    .text.SPI_CalculateCRC:00000000 SPI_CalculateCRC
+C:\cygwin64\tmp\ccZMu0nk.s:525    .text.SPI_GetCRC:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:530    .text.SPI_GetCRC:00000000 SPI_GetCRC
+C:\cygwin64\tmp\ccZMu0nk.s:542    .text.SPI_GetCRCPolynomial:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:547    .text.SPI_GetCRCPolynomial:00000000 SPI_GetCRCPolynomial
+C:\cygwin64\tmp\ccZMu0nk.s:556    .text.SPI_BiDirectionalLineConfig:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:561    .text.SPI_BiDirectionalLineConfig:00000000 SPI_BiDirectionalLineConfig
+C:\cygwin64\tmp\ccZMu0nk.s:580    .text.SPI_I2S_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:585    .text.SPI_I2S_GetFlagStatus:00000000 SPI_I2S_GetFlagStatus
+C:\cygwin64\tmp\ccZMu0nk.s:597    .text.SPI_I2S_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:602    .text.SPI_I2S_ClearFlag:00000000 SPI_I2S_ClearFlag
+C:\cygwin64\tmp\ccZMu0nk.s:612    .text.SPI_I2S_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:617    .text.SPI_I2S_GetITStatus:00000000 SPI_I2S_GetITStatus
+C:\cygwin64\tmp\ccZMu0nk.s:642    .text.SPI_I2S_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccZMu0nk.s:647    .text.SPI_I2S_ClearITPendingBit:00000000 SPI_I2S_ClearITPendingBit
 
 UNDEFINED SYMBOLS
 RCC_APB1PeriphResetCmd

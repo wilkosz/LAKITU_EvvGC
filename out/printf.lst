@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc30W1Kw.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccHwDS6D.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc30W1Kw.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\cc30W1Kw.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccHwDS6D.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc30W1Kw.s 			page 1
  112 0046 0DD0     		beq	.L5	@,
  113 0048 632B     		cmp	r3, #99	@ character,
  114 004a 07D0     		beq	.L25	@,
-ARM GAS  C:\cygwin64\tmp\cc30W1Kw.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccHwDS6D.s 			page 3
 
 
  115 004c 732B     		cmp	r3, #115	@ character,
@@ -176,13 +176,13 @@ ARM GAS  C:\cygwin64\tmp\cc30W1Kw.s 			page 1
  167 00b0 F2E7     		b	.L10	@
  168              		.size	sprintf_, .-sprintf_
  169 00b2 00BF     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc30W1Kw.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccHwDS6D.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 printf.c
-C:\cygwin64\tmp\cc30W1Kw.s:69     .text.sprintf_:00000000 $t
-C:\cygwin64\tmp\cc30W1Kw.s:74     .text.sprintf_:00000000 sprintf_
+C:\cygwin64\tmp\ccHwDS6D.s:69     .text.sprintf_:00000000 $t
+C:\cygwin64\tmp\ccHwDS6D.s:74     .text.sprintf_:00000000 sprintf_
 
 UNDEFINED SYMBOLS
 itoa

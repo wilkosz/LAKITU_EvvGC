@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccTEfijh.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccTEfijh.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 1
  112 000a E5B2     		uxtb	r5, r4	@ i, ivtmp.18
  113 000c 2846     		mov	r0, r5	@, i
  114 000e FFF7FEFF 		bl	ReadFromEEPROM	@
-ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccTEfijh.s 			page 3
 
 
  115 0012 421C     		adds	r2, r0, #1	@, data,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 1
  169              		.align	2
  170              		.set	.LANCHOR0,. + 0
  171              		.type	configData, %object
-ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccTEfijh.s 			page 4
 
 
  172              		.size	configData, 12
@@ -189,9 +189,9 @@ ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 1
  177 0003 15       		.byte	21
  178 0004 1E       		.byte	30
  179 0005 13       		.byte	19
- 180 0006 1E       		.byte	30
- 181 0007 1E       		.byte	30
- 182 0008 14       		.byte	20
+ 180 0006 32       		.byte	50
+ 181 0007 46       		.byte	70
+ 182 0008 28       		.byte	40
  183 0009 31       		.byte	49
  184 000a 30       		.byte	48
  185 000b 40       		.byte	64
@@ -209,23 +209,23 @@ ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 1
  193              	.LC2:
  194 0018 0D0A00   		.ascii	"\015\012\000"
  195 001b 00       		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc5TMGAf.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccTEfijh.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 config.c
-C:\cygwin64\tmp\cc5TMGAf.s:69     .text.configLoad:00000000 $t
-C:\cygwin64\tmp\cc5TMGAf.s:74     .text.configLoad:00000000 configLoad
-C:\cygwin64\tmp\cc5TMGAf.s:96     .text.configLoad:00000024 $d
-C:\cygwin64\tmp\cc5TMGAf.s:99     .text.configSave:00000000 $t
-C:\cygwin64\tmp\cc5TMGAf.s:104    .text.configSave:00000000 configSave
-C:\cygwin64\tmp\cc5TMGAf.s:134    .text.configSave:00000038 $d
-C:\cygwin64\tmp\cc5TMGAf.s:137    .text.printConfig:00000000 $t
-C:\cygwin64\tmp\cc5TMGAf.s:142    .text.printConfig:00000000 printConfig
-C:\cygwin64\tmp\cc5TMGAf.s:162    .text.printConfig:00000028 $d
-C:\cygwin64\tmp\cc5TMGAf.s:173    .data.configData:00000000 configData
-C:\cygwin64\tmp\cc5TMGAf.s:169    .data.configData:00000000 $d
-C:\cygwin64\tmp\cc5TMGAf.s:187    .rodata.str1.4:00000000 $d
+C:\cygwin64\tmp\ccTEfijh.s:69     .text.configLoad:00000000 $t
+C:\cygwin64\tmp\ccTEfijh.s:74     .text.configLoad:00000000 configLoad
+C:\cygwin64\tmp\ccTEfijh.s:96     .text.configLoad:00000024 $d
+C:\cygwin64\tmp\ccTEfijh.s:99     .text.configSave:00000000 $t
+C:\cygwin64\tmp\ccTEfijh.s:104    .text.configSave:00000000 configSave
+C:\cygwin64\tmp\ccTEfijh.s:134    .text.configSave:00000038 $d
+C:\cygwin64\tmp\ccTEfijh.s:137    .text.printConfig:00000000 $t
+C:\cygwin64\tmp\ccTEfijh.s:142    .text.printConfig:00000000 printConfig
+C:\cygwin64\tmp\ccTEfijh.s:162    .text.printConfig:00000028 $d
+C:\cygwin64\tmp\ccTEfijh.s:173    .data.configData:00000000 configData
+C:\cygwin64\tmp\ccTEfijh.s:169    .data.configData:00000000 $d
+C:\cygwin64\tmp\ccTEfijh.s:187    .rodata.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 ReadFromEEPROM

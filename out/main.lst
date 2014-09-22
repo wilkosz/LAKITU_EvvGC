@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  112 0010 FFF7FEFF 		bl	RCC_APB1PeriphClockCmd	@
  113 0014 BDE80840 		pop	{r3, lr}	@
  114 0018 0120     		movs	r0, #1	@,
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 3
 
 
  115 001a 0146     		mov	r1, r0	@,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  169 0034 013C     		subs	r4, r4, #1	@ D.6920, D.6920,
  170 0036 F6D1     		bne	.L14	@,
  171 0038 FFF7FEFF 		bl	LEDoff	@
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 4
 
 
  172 003c FFF7FEFF 		bl	GetVCPConnectMode	@
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  226 00c8 2B68     		ldr	r3, [r5]	@ gotIMU.6, gotIMU
  227 00ca 23BB     		cbnz	r3, .L32	@ gotIMU.6,
  228              	.L22:
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 5
 
 
  229 00cc 3248     		ldr	r0, .L33+68	@,
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  283 0154 00000000 		.word	.LC0
  284 0158 38000000 		.word	.LC1
  285 015c 4C000000 		.word	.LC2
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 6
 
 
  286 0160 00010000 		.word	.LC6
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  340 0020 FFF7FEFF 		bl	micros	@
  341 0024 001B     		subs	r0, r0, r4	@ timePassed,, lastTime
  342 0026 B0F5FA7F 		cmp	r0, #500	@ timePassed,
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 7
 
 
  343 002a 07F10107 		add	r7, r7, #1	@ idleLoops, idleLoops,
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  397 00b4 3046     		mov	r0, r6	@, D.6960
  398 00b6 FFF7FEFF 		bl	__aeabi_fdiv	@
  399 00ba FFF7FEFF 		bl	engineProcess	@
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 8
 
 
  400 00be F1E7     		b	.L43	@
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  441      61727475 
  441      70206465 
  441      6C61792E 
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 9
 
 
  442 0065 000000   		.space	3
@@ -523,7 +523,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  457      696F6E20 
  458 0151 000000   		.space	3
  459              	.LC7:
- 460 0154 45767647 		.ascii	"EvvGC firmware V%s, build date Sep 19 2014 14:56:26"
+ 460 0154 45767647 		.ascii	"EvvGC firmware V%s, build date Sep 22 2014 14:14:28"
  460      43206669 
  460      726D7761 
  460      72652056 
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  466      696E6720 
  466      6F6E2065 
  466      78746572 
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 10
 
 
  466      6E616C20 
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  490      204F7269 
  490      656E7461 
  490      74696F6E 
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 11
 
 
  490      0A0D00
@@ -636,33 +636,33 @@ ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 1
  503      65206F6E 
  503      6C792E2E 
  504 0377 00       		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\cygwin64\tmp\cc4ZrgRC.s:69     .text.WatchDog:00000000 $t
-C:\cygwin64\tmp\cc4ZrgRC.s:74     .text.WatchDog:00000000 WatchDog
-C:\cygwin64\tmp\cc4ZrgRC.s:95     .text.WatchDog:00000024 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:98     .text.Periph_clock_enable:00000000 $t
-C:\cygwin64\tmp\cc4ZrgRC.s:103    .text.Periph_clock_enable:00000000 Periph_clock_enable
-C:\cygwin64\tmp\cc4ZrgRC.s:120    .text.Periph_clock_enable:00000020 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:123    .text.GetIdlePerf:00000000 $t
-C:\cygwin64\tmp\cc4ZrgRC.s:128    .text.GetIdlePerf:00000000 GetIdlePerf
-C:\cygwin64\tmp\cc4ZrgRC.s:138    .text.GetIdlePerf:00000008 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:141    .text.setup:00000000 $t
-C:\cygwin64\tmp\cc4ZrgRC.s:146    .text.setup:00000000 setup
-C:\cygwin64\tmp\cc4ZrgRC.s:283    .text.setup:00000154 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:316    .text.startup.main:00000000 $t
-C:\cygwin64\tmp\cc4ZrgRC.s:321    .text.startup.main:00000000 main
-C:\cygwin64\tmp\cc4ZrgRC.s:404    .text.startup.main:000000c0 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:413    .bss.idlePerf:00000000 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:417    .bss.idlePerf:00000000 idlePerf
-C:\cygwin64\tmp\cc4ZrgRC.s:420    .bss.WatchDogCounter:00000000 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:424    .bss.WatchDogCounter:00000000 WatchDogCounter
-C:\cygwin64\tmp\cc4ZrgRC.s:427    .bss.gotIMU:00000000 $d
-C:\cygwin64\tmp\cc4ZrgRC.s:431    .bss.gotIMU:00000000 gotIMU
-C:\cygwin64\tmp\cc4ZrgRC.s:434    .rodata.str1.4:00000000 $d
+C:\cygwin64\tmp\ccQfDACx.s:69     .text.WatchDog:00000000 $t
+C:\cygwin64\tmp\ccQfDACx.s:74     .text.WatchDog:00000000 WatchDog
+C:\cygwin64\tmp\ccQfDACx.s:95     .text.WatchDog:00000024 $d
+C:\cygwin64\tmp\ccQfDACx.s:98     .text.Periph_clock_enable:00000000 $t
+C:\cygwin64\tmp\ccQfDACx.s:103    .text.Periph_clock_enable:00000000 Periph_clock_enable
+C:\cygwin64\tmp\ccQfDACx.s:120    .text.Periph_clock_enable:00000020 $d
+C:\cygwin64\tmp\ccQfDACx.s:123    .text.GetIdlePerf:00000000 $t
+C:\cygwin64\tmp\ccQfDACx.s:128    .text.GetIdlePerf:00000000 GetIdlePerf
+C:\cygwin64\tmp\ccQfDACx.s:138    .text.GetIdlePerf:00000008 $d
+C:\cygwin64\tmp\ccQfDACx.s:141    .text.setup:00000000 $t
+C:\cygwin64\tmp\ccQfDACx.s:146    .text.setup:00000000 setup
+C:\cygwin64\tmp\ccQfDACx.s:283    .text.setup:00000154 $d
+C:\cygwin64\tmp\ccQfDACx.s:316    .text.startup.main:00000000 $t
+C:\cygwin64\tmp\ccQfDACx.s:321    .text.startup.main:00000000 main
+C:\cygwin64\tmp\ccQfDACx.s:404    .text.startup.main:000000c0 $d
+C:\cygwin64\tmp\ccQfDACx.s:413    .bss.idlePerf:00000000 $d
+C:\cygwin64\tmp\ccQfDACx.s:417    .bss.idlePerf:00000000 idlePerf
+C:\cygwin64\tmp\ccQfDACx.s:420    .bss.WatchDogCounter:00000000 $d
+C:\cygwin64\tmp\ccQfDACx.s:424    .bss.WatchDogCounter:00000000 WatchDogCounter
+C:\cygwin64\tmp\ccQfDACx.s:427    .bss.gotIMU:00000000 $d
+C:\cygwin64\tmp\ccQfDACx.s:431    .bss.gotIMU:00000000 gotIMU
+C:\cygwin64\tmp\ccQfDACx.s:434    .rodata.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 LEDtoggle
@@ -696,7 +696,7 @@ __aeabi_ui2f
 __aeabi_i2f
 __aeabi_fmul
 __aeabi_fdiv
-ARM GAS  C:\cygwin64\tmp\cc4ZrgRC.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccQfDACx.s 			page 13
 
 
 micros

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
  112 0022 0843     		orrs	r0, r0, r1	@, tmpreg1, D.6755, tmpreg1
  113 0024 1860     		str	r0, [r3]	@ tmpreg1, MEM[(struct DAC_TypeDef *)1073771520B].CR
  114 0026 30BC     		pop	{r4, r5}	@
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 3
 
 
  115 0028 7047     		bx	lr	@
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
  169              		.thumb_func
  170              		.type	DAC_DMACmd, %function
  171              	DAC_DMACmd:
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 4
 
 
  172              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
  226              	DAC_DualSoftwareTriggerCmd:
  227              		@ args = 0, pretend = 0, frame = 0
  228              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 5
 
 
  229              		@ link register save eliminated.
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
  283 0002 82B0     		sub	sp, sp, #8	@,,
  284 0004 0022     		movs	r2, #0	@ tmp118,
  285 0006 0192     		str	r2, [sp, #4]	@ tmp118, tmp
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 6
 
 
  286 0008 0193     		str	r3, [sp, #4]	@ tmp119, tmp
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
  340 0000 0828     		cmp	r0, #8	@ DAC_Align,
  341 0002 044B     		ldr	r3, .L46	@ tmp124,
  342 0004 0CBF     		ite	eq
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 7
 
 
  343 0006 42EA0121 		orreq	r1, r2, r1, lsl #8	@, data, Data1, Data2,
@@ -401,45 +401,45 @@ ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 1
  380 0020 00740040 		.word	1073771520
  381              		.size	DAC_GetDataOutputValue, .-DAC_GetDataOutputValue
  382              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cciFGjjR.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccLvghyB.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_dac.c
-C:\cygwin64\tmp\cciFGjjR.s:71     .text.DAC_DeInit:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:76     .text.DAC_DeInit:00000000 DAC_DeInit
-C:\cygwin64\tmp\cciFGjjR.s:89     .text.DAC_Init:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:94     .text.DAC_Init:00000000 DAC_Init
-C:\cygwin64\tmp\cciFGjjR.s:119    .text.DAC_Init:0000002c $d
-C:\cygwin64\tmp\cciFGjjR.s:122    .text.DAC_StructInit:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:127    .text.DAC_StructInit:00000000 DAC_StructInit
-C:\cygwin64\tmp\cciFGjjR.s:139    .text.DAC_Cmd:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:144    .text.DAC_Cmd:00000000 DAC_Cmd
-C:\cygwin64\tmp\cciFGjjR.s:163    .text.DAC_Cmd:0000001c $d
-C:\cygwin64\tmp\cciFGjjR.s:166    .text.DAC_DMACmd:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:171    .text.DAC_DMACmd:00000000 DAC_DMACmd
-C:\cygwin64\tmp\cciFGjjR.s:190    .text.DAC_DMACmd:0000001c $d
-C:\cygwin64\tmp\cciFGjjR.s:193    .text.DAC_SoftwareTriggerCmd:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:198    .text.DAC_SoftwareTriggerCmd:00000000 DAC_SoftwareTriggerCmd
-C:\cygwin64\tmp\cciFGjjR.s:218    .text.DAC_SoftwareTriggerCmd:0000001c $d
-C:\cygwin64\tmp\cciFGjjR.s:221    .text.DAC_DualSoftwareTriggerCmd:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:226    .text.DAC_DualSoftwareTriggerCmd:00000000 DAC_DualSoftwareTriggerCmd
-C:\cygwin64\tmp\cciFGjjR.s:243    .text.DAC_DualSoftwareTriggerCmd:00000018 $d
-C:\cygwin64\tmp\cciFGjjR.s:246    .text.DAC_WaveGenerationCmd:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:251    .text.DAC_WaveGenerationCmd:00000000 DAC_WaveGenerationCmd
-C:\cygwin64\tmp\cciFGjjR.s:270    .text.DAC_WaveGenerationCmd:00000018 $d
-C:\cygwin64\tmp\cciFGjjR.s:273    .text.DAC_SetChannel1Data:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:278    .text.DAC_SetChannel1Data:00000000 DAC_SetChannel1Data
-C:\cygwin64\tmp\cciFGjjR.s:299    .text.DAC_SetChannel1Data:0000001c $d
-C:\cygwin64\tmp\cciFGjjR.s:302    .text.DAC_SetChannel2Data:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:307    .text.DAC_SetChannel2Data:00000000 DAC_SetChannel2Data
-C:\cygwin64\tmp\cciFGjjR.s:328    .text.DAC_SetChannel2Data:0000001c $d
-C:\cygwin64\tmp\cciFGjjR.s:331    .text.DAC_SetDualChannelData:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:336    .text.DAC_SetDualChannelData:00000000 DAC_SetDualChannelData
-C:\cygwin64\tmp\cciFGjjR.s:350    .text.DAC_SetDualChannelData:00000014 $d
-C:\cygwin64\tmp\cciFGjjR.s:353    .text.DAC_GetDataOutputValue:00000000 $t
-C:\cygwin64\tmp\cciFGjjR.s:358    .text.DAC_GetDataOutputValue:00000000 DAC_GetDataOutputValue
-C:\cygwin64\tmp\cciFGjjR.s:380    .text.DAC_GetDataOutputValue:00000020 $d
+C:\cygwin64\tmp\ccLvghyB.s:71     .text.DAC_DeInit:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:76     .text.DAC_DeInit:00000000 DAC_DeInit
+C:\cygwin64\tmp\ccLvghyB.s:89     .text.DAC_Init:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:94     .text.DAC_Init:00000000 DAC_Init
+C:\cygwin64\tmp\ccLvghyB.s:119    .text.DAC_Init:0000002c $d
+C:\cygwin64\tmp\ccLvghyB.s:122    .text.DAC_StructInit:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:127    .text.DAC_StructInit:00000000 DAC_StructInit
+C:\cygwin64\tmp\ccLvghyB.s:139    .text.DAC_Cmd:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:144    .text.DAC_Cmd:00000000 DAC_Cmd
+C:\cygwin64\tmp\ccLvghyB.s:163    .text.DAC_Cmd:0000001c $d
+C:\cygwin64\tmp\ccLvghyB.s:166    .text.DAC_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:171    .text.DAC_DMACmd:00000000 DAC_DMACmd
+C:\cygwin64\tmp\ccLvghyB.s:190    .text.DAC_DMACmd:0000001c $d
+C:\cygwin64\tmp\ccLvghyB.s:193    .text.DAC_SoftwareTriggerCmd:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:198    .text.DAC_SoftwareTriggerCmd:00000000 DAC_SoftwareTriggerCmd
+C:\cygwin64\tmp\ccLvghyB.s:218    .text.DAC_SoftwareTriggerCmd:0000001c $d
+C:\cygwin64\tmp\ccLvghyB.s:221    .text.DAC_DualSoftwareTriggerCmd:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:226    .text.DAC_DualSoftwareTriggerCmd:00000000 DAC_DualSoftwareTriggerCmd
+C:\cygwin64\tmp\ccLvghyB.s:243    .text.DAC_DualSoftwareTriggerCmd:00000018 $d
+C:\cygwin64\tmp\ccLvghyB.s:246    .text.DAC_WaveGenerationCmd:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:251    .text.DAC_WaveGenerationCmd:00000000 DAC_WaveGenerationCmd
+C:\cygwin64\tmp\ccLvghyB.s:270    .text.DAC_WaveGenerationCmd:00000018 $d
+C:\cygwin64\tmp\ccLvghyB.s:273    .text.DAC_SetChannel1Data:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:278    .text.DAC_SetChannel1Data:00000000 DAC_SetChannel1Data
+C:\cygwin64\tmp\ccLvghyB.s:299    .text.DAC_SetChannel1Data:0000001c $d
+C:\cygwin64\tmp\ccLvghyB.s:302    .text.DAC_SetChannel2Data:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:307    .text.DAC_SetChannel2Data:00000000 DAC_SetChannel2Data
+C:\cygwin64\tmp\ccLvghyB.s:328    .text.DAC_SetChannel2Data:0000001c $d
+C:\cygwin64\tmp\ccLvghyB.s:331    .text.DAC_SetDualChannelData:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:336    .text.DAC_SetDualChannelData:00000000 DAC_SetDualChannelData
+C:\cygwin64\tmp\ccLvghyB.s:350    .text.DAC_SetDualChannelData:00000014 $d
+C:\cygwin64\tmp\ccLvghyB.s:353    .text.DAC_GetDataOutputValue:00000000 $t
+C:\cygwin64\tmp\ccLvghyB.s:358    .text.DAC_GetDataOutputValue:00000000 DAC_GetDataOutputValue
+C:\cygwin64\tmp\ccLvghyB.s:380    .text.DAC_GetDataOutputValue:00000020 $d
 
 UNDEFINED SYMBOLS
 RCC_APB1PeriphResetCmd

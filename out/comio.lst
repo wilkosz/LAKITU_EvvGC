@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 1
  112 0018 02A8     		add	r0, sp, #8	@,,
  113 001a FFF7FEFF 		bl	USART_PutString	@
  114 001e 02A8     		add	r0, sp, #8	@,,
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 3
 
 
  115 0020 FFF7FEFF 		bl	strlen	@
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 1
  169 0012 0194     		str	r4, [sp, #4]	@ tmp111, MEM[(struct  *)&vlist].__ap
  170 0014 FFF7FEFF 		bl	vsnprintf	@
  171 0018 02A8     		add	r0, sp, #8	@,,
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 4
 
 
  172 001a FFF7FEFF 		bl	USART_PutStringDirect	@
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 1
  226              	.L12:
  227 002e FFF7FEFF 		bl	USART_GetChar	@
  228 0032 EEE7     		b	.L13	@
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 5
 
 
  229              	.L17:
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 1
  283              		@ args = 0, pretend = 0, frame = 8
  284              		@ frame_needed = 0, uses_anonymous_args = 0
  285 0000 10B5     		push	{r4, lr}	@
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 6
 
 
  286 0002 82B0     		sub	sp, sp, #8	@,,
@@ -358,44 +358,44 @@ ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 1
  333              		.type	lastChar, %object
  334              		.size	lastChar, 4
  335              	lastChar:
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 7
 
 
  336 0000 FFFFFFFF 		.word	-1
  337              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc0PNdYu.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccmWBokm.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 comio.c
-C:\cygwin64\tmp\cc0PNdYu.s:69     .text.ComInit:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:74     .text.ComInit:00000000 ComInit
-C:\cygwin64\tmp\cc0PNdYu.s:90     .text.ComInit:00000024 $d
-C:\cygwin64\tmp\cc0PNdYu.s:94     .text.print:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:99     .text.print:00000000 print
-C:\cygwin64\tmp\cc0PNdYu.s:126    .text.printUSART:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:131    .text.printUSART:00000000 printUSART
-C:\cygwin64\tmp\cc0PNdYu.s:153    .text.printDirect:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:158    .text.printDirect:00000000 printDirect
-C:\cygwin64\tmp\cc0PNdYu.s:180    .text.UnGetChar:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:185    .text.UnGetChar:00000000 UnGetChar
-C:\cygwin64\tmp\cc0PNdYu.s:195    .text.UnGetChar:00000008 $d
-C:\cygwin64\tmp\cc0PNdYu.s:198    .text.GetChar:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:203    .text.GetChar:00000000 GetChar
-C:\cygwin64\tmp\cc0PNdYu.s:232    .text.GetChar:00000034 $d
-C:\cygwin64\tmp\cc0PNdYu.s:235    .text.ComFlushInput:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:240    .text.ComFlushInput:00000000 ComFlushInput
-C:\cygwin64\tmp\cc0PNdYu.s:259    .text.CharAvailable:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:264    .text.CharAvailable:00000000 CharAvailable
-C:\cygwin64\tmp\cc0PNdYu.s:277    .text.PutChar:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:282    .text.PutChar:00000000 PutChar
-C:\cygwin64\tmp\cc0PNdYu.s:298    .text.DEBUG_PutChar:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:303    .text.DEBUG_PutChar:00000000 DEBUG_PutChar
-C:\cygwin64\tmp\cc0PNdYu.s:310    .text.DEBUG_PutString:00000000 $t
-C:\cygwin64\tmp\cc0PNdYu.s:315    .text.DEBUG_PutString:00000000 DEBUG_PutString
-C:\cygwin64\tmp\cc0PNdYu.s:324    .rodata.str1.4:00000000 $d
-C:\cygwin64\tmp\cc0PNdYu.s:331    .data.lastChar:00000000 $d
-C:\cygwin64\tmp\cc0PNdYu.s:335    .data.lastChar:00000000 lastChar
+C:\cygwin64\tmp\ccmWBokm.s:69     .text.ComInit:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:74     .text.ComInit:00000000 ComInit
+C:\cygwin64\tmp\ccmWBokm.s:90     .text.ComInit:00000024 $d
+C:\cygwin64\tmp\ccmWBokm.s:94     .text.print:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:99     .text.print:00000000 print
+C:\cygwin64\tmp\ccmWBokm.s:126    .text.printUSART:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:131    .text.printUSART:00000000 printUSART
+C:\cygwin64\tmp\ccmWBokm.s:153    .text.printDirect:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:158    .text.printDirect:00000000 printDirect
+C:\cygwin64\tmp\ccmWBokm.s:180    .text.UnGetChar:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:185    .text.UnGetChar:00000000 UnGetChar
+C:\cygwin64\tmp\ccmWBokm.s:195    .text.UnGetChar:00000008 $d
+C:\cygwin64\tmp\ccmWBokm.s:198    .text.GetChar:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:203    .text.GetChar:00000000 GetChar
+C:\cygwin64\tmp\ccmWBokm.s:232    .text.GetChar:00000034 $d
+C:\cygwin64\tmp\ccmWBokm.s:235    .text.ComFlushInput:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:240    .text.ComFlushInput:00000000 ComFlushInput
+C:\cygwin64\tmp\ccmWBokm.s:259    .text.CharAvailable:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:264    .text.CharAvailable:00000000 CharAvailable
+C:\cygwin64\tmp\ccmWBokm.s:277    .text.PutChar:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:282    .text.PutChar:00000000 PutChar
+C:\cygwin64\tmp\ccmWBokm.s:298    .text.DEBUG_PutChar:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:303    .text.DEBUG_PutChar:00000000 DEBUG_PutChar
+C:\cygwin64\tmp\ccmWBokm.s:310    .text.DEBUG_PutString:00000000 $t
+C:\cygwin64\tmp\ccmWBokm.s:315    .text.DEBUG_PutString:00000000 DEBUG_PutString
+C:\cygwin64\tmp\ccmWBokm.s:324    .rodata.str1.4:00000000 $d
+C:\cygwin64\tmp\ccmWBokm.s:331    .data.lastChar:00000000 $d
+C:\cygwin64\tmp\ccmWBokm.s:335    .data.lastChar:00000000 lastChar
 
 UNDEFINED SYMBOLS
 Usart4Init

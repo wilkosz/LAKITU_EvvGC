@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  112 0000 024B     		ldr	r3, .L6	@ tmp111,
  113 0002 0B22     		movs	r2, #11	@ tmp112,
  114 0004 1A60     		str	r2, [r3]	@ tmp112, errno
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 3
 
 
  115 0006 4FF0FF30 		mov	r0, #-1	@,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  169 0010 7047     		bx	lr	@
  170              	.L17:
  171 0012 00BF     		.align	2
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 4
 
 
  172              	.L16:
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  226 0002 7047     		bx	lr	@
  227              		.size	_lseek, .-_lseek
  228              		.section	.text._read,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 5
 
 
  229              		.align	2
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  283              		.size	_stat, .-_stat
  284 000a 00BF     		.section	.text._times,"ax",%progbits
  285              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 6
 
 
  286              		.global	_times
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  340              		.thumb
  341              		.thumb_func
  342              		.type	_write, %function
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 7
 
 
  343              	_write:
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  397 005c 00000000 		.word	errno
  398              		.size	_write, .-_write
  399              		.section	.text._exit,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 8
 
 
  400              		.align	2
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  454 0028 1A60     		str	r2, [r3]	@ tmp124, errno
  455 002a 4FF0FF30 		mov	r0, #-1	@ D.7378,
  456 002e 10BD     		pop	{r4, pc}	@
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 9
 
 
  457              	.L74:
@@ -538,71 +538,71 @@ ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 1
  508      20737461 
  508      636B2063 
  508      6F6C6C69 
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 10
 
 
  509 0022 0000     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 newlib_stubs.c
-C:\cygwin64\tmp\ccVzIMKB.s:70     .text._close:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:75     .text._close:00000000 _close
-C:\cygwin64\tmp\ccVzIMKB.s:83     .text._execve:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:88     .text._execve:00000000 _execve
-C:\cygwin64\tmp\ccVzIMKB.s:100    .text._execve:0000000c $d
-C:\cygwin64\tmp\ccVzIMKB.s:103    .text._fork:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:108    .text._fork:00000000 _fork
-C:\cygwin64\tmp\ccVzIMKB.s:120    .text._fork:0000000c $d
-C:\cygwin64\tmp\ccVzIMKB.s:123    .text._fstat:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:128    .text._fstat:00000000 _fstat
-C:\cygwin64\tmp\ccVzIMKB.s:138    .text._getpid:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:143    .text._getpid:00000000 _getpid
-C:\cygwin64\tmp\ccVzIMKB.s:151    .text._isatty:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:156    .text._isatty:00000000 _isatty
-C:\cygwin64\tmp\ccVzIMKB.s:173    .text._isatty:00000014 $d
-C:\cygwin64\tmp\ccVzIMKB.s:176    .text._kill:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:181    .text._kill:00000000 _kill
-C:\cygwin64\tmp\ccVzIMKB.s:193    .text._kill:0000000c $d
-C:\cygwin64\tmp\ccVzIMKB.s:196    .text._link:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:201    .text._link:00000000 _link
-C:\cygwin64\tmp\ccVzIMKB.s:213    .text._link:0000000c $d
-C:\cygwin64\tmp\ccVzIMKB.s:216    .text._lseek:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:221    .text._lseek:00000000 _lseek
-C:\cygwin64\tmp\ccVzIMKB.s:229    .text._read:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:234    .text._read:00000000 _read
-C:\cygwin64\tmp\ccVzIMKB.s:266    .text._read:00000030 $d
-C:\cygwin64\tmp\ccVzIMKB.s:270    .text._stat:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:275    .text._stat:00000000 _stat
-C:\cygwin64\tmp\ccVzIMKB.s:285    .text._times:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:290    .text._times:00000000 _times
-C:\cygwin64\tmp\ccVzIMKB.s:298    .text._unlink:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:303    .text._unlink:00000000 _unlink
-C:\cygwin64\tmp\ccVzIMKB.s:315    .text._unlink:0000000c $d
-C:\cygwin64\tmp\ccVzIMKB.s:318    .text._wait:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:323    .text._wait:00000000 _wait
-C:\cygwin64\tmp\ccVzIMKB.s:335    .text._wait:0000000c $d
-C:\cygwin64\tmp\ccVzIMKB.s:338    .text._write:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:343    .text._write:00000000 _write
-C:\cygwin64\tmp\ccVzIMKB.s:396    .text._write:00000058 $d
-C:\cygwin64\tmp\ccVzIMKB.s:400    .text._exit:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:405    .text._exit:00000000 _exit
-C:\cygwin64\tmp\ccVzIMKB.s:419    .text._exit:00000010 $d
-C:\cygwin64\tmp\ccVzIMKB.s:422    .text._sbrk:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:427    .text._sbrk:00000000 _sbrk
-C:\cygwin64\tmp\ccVzIMKB.s:464    .text._sbrk:00000038 $d
-C:\cygwin64\tmp\ccVzIMKB.s:470    .text._init:00000000 $t
-C:\cygwin64\tmp\ccVzIMKB.s:475    .text._init:00000000 _init
-C:\cygwin64\tmp\ccVzIMKB.s:494    .data.environ:00000000 environ
-C:\cygwin64\tmp\ccVzIMKB.s:500    .bss.__env:00000000 __env
-C:\cygwin64\tmp\ccVzIMKB.s:484    .bss.heap_end.7135:00000000 $d
-C:\cygwin64\tmp\ccVzIMKB.s:488    .bss.heap_end.7135:00000000 heap_end.7135
-C:\cygwin64\tmp\ccVzIMKB.s:491    .data.environ:00000000 $d
-C:\cygwin64\tmp\ccVzIMKB.s:497    .bss.__env:00000000 $d
-C:\cygwin64\tmp\ccVzIMKB.s:503    .rodata.str1.4:00000000 $d
+C:\cygwin64\tmp\ccCHiY2j.s:70     .text._close:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:75     .text._close:00000000 _close
+C:\cygwin64\tmp\ccCHiY2j.s:83     .text._execve:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:88     .text._execve:00000000 _execve
+C:\cygwin64\tmp\ccCHiY2j.s:100    .text._execve:0000000c $d
+C:\cygwin64\tmp\ccCHiY2j.s:103    .text._fork:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:108    .text._fork:00000000 _fork
+C:\cygwin64\tmp\ccCHiY2j.s:120    .text._fork:0000000c $d
+C:\cygwin64\tmp\ccCHiY2j.s:123    .text._fstat:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:128    .text._fstat:00000000 _fstat
+C:\cygwin64\tmp\ccCHiY2j.s:138    .text._getpid:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:143    .text._getpid:00000000 _getpid
+C:\cygwin64\tmp\ccCHiY2j.s:151    .text._isatty:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:156    .text._isatty:00000000 _isatty
+C:\cygwin64\tmp\ccCHiY2j.s:173    .text._isatty:00000014 $d
+C:\cygwin64\tmp\ccCHiY2j.s:176    .text._kill:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:181    .text._kill:00000000 _kill
+C:\cygwin64\tmp\ccCHiY2j.s:193    .text._kill:0000000c $d
+C:\cygwin64\tmp\ccCHiY2j.s:196    .text._link:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:201    .text._link:00000000 _link
+C:\cygwin64\tmp\ccCHiY2j.s:213    .text._link:0000000c $d
+C:\cygwin64\tmp\ccCHiY2j.s:216    .text._lseek:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:221    .text._lseek:00000000 _lseek
+C:\cygwin64\tmp\ccCHiY2j.s:229    .text._read:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:234    .text._read:00000000 _read
+C:\cygwin64\tmp\ccCHiY2j.s:266    .text._read:00000030 $d
+C:\cygwin64\tmp\ccCHiY2j.s:270    .text._stat:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:275    .text._stat:00000000 _stat
+C:\cygwin64\tmp\ccCHiY2j.s:285    .text._times:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:290    .text._times:00000000 _times
+C:\cygwin64\tmp\ccCHiY2j.s:298    .text._unlink:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:303    .text._unlink:00000000 _unlink
+C:\cygwin64\tmp\ccCHiY2j.s:315    .text._unlink:0000000c $d
+C:\cygwin64\tmp\ccCHiY2j.s:318    .text._wait:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:323    .text._wait:00000000 _wait
+C:\cygwin64\tmp\ccCHiY2j.s:335    .text._wait:0000000c $d
+C:\cygwin64\tmp\ccCHiY2j.s:338    .text._write:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:343    .text._write:00000000 _write
+C:\cygwin64\tmp\ccCHiY2j.s:396    .text._write:00000058 $d
+C:\cygwin64\tmp\ccCHiY2j.s:400    .text._exit:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:405    .text._exit:00000000 _exit
+C:\cygwin64\tmp\ccCHiY2j.s:419    .text._exit:00000010 $d
+C:\cygwin64\tmp\ccCHiY2j.s:422    .text._sbrk:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:427    .text._sbrk:00000000 _sbrk
+C:\cygwin64\tmp\ccCHiY2j.s:464    .text._sbrk:00000038 $d
+C:\cygwin64\tmp\ccCHiY2j.s:470    .text._init:00000000 $t
+C:\cygwin64\tmp\ccCHiY2j.s:475    .text._init:00000000 _init
+C:\cygwin64\tmp\ccCHiY2j.s:494    .data.environ:00000000 environ
+C:\cygwin64\tmp\ccCHiY2j.s:500    .bss.__env:00000000 __env
+C:\cygwin64\tmp\ccCHiY2j.s:484    .bss.heap_end.7135:00000000 $d
+C:\cygwin64\tmp\ccCHiY2j.s:488    .bss.heap_end.7135:00000000 heap_end.7135
+C:\cygwin64\tmp\ccCHiY2j.s:491    .data.environ:00000000 $d
+C:\cygwin64\tmp\ccCHiY2j.s:497    .bss.__env:00000000 $d
+C:\cygwin64\tmp\ccCHiY2j.s:503    .rodata.str1.4:00000000 $d
 
-ARM GAS  C:\cygwin64\tmp\ccVzIMKB.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccCHiY2j.s 			page 12
 
 
 UNDEFINED SYMBOLS

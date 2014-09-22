@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccEpJs0E.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccG7aqrZ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccEpJs0E.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccEpJs0E.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccG7aqrZ.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -114,14 +114,14 @@ ARM GAS  C:\cygwin64\tmp\ccEpJs0E.s 			page 1
  108              		.comm	pInformation,4,4
  109              		.comm	EPindex,1,1
  110              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccEpJs0E.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccG7aqrZ.s 			page 3
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_init.c
-C:\cygwin64\tmp\ccEpJs0E.s:70     .text.USB_Init:00000000 $t
-C:\cygwin64\tmp\ccEpJs0E.s:75     .text.USB_Init:00000000 USB_Init
-C:\cygwin64\tmp\ccEpJs0E.s:96     .text.USB_Init:00000020 $d
+C:\cygwin64\tmp\ccG7aqrZ.s:70     .text.USB_Init:00000000 $t
+C:\cygwin64\tmp\ccG7aqrZ.s:75     .text.USB_Init:00000000 USB_Init
+C:\cygwin64\tmp\ccG7aqrZ.s:96     .text.USB_Init:00000020 $d
                             *COM*:0000001c Device_Info
                             *COM*:00000004 pInformation
                             *COM*:00000004 pProperty

@@ -32,12 +32,10 @@ int debugAutoPan= 0;
 int debugLAKITU = 0;
 int LAKITU_enable = 1;
 
-float LakituAngles[EULAR] = {0.0f,LAKITU_CT_VALUE,LAKITU_CT_VALUE_YAW};
 
 float /*pitch, Gyro_Pitch_angle,*/ pitch_setpoint = 0.0f, pitch_Error_last = 0.0f,  pitch_angle_correction;
 float /*roll,  Gyro_Roll_angle,*/  roll_setpoint  = 0.0f,  roll_Error_last = 0.0f,   roll_angle_correction;
 float /*yaw,   Gyro_Yaw_angle,*/   yaw_setpoint   = 0.0f,   yaw_Error_last = 0.0f,    yaw_angle_correction;
-
 //float ADC1Ch13_yaw;
 
 static float rollRCOffset = 0.0f, pitchRCOffset = 0.0f, yawRCOffset = 0.0f;
@@ -45,6 +43,7 @@ static float rollRCOffset = 0.0f, pitchRCOffset = 0.0f, yawRCOffset = 0.0f;
 static int printcounter = 0;
 
 float Output[EULAR];
+float LakituAngles[EULAR];
 
 float CameraOrient[EULAR];
 float AccAngleSmooth[EULAR];
@@ -70,13 +69,13 @@ void roll_PID(void)
 void pitch_PID(void)
 {
     float Error_current = pitch_setpoint + CameraOrient[PITCH] * 1000.0;
-    float KP = Error_current * ((float)configData[0] / 1000.0);
+	float KP = Error_current * ((float)configData[0] / 1000.0);
     float KD = ((float)configData[3] / 100.0) * (Error_current - pitch_Error_last);
 
-    pitch_Error_last = Error_current;
+	pitch_Error_last = Error_current;
 
-    Output[PITCH] = KD + KP;
-    SetPitchMotor(KP + KD, configData[6]);
+	Output[PITCH] = KD + KP;
+	SetPitchMotor(KP + KD, configData[6]);
 }
 
 void yaw_PID(void)
@@ -142,6 +141,9 @@ void Init_Orientation()
     CameraOrient[PITCH] = AccAngleSmooth[PITCH];
     CameraOrient[ROLL]  = AccAngleSmooth[ROLL];
     CameraOrient[YAW]   = 0.0f;
+    LakituAngles[PITCH] = LAKITU_CT_VALUE;
+    LakituAngles[ROLL] = LAKITU_CT_VALUE;
+    LakituAngles[YAW] = LAKITU_CT_VALUE_YAW;
 }
 
 void Get_Orientation(float *SmoothAcc, float *Orient, float *AccData, float *GyroData, float dt)
@@ -220,11 +222,6 @@ void engineProcess(float dt)
     Get_Orientation(AccAngleSmooth, CameraOrient, AccData, GyroData, dt);
     unsigned long tAccAngle = StopWatchLap(&sw);
 
-
-
-
-
-
     // if we enable RC control
     if (configData[9] == '1' && !LAKITU_enable)
     {
@@ -236,17 +233,20 @@ void engineProcess(float dt)
 
     if(LAKITU_enable){
     	RCSmooth[PITCH] = (LakituAngles[PITCH] - LAKITU_CT_VALUE)*D2R;
-    	Step[PITCH] = ((RCSmooth[PITCH]<0) ? ((RCSmooth[PITCH] < PITCH_UP_LIMIT) ? PITCH_UP_LIMIT : RCSmooth[PITCH]) : ((RCSmooth[PITCH] > PITCH_DOWN_LIMIT) ? PITCH_DOWN_LIMIT : RCSmooth[PITCH])) ;
-    	RCSmooth[YAW] = (LakituAngles[YAW] - LAKITU_CT_VALUE_YAW)*D2R;
-    	Step[YAW] = RCSmooth[YAW];
+    	//Step[PITCH] = RCSmooth[PITCH];
+    	//Step[PITCH] = Limit_Pitch(Step[PITCH], CameraOrient[PITCH]); // limit pitch to defined limits in header//RCSmooth[YAW] = (LakituAngles[YAW] - LAKITU_CT_VALUE_YAW)*D2R;
 
-
-    	pitchRCOffset += (-Step[PITCH]+CameraOrient[PITCH])/1000.0; //more weighting on the error
+    	Step[PITCH] = CameraOrient[PITCH]-RCSmooth[PITCH];
+    	pitchRCOffset += Step[PITCH] / 1000.0; //step is in radians the angle required
     	pitch_angle_correction = constrain((CameraOrient[PITCH] + pitchRCOffset) * R2D, -CORRECTION_STEP, CORRECTION_STEP);
     	pitch_setpoint += pitch_angle_correction; // Pitch return to zero after collision
-    	yawRCOffset += (-Step[YAW]+CameraOrient[YAW])/500.0;
-    	yaw_angle_correction = constrain((CameraOrient[YAW] + yawRCOffset) * R2D, -CORRECTION_STEP, CORRECTION_STEP);
-    	yaw_setpoint += yaw_angle_correction;
+
+    	RCSmooth[YAW] = (LakituAngles[YAW] - LAKITU_CT_VALUE_YAW)*D2R;
+
+    	//turn on some gain scheduling;
+    	Step[YAW] = CameraOrient[YAW]-RCSmooth[YAW];
+    	yaw_setpoint += Step[YAW];
+    	yawRCOffset += Step[YAW] / 1000.0;
 
     } else {
         pitchRCOffset += Step[PITCH] / 1000.0; //step is in radians the angle required
@@ -283,7 +283,6 @@ void engineProcess(float dt)
 
     unsigned long tPID = StopWatchLap(&sw);
     unsigned long tAll = StopWatchTotal(&sw);
-
     printcounter++;
 
     //if (printcounter >= 500 || dt > 0.0021)
@@ -343,6 +342,7 @@ void engineProcess(float dt)
                    LakituAngles[ROLL],
                    LakituAngles[YAW]-LAKITU_CT_VALUE_YAW);
         }
+        print("%f,%f,%f,%f,%f\n",(LakituAngles[YAW]-LAKITU_CT_VALUE)*D2R,CameraOrient[YAW],Step[YAW],yawRCOffset,yaw_setpoint);
 
         printcounter = 0;
     }

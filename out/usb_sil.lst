@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccCf3ydQ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccCf3ydQ.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 1
  112 0010 2246     		mov	r2, r4	@, D.7011
  113 0012 0146     		mov	r1, r0	@ tmp118,
  114 0014 3046     		mov	r0, r6	@, pBufferPointer
-ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccCf3ydQ.s 			page 3
 
 
  115 0016 FFF7FEFF 		bl	UserToPMABufferCopy	@
@@ -153,18 +153,18 @@ ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 1
  144 0022 70BD     		pop	{r4, r5, r6, pc}	@
  145              		.size	USB_SIL_Read, .-USB_SIL_Read
  146              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccsvT8Xs.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccCf3ydQ.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_sil.c
-C:\cygwin64\tmp\ccsvT8Xs.s:70     .text.USB_SIL_Init:00000000 $t
-C:\cygwin64\tmp\ccsvT8Xs.s:75     .text.USB_SIL_Init:00000000 USB_SIL_Init
-C:\cygwin64\tmp\ccsvT8Xs.s:93     .text.USB_SIL_Init:0000001c $d
-C:\cygwin64\tmp\ccsvT8Xs.s:98     .text.USB_SIL_Write:00000000 $t
-C:\cygwin64\tmp\ccsvT8Xs.s:103    .text.USB_SIL_Write:00000000 USB_SIL_Write
-C:\cygwin64\tmp\ccsvT8Xs.s:123    .text.USB_SIL_Read:00000000 $t
-C:\cygwin64\tmp\ccsvT8Xs.s:128    .text.USB_SIL_Read:00000000 USB_SIL_Read
+C:\cygwin64\tmp\ccCf3ydQ.s:70     .text.USB_SIL_Init:00000000 $t
+C:\cygwin64\tmp\ccCf3ydQ.s:75     .text.USB_SIL_Init:00000000 USB_SIL_Init
+C:\cygwin64\tmp\ccCf3ydQ.s:93     .text.USB_SIL_Init:0000001c $d
+C:\cygwin64\tmp\ccCf3ydQ.s:98     .text.USB_SIL_Write:00000000 $t
+C:\cygwin64\tmp\ccCf3ydQ.s:103    .text.USB_SIL_Write:00000000 USB_SIL_Write
+C:\cygwin64\tmp\ccCf3ydQ.s:123    .text.USB_SIL_Read:00000000 $t
+C:\cygwin64\tmp\ccCf3ydQ.s:128    .text.USB_SIL_Read:00000000 USB_SIL_Read
 
 UNDEFINED SYMBOLS
 wInterrupt_Mask

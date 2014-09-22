@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  112 0040 5B00     		.2byte	(.L1-.L5)/2
  113 0042 5B00     		.2byte	(.L1-.L5)/2
  114 0044 5B00     		.2byte	(.L1-.L5)/2
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 3
 
 
  115 0046 5B00     		.2byte	(.L1-.L5)/2
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  169 00b2 9A00     		.2byte	(.L20-.L5)/2
  170 00b4 5B00     		.2byte	(.L1-.L5)/2
  171 00b6 8B00     		.2byte	(.L21-.L5)/2
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 4
 
 
  172 00b8 7C00     		.2byte	(.L22-.L5)/2
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  226 012c FFF7FEBF 		b	print	@
  227              	.L21:
  228 0130 9F4B     		ldr	r3, .L78+40	@ tmp239,
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 5
 
 
  229 0132 9648     		ldr	r0, .L78+4	@ tmp314,
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  283 01a6 FE28     		cmp	r0, #254	@ data,
  284 01a8 D8BF     		it	le
  285 01aa 6055     		strble	r0, [r4, r5]	@ data, MEM[symbol: configData, index: _102, offset: 0B]
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 6
 
 
  286 01ac 0134     		adds	r4, r4, #1	@ i, i,
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  340 0230 1A68     		ldr	r2, [r3]	@ debugAutoPan, debugAutoPan
  341 0232 5749     		ldr	r1, .L78+8	@ tmp305,
  342 0234 82F00102 		eor	r2, r2, #1	@ debugAutoPan.1, debugAutoPan,
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 7
 
 
  343 0238 002A     		cmp	r2, #0	@ debugAutoPan.1,
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  397 02ba 0024     		movs	r4, #0	@ ivtmp.35,
  398 02bc 08E0     		b	.L43	@
  399              	.L44:
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 8
 
 
  400 02be E31E     		subs	r3, r4, #3	@ D.7326, ivtmp.35,
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  454 0328 3849     		ldr	r1, .L78+132	@,
  455 032a FFF7FEFF 		bl	__aeabi_fmul	@
  456 032e 364E     		ldr	r6, .L78+128	@ tmp297,
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 9
 
 
  457 0330 0146     		mov	r1, r0	@ D.7332,
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  511 03b8 00000000 		.word	debugPerf
  512 03bc 8C000000 		.word	.LC7
  513 03c0 00000000 		.word	debugOrient
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 10
 
 
  514 03c4 70000000 		.word	.LC6
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  560      6F6F7420 
  561 0041 000000   		.space	3
  562              	.LC4:
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 11
 
 
  563 0044 636F756E 		.ascii	"counter messages %s\015\012\000"
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  586              	.LC12:
  587 0110 56657273 		.ascii	"Version: %s\015\012\000"
  587      696F6E3A 
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 12
 
 
  587      2025730D 
@@ -687,20 +687,20 @@ ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 1
  597      54552063 
  597      6F6E7472 
  598              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccmSBruF.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 commhandler.c
-C:\cygwin64\tmp\ccmSBruF.s:75     .text.CommHandler:00000000 $t
-C:\cygwin64\tmp\ccmSBruF.s:80     .text.CommHandler:00000000 CommHandler
-C:\cygwin64\tmp\ccmSBruF.s:93     .text.CommHandler:0000001a $d
-C:\cygwin64\tmp\ccmSBruF.s:184    .text.CommHandler:000000d0 $t
-C:\cygwin64\tmp\ccmSBruF.s:499    .text.CommHandler:00000388 $d
+C:\cygwin64\tmp\ccV78lT6.s:75     .text.CommHandler:00000000 $t
+C:\cygwin64\tmp\ccV78lT6.s:80     .text.CommHandler:00000000 CommHandler
+C:\cygwin64\tmp\ccV78lT6.s:93     .text.CommHandler:0000001a $d
+C:\cygwin64\tmp\ccV78lT6.s:184    .text.CommHandler:000000d0 $t
+C:\cygwin64\tmp\ccV78lT6.s:499    .text.CommHandler:00000388 $d
                             *COM*:00000004 ConfigMode
-C:\cygwin64\tmp\ccmSBruF.s:535    .text.CommHandler:00000414 $t
-C:\cygwin64\tmp\ccmSBruF.s:545    .text.CommHandler:00000428 $d
-C:\cygwin64\tmp\ccmSBruF.s:550    .rodata.str1.4:00000000 $d
+C:\cygwin64\tmp\ccV78lT6.s:535    .text.CommHandler:00000414 $t
+C:\cygwin64\tmp\ccV78lT6.s:545    .text.CommHandler:00000428 $d
+C:\cygwin64\tmp\ccV78lT6.s:550    .rodata.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_fadd

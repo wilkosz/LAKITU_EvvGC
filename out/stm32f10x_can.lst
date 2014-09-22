@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  112              		@ link register save eliminated.
  113 0000 0368     		ldr	r3, [r0]	@ D.7407, CANx_12(D)->MCR
  114 0002 30B4     		push	{r4, r5}	@
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 3
 
 
  115 0004 23F00203 		bic	r3, r3, #2	@ D.7407, D.7407,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  169 0084 23F00803 		bicne	r3, r3, #8	@ D.7407, D.7407,
  170 0088 0360     		str	r3, [r0]	@ D.7407,* CANx
  171 008a CB7A     		ldrb	r3, [r1, #11]	@ zero_extendqisi2	@ CAN_InitStruct_24(D)->CAN_TXFP, CAN_InitStruct_24(D)->CAN_
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 4
 
 
  172 008c 012B     		cmp	r3, #1	@ CAN_InitStruct_24(D)->CAN_TXFP,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  226 0000 837A     		ldrb	r3, [r0, #10]	@ zero_extendqisi2	@ D.7417, CAN_FilterInitStruct_8(D)->CAN_FilterNumber
  227 0002 70B4     		push	{r4, r5, r6}	@
  228 0004 0124     		movs	r4, #1	@ tmp172,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 5
 
 
  229 0006 9C40     		lsls	r4, r4, r3	@ filter_number_bit_pos, tmp172, D.7417
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  283              	.L49:
  284 008c 184B     		ldr	r3, .L51	@ tmp217,
  285 008e 70BC     		pop	{r4, r5, r6}	@
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 6
 
 
  286 0090 D3F80022 		ldr	r2, [r3, #512]	@ D.7418, MEM[(struct CAN_TypeDef *)1073767424B].FMR
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  340 0002 10B4     		push	{r4}	@
  341 0004 0221     		movs	r1, #2	@ tmp129,
  342 0006 0324     		movs	r4, #3	@ tmp127,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 7
 
 
  343 0008 0122     		movs	r2, #1	@ tmp132,
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  397              		@ link register save eliminated.
  398 0000 0368     		ldr	r3, [r0]	@ D.7428,* CANx
  399 0002 19B9     		cbnz	r1, .L60	@ NewState,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 8
 
 
  400 0004 23F48033 		bic	r3, r3, #65536	@ D.7428, D.7428,
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  454              		@ frame_needed = 0, uses_anonymous_args = 0
  455              		@ link register save eliminated.
  456 0000 8368     		ldr	r3, [r0, #8]	@ D.7435, CANx_5(D)->TSR
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 9
 
 
  457 0002 F0B4     		push	{r4, r5, r6, r7}	@
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  511 0088 1204     		lsls	r2, r2, #16	@ D.7435, D.7435,
  512 008a 097C     		ldrb	r1, [r1, #16]	@ zero_extendqisi2	@ D.7435, TxMessage_16(D)->Data
  513 008c 42EA0662 		orr	r2, r2, r6, lsl #24	@, D.7435, D.7435, D.7435,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 10
 
 
  514 0090 2A43     		orrs	r2, r2, r5	@, D.7435, D.7435, D.7435
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  568 001e 094A     		ldr	r2, .L93	@ tmp124,
  569 0020 9342     		cmp	r3, r2	@ state, tmp124
  570 0022 04D1     		bne	.L90	@,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 11
 
 
  571              	.L88:
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  625              	.L97:
  626 0020 8368     		ldr	r3, [r0, #8]	@ D.7450, CANx_4(D)->TSR
  627 0022 43F40043 		orr	r3, r3, #32768	@ D.7450, D.7450,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 12
 
 
  628 0026 8360     		str	r3, [r0, #8]	@ D.7450,
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  682 006e D4F8BC31 		ldr	r3, [r4, #444]	@ D.7454, CANx_6(D)->sFIFOMailBox[_4].RDHR
  683 0072 1B0E     		lsrs	r3, r3, #24	@ D.7454, D.7454,
  684 0074 9374     		strb	r3, [r2, #18]	@ D.7454, RxMessage_10(D)->Data
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 13
 
 
  685 0076 51B1     		cbz	r1, .L106	@ FIFONumber,
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  739 000c 0020     		movne	r0, #0	@ message_pending,
  740 000e 7047     		bx	lr	@
  741              	.L115:
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 14
 
 
  742 0010 C068     		ldr	r0, [r0, #12]	@ D.7463, CANx_4(D)->RF0R
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  796 005a 4FF6FF73 		movw	r3, #65535	@ D.7479,
  797 005e 01E0     		b	.L123	@
  798              	.L160:
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 15
 
 
  799 0060 013B     		subs	r3, r3, #1	@ D.7479, D.7479,
@@ -898,7 +898,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  853 000c 4068     		ldr	r0, [r0, #4]	@ D.7484, CANx_3(D)->MSR
  854 000e 00F00300 		and	r0, r0, #3	@ D.7484, D.7484,
  855 0012 831E     		subs	r3, r0, #2	@, D.7484,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 16
 
 
  856 0014 5842     		rsbs	r0, r3, #0	@,,
@@ -958,7 +958,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  910              		.type	CAN_GetReceiveErrorCounter, %function
  911              	CAN_GetReceiveErrorCounter:
  912              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 17
 
 
  913              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  967 000c 0B42     		tst	r3, r1	@ D.7512, CAN_FLAG
  968 000e 0CBF     		ite	eq	@
  969 0010 0020     		moveq	r0, #0	@, bitstatus
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 18
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 18
 
 
  970 0012 0120     		movne	r0, #1	@, bitstatus
@@ -1078,7 +1078,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  1024 0016 8360     		strmi	r3, [r0, #8]	@ flagtmp, CANx_4(D)->TSR
  1025 0018 4360     		strpl	r3, [r0, #4]	@ flagtmp, CANx_4(D)->MSR
  1026 001a 7047     		bx	lr	@
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 19
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 19
 
 
  1027              	.L197:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  1081 003e C0F30010 		ubfx	r0, r0, #4, #1	@ itstatus, D.7520,,
  1082 0042 7047     		bx	lr	@
  1083              	.L220:
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 20
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 20
 
 
  1084 0044 1846     		mov	r0, r3	@ itstatus, D.7520
@@ -1198,7 +1198,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  1138 00b8 0120     		movne	r0, #1	@, itstatus,
  1139 00ba 7047     		bx	lr	@
  1140              	.L214:
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 21
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 21
 
 
  1141 00bc 8069     		ldr	r0, [r0, #24]	@ D.7520, CANx_3(D)->ESR
@@ -1258,7 +1258,7 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  1195 0038 B1F5007F 		cmp	r1, #512	@ CAN_IT,
  1196 003c 02D0     		beq	.L238	@,
  1197 003e B1F5806F 		cmp	r1, #1024	@ CAN_IT,
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 22
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 22
 
 
  1198 0042 1DD1     		bne	.L246	@,
@@ -1312,67 +1312,67 @@ ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 1
  1246 0088 01010100 		.word	65793
  1247              		.size	CAN_ClearITPendingBit, .-CAN_ClearITPendingBit
  1248              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 23
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_can.c
-C:\cygwin64\tmp\ccIiv4Kt.s:71     .text.CAN_DeInit:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:76     .text.CAN_DeInit:00000000 CAN_DeInit
-C:\cygwin64\tmp\ccIiv4Kt.s:101    .text.CAN_DeInit:00000038 $d
-C:\cygwin64\tmp\ccIiv4Kt.s:104    .text.CAN_Init:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:109    .text.CAN_Init:00000000 CAN_Init
-C:\cygwin64\tmp\ccIiv4Kt.s:217    .text.CAN_FilterInit:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:222    .text.CAN_FilterInit:00000000 CAN_FilterInit
-C:\cygwin64\tmp\ccIiv4Kt.s:327    .text.CAN_FilterInit:000000f0 $d
-C:\cygwin64\tmp\ccIiv4Kt.s:330    .text.CAN_StructInit:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:335    .text.CAN_StructInit:00000000 CAN_StructInit
-C:\cygwin64\tmp\ccIiv4Kt.s:359    .text.CAN_SlaveStartBank:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:364    .text.CAN_SlaveStartBank:00000000 CAN_SlaveStartBank
-C:\cygwin64\tmp\ccIiv4Kt.s:386    .text.CAN_SlaveStartBank:00000038 $d
-C:\cygwin64\tmp\ccIiv4Kt.s:389    .text.CAN_DBGFreeze:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:394    .text.CAN_DBGFreeze:00000000 CAN_DBGFreeze
-C:\cygwin64\tmp\ccIiv4Kt.s:409    .text.CAN_TTComModeCmd:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:414    .text.CAN_TTComModeCmd:00000000 CAN_TTComModeCmd
-C:\cygwin64\tmp\ccIiv4Kt.s:447    .text.CAN_Transmit:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:452    .text.CAN_Transmit:00000000 CAN_Transmit
-C:\cygwin64\tmp\ccIiv4Kt.s:543    .text.CAN_TransmitStatus:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:548    .text.CAN_TransmitStatus:00000000 CAN_TransmitStatus
-C:\cygwin64\tmp\ccIiv4Kt.s:595    .text.CAN_TransmitStatus:00000044 $d
-C:\cygwin64\tmp\ccIiv4Kt.s:600    .text.CAN_CancelTransmit:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:605    .text.CAN_CancelTransmit:00000000 CAN_CancelTransmit
-C:\cygwin64\tmp\ccIiv4Kt.s:632    .text.CAN_Receive:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:637    .text.CAN_Receive:00000000 CAN_Receive
-C:\cygwin64\tmp\ccIiv4Kt.s:704    .text.CAN_FIFORelease:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:709    .text.CAN_FIFORelease:00000000 CAN_FIFORelease
-C:\cygwin64\tmp\ccIiv4Kt.s:725    .text.CAN_MessagePending:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:730    .text.CAN_MessagePending:00000000 CAN_MessagePending
-C:\cygwin64\tmp\ccIiv4Kt.s:747    .text.CAN_OperatingModeRequest:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:752    .text.CAN_OperatingModeRequest:00000000 CAN_OperatingModeRequest
-C:\cygwin64\tmp\ccIiv4Kt.s:840    .text.CAN_Sleep:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:845    .text.CAN_Sleep:00000000 CAN_Sleep
-C:\cygwin64\tmp\ccIiv4Kt.s:861    .text.CAN_WakeUp:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:866    .text.CAN_WakeUp:00000000 CAN_WakeUp
-C:\cygwin64\tmp\ccIiv4Kt.s:892    .text.CAN_GetLastErrorCode:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:897    .text.CAN_GetLastErrorCode:00000000 CAN_GetLastErrorCode
-C:\cygwin64\tmp\ccIiv4Kt.s:906    .text.CAN_GetReceiveErrorCounter:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:911    .text.CAN_GetReceiveErrorCounter:00000000 CAN_GetReceiveErrorCounter
-C:\cygwin64\tmp\ccIiv4Kt.s:920    .text.CAN_GetLSBTransmitErrorCounter:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:925    .text.CAN_GetLSBTransmitErrorCounter:00000000 CAN_GetLSBTransmitErrorCounter
-C:\cygwin64\tmp\ccIiv4Kt.s:934    .text.CAN_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:939    .text.CAN_ITConfig:00000000 CAN_ITConfig
-C:\cygwin64\tmp\ccIiv4Kt.s:954    .text.CAN_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:959    .text.CAN_GetFlagStatus:00000000 CAN_GetFlagStatus
-C:\cygwin64\tmp\ccIiv4Kt.s:1005   .text.CAN_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:1010   .text.CAN_ClearFlag:00000000 CAN_ClearFlag
-C:\cygwin64\tmp\ccIiv4Kt.s:1040   .text.CAN_ClearFlag:0000002c $d
-C:\cygwin64\tmp\ccIiv4Kt.s:1043   .text.CAN_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:1048   .text.CAN_GetITStatus:00000000 CAN_GetITStatus
-C:\cygwin64\tmp\ccIiv4Kt.s:1161   .text.CAN_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccIiv4Kt.s:1166   .text.CAN_ClearITPendingBit:00000000 CAN_ClearITPendingBit
-C:\cygwin64\tmp\ccIiv4Kt.s:1246   .text.CAN_ClearITPendingBit:00000088 $d
+C:\cygwin64\tmp\ccGvGXef.s:71     .text.CAN_DeInit:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:76     .text.CAN_DeInit:00000000 CAN_DeInit
+C:\cygwin64\tmp\ccGvGXef.s:101    .text.CAN_DeInit:00000038 $d
+C:\cygwin64\tmp\ccGvGXef.s:104    .text.CAN_Init:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:109    .text.CAN_Init:00000000 CAN_Init
+C:\cygwin64\tmp\ccGvGXef.s:217    .text.CAN_FilterInit:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:222    .text.CAN_FilterInit:00000000 CAN_FilterInit
+C:\cygwin64\tmp\ccGvGXef.s:327    .text.CAN_FilterInit:000000f0 $d
+C:\cygwin64\tmp\ccGvGXef.s:330    .text.CAN_StructInit:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:335    .text.CAN_StructInit:00000000 CAN_StructInit
+C:\cygwin64\tmp\ccGvGXef.s:359    .text.CAN_SlaveStartBank:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:364    .text.CAN_SlaveStartBank:00000000 CAN_SlaveStartBank
+C:\cygwin64\tmp\ccGvGXef.s:386    .text.CAN_SlaveStartBank:00000038 $d
+C:\cygwin64\tmp\ccGvGXef.s:389    .text.CAN_DBGFreeze:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:394    .text.CAN_DBGFreeze:00000000 CAN_DBGFreeze
+C:\cygwin64\tmp\ccGvGXef.s:409    .text.CAN_TTComModeCmd:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:414    .text.CAN_TTComModeCmd:00000000 CAN_TTComModeCmd
+C:\cygwin64\tmp\ccGvGXef.s:447    .text.CAN_Transmit:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:452    .text.CAN_Transmit:00000000 CAN_Transmit
+C:\cygwin64\tmp\ccGvGXef.s:543    .text.CAN_TransmitStatus:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:548    .text.CAN_TransmitStatus:00000000 CAN_TransmitStatus
+C:\cygwin64\tmp\ccGvGXef.s:595    .text.CAN_TransmitStatus:00000044 $d
+C:\cygwin64\tmp\ccGvGXef.s:600    .text.CAN_CancelTransmit:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:605    .text.CAN_CancelTransmit:00000000 CAN_CancelTransmit
+C:\cygwin64\tmp\ccGvGXef.s:632    .text.CAN_Receive:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:637    .text.CAN_Receive:00000000 CAN_Receive
+C:\cygwin64\tmp\ccGvGXef.s:704    .text.CAN_FIFORelease:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:709    .text.CAN_FIFORelease:00000000 CAN_FIFORelease
+C:\cygwin64\tmp\ccGvGXef.s:725    .text.CAN_MessagePending:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:730    .text.CAN_MessagePending:00000000 CAN_MessagePending
+C:\cygwin64\tmp\ccGvGXef.s:747    .text.CAN_OperatingModeRequest:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:752    .text.CAN_OperatingModeRequest:00000000 CAN_OperatingModeRequest
+C:\cygwin64\tmp\ccGvGXef.s:840    .text.CAN_Sleep:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:845    .text.CAN_Sleep:00000000 CAN_Sleep
+C:\cygwin64\tmp\ccGvGXef.s:861    .text.CAN_WakeUp:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:866    .text.CAN_WakeUp:00000000 CAN_WakeUp
+C:\cygwin64\tmp\ccGvGXef.s:892    .text.CAN_GetLastErrorCode:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:897    .text.CAN_GetLastErrorCode:00000000 CAN_GetLastErrorCode
+C:\cygwin64\tmp\ccGvGXef.s:906    .text.CAN_GetReceiveErrorCounter:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:911    .text.CAN_GetReceiveErrorCounter:00000000 CAN_GetReceiveErrorCounter
+C:\cygwin64\tmp\ccGvGXef.s:920    .text.CAN_GetLSBTransmitErrorCounter:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:925    .text.CAN_GetLSBTransmitErrorCounter:00000000 CAN_GetLSBTransmitErrorCounter
+C:\cygwin64\tmp\ccGvGXef.s:934    .text.CAN_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:939    .text.CAN_ITConfig:00000000 CAN_ITConfig
+C:\cygwin64\tmp\ccGvGXef.s:954    .text.CAN_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:959    .text.CAN_GetFlagStatus:00000000 CAN_GetFlagStatus
+C:\cygwin64\tmp\ccGvGXef.s:1005   .text.CAN_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:1010   .text.CAN_ClearFlag:00000000 CAN_ClearFlag
+C:\cygwin64\tmp\ccGvGXef.s:1040   .text.CAN_ClearFlag:0000002c $d
+C:\cygwin64\tmp\ccGvGXef.s:1043   .text.CAN_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:1048   .text.CAN_GetITStatus:00000000 CAN_GetITStatus
+C:\cygwin64\tmp\ccGvGXef.s:1161   .text.CAN_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccGvGXef.s:1166   .text.CAN_ClearITPendingBit:00000000 CAN_ClearITPendingBit
+C:\cygwin64\tmp\ccGvGXef.s:1246   .text.CAN_ClearITPendingBit:00000088 $d
 
-ARM GAS  C:\cygwin64\tmp\ccIiv4Kt.s 			page 24
+ARM GAS  C:\cygwin64\tmp\ccGvGXef.s 			page 24
 
 
 UNDEFINED SYMBOLS

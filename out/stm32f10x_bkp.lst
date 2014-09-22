@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccAOOhXh.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccAOOhXh.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
  112              		@ frame_needed = 0, uses_anonymous_args = 0
  113              		@ link register save eliminated.
  114 0000 014B     		ldr	r3, .L6	@ tmp112,
-ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccAOOhXh.s 			page 3
 
 
  115 0002 1860     		str	r0, [r3]	@ NewState, MEM[(volatile uint32_t *)1108182528B]
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
  169              	BKP_SetRTCCalibrationValue:
  170              		@ args = 0, pretend = 0, frame = 0
  171              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccAOOhXh.s 			page 4
 
 
  172              		@ link register save eliminated.
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
  226 0004 0022     		movs	r2, #0	@ tmp118,
  227 0006 0192     		str	r2, [sp, #4]	@ tmp118, tmp
  228 0008 0193     		str	r3, [sp, #4]	@ tmp119, tmp
-ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccAOOhXh.s 			page 5
 
 
  229 000a 019B     		ldr	r3, [sp, #4]	@ tmp.4, tmp
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
  283              		.section	.text.BKP_GetITStatus,"ax",%progbits
  284              		.align	2
  285              		.global	BKP_GetITStatus
-ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccAOOhXh.s 			page 6
 
 
  286              		.thumb
@@ -339,46 +339,46 @@ ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 1
  321 0010 006C0040 		.word	1073769472
  322              		.size	BKP_ClearITPendingBit, .-BKP_ClearITPendingBit
  323              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccHki4i4.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccAOOhXh.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_bkp.c
-C:\cygwin64\tmp\ccHki4i4.s:71     .text.BKP_DeInit:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:76     .text.BKP_DeInit:00000000 BKP_DeInit
-C:\cygwin64\tmp\ccHki4i4.s:87     .text.BKP_TamperPinLevelConfig:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:92     .text.BKP_TamperPinLevelConfig:00000000 BKP_TamperPinLevelConfig
-C:\cygwin64\tmp\ccHki4i4.s:102    .text.BKP_TamperPinLevelConfig:00000008 $d
-C:\cygwin64\tmp\ccHki4i4.s:105    .text.BKP_TamperPinCmd:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:110    .text.BKP_TamperPinCmd:00000000 BKP_TamperPinCmd
-C:\cygwin64\tmp\ccHki4i4.s:120    .text.BKP_TamperPinCmd:00000008 $d
-C:\cygwin64\tmp\ccHki4i4.s:123    .text.BKP_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:128    .text.BKP_ITConfig:00000000 BKP_ITConfig
-C:\cygwin64\tmp\ccHki4i4.s:138    .text.BKP_ITConfig:00000008 $d
-C:\cygwin64\tmp\ccHki4i4.s:141    .text.BKP_RTCOutputConfig:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:146    .text.BKP_RTCOutputConfig:00000000 BKP_RTCOutputConfig
-C:\cygwin64\tmp\ccHki4i4.s:161    .text.BKP_RTCOutputConfig:00000014 $d
-C:\cygwin64\tmp\ccHki4i4.s:164    .text.BKP_SetRTCCalibrationValue:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:169    .text.BKP_SetRTCCalibrationValue:00000000 BKP_SetRTCCalibrationValue
-C:\cygwin64\tmp\ccHki4i4.s:184    .text.BKP_SetRTCCalibrationValue:00000014 $d
-C:\cygwin64\tmp\ccHki4i4.s:187    .text.BKP_WriteBackupRegister:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:192    .text.BKP_WriteBackupRegister:00000000 BKP_WriteBackupRegister
-C:\cygwin64\tmp\ccHki4i4.s:212    .text.BKP_WriteBackupRegister:00000018 $d
-C:\cygwin64\tmp\ccHki4i4.s:215    .text.BKP_ReadBackupRegister:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:220    .text.BKP_ReadBackupRegister:00000000 BKP_ReadBackupRegister
-C:\cygwin64\tmp\ccHki4i4.s:241    .text.BKP_ReadBackupRegister:0000001c $d
-C:\cygwin64\tmp\ccHki4i4.s:244    .text.BKP_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:249    .text.BKP_GetFlagStatus:00000000 BKP_GetFlagStatus
-C:\cygwin64\tmp\ccHki4i4.s:260    .text.BKP_GetFlagStatus:00000008 $d
-C:\cygwin64\tmp\ccHki4i4.s:263    .text.BKP_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:268    .text.BKP_ClearFlag:00000000 BKP_ClearFlag
-C:\cygwin64\tmp\ccHki4i4.s:281    .text.BKP_ClearFlag:00000010 $d
-C:\cygwin64\tmp\ccHki4i4.s:284    .text.BKP_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:289    .text.BKP_GetITStatus:00000000 BKP_GetITStatus
-C:\cygwin64\tmp\ccHki4i4.s:300    .text.BKP_GetITStatus:00000008 $d
-C:\cygwin64\tmp\ccHki4i4.s:303    .text.BKP_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccHki4i4.s:308    .text.BKP_ClearITPendingBit:00000000 BKP_ClearITPendingBit
-C:\cygwin64\tmp\ccHki4i4.s:321    .text.BKP_ClearITPendingBit:00000010 $d
+C:\cygwin64\tmp\ccAOOhXh.s:71     .text.BKP_DeInit:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:76     .text.BKP_DeInit:00000000 BKP_DeInit
+C:\cygwin64\tmp\ccAOOhXh.s:87     .text.BKP_TamperPinLevelConfig:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:92     .text.BKP_TamperPinLevelConfig:00000000 BKP_TamperPinLevelConfig
+C:\cygwin64\tmp\ccAOOhXh.s:102    .text.BKP_TamperPinLevelConfig:00000008 $d
+C:\cygwin64\tmp\ccAOOhXh.s:105    .text.BKP_TamperPinCmd:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:110    .text.BKP_TamperPinCmd:00000000 BKP_TamperPinCmd
+C:\cygwin64\tmp\ccAOOhXh.s:120    .text.BKP_TamperPinCmd:00000008 $d
+C:\cygwin64\tmp\ccAOOhXh.s:123    .text.BKP_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:128    .text.BKP_ITConfig:00000000 BKP_ITConfig
+C:\cygwin64\tmp\ccAOOhXh.s:138    .text.BKP_ITConfig:00000008 $d
+C:\cygwin64\tmp\ccAOOhXh.s:141    .text.BKP_RTCOutputConfig:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:146    .text.BKP_RTCOutputConfig:00000000 BKP_RTCOutputConfig
+C:\cygwin64\tmp\ccAOOhXh.s:161    .text.BKP_RTCOutputConfig:00000014 $d
+C:\cygwin64\tmp\ccAOOhXh.s:164    .text.BKP_SetRTCCalibrationValue:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:169    .text.BKP_SetRTCCalibrationValue:00000000 BKP_SetRTCCalibrationValue
+C:\cygwin64\tmp\ccAOOhXh.s:184    .text.BKP_SetRTCCalibrationValue:00000014 $d
+C:\cygwin64\tmp\ccAOOhXh.s:187    .text.BKP_WriteBackupRegister:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:192    .text.BKP_WriteBackupRegister:00000000 BKP_WriteBackupRegister
+C:\cygwin64\tmp\ccAOOhXh.s:212    .text.BKP_WriteBackupRegister:00000018 $d
+C:\cygwin64\tmp\ccAOOhXh.s:215    .text.BKP_ReadBackupRegister:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:220    .text.BKP_ReadBackupRegister:00000000 BKP_ReadBackupRegister
+C:\cygwin64\tmp\ccAOOhXh.s:241    .text.BKP_ReadBackupRegister:0000001c $d
+C:\cygwin64\tmp\ccAOOhXh.s:244    .text.BKP_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:249    .text.BKP_GetFlagStatus:00000000 BKP_GetFlagStatus
+C:\cygwin64\tmp\ccAOOhXh.s:260    .text.BKP_GetFlagStatus:00000008 $d
+C:\cygwin64\tmp\ccAOOhXh.s:263    .text.BKP_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:268    .text.BKP_ClearFlag:00000000 BKP_ClearFlag
+C:\cygwin64\tmp\ccAOOhXh.s:281    .text.BKP_ClearFlag:00000010 $d
+C:\cygwin64\tmp\ccAOOhXh.s:284    .text.BKP_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:289    .text.BKP_GetITStatus:00000000 BKP_GetITStatus
+C:\cygwin64\tmp\ccAOOhXh.s:300    .text.BKP_GetITStatus:00000008 $d
+C:\cygwin64\tmp\ccAOOhXh.s:303    .text.BKP_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccAOOhXh.s:308    .text.BKP_ClearITPendingBit:00000000 BKP_ClearITPendingBit
+C:\cygwin64\tmp\ccAOOhXh.s:321    .text.BKP_ClearITPendingBit:00000010 $d
 
 UNDEFINED SYMBOLS
 RCC_BackupResetCmd

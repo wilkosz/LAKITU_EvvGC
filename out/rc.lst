@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 2
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  112              	@ 342 "Libraries/CMSIS/Include/core_cmFunc.h" 1
  113 0004 72B6     		cpsid i
  114              	@ 0 "" 2
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 3
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 3
 
 
  115              		.thumb
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  169 00a6 1A60     		str	r2, [r3]	@ tmp144, MEM[(struct NVIC_Type *)3758153984B].ISER
  170 00a8 FFF7FEFF 		bl	Timer3_Config	@
  171              	@ 331 "Libraries/CMSIS/Include/core_cmFunc.h" 1
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 4
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 4
 
 
  172 00ac 62B6     		cpsie i
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  226 001a 0128     		cmp	r0, #1	@,
  227 001c 22D0     		beq	.L20	@,
  228 001e 164C     		ldr	r4, .L23+8	@ tmp151,
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 5
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 5
 
 
  229              	.L12:
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  283              		.type	GetAUX2, %function
  284              	GetAUX2:
  285              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 6
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 6
 
 
  286              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  340              	.L33:
  341 004c 084B     		ldr	r3, .L40	@ tmp149,
  342 004e 5A69     		ldr	r2, [r3, #20]	@ D.6896, MEM[(struct EXTI_TypeDef *)1073808384B].PR
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 7
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 7
 
 
  343 0050 42F00402 		orr	r2, r2, #4	@ D.6896, D.6896,
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  397 0002 10B5     		push	{r4, lr}	@
  398 0004 5B69     		ldr	r3, [r3, #20]	@ D.6905, MEM[(struct EXTI_TypeDef *)1073808384B].PR
  399 0006 D806     		lsls	r0, r3, #27	@, D.6905,
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 8
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 8
 
 
  400 0008 00D4     		bmi	.L56	@,
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  454 0074 000C0140 		.word	1073810432
  455 0078 00000000 		.word	.LANCHOR7
  456 007c 00000000 		.word	.LANCHOR8
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 9
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 9
 
 
  457 0080 00000000 		.word	.LANCHOR6
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  511 0058 002F     		cmp	r7, #0	@ D.6912
  512 005a 4DD0     		beq	.L65	@
  513              	.L80:
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 10
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 10
 
 
  514 005c 3349     		ldr	r1, .L82+12	@,
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  568 00e0 BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}	@
  569              	.L78:
  570 00e4 4046     		mov	r0, r8	@, tmp143
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 11
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 11
 
 
  571 00e6 1649     		ldr	r1, .L82+32	@,
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  625              	rc4b.6701:
  626 0000 0000     		.space	2
  627              		.section	.bss.rc2,"aw",%nobits
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 12
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 12
 
 
  628              		.align	2
@@ -710,56 +710,56 @@ ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 1
  674              	rc3a.6680:
  675 0000 0000     		.space	2
  676              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 13
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 rc.c
-C:\cygwin64\tmp\ccAWGwRO.s:69     .text.Timer3_Config:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:74     .text.Timer3_Config:00000000 Timer3_Config
-C:\cygwin64\tmp\ccAWGwRO.s:99     .text.Timer3_Config:00000034 $d
-C:\cygwin64\tmp\ccAWGwRO.s:102    .text.RC_Config:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:107    .text.RC_Config:00000000 RC_Config
-C:\cygwin64\tmp\ccAWGwRO.s:181    .text.RC_Config:000000b4 $d
-C:\cygwin64\tmp\ccAWGwRO.s:188    .text.GetAUX3:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:193    .text.GetAUX3:00000000 GetAUX3
-C:\cygwin64\tmp\ccAWGwRO.s:203    .text.GetAUX3:00000008 $d
-C:\cygwin64\tmp\ccAWGwRO.s:206    .text.EXTI3_IRQHandler:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:211    .text.EXTI3_IRQHandler:00000000 EXTI3_IRQHandler
-C:\cygwin64\tmp\ccAWGwRO.s:271    .text.EXTI3_IRQHandler:00000070 $d
-C:\cygwin64\tmp\ccAWGwRO.s:279    .text.GetAUX2:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:284    .text.GetAUX2:00000000 GetAUX2
-C:\cygwin64\tmp\ccAWGwRO.s:294    .text.GetAUX2:00000008 $d
-C:\cygwin64\tmp\ccAWGwRO.s:297    .text.EXTI2_IRQHandler:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:302    .text.EXTI2_IRQHandler:00000000 EXTI2_IRQHandler
-C:\cygwin64\tmp\ccAWGwRO.s:362    .text.EXTI2_IRQHandler:00000070 $d
-C:\cygwin64\tmp\ccAWGwRO.s:370    .text.GetAUX4:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:375    .text.GetAUX4:00000000 GetAUX4
-C:\cygwin64\tmp\ccAWGwRO.s:385    .text.GetAUX4:00000008 $d
-C:\cygwin64\tmp\ccAWGwRO.s:388    .text.EXTI4_IRQHandler:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:393    .text.EXTI4_IRQHandler:00000000 EXTI4_IRQHandler
-C:\cygwin64\tmp\ccAWGwRO.s:453    .text.EXTI4_IRQHandler:00000070 $d
-C:\cygwin64\tmp\ccAWGwRO.s:468    .text.Get_RC_Step:00000000 $t
-C:\cygwin64\tmp\ccAWGwRO.s:473    .text.Get_RC_Step:00000000 Get_RC_Step
-C:\cygwin64\tmp\ccAWGwRO.s:603    .text.Get_RC_Step:00000120 $d
-C:\cygwin64\tmp\ccAWGwRO.s:614    .bss.rc4a.6700:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:618    .bss.rc4a.6700:00000000 rc4a.6700
-C:\cygwin64\tmp\ccAWGwRO.s:621    .bss.rc4b.6701:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:625    .bss.rc4b.6701:00000000 rc4b.6701
-C:\cygwin64\tmp\ccAWGwRO.s:628    .bss.rc2:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:632    .bss.rc2:00000000 rc2
-C:\cygwin64\tmp\ccAWGwRO.s:635    .bss.rc3:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:639    .bss.rc3:00000000 rc3
-C:\cygwin64\tmp\ccAWGwRO.s:642    .bss.rc4:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:646    .bss.rc4:00000000 rc4
-C:\cygwin64\tmp\ccAWGwRO.s:649    .bss.rc2a.6690:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:653    .bss.rc2a.6690:00000000 rc2a.6690
-C:\cygwin64\tmp\ccAWGwRO.s:656    .bss.rc2b.6691:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:660    .bss.rc2b.6691:00000000 rc2b.6691
-C:\cygwin64\tmp\ccAWGwRO.s:663    .bss.rc3b.6681:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:667    .bss.rc3b.6681:00000000 rc3b.6681
-C:\cygwin64\tmp\ccAWGwRO.s:670    .bss.rc3a.6680:00000000 $d
-C:\cygwin64\tmp\ccAWGwRO.s:674    .bss.rc3a.6680:00000000 rc3a.6680
+C:\cygwin64\tmp\cc8g3ydQ.s:69     .text.Timer3_Config:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:74     .text.Timer3_Config:00000000 Timer3_Config
+C:\cygwin64\tmp\cc8g3ydQ.s:99     .text.Timer3_Config:00000034 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:102    .text.RC_Config:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:107    .text.RC_Config:00000000 RC_Config
+C:\cygwin64\tmp\cc8g3ydQ.s:181    .text.RC_Config:000000b4 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:188    .text.GetAUX3:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:193    .text.GetAUX3:00000000 GetAUX3
+C:\cygwin64\tmp\cc8g3ydQ.s:203    .text.GetAUX3:00000008 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:206    .text.EXTI3_IRQHandler:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:211    .text.EXTI3_IRQHandler:00000000 EXTI3_IRQHandler
+C:\cygwin64\tmp\cc8g3ydQ.s:271    .text.EXTI3_IRQHandler:00000070 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:279    .text.GetAUX2:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:284    .text.GetAUX2:00000000 GetAUX2
+C:\cygwin64\tmp\cc8g3ydQ.s:294    .text.GetAUX2:00000008 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:297    .text.EXTI2_IRQHandler:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:302    .text.EXTI2_IRQHandler:00000000 EXTI2_IRQHandler
+C:\cygwin64\tmp\cc8g3ydQ.s:362    .text.EXTI2_IRQHandler:00000070 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:370    .text.GetAUX4:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:375    .text.GetAUX4:00000000 GetAUX4
+C:\cygwin64\tmp\cc8g3ydQ.s:385    .text.GetAUX4:00000008 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:388    .text.EXTI4_IRQHandler:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:393    .text.EXTI4_IRQHandler:00000000 EXTI4_IRQHandler
+C:\cygwin64\tmp\cc8g3ydQ.s:453    .text.EXTI4_IRQHandler:00000070 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:468    .text.Get_RC_Step:00000000 $t
+C:\cygwin64\tmp\cc8g3ydQ.s:473    .text.Get_RC_Step:00000000 Get_RC_Step
+C:\cygwin64\tmp\cc8g3ydQ.s:603    .text.Get_RC_Step:00000120 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:614    .bss.rc4a.6700:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:618    .bss.rc4a.6700:00000000 rc4a.6700
+C:\cygwin64\tmp\cc8g3ydQ.s:621    .bss.rc4b.6701:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:625    .bss.rc4b.6701:00000000 rc4b.6701
+C:\cygwin64\tmp\cc8g3ydQ.s:628    .bss.rc2:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:632    .bss.rc2:00000000 rc2
+C:\cygwin64\tmp\cc8g3ydQ.s:635    .bss.rc3:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:639    .bss.rc3:00000000 rc3
+C:\cygwin64\tmp\cc8g3ydQ.s:642    .bss.rc4:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:646    .bss.rc4:00000000 rc4
+C:\cygwin64\tmp\cc8g3ydQ.s:649    .bss.rc2a.6690:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:653    .bss.rc2a.6690:00000000 rc2a.6690
+C:\cygwin64\tmp\cc8g3ydQ.s:656    .bss.rc2b.6691:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:660    .bss.rc2b.6691:00000000 rc2b.6691
+C:\cygwin64\tmp\cc8g3ydQ.s:663    .bss.rc3b.6681:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:667    .bss.rc3b.6681:00000000 rc3b.6681
+C:\cygwin64\tmp\cc8g3ydQ.s:670    .bss.rc3a.6680:00000000 $d
+C:\cygwin64\tmp\cc8g3ydQ.s:674    .bss.rc3a.6680:00000000 rc3a.6680
 
 UNDEFINED SYMBOLS
 TIM_TimeBaseInit
@@ -770,7 +770,7 @@ GPIO_EXTILineConfig
 EXTI_Init
 EXTI_GenerateSWInterrupt
 EXTI_ClearITPendingBit
-ARM GAS  C:\cygwin64\tmp\ccAWGwRO.s 			page 14
+ARM GAS  C:\cygwin64\tmp\cc8g3ydQ.s 			page 14
 
 
 DEBUG_PutChar

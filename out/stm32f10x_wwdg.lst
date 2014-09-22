@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccKEWRJu.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccKEWRJu.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 1
  112              		.thumb
  113              		.thumb_func
  114              		.type	WWDG_SetWindowValue, %function
-ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccKEWRJu.s 			page 3
 
 
  115              	WWDG_SetWindowValue:
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 1
  169 0000 024B     		ldr	r3, .L12	@ tmp114,
  170 0002 00F07F00 		and	r0, r0, #127	@ D.6658, Counter,
  171 0006 1860     		str	r0, [r3]	@ D.6658, MEM[(struct WWDG_TypeDef *)1073753088B].CR
-ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccKEWRJu.s 			page 4
 
 
  172 0008 7047     		bx	lr	@
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 1
  226 0000 014B     		ldr	r3, .L21	@ tmp110,
  227 0002 0022     		movs	r2, #0	@ tmp111,
  228 0004 9A60     		str	r2, [r3, #8]	@ tmp111, MEM[(struct WWDG_TypeDef *)1073753088B].SR
-ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccKEWRJu.s 			page 5
 
 
  229 0006 7047     		bx	lr	@
@@ -248,34 +248,34 @@ ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 1
  233 0008 002C0040 		.word	1073753088
  234              		.size	WWDG_ClearFlag, .-WWDG_ClearFlag
  235              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccZE0HPm.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccKEWRJu.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_wwdg.c
-C:\cygwin64\tmp\ccZE0HPm.s:71     .text.WWDG_DeInit:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:76     .text.WWDG_DeInit:00000000 WWDG_DeInit
-C:\cygwin64\tmp\ccZE0HPm.s:89     .text.WWDG_SetPrescaler:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:94     .text.WWDG_SetPrescaler:00000000 WWDG_SetPrescaler
-C:\cygwin64\tmp\ccZE0HPm.s:107    .text.WWDG_SetPrescaler:00000010 $d
-C:\cygwin64\tmp\ccZE0HPm.s:110    .text.WWDG_SetWindowValue:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:115    .text.WWDG_SetWindowValue:00000000 WWDG_SetWindowValue
-C:\cygwin64\tmp\ccZE0HPm.s:138    .text.WWDG_SetWindowValue:00000024 $d
-C:\cygwin64\tmp\ccZE0HPm.s:141    .text.WWDG_EnableIT:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:146    .text.WWDG_EnableIT:00000000 WWDG_EnableIT
-C:\cygwin64\tmp\ccZE0HPm.s:157    .text.WWDG_EnableIT:00000008 $d
-C:\cygwin64\tmp\ccZE0HPm.s:160    .text.WWDG_SetCounter:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:165    .text.WWDG_SetCounter:00000000 WWDG_SetCounter
-C:\cygwin64\tmp\ccZE0HPm.s:176    .text.WWDG_SetCounter:0000000c $d
-C:\cygwin64\tmp\ccZE0HPm.s:179    .text.WWDG_Enable:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:184    .text.WWDG_Enable:00000000 WWDG_Enable
-C:\cygwin64\tmp\ccZE0HPm.s:195    .text.WWDG_Enable:0000000c $d
-C:\cygwin64\tmp\ccZE0HPm.s:198    .text.WWDG_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:203    .text.WWDG_GetFlagStatus:00000000 WWDG_GetFlagStatus
-C:\cygwin64\tmp\ccZE0HPm.s:214    .text.WWDG_GetFlagStatus:00000008 $d
-C:\cygwin64\tmp\ccZE0HPm.s:217    .text.WWDG_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccZE0HPm.s:222    .text.WWDG_ClearFlag:00000000 WWDG_ClearFlag
-C:\cygwin64\tmp\ccZE0HPm.s:233    .text.WWDG_ClearFlag:00000008 $d
+C:\cygwin64\tmp\ccKEWRJu.s:71     .text.WWDG_DeInit:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:76     .text.WWDG_DeInit:00000000 WWDG_DeInit
+C:\cygwin64\tmp\ccKEWRJu.s:89     .text.WWDG_SetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:94     .text.WWDG_SetPrescaler:00000000 WWDG_SetPrescaler
+C:\cygwin64\tmp\ccKEWRJu.s:107    .text.WWDG_SetPrescaler:00000010 $d
+C:\cygwin64\tmp\ccKEWRJu.s:110    .text.WWDG_SetWindowValue:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:115    .text.WWDG_SetWindowValue:00000000 WWDG_SetWindowValue
+C:\cygwin64\tmp\ccKEWRJu.s:138    .text.WWDG_SetWindowValue:00000024 $d
+C:\cygwin64\tmp\ccKEWRJu.s:141    .text.WWDG_EnableIT:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:146    .text.WWDG_EnableIT:00000000 WWDG_EnableIT
+C:\cygwin64\tmp\ccKEWRJu.s:157    .text.WWDG_EnableIT:00000008 $d
+C:\cygwin64\tmp\ccKEWRJu.s:160    .text.WWDG_SetCounter:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:165    .text.WWDG_SetCounter:00000000 WWDG_SetCounter
+C:\cygwin64\tmp\ccKEWRJu.s:176    .text.WWDG_SetCounter:0000000c $d
+C:\cygwin64\tmp\ccKEWRJu.s:179    .text.WWDG_Enable:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:184    .text.WWDG_Enable:00000000 WWDG_Enable
+C:\cygwin64\tmp\ccKEWRJu.s:195    .text.WWDG_Enable:0000000c $d
+C:\cygwin64\tmp\ccKEWRJu.s:198    .text.WWDG_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:203    .text.WWDG_GetFlagStatus:00000000 WWDG_GetFlagStatus
+C:\cygwin64\tmp\ccKEWRJu.s:214    .text.WWDG_GetFlagStatus:00000008 $d
+C:\cygwin64\tmp\ccKEWRJu.s:217    .text.WWDG_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccKEWRJu.s:222    .text.WWDG_ClearFlag:00000000 WWDG_ClearFlag
+C:\cygwin64\tmp\ccKEWRJu.s:233    .text.WWDG_ClearFlag:00000008 $d
 
 UNDEFINED SYMBOLS
 RCC_APB1PeriphResetCmd

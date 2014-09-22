@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  112 0058 0021     		movs	r1, #0	@,
  113 005a FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
  114              	.L10:
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 3
 
 
  115 005e 00BF     		.align	2
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  169              		.type	ADC_StructInit, %function
  170              	ADC_StructInit:
  171              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 4
 
 
  172              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  226              		.global	ADC_ITConfig
  227              		.thumb
  228              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 5
 
 
  229              		.type	ADC_ITConfig, %function
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  283              		@ link register save eliminated.
  284 0000 8368     		ldr	r3, [r0, #8]	@ D.7078, ADCx_2(D)->CR2
  285 0002 43F00403 		orr	r3, r3, #4	@ D.7078, D.7078,
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 6
 
 
  286 0006 8360     		str	r3, [r0, #8]	@ D.7078, ADCx_2(D)->CR2
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  340              		.thumb
  341              		.thumb_func
  342              		.type	ADC_DiscModeChannelCountConfig, %function
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 7
 
 
  343              	ADC_DiscModeChannelCountConfig:
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  397 0024 1DD9     		bls	.L47	@,
  398              	.L44:
  399 0026 0C2A     		cmp	r2, #12	@ Rank,
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 8
 
 
  400 0028 29D9     		bls	.L48	@,
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  454              	ADC_ExternalTrigConvCmd:
  455              		@ args = 0, pretend = 0, frame = 0
  456              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 9
 
 
  457              		@ link register save eliminated.
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  511 0002 19B9     		cbnz	r1, .L60	@ NewState,
  512 0004 23F48063 		bic	r3, r3, #1024	@ D.7115, D.7115,
  513 0008 4360     		str	r3, [r0, #4]	@ D.7115,
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 10
 
 
  514 000a 7047     		bx	lr	@
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  568 0004 23F40043 		bic	r3, r3, #32768	@ D.7123, D.7123,
  569 0008 8360     		str	r3, [r0, #8]	@ D.7123,
  570 000a 7047     		bx	lr	@
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 11
 
 
  571              	.L69:
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  625 000c A640     		lsls	r6, r6, r4	@ tmpreg2, tmp159, tmp157
  626 000e 03FA04F4 		lsl	r4, r3, r4	@ tmpreg2, ADC_SampleTime, tmp157
  627 0012 0569     		ldr	r5, [r0, #16]	@ tmpreg1, ADCx_4(D)->SMPR2
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 12
 
 
  628 0014 25EA0603 		bic	r3, r5, r6	@ tmpreg1, tmpreg1, tmpreg2
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  682              		@ args = 0, pretend = 0, frame = 8
  683              		@ frame_needed = 0, uses_anonymous_args = 0
  684              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 13
 
 
  685 0000 82B0     		sub	sp, sp, #8	@,,
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  739              		.size	ADC_AnalogWatchdogCmd, .-ADC_AnalogWatchdogCmd
  740              		.section	.text.ADC_AnalogWatchdogThresholdsConfig,"ax",%progbits
  741              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 14
 
 
  742              		.global	ADC_AnalogWatchdogThresholdsConfig
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  796              		.align	2
  797              		.global	ADC_GetFlagStatus
  798              		.thumb
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 15
 
 
  799              		.thumb_func
@@ -898,7 +898,7 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  853              		.type	ADC_ClearITPendingBit, %function
  854              	ADC_ClearITPendingBit:
  855              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 16
 
 
  856              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -908,90 +908,90 @@ ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 1
  860 0006 7047     		bx	lr	@
  861              		.size	ADC_ClearITPendingBit, .-ADC_ClearITPendingBit
  862              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_adc.c
-C:\cygwin64\tmp\ccUwsVtr.s:71     .text.ADC_DeInit:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:76     .text.ADC_DeInit:00000000 ADC_DeInit
-C:\cygwin64\tmp\ccUwsVtr.s:117    .text.ADC_DeInit:00000060 $d
-C:\cygwin64\tmp\ccUwsVtr.s:122    .text.ADC_Init:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:127    .text.ADC_Init:00000000 ADC_Init
-C:\cygwin64\tmp\ccUwsVtr.s:162    .text.ADC_Init:00000044 $d
-C:\cygwin64\tmp\ccUwsVtr.s:165    .text.ADC_StructInit:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:170    .text.ADC_StructInit:00000000 ADC_StructInit
-C:\cygwin64\tmp\ccUwsVtr.s:185    .text.ADC_Cmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:190    .text.ADC_Cmd:00000000 ADC_Cmd
-C:\cygwin64\tmp\ccUwsVtr.s:205    .text.ADC_DMACmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:210    .text.ADC_DMACmd:00000000 ADC_DMACmd
-C:\cygwin64\tmp\ccUwsVtr.s:225    .text.ADC_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:230    .text.ADC_ITConfig:00000000 ADC_ITConfig
-C:\cygwin64\tmp\ccUwsVtr.s:246    .text.ADC_ResetCalibration:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:251    .text.ADC_ResetCalibration:00000000 ADC_ResetCalibration
-C:\cygwin64\tmp\ccUwsVtr.s:261    .text.ADC_GetResetCalibrationStatus:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:266    .text.ADC_GetResetCalibrationStatus:00000000 ADC_GetResetCalibrationStatus
-C:\cygwin64\tmp\ccUwsVtr.s:275    .text.ADC_StartCalibration:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:280    .text.ADC_StartCalibration:00000000 ADC_StartCalibration
-C:\cygwin64\tmp\ccUwsVtr.s:290    .text.ADC_GetCalibrationStatus:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:295    .text.ADC_GetCalibrationStatus:00000000 ADC_GetCalibrationStatus
-C:\cygwin64\tmp\ccUwsVtr.s:304    .text.ADC_SoftwareStartConvCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:309    .text.ADC_SoftwareStartConvCmd:00000000 ADC_SoftwareStartConvCmd
-C:\cygwin64\tmp\ccUwsVtr.s:324    .text.ADC_GetSoftwareStartConvStatus:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:329    .text.ADC_GetSoftwareStartConvStatus:00000000 ADC_GetSoftwareStartConvStatus
-C:\cygwin64\tmp\ccUwsVtr.s:338    .text.ADC_DiscModeChannelCountConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:343    .text.ADC_DiscModeChannelCountConfig:00000000 ADC_DiscModeChannelCountConfig
-C:\cygwin64\tmp\ccUwsVtr.s:355    .text.ADC_DiscModeCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:360    .text.ADC_DiscModeCmd:00000000 ADC_DiscModeCmd
-C:\cygwin64\tmp\ccUwsVtr.s:375    .text.ADC_RegularChannelConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:380    .text.ADC_RegularChannelConfig:00000000 ADC_RegularChannelConfig
-C:\cygwin64\tmp\ccUwsVtr.s:449    .text.ADC_ExternalTrigConvCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:454    .text.ADC_ExternalTrigConvCmd:00000000 ADC_ExternalTrigConvCmd
-C:\cygwin64\tmp\ccUwsVtr.s:469    .text.ADC_GetConversionValue:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:474    .text.ADC_GetConversionValue:00000000 ADC_GetConversionValue
-C:\cygwin64\tmp\ccUwsVtr.s:483    .text.ADC_GetDualModeConversionValue:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:488    .text.ADC_GetDualModeConversionValue:00000000 ADC_GetDualModeConversionValue
-C:\cygwin64\tmp\ccUwsVtr.s:498    .text.ADC_GetDualModeConversionValue:00000008 $d
-C:\cygwin64\tmp\ccUwsVtr.s:501    .text.ADC_AutoInjectedConvCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:506    .text.ADC_AutoInjectedConvCmd:00000000 ADC_AutoInjectedConvCmd
-C:\cygwin64\tmp\ccUwsVtr.s:521    .text.ADC_InjectedDiscModeCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:526    .text.ADC_InjectedDiscModeCmd:00000000 ADC_InjectedDiscModeCmd
-C:\cygwin64\tmp\ccUwsVtr.s:541    .text.ADC_ExternalTrigInjectedConvConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:546    .text.ADC_ExternalTrigInjectedConvConfig:00000000 ADC_ExternalTrigInjectedConvConfig
-C:\cygwin64\tmp\ccUwsVtr.s:557    .text.ADC_ExternalTrigInjectedConvCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:562    .text.ADC_ExternalTrigInjectedConvCmd:00000000 ADC_ExternalTrigInjectedConvCmd
-C:\cygwin64\tmp\ccUwsVtr.s:577    .text.ADC_SoftwareStartInjectedConvCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:582    .text.ADC_SoftwareStartInjectedConvCmd:00000000 ADC_SoftwareStartInjectedConvCmd
-C:\cygwin64\tmp\ccUwsVtr.s:597    .text.ADC_GetSoftwareStartInjectedConvCmdStatus:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:602    .text.ADC_GetSoftwareStartInjectedConvCmdStatus:00000000 ADC_GetSoftwareStartInjectedConvCmdStatus
-C:\cygwin64\tmp\ccUwsVtr.s:611    .text.ADC_InjectedChannelConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:616    .text.ADC_InjectedChannelConfig:00000000 ADC_InjectedChannelConfig
-C:\cygwin64\tmp\ccUwsVtr.s:659    .text.ADC_InjectedSequencerLengthConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:664    .text.ADC_InjectedSequencerLengthConfig:00000000 ADC_InjectedSequencerLengthConfig
-ARM GAS  C:\cygwin64\tmp\ccUwsVtr.s 			page 18
+C:\cygwin64\tmp\ccDjdL3I.s:71     .text.ADC_DeInit:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:76     .text.ADC_DeInit:00000000 ADC_DeInit
+C:\cygwin64\tmp\ccDjdL3I.s:117    .text.ADC_DeInit:00000060 $d
+C:\cygwin64\tmp\ccDjdL3I.s:122    .text.ADC_Init:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:127    .text.ADC_Init:00000000 ADC_Init
+C:\cygwin64\tmp\ccDjdL3I.s:162    .text.ADC_Init:00000044 $d
+C:\cygwin64\tmp\ccDjdL3I.s:165    .text.ADC_StructInit:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:170    .text.ADC_StructInit:00000000 ADC_StructInit
+C:\cygwin64\tmp\ccDjdL3I.s:185    .text.ADC_Cmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:190    .text.ADC_Cmd:00000000 ADC_Cmd
+C:\cygwin64\tmp\ccDjdL3I.s:205    .text.ADC_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:210    .text.ADC_DMACmd:00000000 ADC_DMACmd
+C:\cygwin64\tmp\ccDjdL3I.s:225    .text.ADC_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:230    .text.ADC_ITConfig:00000000 ADC_ITConfig
+C:\cygwin64\tmp\ccDjdL3I.s:246    .text.ADC_ResetCalibration:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:251    .text.ADC_ResetCalibration:00000000 ADC_ResetCalibration
+C:\cygwin64\tmp\ccDjdL3I.s:261    .text.ADC_GetResetCalibrationStatus:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:266    .text.ADC_GetResetCalibrationStatus:00000000 ADC_GetResetCalibrationStatus
+C:\cygwin64\tmp\ccDjdL3I.s:275    .text.ADC_StartCalibration:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:280    .text.ADC_StartCalibration:00000000 ADC_StartCalibration
+C:\cygwin64\tmp\ccDjdL3I.s:290    .text.ADC_GetCalibrationStatus:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:295    .text.ADC_GetCalibrationStatus:00000000 ADC_GetCalibrationStatus
+C:\cygwin64\tmp\ccDjdL3I.s:304    .text.ADC_SoftwareStartConvCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:309    .text.ADC_SoftwareStartConvCmd:00000000 ADC_SoftwareStartConvCmd
+C:\cygwin64\tmp\ccDjdL3I.s:324    .text.ADC_GetSoftwareStartConvStatus:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:329    .text.ADC_GetSoftwareStartConvStatus:00000000 ADC_GetSoftwareStartConvStatus
+C:\cygwin64\tmp\ccDjdL3I.s:338    .text.ADC_DiscModeChannelCountConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:343    .text.ADC_DiscModeChannelCountConfig:00000000 ADC_DiscModeChannelCountConfig
+C:\cygwin64\tmp\ccDjdL3I.s:355    .text.ADC_DiscModeCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:360    .text.ADC_DiscModeCmd:00000000 ADC_DiscModeCmd
+C:\cygwin64\tmp\ccDjdL3I.s:375    .text.ADC_RegularChannelConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:380    .text.ADC_RegularChannelConfig:00000000 ADC_RegularChannelConfig
+C:\cygwin64\tmp\ccDjdL3I.s:449    .text.ADC_ExternalTrigConvCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:454    .text.ADC_ExternalTrigConvCmd:00000000 ADC_ExternalTrigConvCmd
+C:\cygwin64\tmp\ccDjdL3I.s:469    .text.ADC_GetConversionValue:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:474    .text.ADC_GetConversionValue:00000000 ADC_GetConversionValue
+C:\cygwin64\tmp\ccDjdL3I.s:483    .text.ADC_GetDualModeConversionValue:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:488    .text.ADC_GetDualModeConversionValue:00000000 ADC_GetDualModeConversionValue
+C:\cygwin64\tmp\ccDjdL3I.s:498    .text.ADC_GetDualModeConversionValue:00000008 $d
+C:\cygwin64\tmp\ccDjdL3I.s:501    .text.ADC_AutoInjectedConvCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:506    .text.ADC_AutoInjectedConvCmd:00000000 ADC_AutoInjectedConvCmd
+C:\cygwin64\tmp\ccDjdL3I.s:521    .text.ADC_InjectedDiscModeCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:526    .text.ADC_InjectedDiscModeCmd:00000000 ADC_InjectedDiscModeCmd
+C:\cygwin64\tmp\ccDjdL3I.s:541    .text.ADC_ExternalTrigInjectedConvConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:546    .text.ADC_ExternalTrigInjectedConvConfig:00000000 ADC_ExternalTrigInjectedConvConfig
+C:\cygwin64\tmp\ccDjdL3I.s:557    .text.ADC_ExternalTrigInjectedConvCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:562    .text.ADC_ExternalTrigInjectedConvCmd:00000000 ADC_ExternalTrigInjectedConvCmd
+C:\cygwin64\tmp\ccDjdL3I.s:577    .text.ADC_SoftwareStartInjectedConvCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:582    .text.ADC_SoftwareStartInjectedConvCmd:00000000 ADC_SoftwareStartInjectedConvCmd
+C:\cygwin64\tmp\ccDjdL3I.s:597    .text.ADC_GetSoftwareStartInjectedConvCmdStatus:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:602    .text.ADC_GetSoftwareStartInjectedConvCmdStatus:00000000 ADC_GetSoftwareStartInjectedConvCmdStatus
+C:\cygwin64\tmp\ccDjdL3I.s:611    .text.ADC_InjectedChannelConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:616    .text.ADC_InjectedChannelConfig:00000000 ADC_InjectedChannelConfig
+C:\cygwin64\tmp\ccDjdL3I.s:659    .text.ADC_InjectedSequencerLengthConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:664    .text.ADC_InjectedSequencerLengthConfig:00000000 ADC_InjectedSequencerLengthConfig
+ARM GAS  C:\cygwin64\tmp\ccDjdL3I.s 			page 18
 
 
-C:\cygwin64\tmp\ccUwsVtr.s:676    .text.ADC_SetInjectedOffset:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:681    .text.ADC_SetInjectedOffset:00000000 ADC_SetInjectedOffset
-C:\cygwin64\tmp\ccUwsVtr.s:699    .text.ADC_GetInjectedConversionValue:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:704    .text.ADC_GetInjectedConversionValue:00000000 ADC_GetInjectedConversionValue
-C:\cygwin64\tmp\ccUwsVtr.s:724    .text.ADC_AnalogWatchdogCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:729    .text.ADC_AnalogWatchdogCmd:00000000 ADC_AnalogWatchdogCmd
-C:\cygwin64\tmp\ccUwsVtr.s:741    .text.ADC_AnalogWatchdogThresholdsConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:746    .text.ADC_AnalogWatchdogThresholdsConfig:00000000 ADC_AnalogWatchdogThresholdsConfig
-C:\cygwin64\tmp\ccUwsVtr.s:755    .text.ADC_AnalogWatchdogSingleChannelConfig:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:760    .text.ADC_AnalogWatchdogSingleChannelConfig:00000000 ADC_AnalogWatchdogSingleChannelConfig
-C:\cygwin64\tmp\ccUwsVtr.s:771    .text.ADC_TempSensorVrefintCmd:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:776    .text.ADC_TempSensorVrefintCmd:00000000 ADC_TempSensorVrefintCmd
-C:\cygwin64\tmp\ccUwsVtr.s:793    .text.ADC_TempSensorVrefintCmd:00000018 $d
-C:\cygwin64\tmp\ccUwsVtr.s:796    .text.ADC_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:801    .text.ADC_GetFlagStatus:00000000 ADC_GetFlagStatus
-C:\cygwin64\tmp\ccUwsVtr.s:813    .text.ADC_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:818    .text.ADC_ClearFlag:00000000 ADC_ClearFlag
-C:\cygwin64\tmp\ccUwsVtr.s:827    .text.ADC_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:832    .text.ADC_GetITStatus:00000000 ADC_GetITStatus
-C:\cygwin64\tmp\ccUwsVtr.s:849    .text.ADC_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccUwsVtr.s:854    .text.ADC_ClearITPendingBit:00000000 ADC_ClearITPendingBit
+C:\cygwin64\tmp\ccDjdL3I.s:676    .text.ADC_SetInjectedOffset:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:681    .text.ADC_SetInjectedOffset:00000000 ADC_SetInjectedOffset
+C:\cygwin64\tmp\ccDjdL3I.s:699    .text.ADC_GetInjectedConversionValue:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:704    .text.ADC_GetInjectedConversionValue:00000000 ADC_GetInjectedConversionValue
+C:\cygwin64\tmp\ccDjdL3I.s:724    .text.ADC_AnalogWatchdogCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:729    .text.ADC_AnalogWatchdogCmd:00000000 ADC_AnalogWatchdogCmd
+C:\cygwin64\tmp\ccDjdL3I.s:741    .text.ADC_AnalogWatchdogThresholdsConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:746    .text.ADC_AnalogWatchdogThresholdsConfig:00000000 ADC_AnalogWatchdogThresholdsConfig
+C:\cygwin64\tmp\ccDjdL3I.s:755    .text.ADC_AnalogWatchdogSingleChannelConfig:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:760    .text.ADC_AnalogWatchdogSingleChannelConfig:00000000 ADC_AnalogWatchdogSingleChannelConfig
+C:\cygwin64\tmp\ccDjdL3I.s:771    .text.ADC_TempSensorVrefintCmd:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:776    .text.ADC_TempSensorVrefintCmd:00000000 ADC_TempSensorVrefintCmd
+C:\cygwin64\tmp\ccDjdL3I.s:793    .text.ADC_TempSensorVrefintCmd:00000018 $d
+C:\cygwin64\tmp\ccDjdL3I.s:796    .text.ADC_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:801    .text.ADC_GetFlagStatus:00000000 ADC_GetFlagStatus
+C:\cygwin64\tmp\ccDjdL3I.s:813    .text.ADC_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:818    .text.ADC_ClearFlag:00000000 ADC_ClearFlag
+C:\cygwin64\tmp\ccDjdL3I.s:827    .text.ADC_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:832    .text.ADC_GetITStatus:00000000 ADC_GetITStatus
+C:\cygwin64\tmp\ccDjdL3I.s:849    .text.ADC_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccDjdL3I.s:854    .text.ADC_ClearITPendingBit:00000000 ADC_ClearITPendingBit
 
 UNDEFINED SYMBOLS
 RCC_APB2PeriphResetCmd

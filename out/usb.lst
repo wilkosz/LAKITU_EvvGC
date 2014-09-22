@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccxNR9mc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccxNR9mc.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 1
  112 0022 FFF7FEFF 		bl	RingBufferSize	@
  113 0026 95FBF0F3 		sdiv	r3, r5, r0	@ tmp139, D.7221,
  114 002a 03FB1050 		mls	r0, r3, r0, r5	@ D.7221, tmp139,, D.7221
-ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccxNR9mc.s 			page 3
 
 
  115 002e 2060     		str	r0, [r4]	@ D.7221, RingBufferUSBTX.Read
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 1
  169 000a 1A60     		str	r2, [r3]	@ tmp114, packetSent
  170 000c 0860     		str	r0, [r1]	@ tmp112, USBCallBackCalled
  171 000e FFF7FEFF 		bl	millis	@
-ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccxNR9mc.s 			page 4
 
 
  172 0012 054B     		ldr	r3, .L20+8	@ tmp115,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 1
  226              	.L26:
  227 0018 2046     		mov	r0, r4	@, len
  228 001a 38BD     		pop	{r3, r4, r5, pc}	@
-ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccxNR9mc.s 			page 5
 
 
  229              	.L31:
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 1
  283              		@ args = 0, pretend = 0, frame = 0
  284              		@ frame_needed = 0, uses_anonymous_args = 0
  285 0000 054B     		ldr	r3, .L39	@ tmp116,
-ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccxNR9mc.s 			page 6
 
 
  286 0002 10B5     		push	{r4, lr}	@
@@ -343,46 +343,46 @@ ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 1
  325              	USBCallBackCalled:
  326 0000 00000000 		.space	4
  327              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc9VwXn7.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccxNR9mc.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb.c
-C:\cygwin64\tmp\cc9VwXn7.s:69     .text.usbOverrun:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:74     .text.usbOverrun:00000000 usbOverrun
-C:\cygwin64\tmp\cc9VwXn7.s:84     .text.usbOverrun:00000008 $d
+C:\cygwin64\tmp\ccxNR9mc.s:69     .text.usbOverrun:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:74     .text.usbOverrun:00000000 usbOverrun
+C:\cygwin64\tmp\ccxNR9mc.s:84     .text.usbOverrun:00000008 $d
                             *COM*:00000210 RingBufferUSBTX
-C:\cygwin64\tmp\cc9VwXn7.s:87     .text.USBPushTXData:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:92     .text.USBPushTXData:00000000 USBPushTXData
-C:\cygwin64\tmp\cc9VwXn7.s:127    .text.USBPushTXData:00000040 $d
-C:\cygwin64\tmp\cc9VwXn7.s:130    .text.USBPushTX:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:135    .text.USBPushTX:00000000 USBPushTX
-C:\cygwin64\tmp\cc9VwXn7.s:152    .text.USBPushTX:0000001c $d
-C:\cygwin64\tmp\cc9VwXn7.s:156    .text.EP1_IN_Callback:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:161    .text.EP1_IN_Callback:00000000 EP1_IN_Callback
-C:\cygwin64\tmp\cc9VwXn7.s:179    .text.EP1_IN_Callback:00000020 $d
-C:\cygwin64\tmp\cc9VwXn7.s:184    .text.setupUSB:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:189    .text.setupUSB:00000000 setupUSB
-C:\cygwin64\tmp\cc9VwXn7.s:204    .text.setupUSB:00000020 $d
-C:\cygwin64\tmp\cc9VwXn7.s:208    .text.usbSendBytes:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:213    .text.usbSendBytes:00000000 usbSendBytes
-C:\cygwin64\tmp\cc9VwXn7.s:232    .text.usbSendBytes:0000001c $d
-C:\cygwin64\tmp\cc9VwXn7.s:235    .text.usbEnableBlockingTx:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:240    .text.usbEnableBlockingTx:00000000 usbEnableBlockingTx
-C:\cygwin64\tmp\cc9VwXn7.s:247    .text.usbDisableBlockingTx:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:252    .text.usbDisableBlockingTx:00000000 usbDisableBlockingTx
-C:\cygwin64\tmp\cc9VwXn7.s:259    .text.usbBytesAvailable:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:264    .text.usbBytesAvailable:00000000 usbBytesAvailable
-C:\cygwin64\tmp\cc9VwXn7.s:274    .text.usbBytesAvailable:00000008 $d
-C:\cygwin64\tmp\cc9VwXn7.s:277    .text.usbReceiveBytes:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:282    .text.usbReceiveBytes:00000000 usbReceiveBytes
-C:\cygwin64\tmp\cc9VwXn7.s:298    .text.usbReceiveBytes:00000018 $d
-C:\cygwin64\tmp\cc9VwXn7.s:301    .text.usbDsbISR:00000000 $t
-C:\cygwin64\tmp\cc9VwXn7.s:306    .text.usbDsbISR:00000000 usbDsbISR
-C:\cygwin64\tmp\cc9VwXn7.s:314    .bss.lastCallbackTime:00000000 $d
-C:\cygwin64\tmp\cc9VwXn7.s:318    .bss.lastCallbackTime:00000000 lastCallbackTime
-C:\cygwin64\tmp\cc9VwXn7.s:321    .bss.USBCallBackCalled:00000000 $d
-C:\cygwin64\tmp\cc9VwXn7.s:325    .bss.USBCallBackCalled:00000000 USBCallBackCalled
+C:\cygwin64\tmp\ccxNR9mc.s:87     .text.USBPushTXData:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:92     .text.USBPushTXData:00000000 USBPushTXData
+C:\cygwin64\tmp\ccxNR9mc.s:127    .text.USBPushTXData:00000040 $d
+C:\cygwin64\tmp\ccxNR9mc.s:130    .text.USBPushTX:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:135    .text.USBPushTX:00000000 USBPushTX
+C:\cygwin64\tmp\ccxNR9mc.s:152    .text.USBPushTX:0000001c $d
+C:\cygwin64\tmp\ccxNR9mc.s:156    .text.EP1_IN_Callback:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:161    .text.EP1_IN_Callback:00000000 EP1_IN_Callback
+C:\cygwin64\tmp\ccxNR9mc.s:179    .text.EP1_IN_Callback:00000020 $d
+C:\cygwin64\tmp\ccxNR9mc.s:184    .text.setupUSB:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:189    .text.setupUSB:00000000 setupUSB
+C:\cygwin64\tmp\ccxNR9mc.s:204    .text.setupUSB:00000020 $d
+C:\cygwin64\tmp\ccxNR9mc.s:208    .text.usbSendBytes:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:213    .text.usbSendBytes:00000000 usbSendBytes
+C:\cygwin64\tmp\ccxNR9mc.s:232    .text.usbSendBytes:0000001c $d
+C:\cygwin64\tmp\ccxNR9mc.s:235    .text.usbEnableBlockingTx:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:240    .text.usbEnableBlockingTx:00000000 usbEnableBlockingTx
+C:\cygwin64\tmp\ccxNR9mc.s:247    .text.usbDisableBlockingTx:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:252    .text.usbDisableBlockingTx:00000000 usbDisableBlockingTx
+C:\cygwin64\tmp\ccxNR9mc.s:259    .text.usbBytesAvailable:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:264    .text.usbBytesAvailable:00000000 usbBytesAvailable
+C:\cygwin64\tmp\ccxNR9mc.s:274    .text.usbBytesAvailable:00000008 $d
+C:\cygwin64\tmp\ccxNR9mc.s:277    .text.usbReceiveBytes:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:282    .text.usbReceiveBytes:00000000 usbReceiveBytes
+C:\cygwin64\tmp\ccxNR9mc.s:298    .text.usbReceiveBytes:00000018 $d
+C:\cygwin64\tmp\ccxNR9mc.s:301    .text.usbDsbISR:00000000 $t
+C:\cygwin64\tmp\ccxNR9mc.s:306    .text.usbDsbISR:00000000 usbDsbISR
+C:\cygwin64\tmp\ccxNR9mc.s:314    .bss.lastCallbackTime:00000000 $d
+C:\cygwin64\tmp\ccxNR9mc.s:318    .bss.lastCallbackTime:00000000 lastCallbackTime
+C:\cygwin64\tmp\ccxNR9mc.s:321    .bss.USBCallBackCalled:00000000 $d
+C:\cygwin64\tmp\ccxNR9mc.s:325    .bss.USBCallBackCalled:00000000 USBCallBackCalled
 
 UNDEFINED SYMBOLS
 CDC_Send_DATA

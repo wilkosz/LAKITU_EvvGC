@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  112              	.L9:
  113 0052 4FF40030 		mov	r0, #131072	@,
  114 0056 0121     		movs	r1, #1	@,
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 3
 
 
  115 0058 FFF7FEFF 		bl	RCC_APB1PeriphResetCmd	@
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  169 0020 22F4B052 		bic	r2, r2, #5632	@ tmp173, D.7014,
  170 0024 0B43     		orrs	r3, r3, r1	@, tmp171, tmp168, USART_InitStruct_9(D)->USART_Mode
  171 0026 22F00C02 		bic	r2, r2, #12	@ tmp172, tmp173,
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 4
 
 
  172 002a 1343     		orrs	r3, r3, r2	@, tmp176, tmp171, tmp172
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  226 00aa 92B2     		uxth	r2, r2	@ D.7014, tmpreg
  227 00ac 2281     		strh	r2, [r4, #8]	@ movhi	@ D.7014, USARTx_10(D)->BRR
  228 00ae 07B0     		add	sp, sp, #28	@,,
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 5
 
 
  229              		@ sp needed	@
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  283 0020 7047     		bx	lr	@
  284              		.size	USART_ClockInit, .-USART_ClockInit
  285 0022 00BF     		.section	.text.USART_ClockStructInit,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 6
 
 
  286              		.align	2
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  340 000e 04FA03F3 		lsl	r3, r4, r3	@ itmask, tmp132, itpos.0
  341 0012 10D0     		beq	.L37	@,
  342 0014 0229     		cmp	r1, #2	@ usartreg,
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 7
 
 
  343 0016 0CBF     		ite	eq
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  397 000a 0382     		strh	r3, [r0, #16]	@ movhi	@ D.7037, USARTx_2(D)->CR2
  398 000c 038A     		ldrh	r3, [r0, #16]	@, USARTx_2(D)->CR2
  399 000e 9BB2     		uxth	r3, r3	@ D.7037, USARTx_2(D)->CR2
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 8
 
 
  400 0010 1943     		orrs	r1, r1, r3	@, D.7037, USART_Address, D.7037
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  454              	USART_LINBreakDetectLengthConfig:
  455              		@ args = 0, pretend = 0, frame = 0
  456              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 9
 
 
  457              		@ link register save eliminated.
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  511              		.type	USART_ReceiveData, %function
  512              	USART_ReceiveData:
  513              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 10
 
 
  514              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  568 0008 038B     		ldrh	r3, [r0, #24]	@, USARTx_2(D)->GTPR
  569 000a 9BB2     		uxth	r3, r3	@ D.7065, USARTx_2(D)->GTPR
  570 000c 1943     		orrs	r1, r1, r3	@, D.7065, USART_Prescaler, D.7065
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 11
 
 
  571 000e 0183     		strh	r1, [r0, #24]	@ movhi	@ D.7065, USARTx_2(D)->GTPR
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  625              		.type	USART_HalfDuplexCmd, %function
  626              	USART_HalfDuplexCmd:
  627              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 12
 
 
  628              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  682              	.L78:
  683 0010 9BB2     		uxth	r3, r3	@ D.7080, USARTx_4(D)->CR3
  684 0012 43F40063 		orr	r3, r3, #2048	@ D.7080, D.7080,
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 13
 
 
  685 0016 8382     		strh	r3, [r0, #20]	@ movhi	@ D.7080,
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  739              		@ args = 0, pretend = 0, frame = 0
  740              		@ frame_needed = 0, uses_anonymous_args = 0
  741              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 14
 
 
  742 0000 0388     		ldrh	r3, [r0]	@, USARTx_3(D)->SR
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  796 0032 0020     		moveq	r0, #0	@, bitstatus
  797 0034 0120     		movne	r0, #1	@, bitstatus
  798 0036 5DF8044B 		ldr	r4, [sp], #4	@,
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 15
 
 
  799 003a 7047     		bx	lr	@
@@ -871,74 +871,74 @@ ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 1
  826 000c 7047     		bx	lr	@
  827              		.size	USART_ClearITPendingBit, .-USART_ClearITPendingBit
  828 000e 00BF     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_usart.c
-C:\cygwin64\tmp\cc7EkZTd.s:71     .text.USART_DeInit:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:76     .text.USART_DeInit:00000000 USART_DeInit
-C:\cygwin64\tmp\cc7EkZTd.s:139    .text.USART_DeInit:0000009c $d
-C:\cygwin64\tmp\cc7EkZTd.s:146    .text.USART_Init:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:151    .text.USART_Init:00000000 USART_Init
-C:\cygwin64\tmp\cc7EkZTd.s:234    .text.USART_Init:000000b4 $d
-C:\cygwin64\tmp\cc7EkZTd.s:238    .text.USART_StructInit:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:243    .text.USART_StructInit:00000000 USART_StructInit
-C:\cygwin64\tmp\cc7EkZTd.s:259    .text.USART_ClockInit:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:264    .text.USART_ClockInit:00000000 USART_ClockInit
-C:\cygwin64\tmp\cc7EkZTd.s:286    .text.USART_ClockStructInit:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:291    .text.USART_ClockStructInit:00000000 USART_ClockStructInit
-C:\cygwin64\tmp\cc7EkZTd.s:303    .text.USART_Cmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:308    .text.USART_Cmd:00000000 USART_Cmd
-C:\cygwin64\tmp\cc7EkZTd.s:326    .text.USART_ITConfig:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:331    .text.USART_ITConfig:00000000 USART_ITConfig
-C:\cygwin64\tmp\cc7EkZTd.s:363    .text.USART_DMACmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:368    .text.USART_DMACmd:00000000 USART_DMACmd
-C:\cygwin64\tmp\cc7EkZTd.s:384    .text.USART_SetAddress:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:389    .text.USART_SetAddress:00000000 USART_SetAddress
-C:\cygwin64\tmp\cc7EkZTd.s:405    .text.USART_WakeUpConfig:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:410    .text.USART_WakeUpConfig:00000000 USART_WakeUpConfig
-C:\cygwin64\tmp\cc7EkZTd.s:426    .text.USART_ReceiverWakeUpCmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:431    .text.USART_ReceiverWakeUpCmd:00000000 USART_ReceiverWakeUpCmd
-C:\cygwin64\tmp\cc7EkZTd.s:449    .text.USART_LINBreakDetectLengthConfig:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:454    .text.USART_LINBreakDetectLengthConfig:00000000 USART_LINBreakDetectLengthConfig
-C:\cygwin64\tmp\cc7EkZTd.s:470    .text.USART_LINCmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:475    .text.USART_LINCmd:00000000 USART_LINCmd
-C:\cygwin64\tmp\cc7EkZTd.s:493    .text.USART_SendData:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:498    .text.USART_SendData:00000000 USART_SendData
-C:\cygwin64\tmp\cc7EkZTd.s:507    .text.USART_ReceiveData:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:512    .text.USART_ReceiveData:00000000 USART_ReceiveData
-C:\cygwin64\tmp\cc7EkZTd.s:521    .text.USART_SendBreak:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:526    .text.USART_SendBreak:00000000 USART_SendBreak
-C:\cygwin64\tmp\cc7EkZTd.s:537    .text.USART_SetGuardTime:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:542    .text.USART_SetGuardTime:00000000 USART_SetGuardTime
-C:\cygwin64\tmp\cc7EkZTd.s:556    .text.USART_SetPrescaler:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:561    .text.USART_SetPrescaler:00000000 USART_SetPrescaler
-C:\cygwin64\tmp\cc7EkZTd.s:575    .text.USART_SmartCardCmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:580    .text.USART_SmartCardCmd:00000000 USART_SmartCardCmd
-C:\cygwin64\tmp\cc7EkZTd.s:598    .text.USART_SmartCardNACKCmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:603    .text.USART_SmartCardNACKCmd:00000000 USART_SmartCardNACKCmd
-C:\cygwin64\tmp\cc7EkZTd.s:621    .text.USART_HalfDuplexCmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:626    .text.USART_HalfDuplexCmd:00000000 USART_HalfDuplexCmd
-C:\cygwin64\tmp\cc7EkZTd.s:644    .text.USART_OverSampling8Cmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:649    .text.USART_OverSampling8Cmd:00000000 USART_OverSampling8Cmd
-C:\cygwin64\tmp\cc7EkZTd.s:666    .text.USART_OneBitMethodCmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:671    .text.USART_OneBitMethodCmd:00000000 USART_OneBitMethodCmd
-C:\cygwin64\tmp\cc7EkZTd.s:689    .text.USART_IrDAConfig:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:694    .text.USART_IrDAConfig:00000000 USART_IrDAConfig
-C:\cygwin64\tmp\cc7EkZTd.s:710    .text.USART_IrDACmd:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:715    .text.USART_IrDACmd:00000000 USART_IrDACmd
-C:\cygwin64\tmp\cc7EkZTd.s:733    .text.USART_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:738    .text.USART_GetFlagStatus:00000000 USART_GetFlagStatus
-C:\cygwin64\tmp\cc7EkZTd.s:750    .text.USART_ClearFlag:00000000 $t
-ARM GAS  C:\cygwin64\tmp\cc7EkZTd.s 			page 17
+C:\cygwin64\tmp\ccIPOITd.s:71     .text.USART_DeInit:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:76     .text.USART_DeInit:00000000 USART_DeInit
+C:\cygwin64\tmp\ccIPOITd.s:139    .text.USART_DeInit:0000009c $d
+C:\cygwin64\tmp\ccIPOITd.s:146    .text.USART_Init:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:151    .text.USART_Init:00000000 USART_Init
+C:\cygwin64\tmp\ccIPOITd.s:234    .text.USART_Init:000000b4 $d
+C:\cygwin64\tmp\ccIPOITd.s:238    .text.USART_StructInit:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:243    .text.USART_StructInit:00000000 USART_StructInit
+C:\cygwin64\tmp\ccIPOITd.s:259    .text.USART_ClockInit:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:264    .text.USART_ClockInit:00000000 USART_ClockInit
+C:\cygwin64\tmp\ccIPOITd.s:286    .text.USART_ClockStructInit:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:291    .text.USART_ClockStructInit:00000000 USART_ClockStructInit
+C:\cygwin64\tmp\ccIPOITd.s:303    .text.USART_Cmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:308    .text.USART_Cmd:00000000 USART_Cmd
+C:\cygwin64\tmp\ccIPOITd.s:326    .text.USART_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:331    .text.USART_ITConfig:00000000 USART_ITConfig
+C:\cygwin64\tmp\ccIPOITd.s:363    .text.USART_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:368    .text.USART_DMACmd:00000000 USART_DMACmd
+C:\cygwin64\tmp\ccIPOITd.s:384    .text.USART_SetAddress:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:389    .text.USART_SetAddress:00000000 USART_SetAddress
+C:\cygwin64\tmp\ccIPOITd.s:405    .text.USART_WakeUpConfig:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:410    .text.USART_WakeUpConfig:00000000 USART_WakeUpConfig
+C:\cygwin64\tmp\ccIPOITd.s:426    .text.USART_ReceiverWakeUpCmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:431    .text.USART_ReceiverWakeUpCmd:00000000 USART_ReceiverWakeUpCmd
+C:\cygwin64\tmp\ccIPOITd.s:449    .text.USART_LINBreakDetectLengthConfig:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:454    .text.USART_LINBreakDetectLengthConfig:00000000 USART_LINBreakDetectLengthConfig
+C:\cygwin64\tmp\ccIPOITd.s:470    .text.USART_LINCmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:475    .text.USART_LINCmd:00000000 USART_LINCmd
+C:\cygwin64\tmp\ccIPOITd.s:493    .text.USART_SendData:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:498    .text.USART_SendData:00000000 USART_SendData
+C:\cygwin64\tmp\ccIPOITd.s:507    .text.USART_ReceiveData:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:512    .text.USART_ReceiveData:00000000 USART_ReceiveData
+C:\cygwin64\tmp\ccIPOITd.s:521    .text.USART_SendBreak:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:526    .text.USART_SendBreak:00000000 USART_SendBreak
+C:\cygwin64\tmp\ccIPOITd.s:537    .text.USART_SetGuardTime:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:542    .text.USART_SetGuardTime:00000000 USART_SetGuardTime
+C:\cygwin64\tmp\ccIPOITd.s:556    .text.USART_SetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:561    .text.USART_SetPrescaler:00000000 USART_SetPrescaler
+C:\cygwin64\tmp\ccIPOITd.s:575    .text.USART_SmartCardCmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:580    .text.USART_SmartCardCmd:00000000 USART_SmartCardCmd
+C:\cygwin64\tmp\ccIPOITd.s:598    .text.USART_SmartCardNACKCmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:603    .text.USART_SmartCardNACKCmd:00000000 USART_SmartCardNACKCmd
+C:\cygwin64\tmp\ccIPOITd.s:621    .text.USART_HalfDuplexCmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:626    .text.USART_HalfDuplexCmd:00000000 USART_HalfDuplexCmd
+C:\cygwin64\tmp\ccIPOITd.s:644    .text.USART_OverSampling8Cmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:649    .text.USART_OverSampling8Cmd:00000000 USART_OverSampling8Cmd
+C:\cygwin64\tmp\ccIPOITd.s:666    .text.USART_OneBitMethodCmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:671    .text.USART_OneBitMethodCmd:00000000 USART_OneBitMethodCmd
+C:\cygwin64\tmp\ccIPOITd.s:689    .text.USART_IrDAConfig:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:694    .text.USART_IrDAConfig:00000000 USART_IrDAConfig
+C:\cygwin64\tmp\ccIPOITd.s:710    .text.USART_IrDACmd:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:715    .text.USART_IrDACmd:00000000 USART_IrDACmd
+C:\cygwin64\tmp\ccIPOITd.s:733    .text.USART_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:738    .text.USART_GetFlagStatus:00000000 USART_GetFlagStatus
+C:\cygwin64\tmp\ccIPOITd.s:750    .text.USART_ClearFlag:00000000 $t
+ARM GAS  C:\cygwin64\tmp\ccIPOITd.s 			page 17
 
 
-C:\cygwin64\tmp\cc7EkZTd.s:755    .text.USART_ClearFlag:00000000 USART_ClearFlag
-C:\cygwin64\tmp\cc7EkZTd.s:765    .text.USART_GetITStatus:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:770    .text.USART_GetITStatus:00000000 USART_GetITStatus
-C:\cygwin64\tmp\cc7EkZTd.s:811    .text.USART_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\cc7EkZTd.s:816    .text.USART_ClearITPendingBit:00000000 USART_ClearITPendingBit
+C:\cygwin64\tmp\ccIPOITd.s:755    .text.USART_ClearFlag:00000000 USART_ClearFlag
+C:\cygwin64\tmp\ccIPOITd.s:765    .text.USART_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:770    .text.USART_GetITStatus:00000000 USART_GetITStatus
+C:\cygwin64\tmp\ccIPOITd.s:811    .text.USART_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccIPOITd.s:816    .text.USART_ClearITPendingBit:00000000 USART_ClearITPendingBit
 
 UNDEFINED SYMBOLS
 RCC_APB1PeriphResetCmd

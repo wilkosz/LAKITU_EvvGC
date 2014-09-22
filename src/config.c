@@ -11,7 +11,7 @@
 #include "eeprom.h"
 #include "comio.h"
 
-char configData[CONFIGDATASIZE] = {05, 011, 005, 21, 30, 19, 25, 25, 20, '1', '0', 64};
+char configData[CONFIGDATASIZE] = {005, 011, 005, 21, 30, 19, 50, 70, 40, '1', '0', 64};
 
 void configLoad(void)
 {

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  112              		.section	.text.Virtual_Com_Port_Status_In,"ax",%progbits
  113              		.align	2
  114              		.global	Virtual_Com_Port_Status_In
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 3
 
 
  115              		.thumb
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  169              		.thumb
  170              		.thumb_func
  171              		.type	Virtual_Com_Port_GetLineCoding, %function
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 4
 
 
  172              	Virtual_Com_Port_GetLineCoding:
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  226 0002 FFF7FEFF 		bl	Get_SerialNum	@
  227 0006 054B     		ldr	r3, .L35	@ tmp112,
  228 0008 0024     		movs	r4, #0	@ tmp113,
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 5
 
 
  229 000a 1B68     		ldr	r3, [r3]	@ pInformation, pInformation
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  283 0054 2046     		mov	r0, r4	@, tmp117
  284 0056 FFF7FEFF 		bl	SetEPRxValid	@
  285 005a 2146     		mov	r1, r4	@, tmp117
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 6
 
 
  286 005c 0120     		movs	r0, #1	@,
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  340              		.align	2
  341              		.global	Virtual_Com_Port_Data_Setup
  342              		.thumb
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 7
 
 
  343              		.thumb_func
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  397 0060 00000000 		.word	Virtual_Com_Port_SetLineCoding
  398              		.size	Virtual_Com_Port_Data_Setup, .-Virtual_Com_Port_Data_Setup
  399              		.section	.text.Virtual_Com_Port_NoData_Setup,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 8
 
 
  400              		.align	2
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  454              		.type	Virtual_Com_Port_GetStringDescriptor, %function
  455              	Virtual_Com_Port_GetStringDescriptor:
  456              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 9
 
 
  457              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  511              		.global	linecoding
  512              		.global	Request
  513              		.section	.data.Config_Descriptor,"aw",%progbits
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 10
 
 
  514              		.align	2
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  568              	@ User_GetStatus:
  569 0010 00000000 		.word	NOP_Process
  570              	@ User_ClearFeature:
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 11
 
 
  571 0014 00000000 		.word	NOP_Process
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  625              		.size	Request, 1
  626              	Request:
  627 0000 00       		.space	1
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 12
 
 
  628              		.section	.data.linecoding,"aw",%progbits
@@ -686,72 +686,72 @@ ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 1
  650              	@ Total_Configuration:
  651 0001 01       		.byte	1
  652 0002 0000     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_prop.c
-C:\cygwin64\tmp\cc3hgayv.s:70     .text.Virtual_Com_Port_SetConfiguration:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:75     .text.Virtual_Com_Port_SetConfiguration:00000000 Virtual_Com_Port_SetConfiguration
-C:\cygwin64\tmp\cc3hgayv.s:90     .text.Virtual_Com_Port_SetConfiguration:00000010 $d
-C:\cygwin64\tmp\cc3hgayv.s:94     .text.Virtual_Com_Port_SetDeviceAddress:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:99     .text.Virtual_Com_Port_SetDeviceAddress:00000000 Virtual_Com_Port_SetDeviceAddress
-C:\cygwin64\tmp\cc3hgayv.s:110    .text.Virtual_Com_Port_SetDeviceAddress:00000008 $d
-C:\cygwin64\tmp\cc3hgayv.s:113    .text.Virtual_Com_Port_Status_In:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:118    .text.Virtual_Com_Port_Status_In:00000000 Virtual_Com_Port_Status_In
-C:\cygwin64\tmp\cc3hgayv.s:132    .text.Virtual_Com_Port_Status_In:00000010 $d
-C:\cygwin64\tmp\cc3hgayv.s:135    .text.Virtual_Com_Port_Status_Out:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:140    .text.Virtual_Com_Port_Status_Out:00000000 Virtual_Com_Port_Status_Out
-C:\cygwin64\tmp\cc3hgayv.s:147    .text.Virtual_Com_Port_Get_Interface_Setting:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:152    .text.Virtual_Com_Port_Get_Interface_Setting:00000000 Virtual_Com_Port_Get_Interface_Setting
-C:\cygwin64\tmp\cc3hgayv.s:167    .text.Virtual_Com_Port_GetLineCoding:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:172    .text.Virtual_Com_Port_GetLineCoding:00000000 Virtual_Com_Port_GetLineCoding
-C:\cygwin64\tmp\cc3hgayv.s:188    .text.Virtual_Com_Port_GetLineCoding:00000010 $d
-C:\cygwin64\tmp\cc3hgayv.s:192    .text.Virtual_Com_Port_SetLineCoding:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:197    .text.Virtual_Com_Port_SetLineCoding:00000000 Virtual_Com_Port_SetLineCoding
-C:\cygwin64\tmp\cc3hgayv.s:213    .text.Virtual_Com_Port_SetLineCoding:00000010 $d
-C:\cygwin64\tmp\cc3hgayv.s:217    .text.Virtual_Com_Port_init:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:222    .text.Virtual_Com_Port_init:00000000 Virtual_Com_Port_init
-C:\cygwin64\tmp\cc3hgayv.s:239    .text.Virtual_Com_Port_init:0000001c $d
-C:\cygwin64\tmp\cc3hgayv.s:243    .text.Virtual_Com_Port_Reset:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:248    .text.Virtual_Com_Port_Reset:00000000 Virtual_Com_Port_Reset
-C:\cygwin64\tmp\cc3hgayv.s:333    .text.Virtual_Com_Port_Reset:000000d8 $d
-C:\cygwin64\tmp\cc3hgayv.s:340    .text.Virtual_Com_Port_Data_Setup:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:345    .text.Virtual_Com_Port_Data_Setup:00000000 Virtual_Com_Port_Data_Setup
-C:\cygwin64\tmp\cc3hgayv.s:394    .text.Virtual_Com_Port_Data_Setup:00000054 $d
-C:\cygwin64\tmp\cc3hgayv.s:400    .text.Virtual_Com_Port_NoData_Setup:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:405    .text.Virtual_Com_Port_NoData_Setup:00000000 Virtual_Com_Port_NoData_Setup
-C:\cygwin64\tmp\cc3hgayv.s:430    .text.Virtual_Com_Port_NoData_Setup:0000002c $d
-C:\cygwin64\tmp\cc3hgayv.s:433    .text.Virtual_Com_Port_GetDeviceDescriptor:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:438    .text.Virtual_Com_Port_GetDeviceDescriptor:00000000 Virtual_Com_Port_GetDeviceDescriptor
-C:\cygwin64\tmp\cc3hgayv.s:447    .text.Virtual_Com_Port_GetDeviceDescriptor:00000008 $d
-C:\cygwin64\tmp\cc3hgayv.s:450    .text.Virtual_Com_Port_GetStringDescriptor:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:455    .text.Virtual_Com_Port_GetStringDescriptor:00000000 Virtual_Com_Port_GetStringDescriptor
-C:\cygwin64\tmp\cc3hgayv.s:473    .text.Virtual_Com_Port_GetStringDescriptor:00000018 $d
-C:\cygwin64\tmp\cc3hgayv.s:477    .text.Virtual_Com_Port_GetConfigDescriptor:00000000 $t
-C:\cygwin64\tmp\cc3hgayv.s:482    .text.Virtual_Com_Port_GetConfigDescriptor:00000000 Virtual_Com_Port_GetConfigDescriptor
-C:\cygwin64\tmp\cc3hgayv.s:502    .text.Virtual_Com_Port_GetConfigDescriptor:00000024 $d
-C:\cygwin64\tmp\cc3hgayv.s:601    .data.String_Descriptor:00000000 String_Descriptor
-C:\cygwin64\tmp\cc3hgayv.s:518    .data.Config_Descriptor:00000000 Config_Descriptor
-C:\cygwin64\tmp\cc3hgayv.s:590    .data.Device_Descriptor:00000000 Device_Descriptor
-C:\cygwin64\tmp\cc3hgayv.s:559    .data.User_Standard_Requests:00000000 User_Standard_Requests
-C:\cygwin64\tmp\cc3hgayv.s:529    .data.Device_Property:00000000 Device_Property
-C:\cygwin64\tmp\cc3hgayv.s:647    .data.Device_Table:00000000 Device_Table
-C:\cygwin64\tmp\cc3hgayv.s:633    .data.linecoding:00000000 linecoding
-C:\cygwin64\tmp\cc3hgayv.s:626    .bss.Request:00000000 Request
-C:\cygwin64\tmp\cc3hgayv.s:514    .data.Config_Descriptor:00000000 $d
-C:\cygwin64\tmp\cc3hgayv.s:525    .data.Device_Property:00000000 $d
-C:\cygwin64\tmp\cc3hgayv.s:556    .data.User_Standard_Requests:00000000 $d
-C:\cygwin64\tmp\cc3hgayv.s:579    .bss.vcpBootBlockTime:00000000 $d
-C:\cygwin64\tmp\cc3hgayv.s:583    .bss.vcpBootBlockTime:00000000 vcpBootBlockTime
-C:\cygwin64\tmp\cc3hgayv.s:586    .data.Device_Descriptor:00000000 $d
-C:\cygwin64\tmp\cc3hgayv.s:597    .data.String_Descriptor:00000000 $d
-ARM GAS  C:\cygwin64\tmp\cc3hgayv.s 			page 14
+C:\cygwin64\tmp\ccjhkBZG.s:70     .text.Virtual_Com_Port_SetConfiguration:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:75     .text.Virtual_Com_Port_SetConfiguration:00000000 Virtual_Com_Port_SetConfiguration
+C:\cygwin64\tmp\ccjhkBZG.s:90     .text.Virtual_Com_Port_SetConfiguration:00000010 $d
+C:\cygwin64\tmp\ccjhkBZG.s:94     .text.Virtual_Com_Port_SetDeviceAddress:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:99     .text.Virtual_Com_Port_SetDeviceAddress:00000000 Virtual_Com_Port_SetDeviceAddress
+C:\cygwin64\tmp\ccjhkBZG.s:110    .text.Virtual_Com_Port_SetDeviceAddress:00000008 $d
+C:\cygwin64\tmp\ccjhkBZG.s:113    .text.Virtual_Com_Port_Status_In:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:118    .text.Virtual_Com_Port_Status_In:00000000 Virtual_Com_Port_Status_In
+C:\cygwin64\tmp\ccjhkBZG.s:132    .text.Virtual_Com_Port_Status_In:00000010 $d
+C:\cygwin64\tmp\ccjhkBZG.s:135    .text.Virtual_Com_Port_Status_Out:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:140    .text.Virtual_Com_Port_Status_Out:00000000 Virtual_Com_Port_Status_Out
+C:\cygwin64\tmp\ccjhkBZG.s:147    .text.Virtual_Com_Port_Get_Interface_Setting:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:152    .text.Virtual_Com_Port_Get_Interface_Setting:00000000 Virtual_Com_Port_Get_Interface_Setting
+C:\cygwin64\tmp\ccjhkBZG.s:167    .text.Virtual_Com_Port_GetLineCoding:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:172    .text.Virtual_Com_Port_GetLineCoding:00000000 Virtual_Com_Port_GetLineCoding
+C:\cygwin64\tmp\ccjhkBZG.s:188    .text.Virtual_Com_Port_GetLineCoding:00000010 $d
+C:\cygwin64\tmp\ccjhkBZG.s:192    .text.Virtual_Com_Port_SetLineCoding:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:197    .text.Virtual_Com_Port_SetLineCoding:00000000 Virtual_Com_Port_SetLineCoding
+C:\cygwin64\tmp\ccjhkBZG.s:213    .text.Virtual_Com_Port_SetLineCoding:00000010 $d
+C:\cygwin64\tmp\ccjhkBZG.s:217    .text.Virtual_Com_Port_init:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:222    .text.Virtual_Com_Port_init:00000000 Virtual_Com_Port_init
+C:\cygwin64\tmp\ccjhkBZG.s:239    .text.Virtual_Com_Port_init:0000001c $d
+C:\cygwin64\tmp\ccjhkBZG.s:243    .text.Virtual_Com_Port_Reset:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:248    .text.Virtual_Com_Port_Reset:00000000 Virtual_Com_Port_Reset
+C:\cygwin64\tmp\ccjhkBZG.s:333    .text.Virtual_Com_Port_Reset:000000d8 $d
+C:\cygwin64\tmp\ccjhkBZG.s:340    .text.Virtual_Com_Port_Data_Setup:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:345    .text.Virtual_Com_Port_Data_Setup:00000000 Virtual_Com_Port_Data_Setup
+C:\cygwin64\tmp\ccjhkBZG.s:394    .text.Virtual_Com_Port_Data_Setup:00000054 $d
+C:\cygwin64\tmp\ccjhkBZG.s:400    .text.Virtual_Com_Port_NoData_Setup:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:405    .text.Virtual_Com_Port_NoData_Setup:00000000 Virtual_Com_Port_NoData_Setup
+C:\cygwin64\tmp\ccjhkBZG.s:430    .text.Virtual_Com_Port_NoData_Setup:0000002c $d
+C:\cygwin64\tmp\ccjhkBZG.s:433    .text.Virtual_Com_Port_GetDeviceDescriptor:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:438    .text.Virtual_Com_Port_GetDeviceDescriptor:00000000 Virtual_Com_Port_GetDeviceDescriptor
+C:\cygwin64\tmp\ccjhkBZG.s:447    .text.Virtual_Com_Port_GetDeviceDescriptor:00000008 $d
+C:\cygwin64\tmp\ccjhkBZG.s:450    .text.Virtual_Com_Port_GetStringDescriptor:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:455    .text.Virtual_Com_Port_GetStringDescriptor:00000000 Virtual_Com_Port_GetStringDescriptor
+C:\cygwin64\tmp\ccjhkBZG.s:473    .text.Virtual_Com_Port_GetStringDescriptor:00000018 $d
+C:\cygwin64\tmp\ccjhkBZG.s:477    .text.Virtual_Com_Port_GetConfigDescriptor:00000000 $t
+C:\cygwin64\tmp\ccjhkBZG.s:482    .text.Virtual_Com_Port_GetConfigDescriptor:00000000 Virtual_Com_Port_GetConfigDescriptor
+C:\cygwin64\tmp\ccjhkBZG.s:502    .text.Virtual_Com_Port_GetConfigDescriptor:00000024 $d
+C:\cygwin64\tmp\ccjhkBZG.s:601    .data.String_Descriptor:00000000 String_Descriptor
+C:\cygwin64\tmp\ccjhkBZG.s:518    .data.Config_Descriptor:00000000 Config_Descriptor
+C:\cygwin64\tmp\ccjhkBZG.s:590    .data.Device_Descriptor:00000000 Device_Descriptor
+C:\cygwin64\tmp\ccjhkBZG.s:559    .data.User_Standard_Requests:00000000 User_Standard_Requests
+C:\cygwin64\tmp\ccjhkBZG.s:529    .data.Device_Property:00000000 Device_Property
+C:\cygwin64\tmp\ccjhkBZG.s:647    .data.Device_Table:00000000 Device_Table
+C:\cygwin64\tmp\ccjhkBZG.s:633    .data.linecoding:00000000 linecoding
+C:\cygwin64\tmp\ccjhkBZG.s:626    .bss.Request:00000000 Request
+C:\cygwin64\tmp\ccjhkBZG.s:514    .data.Config_Descriptor:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:525    .data.Device_Property:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:556    .data.User_Standard_Requests:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:579    .bss.vcpBootBlockTime:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:583    .bss.vcpBootBlockTime:00000000 vcpBootBlockTime
+C:\cygwin64\tmp\ccjhkBZG.s:586    .data.Device_Descriptor:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:597    .data.String_Descriptor:00000000 $d
+ARM GAS  C:\cygwin64\tmp\ccjhkBZG.s 			page 14
 
 
-C:\cygwin64\tmp\cc3hgayv.s:627    .bss.Request:00000000 $d
-C:\cygwin64\tmp\cc3hgayv.s:629    .data.linecoding:00000000 $d
-C:\cygwin64\tmp\cc3hgayv.s:644    .data.Device_Table:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:627    .bss.Request:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:629    .data.linecoding:00000000 $d
+C:\cygwin64\tmp\ccjhkBZG.s:644    .data.Device_Table:00000000 $d
 
 UNDEFINED SYMBOLS
 Device_Info
