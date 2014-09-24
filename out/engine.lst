@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 2
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -107,18 +107,18 @@ ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
  101 0034 0F49     		ldr	r1, .L2+16	@,
  102 0036 FFF7FEFF 		bl	__aeabi_fdiv	@
  103 003a 0F4E     		ldr	r6, .L2+20	@ tmp140,
- 104 003c 8046     		mov	r8, r0	@ D.5413,
+ 104 003c 8046     		mov	r8, r0	@ D.5423,
  105 003e 3168     		ldr	r1, [r6]	@ float	@, roll_Error_last
  106 0040 2846     		mov	r0, r5	@, tmp130
  107 0042 FFF7FEFF 		bl	__aeabi_fsub	@
- 108 0046 0146     		mov	r1, r0	@ D.5413,
- 109 0048 4046     		mov	r0, r8	@, D.5413
+ 108 0046 0146     		mov	r1, r0	@ D.5423,
+ 109 0048 4046     		mov	r0, r8	@, D.5423
  110 004a FFF7FEFF 		bl	__aeabi_fmul	@
  111 004e 3946     		mov	r1, r7	@, tmp135
  112 0050 3560     		str	r5, [r6]	@ float	@ tmp130, roll_Error_last
  113 0052 FFF7FEFF 		bl	__aeabi_fadd	@
  114 0056 094B     		ldr	r3, .L2+24	@ tmp145,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 3
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 3
 
 
  115 0058 E179     		ldrb	r1, [r4, #7]	@ zero_extendqisi2	@, configData
@@ -167,18 +167,18 @@ ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
  158 0034 0F49     		ldr	r1, .L5+16	@,
  159 0036 FFF7FEFF 		bl	__aeabi_fdiv	@
  160 003a 0F4E     		ldr	r6, .L5+20	@ tmp140,
- 161 003c 8046     		mov	r8, r0	@ D.5418,
+ 161 003c 8046     		mov	r8, r0	@ D.5428,
  162 003e 3168     		ldr	r1, [r6]	@ float	@, pitch_Error_last
  163 0040 2846     		mov	r0, r5	@, tmp130
  164 0042 FFF7FEFF 		bl	__aeabi_fsub	@
- 165 0046 0146     		mov	r1, r0	@ D.5418,
- 166 0048 4046     		mov	r0, r8	@, D.5418
+ 165 0046 0146     		mov	r1, r0	@ D.5428,
+ 166 0048 4046     		mov	r0, r8	@, D.5428
  167 004a FFF7FEFF 		bl	__aeabi_fmul	@
  168 004e 3946     		mov	r1, r7	@, tmp135
  169 0050 3560     		str	r5, [r6]	@ float	@ tmp130, pitch_Error_last
  170 0052 FFF7FEFF 		bl	__aeabi_fadd	@
  171 0056 094B     		ldr	r3, .L5+24	@ tmp145,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 4
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 4
 
 
  172 0058 A179     		ldrb	r1, [r4, #6]	@ zero_extendqisi2	@, configData
@@ -227,18 +227,18 @@ ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
  215 0034 0F49     		ldr	r1, .L8+16	@,
  216 0036 FFF7FEFF 		bl	__aeabi_fdiv	@
  217 003a 0F4E     		ldr	r6, .L8+20	@ tmp140,
- 218 003c 8046     		mov	r8, r0	@ D.5423,
+ 218 003c 8046     		mov	r8, r0	@ D.5433,
  219 003e 3168     		ldr	r1, [r6]	@ float	@, yaw_Error_last
  220 0040 2846     		mov	r0, r5	@, tmp130
  221 0042 FFF7FEFF 		bl	__aeabi_fsub	@
- 222 0046 0146     		mov	r1, r0	@ D.5423,
- 223 0048 4046     		mov	r0, r8	@, D.5423
+ 222 0046 0146     		mov	r1, r0	@ D.5433,
+ 223 0048 4046     		mov	r0, r8	@, D.5433
  224 004a FFF7FEFF 		bl	__aeabi_fmul	@
  225 004e 3946     		mov	r1, r7	@, tmp135
  226 0050 3560     		str	r5, [r6]	@ float	@ tmp130, yaw_Error_last
  227 0052 FFF7FEFF 		bl	__aeabi_fadd	@
  228 0056 094B     		ldr	r3, .L8+24	@ tmp145,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 5
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 5
 
 
  229 0058 217A     		ldrb	r1, [r4, #8]	@ zero_extendqisi2	@, configData
@@ -277,13 +277,13 @@ ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
  262 0010 2946     		mov	r1, r5	@, high
  263 0012 FFF7FEFF 		bl	__aeabi_fcmpgt	@
  264 0016 08B9     		cbnz	r0, .L18	@,
- 265 0018 2046     		mov	r0, r4	@ D.5428, value
+ 265 0018 2046     		mov	r0, r4	@ D.5438, value
  266 001a 70BD     		pop	{r4, r5, r6, pc}	@
  267              	.L18:
- 268 001c 2846     		mov	r0, r5	@ D.5428, high
+ 268 001c 2846     		mov	r0, r5	@ D.5438, high
  269 001e 70BD     		pop	{r4, r5, r6, pc}	@
  270              	.L13:
- 271 0020 3046     		mov	r0, r6	@ D.5428, low
+ 271 0020 3046     		mov	r0, r6	@ D.5438, low
  272 0022 70BD     		pop	{r4, r5, r6, pc}	@
  273              		.size	constrain, .-constrain
  274              		.section	.text.Limit_Pitch,"ax",%progbits
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
  283 0000 38B5     		push	{r3, r4, r5, lr}	@
  284 0002 0D46     		mov	r5, r1	@ pitch, pitch
  285 0004 0446     		mov	r4, r0	@ step, step
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 6
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 6
 
 
  286 0006 0D49     		ldr	r1, .L29	@,
@@ -342,1427 +342,1433 @@ ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 1
  324              	Init_Orientation:
  325              		@ args = 0, pretend = 0, frame = 0
  326              		@ frame_needed = 0, uses_anonymous_args = 0
- 327 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}	@
- 328 0004 1D4D     		ldr	r5, .L34	@ tmp161,
- 329 0006 1E4C     		ldr	r4, .L34+4	@ tmp160,
- 330 0008 9626     		movs	r6, #150	@ D.5439,
+ 327 0000 2DE9F84F 		push	{r3, r4, r5, r6, r7, r8, r9, r10, fp, lr}	@
+ 328 0004 2B4D     		ldr	r5, .L37	@ tmp222,
+ 329 0006 2C4C     		ldr	r4, .L37+4	@ tmp219,
+ 330 0008 9626     		movs	r6, #150	@ D.5487,
  331              	.L33:
- 332 000a 1C48     		ldr	r0, .L34	@,
+ 332 000a 2A48     		ldr	r0, .L37	@,
  333 000c FFF7FEFF 		bl	MPU6050_ACC_get	@
  334 0010 A968     		ldr	r1, [r5, #8]	@ float	@, AccData
  335 0012 2868     		ldr	r0, [r5]	@ float	@, AccData
  336 0014 FFF7FEFF 		bl	atan2f	@
  337 0018 A968     		ldr	r1, [r5, #8]	@ float	@, AccData
- 338 001a 8046     		mov	r8, r0	@ D.5440,
+ 338 001a 8046     		mov	r8, r0	@ D.5488,
  339 001c 6868     		ldr	r0, [r5, #4]	@ float	@, AccData
  340 001e FFF7FEFF 		bl	atan2f	@
- 341 0022 1849     		ldr	r1, .L34+8	@,
- 342 0024 0746     		mov	r7, r0	@ D.5440,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 7
+ 341 0022 2649     		ldr	r1, .L37+8	@,
+ 342 0024 0746     		mov	r7, r0	@ D.5488,
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 7
 
 
  343 0026 2068     		ldr	r0, [r4]	@ float	@, AccAngleSmooth
  344 0028 FFF7FEFF 		bl	__aeabi_fmul	@
- 345 002c 4146     		mov	r1, r8	@, D.5440
+ 345 002c 4146     		mov	r1, r8	@, D.5488
  346 002e FFF7FEFF 		bl	__aeabi_fsub	@
- 347 0032 1549     		ldr	r1, .L34+12	@,
+ 347 0032 2349     		ldr	r1, .L37+12	@,
  348 0034 FFF7FEFF 		bl	__aeabi_fdiv	@
- 349 0038 1249     		ldr	r1, .L34+8	@,
+ 349 0038 2049     		ldr	r1, .L37+8	@,
  350 003a 2060     		str	r0, [r4]	@ float	@, AccAngleSmooth
  351 003c 6068     		ldr	r0, [r4, #4]	@ float	@, AccAngleSmooth
  352 003e FFF7FEFF 		bl	__aeabi_fmul	@
- 353 0042 0146     		mov	r1, r0	@ D.5440,
- 354 0044 3846     		mov	r0, r7	@, D.5440
+ 353 0042 0146     		mov	r1, r0	@ D.5488,
+ 354 0044 3846     		mov	r0, r7	@, D.5488
  355 0046 FFF7FEFF 		bl	__aeabi_fadd	@
- 356 004a 0F49     		ldr	r1, .L34+12	@,
+ 356 004a 1D49     		ldr	r1, .L37+12	@,
  357 004c FFF7FEFF 		bl	__aeabi_fdiv	@
  358 0050 6060     		str	r0, [r4, #4]	@ float	@, AccAngleSmooth
  359 0052 0120     		movs	r0, #1	@,
  360 0054 FFF7FEFF 		bl	Delay_ms	@
- 361 0058 013E     		subs	r6, r6, #1	@ D.5439, D.5439,
- 362 005a 094F     		ldr	r7, .L34+4	@ tmp136,
+ 361 0058 013E     		subs	r6, r6, #1	@ D.5487, D.5487,
+ 362 005a 174F     		ldr	r7, .L37+4	@ tmp183,
  363 005c D5D1     		bne	.L33	@,
- 364 005e 0B4A     		ldr	r2, .L34+16	@ tmp146,
- 365 0060 0B4B     		ldr	r3, .L34+20	@ tmp154,
- 366 0062 0C49     		ldr	r1, .L34+24	@ tmp155,
- 367 0064 7E68     		ldr	r6, [r7, #4]	@ float	@ AccAngleSmooth, AccAngleSmooth
- 368 0066 3D68     		ldr	r5, [r7]	@ float	@ AccAngleSmooth, AccAngleSmooth
- 369 0068 0B48     		ldr	r0, .L34+28	@ tmp159,
- 370 006a 0024     		movs	r4, #0	@ tmp153,
- 371 006c 5660     		str	r6, [r2, #4]	@ float	@ AccAngleSmooth, CameraOrient
- 372 006e 1560     		str	r5, [r2]	@ float	@ AccAngleSmooth, CameraOrient
- 373 0070 9460     		str	r4, [r2, #8]	@ float	@ tmp153, CameraOrient
- 374 0072 9860     		str	r0, [r3, #8]	@ float	@ tmp159, LakituAngles
- 375 0074 5960     		str	r1, [r3, #4]	@ float	@ tmp155, LakituAngles
- 376 0076 1960     		str	r1, [r3]	@ float	@ tmp155, LakituAngles
- 377 0078 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}	@
- 378              	.L35:
- 379              		.align	2
- 380              	.L34:
- 381 007c 00000000 		.word	.LANCHOR6
- 382 0080 00000000 		.word	AccAngleSmooth
- 383 0084 00001543 		.word	1125449728
- 384 0088 00001643 		.word	1125515264
- 385 008c 00000000 		.word	CameraOrient
- 386 0090 00000000 		.word	LakituAngles
- 387 0094 0000B442 		.word	1119092736
- 388 0098 00003443 		.word	1127481344
- 389              		.size	Init_Orientation, .-Init_Orientation
- 390              		.section	.text.Get_Orientation,"ax",%progbits
- 391              		.align	2
- 392              		.global	Get_Orientation
- 393              		.thumb
- 394              		.thumb_func
- 395              		.type	Get_Orientation, %function
- 396              	Get_Orientation:
- 397              		@ args = 4, pretend = 0, frame = 0
- 398              		@ frame_needed = 0, uses_anonymous_args = 0
- 399 0000 2DE9F84F 		push	{r3, r4, r5, r6, r7, r8, r9, r10, fp, lr}	@
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 8
+ 364 005e 194D     		ldr	r5, .L37+16	@ tmp201,
+ 365 0060 D7F804B0 		ldr	fp, [r7, #4]	@ float	@ AccAngleSmooth, AccAngleSmooth
+ 366 0064 D7F800A0 		ldr	r10, [r7]	@ float	@ AccAngleSmooth, AccAngleSmooth
+ 367 0068 DFF870C0 		ldr	ip, .L37+40	@ tmp202,
+ 368 006c 164F     		ldr	r7, .L37+20	@,
+ 369 006e DFF87090 		ldr	r9, .L37+44	@ tmp206,
+ 370 0072 3346     		mov	r3, r6	@ ivtmp.84, D.5487
+ 371 0074 4FF00008 		mov	r8, #0	@ tmp200,
+ 372 0078 144E     		ldr	r6, .L37+24	@ tmp221,
+ 373 007a 154C     		ldr	r4, .L37+28	@ tmp220,
+ 374 007c 1548     		ldr	r0, .L37+32	@ tmp223,
+ 375 007e 1649     		ldr	r1, .L37+36	@ tmp224,
+ 376 0080 1A46     		mov	r2, r3	@ tmp226, ivtmp.84
+ 377 0082 C7F804B0 		str	fp, [r7, #4]	@ float	@ AccAngleSmooth, CameraOrient
+ 378 0086 C7F800A0 		str	r10, [r7]	@ float	@ AccAngleSmooth, CameraOrient
+ 379 008a C7F80880 		str	r8, [r7, #8]	@ float	@ tmp200, CameraOrient
+ 380 008e C5F80890 		str	r9, [r5, #8]	@ float	@ tmp206, LakituAngles
+ 381 0092 C5F804C0 		str	ip, [r5, #4]	@ float	@ tmp202, LakituAngles
+ 382 0096 C5F800C0 		str	ip, [r5]	@ float	@ tmp202, LakituAngles
+ 383              	.L35:
+ 384 009a 46F80380 		str	r8, [r6, r3]	@ float	@ tmp225, MEM[symbol: orientation, index: ivtmp.84_43, offset: 0B]
+ 385 009e E250     		str	r2, [r4, r3]	@ tmp226, MEM[symbol: time, index: ivtmp.84_43, offset: 0B]
+ 386 00a0 40F80380 		str	r8, [r0, r3]	@ float	@ tmp225, MEM[symbol: control_sig, index: ivtmp.84_43, offset: 0B]
+ 387 00a4 41F80380 		str	r8, [r1, r3]	@ float	@ tmp225, MEM[symbol: setpoint, index: ivtmp.84_43, offset: 0B]
+ 388 00a8 0433     		adds	r3, r3, #4	@ ivtmp.84, ivtmp.84,
+ 389 00aa B3F57A6F 		cmp	r3, #4000	@ ivtmp.84,
+ 390 00ae F4D1     		bne	.L35	@,
+ 391 00b0 BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}	@
+ 392              	.L38:
+ 393              		.align	2
+ 394              	.L37:
+ 395 00b4 00000000 		.word	.LANCHOR6
+ 396 00b8 00000000 		.word	AccAngleSmooth
+ 397 00bc 00001543 		.word	1125449728
+ 398 00c0 00001643 		.word	1125515264
+ 399 00c4 00000000 		.word	LakituAngles
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 8
 
 
- 400 0004 1746     		mov	r7, r2	@ AccData, AccData
- 401 0006 9268     		ldr	r2, [r2, #8]	@ float	@ D.5443, MEM[(float *)AccData_2(D) + 8B]
- 402 0008 0646     		mov	r6, r0	@ SmoothAcc, SmoothAcc
- 403 000a 0C46     		mov	r4, r1	@ Orient, Orient
- 404 000c 1046     		mov	r0, r2	@, D.5443
- 405 000e 1146     		mov	r1, r2	@,
- 406 0010 1D46     		mov	r5, r3	@ GyroData, GyroData
- 407 0012 FFF7FEFF 		bl	__aeabi_fmul	@
- 408 0016 D7F80480 		ldr	r8, [r7, #4]	@ float	@ D.5443, MEM[(float *)AccData_2(D) + 4B]
- 409 001a 8146     		mov	r9, r0	@ D.5443,
- 410 001c 4146     		mov	r1, r8	@,
- 411 001e 4046     		mov	r0, r8	@, D.5443
- 412 0020 FFF7FEFF 		bl	__aeabi_fmul	@
- 413 0024 0146     		mov	r1, r0	@ D.5443,
- 414 0026 4846     		mov	r0, r9	@, D.5443
- 415 0028 FFF7FEFF 		bl	__aeabi_fadd	@
- 416 002c D7F80090 		ldr	r9, [r7]	@ float	@ D.5443, *AccData_2(D)
- 417 0030 DDF82880 		ldr	r8, [sp, #40]	@ float	@ dt, dt
- 418 0034 FFF7FEFF 		bl	sqrtf	@
- 419 0038 0146     		mov	r1, r0	@ D.5443,
- 420 003a 4846     		mov	r0, r9	@, D.5443
- 421 003c FFF7FEFF 		bl	atan2f	@
- 422 0040 B968     		ldr	r1, [r7, #8]	@ float	@, MEM[(float *)AccData_2(D) + 8B]
- 423 0042 8146     		mov	r9, r0	@ D.5443,
- 424 0044 7868     		ldr	r0, [r7, #4]	@ float	@, MEM[(float *)AccData_2(D) + 4B]
- 425 0046 FFF7FEFF 		bl	atan2f	@
- 426 004a 3B49     		ldr	r1, .L37	@,
- 427 004c 0746     		mov	r7, r0	@ D.5443,
- 428 004e 3068     		ldr	r0, [r6]	@ float	@, *SmoothAcc_18(D)
- 429 0050 FFF7FEFF 		bl	__aeabi_fmul	@
- 430 0054 4946     		mov	r1, r9	@, D.5443
- 431 0056 FFF7FEFF 		bl	__aeabi_fsub	@
- 432 005a 3849     		ldr	r1, .L37+4	@,
- 433 005c FFF7FEFF 		bl	__aeabi_fdiv	@
- 434 0060 3549     		ldr	r1, .L37	@,
- 435 0062 3060     		str	r0, [r6]	@ float	@, *SmoothAcc_18(D)
- 436 0064 7068     		ldr	r0, [r6, #4]	@ float	@, MEM[(float *)SmoothAcc_18(D) + 4B]
- 437 0066 FFF7FEFF 		bl	__aeabi_fmul	@
- 438 006a 0146     		mov	r1, r0	@ D.5443,
- 439 006c 3846     		mov	r0, r7	@, D.5443
- 440 006e FFF7FEFF 		bl	__aeabi_fadd	@
- 441 0072 3249     		ldr	r1, .L37+4	@,
- 442 0074 FFF7FEFF 		bl	__aeabi_fdiv	@
- 443 0078 7060     		str	r0, [r6, #4]	@ float	@ tmp179, MEM[(float *)SmoothAcc_18(D) + 4B]
- 444 007a 2968     		ldr	r1, [r5]	@ float	@, *GyroData_29(D)
- 445 007c 8146     		mov	r9, r0	@ tmp179,
- 446 007e 4046     		mov	r0, r8	@, dt
- 447 0080 FFF7FEFF 		bl	__aeabi_fmul	@
- 448 0084 6768     		ldr	r7, [r4, #4]	@ float	@ D.5443, MEM[(float *)Orient_31(D) + 4B]
- 449 0086 0146     		mov	r1, r0	@ D.5443,
- 450 0088 3846     		mov	r0, r7	@, D.5443
- 451 008a FFF7FEFF 		bl	__aeabi_fadd	@
- 452 008e 3946     		mov	r1, r7	@, D.5443
- 453 0090 8246     		mov	r10, r0	@ D.5443,
- 454 0092 4846     		mov	r0, r9	@, tmp179
- 455 0094 FFF7FEFF 		bl	__aeabi_fsub	@
- 456 0098 2949     		ldr	r1, .L37+8	@,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 9
+ 400 00c8 00000000 		.word	CameraOrient
+ 401 00cc 00000000 		.word	orientation
+ 402 00d0 00000000 		.word	time
+ 403 00d4 00000000 		.word	control_sig
+ 404 00d8 00000000 		.word	setpoint
+ 405 00dc 0000B442 		.word	1119092736
+ 406 00e0 00003443 		.word	1127481344
+ 407              		.size	Init_Orientation, .-Init_Orientation
+ 408              		.section	.text.Get_Orientation,"ax",%progbits
+ 409              		.align	2
+ 410              		.global	Get_Orientation
+ 411              		.thumb
+ 412              		.thumb_func
+ 413              		.type	Get_Orientation, %function
+ 414              	Get_Orientation:
+ 415              		@ args = 4, pretend = 0, frame = 0
+ 416              		@ frame_needed = 0, uses_anonymous_args = 0
+ 417 0000 2DE9F84F 		push	{r3, r4, r5, r6, r7, r8, r9, r10, fp, lr}	@
+ 418 0004 1746     		mov	r7, r2	@ AccData, AccData
+ 419 0006 9268     		ldr	r2, [r2, #8]	@ float	@ D.5491, MEM[(float *)AccData_2(D) + 8B]
+ 420 0008 0646     		mov	r6, r0	@ SmoothAcc, SmoothAcc
+ 421 000a 0C46     		mov	r4, r1	@ Orient, Orient
+ 422 000c 1046     		mov	r0, r2	@, D.5491
+ 423 000e 1146     		mov	r1, r2	@,
+ 424 0010 1D46     		mov	r5, r3	@ GyroData, GyroData
+ 425 0012 FFF7FEFF 		bl	__aeabi_fmul	@
+ 426 0016 D7F80480 		ldr	r8, [r7, #4]	@ float	@ D.5491, MEM[(float *)AccData_2(D) + 4B]
+ 427 001a 8146     		mov	r9, r0	@ D.5491,
+ 428 001c 4146     		mov	r1, r8	@,
+ 429 001e 4046     		mov	r0, r8	@, D.5491
+ 430 0020 FFF7FEFF 		bl	__aeabi_fmul	@
+ 431 0024 0146     		mov	r1, r0	@ D.5491,
+ 432 0026 4846     		mov	r0, r9	@, D.5491
+ 433 0028 FFF7FEFF 		bl	__aeabi_fadd	@
+ 434 002c D7F80090 		ldr	r9, [r7]	@ float	@ D.5491, *AccData_2(D)
+ 435 0030 DDF82880 		ldr	r8, [sp, #40]	@ float	@ dt, dt
+ 436 0034 FFF7FEFF 		bl	sqrtf	@
+ 437 0038 0146     		mov	r1, r0	@ D.5491,
+ 438 003a 4846     		mov	r0, r9	@, D.5491
+ 439 003c FFF7FEFF 		bl	atan2f	@
+ 440 0040 B968     		ldr	r1, [r7, #8]	@ float	@, MEM[(float *)AccData_2(D) + 8B]
+ 441 0042 8146     		mov	r9, r0	@ D.5491,
+ 442 0044 7868     		ldr	r0, [r7, #4]	@ float	@, MEM[(float *)AccData_2(D) + 4B]
+ 443 0046 FFF7FEFF 		bl	atan2f	@
+ 444 004a 3B49     		ldr	r1, .L40	@,
+ 445 004c 0746     		mov	r7, r0	@ D.5491,
+ 446 004e 3068     		ldr	r0, [r6]	@ float	@, *SmoothAcc_18(D)
+ 447 0050 FFF7FEFF 		bl	__aeabi_fmul	@
+ 448 0054 4946     		mov	r1, r9	@, D.5491
+ 449 0056 FFF7FEFF 		bl	__aeabi_fsub	@
+ 450 005a 3849     		ldr	r1, .L40+4	@,
+ 451 005c FFF7FEFF 		bl	__aeabi_fdiv	@
+ 452 0060 3549     		ldr	r1, .L40	@,
+ 453 0062 3060     		str	r0, [r6]	@ float	@, *SmoothAcc_18(D)
+ 454 0064 7068     		ldr	r0, [r6, #4]	@ float	@, MEM[(float *)SmoothAcc_18(D) + 4B]
+ 455 0066 FFF7FEFF 		bl	__aeabi_fmul	@
+ 456 006a 0146     		mov	r1, r0	@ D.5491,
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 9
 
 
- 457 009a FFF7FEFF 		bl	__aeabi_fmul	@
- 458 009e 0146     		mov	r1, r0	@ D.5443,
- 459 00a0 5046     		mov	r0, r10	@, D.5443
- 460 00a2 FFF7FEFF 		bl	__aeabi_fadd	@
- 461 00a6 6060     		str	r0, [r4, #4]	@ float	@ tmp184, MEM[(float *)Orient_31(D) + 4B]
- 462 00a8 8146     		mov	r9, r0	@ tmp184,
- 463 00aa FFF7FEFF 		bl	sinf	@
- 464 00ae 0746     		mov	r7, r0	@ D.5443,
- 465 00b0 4846     		mov	r0, r9	@, tmp184
- 466 00b2 FFF7FEFF 		bl	cosf	@
- 467 00b6 8146     		mov	r9, r0	@ D.5443,
- 468 00b8 A868     		ldr	r0, [r5, #8]	@ MEM[(float *)GyroData_29(D) + 8B], MEM[(float *)GyroData_29(D) + 8B]
- 469 00ba 3946     		mov	r1, r7	@, D.5443
- 470 00bc 00F10040 		add	r0, r0, #-2147483648	@ D.5443, MEM[(float *)GyroData_29(D) + 8B],
- 471 00c0 FFF7FEFF 		bl	__aeabi_fmul	@
- 472 00c4 6968     		ldr	r1, [r5, #4]	@ float	@, MEM[(float *)GyroData_29(D) + 4B]
- 473 00c6 8246     		mov	r10, r0	@ D.5443,
- 474 00c8 4846     		mov	r0, r9	@, D.5443
- 475 00ca FFF7FEFF 		bl	__aeabi_fmul	@
- 476 00ce 0146     		mov	r1, r0	@ D.5443,
- 477 00d0 5046     		mov	r0, r10	@, D.5443
- 478 00d2 FFF7FEFF 		bl	__aeabi_fadd	@
- 479 00d6 0146     		mov	r1, r0	@ D.5443,
- 480 00d8 4046     		mov	r0, r8	@, dt
- 481 00da FFF7FEFF 		bl	__aeabi_fmul	@
- 482 00de D4F800A0 		ldr	r10, [r4]	@ float	@ D.5443, *Orient_31(D)
- 483 00e2 0146     		mov	r1, r0	@ D.5443,
- 484 00e4 5046     		mov	r0, r10	@, D.5443
- 485 00e6 FFF7FEFF 		bl	__aeabi_fadd	@
- 486 00ea 5146     		mov	r1, r10	@, D.5443
- 487 00ec 8346     		mov	fp, r0	@ D.5443,
- 488 00ee 3068     		ldr	r0, [r6]	@ float	@, *SmoothAcc_18(D)
- 489 00f0 FFF7FEFF 		bl	__aeabi_fsub	@
- 490 00f4 1249     		ldr	r1, .L37+8	@,
- 491 00f6 FFF7FEFF 		bl	__aeabi_fmul	@
- 492 00fa 0146     		mov	r1, r0	@ D.5443,
- 493 00fc 5846     		mov	r0, fp	@, D.5443
- 494 00fe FFF7FEFF 		bl	__aeabi_fadd	@
- 495 0102 2060     		str	r0, [r4]	@ float	@, *Orient_31(D)
- 496 0104 A968     		ldr	r1, [r5, #8]	@ MEM[(float *)GyroData_29(D) + 8B], MEM[(float *)GyroData_29(D) + 8B]
- 497 0106 4846     		mov	r0, r9	@, D.5443
- 498 0108 01F10041 		add	r1, r1, #-2147483648	@ D.5443, MEM[(float *)GyroData_29(D) + 8B],
- 499 010c FFF7FEFF 		bl	__aeabi_fmul	@
- 500 0110 6968     		ldr	r1, [r5, #4]	@ float	@, MEM[(float *)GyroData_29(D) + 4B]
- 501 0112 0646     		mov	r6, r0	@ D.5443,
- 502 0114 3846     		mov	r0, r7	@, D.5443
- 503 0116 FFF7FEFF 		bl	__aeabi_fmul	@
- 504 011a 0146     		mov	r1, r0	@ D.5443,
- 505 011c 3046     		mov	r0, r6	@, D.5443
- 506 011e FFF7FEFF 		bl	__aeabi_fsub	@
- 507 0122 0146     		mov	r1, r0	@ D.5443,
- 508 0124 4046     		mov	r0, r8	@, dt
- 509 0126 FFF7FEFF 		bl	__aeabi_fmul	@
- 510 012a 0146     		mov	r1, r0	@ D.5443,
- 511 012c A068     		ldr	r0, [r4, #8]	@ float	@, MEM[(float *)Orient_31(D) + 8B]
- 512 012e FFF7FEFF 		bl	__aeabi_fadd	@
- 513 0132 A060     		str	r0, [r4, #8]	@ float	@, MEM[(float *)Orient_31(D) + 8B]
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 10
+ 457 006c 3846     		mov	r0, r7	@, D.5491
+ 458 006e FFF7FEFF 		bl	__aeabi_fadd	@
+ 459 0072 3249     		ldr	r1, .L40+4	@,
+ 460 0074 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 461 0078 7060     		str	r0, [r6, #4]	@ float	@ tmp179, MEM[(float *)SmoothAcc_18(D) + 4B]
+ 462 007a 2968     		ldr	r1, [r5]	@ float	@, *GyroData_29(D)
+ 463 007c 8146     		mov	r9, r0	@ tmp179,
+ 464 007e 4046     		mov	r0, r8	@, dt
+ 465 0080 FFF7FEFF 		bl	__aeabi_fmul	@
+ 466 0084 6768     		ldr	r7, [r4, #4]	@ float	@ D.5491, MEM[(float *)Orient_31(D) + 4B]
+ 467 0086 0146     		mov	r1, r0	@ D.5491,
+ 468 0088 3846     		mov	r0, r7	@, D.5491
+ 469 008a FFF7FEFF 		bl	__aeabi_fadd	@
+ 470 008e 3946     		mov	r1, r7	@, D.5491
+ 471 0090 8246     		mov	r10, r0	@ D.5491,
+ 472 0092 4846     		mov	r0, r9	@, tmp179
+ 473 0094 FFF7FEFF 		bl	__aeabi_fsub	@
+ 474 0098 2949     		ldr	r1, .L40+8	@,
+ 475 009a FFF7FEFF 		bl	__aeabi_fmul	@
+ 476 009e 0146     		mov	r1, r0	@ D.5491,
+ 477 00a0 5046     		mov	r0, r10	@, D.5491
+ 478 00a2 FFF7FEFF 		bl	__aeabi_fadd	@
+ 479 00a6 6060     		str	r0, [r4, #4]	@ float	@ tmp184, MEM[(float *)Orient_31(D) + 4B]
+ 480 00a8 8146     		mov	r9, r0	@ tmp184,
+ 481 00aa FFF7FEFF 		bl	sinf	@
+ 482 00ae 0746     		mov	r7, r0	@ D.5491,
+ 483 00b0 4846     		mov	r0, r9	@, tmp184
+ 484 00b2 FFF7FEFF 		bl	cosf	@
+ 485 00b6 8146     		mov	r9, r0	@ D.5491,
+ 486 00b8 A868     		ldr	r0, [r5, #8]	@ MEM[(float *)GyroData_29(D) + 8B], MEM[(float *)GyroData_29(D) + 8B]
+ 487 00ba 3946     		mov	r1, r7	@, D.5491
+ 488 00bc 00F10040 		add	r0, r0, #-2147483648	@ D.5491, MEM[(float *)GyroData_29(D) + 8B],
+ 489 00c0 FFF7FEFF 		bl	__aeabi_fmul	@
+ 490 00c4 6968     		ldr	r1, [r5, #4]	@ float	@, MEM[(float *)GyroData_29(D) + 4B]
+ 491 00c6 8246     		mov	r10, r0	@ D.5491,
+ 492 00c8 4846     		mov	r0, r9	@, D.5491
+ 493 00ca FFF7FEFF 		bl	__aeabi_fmul	@
+ 494 00ce 0146     		mov	r1, r0	@ D.5491,
+ 495 00d0 5046     		mov	r0, r10	@, D.5491
+ 496 00d2 FFF7FEFF 		bl	__aeabi_fadd	@
+ 497 00d6 0146     		mov	r1, r0	@ D.5491,
+ 498 00d8 4046     		mov	r0, r8	@, dt
+ 499 00da FFF7FEFF 		bl	__aeabi_fmul	@
+ 500 00de D4F800A0 		ldr	r10, [r4]	@ float	@ D.5491, *Orient_31(D)
+ 501 00e2 0146     		mov	r1, r0	@ D.5491,
+ 502 00e4 5046     		mov	r0, r10	@, D.5491
+ 503 00e6 FFF7FEFF 		bl	__aeabi_fadd	@
+ 504 00ea 5146     		mov	r1, r10	@, D.5491
+ 505 00ec 8346     		mov	fp, r0	@ D.5491,
+ 506 00ee 3068     		ldr	r0, [r6]	@ float	@, *SmoothAcc_18(D)
+ 507 00f0 FFF7FEFF 		bl	__aeabi_fsub	@
+ 508 00f4 1249     		ldr	r1, .L40+8	@,
+ 509 00f6 FFF7FEFF 		bl	__aeabi_fmul	@
+ 510 00fa 0146     		mov	r1, r0	@ D.5491,
+ 511 00fc 5846     		mov	r0, fp	@, D.5491
+ 512 00fe FFF7FEFF 		bl	__aeabi_fadd	@
+ 513 0102 2060     		str	r0, [r4]	@ float	@, *Orient_31(D)
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 10
 
 
- 514 0134 BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}	@
- 515              	.L38:
- 516              		.align	2
- 517              	.L37:
- 518 0138 0000C642 		.word	1120272384
- 519 013c 0000C842 		.word	1120403456
- 520 0140 17B75139 		.word	961656599
- 521              		.size	Get_Orientation, .-Get_Orientation
- 522              		.section	.text.autoPan,"ax",%progbits
- 523              		.align	2
- 524              		.global	autoPan
- 525              		.thumb
- 526              		.thumb_func
- 527              		.type	autoPan, %function
- 528              	autoPan:
- 529              		@ args = 0, pretend = 0, frame = 0
- 530              		@ frame_needed = 0, uses_anonymous_args = 0
- 531 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}	@
- 532 0002 1E4D     		ldr	r5, .L52	@ tmp124,
- 533 0004 0446     		mov	r4, r0	@ motorPos, motorPos
- 534 0006 2E68     		ldr	r6, [r5]	@ float	@ centerPoint.6, centerPoint
- 535 0008 0F46     		mov	r7, r1	@ setpoint, setpoint
- 536 000a 3046     		mov	r0, r6	@, centerPoint.6
- 537 000c 4FF08041 		mov	r1, #1073741824	@,
- 538 0010 FFF7FEFF 		bl	__aeabi_fsub	@
- 539 0014 2146     		mov	r1, r4	@, motorPos
- 540 0016 FFF7FEFF 		bl	__aeabi_fcmpgt	@
- 541 001a 0028     		cmp	r0, #0	@
- 542 001c 2BD1     		bne	.L50	@
- 543 001e 4FF08041 		mov	r1, #1073741824	@,
- 544 0022 3046     		mov	r0, r6	@, centerPoint.6
- 545 0024 FFF7FEFF 		bl	__aeabi_fadd	@
- 546 0028 0146     		mov	r1, r0	@ D.5446,
- 547 002a 2046     		mov	r0, r4	@, motorPos
- 548 002c FFF7FEFF 		bl	__aeabi_fcmpgt	@
- 549 0030 B0B9     		cbnz	r0, .L51	@,
- 550 0032 134A     		ldr	r2, .L52+4	@ tmp137,
- 551 0034 0023     		movs	r3, #0	@ tmp138,
- 552 0036 2B60     		str	r3, [r5]	@ float	@ tmp138, centerPoint
- 553 0038 1360     		str	r3, [r2]	@ float	@ tmp138, step
- 554 003a 1D46     		mov	r5, r3	@ D.5446, tmp138
- 555              	.L42:
- 556 003c 114C     		ldr	r4, .L52+8	@ tmp141,
- 557 003e 1249     		ldr	r1, .L52+12	@,
- 558 0040 2068     		ldr	r0, [r4]	@ float	@, stepSmooth
- 559 0042 FFF7FEFF 		bl	__aeabi_fmul	@
- 560 0046 2946     		mov	r1, r5	@, D.5446
- 561 0048 FFF7FEFF 		bl	__aeabi_fadd	@
- 562 004c 0F49     		ldr	r1, .L52+16	@,
- 563 004e FFF7FEFF 		bl	__aeabi_fdiv	@
- 564 0052 0346     		mov	r3, r0	@ tmp144,
- 565 0054 0146     		mov	r1, r0	@, tmp144
- 566 0056 2360     		str	r3, [r4]	@ float	@ tmp144, stepSmooth
- 567 0058 3846     		mov	r0, r7	@, setpoint
- 568 005a FFF7FEFF 		bl	__aeabi_fsub	@
- 569 005e F8BD     		pop	{r3, r4, r5, r6, r7, pc}	@
- 570              	.L51:
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 11
+ 514 0104 A968     		ldr	r1, [r5, #8]	@ MEM[(float *)GyroData_29(D) + 8B], MEM[(float *)GyroData_29(D) + 8B]
+ 515 0106 4846     		mov	r0, r9	@, D.5491
+ 516 0108 01F10041 		add	r1, r1, #-2147483648	@ D.5491, MEM[(float *)GyroData_29(D) + 8B],
+ 517 010c FFF7FEFF 		bl	__aeabi_fmul	@
+ 518 0110 6968     		ldr	r1, [r5, #4]	@ float	@, MEM[(float *)GyroData_29(D) + 4B]
+ 519 0112 0646     		mov	r6, r0	@ D.5491,
+ 520 0114 3846     		mov	r0, r7	@, D.5491
+ 521 0116 FFF7FEFF 		bl	__aeabi_fmul	@
+ 522 011a 0146     		mov	r1, r0	@ D.5491,
+ 523 011c 3046     		mov	r0, r6	@, D.5491
+ 524 011e FFF7FEFF 		bl	__aeabi_fsub	@
+ 525 0122 0146     		mov	r1, r0	@ D.5491,
+ 526 0124 4046     		mov	r0, r8	@, dt
+ 527 0126 FFF7FEFF 		bl	__aeabi_fmul	@
+ 528 012a 0146     		mov	r1, r0	@ D.5491,
+ 529 012c A068     		ldr	r0, [r4, #8]	@ float	@, MEM[(float *)Orient_31(D) + 8B]
+ 530 012e FFF7FEFF 		bl	__aeabi_fadd	@
+ 531 0132 A060     		str	r0, [r4, #8]	@ float	@, MEM[(float *)Orient_31(D) + 8B]
+ 532 0134 BDE8F88F 		pop	{r3, r4, r5, r6, r7, r8, r9, r10, fp, pc}	@
+ 533              	.L41:
+ 534              		.align	2
+ 535              	.L40:
+ 536 0138 0000C642 		.word	1120272384
+ 537 013c 0000C842 		.word	1120403456
+ 538 0140 17B75139 		.word	961656599
+ 539              		.size	Get_Orientation, .-Get_Orientation
+ 540              		.section	.text.autoPan,"ax",%progbits
+ 541              		.align	2
+ 542              		.global	autoPan
+ 543              		.thumb
+ 544              		.thumb_func
+ 545              		.type	autoPan, %function
+ 546              	autoPan:
+ 547              		@ args = 0, pretend = 0, frame = 0
+ 548              		@ frame_needed = 0, uses_anonymous_args = 0
+ 549 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}	@
+ 550 0002 1E4D     		ldr	r5, .L55	@ tmp124,
+ 551 0004 0446     		mov	r4, r0	@ motorPos, motorPos
+ 552 0006 2E68     		ldr	r6, [r5]	@ float	@ centerPoint.6, centerPoint
+ 553 0008 0F46     		mov	r7, r1	@ setpoint, setpoint
+ 554 000a 3046     		mov	r0, r6	@, centerPoint.6
+ 555 000c 4FF08041 		mov	r1, #1073741824	@,
+ 556 0010 FFF7FEFF 		bl	__aeabi_fsub	@
+ 557 0014 2146     		mov	r1, r4	@, motorPos
+ 558 0016 FFF7FEFF 		bl	__aeabi_fcmpgt	@
+ 559 001a 0028     		cmp	r0, #0	@
+ 560 001c 2BD1     		bne	.L53	@
+ 561 001e 4FF08041 		mov	r1, #1073741824	@,
+ 562 0022 3046     		mov	r0, r6	@, centerPoint.6
+ 563 0024 FFF7FEFF 		bl	__aeabi_fadd	@
+ 564 0028 0146     		mov	r1, r0	@ D.5494,
+ 565 002a 2046     		mov	r0, r4	@, motorPos
+ 566 002c FFF7FEFF 		bl	__aeabi_fcmpgt	@
+ 567 0030 B0B9     		cbnz	r0, .L54	@,
+ 568 0032 134A     		ldr	r2, .L55+4	@ tmp137,
+ 569 0034 0023     		movs	r3, #0	@ tmp138,
+ 570 0036 2B60     		str	r3, [r5]	@ float	@ tmp138, centerPoint
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 11
 
 
- 571 0060 4FF04043 		mov	r3, #-1073741824	@ tmp134,
- 572              	.L49:
- 573 0064 2B60     		str	r3, [r5]	@ float	@ tmp134, centerPoint
- 574 0066 2046     		mov	r0, r4	@, motorPos
- 575 0068 0949     		ldr	r1, .L52+20	@,
- 576 006a FFF7FEFF 		bl	__aeabi_fmul	@
- 577 006e 044B     		ldr	r3, .L52+4	@ tmp136,
- 578 0070 0546     		mov	r5, r0	@ D.5446, tmp135
- 579 0072 1860     		str	r0, [r3]	@ float	@ tmp135, step
- 580 0074 E2E7     		b	.L42	@
- 581              	.L50:
- 582 0076 4FF08043 		mov	r3, #1073741824	@ tmp128,
- 583 007a F3E7     		b	.L49	@
- 584              	.L53:
- 585              		.align	2
- 586              	.L52:
- 587 007c 00000000 		.word	.LANCHOR7
- 588 0080 00000000 		.word	.LANCHOR8
- 589 0084 00000000 		.word	.LANCHOR9
- 590 0088 00001C42 		.word	1109131264
- 591 008c 00002042 		.word	1109393408
- 592 0090 CDCC0C3F 		.word	1057803469
- 593              		.size	autoPan, .-autoPan
- 594              		.global	__aeabi_i2f
- 595              		.global	__aeabi_f2d
- 596              		.section	.text.engineProcess,"ax",%progbits
- 597              		.align	2
- 598              		.global	engineProcess
- 599              		.thumb
- 600              		.thumb_func
- 601              		.type	engineProcess, %function
- 602              	engineProcess:
- 603              		@ args = 0, pretend = 0, frame = 48
- 604              		@ frame_needed = 0, uses_anonymous_args = 0
- 605 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}	@
- 606 0004 304F     		ldr	r7, .L124	@ tmp511,
- 607 0006 99B0     		sub	sp, sp, #100	@,,
- 608 0008 3B68     		ldr	r3, [r7]	@ loopCounter, loopCounter
- 609 000a 1190     		str	r0, [sp, #68]	@ float	@ dt, %sfp
- 610 000c 0133     		adds	r3, r3, #1	@ loopCounter.12, loopCounter,
- 611 000e 3B60     		str	r3, [r7]	@ loopCounter.12, loopCounter
- 612 0010 FFF7FEFF 		bl	LEDon	@
- 613 0014 FFF7FEFF 		bl	DEBUG_LEDoff	@
- 614 0018 16A8     		add	r0, sp, #88	@,,
- 615 001a FFF7FEFF 		bl	StopWatchInit	@
- 616 001e 2B48     		ldr	r0, .L124+4	@,
- 617 0020 FFF7FEFF 		bl	MPU6050_ACC_get	@
- 618 0024 16A8     		add	r0, sp, #88	@,,
- 619 0026 FFF7FEFF 		bl	StopWatchLap	@
- 620 002a 1290     		str	r0, [sp, #72]	@, %sfp
- 621 002c 2848     		ldr	r0, .L124+8	@,
- 622 002e FFF7FEFF 		bl	MPU6050_Gyro_get	@
- 623 0032 16A8     		add	r0, sp, #88	@,,
- 624 0034 FFF7FEFF 		bl	StopWatchLap	@
- 625 0038 DFF8B8A0 		ldr	r10, .L124+44	@ tmp518,
- 626 003c 1199     		ldr	r1, [sp, #68]	@ float	@, %sfp
- 627 003e 244B     		ldr	r3, .L124+8	@,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 12
+ 571 0038 1360     		str	r3, [r2]	@ float	@ tmp138, step
+ 572 003a 1D46     		mov	r5, r3	@ D.5494, tmp138
+ 573              	.L45:
+ 574 003c 114C     		ldr	r4, .L55+8	@ tmp141,
+ 575 003e 1249     		ldr	r1, .L55+12	@,
+ 576 0040 2068     		ldr	r0, [r4]	@ float	@, stepSmooth
+ 577 0042 FFF7FEFF 		bl	__aeabi_fmul	@
+ 578 0046 2946     		mov	r1, r5	@, D.5494
+ 579 0048 FFF7FEFF 		bl	__aeabi_fadd	@
+ 580 004c 0F49     		ldr	r1, .L55+16	@,
+ 581 004e FFF7FEFF 		bl	__aeabi_fdiv	@
+ 582 0052 0346     		mov	r3, r0	@ tmp144,
+ 583 0054 0146     		mov	r1, r0	@, tmp144
+ 584 0056 2360     		str	r3, [r4]	@ float	@ tmp144, stepSmooth
+ 585 0058 3846     		mov	r0, r7	@, setpoint
+ 586 005a FFF7FEFF 		bl	__aeabi_fsub	@
+ 587 005e F8BD     		pop	{r3, r4, r5, r6, r7, pc}	@
+ 588              	.L54:
+ 589 0060 4FF04043 		mov	r3, #-1073741824	@ tmp134,
+ 590              	.L52:
+ 591 0064 2B60     		str	r3, [r5]	@ float	@ tmp134, centerPoint
+ 592 0066 2046     		mov	r0, r4	@, motorPos
+ 593 0068 0949     		ldr	r1, .L55+20	@,
+ 594 006a FFF7FEFF 		bl	__aeabi_fmul	@
+ 595 006e 044B     		ldr	r3, .L55+4	@ tmp136,
+ 596 0070 0546     		mov	r5, r0	@ D.5494, tmp135
+ 597 0072 1860     		str	r0, [r3]	@ float	@ tmp135, step
+ 598 0074 E2E7     		b	.L45	@
+ 599              	.L53:
+ 600 0076 4FF08043 		mov	r3, #1073741824	@ tmp128,
+ 601 007a F3E7     		b	.L52	@
+ 602              	.L56:
+ 603              		.align	2
+ 604              	.L55:
+ 605 007c 00000000 		.word	.LANCHOR7
+ 606 0080 00000000 		.word	.LANCHOR8
+ 607 0084 00000000 		.word	.LANCHOR9
+ 608 0088 00001C42 		.word	1109131264
+ 609 008c 00002042 		.word	1109393408
+ 610 0090 CDCC0C3F 		.word	1057803469
+ 611              		.size	autoPan, .-autoPan
+ 612              		.global	__aeabi_i2f
+ 613              		.global	__aeabi_f2d
+ 614              		.section	.text.engineProcess,"ax",%progbits
+ 615              		.align	2
+ 616              		.global	engineProcess
+ 617              		.thumb
+ 618              		.thumb_func
+ 619              		.type	engineProcess, %function
+ 620              	engineProcess:
+ 621              		@ args = 0, pretend = 0, frame = 48
+ 622              		@ frame_needed = 0, uses_anonymous_args = 0
+ 623 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}	@
+ 624 0004 AB4D     		ldr	r5, .L124	@ tmp484,
+ 625 0006 99B0     		sub	sp, sp, #100	@,,
+ 626 0008 2B68     		ldr	r3, [r5]	@ loopCounter, loopCounter
+ 627 000a 1190     		str	r0, [sp, #68]	@ float	@ dt, %sfp
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 12
 
 
- 628 0040 1390     		str	r0, [sp, #76]	@, %sfp
- 629 0042 0091     		str	r1, [sp]	@ float	@,
- 630 0044 2348     		ldr	r0, .L124+12	@,
- 631 0046 5146     		mov	r1, r10	@, tmp518
- 632 0048 204A     		ldr	r2, .L124+4	@,
- 633 004a FFF7FEFF 		bl	Get_Orientation	@
- 634 004e 16A8     		add	r0, sp, #88	@,,
- 635 0050 FFF7FEFF 		bl	StopWatchLap	@
- 636 0054 204D     		ldr	r5, .L124+16	@ tmp517,
- 637 0056 1490     		str	r0, [sp, #80]	@, %sfp
- 638 0058 6B7A     		ldrb	r3, [r5, #9]	@ zero_extendqisi2	@ configData, configData
- 639 005a 312B     		cmp	r3, #49	@ configData,
- 640 005c 50D0     		beq	.L55	@,
- 641 005e DAF80440 		ldr	r4, [r10, #4]	@ float	@ D.5450, CameraOrient
- 642 0062 DFF89480 		ldr	r8, .L124+48	@ tmp512,
- 643 0066 DFF894B0 		ldr	fp, .L124+52	@ tmp513,
- 644              	.L56:
- 645 006a D8F80030 		ldr	r3, [r8]	@ LAKITU_enable, LAKITU_enable
- 646 006e 002B     		cmp	r3, #0	@ LAKITU_enable
- 647 0070 51D1     		bne	.L58	@
- 648 0072 1A4E     		ldr	r6, .L124+20	@ tmp344,
- 649 0074 1A49     		ldr	r1, .L124+24	@,
- 650 0076 DBF80400 		ldr	r0, [fp, #4]	@ float	@, Step
- 651 007a FFF7FEFF 		bl	__aeabi_fdiv	@
- 652 007e 3168     		ldr	r1, [r6]	@ float	@, pitchRCOffset
- 653 0080 FFF7FEFF 		bl	__aeabi_fadd	@
- 654 0084 2146     		mov	r1, r4	@, D.5450
- 655 0086 3060     		str	r0, [r6]	@ float	@, pitchRCOffset
- 656 0088 FFF7FEFF 		bl	__aeabi_fadd	@
- 657 008c 1549     		ldr	r1, .L124+28	@,
- 658 008e FFF7FEFF 		bl	__aeabi_fmul	@
- 659 0092 1549     		ldr	r1, .L124+32	@,
- 660 0094 0446     		mov	r4, r0	@ D.5450,
- 661 0096 FFF7FEFF 		bl	__aeabi_fcmplt	@
- 662 009a 0028     		cmp	r0, #0	@
- 663 009c 40F06181 		bne	.L85	@
- 664 00a0 2046     		mov	r0, r4	@, D.5450
- 665 00a2 4FF07E51 		mov	r1, #1065353216	@,
- 666 00a6 FFF7FEFF 		bl	__aeabi_fcmpgt	@
- 667 00aa 08B1     		cbz	r0, .L67	@,
- 668 00ac 4FF07E54 		mov	r4, #1065353216	@ D.5450,
- 669              	.L67:
- 670 00b0 0E4B     		ldr	r3, .L124+36	@,
- 671 00b2 0E49     		ldr	r1, .L124+36	@,
- 672 00b4 1093     		str	r3, [sp, #64]	@, %sfp
- 673 00b6 0E4B     		ldr	r3, .L124+40	@ tmp353,
- 674 00b8 0868     		ldr	r0, [r1]	@ float	@, pitch_setpoint
- 675 00ba 1C60     		str	r4, [r3]	@ float	@ D.5450, pitch_angle_correction
- 676 00bc 2146     		mov	r1, r4	@, D.5450
- 677 00be FFF7FEFF 		bl	__aeabi_fadd	@
- 678 00c2 109A     		ldr	r2, [sp, #64]	@, %sfp
- 679 00c4 1060     		str	r0, [r2]	@ float	@, pitch_setpoint
- 680 00c6 81E0     		b	.L66	@
- 681              	.L125:
- 682              		.align	2
- 683              	.L124:
- 684 00c8 00000000 		.word	.LANCHOR10
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 13
+ 628 000c 0133     		adds	r3, r3, #1	@ loopCounter.12, loopCounter,
+ 629 000e 2B60     		str	r3, [r5]	@ loopCounter.12, loopCounter
+ 630 0010 FFF7FEFF 		bl	LEDon	@
+ 631 0014 FFF7FEFF 		bl	DEBUG_LEDoff	@
+ 632 0018 16A8     		add	r0, sp, #88	@,,
+ 633 001a FFF7FEFF 		bl	StopWatchInit	@
+ 634 001e A648     		ldr	r0, .L124+4	@,
+ 635 0020 FFF7FEFF 		bl	MPU6050_ACC_get	@
+ 636 0024 16A8     		add	r0, sp, #88	@,,
+ 637 0026 FFF7FEFF 		bl	StopWatchLap	@
+ 638 002a 1290     		str	r0, [sp, #72]	@, %sfp
+ 639 002c A348     		ldr	r0, .L124+8	@,
+ 640 002e FFF7FEFF 		bl	MPU6050_Gyro_get	@
+ 641 0032 16A8     		add	r0, sp, #88	@,,
+ 642 0034 FFF7FEFF 		bl	StopWatchLap	@
+ 643 0038 A14C     		ldr	r4, .L124+12	@ tmp480,
+ 644 003a 1199     		ldr	r1, [sp, #68]	@ float	@, %sfp
+ 645 003c 9F4B     		ldr	r3, .L124+8	@,
+ 646 003e 1390     		str	r0, [sp, #76]	@, %sfp
+ 647 0040 0091     		str	r1, [sp]	@ float	@,
+ 648 0042 A048     		ldr	r0, .L124+16	@,
+ 649 0044 2146     		mov	r1, r4	@, tmp480
+ 650 0046 9C4A     		ldr	r2, .L124+4	@,
+ 651 0048 FFF7FEFF 		bl	Get_Orientation	@
+ 652 004c 16A8     		add	r0, sp, #88	@,,
+ 653 004e FFF7FEFF 		bl	StopWatchLap	@
+ 654 0052 9D4F     		ldr	r7, .L124+20	@ tmp477,
+ 655 0054 1490     		str	r0, [sp, #80]	@, %sfp
+ 656 0056 7B7A     		ldrb	r3, [r7, #9]	@ zero_extendqisi2	@ configData, configData
+ 657 0058 312B     		cmp	r3, #49	@ configData,
+ 658 005a 36D0     		beq	.L58	@,
+ 659 005c D4F80480 		ldr	r8, [r4, #4]	@ float	@ D.5498, CameraOrient
+ 660 0060 DFF8C8B2 		ldr	fp, .L124+120	@ tmp485,
+ 661 0064 994E     		ldr	r6, .L124+24	@ tmp486,
+ 662              	.L59:
+ 663 0066 DBF80030 		ldr	r3, [fp]	@ LAKITU_enable, LAKITU_enable
+ 664 006a 002B     		cmp	r3, #0	@ LAKITU_enable
+ 665 006c 37D1     		bne	.L61	@
+ 666 006e DFF8C092 		ldr	r9, .L124+124	@ tmp320,
+ 667 0072 9749     		ldr	r1, .L124+28	@,
+ 668 0074 7068     		ldr	r0, [r6, #4]	@ float	@, Step
+ 669 0076 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 670 007a D9F80010 		ldr	r1, [r9]	@ float	@, pitchRCOffset
+ 671 007e FFF7FEFF 		bl	__aeabi_fadd	@
+ 672 0082 4146     		mov	r1, r8	@, D.5498
+ 673 0084 C9F80000 		str	r0, [r9]	@ float	@, pitchRCOffset
+ 674 0088 FFF7FEFF 		bl	__aeabi_fadd	@
+ 675 008c 9149     		ldr	r1, .L124+32	@,
+ 676 008e FFF7FEFF 		bl	__aeabi_fmul	@
+ 677 0092 9149     		ldr	r1, .L124+36	@,
+ 678 0094 8146     		mov	r9, r0	@ D.5498,
+ 679 0096 FFF7FEFF 		bl	__aeabi_fcmplt	@
+ 680 009a 0028     		cmp	r0, #0	@
+ 681 009c 40F08882 		bne	.L85	@
+ 682 00a0 4846     		mov	r0, r9	@, D.5498
+ 683 00a2 4FF07E51 		mov	r1, #1065353216	@,
+ 684 00a6 FFF7FEFF 		bl	__aeabi_fcmpgt	@
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 13
 
 
- 685 00cc 00000000 		.word	.LANCHOR6
- 686 00d0 00000000 		.word	.LANCHOR11
- 687 00d4 00000000 		.word	AccAngleSmooth
- 688 00d8 00000000 		.word	configData
- 689 00dc 00000000 		.word	.LANCHOR15
- 690 00e0 00007A44 		.word	1148846080
- 691 00e4 33336542 		.word	1113928499
- 692 00e8 000080BF 		.word	-1082130432
- 693 00ec 00000000 		.word	.LANCHOR2
- 694 00f0 00000000 		.word	pitch_angle_correction
- 695 00f4 00000000 		.word	CameraOrient
- 696 00f8 00000000 		.word	.LANCHOR12
- 697 00fc 00000000 		.word	.LANCHOR13
- 698              	.L55:
- 699 0100 DFF82483 		ldr	r8, .L126+120	@ tmp512,
- 700 0104 D8F80030 		ldr	r3, [r8]	@ LAKITU_enable, LAKITU_enable
- 701 0108 002B     		cmp	r3, #0	@ LAKITU_enable
- 702 010a 00F02E81 		beq	.L57	@
- 703 010e DAF80440 		ldr	r4, [r10, #4]	@ float	@ D.5450, CameraOrient
- 704 0112 DFF818B3 		ldr	fp, .L126+124	@ tmp513,
- 705              	.L58:
- 706 0116 A64E     		ldr	r6, .L126	@ tmp516,
- 707 0118 A649     		ldr	r1, .L126+4	@,
- 708 011a 7068     		ldr	r0, [r6, #4]	@ float	@, LakituAngles
- 709 011c FFF7FEFF 		bl	__aeabi_fsub	@
- 710 0120 A549     		ldr	r1, .L126+8	@,
- 711 0122 FFF7FEFF 		bl	__aeabi_fmul	@
- 712 0126 DFF8F492 		ldr	r9, .L126+108	@ tmp514,
- 713 012a 0346     		mov	r3, r0	@ tmp310,
- 714 012c C9F80430 		str	r3, [r9, #4]	@ float	@ tmp310, RCSmooth
- 715 0130 0146     		mov	r1, r0	@, tmp310
- 716 0132 2046     		mov	r0, r4	@, D.5450
- 717 0134 FFF7FEFF 		bl	__aeabi_fsub	@
- 718 0138 A049     		ldr	r1, .L126+12	@,
- 719 013a CBF80400 		str	r0, [fp, #4]	@ float	@, Step
- 720 013e FFF7FEFF 		bl	__aeabi_fdiv	@
- 721 0142 9F4A     		ldr	r2, .L126+16	@,
- 722 0144 1168     		ldr	r1, [r2]	@ float	@, pitchRCOffset
- 723 0146 FFF7FEFF 		bl	__aeabi_fadd	@
- 724 014a 9D4B     		ldr	r3, .L126+16	@,
- 725 014c 2146     		mov	r1, r4	@, D.5450
- 726 014e 1860     		str	r0, [r3]	@ float	@, pitchRCOffset
- 727 0150 FFF7FEFF 		bl	__aeabi_fadd	@
- 728 0154 9B49     		ldr	r1, .L126+20	@,
- 729 0156 FFF7FEFF 		bl	__aeabi_fmul	@
- 730 015a 9B49     		ldr	r1, .L126+24	@,
- 731 015c 0446     		mov	r4, r0	@ D.5450,
- 732 015e FFF7FEFF 		bl	__aeabi_fcmplt	@
- 733 0162 0028     		cmp	r0, #0	@
- 734 0164 40F0FF80 		bne	.L84	@
- 735 0168 2046     		mov	r0, r4	@, D.5450
- 736 016a 4FF07E51 		mov	r1, #1065353216	@,
- 737 016e FFF7FEFF 		bl	__aeabi_fcmpgt	@
- 738 0172 08B1     		cbz	r0, .L64	@,
- 739 0174 4FF07E54 		mov	r4, #1065353216	@ D.5450,
- 740              	.L64:
- 741 0178 944B     		ldr	r3, .L126+28	@ tmp324,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 14
+ 685 00aa 08B1     		cbz	r0, .L68	@,
+ 686 00ac 4FF07E59 		mov	r9, #1065353216	@ D.5498,
+ 687              	.L68:
+ 688 00b0 DFF88082 		ldr	r8, .L124+128	@ tmp479,
+ 689 00b4 894B     		ldr	r3, .L124+40	@ tmp329,
+ 690 00b6 D8F80000 		ldr	r0, [r8]	@ float	@, pitch_setpoint
+ 691 00ba 4946     		mov	r1, r9	@, D.5498
+ 692 00bc C3F80090 		str	r9, [r3]	@ float	@ D.5498, pitch_angle_correction
+ 693 00c0 FFF7FEFF 		bl	__aeabi_fadd	@
+ 694 00c4 C8F80000 		str	r0, [r8]	@ float	@, pitch_setpoint
+ 695 00c8 47E0     		b	.L67	@
+ 696              	.L58:
+ 697 00ca DFF860B2 		ldr	fp, .L124+120	@ tmp485,
+ 698 00ce DBF80030 		ldr	r3, [fp]	@ LAKITU_enable, LAKITU_enable
+ 699 00d2 002B     		cmp	r3, #0	@ LAKITU_enable
+ 700 00d4 00F0AA82 		beq	.L60	@
+ 701 00d8 D4F80480 		ldr	r8, [r4, #4]	@ float	@ D.5498, CameraOrient
+ 702 00dc 7B4E     		ldr	r6, .L124+24	@ tmp486,
+ 703              	.L61:
+ 704 00de DFF858A2 		ldr	r10, .L124+132	@ tmp294,
+ 705 00e2 7F49     		ldr	r1, .L124+44	@,
+ 706 00e4 DAF80400 		ldr	r0, [r10, #4]	@ float	@, LakituAngles
+ 707 00e8 FFF7FEFF 		bl	__aeabi_fsub	@
+ 708 00ec 7D49     		ldr	r1, .L124+48	@,
+ 709 00ee 00F10040 		add	r0, r0, #-2147483648	@ D.5498,,
+ 710 00f2 FFF7FEFF 		bl	__aeabi_fmul	@
+ 711 00f6 DFF84492 		ldr	r9, .L124+136	@ tmp298,
+ 712 00fa 0246     		mov	r2, r0	@ tmp297,
+ 713 00fc 1146     		mov	r1, r2	@, tmp297
+ 714 00fe C9F80420 		str	r2, [r9, #4]	@ float	@ tmp297, RCSmooth
+ 715 0102 4046     		mov	r0, r8	@, D.5498
+ 716 0104 FFF7FEFF 		bl	__aeabi_fsub	@
+ 717 0108 774A     		ldr	r2, .L124+52	@ tmp300,
+ 718 010a DFF82882 		ldr	r8, .L124+128	@ tmp479,
+ 719 010e 1168     		ldr	r1, [r2]	@ float	@, Kp_p
+ 720 0110 FFF7FEFF 		bl	__aeabi_fmul	@
+ 721 0114 D8F80010 		ldr	r1, [r8]	@ float	@, pitch_setpoint
+ 722 0118 7060     		str	r0, [r6, #4]	@ float	@, Step
+ 723 011a FFF7FEFF 		bl	__aeabi_fadd	@
+ 724 011e 7349     		ldr	r1, .L124+56	@,
+ 725 0120 C8F80000 		str	r0, [r8]	@ float	@, pitch_setpoint
+ 726 0124 DAF80800 		ldr	r0, [r10, #8]	@ float	@, LakituAngles
+ 727 0128 FFF7FEFF 		bl	__aeabi_fsub	@
+ 728 012c 6D49     		ldr	r1, .L124+48	@,
+ 729 012e FFF7FEFF 		bl	__aeabi_fmul	@
+ 730 0132 0346     		mov	r3, r0	@ tmp308,
+ 731 0134 0146     		mov	r1, r0	@, tmp308
+ 732 0136 C9F80830 		str	r3, [r9, #8]	@ float	@ tmp308, RCSmooth
+ 733 013a A068     		ldr	r0, [r4, #8]	@ float	@, CameraOrient
+ 734 013c FFF7FEFF 		bl	__aeabi_fsub	@
+ 735 0140 6B4B     		ldr	r3, .L124+60	@ tmp312,
+ 736 0142 DFF8B891 		ldr	r9, .L124+72	@ tmp315,
+ 737 0146 1968     		ldr	r1, [r3]	@ float	@, Kp_y
+ 738 0148 FFF7FEFF 		bl	__aeabi_fmul	@
+ 739 014c D9F80010 		ldr	r1, [r9]	@ float	@, yaw_setpoint
+ 740 0150 B060     		str	r0, [r6, #8]	@ float	@, Step
+ 741 0152 FFF7FEFF 		bl	__aeabi_fadd	@
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 14
 
 
- 742 017a 9549     		ldr	r1, .L126+32	@,
- 743 017c 1C60     		str	r4, [r3]	@ float	@ D.5450, pitch_angle_correction
- 744 017e 0868     		ldr	r0, [r1]	@ float	@, pitch_setpoint
- 745 0180 1091     		str	r1, [sp, #64]	@, %sfp
- 746 0182 2146     		mov	r1, r4	@, D.5450
- 747 0184 FFF7FEFF 		bl	__aeabi_fadd	@
- 748 0188 109A     		ldr	r2, [sp, #64]	@, %sfp
- 749 018a 9249     		ldr	r1, .L126+36	@,
- 750 018c 1060     		str	r0, [r2]	@ float	@, pitch_setpoint
- 751 018e B068     		ldr	r0, [r6, #8]	@ float	@, LakituAngles
- 752 0190 FFF7FEFF 		bl	__aeabi_fsub	@
- 753 0194 8849     		ldr	r1, .L126+8	@,
- 754 0196 FFF7FEFF 		bl	__aeabi_fmul	@
- 755 019a 0346     		mov	r3, r0	@ tmp330,
- 756 019c C9F80830 		str	r3, [r9, #8]	@ float	@ tmp330, RCSmooth
- 757 01a0 0146     		mov	r1, r0	@, tmp330
- 758 01a2 DAF80800 		ldr	r0, [r10, #8]	@ float	@, CameraOrient
- 759 01a6 FFF7FEFF 		bl	__aeabi_fsub	@
- 760 01aa 8B4C     		ldr	r4, .L126+40	@ tmp521,
- 761 01ac 8146     		mov	r9, r0	@ tmp333,
- 762 01ae 2168     		ldr	r1, [r4]	@ float	@, yaw_setpoint
- 763 01b0 CBF80800 		str	r0, [fp, #8]	@ float	@ tmp333, Step
- 764 01b4 FFF7FEFF 		bl	__aeabi_fadd	@
- 765 01b8 884E     		ldr	r6, .L126+44	@ tmp338,
- 766 01ba 2060     		str	r0, [r4]	@ float	@, yaw_setpoint
- 767 01bc 7F49     		ldr	r1, .L126+12	@,
- 768 01be 4846     		mov	r0, r9	@, tmp333
- 769 01c0 FFF7FEFF 		bl	__aeabi_fdiv	@
- 770 01c4 3168     		ldr	r1, [r6]	@ float	@, yawRCOffset
- 771 01c6 FFF7FEFF 		bl	__aeabi_fadd	@
- 772 01ca 3060     		str	r0, [r6]	@ float	@, yawRCOffset
- 773              	.L66:
- 774 01cc 844C     		ldr	r4, .L126+48	@ tmp359,
- 775 01ce DBF80000 		ldr	r0, [fp]	@ float	@, Step
- 776 01d2 7A49     		ldr	r1, .L126+12	@,
- 777 01d4 FFF7FEFF 		bl	__aeabi_fdiv	@
- 778 01d8 2168     		ldr	r1, [r4]	@ float	@, rollRCOffset
- 779 01da FFF7FEFF 		bl	__aeabi_fadd	@
- 780 01de DAF80010 		ldr	r1, [r10]	@ float	@, CameraOrient
- 781 01e2 2060     		str	r0, [r4]	@ float	@, rollRCOffset
- 782 01e4 FFF7FEFF 		bl	__aeabi_fadd	@
- 783 01e8 0446     		mov	r4, r0	@ tmp363,
- 784 01ea E87A     		ldrb	r0, [r5, #11]	@ zero_extendqisi2	@ D.5451, configData
- 785 01ec 6438     		subs	r0, r0, #100	@, D.5451,
- 786 01ee FFF7FEFF 		bl	__aeabi_i2f	@
- 787 01f2 7C49     		ldr	r1, .L126+52	@,
- 788 01f4 FFF7FEFF 		bl	__aeabi_fdiv	@
- 789 01f8 FFF7FEFF 		bl	Deg2Rad	@
- 790 01fc 0146     		mov	r1, r0	@ D.5450,
- 791 01fe 2046     		mov	r0, r4	@, tmp363
- 792 0200 FFF7FEFF 		bl	__aeabi_fadd	@
- 793 0204 6F49     		ldr	r1, .L126+20	@,
- 794 0206 FFF7FEFF 		bl	__aeabi_fmul	@
- 795 020a 6F49     		ldr	r1, .L126+24	@,
- 796 020c 0446     		mov	r4, r0	@ D.5450,
- 797 020e FFF7FEFF 		bl	__aeabi_fcmplt	@
- 798 0212 0028     		cmp	r0, #0	@
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 15
+ 742 0156 C9F80000 		str	r0, [r9]	@ float	@, yaw_setpoint
+ 743              	.L67:
+ 744 015a DFF8E491 		ldr	r9, .L124+140	@ tmp335,
+ 745 015e 3068     		ldr	r0, [r6]	@ float	@, Step
+ 746 0160 5B49     		ldr	r1, .L124+28	@,
+ 747 0162 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 748 0166 D9F80010 		ldr	r1, [r9]	@ float	@, rollRCOffset
+ 749 016a FFF7FEFF 		bl	__aeabi_fadd	@
+ 750 016e 2168     		ldr	r1, [r4]	@ float	@, CameraOrient
+ 751 0170 C9F80000 		str	r0, [r9]	@ float	@, rollRCOffset
+ 752 0174 FFF7FEFF 		bl	__aeabi_fadd	@
+ 753 0178 8146     		mov	r9, r0	@ tmp339,
+ 754 017a F87A     		ldrb	r0, [r7, #11]	@ zero_extendqisi2	@ D.5499, configData
+ 755 017c 6438     		subs	r0, r0, #100	@, D.5499,
+ 756 017e FFF7FEFF 		bl	__aeabi_i2f	@
+ 757 0182 5C49     		ldr	r1, .L124+64	@,
+ 758 0184 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 759 0188 FFF7FEFF 		bl	Deg2Rad	@
+ 760 018c 0146     		mov	r1, r0	@ D.5498,
+ 761 018e 4846     		mov	r0, r9	@, tmp339
+ 762 0190 FFF7FEFF 		bl	__aeabi_fadd	@
+ 763 0194 4F49     		ldr	r1, .L124+32	@,
+ 764 0196 FFF7FEFF 		bl	__aeabi_fmul	@
+ 765 019a 4F49     		ldr	r1, .L124+36	@,
+ 766 019c 8246     		mov	r10, r0	@ D.5498,
+ 767 019e FFF7FEFF 		bl	__aeabi_fcmplt	@
+ 768 01a2 0028     		cmp	r0, #0	@
+ 769 01a4 40F08280 		bne	.L86	@
+ 770 01a8 5046     		mov	r0, r10	@, D.5498
+ 771 01aa 4FF07E51 		mov	r1, #1065353216	@,
+ 772 01ae FFF7FEFF 		bl	__aeabi_fcmpgt	@
+ 773 01b2 08B1     		cbz	r0, .L70	@,
+ 774 01b4 4FF07E5A 		mov	r10, #1065353216	@ D.5498,
+ 775              	.L70:
+ 776 01b8 DFF88891 		ldr	r9, .L124+144	@ tmp478,
+ 777 01bc 4E4A     		ldr	r2, .L124+68	@ tmp351,
+ 778 01be D9F80000 		ldr	r0, [r9]	@ float	@, roll_setpoint
+ 779 01c2 5146     		mov	r1, r10	@, D.5498
+ 780 01c4 C2F800A0 		str	r10, [r2]	@ float	@ D.5498, roll_angle_correction
+ 781 01c8 FFF7FEFF 		bl	__aeabi_fadd	@
+ 782 01cc BB7A     		ldrb	r3, [r7, #10]	@ zero_extendqisi2	@ configData, configData
+ 783 01ce C9F80000 		str	r0, [r9]	@ float	@, roll_setpoint
+ 784 01d2 302B     		cmp	r3, #48	@ configData,
+ 785 01d4 DBF80030 		ldr	r3, [fp]	@ LAKITU_enable, LAKITU_enable
+ 786 01d8 5ED0     		beq	.L115	@,
+ 787 01da 93B9     		cbnz	r3, .L73	@ LAKITU_enable,
+ 788 01dc D6F808B0 		ldr	fp, [r6, #8]	@ float	@ D.5498, Step
+ 789 01e0 464B     		ldr	r3, .L124+72	@ tmp367,
+ 790 01e2 5846     		mov	r0, fp	@, D.5498
+ 791 01e4 1968     		ldr	r1, [r3]	@ float	@, yaw_setpoint
+ 792 01e6 0E93     		str	r3, [sp, #56]	@,
+ 793 01e8 FFF7FEFF 		bl	__aeabi_fadd	@
+ 794 01ec 0E9B     		ldr	r3, [sp, #56]	@,
+ 795 01ee 444F     		ldr	r7, .L124+76	@ tmp370,
+ 796 01f0 1860     		str	r0, [r3]	@ float	@, yaw_setpoint
+ 797 01f2 3749     		ldr	r1, .L124+28	@,
+ 798 01f4 5846     		mov	r0, fp	@, D.5498
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 15
 
 
- 799 0214 40F0A380 		bne	.L86	@
- 800 0218 2046     		mov	r0, r4	@, D.5450
- 801 021a 4FF07E51 		mov	r1, #1065353216	@,
- 802 021e FFF7FEFF 		bl	__aeabi_fcmpgt	@
- 803 0222 08B1     		cbz	r0, .L69	@,
- 804 0224 4FF07E54 		mov	r4, #1065353216	@ D.5450,
- 805              	.L69:
- 806 0228 6F4B     		ldr	r3, .L126+56	@ tmp375,
- 807 022a 704E     		ldr	r6, .L126+60	@ tmp519,
- 808 022c 1C60     		str	r4, [r3]	@ float	@ D.5450, roll_angle_correction
- 809 022e 3068     		ldr	r0, [r6]	@ float	@, roll_setpoint
- 810 0230 2146     		mov	r1, r4	@, D.5450
- 811 0232 FFF7FEFF 		bl	__aeabi_fadd	@
- 812 0236 AB7A     		ldrb	r3, [r5, #10]	@ zero_extendqisi2	@ configData, configData
- 813 0238 3060     		str	r0, [r6]	@ float	@, roll_setpoint
- 814 023a 302B     		cmp	r3, #48	@ configData,
- 815 023c D8F80030 		ldr	r3, [r8]	@ LAKITU_enable, LAKITU_enable
- 816 0240 00F08380 		beq	.L116	@,
- 817 0244 83B9     		cbnz	r3, .L72	@ LAKITU_enable,
- 818 0246 DBF80880 		ldr	r8, [fp, #8]	@ float	@ D.5450, Step
- 819 024a 634C     		ldr	r4, .L126+40	@ tmp521,
- 820 024c 4046     		mov	r0, r8	@, D.5450
- 821 024e 2168     		ldr	r1, [r4]	@ float	@, yaw_setpoint
- 822 0250 FFF7FEFF 		bl	__aeabi_fadd	@
- 823 0254 614D     		ldr	r5, .L126+44	@ tmp394,
- 824 0256 2060     		str	r0, [r4]	@ float	@, yaw_setpoint
- 825 0258 5849     		ldr	r1, .L126+12	@,
- 826 025a 4046     		mov	r0, r8	@, D.5450
- 827 025c FFF7FEFF 		bl	__aeabi_fdiv	@
- 828 0260 2968     		ldr	r1, [r5]	@ float	@, yawRCOffset
- 829 0262 FFF7FEFF 		bl	__aeabi_fadd	@
- 830 0266 2860     		str	r0, [r5]	@ float	@, yawRCOffset
- 831              	.L72:
- 832 0268 16A8     		add	r0, sp, #88	@,,
- 833 026a FFF7FEFF 		bl	StopWatchLap	@
- 834 026e 0446     		mov	r4, r0	@ tCalc,
- 835 0270 FFF7FEFF 		bl	pitch_PID	@
- 836 0274 FFF7FEFF 		bl	roll_PID	@
- 837 0278 FFF7FEFF 		bl	yaw_PID	@
- 838 027c 16A8     		add	r0, sp, #88	@,,
- 839 027e FFF7FEFF 		bl	StopWatchLap	@
- 840 0282 8046     		mov	r8, r0	@ tPID,
- 841 0284 16A8     		add	r0, sp, #88	@,,
- 842 0286 FFF7FEFF 		bl	StopWatchTotal	@
- 843 028a 594D     		ldr	r5, .L126+64	@ tmp515,
- 844 028c 8146     		mov	r9, r0	@ tAll,
- 845 028e 2B68     		ldr	r3, [r5]	@ printcounter, printcounter
- 846 0290 0133     		adds	r3, r3, #1	@ printcounter.33, printcounter,
- 847 0292 B3F5FA7F 		cmp	r3, #500	@ printcounter.33,
- 848 0296 2B60     		str	r3, [r5]	@ printcounter.33, printcounter
- 849 0298 52DB     		blt	.L73	@,
- 850 029a 564B     		ldr	r3, .L126+68	@ tmp404,
- 851 029c 1B68     		ldr	r3, [r3]	@ debugPrint, debugPrint
- 852 029e 002B     		cmp	r3, #0	@ debugPrint
- 853 02a0 40F0E180 		bne	.L117	@
- 854 02a4 544B     		ldr	r3, .L126+72	@ tmp418,
- 855 02a6 1B68     		ldr	r3, [r3]	@ debugSense, debugSense
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 16
+ 799 01f6 FFF7FEFF 		bl	__aeabi_fdiv	@
+ 800 01fa 3968     		ldr	r1, [r7]	@ float	@, yawRCOffset
+ 801 01fc FFF7FEFF 		bl	__aeabi_fadd	@
+ 802 0200 3860     		str	r0, [r7]	@ float	@,
+ 803              	.L73:
+ 804 0202 16A8     		add	r0, sp, #88	@,,
+ 805 0204 FFF7FEFF 		bl	StopWatchLap	@
+ 806 0208 8346     		mov	fp, r0	@ tCalc,
+ 807 020a FFF7FEFF 		bl	pitch_PID	@
+ 808 020e FFF7FEFF 		bl	roll_PID	@
+ 809 0212 FFF7FEFF 		bl	yaw_PID	@
+ 810 0216 16A8     		add	r0, sp, #88	@,,
+ 811 0218 FFF7FEFF 		bl	StopWatchLap	@
+ 812 021c 1590     		str	r0, [sp, #84]	@, %sfp
+ 813 021e 16A8     		add	r0, sp, #88	@,,
+ 814 0220 FFF7FEFF 		bl	StopWatchTotal	@
+ 815 0224 374F     		ldr	r7, .L124+80	@ tmp481,
+ 816 0226 DFF820C1 		ldr	ip, .L124+148	@ tmp482,
+ 817 022a 3B68     		ldr	r3, [r7]	@ printcounter, printcounter
+ 818 022c CCF80000 		str	r0, [ip]	@, tAll
+ 819 0230 0133     		adds	r3, r3, #1	@ printcounter.36, printcounter,
+ 820 0232 B3F5FA7F 		cmp	r3, #500	@ printcounter.36,
+ 821 0236 3B60     		str	r3, [r7]	@ printcounter.36, printcounter
+ 822 0238 29DB     		blt	.L74	@,
+ 823 023a 334B     		ldr	r3, .L124+84	@ tmp381,
+ 824 023c 1B68     		ldr	r3, [r3]	@ debugPrint, debugPrint
+ 825 023e 002B     		cmp	r3, #0	@ debugPrint
+ 826 0240 40F08480 		bne	.L116	@
+ 827 0244 314B     		ldr	r3, .L124+88	@ tmp395,
+ 828 0246 1B68     		ldr	r3, [r3]	@ debugSense, debugSense
+ 829 0248 002B     		cmp	r3, #0	@ debugSense
+ 830 024a 40F0B080 		bne	.L117	@
+ 831              	.L76:
+ 832 024e 304B     		ldr	r3, .L124+92	@ tmp411,
+ 833 0250 1B68     		ldr	r3, [r3]	@ debugPerf, debugPerf
+ 834 0252 002B     		cmp	r3, #0	@ debugPerf
+ 835 0254 40F0DF80 		bne	.L118	@
+ 836              	.L77:
+ 837 0258 2E4B     		ldr	r3, .L124+96	@ tmp417,
+ 838 025a 1B68     		ldr	r3, [r3]	@ debugRC, debugRC
+ 839 025c 002B     		cmp	r3, #0	@ debugRC
+ 840 025e 40F0F980 		bne	.L119	@
+ 841              	.L78:
+ 842 0262 2D4B     		ldr	r3, .L124+100	@ tmp432,
+ 843 0264 1B68     		ldr	r3, [r3]	@ debugOrient, debugOrient
+ 844 0266 002B     		cmp	r3, #0	@ debugOrient
+ 845 0268 40F02181 		bne	.L120	@
+ 846              	.L79:
+ 847 026c 2B4B     		ldr	r3, .L124+104	@ tmp441,
+ 848 026e 1B68     		ldr	r3, [r3]	@ debugCnt, debugCnt
+ 849 0270 002B     		cmp	r3, #0	@ debugCnt
+ 850 0272 40F03881 		bne	.L121	@
+ 851              	.L80:
+ 852 0276 2A4B     		ldr	r3, .L124+108	@ tmp453,
+ 853 0278 1B68     		ldr	r3, [r3]	@ debugAutoPan, debugAutoPan
+ 854 027a 002B     		cmp	r3, #0	@ debugAutoPan
+ 855 027c 40F05C81 		bne	.L122	@
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 16
 
 
- 856 02a8 002B     		cmp	r3, #0	@ debugSense
- 857 02aa 40F00D81 		bne	.L118	@
- 858              	.L75:
- 859 02ae 534B     		ldr	r3, .L126+76	@ tmp434,
- 860 02b0 1B68     		ldr	r3, [r3]	@ debugPerf, debugPerf
- 861 02b2 002B     		cmp	r3, #0	@ debugPerf
- 862 02b4 40F03881 		bne	.L119	@
- 863              	.L76:
- 864 02b8 514B     		ldr	r3, .L126+80	@ tmp438,
- 865 02ba 1B68     		ldr	r3, [r3]	@ debugRC, debugRC
- 866 02bc 002B     		cmp	r3, #0	@ debugRC
- 867 02be 40F04C81 		bne	.L120	@
- 868              	.L77:
- 869 02c2 504B     		ldr	r3, .L126+84	@ tmp453,
- 870 02c4 1B68     		ldr	r3, [r3]	@ debugOrient, debugOrient
- 871 02c6 002B     		cmp	r3, #0	@ debugOrient
- 872 02c8 40F07381 		bne	.L114	@
- 873              	.L123:
- 874 02cc 4E4B     		ldr	r3, .L126+88	@ tmp462,
- 875 02ce 424C     		ldr	r4, .L126+40	@ tmp521,
- 876 02d0 1B68     		ldr	r3, [r3]	@ debugCnt, debugCnt
- 877 02d2 002B     		cmp	r3, #0	@ debugCnt
- 878 02d4 40F08881 		bne	.L121	@
- 879              	.L79:
- 880 02d8 4C4B     		ldr	r3, .L126+92	@ tmp474,
- 881 02da 1B68     		ldr	r3, [r3]	@ debugAutoPan, debugAutoPan
- 882 02dc 002B     		cmp	r3, #0	@ debugAutoPan
- 883 02de 40F0AE81 		bne	.L122	@
- 884              	.L80:
- 885 02e2 4B4B     		ldr	r3, .L126+96	@ tmp485,
- 886 02e4 324E     		ldr	r6, .L126	@ tmp516,
- 887 02e6 1B68     		ldr	r3, [r3]	@ debugLAKITU, debugLAKITU
- 888 02e8 002B     		cmp	r3, #0	@ debugLAKITU
- 889 02ea 40F0A180 		bne	.L115	@
- 890              	.L81:
- 891 02ee B068     		ldr	r0, [r6, #8]	@ float	@, LakituAngles
- 892 02f0 3049     		ldr	r1, .L126+4	@,
- 893 02f2 FFF7FEFF 		bl	__aeabi_fsub	@
- 894 02f6 3049     		ldr	r1, .L126+8	@,
- 895 02f8 FFF7FEFF 		bl	__aeabi_fmul	@
- 896 02fc FFF7FEFF 		bl	__aeabi_f2d	@
- 897 0300 0646     		mov	r6, r0	@ D.5452,
- 898 0302 DAF80800 		ldr	r0, [r10, #8]	@ float	@, CameraOrient
- 899 0306 0F46     		mov	r7, r1	@ D.5452,
- 900 0308 FFF7FEFF 		bl	__aeabi_f2d	@
- 901 030c CDE90001 		strd	r0, [sp]	@,
- 902 0310 DBF80800 		ldr	r0, [fp, #8]	@ float	@, Step
- 903 0314 FFF7FEFF 		bl	__aeabi_f2d	@
- 904 0318 CDE90201 		strd	r0, [sp, #8]	@,,
- 905 031c 2F4B     		ldr	r3, .L126+44	@ tmp505,
- 906 031e 1868     		ldr	r0, [r3]	@ float	@, yawRCOffset
- 907 0320 FFF7FEFF 		bl	__aeabi_f2d	@
- 908 0324 CDE90401 		strd	r0, [sp, #16]	@,,
- 909 0328 2068     		ldr	r0, [r4]	@ float	@, yaw_setpoint
- 910 032a FFF7FEFF 		bl	__aeabi_f2d	@
- 911 032e 3B46     		mov	r3, r7	@, D.5452
- 912 0330 CDE90601 		strd	r0, [sp, #24]	@,,
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 17
+ 856              	.L81:
+ 857 0280 284B     		ldr	r3, .L124+112	@ tmp464,
+ 858 0282 1B68     		ldr	r3, [r3]	@ debugLAKITU, debugLAKITU
+ 859 0284 002B     		cmp	r3, #0	@ debugLAKITU
+ 860 0286 40F07781 		bne	.L123	@
+ 861              	.L82:
+ 862 028a 0023     		movs	r3, #0	@ tmp476,
+ 863 028c 3B60     		str	r3, [r7]	@ tmp476, printcounter
+ 864              	.L74:
+ 865 028e FFF7FEFF 		bl	LEDoff	@
+ 866 0292 19B0     		add	sp, sp, #100	@,,
+ 867              		@ sp needed	@
+ 868 0294 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}	@
+ 869              	.L115:
+ 870 0298 002B     		cmp	r3, #0	@ LAKITU_enable
+ 871 029a B2D1     		bne	.L73	@
+ 872 029c 224B     		ldr	r3, .L124+116	@ tmp359,
+ 873 029e 174F     		ldr	r7, .L124+72	@ tmp361,
+ 874 02a0 9868     		ldr	r0, [r3, #8]	@ float	@, Output
+ 875 02a2 3968     		ldr	r1, [r7]	@ float	@, yaw_setpoint
+ 876 02a4 FFF7FEFF 		bl	autoPan	@
+ 877 02a8 3860     		str	r0, [r7]	@ float	@,
+ 878 02aa AAE7     		b	.L73	@
+ 879              	.L86:
+ 880 02ac DFF828A0 		ldr	r10, .L124+36	@ D.5498,
+ 881 02b0 82E7     		b	.L70	@
+ 882              	.L125:
+ 883 02b2 00BF     		.align	2
+ 884              	.L124:
+ 885 02b4 00000000 		.word	.LANCHOR10
+ 886 02b8 00000000 		.word	.LANCHOR6
+ 887 02bc 00000000 		.word	.LANCHOR11
+ 888 02c0 00000000 		.word	CameraOrient
+ 889 02c4 00000000 		.word	AccAngleSmooth
+ 890 02c8 00000000 		.word	configData
+ 891 02cc 00000000 		.word	.LANCHOR13
+ 892 02d0 00007A44 		.word	1148846080
+ 893 02d4 33336542 		.word	1113928499
+ 894 02d8 000080BF 		.word	-1082130432
+ 895 02dc 00000000 		.word	pitch_angle_correction
+ 896 02e0 0000B442 		.word	1119092736
+ 897 02e4 34FA8E3C 		.word	1016003124
+ 898 02e8 00000000 		.word	.LANCHOR15
+ 899 02ec 00003443 		.word	1127481344
+ 900 02f0 00000000 		.word	.LANCHOR16
+ 901 02f4 00002041 		.word	1092616192
+ 902 02f8 00000000 		.word	roll_angle_correction
+ 903 02fc 00000000 		.word	.LANCHOR4
+ 904 0300 00000000 		.word	.LANCHOR19
+ 905 0304 00000000 		.word	.LANCHOR20
+ 906 0308 00000000 		.word	.LANCHOR21
+ 907 030c 00000000 		.word	.LANCHOR22
+ 908 0310 00000000 		.word	.LANCHOR23
+ 909 0314 00000000 		.word	.LANCHOR24
+ 910 0318 00000000 		.word	.LANCHOR25
+ 911 031c 00000000 		.word	.LANCHOR26
+ 912 0320 00000000 		.word	.LANCHOR27
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 17
 
 
- 913 0334 3246     		mov	r2, r6	@, D.5452
- 914 0336 3748     		ldr	r0, .L126+100	@,
- 915 0338 FFF7FEFF 		bl	print	@
- 916 033c 0023     		movs	r3, #0	@ tmp510,
- 917 033e 2B60     		str	r3, [r5]	@ tmp510, printcounter
- 918              	.L73:
- 919 0340 FFF7FEFF 		bl	LEDoff	@
- 920 0344 19B0     		add	sp, sp, #100	@,,
- 921              		@ sp needed	@
- 922 0346 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}	@
+ 913 0324 00000000 		.word	.LANCHOR28
+ 914 0328 00000000 		.word	Output
+ 915 032c 00000000 		.word	.LANCHOR12
+ 916 0330 00000000 		.word	.LANCHOR17
+ 917 0334 00000000 		.word	.LANCHOR2
+ 918 0338 00000000 		.word	LakituAngles
+ 919 033c 00000000 		.word	.LANCHOR14
+ 920 0340 00000000 		.word	.LANCHOR18
+ 921 0344 00000000 		.word	.LANCHOR0
+ 922 0348 00000000 		.word	tAll
  923              	.L116:
- 924 034a 002B     		cmp	r3, #0	@ LAKITU_enable
- 925 034c 8CD1     		bne	.L72	@
- 926 034e 324B     		ldr	r3, .L126+104	@ tmp383,
- 927 0350 214C     		ldr	r4, .L126+40	@ tmp521,
- 928 0352 9868     		ldr	r0, [r3, #8]	@ float	@, Output
- 929 0354 2168     		ldr	r1, [r4]	@ float	@, yaw_setpoint
- 930 0356 FFF7FEFF 		bl	autoPan	@
- 931 035a 2060     		str	r0, [r4]	@ float	@, yaw_setpoint
- 932 035c 84E7     		b	.L72	@
- 933              	.L86:
- 934 035e 1A4C     		ldr	r4, .L126+24	@ D.5450,
- 935 0360 62E7     		b	.L69	@
- 936              	.L85:
- 937 0362 194C     		ldr	r4, .L126+24	@ D.5450,
- 938 0364 A4E6     		b	.L67	@
- 939              	.L84:
- 940 0366 184C     		ldr	r4, .L126+24	@ D.5450,
- 941 0368 06E7     		b	.L64	@
- 942              	.L57:
- 943 036a DFF8C0B0 		ldr	fp, .L126+124	@ tmp513,
- 944 036e 2B49     		ldr	r1, .L126+108	@,
- 945 0370 5846     		mov	r0, fp	@, tmp513
- 946 0372 FFF7FEFF 		bl	Get_RC_Step	@
- 947 0376 DAF80440 		ldr	r4, [r10, #4]	@ float	@ D.5450, CameraOrient
- 948 037a 2949     		ldr	r1, .L126+112	@,
- 949 037c 2046     		mov	r0, r4	@, D.5450
- 950 037e DBF80460 		ldr	r6, [fp, #4]	@ float	@ step, Step
- 951 0382 FFF7FEFF 		bl	__aeabi_fcmplt	@
- 952 0386 20B1     		cbz	r0, .L59	@,
- 953 0388 3046     		mov	r0, r6	@, step
- 954 038a 0021     		movs	r1, #0	@,
- 955 038c FFF7FEFF 		bl	__aeabi_fcmpgt	@
- 956 0390 48B9     		cbnz	r0, .L83	@,
- 957              	.L59:
- 958 0392 2046     		mov	r0, r4	@, D.5450
- 959 0394 2349     		ldr	r1, .L126+116	@,
- 960 0396 FFF7FEFF 		bl	__aeabi_fcmpgt	@
- 961 039a 28B1     		cbz	r0, .L61	@,
- 962 039c 3046     		mov	r0, r6	@, step
- 963 039e 0021     		movs	r1, #0	@,
- 964 03a0 FFF7FEFF 		bl	__aeabi_fcmplt	@
- 965 03a4 00B1     		cbz	r0, .L61	@,
- 966              	.L83:
- 967 03a6 0026     		movs	r6, #0	@ step,
- 968              	.L61:
- 969 03a8 CBF80460 		str	r6, [fp, #4]	@ float	@ step, Step
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 18
+ 924 034c 9A4A     		ldr	r2, .L126	@ tmp384,
+ 925 034e 2B68     		ldr	r3, [r5]	@ loopCounter.11, loopCounter
+ 926 0350 1268     		ldr	r2, [r2]	@ I2Cerrorcount.38, I2Cerrorcount
+ 927 0352 2068     		ldr	r0, [r4]	@ float	@, CameraOrient
+ 928 0354 CDF834C0 		str	ip, [sp, #52]	@,
+ 929 0358 0F92     		str	r2, [sp, #60]	@,
+ 930 035a 0E93     		str	r3, [sp, #56]	@,
+ 931 035c FFF7FEFF 		bl	Rad2Deg	@
+ 932 0360 0146     		mov	r1, r0	@ D.5498,
+ 933 0362 6068     		ldr	r0, [r4, #4]	@ float	@, CameraOrient
+ 934 0364 1091     		str	r1, [sp, #64]	@,
+ 935 0366 FFF7FEFF 		bl	Rad2Deg	@
+ 936 036a 0546     		mov	r5, r0	@ D.5498,
+ 937 036c A068     		ldr	r0, [r4, #8]	@ float	@, CameraOrient
+ 938 036e FFF7FEFF 		bl	Rad2Deg	@
+ 939 0372 1099     		ldr	r1, [sp, #64]	@,
+ 940 0374 0446     		mov	r4, r0	@ D.5498,
+ 941 0376 0846     		mov	r0, r1	@, D.5498
+ 942 0378 FFF7FEFF 		bl	__aeabi_f2d	@
+ 943 037c CDE90001 		strd	r0, [sp]	@,
+ 944 0380 2846     		mov	r0, r5	@, D.5498
+ 945 0382 FFF7FEFF 		bl	__aeabi_f2d	@
+ 946 0386 CDE90201 		strd	r0, [sp, #8]	@,,
+ 947 038a 2046     		mov	r0, r4	@, D.5498
+ 948 038c FFF7FEFF 		bl	__aeabi_f2d	@
+ 949 0390 0E9B     		ldr	r3, [sp, #56]	@,
+ 950 0392 CDE90401 		strd	r0, [sp, #16]	@,,
+ 951 0396 0F9A     		ldr	r2, [sp, #60]	@,
+ 952 0398 1946     		mov	r1, r3	@, loopCounter.11
+ 953 039a 8848     		ldr	r0, .L126+4	@,
+ 954 039c FFF7FEFF 		bl	print	@
+ 955 03a0 874B     		ldr	r3, .L126+8	@ tmp395,
+ 956 03a2 DDF834C0 		ldr	ip, [sp, #52]	@,
+ 957 03a6 1B68     		ldr	r3, [r3]	@ debugSense, debugSense
+ 958 03a8 002B     		cmp	r3, #0	@ debugSense
+ 959 03aa 3FF450AF 		beq	.L76	@
+ 960              	.L117:
+ 961 03ae 1198     		ldr	r0, [sp, #68]	@ float	@, %sfp
+ 962 03b0 CDF834C0 		str	ip, [sp, #52]	@,
+ 963 03b4 FFF7FEFF 		bl	__aeabi_f2d	@
+ 964 03b8 824C     		ldr	r4, .L126+12	@ tmp399,
+ 965 03ba 0246     		mov	r2, r0	@ D.5500,
+ 966 03bc 2068     		ldr	r0, [r4]	@ float	@, AccData
+ 967 03be 0F92     		str	r2, [sp, #60]	@,
+ 968 03c0 0E91     		str	r1, [sp, #56]	@ tmp3,
+ 969 03c2 FFF7FEFF 		bl	__aeabi_f2d	@
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 18
 
 
- 970 03ac 5DE6     		b	.L56	@
- 971              	.L127:
- 972 03ae 00BF     		.align	2
- 973              	.L126:
- 974 03b0 00000000 		.word	LakituAngles
- 975 03b4 0000B442 		.word	1119092736
- 976 03b8 34FA8E3C 		.word	1016003124
- 977 03bc 00007A44 		.word	1148846080
- 978 03c0 00000000 		.word	.LANCHOR15
- 979 03c4 33336542 		.word	1113928499
- 980 03c8 000080BF 		.word	-1082130432
- 981 03cc 00000000 		.word	pitch_angle_correction
- 982 03d0 00000000 		.word	.LANCHOR2
- 983 03d4 00003443 		.word	1127481344
- 984 03d8 00000000 		.word	.LANCHOR4
- 985 03dc 00000000 		.word	.LANCHOR16
- 986 03e0 00000000 		.word	.LANCHOR17
- 987 03e4 00002041 		.word	1092616192
- 988 03e8 00000000 		.word	roll_angle_correction
- 989 03ec 00000000 		.word	.LANCHOR0
- 990 03f0 00000000 		.word	.LANCHOR18
- 991 03f4 00000000 		.word	.LANCHOR19
- 992 03f8 00000000 		.word	.LANCHOR20
- 993 03fc 00000000 		.word	.LANCHOR21
- 994 0400 00000000 		.word	.LANCHOR22
- 995 0404 00000000 		.word	.LANCHOR23
- 996 0408 00000000 		.word	.LANCHOR24
- 997 040c 00000000 		.word	.LANCHOR25
- 998 0410 00000000 		.word	.LANCHOR26
- 999 0414 84020000 		.word	.LC8
- 1000 0418 00000000 		.word	Output
- 1001 041c 00000000 		.word	.LANCHOR14
- 1002 0420 F1665FBF 		.word	-1084266767
- 1003 0424 D90FC93F 		.word	1070141401
- 1004 0428 00000000 		.word	.LANCHOR12
- 1005 042c 00000000 		.word	.LANCHOR13
- 1006              	.L115:
- 1007 0430 7068     		ldr	r0, [r6, #4]	@ float	@, LakituAngles
- 1008 0432 9349     		ldr	r1, .L128	@,
- 1009 0434 FFF7FEFF 		bl	__aeabi_fsub	@
- 1010 0438 FFF7FEFF 		bl	__aeabi_f2d	@
- 1011 043c 8046     		mov	r8, r0	@ D.5452,
- 1012 043e 3068     		ldr	r0, [r6]	@ float	@, LakituAngles
- 1013 0440 8946     		mov	r9, r1	@ D.5452,
- 1014 0442 FFF7FEFF 		bl	__aeabi_f2d	@
- 1015 0446 CDE90001 		strd	r0, [sp]	@,
- 1016 044a 8E49     		ldr	r1, .L128+4	@,
- 1017 044c B068     		ldr	r0, [r6, #8]	@ float	@, LakituAngles
- 1018 044e FFF7FEFF 		bl	__aeabi_fsub	@
- 1019 0452 FFF7FEFF 		bl	__aeabi_f2d	@
- 1020 0456 4246     		mov	r2, r8	@, D.5452
- 1021 0458 CDE90201 		strd	r0, [sp, #8]	@,,
- 1022 045c 4B46     		mov	r3, r9	@, D.5452
- 1023 045e 8A48     		ldr	r0, .L128+8	@,
- 1024 0460 FFF7FEFF 		bl	print	@
- 1025 0464 43E7     		b	.L81	@
- 1026              	.L117:
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 19
+ 970 03c6 CDE90001 		strd	r0, [sp]	@,
+ 971 03ca 6068     		ldr	r0, [r4, #4]	@ float	@, AccData
+ 972 03cc FFF7FEFF 		bl	__aeabi_f2d	@
+ 973 03d0 CDE90201 		strd	r0, [sp, #8]	@,,
+ 974 03d4 A068     		ldr	r0, [r4, #8]	@ float	@, AccData
+ 975 03d6 FFF7FEFF 		bl	__aeabi_f2d	@
+ 976 03da CDE90401 		strd	r0, [sp, #16]	@,,
+ 977 03de 7A4C     		ldr	r4, .L126+16	@ tmp405,
+ 978 03e0 2068     		ldr	r0, [r4]	@ float	@, GyroData
+ 979 03e2 FFF7FEFF 		bl	__aeabi_f2d	@
+ 980 03e6 CDE90601 		strd	r0, [sp, #24]	@,,
+ 981 03ea 6068     		ldr	r0, [r4, #4]	@ float	@, GyroData
+ 982 03ec FFF7FEFF 		bl	__aeabi_f2d	@
+ 983 03f0 CDE90801 		strd	r0, [sp, #32]	@,,
+ 984 03f4 A068     		ldr	r0, [r4, #8]	@ float	@, GyroData
+ 985 03f6 FFF7FEFF 		bl	__aeabi_f2d	@
+ 986 03fa 0E9B     		ldr	r3, [sp, #56]	@,
+ 987 03fc CDE90A01 		strd	r0, [sp, #40]	@,,
+ 988 0400 0F9A     		ldr	r2, [sp, #60]	@,
+ 989 0402 7248     		ldr	r0, .L126+20	@,
+ 990 0404 FFF7FEFF 		bl	print	@
+ 991 0408 714B     		ldr	r3, .L126+24	@ tmp411,
+ 992 040a DDF834C0 		ldr	ip, [sp, #52]	@,
+ 993 040e 1B68     		ldr	r3, [r3]	@ debugPerf, debugPerf
+ 994 0410 002B     		cmp	r3, #0	@ debugPerf
+ 995 0412 3FF421AF 		beq	.L77	@
+ 996              	.L118:
+ 997 0416 CDF834C0 		str	ip, [sp, #52]	@,
+ 998 041a FFF7FEFF 		bl	GetIdlePerf	@
+ 999 041e FFF7FEFF 		bl	__aeabi_f2d	@
+ 1000 0422 DDF834C0 		ldr	ip, [sp, #52]	@,
+ 1001 0426 0B46     		mov	r3, r1	@ D.5500,
+ 1002 0428 DCF80010 		ldr	r1, [ip]	@ tAll, tAll
+ 1003 042c 0246     		mov	r2, r0	@ D.5500,
+ 1004 042e 0091     		str	r1, [sp]	@ tAll,
+ 1005 0430 1299     		ldr	r1, [sp, #72]	@, %sfp
+ 1006 0432 CDF810B0 		str	fp, [sp, #16]	@ tCalc,
+ 1007 0436 0191     		str	r1, [sp, #4]	@,
+ 1008 0438 1399     		ldr	r1, [sp, #76]	@, %sfp
+ 1009 043a 6648     		ldr	r0, .L126+28	@,
+ 1010 043c 0291     		str	r1, [sp, #8]	@,
+ 1011 043e 1499     		ldr	r1, [sp, #80]	@, %sfp
+ 1012 0440 0391     		str	r1, [sp, #12]	@,
+ 1013 0442 1599     		ldr	r1, [sp, #84]	@, %sfp
+ 1014 0444 0591     		str	r1, [sp, #20]	@,
+ 1015 0446 FFF7FEFF 		bl	print	@
+ 1016 044a 634B     		ldr	r3, .L126+32	@ tmp417,
+ 1017 044c 1B68     		ldr	r3, [r3]	@ debugRC, debugRC
+ 1018 044e 002B     		cmp	r3, #0	@ debugRC
+ 1019 0450 3FF407AF 		beq	.L78	@
+ 1020              	.L119:
+ 1021 0454 DFF8CCA1 		ldr	r10, .L126+108	@ tmp420,
+ 1022 0458 DAF80000 		ldr	r0, [r10]	@ float	@, RCSmooth
+ 1023 045c FFF7FEFF 		bl	__aeabi_f2d	@
+ 1024 0460 0446     		mov	r4, r0	@ D.5500,
+ 1025 0462 DAF80400 		ldr	r0, [r10, #4]	@ float	@, RCSmooth
+ 1026 0466 0D46     		mov	r5, r1	@ D.5500,
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 19
 
 
- 1027 0466 894B     		ldr	r3, .L128+12	@ tmp407,
- 1028 0468 3F68     		ldr	r7, [r7]	@, loopCounter
- 1029 046a 1A68     		ldr	r2, [r3]	@ I2Cerrorcount.35, I2Cerrorcount
- 1030 046c DAF80000 		ldr	r0, [r10]	@ float	@, CameraOrient
- 1031 0470 0D92     		str	r2, [sp, #52]	@,
- 1032 0472 1597     		str	r7, [sp, #84]	@, %sfp
- 1033 0474 FFF7FEFF 		bl	Rad2Deg	@
- 1034 0478 0146     		mov	r1, r0	@ D.5450,
- 1035 047a DAF80400 		ldr	r0, [r10, #4]	@ float	@, CameraOrient
- 1036 047e 0F91     		str	r1, [sp, #60]	@,
- 1037 0480 FFF7FEFF 		bl	Rad2Deg	@
- 1038 0484 0346     		mov	r3, r0	@ D.5450,
- 1039 0486 DAF80800 		ldr	r0, [r10, #8]	@ float	@, CameraOrient
- 1040 048a 0E93     		str	r3, [sp, #56]	@,
- 1041 048c FFF7FEFF 		bl	Rad2Deg	@
- 1042 0490 0F99     		ldr	r1, [sp, #60]	@,
- 1043 0492 0746     		mov	r7, r0	@ D.5450,
- 1044 0494 0846     		mov	r0, r1	@, D.5450
- 1045 0496 FFF7FEFF 		bl	__aeabi_f2d	@
- 1046 049a 0E9B     		ldr	r3, [sp, #56]	@,
- 1047 049c CDE90001 		strd	r0, [sp]	@,
- 1048 04a0 1846     		mov	r0, r3	@, D.5450
- 1049 04a2 FFF7FEFF 		bl	__aeabi_f2d	@
- 1050 04a6 CDE90201 		strd	r0, [sp, #8]	@,,
- 1051 04aa 3846     		mov	r0, r7	@, D.5450
- 1052 04ac FFF7FEFF 		bl	__aeabi_f2d	@
- 1053 04b0 0D9A     		ldr	r2, [sp, #52]	@,
- 1054 04b2 CDE90401 		strd	r0, [sp, #16]	@,,
- 1055 04b6 1599     		ldr	r1, [sp, #84]	@, %sfp
- 1056 04b8 7548     		ldr	r0, .L128+16	@,
- 1057 04ba FFF7FEFF 		bl	print	@
- 1058 04be 754B     		ldr	r3, .L128+20	@ tmp418,
- 1059 04c0 1B68     		ldr	r3, [r3]	@ debugSense, debugSense
- 1060 04c2 002B     		cmp	r3, #0	@ debugSense
- 1061 04c4 3FF4F3AE 		beq	.L75	@
- 1062              	.L118:
- 1063 04c8 1198     		ldr	r0, [sp, #68]	@ float	@, %sfp
- 1064 04ca FFF7FEFF 		bl	__aeabi_f2d	@
- 1065 04ce 724F     		ldr	r7, .L128+24	@ tmp422,
- 1066 04d0 0246     		mov	r2, r0	@ D.5452,
- 1067 04d2 3868     		ldr	r0, [r7]	@ float	@, AccData
- 1068 04d4 0D92     		str	r2, [sp, #52]	@,
- 1069 04d6 0E91     		str	r1, [sp, #56]	@ tmp3,
- 1070 04d8 FFF7FEFF 		bl	__aeabi_f2d	@
- 1071 04dc CDE90001 		strd	r0, [sp]	@,
- 1072 04e0 7868     		ldr	r0, [r7, #4]	@ float	@, AccData
- 1073 04e2 FFF7FEFF 		bl	__aeabi_f2d	@
- 1074 04e6 CDE90201 		strd	r0, [sp, #8]	@,,
- 1075 04ea B868     		ldr	r0, [r7, #8]	@ float	@, AccData
- 1076 04ec FFF7FEFF 		bl	__aeabi_f2d	@
- 1077 04f0 6A4F     		ldr	r7, .L128+28	@ tmp428,
- 1078 04f2 CDE90401 		strd	r0, [sp, #16]	@,,
- 1079 04f6 3868     		ldr	r0, [r7]	@ float	@, GyroData
- 1080 04f8 FFF7FEFF 		bl	__aeabi_f2d	@
- 1081 04fc CDE90601 		strd	r0, [sp, #24]	@,,
- 1082 0500 7868     		ldr	r0, [r7, #4]	@ float	@, GyroData
- 1083 0502 FFF7FEFF 		bl	__aeabi_f2d	@
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 20
+ 1027 0468 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1028 046c CDE90001 		strd	r0, [sp]	@,
+ 1029 0470 DAF80800 		ldr	r0, [r10, #8]	@ float	@, RCSmooth
+ 1030 0474 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1031 0478 CDE90201 		strd	r0, [sp, #8]	@,,
+ 1032 047c 3068     		ldr	r0, [r6]	@ float	@, Step
+ 1033 047e FFF7FEFF 		bl	__aeabi_f2d	@
+ 1034 0482 CDE90401 		strd	r0, [sp, #16]	@,,
+ 1035 0486 7068     		ldr	r0, [r6, #4]	@ float	@, Step
+ 1036 0488 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1037 048c CDE90601 		strd	r0, [sp, #24]	@,,
+ 1038 0490 B068     		ldr	r0, [r6, #8]	@ float	@, Step
+ 1039 0492 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1040 0496 2B46     		mov	r3, r5	@, D.5500
+ 1041 0498 CDE90801 		strd	r0, [sp, #32]	@,,
+ 1042 049c 2246     		mov	r2, r4	@, D.5500
+ 1043 049e 4F48     		ldr	r0, .L126+36	@,
+ 1044 04a0 FFF7FEFF 		bl	print	@
+ 1045 04a4 4E4B     		ldr	r3, .L126+40	@ tmp432,
+ 1046 04a6 1B68     		ldr	r3, [r3]	@ debugOrient, debugOrient
+ 1047 04a8 002B     		cmp	r3, #0	@ debugOrient
+ 1048 04aa 3FF4DFAE 		beq	.L79	@
+ 1049              	.L120:
+ 1050 04ae D9F80000 		ldr	r0, [r9]	@ float	@, roll_setpoint
+ 1051 04b2 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1052 04b6 0446     		mov	r4, r0	@ D.5500,
+ 1053 04b8 D8F80000 		ldr	r0, [r8]	@ float	@, pitch_setpoint
+ 1054 04bc 0D46     		mov	r5, r1	@ D.5500,
+ 1055 04be FFF7FEFF 		bl	__aeabi_f2d	@
+ 1056 04c2 CDE90001 		strd	r0, [sp]	@,
+ 1057 04c6 474B     		ldr	r3, .L126+44	@ tmp439,
+ 1058 04c8 1868     		ldr	r0, [r3]	@ float	@, yaw_setpoint
+ 1059 04ca FFF7FEFF 		bl	__aeabi_f2d	@
+ 1060 04ce 2B46     		mov	r3, r5	@, D.5500
+ 1061 04d0 CDE90201 		strd	r0, [sp, #8]	@,,
+ 1062 04d4 2246     		mov	r2, r4	@, D.5500
+ 1063 04d6 4448     		ldr	r0, .L126+48	@,
+ 1064 04d8 FFF7FEFF 		bl	print	@
+ 1065 04dc 434B     		ldr	r3, .L126+52	@ tmp441,
+ 1066 04de 1B68     		ldr	r3, [r3]	@ debugCnt, debugCnt
+ 1067 04e0 002B     		cmp	r3, #0	@ debugCnt
+ 1068 04e2 3FF4C8AE 		beq	.L80	@
+ 1069              	.L121:
+ 1070 04e6 424C     		ldr	r4, .L126+56	@ tmp446,
+ 1071 04e8 424B     		ldr	r3, .L126+60	@ tmp443,
+ 1072 04ea A268     		ldr	r2, [r4, #8]	@ D.5499, MaxCnt
+ 1073 04ec 4248     		ldr	r0, .L126+64	@ tmp449,
+ 1074 04ee D3F80080 		ldr	r8, [r3]	@ D.5499, MinCnt
+ 1075 04f2 5E68     		ldr	r6, [r3, #4]	@ D.5499, MinCnt
+ 1076 04f4 9D68     		ldr	r5, [r3, #8]	@ D.5499, MinCnt
+ 1077 04f6 D0F800A0 		ldr	r10, [r0]	@ D.5499, IrqCnt
+ 1078 04fa 94E80808 		ldmia	r4, {r3, fp}	@ tmp446,,
+ 1079 04fe D0F80490 		ldr	r9, [r0, #4]	@ D.5499, IrqCnt
+ 1080 0502 8468     		ldr	r4, [r0, #8]	@ D.5499, IrqCnt
+ 1081 0504 0F92     		str	r2, [sp, #60]	@,
+ 1082 0506 0E93     		str	r3, [sp, #56]	@,
+ 1083 0508 FFF7FEFF 		bl	usbOverrun	@
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 20
 
 
- 1084 0506 CDE90801 		strd	r0, [sp, #32]	@,,
- 1085 050a B868     		ldr	r0, [r7, #8]	@ float	@, GyroData
- 1086 050c FFF7FEFF 		bl	__aeabi_f2d	@
- 1087 0510 0E9B     		ldr	r3, [sp, #56]	@,
- 1088 0512 CDE90A01 		strd	r0, [sp, #40]	@,,
- 1089 0516 0D9A     		ldr	r2, [sp, #52]	@,
- 1090 0518 6148     		ldr	r0, .L128+32	@,
- 1091 051a FFF7FEFF 		bl	print	@
- 1092 051e 614B     		ldr	r3, .L128+36	@ tmp434,
- 1093 0520 1B68     		ldr	r3, [r3]	@ debugPerf, debugPerf
- 1094 0522 002B     		cmp	r3, #0	@ debugPerf
- 1095 0524 3FF4C8AE 		beq	.L76	@
- 1096              	.L119:
- 1097 0528 FFF7FEFF 		bl	GetIdlePerf	@
- 1098 052c FFF7FEFF 		bl	__aeabi_f2d	@
- 1099 0530 0B46     		mov	r3, r1	@ D.5452,
- 1100 0532 1299     		ldr	r1, [sp, #72]	@, %sfp
- 1101 0534 0246     		mov	r2, r0	@ D.5452,
- 1102 0536 0191     		str	r1, [sp, #4]	@,
- 1103 0538 1399     		ldr	r1, [sp, #76]	@, %sfp
- 1104 053a CDF80090 		str	r9, [sp]	@ tAll,
- 1105 053e 0291     		str	r1, [sp, #8]	@,
- 1106 0540 1499     		ldr	r1, [sp, #80]	@, %sfp
- 1107 0542 0494     		str	r4, [sp, #16]	@ tCalc,
- 1108 0544 0391     		str	r1, [sp, #12]	@,
- 1109 0546 CDF81480 		str	r8, [sp, #20]	@ tPID,
- 1110 054a 5748     		ldr	r0, .L128+40	@,
- 1111 054c FFF7FEFF 		bl	print	@
- 1112 0550 564B     		ldr	r3, .L128+44	@ tmp438,
- 1113 0552 1B68     		ldr	r3, [r3]	@ debugRC, debugRC
- 1114 0554 002B     		cmp	r3, #0	@ debugRC
- 1115 0556 3FF4B4AE 		beq	.L77	@
- 1116              	.L120:
- 1117 055a 554C     		ldr	r4, .L128+48	@ tmp441,
- 1118 055c 2068     		ldr	r0, [r4]	@ float	@, RCSmooth
- 1119 055e FFF7FEFF 		bl	__aeabi_f2d	@
- 1120 0562 8046     		mov	r8, r0	@ D.5452,
- 1121 0564 6068     		ldr	r0, [r4, #4]	@ float	@, RCSmooth
- 1122 0566 8946     		mov	r9, r1	@ D.5452,
- 1123 0568 FFF7FEFF 		bl	__aeabi_f2d	@
- 1124 056c CDE90001 		strd	r0, [sp]	@,
- 1125 0570 A068     		ldr	r0, [r4, #8]	@ float	@, RCSmooth
- 1126 0572 FFF7FEFF 		bl	__aeabi_f2d	@
- 1127 0576 CDE90201 		strd	r0, [sp, #8]	@,,
- 1128 057a DBF80000 		ldr	r0, [fp]	@ float	@, Step
- 1129 057e FFF7FEFF 		bl	__aeabi_f2d	@
- 1130 0582 CDE90401 		strd	r0, [sp, #16]	@,,
- 1131 0586 DBF80400 		ldr	r0, [fp, #4]	@ float	@, Step
- 1132 058a FFF7FEFF 		bl	__aeabi_f2d	@
- 1133 058e CDE90601 		strd	r0, [sp, #24]	@,,
- 1134 0592 DBF80800 		ldr	r0, [fp, #8]	@ float	@, Step
- 1135 0596 FFF7FEFF 		bl	__aeabi_f2d	@
- 1136 059a 4B46     		mov	r3, r9	@, D.5452
- 1137 059c CDE90801 		strd	r0, [sp, #32]	@,,
- 1138 05a0 4246     		mov	r2, r8	@, D.5452
- 1139 05a2 4448     		ldr	r0, .L128+52	@,
- 1140 05a4 FFF7FEFF 		bl	print	@
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 21
+ 1084 050c 0E9B     		ldr	r3, [sp, #56]	@,
+ 1085 050e 0F9A     		ldr	r2, [sp, #60]	@,
+ 1086 0510 8DE80808 		stmia	sp, {r3, fp}	@,,
+ 1087 0514 0292     		str	r2, [sp, #8]	@ D.5499,
+ 1088 0516 2B46     		mov	r3, r5	@, D.5499
+ 1089 0518 0690     		str	r0, [sp, #24]	@,
+ 1090 051a CDF80CA0 		str	r10, [sp, #12]	@ D.5499,
+ 1091 051e CDF81090 		str	r9, [sp, #16]	@ D.5499,
+ 1092 0522 0594     		str	r4, [sp, #20]	@ D.5499,
+ 1093 0524 4146     		mov	r1, r8	@, D.5499
+ 1094 0526 3246     		mov	r2, r6	@, D.5499
+ 1095 0528 3448     		ldr	r0, .L126+68	@,
+ 1096 052a FFF7FEFF 		bl	print	@
+ 1097 052e 344B     		ldr	r3, .L126+72	@ tmp453,
+ 1098 0530 1B68     		ldr	r3, [r3]	@ debugAutoPan, debugAutoPan
+ 1099 0532 002B     		cmp	r3, #0	@ debugAutoPan
+ 1100 0534 3FF4A4AE 		beq	.L81	@
+ 1101              	.L122:
+ 1102 0538 324E     		ldr	r6, .L126+76	@ tmp456,
+ 1103 053a 7068     		ldr	r0, [r6, #4]	@ float	@, Output
+ 1104 053c FFF7FEFF 		bl	__aeabi_f2d	@
+ 1105 0540 0446     		mov	r4, r0	@ D.5500,
+ 1106 0542 3068     		ldr	r0, [r6]	@ float	@, Output
+ 1107 0544 0D46     		mov	r5, r1	@ D.5500,
+ 1108 0546 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1109 054a CDE90001 		strd	r0, [sp]	@,
+ 1110 054e B068     		ldr	r0, [r6, #8]	@ float	@, Output
+ 1111 0550 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1112 0554 CDE90201 		strd	r0, [sp, #8]	@,,
+ 1113 0558 2B4B     		ldr	r3, .L126+80	@ tmp462,
+ 1114 055a 1868     		ldr	r0, [r3]	@ float	@, centerPoint
+ 1115 055c FFF7FEFF 		bl	__aeabi_f2d	@
+ 1116 0560 2B46     		mov	r3, r5	@, D.5500
+ 1117 0562 CDE90401 		strd	r0, [sp, #16]	@,,
+ 1118 0566 2246     		mov	r2, r4	@, D.5500
+ 1119 0568 2848     		ldr	r0, .L126+84	@,
+ 1120 056a FFF7FEFF 		bl	print	@
+ 1121 056e 284B     		ldr	r3, .L126+88	@ tmp464,
+ 1122 0570 1B68     		ldr	r3, [r3]	@ debugLAKITU, debugLAKITU
+ 1123 0572 002B     		cmp	r3, #0	@ debugLAKITU
+ 1124 0574 3FF489AE 		beq	.L82	@
+ 1125              	.L123:
+ 1126 0578 264E     		ldr	r6, .L126+92	@ tmp467,
+ 1127 057a 2749     		ldr	r1, .L126+96	@,
+ 1128 057c 7068     		ldr	r0, [r6, #4]	@ float	@, LakituAngles
+ 1129 057e FFF7FEFF 		bl	__aeabi_fsub	@
+ 1130 0582 FFF7FEFF 		bl	__aeabi_f2d	@
+ 1131 0586 0446     		mov	r4, r0	@ D.5500,
+ 1132 0588 3068     		ldr	r0, [r6]	@ float	@, LakituAngles
+ 1133 058a 0D46     		mov	r5, r1	@ D.5500,
+ 1134 058c FFF7FEFF 		bl	__aeabi_f2d	@
+ 1135 0590 CDE90001 		strd	r0, [sp]	@,
+ 1136 0594 2149     		ldr	r1, .L126+100	@,
+ 1137 0596 B068     		ldr	r0, [r6, #8]	@ float	@, LakituAngles
+ 1138 0598 FFF7FEFF 		bl	__aeabi_fsub	@
+ 1139 059c FFF7FEFF 		bl	__aeabi_f2d	@
+ 1140 05a0 2246     		mov	r2, r4	@, D.5500
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 21
 
 
- 1141 05a8 434B     		ldr	r3, .L128+56	@ tmp453,
- 1142 05aa 1B68     		ldr	r3, [r3]	@ debugOrient, debugOrient
- 1143 05ac 002B     		cmp	r3, #0	@ debugOrient
- 1144 05ae 3FF48DAE 		beq	.L123	@
- 1145              	.L114:
- 1146 05b2 3068     		ldr	r0, [r6]	@ float	@, roll_setpoint
- 1147 05b4 FFF7FEFF 		bl	__aeabi_f2d	@
- 1148 05b8 109A     		ldr	r2, [sp, #64]	@, %sfp
- 1149 05ba 0646     		mov	r6, r0	@ D.5452,
- 1150 05bc 1068     		ldr	r0, [r2]	@ float	@, pitch_setpoint
- 1151 05be 0F46     		mov	r7, r1	@ D.5452,
- 1152 05c0 FFF7FEFF 		bl	__aeabi_f2d	@
- 1153 05c4 CDE90001 		strd	r0, [sp]	@,
- 1154 05c8 3C4C     		ldr	r4, .L128+60	@ tmp521,
- 1155 05ca 2068     		ldr	r0, [r4]	@ float	@, yaw_setpoint
- 1156 05cc FFF7FEFF 		bl	__aeabi_f2d	@
- 1157 05d0 3B46     		mov	r3, r7	@, D.5452
- 1158 05d2 CDE90201 		strd	r0, [sp, #8]	@,,
- 1159 05d6 3246     		mov	r2, r6	@, D.5452
- 1160 05d8 3948     		ldr	r0, .L128+64	@,
- 1161 05da FFF7FEFF 		bl	print	@
- 1162 05de 394B     		ldr	r3, .L128+68	@ tmp462,
- 1163 05e0 1B68     		ldr	r3, [r3]	@ debugCnt, debugCnt
- 1164 05e2 002B     		cmp	r3, #0	@ debugCnt
- 1165 05e4 3FF478AE 		beq	.L79	@
- 1166              	.L121:
- 1167 05e8 374A     		ldr	r2, .L128+72	@ tmp464,
- 1168 05ea 3848     		ldr	r0, .L128+76	@ tmp470,
- 1169 05ec 384B     		ldr	r3, .L128+80	@ tmp467,
- 1170 05ee D2F80080 		ldr	r8, [r2]	@ D.5451, MinCnt
- 1171 05f2 5768     		ldr	r7, [r2, #4]	@ D.5451, MinCnt
- 1172 05f4 9668     		ldr	r6, [r2, #8]	@ D.5451, MinCnt
- 1173 05f6 0ECB     		ldmia	r3, {r1, r2, r3}	@ tmp467,,,
- 1174 05f8 1293     		str	r3, [sp, #72]	@, %sfp
- 1175 05fa 0368     		ldr	r3, [r0]	@, IrqCnt
- 1176 05fc D0F80890 		ldr	r9, [r0, #8]	@ D.5451, IrqCnt
- 1177 0600 1093     		str	r3, [sp, #64]	@, %sfp
- 1178 0602 4368     		ldr	r3, [r0, #4]	@, IrqCnt
- 1179 0604 0F91     		str	r1, [sp, #60]	@,
- 1180 0606 1193     		str	r3, [sp, #68]	@, %sfp
- 1181 0608 0D92     		str	r2, [sp, #52]	@,
- 1182 060a FFF7FEFF 		bl	usbOverrun	@
- 1183 060e 0F99     		ldr	r1, [sp, #60]	@,
- 1184 0610 0D9A     		ldr	r2, [sp, #52]	@,
- 1185 0612 119B     		ldr	r3, [sp, #68]	@, %sfp
- 1186 0614 0091     		str	r1, [sp]	@ D.5451,
- 1187 0616 0192     		str	r2, [sp, #4]	@ D.5451,
- 1188 0618 1299     		ldr	r1, [sp, #72]	@, %sfp
- 1189 061a 109A     		ldr	r2, [sp, #64]	@, %sfp
- 1190 061c 0291     		str	r1, [sp, #8]	@,
- 1191 061e 0392     		str	r2, [sp, #12]	@,
- 1192 0620 0493     		str	r3, [sp, #16]	@,
- 1193 0622 0690     		str	r0, [sp, #24]	@,
- 1194 0624 3346     		mov	r3, r6	@, D.5451
- 1195 0626 CDF81490 		str	r9, [sp, #20]	@ D.5451,
- 1196 062a 4146     		mov	r1, r8	@, D.5451
- 1197 062c 3A46     		mov	r2, r7	@, D.5451
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 22
+ 1141 05a2 CDE90201 		strd	r0, [sp, #8]	@,,
+ 1142 05a6 2B46     		mov	r3, r5	@, D.5500
+ 1143 05a8 1D48     		ldr	r0, .L126+104	@,
+ 1144 05aa FFF7FEFF 		bl	print	@
+ 1145 05ae 6CE6     		b	.L82	@
+ 1146              	.L85:
+ 1147 05b0 DFF87490 		ldr	r9, .L126+112	@ D.5498,
+ 1148 05b4 7CE5     		b	.L68	@
+ 1149              	.L127:
+ 1150 05b6 00BF     		.align	2
+ 1151              	.L126:
+ 1152 05b8 00000000 		.word	I2Cerrorcount
+ 1153 05bc 00000000 		.word	.LC0
+ 1154 05c0 00000000 		.word	.LANCHOR22
+ 1155 05c4 00000000 		.word	.LANCHOR6
+ 1156 05c8 00000000 		.word	.LANCHOR11
+ 1157 05cc 48000000 		.word	.LC1
+ 1158 05d0 00000000 		.word	.LANCHOR23
+ 1159 05d4 94000000 		.word	.LC2
+ 1160 05d8 00000000 		.word	.LANCHOR24
+ 1161 05dc F8000000 		.word	.LC3
+ 1162 05e0 00000000 		.word	.LANCHOR25
+ 1163 05e4 00000000 		.word	.LANCHOR4
+ 1164 05e8 58010000 		.word	.LC4
+ 1165 05ec 00000000 		.word	.LANCHOR26
+ 1166 05f0 00000000 		.word	MaxCnt
+ 1167 05f4 00000000 		.word	MinCnt
+ 1168 05f8 00000000 		.word	IrqCnt
+ 1169 05fc A0010000 		.word	.LC5
+ 1170 0600 00000000 		.word	.LANCHOR27
+ 1171 0604 00000000 		.word	Output
+ 1172 0608 00000000 		.word	.LANCHOR7
+ 1173 060c F8010000 		.word	.LC6
+ 1174 0610 00000000 		.word	.LANCHOR28
+ 1175 0614 00000000 		.word	LakituAngles
+ 1176 0618 0000B442 		.word	1119092736
+ 1177 061c 00003443 		.word	1127481344
+ 1178 0620 48020000 		.word	.LC7
+ 1179 0624 00000000 		.word	.LANCHOR14
+ 1180 0628 000080BF 		.word	-1082130432
+ 1181              	.L60:
+ 1182 062c 104E     		ldr	r6, .L128	@ tmp486,
+ 1183 062e 1149     		ldr	r1, .L128+4	@,
+ 1184 0630 3046     		mov	r0, r6	@, tmp486
+ 1185 0632 FFF7FEFF 		bl	Get_RC_Step	@
+ 1186 0636 D4F80480 		ldr	r8, [r4, #4]	@ float	@ D.5498, CameraOrient
+ 1187 063a 0F49     		ldr	r1, .L128+8	@,
+ 1188 063c 4046     		mov	r0, r8	@, D.5498
+ 1189 063e D6F80490 		ldr	r9, [r6, #4]	@ float	@ step, Step
+ 1190 0642 FFF7FEFF 		bl	__aeabi_fcmplt	@
+ 1191 0646 20B1     		cbz	r0, .L62	@,
+ 1192 0648 4846     		mov	r0, r9	@, step
+ 1193 064a 0021     		movs	r1, #0	@,
+ 1194 064c FFF7FEFF 		bl	__aeabi_fcmpgt	@
+ 1195 0650 48B9     		cbnz	r0, .L84	@,
+ 1196              	.L62:
+ 1197 0652 4046     		mov	r0, r8	@, D.5498
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 22
 
 
- 1198 062e 2948     		ldr	r0, .L128+84	@,
- 1199 0630 FFF7FEFF 		bl	print	@
- 1200 0634 284B     		ldr	r3, .L128+88	@ tmp474,
- 1201 0636 1B68     		ldr	r3, [r3]	@ debugAutoPan, debugAutoPan
- 1202 0638 002B     		cmp	r3, #0	@ debugAutoPan
- 1203 063a 3FF452AE 		beq	.L80	@
- 1204              	.L122:
- 1205 063e DFF8A480 		ldr	r8, .L128+100	@ tmp477,
- 1206 0642 D8F80400 		ldr	r0, [r8, #4]	@ float	@, Output
- 1207 0646 FFF7FEFF 		bl	__aeabi_f2d	@
- 1208 064a 0646     		mov	r6, r0	@ D.5452,
- 1209 064c D8F80000 		ldr	r0, [r8]	@ float	@, Output
- 1210 0650 0F46     		mov	r7, r1	@ D.5452,
- 1211 0652 FFF7FEFF 		bl	__aeabi_f2d	@
- 1212 0656 CDE90001 		strd	r0, [sp]	@,
- 1213 065a D8F80800 		ldr	r0, [r8, #8]	@ float	@, Output
- 1214 065e FFF7FEFF 		bl	__aeabi_f2d	@
- 1215 0662 CDE90201 		strd	r0, [sp, #8]	@,,
- 1216 0666 1D4B     		ldr	r3, .L128+92	@ tmp483,
- 1217 0668 1868     		ldr	r0, [r3]	@ float	@, centerPoint
- 1218 066a FFF7FEFF 		bl	__aeabi_f2d	@
- 1219 066e 3246     		mov	r2, r6	@, D.5452
- 1220 0670 CDE90401 		strd	r0, [sp, #16]	@,,
- 1221 0674 3B46     		mov	r3, r7	@, D.5452
- 1222 0676 1A48     		ldr	r0, .L128+96	@,
- 1223 0678 FFF7FEFF 		bl	print	@
- 1224 067c 31E6     		b	.L80	@
- 1225              	.L129:
- 1226 067e 00BF     		.align	2
- 1227              	.L128:
- 1228 0680 0000B442 		.word	1119092736
- 1229 0684 00003443 		.word	1127481344
- 1230 0688 48020000 		.word	.LC7
- 1231 068c 00000000 		.word	I2Cerrorcount
- 1232 0690 00000000 		.word	.LC0
- 1233 0694 00000000 		.word	.LANCHOR20
- 1234 0698 00000000 		.word	.LANCHOR6
- 1235 069c 00000000 		.word	.LANCHOR11
- 1236 06a0 48000000 		.word	.LC1
- 1237 06a4 00000000 		.word	.LANCHOR21
- 1238 06a8 94000000 		.word	.LC2
- 1239 06ac 00000000 		.word	.LANCHOR22
- 1240 06b0 00000000 		.word	.LANCHOR14
- 1241 06b4 F8000000 		.word	.LC3
- 1242 06b8 00000000 		.word	.LANCHOR23
- 1243 06bc 00000000 		.word	.LANCHOR4
- 1244 06c0 58010000 		.word	.LC4
- 1245 06c4 00000000 		.word	.LANCHOR24
- 1246 06c8 00000000 		.word	MinCnt
- 1247 06cc 00000000 		.word	IrqCnt
- 1248 06d0 00000000 		.word	MaxCnt
- 1249 06d4 A0010000 		.word	.LC5
- 1250 06d8 00000000 		.word	.LANCHOR25
- 1251 06dc 00000000 		.word	.LANCHOR7
- 1252 06e0 F8010000 		.word	.LC6
- 1253 06e4 00000000 		.word	Output
- 1254              		.size	engineProcess, .-engineProcess
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 23
+ 1198 0654 0949     		ldr	r1, .L128+12	@,
+ 1199 0656 FFF7FEFF 		bl	__aeabi_fcmpgt	@
+ 1200 065a 30B1     		cbz	r0, .L64	@,
+ 1201 065c 4846     		mov	r0, r9	@, step
+ 1202 065e 0021     		movs	r1, #0	@,
+ 1203 0660 FFF7FEFF 		bl	__aeabi_fcmplt	@
+ 1204 0664 08B1     		cbz	r0, .L64	@,
+ 1205              	.L84:
+ 1206 0666 4FF00009 		mov	r9, #0	@ step,
+ 1207              	.L64:
+ 1208 066a C6F80490 		str	r9, [r6, #4]	@ float	@ step, Step
+ 1209 066e FAE4     		b	.L59	@
+ 1210              	.L129:
+ 1211              		.align	2
+ 1212              	.L128:
+ 1213 0670 00000000 		.word	.LANCHOR13
+ 1214 0674 00000000 		.word	.LANCHOR14
+ 1215 0678 F1665FBF 		.word	-1084266767
+ 1216 067c D90FC93F 		.word	1070141401
+ 1217              		.size	engineProcess, .-engineProcess
+ 1218              		.global	step
+ 1219              		.global	stepSmooth
+ 1220              		.global	centerPoint
+ 1221              		.comm	tAll,4,4
+ 1222              		.global	current_time
+ 1223              		.global	Kp_y
+ 1224              		.global	Kp_p
+ 1225              		.global	myprint
+ 1226              		.comm	setpoint,4000,4
+ 1227              		.comm	control_sig,4000,4
+ 1228              		.comm	time,4000,4
+ 1229              		.comm	orientation,4000,4
+ 1230              		.global	RCSmooth
+ 1231              		.global	Step
+ 1232              		.global	GyroData
+ 1233              		.global	AccData
+ 1234              		.comm	AccAngleSmooth,12,4
+ 1235              		.comm	CameraOrient,12,4
+ 1236              		.comm	LakituAngles,12,4
+ 1237              		.comm	Output,12,4
+ 1238              		.comm	yaw_angle_correction,4,4
+ 1239              		.global	yaw_Error_last
+ 1240              		.global	yaw_setpoint
+ 1241              		.comm	roll_angle_correction,4,4
+ 1242              		.global	roll_Error_last
+ 1243              		.global	roll_setpoint
+ 1244              		.comm	pitch_angle_correction,4,4
+ 1245              		.global	pitch_Error_last
+ 1246              		.global	pitch_setpoint
+ 1247              		.global	LAKITU_enable
+ 1248              		.global	debugLAKITU
+ 1249              		.global	debugAutoPan
+ 1250              		.global	debugOrient
+ 1251              		.global	debugRC
+ 1252              		.global	debugCnt
+ 1253              		.global	debugSense
+ 1254              		.global	debugPerf
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 23
 
 
- 1255              		.global	step
- 1256              		.global	stepSmooth
- 1257              		.global	centerPoint
- 1258              		.global	RCSmooth
- 1259              		.global	Step
- 1260              		.global	GyroData
- 1261              		.global	AccData
- 1262              		.comm	AccAngleSmooth,12,4
- 1263              		.comm	CameraOrient,12,4
- 1264              		.comm	LakituAngles,12,4
- 1265              		.comm	Output,12,4
- 1266              		.comm	yaw_angle_correction,4,4
- 1267              		.global	yaw_Error_last
- 1268              		.global	yaw_setpoint
- 1269              		.comm	roll_angle_correction,4,4
- 1270              		.global	roll_Error_last
- 1271              		.global	roll_setpoint
- 1272              		.comm	pitch_angle_correction,4,4
- 1273              		.global	pitch_Error_last
- 1274              		.global	pitch_setpoint
- 1275              		.global	LAKITU_enable
- 1276              		.global	debugLAKITU
- 1277              		.global	debugAutoPan
- 1278              		.global	debugOrient
- 1279              		.global	debugRC
- 1280              		.global	debugCnt
- 1281              		.global	debugSense
- 1282              		.global	debugPerf
- 1283              		.global	debugPrint
- 1284              		.section	.bss.roll_setpoint,"aw",%nobits
+ 1255              		.global	debugPrint
+ 1256              		.section	.bss.roll_setpoint,"aw",%nobits
+ 1257              		.align	2
+ 1258              		.set	.LANCHOR0,. + 0
+ 1259              		.type	roll_setpoint, %object
+ 1260              		.size	roll_setpoint, 4
+ 1261              	roll_setpoint:
+ 1262 0000 00000000 		.space	4
+ 1263              		.section	.bss.pitchRCOffset,"aw",%nobits
+ 1264              		.align	2
+ 1265              		.set	.LANCHOR17,. + 0
+ 1266              		.type	pitchRCOffset, %object
+ 1267              		.size	pitchRCOffset, 4
+ 1268              	pitchRCOffset:
+ 1269 0000 00000000 		.space	4
+ 1270              		.section	.bss.debugCnt,"aw",%nobits
+ 1271              		.align	2
+ 1272              		.set	.LANCHOR26,. + 0
+ 1273              		.type	debugCnt, %object
+ 1274              		.size	debugCnt, 4
+ 1275              	debugCnt:
+ 1276 0000 00000000 		.space	4
+ 1277              		.section	.bss.debugOrient,"aw",%nobits
+ 1278              		.align	2
+ 1279              		.set	.LANCHOR25,. + 0
+ 1280              		.type	debugOrient, %object
+ 1281              		.size	debugOrient, 4
+ 1282              	debugOrient:
+ 1283 0000 00000000 		.space	4
+ 1284              		.section	.bss.yaw_setpoint,"aw",%nobits
  1285              		.align	2
- 1286              		.set	.LANCHOR0,. + 0
- 1287              		.type	roll_setpoint, %object
- 1288              		.size	roll_setpoint, 4
- 1289              	roll_setpoint:
+ 1286              		.set	.LANCHOR4,. + 0
+ 1287              		.type	yaw_setpoint, %object
+ 1288              		.size	yaw_setpoint, 4
+ 1289              	yaw_setpoint:
  1290 0000 00000000 		.space	4
- 1291              		.section	.bss.pitchRCOffset,"aw",%nobits
+ 1291              		.section	.bss.myprint,"aw",%nobits
  1292              		.align	2
- 1293              		.set	.LANCHOR15,. + 0
- 1294              		.type	pitchRCOffset, %object
- 1295              		.size	pitchRCOffset, 4
- 1296              	pitchRCOffset:
- 1297 0000 00000000 		.space	4
- 1298              		.section	.bss.debugCnt,"aw",%nobits
- 1299              		.align	2
- 1300              		.set	.LANCHOR24,. + 0
- 1301              		.type	debugCnt, %object
- 1302              		.size	debugCnt, 4
- 1303              	debugCnt:
- 1304 0000 00000000 		.space	4
- 1305              		.section	.bss.debugOrient,"aw",%nobits
- 1306              		.align	2
- 1307              		.set	.LANCHOR23,. + 0
- 1308              		.type	debugOrient, %object
- 1309              		.size	debugOrient, 4
- 1310              	debugOrient:
- 1311 0000 00000000 		.space	4
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 24
+ 1293              		.type	myprint, %object
+ 1294              		.size	myprint, 4
+ 1295              	myprint:
+ 1296 0000 00000000 		.space	4
+ 1297              		.section	.bss.centerPoint,"aw",%nobits
+ 1298              		.align	2
+ 1299              		.set	.LANCHOR7,. + 0
+ 1300              		.type	centerPoint, %object
+ 1301              		.size	centerPoint, 4
+ 1302              	centerPoint:
+ 1303 0000 00000000 		.space	4
+ 1304              		.section	.bss.Step,"aw",%nobits
+ 1305              		.align	2
+ 1306              		.set	.LANCHOR13,. + 0
+ 1307              		.type	Step, %object
+ 1308              		.size	Step, 12
+ 1309              	Step:
+ 1310 0000 00000000 		.space	12
+ 1310      00000000 
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 24
 
 
- 1312              		.section	.bss.yawRCOffset,"aw",%nobits
- 1313              		.align	2
- 1314              		.set	.LANCHOR16,. + 0
- 1315              		.type	yawRCOffset, %object
- 1316              		.size	yawRCOffset, 4
- 1317              	yawRCOffset:
- 1318 0000 00000000 		.space	4
- 1319              		.section	.bss.yaw_setpoint,"aw",%nobits
- 1320              		.align	2
- 1321              		.set	.LANCHOR4,. + 0
- 1322              		.type	yaw_setpoint, %object
- 1323              		.size	yaw_setpoint, 4
- 1324              	yaw_setpoint:
- 1325 0000 00000000 		.space	4
- 1326              		.section	.bss.centerPoint,"aw",%nobits
- 1327              		.align	2
- 1328              		.set	.LANCHOR7,. + 0
- 1329              		.type	centerPoint, %object
- 1330              		.size	centerPoint, 4
- 1331              	centerPoint:
- 1332 0000 00000000 		.space	4
- 1333              		.section	.bss.Step,"aw",%nobits
- 1334              		.align	2
- 1335              		.set	.LANCHOR13,. + 0
- 1336              		.type	Step, %object
- 1337              		.size	Step, 12
- 1338              	Step:
- 1339 0000 00000000 		.space	12
- 1339      00000000 
- 1339      00000000 
- 1340              		.section	.data.LAKITU_enable,"aw",%progbits
- 1341              		.align	2
- 1342              		.set	.LANCHOR12,. + 0
- 1343              		.type	LAKITU_enable, %object
- 1344              		.size	LAKITU_enable, 4
- 1345              	LAKITU_enable:
- 1346 0000 01000000 		.word	1
- 1347              		.section	.bss.debugAutoPan,"aw",%nobits
- 1348              		.align	2
- 1349              		.set	.LANCHOR25,. + 0
- 1350              		.type	debugAutoPan, %object
- 1351              		.size	debugAutoPan, 4
- 1352              	debugAutoPan:
- 1353 0000 00000000 		.space	4
- 1354              		.section	.bss.pitch_Error_last,"aw",%nobits
- 1355              		.align	2
- 1356              		.set	.LANCHOR3,. + 0
- 1357              		.type	pitch_Error_last, %object
- 1358              		.size	pitch_Error_last, 4
- 1359              	pitch_Error_last:
- 1360 0000 00000000 		.space	4
- 1361              		.section	.bss.debugPrint,"aw",%nobits
- 1362              		.align	2
- 1363              		.set	.LANCHOR19,. + 0
- 1364              		.type	debugPrint, %object
- 1365              		.size	debugPrint, 4
- 1366              	debugPrint:
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 25
+ 1310      00000000 
+ 1311              		.section	.data.Kp_p,"aw",%progbits
+ 1312              		.align	2
+ 1313              		.set	.LANCHOR15,. + 0
+ 1314              		.type	Kp_p, %object
+ 1315              		.size	Kp_p, 4
+ 1316              	Kp_p:
+ 1317 0000 00008040 		.word	1082130432
+ 1318              		.section	.data.LAKITU_enable,"aw",%progbits
+ 1319              		.align	2
+ 1320              		.set	.LANCHOR12,. + 0
+ 1321              		.type	LAKITU_enable, %object
+ 1322              		.size	LAKITU_enable, 4
+ 1323              	LAKITU_enable:
+ 1324 0000 01000000 		.word	1
+ 1325              		.section	.bss.debugAutoPan,"aw",%nobits
+ 1326              		.align	2
+ 1327              		.set	.LANCHOR27,. + 0
+ 1328              		.type	debugAutoPan, %object
+ 1329              		.size	debugAutoPan, 4
+ 1330              	debugAutoPan:
+ 1331 0000 00000000 		.space	4
+ 1332              		.section	.bss.pitch_Error_last,"aw",%nobits
+ 1333              		.align	2
+ 1334              		.set	.LANCHOR3,. + 0
+ 1335              		.type	pitch_Error_last, %object
+ 1336              		.size	pitch_Error_last, 4
+ 1337              	pitch_Error_last:
+ 1338 0000 00000000 		.space	4
+ 1339              		.section	.bss.debugPrint,"aw",%nobits
+ 1340              		.align	2
+ 1341              		.set	.LANCHOR21,. + 0
+ 1342              		.type	debugPrint, %object
+ 1343              		.size	debugPrint, 4
+ 1344              	debugPrint:
+ 1345 0000 00000000 		.space	4
+ 1346              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 1347              		.align	2
+ 1348              	.LC0:
+ 1349 0000 4C6F6F70 		.ascii	"Loop: %7d, I2CErrors: %d, angles: roll %7.2f, pitch"
+ 1349      3A202537 
+ 1349      642C2049 
+ 1349      32434572 
+ 1349      726F7273 
+ 1350 0033 2025372E 		.ascii	" %7.2f, yaw %7.2f\015\012\000"
+ 1350      32662C20 
+ 1350      79617720 
+ 1350      25372E32 
+ 1350      660D0A00 
+ 1351 0047 00       		.space	1
+ 1352              	.LC1:
+ 1353 0048 20647420 		.ascii	" dt %f, AccData: %8.3f | %8.3f | %8.3f, GyroData %7"
+ 1353      25662C20 
+ 1353      41636344 
+ 1353      6174613A 
+ 1353      2025382E 
+ 1354 007b 2E336620 		.ascii	".3f | %7.3f | %7.3f \015\012\000"
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 25
 
 
- 1367 0000 00000000 		.space	4
- 1368              		.section	.rodata.str1.4,"aMS",%progbits,1
- 1369              		.align	2
- 1370              	.LC0:
- 1371 0000 4C6F6F70 		.ascii	"Loop: %7d, I2CErrors: %d, angles: roll %7.2f, pitch"
- 1371      3A202537 
- 1371      642C2049 
- 1371      32434572 
- 1371      726F7273 
- 1372 0033 2025372E 		.ascii	" %7.2f, yaw %7.2f\015\012\000"
- 1372      32662C20 
- 1372      79617720 
- 1372      25372E32 
- 1372      660D0A00 
- 1373 0047 00       		.space	1
- 1374              	.LC1:
- 1375 0048 20647420 		.ascii	" dt %f, AccData: %8.3f | %8.3f | %8.3f, GyroData %7"
- 1375      25662C20 
- 1375      41636344 
- 1375      6174613A 
- 1375      2025382E 
- 1376 007b 2E336620 		.ascii	".3f | %7.3f | %7.3f \015\012\000"
- 1376      7C202537 
- 1376      2E336620 
- 1376      7C202537 
- 1376      2E336620 
- 1377 0092 0000     		.space	2
- 1378              	.LC2:
- 1379 0094 69646C65 		.ascii	"idle: %5.2f%%, time[\302\265s]: attitude est. %4d, "
- 1379      3A202535 
- 1379      2E326625 
- 1379      252C2074 
- 1379      696D655B 
- 1380 00c1 494D5520 		.ascii	"IMU acc %4d, gyro %4d, angle %4d, calc %4d, PID %4d"
- 1380      61636320 
- 1380      2534642C 
- 1380      20677972 
- 1380      6F202534 
- 1381 00f4 0D0A00   		.ascii	"\015\012\000"
- 1382 00f7 00       		.space	1
- 1383              	.LC3:
- 1384 00f8 20524332 		.ascii	" RC2avg: %7.2f |  RC3avg: %7.2f |  RC4avg: %7.2f | "
- 1384      6176673A 
- 1384      2025372E 
- 1384      3266207C 
- 1384      20205243 
- 1385 012b 52537465 		.ascii	"RStep:%7.3f  PStep: %7.3f  YStep: %7.3f\015\012\000"
- 1385      703A2537 
- 1385      2E336620 
- 1385      20505374 
- 1385      65703A20 
- 1386 0155 000000   		.space	3
- 1387              	.LC4:
- 1388 0158 526F6C6C 		.ascii	"Roll_setpoint:%12.4f | Pitch_setpoint:%12.4f | Yaw_"
- 1388      5F736574 
- 1388      706F696E 
- 1388      743A2531 
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 26
+ 1354      7C202537 
+ 1354      2E336620 
+ 1354      7C202537 
+ 1354      2E336620 
+ 1355 0092 0000     		.space	2
+ 1356              	.LC2:
+ 1357 0094 69646C65 		.ascii	"idle: %5.2f%%, time[\302\265s]: attitude est. %4d, "
+ 1357      3A202535 
+ 1357      2E326625 
+ 1357      252C2074 
+ 1357      696D655B 
+ 1358 00c1 494D5520 		.ascii	"IMU acc %4d, gyro %4d, angle %4d, calc %4d, PID %4d"
+ 1358      61636320 
+ 1358      2534642C 
+ 1358      20677972 
+ 1358      6F202534 
+ 1359 00f4 0D0A00   		.ascii	"\015\012\000"
+ 1360 00f7 00       		.space	1
+ 1361              	.LC3:
+ 1362 00f8 20524332 		.ascii	" RC2avg: %7.2f |  RC3avg: %7.2f |  RC4avg: %7.2f | "
+ 1362      6176673A 
+ 1362      2025372E 
+ 1362      3266207C 
+ 1362      20205243 
+ 1363 012b 52537465 		.ascii	"RStep:%7.3f  PStep: %7.3f  YStep: %7.3f\015\012\000"
+ 1363      703A2537 
+ 1363      2E336620 
+ 1363      20505374 
+ 1363      65703A20 
+ 1364 0155 000000   		.space	3
+ 1365              	.LC4:
+ 1366 0158 526F6C6C 		.ascii	"Roll_setpoint:%12.4f | Pitch_setpoint:%12.4f | Yaw_"
+ 1366      5F736574 
+ 1366      706F696E 
+ 1366      743A2531 
+ 1366      322E3466 
+ 1367 018b 73657470 		.ascii	"setpoint:%12.4f\015\012\000"
+ 1367      6F696E74 
+ 1367      3A253132 
+ 1367      2E34660D 
+ 1367      0A00
+ 1368 019d 000000   		.space	3
+ 1369              	.LC5:
+ 1370 01a0 436F756E 		.ascii	"Counter min %3d, %3d, %3d,  max %4d, %4d, %4d, coun"
+ 1370      74657220 
+ 1370      6D696E20 
+ 1370      2533642C 
+ 1370      20253364 
+ 1371 01d3 74202533 		.ascii	"t %3d, %3d, %3d, usbOverrun %4d\015\012\000"
+ 1371      642C2025 
+ 1371      33642C20 
+ 1371      2533642C 
+ 1371      20757362 
+ 1372 01f5 000000   		.space	3
+ 1373              	.LC6:
+ 1374 01f8 50697463 		.ascii	"Pitch_output:%3.2f | Roll_output:%3.2f | Yaw_output"
+ 1374      685F6F75 
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 26
 
 
- 1388      322E3466 
- 1389 018b 73657470 		.ascii	"setpoint:%12.4f\015\012\000"
- 1389      6F696E74 
- 1389      3A253132 
- 1389      2E34660D 
- 1389      0A00
- 1390 019d 000000   		.space	3
- 1391              	.LC5:
- 1392 01a0 436F756E 		.ascii	"Counter min %3d, %3d, %3d,  max %4d, %4d, %4d, coun"
- 1392      74657220 
- 1392      6D696E20 
- 1392      2533642C 
- 1392      20253364 
- 1393 01d3 74202533 		.ascii	"t %3d, %3d, %3d, usbOverrun %4d\015\012\000"
- 1393      642C2025 
- 1393      33642C20 
- 1393      2533642C 
- 1393      20757362 
- 1394 01f5 000000   		.space	3
- 1395              	.LC6:
- 1396 01f8 50697463 		.ascii	"Pitch_output:%3.2f | Roll_output:%3.2f | Yaw_output"
- 1396      685F6F75 
- 1396      74707574 
- 1396      3A25332E 
- 1396      3266207C 
- 1397 022b 3A25332E 		.ascii	":%3.2f | centerpoint:%4.4f\012\015\000"
- 1397      3266207C 
- 1397      2063656E 
- 1397      74657270 
- 1397      6F696E74 
- 1398              	.LC7:
- 1399 0248 4C414B49 		.ascii	"LAKITU_pitch:%3.2f | LAKITU_roll:%3.2f | LAKITU_yaw"
- 1399      54555F70 
- 1399      69746368 
- 1399      3A25332E 
- 1399      3266207C 
- 1400 027b 3A25332E 		.ascii	":%3.2f\012\015\000"
- 1400      32660A0D 
- 1400      00
- 1401              	.LC8:
- 1402 0284 25662C25 		.ascii	"%f,%f,%f,%f,%f\012\000"
- 1402      662C2566 
- 1402      2C25662C 
- 1402      25660A00 
- 1403              		.section	.bss.AccData,"aw",%nobits
- 1404              		.align	2
- 1405              		.set	.LANCHOR6,. + 0
- 1406              		.type	AccData, %object
- 1407              		.size	AccData, 12
- 1408              	AccData:
- 1409 0000 00000000 		.space	12
- 1409      00000000 
- 1409      00000000 
- 1410              		.section	.bss.stepSmooth,"aw",%nobits
- 1411              		.align	2
- 1412              		.set	.LANCHOR9,. + 0
- 1413              		.type	stepSmooth, %object
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 27
+ 1374      74707574 
+ 1374      3A25332E 
+ 1374      3266207C 
+ 1375 022b 3A25332E 		.ascii	":%3.2f | centerpoint:%4.4f\012\015\000"
+ 1375      3266207C 
+ 1375      2063656E 
+ 1375      74657270 
+ 1375      6F696E74 
+ 1376              	.LC7:
+ 1377 0248 4C414B49 		.ascii	"LAKITU_pitch:%3.2f | LAKITU_roll:%3.2f | LAKITU_yaw"
+ 1377      54555F70 
+ 1377      69746368 
+ 1377      3A25332E 
+ 1377      3266207C 
+ 1378 027b 3A25332E 		.ascii	":%3.2f\012\015\000"
+ 1378      32660A0D 
+ 1378      00
+ 1379              		.section	.bss.AccData,"aw",%nobits
+ 1380              		.align	2
+ 1381              		.set	.LANCHOR6,. + 0
+ 1382              		.type	AccData, %object
+ 1383              		.size	AccData, 12
+ 1384              	AccData:
+ 1385 0000 00000000 		.space	12
+ 1385      00000000 
+ 1385      00000000 
+ 1386              		.section	.bss.stepSmooth,"aw",%nobits
+ 1387              		.align	2
+ 1388              		.set	.LANCHOR9,. + 0
+ 1389              		.type	stepSmooth, %object
+ 1390              		.size	stepSmooth, 4
+ 1391              	stepSmooth:
+ 1392 0000 00000000 		.space	4
+ 1393              		.section	.bss.GyroData,"aw",%nobits
+ 1394              		.align	2
+ 1395              		.set	.LANCHOR11,. + 0
+ 1396              		.type	GyroData, %object
+ 1397              		.size	GyroData, 12
+ 1398              	GyroData:
+ 1399 0000 00000000 		.space	12
+ 1399      00000000 
+ 1399      00000000 
+ 1400              		.section	.bss.roll_Error_last,"aw",%nobits
+ 1401              		.align	2
+ 1402              		.set	.LANCHOR1,. + 0
+ 1403              		.type	roll_Error_last, %object
+ 1404              		.size	roll_Error_last, 4
+ 1405              	roll_Error_last:
+ 1406 0000 00000000 		.space	4
+ 1407              		.section	.bss.printcounter,"aw",%nobits
+ 1408              		.align	2
+ 1409              		.set	.LANCHOR20,. + 0
+ 1410              		.type	printcounter, %object
+ 1411              		.size	printcounter, 4
+ 1412              	printcounter:
+ 1413 0000 00000000 		.space	4
+ 1414              		.section	.bss.pitch_setpoint,"aw",%nobits
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 27
 
 
- 1414              		.size	stepSmooth, 4
- 1415              	stepSmooth:
- 1416 0000 00000000 		.space	4
- 1417              		.section	.bss.loopCounter.5055,"aw",%nobits
- 1418              		.align	2
- 1419              		.set	.LANCHOR10,. + 0
- 1420              		.type	loopCounter.5055, %object
- 1421              		.size	loopCounter.5055, 4
- 1422              	loopCounter.5055:
- 1423 0000 00000000 		.space	4
- 1424              		.section	.bss.GyroData,"aw",%nobits
- 1425              		.align	2
- 1426              		.set	.LANCHOR11,. + 0
- 1427              		.type	GyroData, %object
- 1428              		.size	GyroData, 12
- 1429              	GyroData:
- 1430 0000 00000000 		.space	12
- 1430      00000000 
- 1430      00000000 
- 1431              		.section	.bss.roll_Error_last,"aw",%nobits
- 1432              		.align	2
- 1433              		.set	.LANCHOR1,. + 0
- 1434              		.type	roll_Error_last, %object
- 1435              		.size	roll_Error_last, 4
- 1436              	roll_Error_last:
- 1437 0000 00000000 		.space	4
- 1438              		.section	.bss.printcounter,"aw",%nobits
- 1439              		.align	2
- 1440              		.set	.LANCHOR18,. + 0
- 1441              		.type	printcounter, %object
- 1442              		.size	printcounter, 4
- 1443              	printcounter:
- 1444 0000 00000000 		.space	4
- 1445              		.section	.bss.pitch_setpoint,"aw",%nobits
- 1446              		.align	2
- 1447              		.set	.LANCHOR2,. + 0
- 1448              		.type	pitch_setpoint, %object
- 1449              		.size	pitch_setpoint, 4
- 1450              	pitch_setpoint:
- 1451 0000 00000000 		.space	4
- 1452              		.section	.bss.debugRC,"aw",%nobits
- 1453              		.align	2
- 1454              		.set	.LANCHOR22,. + 0
- 1455              		.type	debugRC, %object
- 1456              		.size	debugRC, 4
- 1457              	debugRC:
- 1458 0000 00000000 		.space	4
- 1459              		.section	.bss.step,"aw",%nobits
- 1460              		.align	2
- 1461              		.set	.LANCHOR8,. + 0
- 1462              		.type	step, %object
- 1463              		.size	step, 4
- 1464              	step:
- 1465 0000 00000000 		.space	4
- 1466              		.section	.bss.rollRCOffset,"aw",%nobits
- 1467              		.align	2
- 1468              		.set	.LANCHOR17,. + 0
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 28
+ 1415              		.align	2
+ 1416              		.set	.LANCHOR2,. + 0
+ 1417              		.type	pitch_setpoint, %object
+ 1418              		.size	pitch_setpoint, 4
+ 1419              	pitch_setpoint:
+ 1420 0000 00000000 		.space	4
+ 1421              		.section	.bss.yawRCOffset,"aw",%nobits
+ 1422              		.align	2
+ 1423              		.set	.LANCHOR19,. + 0
+ 1424              		.type	yawRCOffset, %object
+ 1425              		.size	yawRCOffset, 4
+ 1426              	yawRCOffset:
+ 1427 0000 00000000 		.space	4
+ 1428              		.section	.bss.step,"aw",%nobits
+ 1429              		.align	2
+ 1430              		.set	.LANCHOR8,. + 0
+ 1431              		.type	step, %object
+ 1432              		.size	step, 4
+ 1433              	step:
+ 1434 0000 00000000 		.space	4
+ 1435              		.section	.bss.loopCounter.5068,"aw",%nobits
+ 1436              		.align	2
+ 1437              		.set	.LANCHOR10,. + 0
+ 1438              		.type	loopCounter.5068, %object
+ 1439              		.size	loopCounter.5068, 4
+ 1440              	loopCounter.5068:
+ 1441 0000 00000000 		.space	4
+ 1442              		.section	.bss.rollRCOffset,"aw",%nobits
+ 1443              		.align	2
+ 1444              		.set	.LANCHOR18,. + 0
+ 1445              		.type	rollRCOffset, %object
+ 1446              		.size	rollRCOffset, 4
+ 1447              	rollRCOffset:
+ 1448 0000 00000000 		.space	4
+ 1449              		.section	.data.Kp_y,"aw",%progbits
+ 1450              		.align	2
+ 1451              		.set	.LANCHOR16,. + 0
+ 1452              		.type	Kp_y, %object
+ 1453              		.size	Kp_y, 4
+ 1454              	Kp_y:
+ 1455 0000 00008040 		.word	1082130432
+ 1456              		.section	.bss.debugSense,"aw",%nobits
+ 1457              		.align	2
+ 1458              		.set	.LANCHOR22,. + 0
+ 1459              		.type	debugSense, %object
+ 1460              		.size	debugSense, 4
+ 1461              	debugSense:
+ 1462 0000 00000000 		.space	4
+ 1463              		.section	.bss.current_time,"aw",%nobits
+ 1464              		.align	2
+ 1465              		.type	current_time, %object
+ 1466              		.size	current_time, 4
+ 1467              	current_time:
+ 1468 0000 00000000 		.space	4
+ 1469              		.section	.bss.debugLAKITU,"aw",%nobits
+ 1470              		.align	2
+ 1471              		.set	.LANCHOR28,. + 0
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 28
 
 
- 1469              		.type	rollRCOffset, %object
- 1470              		.size	rollRCOffset, 4
- 1471              	rollRCOffset:
- 1472 0000 00000000 		.space	4
- 1473              		.section	.bss.debugSense,"aw",%nobits
- 1474              		.align	2
- 1475              		.set	.LANCHOR20,. + 0
- 1476              		.type	debugSense, %object
- 1477              		.size	debugSense, 4
- 1478              	debugSense:
- 1479 0000 00000000 		.space	4
- 1480              		.section	.bss.debugLAKITU,"aw",%nobits
- 1481              		.align	2
- 1482              		.set	.LANCHOR26,. + 0
- 1483              		.type	debugLAKITU, %object
- 1484              		.size	debugLAKITU, 4
- 1485              	debugLAKITU:
- 1486 0000 00000000 		.space	4
- 1487              		.section	.bss.RCSmooth,"aw",%nobits
- 1488              		.align	2
- 1489              		.set	.LANCHOR14,. + 0
- 1490              		.type	RCSmooth, %object
- 1491              		.size	RCSmooth, 12
- 1492              	RCSmooth:
- 1493 0000 00000000 		.space	12
- 1493      00000000 
- 1493      00000000 
- 1494              		.section	.bss.yaw_Error_last,"aw",%nobits
- 1495              		.align	2
- 1496              		.set	.LANCHOR5,. + 0
- 1497              		.type	yaw_Error_last, %object
- 1498              		.size	yaw_Error_last, 4
- 1499              	yaw_Error_last:
- 1500 0000 00000000 		.space	4
- 1501              		.section	.bss.debugPerf,"aw",%nobits
- 1502              		.align	2
- 1503              		.set	.LANCHOR21,. + 0
- 1504              		.type	debugPerf, %object
- 1505              		.size	debugPerf, 4
- 1506              	debugPerf:
- 1507 0000 00000000 		.space	4
- 1508              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 29
+ 1472              		.type	debugLAKITU, %object
+ 1473              		.size	debugLAKITU, 4
+ 1474              	debugLAKITU:
+ 1475 0000 00000000 		.space	4
+ 1476              		.section	.bss.RCSmooth,"aw",%nobits
+ 1477              		.align	2
+ 1478              		.set	.LANCHOR14,. + 0
+ 1479              		.type	RCSmooth, %object
+ 1480              		.size	RCSmooth, 12
+ 1481              	RCSmooth:
+ 1482 0000 00000000 		.space	12
+ 1482      00000000 
+ 1482      00000000 
+ 1483              		.section	.bss.yaw_Error_last,"aw",%nobits
+ 1484              		.align	2
+ 1485              		.set	.LANCHOR5,. + 0
+ 1486              		.type	yaw_Error_last, %object
+ 1487              		.size	yaw_Error_last, 4
+ 1488              	yaw_Error_last:
+ 1489 0000 00000000 		.space	4
+ 1490              		.section	.bss.debugRC,"aw",%nobits
+ 1491              		.align	2
+ 1492              		.set	.LANCHOR24,. + 0
+ 1493              		.type	debugRC, %object
+ 1494              		.size	debugRC, 4
+ 1495              	debugRC:
+ 1496 0000 00000000 		.space	4
+ 1497              		.section	.bss.debugPerf,"aw",%nobits
+ 1498              		.align	2
+ 1499              		.set	.LANCHOR23,. + 0
+ 1500              		.type	debugPerf, %object
+ 1501              		.size	debugPerf, 4
+ 1502              	debugPerf:
+ 1503 0000 00000000 		.space	4
+ 1504              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 29
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 engine.c
-C:\cygwin64\tmp\ccLWNLuL.s:74     .text.roll_PID:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:79     .text.roll_PID:00000000 roll_PID
-C:\cygwin64\tmp\ccLWNLuL.s:122    .text.roll_PID:00000064 $d
+C:\cygwin64\tmp\cc2nsY31.s:74     .text.roll_PID:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:79     .text.roll_PID:00000000 roll_PID
+C:\cygwin64\tmp\cc2nsY31.s:122    .text.roll_PID:00000064 $d
                             *COM*:0000000c CameraOrient
                             *COM*:0000000c Output
-C:\cygwin64\tmp\ccLWNLuL.s:131    .text.pitch_PID:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:136    .text.pitch_PID:00000000 pitch_PID
-C:\cygwin64\tmp\ccLWNLuL.s:179    .text.pitch_PID:00000064 $d
-C:\cygwin64\tmp\ccLWNLuL.s:188    .text.yaw_PID:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:193    .text.yaw_PID:00000000 yaw_PID
-C:\cygwin64\tmp\ccLWNLuL.s:236    .text.yaw_PID:00000064 $d
-C:\cygwin64\tmp\ccLWNLuL.s:247    .text.constrain:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:252    .text.constrain:00000000 constrain
-C:\cygwin64\tmp\ccLWNLuL.s:275    .text.Limit_Pitch:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:280    .text.Limit_Pitch:00000000 Limit_Pitch
-C:\cygwin64\tmp\ccLWNLuL.s:315    .text.Limit_Pitch:0000003c $d
-C:\cygwin64\tmp\ccLWNLuL.s:319    .text.Init_Orientation:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:324    .text.Init_Orientation:00000000 Init_Orientation
-C:\cygwin64\tmp\ccLWNLuL.s:381    .text.Init_Orientation:0000007c $d
+C:\cygwin64\tmp\cc2nsY31.s:131    .text.pitch_PID:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:136    .text.pitch_PID:00000000 pitch_PID
+C:\cygwin64\tmp\cc2nsY31.s:179    .text.pitch_PID:00000064 $d
+C:\cygwin64\tmp\cc2nsY31.s:188    .text.yaw_PID:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:193    .text.yaw_PID:00000000 yaw_PID
+C:\cygwin64\tmp\cc2nsY31.s:236    .text.yaw_PID:00000064 $d
+C:\cygwin64\tmp\cc2nsY31.s:247    .text.constrain:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:252    .text.constrain:00000000 constrain
+C:\cygwin64\tmp\cc2nsY31.s:275    .text.Limit_Pitch:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:280    .text.Limit_Pitch:00000000 Limit_Pitch
+C:\cygwin64\tmp\cc2nsY31.s:315    .text.Limit_Pitch:0000003c $d
+C:\cygwin64\tmp\cc2nsY31.s:319    .text.Init_Orientation:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:324    .text.Init_Orientation:00000000 Init_Orientation
+C:\cygwin64\tmp\cc2nsY31.s:395    .text.Init_Orientation:000000b4 $d
                             *COM*:0000000c AccAngleSmooth
                             *COM*:0000000c LakituAngles
-C:\cygwin64\tmp\ccLWNLuL.s:391    .text.Get_Orientation:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:396    .text.Get_Orientation:00000000 Get_Orientation
-C:\cygwin64\tmp\ccLWNLuL.s:518    .text.Get_Orientation:00000138 $d
-C:\cygwin64\tmp\ccLWNLuL.s:523    .text.autoPan:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:528    .text.autoPan:00000000 autoPan
-C:\cygwin64\tmp\ccLWNLuL.s:587    .text.autoPan:0000007c $d
-C:\cygwin64\tmp\ccLWNLuL.s:597    .text.engineProcess:00000000 $t
-C:\cygwin64\tmp\ccLWNLuL.s:602    .text.engineProcess:00000000 engineProcess
-C:\cygwin64\tmp\ccLWNLuL.s:684    .text.engineProcess:000000c8 $d
+                            *COM*:00000fa0 orientation
+                            *COM*:00000fa0 time
+                            *COM*:00000fa0 control_sig
+                            *COM*:00000fa0 setpoint
+C:\cygwin64\tmp\cc2nsY31.s:409    .text.Get_Orientation:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:414    .text.Get_Orientation:00000000 Get_Orientation
+C:\cygwin64\tmp\cc2nsY31.s:536    .text.Get_Orientation:00000138 $d
+C:\cygwin64\tmp\cc2nsY31.s:541    .text.autoPan:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:546    .text.autoPan:00000000 autoPan
+C:\cygwin64\tmp\cc2nsY31.s:605    .text.autoPan:0000007c $d
+C:\cygwin64\tmp\cc2nsY31.s:615    .text.engineProcess:00000000 $t
+C:\cygwin64\tmp\cc2nsY31.s:620    .text.engineProcess:00000000 engineProcess
+C:\cygwin64\tmp\cc2nsY31.s:885    .text.engineProcess:000002b4 $d
                             *COM*:00000004 pitch_angle_correction
-C:\cygwin64\tmp\ccLWNLuL.s:699    .text.engineProcess:00000100 $t
-C:\cygwin64\tmp\ccLWNLuL.s:974    .text.engineProcess:000003b0 $d
                             *COM*:00000004 roll_angle_correction
-C:\cygwin64\tmp\ccLWNLuL.s:1007   .text.engineProcess:00000430 $t
-C:\cygwin64\tmp\ccLWNLuL.s:1228   .text.engineProcess:00000680 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1464   .bss.step:00000000 step
-C:\cygwin64\tmp\ccLWNLuL.s:1415   .bss.stepSmooth:00000000 stepSmooth
-C:\cygwin64\tmp\ccLWNLuL.s:1331   .bss.centerPoint:00000000 centerPoint
-C:\cygwin64\tmp\ccLWNLuL.s:1492   .bss.RCSmooth:00000000 RCSmooth
-C:\cygwin64\tmp\ccLWNLuL.s:1338   .bss.Step:00000000 Step
-C:\cygwin64\tmp\ccLWNLuL.s:1429   .bss.GyroData:00000000 GyroData
-C:\cygwin64\tmp\ccLWNLuL.s:1408   .bss.AccData:00000000 AccData
+                            *COM*:00000004 tAll
+C:\cygwin64\tmp\cc2nsY31.s:924    .text.engineProcess:0000034c $t
+C:\cygwin64\tmp\cc2nsY31.s:1152   .text.engineProcess:000005b8 $d
+C:\cygwin64\tmp\cc2nsY31.s:1182   .text.engineProcess:0000062c $t
+C:\cygwin64\tmp\cc2nsY31.s:1213   .text.engineProcess:00000670 $d
+C:\cygwin64\tmp\cc2nsY31.s:1433   .bss.step:00000000 step
+C:\cygwin64\tmp\cc2nsY31.s:1391   .bss.stepSmooth:00000000 stepSmooth
+C:\cygwin64\tmp\cc2nsY31.s:1302   .bss.centerPoint:00000000 centerPoint
+C:\cygwin64\tmp\cc2nsY31.s:1467   .bss.current_time:00000000 current_time
+C:\cygwin64\tmp\cc2nsY31.s:1454   .data.Kp_y:00000000 Kp_y
+C:\cygwin64\tmp\cc2nsY31.s:1316   .data.Kp_p:00000000 Kp_p
+C:\cygwin64\tmp\cc2nsY31.s:1295   .bss.myprint:00000000 myprint
+C:\cygwin64\tmp\cc2nsY31.s:1481   .bss.RCSmooth:00000000 RCSmooth
+C:\cygwin64\tmp\cc2nsY31.s:1309   .bss.Step:00000000 Step
+C:\cygwin64\tmp\cc2nsY31.s:1398   .bss.GyroData:00000000 GyroData
+C:\cygwin64\tmp\cc2nsY31.s:1384   .bss.AccData:00000000 AccData
                             *COM*:00000004 yaw_angle_correction
-C:\cygwin64\tmp\ccLWNLuL.s:1499   .bss.yaw_Error_last:00000000 yaw_Error_last
-C:\cygwin64\tmp\ccLWNLuL.s:1324   .bss.yaw_setpoint:00000000 yaw_setpoint
-C:\cygwin64\tmp\ccLWNLuL.s:1436   .bss.roll_Error_last:00000000 roll_Error_last
-C:\cygwin64\tmp\ccLWNLuL.s:1289   .bss.roll_setpoint:00000000 roll_setpoint
-C:\cygwin64\tmp\ccLWNLuL.s:1359   .bss.pitch_Error_last:00000000 pitch_Error_last
-C:\cygwin64\tmp\ccLWNLuL.s:1450   .bss.pitch_setpoint:00000000 pitch_setpoint
-C:\cygwin64\tmp\ccLWNLuL.s:1345   .data.LAKITU_enable:00000000 LAKITU_enable
-C:\cygwin64\tmp\ccLWNLuL.s:1485   .bss.debugLAKITU:00000000 debugLAKITU
-C:\cygwin64\tmp\ccLWNLuL.s:1352   .bss.debugAutoPan:00000000 debugAutoPan
-C:\cygwin64\tmp\ccLWNLuL.s:1310   .bss.debugOrient:00000000 debugOrient
-C:\cygwin64\tmp\ccLWNLuL.s:1457   .bss.debugRC:00000000 debugRC
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 30
+C:\cygwin64\tmp\cc2nsY31.s:1488   .bss.yaw_Error_last:00000000 yaw_Error_last
+C:\cygwin64\tmp\cc2nsY31.s:1289   .bss.yaw_setpoint:00000000 yaw_setpoint
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 30
 
 
-C:\cygwin64\tmp\ccLWNLuL.s:1303   .bss.debugCnt:00000000 debugCnt
-C:\cygwin64\tmp\ccLWNLuL.s:1478   .bss.debugSense:00000000 debugSense
-C:\cygwin64\tmp\ccLWNLuL.s:1506   .bss.debugPerf:00000000 debugPerf
-C:\cygwin64\tmp\ccLWNLuL.s:1366   .bss.debugPrint:00000000 debugPrint
-C:\cygwin64\tmp\ccLWNLuL.s:1285   .bss.roll_setpoint:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1292   .bss.pitchRCOffset:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1296   .bss.pitchRCOffset:00000000 pitchRCOffset
-C:\cygwin64\tmp\ccLWNLuL.s:1299   .bss.debugCnt:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1306   .bss.debugOrient:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1313   .bss.yawRCOffset:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1317   .bss.yawRCOffset:00000000 yawRCOffset
-C:\cygwin64\tmp\ccLWNLuL.s:1320   .bss.yaw_setpoint:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1327   .bss.centerPoint:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1334   .bss.Step:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1341   .data.LAKITU_enable:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1348   .bss.debugAutoPan:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1355   .bss.pitch_Error_last:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1362   .bss.debugPrint:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1369   .rodata.str1.4:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1404   .bss.AccData:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1411   .bss.stepSmooth:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1418   .bss.loopCounter.5055:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1422   .bss.loopCounter.5055:00000000 loopCounter.5055
-C:\cygwin64\tmp\ccLWNLuL.s:1425   .bss.GyroData:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1432   .bss.roll_Error_last:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1439   .bss.printcounter:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1443   .bss.printcounter:00000000 printcounter
-C:\cygwin64\tmp\ccLWNLuL.s:1446   .bss.pitch_setpoint:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1453   .bss.debugRC:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1460   .bss.step:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1467   .bss.rollRCOffset:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1471   .bss.rollRCOffset:00000000 rollRCOffset
-C:\cygwin64\tmp\ccLWNLuL.s:1474   .bss.debugSense:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1481   .bss.debugLAKITU:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1488   .bss.RCSmooth:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1495   .bss.yaw_Error_last:00000000 $d
-C:\cygwin64\tmp\ccLWNLuL.s:1502   .bss.debugPerf:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1405   .bss.roll_Error_last:00000000 roll_Error_last
+C:\cygwin64\tmp\cc2nsY31.s:1261   .bss.roll_setpoint:00000000 roll_setpoint
+C:\cygwin64\tmp\cc2nsY31.s:1337   .bss.pitch_Error_last:00000000 pitch_Error_last
+C:\cygwin64\tmp\cc2nsY31.s:1419   .bss.pitch_setpoint:00000000 pitch_setpoint
+C:\cygwin64\tmp\cc2nsY31.s:1323   .data.LAKITU_enable:00000000 LAKITU_enable
+C:\cygwin64\tmp\cc2nsY31.s:1474   .bss.debugLAKITU:00000000 debugLAKITU
+C:\cygwin64\tmp\cc2nsY31.s:1330   .bss.debugAutoPan:00000000 debugAutoPan
+C:\cygwin64\tmp\cc2nsY31.s:1282   .bss.debugOrient:00000000 debugOrient
+C:\cygwin64\tmp\cc2nsY31.s:1495   .bss.debugRC:00000000 debugRC
+C:\cygwin64\tmp\cc2nsY31.s:1275   .bss.debugCnt:00000000 debugCnt
+C:\cygwin64\tmp\cc2nsY31.s:1461   .bss.debugSense:00000000 debugSense
+C:\cygwin64\tmp\cc2nsY31.s:1502   .bss.debugPerf:00000000 debugPerf
+C:\cygwin64\tmp\cc2nsY31.s:1344   .bss.debugPrint:00000000 debugPrint
+C:\cygwin64\tmp\cc2nsY31.s:1257   .bss.roll_setpoint:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1264   .bss.pitchRCOffset:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1268   .bss.pitchRCOffset:00000000 pitchRCOffset
+C:\cygwin64\tmp\cc2nsY31.s:1271   .bss.debugCnt:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1278   .bss.debugOrient:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1285   .bss.yaw_setpoint:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1292   .bss.myprint:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1298   .bss.centerPoint:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1305   .bss.Step:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1312   .data.Kp_p:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1319   .data.LAKITU_enable:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1326   .bss.debugAutoPan:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1333   .bss.pitch_Error_last:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1340   .bss.debugPrint:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1347   .rodata.str1.4:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1380   .bss.AccData:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1387   .bss.stepSmooth:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1394   .bss.GyroData:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1401   .bss.roll_Error_last:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1408   .bss.printcounter:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1412   .bss.printcounter:00000000 printcounter
+C:\cygwin64\tmp\cc2nsY31.s:1415   .bss.pitch_setpoint:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1422   .bss.yawRCOffset:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1426   .bss.yawRCOffset:00000000 yawRCOffset
+C:\cygwin64\tmp\cc2nsY31.s:1429   .bss.step:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1436   .bss.loopCounter.5068:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1440   .bss.loopCounter.5068:00000000 loopCounter.5068
+C:\cygwin64\tmp\cc2nsY31.s:1443   .bss.rollRCOffset:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1447   .bss.rollRCOffset:00000000 rollRCOffset
+C:\cygwin64\tmp\cc2nsY31.s:1450   .data.Kp_y:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1457   .bss.debugSense:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1464   .bss.current_time:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1470   .bss.debugLAKITU:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1477   .bss.RCSmooth:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1484   .bss.yaw_Error_last:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1491   .bss.debugRC:00000000 $d
+C:\cygwin64\tmp\cc2nsY31.s:1498   .bss.debugPerf:00000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_fmul
@@ -1770,6 +1776,9 @@ __aeabi_fadd
 __aeabi_ui2f
 __aeabi_fdiv
 __aeabi_fsub
+ARM GAS  C:\cygwin64\tmp\cc2nsY31.s 			page 31
+
+
 SetRollMotor
 configData
 SetPitchMotor
@@ -1783,9 +1792,6 @@ sqrtf
 sinf
 cosf
 __aeabi_i2f
-ARM GAS  C:\cygwin64\tmp\ccLWNLuL.s 			page 31
-
-
 __aeabi_f2d
 LEDon
 DEBUG_LEDoff
@@ -1794,13 +1800,13 @@ StopWatchLap
 MPU6050_Gyro_get
 Deg2Rad
 StopWatchTotal
-print
 LEDoff
-Get_RC_Step
 Rad2Deg
+print
 GetIdlePerf
 usbOverrun
 I2Cerrorcount
+MaxCnt
 MinCnt
 IrqCnt
-MaxCnt
+Get_RC_Step

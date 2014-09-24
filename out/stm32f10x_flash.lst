@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  112 0014 00200240 		.word	1073881088
  113              		.size	FLASH_HalfCycleAccessCmd, .-FLASH_HalfCycleAccessCmd
  114              		.section	.text.FLASH_PrefetchBufferCmd,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 3
 
 
  115              		.align	2
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  169              		@ link register save eliminated.
  170 0000 024B     		ldr	r3, .L14	@ tmp110,
  171 0002 0349     		ldr	r1, .L14+4	@ tmp111,
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 4
 
 
  172 0004 034A     		ldr	r2, .L14+8	@ tmp113,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  226              		.thumb
  227              		.thumb_func
  228              		.type	FLASH_GetUserOptionByte, %function
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 5
 
 
  229              	FLASH_GetUserOptionByte:
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  283              		.thumb_func
  284              		.type	FLASH_GetPrefetchBufferStatus, %function
  285              	FLASH_GetPrefetchBufferStatus:
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 6
 
 
  286              		@ args = 0, pretend = 0, frame = 0
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  340 000e 0120     		movne	r0, #1	@, bitstatus
  341 0010 7047     		bx	lr	@
  342              	.L44:
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 7
 
 
  343 0012 D869     		ldr	r0, [r3, #28]	@ D.7096, MEM[(struct FLASH_TypeDef *)1073881088B].OBR
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  397 0022 7047     		bx	lr	@
  398              	.L57:
  399              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 8
 
 
  400              	.L56:
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  454 0012 0128     		cmp	r0, #1	@ status,
  455 0014 04F1FF34 		add	r4, r4, #-1	@ Timeout, Timeout,
  456 0018 F8D0     		beq	.L80	@,
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 9
 
 
  457              	.L68:
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  511 0002 4FF43020 		mov	r0, #720896	@,
  512 0006 FFF7FEFF 		bl	FLASH_WaitForLastOperation	@
  513 000a 0428     		cmp	r0, #4	@ status,
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 10
 
 
  514 000c 00D0     		beq	.L88	@,
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  568 0034 43F04003 		orr	r3, r3, #64	@ D.7123, D.7123,
  569 0038 2361     		str	r3, [r4, #16]	@ D.7123, MEM[(struct FLASH_TypeDef *)1073881088B].CR
  570 003a FFF7FEFF 		bl	FLASH_WaitForLastOperation	@
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 11
 
 
  571 003e 0428     		cmp	r0, #4	@ status,
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  625              		@ sp needed	@
  626 001a 70BD     		pop	{r4, r5, r6, pc}	@
  627              	.L110:
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 12
 
 
  628 001c 114E     		ldr	r6, .L112	@ tmp129,
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  682 0016 4FF40050 		mov	r0, #8192	@,
  683 001a 3369     		ldr	r3, [r6, #16]	@ D.7130, MEM[(struct FLASH_TypeDef *)1073881088B].CR
  684 001c 43F00103 		orr	r3, r3, #1	@ D.7130, D.7130,
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 13
 
 
  685 0020 3361     		str	r3, [r6, #16]	@ D.7130, MEM[(struct FLASH_TypeDef *)1073881088B].CR
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  739 0044 23016745 		.word	1164378403
  740 0048 AB89EFCD 		.word	-839939669
  741              		.size	FLASH_ProgramOptionByteData, .-FLASH_ProgramOptionByteData
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 14
 
 
  742              		.section	.text.FLASH_EnableWriteProtection,"ax",%progbits
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  796 005e 124A     		ldr	r2, .L154+12	@ tmp147,
  797 0060 4FF40050 		mov	r0, #8192	@,
  798 0064 5381     		strh	r3, [r2, #10]	@ movhi	@ WRP1_Data, MEM[(struct OB_TypeDef *)536868864B].WRP1
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 15
 
 
  799 0066 FFF7FEFF 		bl	FLASH_WaitForLastOperation	@
@@ -898,7 +898,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  853 001e 4FF43020 		mov	r0, #720896	@,
  854 0022 43F02003 		orr	r3, r3, #32	@ D.7141, D.7141,
  855 0026 2361     		str	r3, [r4, #16]	@ D.7141, MEM[(struct FLASH_TypeDef *)1073881088B].CR
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 16
 
 
  856 0028 2369     		ldr	r3, [r4, #16]	@ D.7141, MEM[(struct FLASH_TypeDef *)1073881088B].CR
@@ -958,7 +958,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  910              	FLASH_UserOptionByteConfig:
  911              		@ args = 0, pretend = 0, frame = 0
  912              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 17
 
 
  913 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}	@
@@ -1018,7 +1018,7 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  967 000a 06D1     		bne	.L181	@,
  968              	.L193:
  969 000c 3CB1     		cbz	r4, .L184	@ Timeout,
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 18
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 18
 
 
  970 000e FFF7FEFF 		bl	FLASH_GetBank1Status	@
@@ -1068,95 +1068,95 @@ ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 1
  1014 0038 00200240 		.word	1073881088
  1015              		.size	FLASH_EraseAllBank1Pages, .-FLASH_EraseAllBank1Pages
  1016              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 19
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_flash.c
-C:\cygwin64\tmp\ccjwUqyA.s:71     .text.FLASH_SetLatency:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:76     .text.FLASH_SetLatency:00000000 FLASH_SetLatency
-C:\cygwin64\tmp\ccjwUqyA.s:89     .text.FLASH_SetLatency:00000010 $d
-C:\cygwin64\tmp\ccjwUqyA.s:92     .text.FLASH_HalfCycleAccessCmd:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:97     .text.FLASH_HalfCycleAccessCmd:00000000 FLASH_HalfCycleAccessCmd
-C:\cygwin64\tmp\ccjwUqyA.s:112    .text.FLASH_HalfCycleAccessCmd:00000014 $d
-C:\cygwin64\tmp\ccjwUqyA.s:115    .text.FLASH_PrefetchBufferCmd:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:120    .text.FLASH_PrefetchBufferCmd:00000000 FLASH_PrefetchBufferCmd
-C:\cygwin64\tmp\ccjwUqyA.s:135    .text.FLASH_PrefetchBufferCmd:00000014 $d
-C:\cygwin64\tmp\ccjwUqyA.s:138    .text.FLASH_Unlock:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:143    .text.FLASH_Unlock:00000000 FLASH_Unlock
-C:\cygwin64\tmp\ccjwUqyA.s:156    .text.FLASH_Unlock:0000000c $d
-C:\cygwin64\tmp\ccjwUqyA.s:161    .text.FLASH_UnlockBank1:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:166    .text.FLASH_UnlockBank1:00000000 FLASH_UnlockBank1
-C:\cygwin64\tmp\ccjwUqyA.s:179    .text.FLASH_UnlockBank1:0000000c $d
-C:\cygwin64\tmp\ccjwUqyA.s:184    .text.FLASH_Lock:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:189    .text.FLASH_Lock:00000000 FLASH_Lock
-C:\cygwin64\tmp\ccjwUqyA.s:201    .text.FLASH_Lock:0000000c $d
-C:\cygwin64\tmp\ccjwUqyA.s:204    .text.FLASH_LockBank1:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:209    .text.FLASH_LockBank1:00000000 FLASH_LockBank1
-C:\cygwin64\tmp\ccjwUqyA.s:221    .text.FLASH_LockBank1:0000000c $d
-C:\cygwin64\tmp\ccjwUqyA.s:224    .text.FLASH_GetUserOptionByte:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:229    .text.FLASH_GetUserOptionByte:00000000 FLASH_GetUserOptionByte
-C:\cygwin64\tmp\ccjwUqyA.s:240    .text.FLASH_GetUserOptionByte:00000008 $d
-C:\cygwin64\tmp\ccjwUqyA.s:243    .text.FLASH_GetWriteProtectionOptionByte:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:248    .text.FLASH_GetWriteProtectionOptionByte:00000000 FLASH_GetWriteProtectionOptionByte
-C:\cygwin64\tmp\ccjwUqyA.s:258    .text.FLASH_GetWriteProtectionOptionByte:00000008 $d
-C:\cygwin64\tmp\ccjwUqyA.s:261    .text.FLASH_GetReadOutProtectionStatus:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:266    .text.FLASH_GetReadOutProtectionStatus:00000000 FLASH_GetReadOutProtectionStatus
-C:\cygwin64\tmp\ccjwUqyA.s:277    .text.FLASH_GetReadOutProtectionStatus:0000000c $d
-C:\cygwin64\tmp\ccjwUqyA.s:280    .text.FLASH_GetPrefetchBufferStatus:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:285    .text.FLASH_GetPrefetchBufferStatus:00000000 FLASH_GetPrefetchBufferStatus
-C:\cygwin64\tmp\ccjwUqyA.s:296    .text.FLASH_GetPrefetchBufferStatus:0000000c $d
-C:\cygwin64\tmp\ccjwUqyA.s:299    .text.FLASH_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:304    .text.FLASH_ITConfig:00000000 FLASH_ITConfig
-C:\cygwin64\tmp\ccjwUqyA.s:321    .text.FLASH_ITConfig:00000014 $d
-C:\cygwin64\tmp\ccjwUqyA.s:324    .text.FLASH_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:329    .text.FLASH_GetFlagStatus:00000000 FLASH_GetFlagStatus
-C:\cygwin64\tmp\ccjwUqyA.s:349    .text.FLASH_GetFlagStatus:0000001c $d
-C:\cygwin64\tmp\ccjwUqyA.s:352    .text.FLASH_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:357    .text.FLASH_ClearFlag:00000000 FLASH_ClearFlag
-C:\cygwin64\tmp\ccjwUqyA.s:367    .text.FLASH_ClearFlag:00000008 $d
-C:\cygwin64\tmp\ccjwUqyA.s:370    .text.FLASH_GetStatus:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:375    .text.FLASH_GetStatus:00000000 FLASH_GetStatus
-C:\cygwin64\tmp\ccjwUqyA.s:401    .text.FLASH_GetStatus:00000024 $d
-C:\cygwin64\tmp\ccjwUqyA.s:404    .text.FLASH_GetBank1Status:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:409    .text.FLASH_GetBank1Status:00000000 FLASH_GetBank1Status
-C:\cygwin64\tmp\ccjwUqyA.s:435    .text.FLASH_GetBank1Status:00000024 $d
-C:\cygwin64\tmp\ccjwUqyA.s:438    .text.FLASH_WaitForLastOperation:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:443    .text.FLASH_WaitForLastOperation:00000000 FLASH_WaitForLastOperation
-C:\cygwin64\tmp\ccjwUqyA.s:465    .text.FLASH_ErasePage:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:470    .text.FLASH_ErasePage:00000000 FLASH_ErasePage
-C:\cygwin64\tmp\ccjwUqyA.s:499    .text.FLASH_ErasePage:0000003c $d
-C:\cygwin64\tmp\ccjwUqyA.s:502    .text.FLASH_EraseAllPages:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:507    .text.FLASH_EraseAllPages:00000000 FLASH_EraseAllPages
-ARM GAS  C:\cygwin64\tmp\ccjwUqyA.s 			page 20
+C:\cygwin64\tmp\ccRzCcay.s:71     .text.FLASH_SetLatency:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:76     .text.FLASH_SetLatency:00000000 FLASH_SetLatency
+C:\cygwin64\tmp\ccRzCcay.s:89     .text.FLASH_SetLatency:00000010 $d
+C:\cygwin64\tmp\ccRzCcay.s:92     .text.FLASH_HalfCycleAccessCmd:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:97     .text.FLASH_HalfCycleAccessCmd:00000000 FLASH_HalfCycleAccessCmd
+C:\cygwin64\tmp\ccRzCcay.s:112    .text.FLASH_HalfCycleAccessCmd:00000014 $d
+C:\cygwin64\tmp\ccRzCcay.s:115    .text.FLASH_PrefetchBufferCmd:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:120    .text.FLASH_PrefetchBufferCmd:00000000 FLASH_PrefetchBufferCmd
+C:\cygwin64\tmp\ccRzCcay.s:135    .text.FLASH_PrefetchBufferCmd:00000014 $d
+C:\cygwin64\tmp\ccRzCcay.s:138    .text.FLASH_Unlock:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:143    .text.FLASH_Unlock:00000000 FLASH_Unlock
+C:\cygwin64\tmp\ccRzCcay.s:156    .text.FLASH_Unlock:0000000c $d
+C:\cygwin64\tmp\ccRzCcay.s:161    .text.FLASH_UnlockBank1:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:166    .text.FLASH_UnlockBank1:00000000 FLASH_UnlockBank1
+C:\cygwin64\tmp\ccRzCcay.s:179    .text.FLASH_UnlockBank1:0000000c $d
+C:\cygwin64\tmp\ccRzCcay.s:184    .text.FLASH_Lock:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:189    .text.FLASH_Lock:00000000 FLASH_Lock
+C:\cygwin64\tmp\ccRzCcay.s:201    .text.FLASH_Lock:0000000c $d
+C:\cygwin64\tmp\ccRzCcay.s:204    .text.FLASH_LockBank1:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:209    .text.FLASH_LockBank1:00000000 FLASH_LockBank1
+C:\cygwin64\tmp\ccRzCcay.s:221    .text.FLASH_LockBank1:0000000c $d
+C:\cygwin64\tmp\ccRzCcay.s:224    .text.FLASH_GetUserOptionByte:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:229    .text.FLASH_GetUserOptionByte:00000000 FLASH_GetUserOptionByte
+C:\cygwin64\tmp\ccRzCcay.s:240    .text.FLASH_GetUserOptionByte:00000008 $d
+C:\cygwin64\tmp\ccRzCcay.s:243    .text.FLASH_GetWriteProtectionOptionByte:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:248    .text.FLASH_GetWriteProtectionOptionByte:00000000 FLASH_GetWriteProtectionOptionByte
+C:\cygwin64\tmp\ccRzCcay.s:258    .text.FLASH_GetWriteProtectionOptionByte:00000008 $d
+C:\cygwin64\tmp\ccRzCcay.s:261    .text.FLASH_GetReadOutProtectionStatus:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:266    .text.FLASH_GetReadOutProtectionStatus:00000000 FLASH_GetReadOutProtectionStatus
+C:\cygwin64\tmp\ccRzCcay.s:277    .text.FLASH_GetReadOutProtectionStatus:0000000c $d
+C:\cygwin64\tmp\ccRzCcay.s:280    .text.FLASH_GetPrefetchBufferStatus:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:285    .text.FLASH_GetPrefetchBufferStatus:00000000 FLASH_GetPrefetchBufferStatus
+C:\cygwin64\tmp\ccRzCcay.s:296    .text.FLASH_GetPrefetchBufferStatus:0000000c $d
+C:\cygwin64\tmp\ccRzCcay.s:299    .text.FLASH_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:304    .text.FLASH_ITConfig:00000000 FLASH_ITConfig
+C:\cygwin64\tmp\ccRzCcay.s:321    .text.FLASH_ITConfig:00000014 $d
+C:\cygwin64\tmp\ccRzCcay.s:324    .text.FLASH_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:329    .text.FLASH_GetFlagStatus:00000000 FLASH_GetFlagStatus
+C:\cygwin64\tmp\ccRzCcay.s:349    .text.FLASH_GetFlagStatus:0000001c $d
+C:\cygwin64\tmp\ccRzCcay.s:352    .text.FLASH_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:357    .text.FLASH_ClearFlag:00000000 FLASH_ClearFlag
+C:\cygwin64\tmp\ccRzCcay.s:367    .text.FLASH_ClearFlag:00000008 $d
+C:\cygwin64\tmp\ccRzCcay.s:370    .text.FLASH_GetStatus:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:375    .text.FLASH_GetStatus:00000000 FLASH_GetStatus
+C:\cygwin64\tmp\ccRzCcay.s:401    .text.FLASH_GetStatus:00000024 $d
+C:\cygwin64\tmp\ccRzCcay.s:404    .text.FLASH_GetBank1Status:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:409    .text.FLASH_GetBank1Status:00000000 FLASH_GetBank1Status
+C:\cygwin64\tmp\ccRzCcay.s:435    .text.FLASH_GetBank1Status:00000024 $d
+C:\cygwin64\tmp\ccRzCcay.s:438    .text.FLASH_WaitForLastOperation:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:443    .text.FLASH_WaitForLastOperation:00000000 FLASH_WaitForLastOperation
+C:\cygwin64\tmp\ccRzCcay.s:465    .text.FLASH_ErasePage:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:470    .text.FLASH_ErasePage:00000000 FLASH_ErasePage
+C:\cygwin64\tmp\ccRzCcay.s:499    .text.FLASH_ErasePage:0000003c $d
+C:\cygwin64\tmp\ccRzCcay.s:502    .text.FLASH_EraseAllPages:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:507    .text.FLASH_EraseAllPages:00000000 FLASH_EraseAllPages
+ARM GAS  C:\cygwin64\tmp\ccRzCcay.s 			page 20
 
 
-C:\cygwin64\tmp\ccjwUqyA.s:534    .text.FLASH_EraseAllPages:00000038 $d
-C:\cygwin64\tmp\ccjwUqyA.s:537    .text.FLASH_EraseOptionBytes:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:542    .text.FLASH_EraseOptionBytes:00000000 FLASH_EraseOptionBytes
-C:\cygwin64\tmp\ccjwUqyA.s:599    .text.FLASH_EraseOptionBytes:00000078 $d
-C:\cygwin64\tmp\ccjwUqyA.s:605    .text.FLASH_ProgramWord:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:610    .text.FLASH_ProgramWord:00000000 FLASH_ProgramWord
-C:\cygwin64\tmp\ccjwUqyA.s:661    .text.FLASH_ProgramWord:00000064 $d
-C:\cygwin64\tmp\ccjwUqyA.s:664    .text.FLASH_ProgramHalfWord:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:669    .text.FLASH_ProgramHalfWord:00000000 FLASH_ProgramHalfWord
-C:\cygwin64\tmp\ccjwUqyA.s:696    .text.FLASH_ProgramHalfWord:00000034 $d
-C:\cygwin64\tmp\ccjwUqyA.s:699    .text.FLASH_ProgramOptionByteData:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:704    .text.FLASH_ProgramOptionByteData:00000000 FLASH_ProgramOptionByteData
-C:\cygwin64\tmp\ccjwUqyA.s:738    .text.FLASH_ProgramOptionByteData:00000040 $d
-C:\cygwin64\tmp\ccjwUqyA.s:743    .text.FLASH_EnableWriteProtection:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:748    .text.FLASH_EnableWriteProtection:00000000 FLASH_EnableWriteProtection
-C:\cygwin64\tmp\ccjwUqyA.s:824    .text.FLASH_EnableWriteProtection:0000009c $d
-C:\cygwin64\tmp\ccjwUqyA.s:830    .text.FLASH_ReadOutProtection:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:835    .text.FLASH_ReadOutProtection:00000000 FLASH_ReadOutProtection
-C:\cygwin64\tmp\ccjwUqyA.s:899    .text.FLASH_ReadOutProtection:00000084 $d
-C:\cygwin64\tmp\ccjwUqyA.s:905    .text.FLASH_UserOptionByteConfig:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:910    .text.FLASH_UserOptionByteConfig:00000000 FLASH_UserOptionByteConfig
-C:\cygwin64\tmp\ccjwUqyA.s:949    .text.FLASH_UserOptionByteConfig:0000004c $d
-C:\cygwin64\tmp\ccjwUqyA.s:955    .text.FLASH_WaitForLastBank1Operation:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:960    .text.FLASH_WaitForLastBank1Operation:00000000 FLASH_WaitForLastBank1Operation
-C:\cygwin64\tmp\ccjwUqyA.s:982    .text.FLASH_EraseAllBank1Pages:00000000 $t
-C:\cygwin64\tmp\ccjwUqyA.s:987    .text.FLASH_EraseAllBank1Pages:00000000 FLASH_EraseAllBank1Pages
-C:\cygwin64\tmp\ccjwUqyA.s:1014   .text.FLASH_EraseAllBank1Pages:00000038 $d
+C:\cygwin64\tmp\ccRzCcay.s:534    .text.FLASH_EraseAllPages:00000038 $d
+C:\cygwin64\tmp\ccRzCcay.s:537    .text.FLASH_EraseOptionBytes:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:542    .text.FLASH_EraseOptionBytes:00000000 FLASH_EraseOptionBytes
+C:\cygwin64\tmp\ccRzCcay.s:599    .text.FLASH_EraseOptionBytes:00000078 $d
+C:\cygwin64\tmp\ccRzCcay.s:605    .text.FLASH_ProgramWord:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:610    .text.FLASH_ProgramWord:00000000 FLASH_ProgramWord
+C:\cygwin64\tmp\ccRzCcay.s:661    .text.FLASH_ProgramWord:00000064 $d
+C:\cygwin64\tmp\ccRzCcay.s:664    .text.FLASH_ProgramHalfWord:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:669    .text.FLASH_ProgramHalfWord:00000000 FLASH_ProgramHalfWord
+C:\cygwin64\tmp\ccRzCcay.s:696    .text.FLASH_ProgramHalfWord:00000034 $d
+C:\cygwin64\tmp\ccRzCcay.s:699    .text.FLASH_ProgramOptionByteData:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:704    .text.FLASH_ProgramOptionByteData:00000000 FLASH_ProgramOptionByteData
+C:\cygwin64\tmp\ccRzCcay.s:738    .text.FLASH_ProgramOptionByteData:00000040 $d
+C:\cygwin64\tmp\ccRzCcay.s:743    .text.FLASH_EnableWriteProtection:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:748    .text.FLASH_EnableWriteProtection:00000000 FLASH_EnableWriteProtection
+C:\cygwin64\tmp\ccRzCcay.s:824    .text.FLASH_EnableWriteProtection:0000009c $d
+C:\cygwin64\tmp\ccRzCcay.s:830    .text.FLASH_ReadOutProtection:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:835    .text.FLASH_ReadOutProtection:00000000 FLASH_ReadOutProtection
+C:\cygwin64\tmp\ccRzCcay.s:899    .text.FLASH_ReadOutProtection:00000084 $d
+C:\cygwin64\tmp\ccRzCcay.s:905    .text.FLASH_UserOptionByteConfig:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:910    .text.FLASH_UserOptionByteConfig:00000000 FLASH_UserOptionByteConfig
+C:\cygwin64\tmp\ccRzCcay.s:949    .text.FLASH_UserOptionByteConfig:0000004c $d
+C:\cygwin64\tmp\ccRzCcay.s:955    .text.FLASH_WaitForLastBank1Operation:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:960    .text.FLASH_WaitForLastBank1Operation:00000000 FLASH_WaitForLastBank1Operation
+C:\cygwin64\tmp\ccRzCcay.s:982    .text.FLASH_EraseAllBank1Pages:00000000 $t
+C:\cygwin64\tmp\ccRzCcay.s:987    .text.FLASH_EraseAllBank1Pages:00000000 FLASH_EraseAllBank1Pages
+C:\cygwin64\tmp\ccRzCcay.s:1014   .text.FLASH_EraseAllBank1Pages:00000038 $d
 
 NO UNDEFINED SYMBOLS

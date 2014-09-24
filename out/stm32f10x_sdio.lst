@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  112 0006 094A     		ldr	r2, .L5	@ tmp126,
  113 0008 C168     		ldr	r1, [r0, #12]	@ SDIO_InitStruct_4(D)->SDIO_BusWide, SDIO_InitStruct_4(D)->SDIO_BusWide
  114 000a 5568     		ldr	r5, [r2, #4]	@ tmpreg, MEM[(struct SDIO_TypeDef *)1073840128B].CLKCR
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 3
 
 
  115 000c 2343     		orrs	r3, r3, r4	@, D.6848, SDIO_InitStruct_4(D)->SDIO_ClockPowerSave, SDIO_InitStruct_4(D)->SDIO_C
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  169 0008 A0003042 		.word	1110442144
  170              		.size	SDIO_ClockCmd, .-SDIO_ClockCmd
  171              		.section	.text.SDIO_SetPowerState,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 4
 
 
  172              		.align	2
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  226 0010 D863     		str	r0, [r3, #60]	@ D.6862,
  227 0012 7047     		bx	lr	@
  228              	.L23:
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 5
 
 
  229              		.align	2
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  283              		.section	.text.SDIO_CmdStructInit,"ax",%progbits
  284              		.align	2
  285              		.global	SDIO_CmdStructInit
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 6
 
 
  286              		.thumb
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  340 0012 7047     		bx	lr	@
  341              	.L36:
  342              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 7
 
 
  343              	.L35:
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  397 0012 7047     		bx	lr	@
  398              		.size	SDIO_DataStructInit, .-SDIO_DataStructInit
  399              		.section	.text.SDIO_GetDataCounter,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 8
 
 
  400              		.align	2
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  454              		.align	2
  455              		.global	SDIO_GetFIFOCount
  456              		.thumb
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 9
 
 
  457              		.thumb_func
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  511              		.thumb_func
  512              		.type	SDIO_SetSDIOReadWaitMode, %function
  513              	SDIO_SetSDIOReadWaitMode:
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 10
 
 
  514              		@ args = 0, pretend = 0, frame = 0
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  568              		@ args = 0, pretend = 0, frame = 0
  569              		@ frame_needed = 0, uses_anonymous_args = 0
  570              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 11
 
 
  571 0000 014B     		ldr	r3, .L69	@ tmp112,
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  625              		@ frame_needed = 0, uses_anonymous_args = 0
  626              		@ link register save eliminated.
  627 0000 034B     		ldr	r3, .L78	@ tmp116,
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 12
 
 
  628 0002 5B6B     		ldr	r3, [r3, #52]	@ D.6920, MEM[(struct SDIO_TypeDef *)1073840128B].STA
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  682              		.thumb
  683              		.thumb_func
  684              		.type	SDIO_ClearITPendingBit, %function
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 13
 
 
  685              	SDIO_ClearITPendingBit:
@@ -734,100 +734,100 @@ ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 1
  695 0008 00800140 		.word	1073840128
  696              		.size	SDIO_ClearITPendingBit, .-SDIO_ClearITPendingBit
  697              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_sdio.c
-C:\cygwin64\tmp\ccH28Ace.s:71     .text.SDIO_DeInit:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:76     .text.SDIO_DeInit:00000000 SDIO_DeInit
-C:\cygwin64\tmp\ccH28Ace.s:96     .text.SDIO_DeInit:0000001c $d
-C:\cygwin64\tmp\ccH28Ace.s:100    .text.SDIO_Init:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:105    .text.SDIO_Init:00000000 SDIO_Init
-C:\cygwin64\tmp\ccH28Ace.s:132    .text.SDIO_Init:0000002c $d
-C:\cygwin64\tmp\ccH28Ace.s:135    .text.SDIO_StructInit:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:140    .text.SDIO_StructInit:00000000 SDIO_StructInit
-C:\cygwin64\tmp\ccH28Ace.s:154    .text.SDIO_ClockCmd:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:159    .text.SDIO_ClockCmd:00000000 SDIO_ClockCmd
-C:\cygwin64\tmp\ccH28Ace.s:169    .text.SDIO_ClockCmd:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:172    .text.SDIO_SetPowerState:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:177    .text.SDIO_SetPowerState:00000000 SDIO_SetPowerState
-C:\cygwin64\tmp\ccH28Ace.s:187    .text.SDIO_SetPowerState:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:190    .text.SDIO_GetPowerState:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:195    .text.SDIO_GetPowerState:00000000 SDIO_GetPowerState
-C:\cygwin64\tmp\ccH28Ace.s:206    .text.SDIO_GetPowerState:0000000c $d
-C:\cygwin64\tmp\ccH28Ace.s:209    .text.SDIO_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:214    .text.SDIO_ITConfig:00000000 SDIO_ITConfig
-C:\cygwin64\tmp\ccH28Ace.s:231    .text.SDIO_ITConfig:00000014 $d
-C:\cygwin64\tmp\ccH28Ace.s:234    .text.SDIO_DMACmd:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:239    .text.SDIO_DMACmd:00000000 SDIO_DMACmd
-C:\cygwin64\tmp\ccH28Ace.s:249    .text.SDIO_DMACmd:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:252    .text.SDIO_SendCommand:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:257    .text.SDIO_SendCommand:00000000 SDIO_SendCommand
-C:\cygwin64\tmp\ccH28Ace.s:281    .text.SDIO_SendCommand:00000028 $d
-C:\cygwin64\tmp\ccH28Ace.s:284    .text.SDIO_CmdStructInit:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:289    .text.SDIO_CmdStructInit:00000000 SDIO_CmdStructInit
-C:\cygwin64\tmp\ccH28Ace.s:302    .text.SDIO_GetCommandResponse:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:307    .text.SDIO_GetCommandResponse:00000000 SDIO_GetCommandResponse
-C:\cygwin64\tmp\ccH28Ace.s:318    .text.SDIO_GetCommandResponse:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:321    .text.SDIO_GetResponse:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:326    .text.SDIO_GetResponse:00000000 SDIO_GetResponse
-C:\cygwin64\tmp\ccH28Ace.s:344    .text.SDIO_GetResponse:00000014 $d
-C:\cygwin64\tmp\ccH28Ace.s:347    .text.SDIO_DataConfig:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:352    .text.SDIO_DataConfig:00000000 SDIO_DataConfig
-C:\cygwin64\tmp\ccH28Ace.s:378    .text.SDIO_DataConfig:00000028 $d
-C:\cygwin64\tmp\ccH28Ace.s:381    .text.SDIO_DataStructInit:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:386    .text.SDIO_DataStructInit:00000000 SDIO_DataStructInit
-C:\cygwin64\tmp\ccH28Ace.s:400    .text.SDIO_GetDataCounter:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:405    .text.SDIO_GetDataCounter:00000000 SDIO_GetDataCounter
-C:\cygwin64\tmp\ccH28Ace.s:415    .text.SDIO_GetDataCounter:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:418    .text.SDIO_ReadData:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:423    .text.SDIO_ReadData:00000000 SDIO_ReadData
-C:\cygwin64\tmp\ccH28Ace.s:433    .text.SDIO_ReadData:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:436    .text.SDIO_WriteData:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:441    .text.SDIO_WriteData:00000000 SDIO_WriteData
-C:\cygwin64\tmp\ccH28Ace.s:451    .text.SDIO_WriteData:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:454    .text.SDIO_GetFIFOCount:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:459    .text.SDIO_GetFIFOCount:00000000 SDIO_GetFIFOCount
-C:\cygwin64\tmp\ccH28Ace.s:469    .text.SDIO_GetFIFOCount:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:472    .text.SDIO_StartSDIOReadWait:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:477    .text.SDIO_StartSDIOReadWait:00000000 SDIO_StartSDIOReadWait
-C:\cygwin64\tmp\ccH28Ace.s:487    .text.SDIO_StartSDIOReadWait:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:490    .text.SDIO_StopSDIOReadWait:00000000 $t
-ARM GAS  C:\cygwin64\tmp\ccH28Ace.s 			page 15
+C:\cygwin64\tmp\ccdjTABb.s:71     .text.SDIO_DeInit:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:76     .text.SDIO_DeInit:00000000 SDIO_DeInit
+C:\cygwin64\tmp\ccdjTABb.s:96     .text.SDIO_DeInit:0000001c $d
+C:\cygwin64\tmp\ccdjTABb.s:100    .text.SDIO_Init:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:105    .text.SDIO_Init:00000000 SDIO_Init
+C:\cygwin64\tmp\ccdjTABb.s:132    .text.SDIO_Init:0000002c $d
+C:\cygwin64\tmp\ccdjTABb.s:135    .text.SDIO_StructInit:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:140    .text.SDIO_StructInit:00000000 SDIO_StructInit
+C:\cygwin64\tmp\ccdjTABb.s:154    .text.SDIO_ClockCmd:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:159    .text.SDIO_ClockCmd:00000000 SDIO_ClockCmd
+C:\cygwin64\tmp\ccdjTABb.s:169    .text.SDIO_ClockCmd:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:172    .text.SDIO_SetPowerState:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:177    .text.SDIO_SetPowerState:00000000 SDIO_SetPowerState
+C:\cygwin64\tmp\ccdjTABb.s:187    .text.SDIO_SetPowerState:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:190    .text.SDIO_GetPowerState:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:195    .text.SDIO_GetPowerState:00000000 SDIO_GetPowerState
+C:\cygwin64\tmp\ccdjTABb.s:206    .text.SDIO_GetPowerState:0000000c $d
+C:\cygwin64\tmp\ccdjTABb.s:209    .text.SDIO_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:214    .text.SDIO_ITConfig:00000000 SDIO_ITConfig
+C:\cygwin64\tmp\ccdjTABb.s:231    .text.SDIO_ITConfig:00000014 $d
+C:\cygwin64\tmp\ccdjTABb.s:234    .text.SDIO_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:239    .text.SDIO_DMACmd:00000000 SDIO_DMACmd
+C:\cygwin64\tmp\ccdjTABb.s:249    .text.SDIO_DMACmd:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:252    .text.SDIO_SendCommand:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:257    .text.SDIO_SendCommand:00000000 SDIO_SendCommand
+C:\cygwin64\tmp\ccdjTABb.s:281    .text.SDIO_SendCommand:00000028 $d
+C:\cygwin64\tmp\ccdjTABb.s:284    .text.SDIO_CmdStructInit:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:289    .text.SDIO_CmdStructInit:00000000 SDIO_CmdStructInit
+C:\cygwin64\tmp\ccdjTABb.s:302    .text.SDIO_GetCommandResponse:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:307    .text.SDIO_GetCommandResponse:00000000 SDIO_GetCommandResponse
+C:\cygwin64\tmp\ccdjTABb.s:318    .text.SDIO_GetCommandResponse:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:321    .text.SDIO_GetResponse:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:326    .text.SDIO_GetResponse:00000000 SDIO_GetResponse
+C:\cygwin64\tmp\ccdjTABb.s:344    .text.SDIO_GetResponse:00000014 $d
+C:\cygwin64\tmp\ccdjTABb.s:347    .text.SDIO_DataConfig:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:352    .text.SDIO_DataConfig:00000000 SDIO_DataConfig
+C:\cygwin64\tmp\ccdjTABb.s:378    .text.SDIO_DataConfig:00000028 $d
+C:\cygwin64\tmp\ccdjTABb.s:381    .text.SDIO_DataStructInit:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:386    .text.SDIO_DataStructInit:00000000 SDIO_DataStructInit
+C:\cygwin64\tmp\ccdjTABb.s:400    .text.SDIO_GetDataCounter:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:405    .text.SDIO_GetDataCounter:00000000 SDIO_GetDataCounter
+C:\cygwin64\tmp\ccdjTABb.s:415    .text.SDIO_GetDataCounter:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:418    .text.SDIO_ReadData:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:423    .text.SDIO_ReadData:00000000 SDIO_ReadData
+C:\cygwin64\tmp\ccdjTABb.s:433    .text.SDIO_ReadData:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:436    .text.SDIO_WriteData:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:441    .text.SDIO_WriteData:00000000 SDIO_WriteData
+C:\cygwin64\tmp\ccdjTABb.s:451    .text.SDIO_WriteData:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:454    .text.SDIO_GetFIFOCount:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:459    .text.SDIO_GetFIFOCount:00000000 SDIO_GetFIFOCount
+C:\cygwin64\tmp\ccdjTABb.s:469    .text.SDIO_GetFIFOCount:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:472    .text.SDIO_StartSDIOReadWait:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:477    .text.SDIO_StartSDIOReadWait:00000000 SDIO_StartSDIOReadWait
+C:\cygwin64\tmp\ccdjTABb.s:487    .text.SDIO_StartSDIOReadWait:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:490    .text.SDIO_StopSDIOReadWait:00000000 $t
+ARM GAS  C:\cygwin64\tmp\ccdjTABb.s 			page 15
 
 
-C:\cygwin64\tmp\ccH28Ace.s:495    .text.SDIO_StopSDIOReadWait:00000000 SDIO_StopSDIOReadWait
-C:\cygwin64\tmp\ccH28Ace.s:505    .text.SDIO_StopSDIOReadWait:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:508    .text.SDIO_SetSDIOReadWaitMode:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:513    .text.SDIO_SetSDIOReadWaitMode:00000000 SDIO_SetSDIOReadWaitMode
-C:\cygwin64\tmp\ccH28Ace.s:523    .text.SDIO_SetSDIOReadWaitMode:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:526    .text.SDIO_SetSDIOOperation:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:531    .text.SDIO_SetSDIOOperation:00000000 SDIO_SetSDIOOperation
-C:\cygwin64\tmp\ccH28Ace.s:541    .text.SDIO_SetSDIOOperation:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:544    .text.SDIO_SendSDIOSuspendCmd:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:549    .text.SDIO_SendSDIOSuspendCmd:00000000 SDIO_SendSDIOSuspendCmd
-C:\cygwin64\tmp\ccH28Ace.s:559    .text.SDIO_SendSDIOSuspendCmd:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:562    .text.SDIO_CommandCompletionCmd:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:567    .text.SDIO_CommandCompletionCmd:00000000 SDIO_CommandCompletionCmd
-C:\cygwin64\tmp\ccH28Ace.s:577    .text.SDIO_CommandCompletionCmd:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:580    .text.SDIO_CEATAITCmd:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:585    .text.SDIO_CEATAITCmd:00000000 SDIO_CEATAITCmd
-C:\cygwin64\tmp\ccH28Ace.s:597    .text.SDIO_CEATAITCmd:00000010 $d
-C:\cygwin64\tmp\ccH28Ace.s:600    .text.SDIO_SendCEATACmd:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:605    .text.SDIO_SendCEATACmd:00000000 SDIO_SendCEATACmd
-C:\cygwin64\tmp\ccH28Ace.s:615    .text.SDIO_SendCEATACmd:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:618    .text.SDIO_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:623    .text.SDIO_GetFlagStatus:00000000 SDIO_GetFlagStatus
-C:\cygwin64\tmp\ccH28Ace.s:637    .text.SDIO_GetFlagStatus:00000010 $d
-C:\cygwin64\tmp\ccH28Ace.s:640    .text.SDIO_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:645    .text.SDIO_ClearFlag:00000000 SDIO_ClearFlag
-C:\cygwin64\tmp\ccH28Ace.s:655    .text.SDIO_ClearFlag:00000008 $d
-C:\cygwin64\tmp\ccH28Ace.s:658    .text.SDIO_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:663    .text.SDIO_GetITStatus:00000000 SDIO_GetITStatus
-C:\cygwin64\tmp\ccH28Ace.s:677    .text.SDIO_GetITStatus:00000010 $d
-C:\cygwin64\tmp\ccH28Ace.s:680    .text.SDIO_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccH28Ace.s:685    .text.SDIO_ClearITPendingBit:00000000 SDIO_ClearITPendingBit
-C:\cygwin64\tmp\ccH28Ace.s:695    .text.SDIO_ClearITPendingBit:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:495    .text.SDIO_StopSDIOReadWait:00000000 SDIO_StopSDIOReadWait
+C:\cygwin64\tmp\ccdjTABb.s:505    .text.SDIO_StopSDIOReadWait:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:508    .text.SDIO_SetSDIOReadWaitMode:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:513    .text.SDIO_SetSDIOReadWaitMode:00000000 SDIO_SetSDIOReadWaitMode
+C:\cygwin64\tmp\ccdjTABb.s:523    .text.SDIO_SetSDIOReadWaitMode:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:526    .text.SDIO_SetSDIOOperation:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:531    .text.SDIO_SetSDIOOperation:00000000 SDIO_SetSDIOOperation
+C:\cygwin64\tmp\ccdjTABb.s:541    .text.SDIO_SetSDIOOperation:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:544    .text.SDIO_SendSDIOSuspendCmd:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:549    .text.SDIO_SendSDIOSuspendCmd:00000000 SDIO_SendSDIOSuspendCmd
+C:\cygwin64\tmp\ccdjTABb.s:559    .text.SDIO_SendSDIOSuspendCmd:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:562    .text.SDIO_CommandCompletionCmd:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:567    .text.SDIO_CommandCompletionCmd:00000000 SDIO_CommandCompletionCmd
+C:\cygwin64\tmp\ccdjTABb.s:577    .text.SDIO_CommandCompletionCmd:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:580    .text.SDIO_CEATAITCmd:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:585    .text.SDIO_CEATAITCmd:00000000 SDIO_CEATAITCmd
+C:\cygwin64\tmp\ccdjTABb.s:597    .text.SDIO_CEATAITCmd:00000010 $d
+C:\cygwin64\tmp\ccdjTABb.s:600    .text.SDIO_SendCEATACmd:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:605    .text.SDIO_SendCEATACmd:00000000 SDIO_SendCEATACmd
+C:\cygwin64\tmp\ccdjTABb.s:615    .text.SDIO_SendCEATACmd:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:618    .text.SDIO_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:623    .text.SDIO_GetFlagStatus:00000000 SDIO_GetFlagStatus
+C:\cygwin64\tmp\ccdjTABb.s:637    .text.SDIO_GetFlagStatus:00000010 $d
+C:\cygwin64\tmp\ccdjTABb.s:640    .text.SDIO_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:645    .text.SDIO_ClearFlag:00000000 SDIO_ClearFlag
+C:\cygwin64\tmp\ccdjTABb.s:655    .text.SDIO_ClearFlag:00000008 $d
+C:\cygwin64\tmp\ccdjTABb.s:658    .text.SDIO_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:663    .text.SDIO_GetITStatus:00000000 SDIO_GetITStatus
+C:\cygwin64\tmp\ccdjTABb.s:677    .text.SDIO_GetITStatus:00000010 $d
+C:\cygwin64\tmp\ccdjTABb.s:680    .text.SDIO_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccdjTABb.s:685    .text.SDIO_ClearITPendingBit:00000000 SDIO_ClearITPendingBit
+C:\cygwin64\tmp\ccdjTABb.s:695    .text.SDIO_ClearITPendingBit:00000008 $d
 
 NO UNDEFINED SYMBOLS

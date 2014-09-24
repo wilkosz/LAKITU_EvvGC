@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
  112 0008 03F50073 		add	r3, r3, #512	@ D.4663, D.4663,
  113 000c 1840     		ands	r0, r0, r3	@, D.4663, D.4663, D.4663
  114 000e 0028     		cmp	r0, #0	@ D.4663,
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 3
 
 
  115 0010 00DB     		blt	.L6	@,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
  169 0044 2173     		strb	r1, [r4, #12]	@ c, rb_7(D)->Buffer
  170 0046 4360     		str	r3, [r0, #4]	@ D.4666,
  171 0048 D0F80C32 		ldr	r3, [r0, #524]	@ D.4667, rb_7(D)->CallBack
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 4
 
 
  172 004c 03B1     		cbz	r3, .L9	@ D.4667,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
  226 0016 1340     		ands	r3, r3, r2	@, D.4670, D.4670, D.4670
  227 0018 002B     		cmp	r3, #0	@ D.4670,
  228 001a 49DB     		blt	.L42	@,
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 5
 
 
  229 001c 3344     		add	r3, r3, r6	@ D.4670, dataLen
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
  283              	.L44:
  284 0092 2044     		add	r0, r0, r4	@ tmp167, rb
  285 0094 3946     		mov	r1, r7	@, data
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 6
 
 
  286 0096 0C30     		adds	r0, r0, #12	@, tmp167,
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
  340 0020 007B     		ldrb	r0, [r0, #12]	@ zero_extendqisi2	@ c, rb_5(D)->Buffer
  341 0022 1A60     		str	r2, [r3]	@ D.4687,* rb
  342 0024 7047     		bx	lr	@
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 7
 
 
  343              	.L52:
@@ -386,28 +386,28 @@ ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 1
  365 0012 7047     		bx	lr	@
  366              		.size	RingBufferPeek, .-RingBufferPeek
  367              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccgY28Tv.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccvsvF3A.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ringbuffer.c
-C:\cygwin64\tmp\ccgY28Tv.s:69     .text.RingBufferInit:00000000 $t
-C:\cygwin64\tmp\ccgY28Tv.s:74     .text.RingBufferInit:00000000 RingBufferInit
-C:\cygwin64\tmp\ccgY28Tv.s:86     .text.RingBufferSize:00000000 $t
-C:\cygwin64\tmp\ccgY28Tv.s:91     .text.RingBufferSize:00000000 RingBufferSize
-C:\cygwin64\tmp\ccgY28Tv.s:99     .text.RingBufferFillLevel:00000000 $t
-C:\cygwin64\tmp\ccgY28Tv.s:104    .text.RingBufferFillLevel:00000000 RingBufferFillLevel
-C:\cygwin64\tmp\ccgY28Tv.s:126    .text.RingBufferFillLevel:00000024 $d
-C:\cygwin64\tmp\ccgY28Tv.s:129    .text.RingBufferPut:00000000 $t
-C:\cygwin64\tmp\ccgY28Tv.s:134    .text.RingBufferPut:00000000 RingBufferPut
-C:\cygwin64\tmp\ccgY28Tv.s:205    .text.RingBufferPut:0000008c $d
-C:\cygwin64\tmp\ccgY28Tv.s:208    .text.RingBufferPutBlock:00000000 $t
-C:\cygwin64\tmp\ccgY28Tv.s:213    .text.RingBufferPutBlock:00000000 RingBufferPutBlock
-C:\cygwin64\tmp\ccgY28Tv.s:313    .text.RingBufferPutBlock:000000cc $d
-C:\cygwin64\tmp\ccgY28Tv.s:316    .text.RingBufferGet:00000000 $t
-C:\cygwin64\tmp\ccgY28Tv.s:321    .text.RingBufferGet:00000000 RingBufferGet
-C:\cygwin64\tmp\ccgY28Tv.s:348    .text.RingBufferPeek:00000000 $t
-C:\cygwin64\tmp\ccgY28Tv.s:353    .text.RingBufferPeek:00000000 RingBufferPeek
+C:\cygwin64\tmp\ccvsvF3A.s:69     .text.RingBufferInit:00000000 $t
+C:\cygwin64\tmp\ccvsvF3A.s:74     .text.RingBufferInit:00000000 RingBufferInit
+C:\cygwin64\tmp\ccvsvF3A.s:86     .text.RingBufferSize:00000000 $t
+C:\cygwin64\tmp\ccvsvF3A.s:91     .text.RingBufferSize:00000000 RingBufferSize
+C:\cygwin64\tmp\ccvsvF3A.s:99     .text.RingBufferFillLevel:00000000 $t
+C:\cygwin64\tmp\ccvsvF3A.s:104    .text.RingBufferFillLevel:00000000 RingBufferFillLevel
+C:\cygwin64\tmp\ccvsvF3A.s:126    .text.RingBufferFillLevel:00000024 $d
+C:\cygwin64\tmp\ccvsvF3A.s:129    .text.RingBufferPut:00000000 $t
+C:\cygwin64\tmp\ccvsvF3A.s:134    .text.RingBufferPut:00000000 RingBufferPut
+C:\cygwin64\tmp\ccvsvF3A.s:205    .text.RingBufferPut:0000008c $d
+C:\cygwin64\tmp\ccvsvF3A.s:208    .text.RingBufferPutBlock:00000000 $t
+C:\cygwin64\tmp\ccvsvF3A.s:213    .text.RingBufferPutBlock:00000000 RingBufferPutBlock
+C:\cygwin64\tmp\ccvsvF3A.s:313    .text.RingBufferPutBlock:000000cc $d
+C:\cygwin64\tmp\ccvsvF3A.s:316    .text.RingBufferGet:00000000 $t
+C:\cygwin64\tmp\ccvsvF3A.s:321    .text.RingBufferGet:00000000 RingBufferGet
+C:\cygwin64\tmp\ccvsvF3A.s:348    .text.RingBufferPeek:00000000 $t
+C:\cygwin64\tmp\ccvsvF3A.s:353    .text.RingBufferPeek:00000000 RingBufferPeek
 
 UNDEFINED SYMBOLS
 memcpy

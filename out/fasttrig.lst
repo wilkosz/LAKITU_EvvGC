@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccFMsQ6W.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccFMsQ6W.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 1
  112              		.section	.text.fastSin,"ax",%progbits
  113              		.align	2
  114              		.global	fastSin
-ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccFMsQ6W.s 			page 3
 
 
  115              		.thumb
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 1
  169 007a 013B     		subs	r3, r3, #1	@ ix, ix,
  170 007c 6FEA8353 		mvn	r3, r3, lsl #22	@ tmp152, ix,
  171 0080 6FEA9353 		mvn	r3, r3, lsr #22	@ tmp152, tmp152,
-ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccFMsQ6W.s 			page 4
 
 
  172 0084 0133     		adds	r3, r3, #1	@ ix, tmp152,
@@ -193,18 +193,18 @@ ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 1
  181              		.size	fastSin, .-fastSin
  182              		.comm	sinDataI16,2048,4
  183              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccsJnjug.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccFMsQ6W.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 fasttrig.c
-C:\cygwin64\tmp\ccsJnjug.s:72     .text.InitSinArray:00000000 $t
-C:\cygwin64\tmp\ccsJnjug.s:77     .text.InitSinArray:00000000 InitSinArray
-C:\cygwin64\tmp\ccsJnjug.s:106    .text.InitSinArray:00000040 $d
+C:\cygwin64\tmp\ccFMsQ6W.s:72     .text.InitSinArray:00000000 $t
+C:\cygwin64\tmp\ccFMsQ6W.s:77     .text.InitSinArray:00000000 InitSinArray
+C:\cygwin64\tmp\ccFMsQ6W.s:106    .text.InitSinArray:00000040 $d
                             *COM*:00000800 sinDataI16
-C:\cygwin64\tmp\ccsJnjug.s:113    .text.fastSin:00000000 $t
-C:\cygwin64\tmp\ccsJnjug.s:118    .text.fastSin:00000000 fastSin
-C:\cygwin64\tmp\ccsJnjug.s:177    .text.fastSin:00000088 $d
+C:\cygwin64\tmp\ccFMsQ6W.s:113    .text.fastSin:00000000 $t
+C:\cygwin64\tmp\ccFMsQ6W.s:118    .text.fastSin:00000000 fastSin
+C:\cygwin64\tmp\ccFMsQ6W.s:177    .text.fastSin:00000088 $d
 
 UNDEFINED SYMBOLS
 __aeabi_fmul

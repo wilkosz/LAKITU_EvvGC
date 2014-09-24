@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
  112 0004 064B     		ldr	r3, .L5+4	@ tmp113,
  113 0006 0024     		movs	r4, #0	@ tmp114,
  114 0008 0122     		movs	r2, #1	@ tmp112,
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 3
 
 
  115 000a 2A60     		str	r2, [r5]	@ tmp112, MEM[(volatile unsigned int *)1073765440B]
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
  169 0044 5E05     		lsls	r6, r3, #21	@, D.7157,
  170 0046 FBD5     		bpl	.L11	@,
  171 0048 4FF6FF33 		movw	r3, #64511	@ tmp174,
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 4
 
 
  172 004c 224A     		ldr	r2, .L20+12	@ ivtmp.21,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
  226 00c2 1361     		str	r3, [r2, #16]	@ D.7159,
  227 00c4 03B0     		add	sp, sp, #12	@,,
  228              		@ sp needed	@
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 5
 
 
  229 00c6 70BC     		pop	{r4, r5, r6}	@
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
  283              	.L29:
  284 0014 18       		.byte	(.L28-.L29)/2
  285 0015 1F       		.byte	(.L30-.L29)/2
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 6
 
 
  286 0016 30       		.byte	(.L31-.L29)/2
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
  340              	.L32:
  341 007e 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2	@ ResumeS.bESOFcnt, ResumeS.bESOFcnt
  342 0080 124A     		ldr	r2, .L43	@ tmp168,
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 7
 
 
  343 0082 013B     		subs	r3, r3, #1	@ tmp172, ResumeS.bESOFcnt,
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
  397              		.align	2
  398              		.type	bDeviceState, %object
  399              		.size	bDeviceState, 4
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 8
 
 
  400              	bDeviceState:
@@ -431,35 +431,35 @@ ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 1
  407              	remotewakeupon:
  408 0000 00000000 		.space	4
  409              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccOTGoti.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccVnCTpS.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_pwr.c
-C:\cygwin64\tmp\ccOTGoti.s:70     .text.PowerOn:00000000 $t
-C:\cygwin64\tmp\ccOTGoti.s:75     .text.PowerOn:00000000 PowerOn
-C:\cygwin64\tmp\ccOTGoti.s:97     .text.PowerOn:00000024 $d
-C:\cygwin64\tmp\ccOTGoti.s:102    .text.PowerOff:00000000 $t
-C:\cygwin64\tmp\ccOTGoti.s:107    .text.PowerOff:00000000 PowerOff
-C:\cygwin64\tmp\ccOTGoti.s:126    .text.PowerOff:0000001c $d
-C:\cygwin64\tmp\ccOTGoti.s:130    .text.Suspend:00000000 $t
-C:\cygwin64\tmp\ccOTGoti.s:135    .text.Suspend:00000000 Suspend
-C:\cygwin64\tmp\ccOTGoti.s:234    .text.Suspend:000000cc $d
+C:\cygwin64\tmp\ccVnCTpS.s:70     .text.PowerOn:00000000 $t
+C:\cygwin64\tmp\ccVnCTpS.s:75     .text.PowerOn:00000000 PowerOn
+C:\cygwin64\tmp\ccVnCTpS.s:97     .text.PowerOn:00000024 $d
+C:\cygwin64\tmp\ccVnCTpS.s:102    .text.PowerOff:00000000 $t
+C:\cygwin64\tmp\ccVnCTpS.s:107    .text.PowerOff:00000000 PowerOff
+C:\cygwin64\tmp\ccVnCTpS.s:126    .text.PowerOff:0000001c $d
+C:\cygwin64\tmp\ccVnCTpS.s:130    .text.Suspend:00000000 $t
+C:\cygwin64\tmp\ccVnCTpS.s:135    .text.Suspend:00000000 Suspend
+C:\cygwin64\tmp\ccVnCTpS.s:234    .text.Suspend:000000cc $d
                             *COM*:00000020 EP
-C:\cygwin64\tmp\ccOTGoti.s:242    .text.Resume_Init:00000000 $t
-C:\cygwin64\tmp\ccOTGoti.s:247    .text.Resume_Init:00000000 Resume_Init
-C:\cygwin64\tmp\ccOTGoti.s:263    .text.Resume_Init:0000001c $d
-C:\cygwin64\tmp\ccOTGoti.s:266    .text.Resume:00000000 $t
-C:\cygwin64\tmp\ccOTGoti.s:271    .text.Resume:00000000 Resume
-C:\cygwin64\tmp\ccOTGoti.s:284    .text.Resume:00000014 $d
-C:\cygwin64\tmp\ccOTGoti.s:290    .text.Resume:0000001a $t
-C:\cygwin64\tmp\ccOTGoti.s:382    .text.Resume:000000cc $d
+C:\cygwin64\tmp\ccVnCTpS.s:242    .text.Resume_Init:00000000 $t
+C:\cygwin64\tmp\ccVnCTpS.s:247    .text.Resume_Init:00000000 Resume_Init
+C:\cygwin64\tmp\ccVnCTpS.s:263    .text.Resume_Init:0000001c $d
+C:\cygwin64\tmp\ccVnCTpS.s:266    .text.Resume:00000000 $t
+C:\cygwin64\tmp\ccVnCTpS.s:271    .text.Resume:00000000 Resume
+C:\cygwin64\tmp\ccVnCTpS.s:284    .text.Resume:00000014 $d
+C:\cygwin64\tmp\ccVnCTpS.s:290    .text.Resume:0000001a $t
+C:\cygwin64\tmp\ccVnCTpS.s:382    .text.Resume:000000cc $d
                             *COM*:00000002 ResumeS
-C:\cygwin64\tmp\ccOTGoti.s:407    .bss.remotewakeupon:00000000 remotewakeupon
-C:\cygwin64\tmp\ccOTGoti.s:394    .data.fSuspendEnabled:00000000 fSuspendEnabled
-C:\cygwin64\tmp\ccOTGoti.s:400    .bss.bDeviceState:00000000 bDeviceState
-C:\cygwin64\tmp\ccOTGoti.s:397    .bss.bDeviceState:00000000 $d
-C:\cygwin64\tmp\ccOTGoti.s:403    .bss.remotewakeupon:00000000 $d
+C:\cygwin64\tmp\ccVnCTpS.s:407    .bss.remotewakeupon:00000000 remotewakeupon
+C:\cygwin64\tmp\ccVnCTpS.s:394    .data.fSuspendEnabled:00000000 fSuspendEnabled
+C:\cygwin64\tmp\ccVnCTpS.s:400    .bss.bDeviceState:00000000 bDeviceState
+C:\cygwin64\tmp\ccVnCTpS.s:397    .bss.bDeviceState:00000000 $d
+C:\cygwin64\tmp\ccVnCTpS.s:403    .bss.remotewakeupon:00000000 $d
 
 UNDEFINED SYMBOLS
 USB_Cable_Config

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  112 0054 2143     		orrs	r1, r1, r4	@, tmpccer, TIM_ICPolarity, D.7730
  113 0056 0683     		strh	r6, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_3(D)->CCMR1
  114 0058 0184     		strh	r1, [r0, #32]	@ movhi	@ tmpccer, TIMx_3(D)->CCER
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 3
 
 
  115 005a 70BC     		pop	{r4, r5, r6}	@
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  169 0048 02F58062 		add	r2, r2, #1024	@ tmp150, tmp150,
  170 004c 9042     		cmp	r0, r2	@ TIMx, tmp150
  171 004e 08D0     		beq	.L12	@,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 4
 
 
  172 0050 26F0A006 		bic	r6, r6, #160	@ tmp157, tmpccer,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  226 0030 00F08380 		beq	.L45	@,
  227 0034 764B     		ldr	r3, .L55+28	@ tmp118,
  228 0036 9842     		cmp	r0, r3	@ TIMx, tmp118
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 5
 
 
  229 0038 00F08B80 		beq	.L46	@,
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  283 00ca BDE80840 		pop	{r3, lr}	@
  284 00ce 0120     		movs	r0, #1	@,
  285 00d0 0021     		movs	r1, #0	@,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 6
 
 
  286 00d2 FFF7FEBF 		b	RCC_APB1PeriphResetCmd	@
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  340 0160 4FF40020 		mov	r0, #524288	@,
  341 0164 0021     		movs	r1, #0	@,
  342 0166 FFF7FEBF 		b	RCC_APB2PeriphResetCmd	@
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 7
 
 
  343              	.L47:
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  397 0200 000C0040 		.word	1073744896
  398 0204 00100040 		.word	1073745920
  399 0208 00140040 		.word	1073746944
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 8
 
 
  400 020c 00340140 		.word	1073820672
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  454 004e 8D88     		ldrh	r5, [r1, #4]	@ D.7738, TIM_TimeBaseInitStruct_8(D)->TIM_Period
  455 0050 0C88     		ldrh	r4, [r1]	@ D.7738, TIM_TimeBaseInitStruct_8(D)->TIM_Prescaler
  456 0052 9BB2     		uxth	r3, r3	@ tmpcr1, tmp137
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 9
 
 
  457 0054 02F58C32 		add	r2, r2, #71680	@ tmp143, tmp143,
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  511              		@ args = 0, pretend = 0, frame = 0
  512              		@ frame_needed = 0, uses_anonymous_args = 0
  513              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 10
 
 
  514 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_4(D)->CCER
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  568 007c 24F44074 		bic	r4, r4, #768	@ tmp164, tmpcr2,
  569 0080 22F00402 		bic	r2, r2, #4	@ tmp161, tmpccer,
  570 0084 ADB2     		uxth	r5, r5	@ tmpcr2, tmp167
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 11
 
 
  571 0086 3243     		orrs	r2, r2, r6	@, tmpccer, tmp161, tmp163
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  625 0054 0284     		strh	r2, [r0, #32]	@ movhi	@ tmpccer, TIMx_4(D)->CCER
  626 0056 7047     		bx	lr	@
  627              	.L77:
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 12
 
 
  628 0058 22F08002 		bic	r2, r2, #128	@ tmp168, tmpccer,
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  682 0038 A4B2     		uxth	r4, r4	@ tmpcr2, TIMx_4(D)->CR2
  683 003a 43EA0603 		orr	r3, r3, r6	@ tmpccmrx, tmpccmrx, tmp153
  684 003e 0AD0     		beq	.L82	@,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 13
 
 
  685 0040 05F50065 		add	r5, r5, #2048	@ tmp164, tmp164,
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  739 001a 1204     		lsls	r2, r2, #16	@ tmpccer, tmpccer,
  740 001c 23F4E643 		bic	r3, r3, #29440	@ tmpccmrx, TIMx_3(D)->CCMR2,
  741 0020 120C     		lsrs	r2, r2, #16	@ tmpccer, tmpccer,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 14
 
 
  742 0022 42EA0532 		orr	r2, r2, r5, lsl #12	@, tmp151, tmpccer, TIM_OCInitStruct_11(D)->TIM_OCPolarity,
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  796 0016 028C     		ldrh	r2, [r0, #32]	@, TIMx_8(D)->CCER
  797 0018 2E89     		ldrh	r6, [r5, #8]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICFilter
  798 001a 22F48052 		bic	r2, r2, #4096	@ D.7768, TIMx_8(D)->CCER,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 15
 
 
  799 001e 1204     		lsls	r2, r2, #16	@ D.7768, D.7768,
@@ -898,7 +898,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  853 00a2 42F48052 		orr	r2, r2, #4096	@ tmpccer, D.7768,
  854 00a6 E7E7     		b	.L101	@
  855              	.L108:
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 16
 
 
  856 00a8 AA88     		ldrh	r2, [r5, #4]	@, TIM_ICInitStruct_3(D)->TIM_ICSelection
@@ -958,7 +958,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  910 012a 2684     		strh	r6, [r4, #32]	@ movhi	@ tmpccer, TIMx_8(D)->CCER
  911 012c A38B     		ldrh	r3, [r4, #28]	@, TIMx_8(D)->CCMR2
  912 012e EA88     		ldrh	r2, [r5, #6]	@ D.7768, TIM_ICInitStruct_3(D)->TIM_ICPrescaler
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 17
 
 
  913 0130 23F00C03 		bic	r3, r3, #12	@ D.7768, TIMx_8(D)->CCMR2,
@@ -1018,7 +1018,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  967 0010 0227     		moveq	r7, #2	@, icoppositepolarity,
  968 0012 012B     		cmp	r3, #1	@ D.7771,
  969 0014 14BF     		ite	ne	@
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 18
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 18
 
 
  970 0016 0126     		movne	r6, #1	@, icoppositeselection,
@@ -1078,7 +1078,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1024 0090 EA88     		ldrh	r2, [r5, #6]	@ D.7771, TIM_ICInitStruct_5(D)->TIM_ICPrescaler
  1025 0092 23F44063 		bic	r3, r3, #3072	@ D.7771, TIMx_10(D)->CCMR1,
  1026 0096 1B04     		lsls	r3, r3, #16	@ D.7771, D.7771,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 19
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 19
 
 
  1027 0098 1B0C     		lsrs	r3, r3, #16	@ D.7771, D.7771,
@@ -1138,7 +1138,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1081 000e 0372     		strb	r3, [r0, #8]	@ tmp114, TIM_TimeBaseInitStruct_2(D)->TIM_RepetitionCounter
  1082 0010 7047     		bx	lr	@
  1083              		.size	TIM_TimeBaseStructInit, .-TIM_TimeBaseStructInit
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 20
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 20
 
 
  1084 0012 00BF     		.section	.text.TIM_OCStructInit,"ax",%progbits
@@ -1198,7 +1198,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1138 0008 C380     		strh	r3, [r0, #6]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_DeadTime
  1139 000a 0381     		strh	r3, [r0, #8]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_Break
  1140 000c 4381     		strh	r3, [r0, #10]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_BreakPolarity
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 21
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 21
 
 
  1141 000e 8381     		strh	r3, [r0, #12]	@ movhi	@ tmp112, TIM_BDTRInitStruct_2(D)->TIM_AutomaticOutput
@@ -1258,7 +1258,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1195              	TIM_ITConfig:
  1196              		@ args = 0, pretend = 0, frame = 0
  1197              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 22
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 22
 
 
  1198              		@ link register save eliminated.
@@ -1318,7 +1318,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1252 000c 7047     		bx	lr	@
  1253              	.L143:
  1254 000e 1943     		orrs	r1, r1, r3	@, D.7799, TIM_DMASource, D.7799
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 23
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 23
 
 
  1255 0010 8181     		strh	r1, [r0, #12]	@ movhi	@ D.7799,
@@ -1378,7 +1378,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1309 0006 1146     		mov	r1, r2	@, TIM_ICPolarity
  1310 0008 0446     		mov	r4, r0	@ TIMx, TIMx
  1311 000a 4FF00102 		mov	r2, #1	@,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 24
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 24
 
 
  1312 000e 0ED0     		beq	.L149	@,
@@ -1438,7 +1438,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1366              		@ link register save eliminated.
  1367 0000 10B4     		push	{r4}	@
  1368 0002 0489     		ldrh	r4, [r0, #8]	@, TIMx_2(D)->SMCR
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 25
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 25
 
 
  1369 0004 42EA0323 		orr	r3, r2, r3, lsl #8	@, tmp126, TIM_ExtTRGPolarity, ExtTRGFilter,
@@ -1498,7 +1498,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1423              	TIM_CounterModeConfig:
  1424              		@ args = 0, pretend = 0, frame = 0
  1425              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 26
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 26
 
 
  1426              		@ link register save eliminated.
@@ -1558,7 +1558,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1480 002e 44F00104 		orr	r4, r4, #1	@ tmpccmr1, tmpccmr1,
  1481 0032 9EB2     		uxth	r6, r3	@ tmpccer, tmp143
  1482 0034 0181     		strh	r1, [r0, #8]	@ movhi	@ tmpsmcr, TIMx_2(D)->SMCR
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 27
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 27
 
 
  1483 0036 0483     		strh	r4, [r0, #24]	@ movhi	@ tmpccmr1, TIMx_2(D)->CCMR1
@@ -1618,7 +1618,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1537 0006 1B04     		lsls	r3, r3, #16	@ tmpccmr2, tmpccmr2,
  1538 0008 1B0C     		lsrs	r3, r3, #16	@ tmpccmr2, tmpccmr2,
  1539 000a 1943     		orrs	r1, r1, r3	@, tmpccmr2, TIM_ForcedAction, tmpccmr2
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 28
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 28
 
 
  1540 000c 8183     		strh	r1, [r0, #28]	@ movhi	@ tmpccmr2, TIMx_2(D)->CCMR2
@@ -1678,7 +1678,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1594              		@ link register save eliminated.
  1595 0000 8388     		ldrh	r3, [r0, #4]	@,
  1596 0002 29B9     		cbnz	r1, .L168	@ NewState,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 29
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 29
 
 
  1597 0004 23F00403 		bic	r3, r3, #4	@ D.7843, TIMx_4(D)->CR2,
@@ -1738,7 +1738,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1651 0016 8380     		strh	r3, [r0, #4]	@ movhi	@ D.7849,
  1652 0018 7047     		bx	lr	@
  1653              		.size	TIM_CCPreloadControl, .-TIM_CCPreloadControl
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 30
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 30
 
 
  1654 001a 00BF     		.section	.text.TIM_OC1PreloadConfig,"ax",%progbits
@@ -1798,7 +1798,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1708              		.size	TIM_OC3PreloadConfig, .-TIM_OC3PreloadConfig
  1709              		.section	.text.TIM_OC4PreloadConfig,"ax",%progbits
  1710              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 31
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 31
 
 
  1711              		.global	TIM_OC4PreloadConfig
@@ -1858,7 +1858,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1765              		.section	.text.TIM_OC3FastConfig,"ax",%progbits
  1766              		.align	2
  1767              		.global	TIM_OC3FastConfig
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 32
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 32
 
 
  1768              		.thumb
@@ -1918,7 +1918,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1822              		.global	TIM_ClearOC2Ref
  1823              		.thumb
  1824              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 33
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 33
 
 
  1825              		.type	TIM_ClearOC2Ref, %function
@@ -1978,7 +1978,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1879              		@ args = 0, pretend = 0, frame = 0
  1880              		@ frame_needed = 0, uses_anonymous_args = 0
  1881              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 34
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 34
 
 
  1882 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
@@ -2038,7 +2038,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1936              		@ link register save eliminated.
  1937 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
  1938 0002 23F08003 		bic	r3, r3, #128	@ tmpccer, TIMx_2(D)->CCER,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 35
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 35
 
 
  1939 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
@@ -2098,7 +2098,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  1993              		@ link register save eliminated.
  1994 0000 038C     		ldrh	r3, [r0, #32]	@, TIMx_2(D)->CCER
  1995 0002 23F40053 		bic	r3, r3, #8192	@ tmpccer, TIMx_2(D)->CCER,
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 36
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 36
 
 
  1996 0006 1B04     		lsls	r3, r3, #16	@ tmpccer, tmpccer,
@@ -2158,7 +2158,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2050              		.align	2
  2051              		.global	TIM_SelectOCxM
  2052              		.thumb
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 37
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 37
 
 
  2053              		.thumb_func
@@ -2218,7 +2218,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2107 000c 0380     		strh	r3, [r0]	@ movhi	@ D.7914,* TIMx
  2108 000e 7047     		bx	lr	@
  2109              	.L205:
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 38
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 38
 
 
  2110 0010 9BB2     		uxth	r3, r3	@ D.7914, TIMx_4(D)->CR1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2164              		.thumb
  2165              		.thumb_func
  2166              		.type	TIM_SelectOnePulseMode, %function
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 39
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 39
 
 
  2167              	TIM_SelectOnePulseMode:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2221 0012 0181     		strh	r1, [r0, #8]	@ movhi	@ D.7929, TIMx_2(D)->SMCR
  2222 0014 7047     		bx	lr	@
  2223              		.size	TIM_SelectSlaveMode, .-TIM_SelectSlaveMode
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 40
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 40
 
 
  2224 0016 00BF     		.section	.text.TIM_SelectMasterSlaveMode,"ax",%progbits
@@ -2398,7 +2398,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2278              		@ args = 0, pretend = 0, frame = 0
  2279              		@ frame_needed = 0, uses_anonymous_args = 0
  2280              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 41
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 41
 
 
  2281 0000 8186     		strh	r1, [r0, #52]	@ movhi	@ Compare1, TIMx_2(D)->CCR1
@@ -2458,7 +2458,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2335 0006 1B04     		lsls	r3, r3, #16	@ D.7947, D.7947,
  2336 0008 1B0C     		lsrs	r3, r3, #16	@ D.7947, D.7947,
  2337 000a 0383     		strh	r3, [r0, #24]	@ movhi	@ D.7947, TIMx_2(D)->CCMR1
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 42
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 42
 
 
  2338 000c 038B     		ldrh	r3, [r0, #24]	@, TIMx_2(D)->CCMR1
@@ -2518,7 +2518,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2392              		.type	TIM_SetIC4Prescaler, %function
  2393              	TIM_SetIC4Prescaler:
  2394              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 43
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 43
 
 
  2395              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2449              		.type	TIM_GetCapture2, %function
  2450              	TIM_GetCapture2:
  2451              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 44
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 44
 
 
  2452              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2506              	TIM_GetPrescaler:
  2507              		@ args = 0, pretend = 0, frame = 0
  2508              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 45
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 45
 
 
  2509              		@ link register save eliminated.
@@ -2698,7 +2698,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2563 0010 0020     		moveq	r0, #0	@, bitstatus
  2564 0012 0120     		movne	r0, #1	@, bitstatus
  2565              	.L238:
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 46
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 46
 
 
  2566 0014 7047     		bx	lr	@
@@ -2719,207 +2719,207 @@ ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 1
  2581 0006 7047     		bx	lr	@
  2582              		.size	TIM_ClearITPendingBit, .-TIM_ClearITPendingBit
  2583              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 47
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 47
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_tim.c
-C:\cygwin64\tmp\ccMZCKhD.s:71     .text.TI1_Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:75     .text.TI1_Config:00000000 TI1_Config
-C:\cygwin64\tmp\ccMZCKhD.s:128    .text.TI1_Config:00000070 $d
-C:\cygwin64\tmp\ccMZCKhD.s:132    .text.TI2_Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:136    .text.TI2_Config:00000000 TI2_Config
-C:\cygwin64\tmp\ccMZCKhD.s:191    .text.TI2_Config:00000078 $d
-C:\cygwin64\tmp\ccMZCKhD.s:195    .text.TIM_DeInit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:200    .text.TIM_DeInit:00000000 TIM_DeInit
-C:\cygwin64\tmp\ccMZCKhD.s:394    .text.TIM_DeInit:000001f4 $d
-C:\cygwin64\tmp\ccMZCKhD.s:412    .text.TIM_TimeBaseInit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:417    .text.TIM_TimeBaseInit:00000000 TIM_TimeBaseInit
-C:\cygwin64\tmp\ccMZCKhD.s:500    .text.TIM_TimeBaseInit:000000a8 $d
-C:\cygwin64\tmp\ccMZCKhD.s:505    .text.TIM_OC1Init:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:510    .text.TIM_OC1Init:00000000 TIM_OC1Init
-C:\cygwin64\tmp\ccMZCKhD.s:577    .text.TIM_OC1Init:0000008c $d
-C:\cygwin64\tmp\ccMZCKhD.s:580    .text.TIM_OC2Init:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:585    .text.TIM_OC2Init:00000000 TIM_OC2Init
-C:\cygwin64\tmp\ccMZCKhD.s:647    .text.TIM_OC2Init:0000008c $d
-C:\cygwin64\tmp\ccMZCKhD.s:650    .text.TIM_OC3Init:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:655    .text.TIM_OC3Init:00000000 TIM_OC3Init
-C:\cygwin64\tmp\ccMZCKhD.s:716    .text.TIM_OC3Init:00000088 $d
-C:\cygwin64\tmp\ccMZCKhD.s:719    .text.TIM_OC4Init:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:724    .text.TIM_OC4Init:00000000 TIM_OC4Init
-C:\cygwin64\tmp\ccMZCKhD.s:775    .text.TIM_OC4Init:00000068 $d
-C:\cygwin64\tmp\ccMZCKhD.s:778    .text.TIM_ICInit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:783    .text.TIM_ICInit:00000000 TIM_ICInit
-C:\cygwin64\tmp\ccMZCKhD.s:948    .text.TIM_ICInit:0000017c $d
-C:\cygwin64\tmp\ccMZCKhD.s:951    .text.TIM_PWMIConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:956    .text.TIM_PWMIConfig:00000000 TIM_PWMIConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1037   .text.TIM_BDTRConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1042   .text.TIM_BDTRConfig:00000000 TIM_BDTRConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1066   .text.TIM_TimeBaseStructInit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1071   .text.TIM_TimeBaseStructInit:00000000 TIM_TimeBaseStructInit
-C:\cygwin64\tmp\ccMZCKhD.s:1085   .text.TIM_OCStructInit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1090   .text.TIM_OCStructInit:00000000 TIM_OCStructInit
-C:\cygwin64\tmp\ccMZCKhD.s:1106   .text.TIM_ICStructInit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1111   .text.TIM_ICStructInit:00000000 TIM_ICStructInit
-C:\cygwin64\tmp\ccMZCKhD.s:1125   .text.TIM_BDTRStructInit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1130   .text.TIM_BDTRStructInit:00000000 TIM_BDTRStructInit
-C:\cygwin64\tmp\ccMZCKhD.s:1145   .text.TIM_Cmd:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1150   .text.TIM_Cmd:00000000 TIM_Cmd
-C:\cygwin64\tmp\ccMZCKhD.s:1168   .text.TIM_CtrlPWMOutputs:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1173   .text.TIM_CtrlPWMOutputs:00000000 TIM_CtrlPWMOutputs
-C:\cygwin64\tmp\ccMZCKhD.s:1190   .text.TIM_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1195   .text.TIM_ITConfig:00000000 TIM_ITConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1211   .text.TIM_GenerateEvent:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1216   .text.TIM_GenerateEvent:00000000 TIM_GenerateEvent
-C:\cygwin64\tmp\ccMZCKhD.s:1224   .text.TIM_DMAConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1229   .text.TIM_DMAConfig:00000000 TIM_DMAConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1238   .text.TIM_DMACmd:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1243   .text.TIM_DMACmd:00000000 TIM_DMACmd
-C:\cygwin64\tmp\ccMZCKhD.s:1259   .text.TIM_InternalClockConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1264   .text.TIM_InternalClockConfig:00000000 TIM_InternalClockConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1276   .text.TIM_ITRxExternalClockConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1281   .text.TIM_ITRxExternalClockConfig:00000000 TIM_ITRxExternalClockConfig
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 48
+C:\cygwin64\tmp\ccs7LJAB.s:71     .text.TI1_Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:75     .text.TI1_Config:00000000 TI1_Config
+C:\cygwin64\tmp\ccs7LJAB.s:128    .text.TI1_Config:00000070 $d
+C:\cygwin64\tmp\ccs7LJAB.s:132    .text.TI2_Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:136    .text.TI2_Config:00000000 TI2_Config
+C:\cygwin64\tmp\ccs7LJAB.s:191    .text.TI2_Config:00000078 $d
+C:\cygwin64\tmp\ccs7LJAB.s:195    .text.TIM_DeInit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:200    .text.TIM_DeInit:00000000 TIM_DeInit
+C:\cygwin64\tmp\ccs7LJAB.s:394    .text.TIM_DeInit:000001f4 $d
+C:\cygwin64\tmp\ccs7LJAB.s:412    .text.TIM_TimeBaseInit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:417    .text.TIM_TimeBaseInit:00000000 TIM_TimeBaseInit
+C:\cygwin64\tmp\ccs7LJAB.s:500    .text.TIM_TimeBaseInit:000000a8 $d
+C:\cygwin64\tmp\ccs7LJAB.s:505    .text.TIM_OC1Init:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:510    .text.TIM_OC1Init:00000000 TIM_OC1Init
+C:\cygwin64\tmp\ccs7LJAB.s:577    .text.TIM_OC1Init:0000008c $d
+C:\cygwin64\tmp\ccs7LJAB.s:580    .text.TIM_OC2Init:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:585    .text.TIM_OC2Init:00000000 TIM_OC2Init
+C:\cygwin64\tmp\ccs7LJAB.s:647    .text.TIM_OC2Init:0000008c $d
+C:\cygwin64\tmp\ccs7LJAB.s:650    .text.TIM_OC3Init:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:655    .text.TIM_OC3Init:00000000 TIM_OC3Init
+C:\cygwin64\tmp\ccs7LJAB.s:716    .text.TIM_OC3Init:00000088 $d
+C:\cygwin64\tmp\ccs7LJAB.s:719    .text.TIM_OC4Init:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:724    .text.TIM_OC4Init:00000000 TIM_OC4Init
+C:\cygwin64\tmp\ccs7LJAB.s:775    .text.TIM_OC4Init:00000068 $d
+C:\cygwin64\tmp\ccs7LJAB.s:778    .text.TIM_ICInit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:783    .text.TIM_ICInit:00000000 TIM_ICInit
+C:\cygwin64\tmp\ccs7LJAB.s:948    .text.TIM_ICInit:0000017c $d
+C:\cygwin64\tmp\ccs7LJAB.s:951    .text.TIM_PWMIConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:956    .text.TIM_PWMIConfig:00000000 TIM_PWMIConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1037   .text.TIM_BDTRConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1042   .text.TIM_BDTRConfig:00000000 TIM_BDTRConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1066   .text.TIM_TimeBaseStructInit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1071   .text.TIM_TimeBaseStructInit:00000000 TIM_TimeBaseStructInit
+C:\cygwin64\tmp\ccs7LJAB.s:1085   .text.TIM_OCStructInit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1090   .text.TIM_OCStructInit:00000000 TIM_OCStructInit
+C:\cygwin64\tmp\ccs7LJAB.s:1106   .text.TIM_ICStructInit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1111   .text.TIM_ICStructInit:00000000 TIM_ICStructInit
+C:\cygwin64\tmp\ccs7LJAB.s:1125   .text.TIM_BDTRStructInit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1130   .text.TIM_BDTRStructInit:00000000 TIM_BDTRStructInit
+C:\cygwin64\tmp\ccs7LJAB.s:1145   .text.TIM_Cmd:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1150   .text.TIM_Cmd:00000000 TIM_Cmd
+C:\cygwin64\tmp\ccs7LJAB.s:1168   .text.TIM_CtrlPWMOutputs:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1173   .text.TIM_CtrlPWMOutputs:00000000 TIM_CtrlPWMOutputs
+C:\cygwin64\tmp\ccs7LJAB.s:1190   .text.TIM_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1195   .text.TIM_ITConfig:00000000 TIM_ITConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1211   .text.TIM_GenerateEvent:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1216   .text.TIM_GenerateEvent:00000000 TIM_GenerateEvent
+C:\cygwin64\tmp\ccs7LJAB.s:1224   .text.TIM_DMAConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1229   .text.TIM_DMAConfig:00000000 TIM_DMAConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1238   .text.TIM_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1243   .text.TIM_DMACmd:00000000 TIM_DMACmd
+C:\cygwin64\tmp\ccs7LJAB.s:1259   .text.TIM_InternalClockConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1264   .text.TIM_InternalClockConfig:00000000 TIM_InternalClockConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1276   .text.TIM_ITRxExternalClockConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1281   .text.TIM_ITRxExternalClockConfig:00000000 TIM_ITRxExternalClockConfig
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 48
 
 
-C:\cygwin64\tmp\ccMZCKhD.s:1298   .text.TIM_TIxExternalClockConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1303   .text.TIM_TIxExternalClockConfig:00000000 TIM_TIxExternalClockConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1331   .text.TIM_ETRClockMode1Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1336   .text.TIM_ETRClockMode1Config:00000000 TIM_ETRClockMode1Config
-C:\cygwin64\tmp\ccMZCKhD.s:1358   .text.TIM_ETRClockMode2Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1363   .text.TIM_ETRClockMode2Config:00000000 TIM_ETRClockMode2Config
-C:\cygwin64\tmp\ccMZCKhD.s:1383   .text.TIM_ETRConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1388   .text.TIM_ETRConfig:00000000 TIM_ETRConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1404   .text.TIM_PrescalerConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1409   .text.TIM_PrescalerConfig:00000000 TIM_PrescalerConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1418   .text.TIM_CounterModeConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1423   .text.TIM_CounterModeConfig:00000000 TIM_CounterModeConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1436   .text.TIM_SelectInputTrigger:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1441   .text.TIM_SelectInputTrigger:00000000 TIM_SelectInputTrigger
-C:\cygwin64\tmp\ccMZCKhD.s:1454   .text.TIM_EncoderInterfaceConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1459   .text.TIM_EncoderInterfaceConfig:00000000 TIM_EncoderInterfaceConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1489   .text.TIM_ForcedOC1Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1494   .text.TIM_ForcedOC1Config:00000000 TIM_ForcedOC1Config
-C:\cygwin64\tmp\ccMZCKhD.s:1507   .text.TIM_ForcedOC2Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1512   .text.TIM_ForcedOC2Config:00000000 TIM_ForcedOC2Config
-C:\cygwin64\tmp\ccMZCKhD.s:1526   .text.TIM_ForcedOC3Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1531   .text.TIM_ForcedOC3Config:00000000 TIM_ForcedOC3Config
-C:\cygwin64\tmp\ccMZCKhD.s:1544   .text.TIM_ForcedOC4Config:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1549   .text.TIM_ForcedOC4Config:00000000 TIM_ForcedOC4Config
-C:\cygwin64\tmp\ccMZCKhD.s:1563   .text.TIM_ARRPreloadConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1568   .text.TIM_ARRPreloadConfig:00000000 TIM_ARRPreloadConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1586   .text.TIM_SelectCOM:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1591   .text.TIM_SelectCOM:00000000 TIM_SelectCOM
-C:\cygwin64\tmp\ccMZCKhD.s:1609   .text.TIM_SelectCCDMA:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1614   .text.TIM_SelectCCDMA:00000000 TIM_SelectCCDMA
-C:\cygwin64\tmp\ccMZCKhD.s:1632   .text.TIM_CCPreloadControl:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1637   .text.TIM_CCPreloadControl:00000000 TIM_CCPreloadControl
-C:\cygwin64\tmp\ccMZCKhD.s:1655   .text.TIM_OC1PreloadConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1660   .text.TIM_OC1PreloadConfig:00000000 TIM_OC1PreloadConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1673   .text.TIM_OC2PreloadConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1678   .text.TIM_OC2PreloadConfig:00000000 TIM_OC2PreloadConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1692   .text.TIM_OC3PreloadConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1697   .text.TIM_OC3PreloadConfig:00000000 TIM_OC3PreloadConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1710   .text.TIM_OC4PreloadConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1715   .text.TIM_OC4PreloadConfig:00000000 TIM_OC4PreloadConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1729   .text.TIM_OC1FastConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1734   .text.TIM_OC1FastConfig:00000000 TIM_OC1FastConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1747   .text.TIM_OC2FastConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1752   .text.TIM_OC2FastConfig:00000000 TIM_OC2FastConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1766   .text.TIM_OC3FastConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1771   .text.TIM_OC3FastConfig:00000000 TIM_OC3FastConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1784   .text.TIM_OC4FastConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1789   .text.TIM_OC4FastConfig:00000000 TIM_OC4FastConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1803   .text.TIM_ClearOC1Ref:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1808   .text.TIM_ClearOC1Ref:00000000 TIM_ClearOC1Ref
-C:\cygwin64\tmp\ccMZCKhD.s:1821   .text.TIM_ClearOC2Ref:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1826   .text.TIM_ClearOC2Ref:00000000 TIM_ClearOC2Ref
-C:\cygwin64\tmp\ccMZCKhD.s:1838   .text.TIM_ClearOC3Ref:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1843   .text.TIM_ClearOC3Ref:00000000 TIM_ClearOC3Ref
-C:\cygwin64\tmp\ccMZCKhD.s:1856   .text.TIM_ClearOC4Ref:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1861   .text.TIM_ClearOC4Ref:00000000 TIM_ClearOC4Ref
-C:\cygwin64\tmp\ccMZCKhD.s:1873   .text.TIM_OC1PolarityConfig:00000000 $t
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 49
+C:\cygwin64\tmp\ccs7LJAB.s:1298   .text.TIM_TIxExternalClockConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1303   .text.TIM_TIxExternalClockConfig:00000000 TIM_TIxExternalClockConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1331   .text.TIM_ETRClockMode1Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1336   .text.TIM_ETRClockMode1Config:00000000 TIM_ETRClockMode1Config
+C:\cygwin64\tmp\ccs7LJAB.s:1358   .text.TIM_ETRClockMode2Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1363   .text.TIM_ETRClockMode2Config:00000000 TIM_ETRClockMode2Config
+C:\cygwin64\tmp\ccs7LJAB.s:1383   .text.TIM_ETRConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1388   .text.TIM_ETRConfig:00000000 TIM_ETRConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1404   .text.TIM_PrescalerConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1409   .text.TIM_PrescalerConfig:00000000 TIM_PrescalerConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1418   .text.TIM_CounterModeConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1423   .text.TIM_CounterModeConfig:00000000 TIM_CounterModeConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1436   .text.TIM_SelectInputTrigger:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1441   .text.TIM_SelectInputTrigger:00000000 TIM_SelectInputTrigger
+C:\cygwin64\tmp\ccs7LJAB.s:1454   .text.TIM_EncoderInterfaceConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1459   .text.TIM_EncoderInterfaceConfig:00000000 TIM_EncoderInterfaceConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1489   .text.TIM_ForcedOC1Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1494   .text.TIM_ForcedOC1Config:00000000 TIM_ForcedOC1Config
+C:\cygwin64\tmp\ccs7LJAB.s:1507   .text.TIM_ForcedOC2Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1512   .text.TIM_ForcedOC2Config:00000000 TIM_ForcedOC2Config
+C:\cygwin64\tmp\ccs7LJAB.s:1526   .text.TIM_ForcedOC3Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1531   .text.TIM_ForcedOC3Config:00000000 TIM_ForcedOC3Config
+C:\cygwin64\tmp\ccs7LJAB.s:1544   .text.TIM_ForcedOC4Config:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1549   .text.TIM_ForcedOC4Config:00000000 TIM_ForcedOC4Config
+C:\cygwin64\tmp\ccs7LJAB.s:1563   .text.TIM_ARRPreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1568   .text.TIM_ARRPreloadConfig:00000000 TIM_ARRPreloadConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1586   .text.TIM_SelectCOM:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1591   .text.TIM_SelectCOM:00000000 TIM_SelectCOM
+C:\cygwin64\tmp\ccs7LJAB.s:1609   .text.TIM_SelectCCDMA:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1614   .text.TIM_SelectCCDMA:00000000 TIM_SelectCCDMA
+C:\cygwin64\tmp\ccs7LJAB.s:1632   .text.TIM_CCPreloadControl:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1637   .text.TIM_CCPreloadControl:00000000 TIM_CCPreloadControl
+C:\cygwin64\tmp\ccs7LJAB.s:1655   .text.TIM_OC1PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1660   .text.TIM_OC1PreloadConfig:00000000 TIM_OC1PreloadConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1673   .text.TIM_OC2PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1678   .text.TIM_OC2PreloadConfig:00000000 TIM_OC2PreloadConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1692   .text.TIM_OC3PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1697   .text.TIM_OC3PreloadConfig:00000000 TIM_OC3PreloadConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1710   .text.TIM_OC4PreloadConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1715   .text.TIM_OC4PreloadConfig:00000000 TIM_OC4PreloadConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1729   .text.TIM_OC1FastConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1734   .text.TIM_OC1FastConfig:00000000 TIM_OC1FastConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1747   .text.TIM_OC2FastConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1752   .text.TIM_OC2FastConfig:00000000 TIM_OC2FastConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1766   .text.TIM_OC3FastConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1771   .text.TIM_OC3FastConfig:00000000 TIM_OC3FastConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1784   .text.TIM_OC4FastConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1789   .text.TIM_OC4FastConfig:00000000 TIM_OC4FastConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1803   .text.TIM_ClearOC1Ref:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1808   .text.TIM_ClearOC1Ref:00000000 TIM_ClearOC1Ref
+C:\cygwin64\tmp\ccs7LJAB.s:1821   .text.TIM_ClearOC2Ref:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1826   .text.TIM_ClearOC2Ref:00000000 TIM_ClearOC2Ref
+C:\cygwin64\tmp\ccs7LJAB.s:1838   .text.TIM_ClearOC3Ref:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1843   .text.TIM_ClearOC3Ref:00000000 TIM_ClearOC3Ref
+C:\cygwin64\tmp\ccs7LJAB.s:1856   .text.TIM_ClearOC4Ref:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1861   .text.TIM_ClearOC4Ref:00000000 TIM_ClearOC4Ref
+C:\cygwin64\tmp\ccs7LJAB.s:1873   .text.TIM_OC1PolarityConfig:00000000 $t
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 49
 
 
-C:\cygwin64\tmp\ccMZCKhD.s:1878   .text.TIM_OC1PolarityConfig:00000000 TIM_OC1PolarityConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1891   .text.TIM_OC1NPolarityConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1896   .text.TIM_OC1NPolarityConfig:00000000 TIM_OC1NPolarityConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1909   .text.TIM_OC2PolarityConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1914   .text.TIM_OC2PolarityConfig:00000000 TIM_OC2PolarityConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1928   .text.TIM_OC2NPolarityConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1933   .text.TIM_OC2NPolarityConfig:00000000 TIM_OC2NPolarityConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1947   .text.TIM_OC3PolarityConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1952   .text.TIM_OC3PolarityConfig:00000000 TIM_OC3PolarityConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1966   .text.TIM_OC3NPolarityConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1971   .text.TIM_OC3NPolarityConfig:00000000 TIM_OC3NPolarityConfig
-C:\cygwin64\tmp\ccMZCKhD.s:1985   .text.TIM_OC4PolarityConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:1990   .text.TIM_OC4PolarityConfig:00000000 TIM_OC4PolarityConfig
-C:\cygwin64\tmp\ccMZCKhD.s:2004   .text.TIM_CCxCmd:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2009   .text.TIM_CCxCmd:00000000 TIM_CCxCmd
-C:\cygwin64\tmp\ccMZCKhD.s:2027   .text.TIM_CCxNCmd:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2032   .text.TIM_CCxNCmd:00000000 TIM_CCxNCmd
-C:\cygwin64\tmp\ccMZCKhD.s:2050   .text.TIM_SelectOCxM:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2055   .text.TIM_SelectOCxM:00000000 TIM_SelectOCxM
-C:\cygwin64\tmp\ccMZCKhD.s:2093   .text.TIM_UpdateDisableConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2098   .text.TIM_UpdateDisableConfig:00000000 TIM_UpdateDisableConfig
-C:\cygwin64\tmp\ccMZCKhD.s:2116   .text.TIM_UpdateRequestConfig:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2121   .text.TIM_UpdateRequestConfig:00000000 TIM_UpdateRequestConfig
-C:\cygwin64\tmp\ccMZCKhD.s:2139   .text.TIM_SelectHallSensor:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2144   .text.TIM_SelectHallSensor:00000000 TIM_SelectHallSensor
-C:\cygwin64\tmp\ccMZCKhD.s:2162   .text.TIM_SelectOnePulseMode:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2167   .text.TIM_SelectOnePulseMode:00000000 TIM_SelectOnePulseMode
-C:\cygwin64\tmp\ccMZCKhD.s:2183   .text.TIM_SelectOutputTrigger:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2188   .text.TIM_SelectOutputTrigger:00000000 TIM_SelectOutputTrigger
-C:\cygwin64\tmp\ccMZCKhD.s:2204   .text.TIM_SelectSlaveMode:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2209   .text.TIM_SelectSlaveMode:00000000 TIM_SelectSlaveMode
-C:\cygwin64\tmp\ccMZCKhD.s:2225   .text.TIM_SelectMasterSlaveMode:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2230   .text.TIM_SelectMasterSlaveMode:00000000 TIM_SelectMasterSlaveMode
-C:\cygwin64\tmp\ccMZCKhD.s:2246   .text.TIM_SetCounter:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2251   .text.TIM_SetCounter:00000000 TIM_SetCounter
-C:\cygwin64\tmp\ccMZCKhD.s:2259   .text.TIM_SetAutoreload:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2264   .text.TIM_SetAutoreload:00000000 TIM_SetAutoreload
-C:\cygwin64\tmp\ccMZCKhD.s:2272   .text.TIM_SetCompare1:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2277   .text.TIM_SetCompare1:00000000 TIM_SetCompare1
-C:\cygwin64\tmp\ccMZCKhD.s:2285   .text.TIM_SetCompare2:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2290   .text.TIM_SetCompare2:00000000 TIM_SetCompare2
-C:\cygwin64\tmp\ccMZCKhD.s:2298   .text.TIM_SetCompare3:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2303   .text.TIM_SetCompare3:00000000 TIM_SetCompare3
-C:\cygwin64\tmp\ccMZCKhD.s:2311   .text.TIM_SetCompare4:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2316   .text.TIM_SetCompare4:00000000 TIM_SetCompare4
-C:\cygwin64\tmp\ccMZCKhD.s:2324   .text.TIM_SetIC1Prescaler:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2329   .text.TIM_SetIC1Prescaler:00000000 TIM_SetIC1Prescaler
-C:\cygwin64\tmp\ccMZCKhD.s:2345   .text.TIM_SetIC2Prescaler:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2350   .text.TIM_SetIC2Prescaler:00000000 TIM_SetIC2Prescaler
-C:\cygwin64\tmp\ccMZCKhD.s:2367   .text.TIM_SetIC3Prescaler:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2372   .text.TIM_SetIC3Prescaler:00000000 TIM_SetIC3Prescaler
-C:\cygwin64\tmp\ccMZCKhD.s:2388   .text.TIM_SetIC4Prescaler:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2393   .text.TIM_SetIC4Prescaler:00000000 TIM_SetIC4Prescaler
-C:\cygwin64\tmp\ccMZCKhD.s:2410   .text.TIM_SetClockDivision:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2415   .text.TIM_SetClockDivision:00000000 TIM_SetClockDivision
-C:\cygwin64\tmp\ccMZCKhD.s:2431   .text.TIM_GetCapture1:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2436   .text.TIM_GetCapture1:00000000 TIM_GetCapture1
-ARM GAS  C:\cygwin64\tmp\ccMZCKhD.s 			page 50
+C:\cygwin64\tmp\ccs7LJAB.s:1878   .text.TIM_OC1PolarityConfig:00000000 TIM_OC1PolarityConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1891   .text.TIM_OC1NPolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1896   .text.TIM_OC1NPolarityConfig:00000000 TIM_OC1NPolarityConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1909   .text.TIM_OC2PolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1914   .text.TIM_OC2PolarityConfig:00000000 TIM_OC2PolarityConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1928   .text.TIM_OC2NPolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1933   .text.TIM_OC2NPolarityConfig:00000000 TIM_OC2NPolarityConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1947   .text.TIM_OC3PolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1952   .text.TIM_OC3PolarityConfig:00000000 TIM_OC3PolarityConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1966   .text.TIM_OC3NPolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1971   .text.TIM_OC3NPolarityConfig:00000000 TIM_OC3NPolarityConfig
+C:\cygwin64\tmp\ccs7LJAB.s:1985   .text.TIM_OC4PolarityConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:1990   .text.TIM_OC4PolarityConfig:00000000 TIM_OC4PolarityConfig
+C:\cygwin64\tmp\ccs7LJAB.s:2004   .text.TIM_CCxCmd:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2009   .text.TIM_CCxCmd:00000000 TIM_CCxCmd
+C:\cygwin64\tmp\ccs7LJAB.s:2027   .text.TIM_CCxNCmd:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2032   .text.TIM_CCxNCmd:00000000 TIM_CCxNCmd
+C:\cygwin64\tmp\ccs7LJAB.s:2050   .text.TIM_SelectOCxM:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2055   .text.TIM_SelectOCxM:00000000 TIM_SelectOCxM
+C:\cygwin64\tmp\ccs7LJAB.s:2093   .text.TIM_UpdateDisableConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2098   .text.TIM_UpdateDisableConfig:00000000 TIM_UpdateDisableConfig
+C:\cygwin64\tmp\ccs7LJAB.s:2116   .text.TIM_UpdateRequestConfig:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2121   .text.TIM_UpdateRequestConfig:00000000 TIM_UpdateRequestConfig
+C:\cygwin64\tmp\ccs7LJAB.s:2139   .text.TIM_SelectHallSensor:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2144   .text.TIM_SelectHallSensor:00000000 TIM_SelectHallSensor
+C:\cygwin64\tmp\ccs7LJAB.s:2162   .text.TIM_SelectOnePulseMode:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2167   .text.TIM_SelectOnePulseMode:00000000 TIM_SelectOnePulseMode
+C:\cygwin64\tmp\ccs7LJAB.s:2183   .text.TIM_SelectOutputTrigger:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2188   .text.TIM_SelectOutputTrigger:00000000 TIM_SelectOutputTrigger
+C:\cygwin64\tmp\ccs7LJAB.s:2204   .text.TIM_SelectSlaveMode:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2209   .text.TIM_SelectSlaveMode:00000000 TIM_SelectSlaveMode
+C:\cygwin64\tmp\ccs7LJAB.s:2225   .text.TIM_SelectMasterSlaveMode:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2230   .text.TIM_SelectMasterSlaveMode:00000000 TIM_SelectMasterSlaveMode
+C:\cygwin64\tmp\ccs7LJAB.s:2246   .text.TIM_SetCounter:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2251   .text.TIM_SetCounter:00000000 TIM_SetCounter
+C:\cygwin64\tmp\ccs7LJAB.s:2259   .text.TIM_SetAutoreload:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2264   .text.TIM_SetAutoreload:00000000 TIM_SetAutoreload
+C:\cygwin64\tmp\ccs7LJAB.s:2272   .text.TIM_SetCompare1:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2277   .text.TIM_SetCompare1:00000000 TIM_SetCompare1
+C:\cygwin64\tmp\ccs7LJAB.s:2285   .text.TIM_SetCompare2:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2290   .text.TIM_SetCompare2:00000000 TIM_SetCompare2
+C:\cygwin64\tmp\ccs7LJAB.s:2298   .text.TIM_SetCompare3:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2303   .text.TIM_SetCompare3:00000000 TIM_SetCompare3
+C:\cygwin64\tmp\ccs7LJAB.s:2311   .text.TIM_SetCompare4:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2316   .text.TIM_SetCompare4:00000000 TIM_SetCompare4
+C:\cygwin64\tmp\ccs7LJAB.s:2324   .text.TIM_SetIC1Prescaler:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2329   .text.TIM_SetIC1Prescaler:00000000 TIM_SetIC1Prescaler
+C:\cygwin64\tmp\ccs7LJAB.s:2345   .text.TIM_SetIC2Prescaler:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2350   .text.TIM_SetIC2Prescaler:00000000 TIM_SetIC2Prescaler
+C:\cygwin64\tmp\ccs7LJAB.s:2367   .text.TIM_SetIC3Prescaler:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2372   .text.TIM_SetIC3Prescaler:00000000 TIM_SetIC3Prescaler
+C:\cygwin64\tmp\ccs7LJAB.s:2388   .text.TIM_SetIC4Prescaler:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2393   .text.TIM_SetIC4Prescaler:00000000 TIM_SetIC4Prescaler
+C:\cygwin64\tmp\ccs7LJAB.s:2410   .text.TIM_SetClockDivision:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2415   .text.TIM_SetClockDivision:00000000 TIM_SetClockDivision
+C:\cygwin64\tmp\ccs7LJAB.s:2431   .text.TIM_GetCapture1:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2436   .text.TIM_GetCapture1:00000000 TIM_GetCapture1
+ARM GAS  C:\cygwin64\tmp\ccs7LJAB.s 			page 50
 
 
-C:\cygwin64\tmp\ccMZCKhD.s:2445   .text.TIM_GetCapture2:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2450   .text.TIM_GetCapture2:00000000 TIM_GetCapture2
-C:\cygwin64\tmp\ccMZCKhD.s:2459   .text.TIM_GetCapture3:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2464   .text.TIM_GetCapture3:00000000 TIM_GetCapture3
-C:\cygwin64\tmp\ccMZCKhD.s:2473   .text.TIM_GetCapture4:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2478   .text.TIM_GetCapture4:00000000 TIM_GetCapture4
-C:\cygwin64\tmp\ccMZCKhD.s:2487   .text.TIM_GetCounter:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2492   .text.TIM_GetCounter:00000000 TIM_GetCounter
-C:\cygwin64\tmp\ccMZCKhD.s:2501   .text.TIM_GetPrescaler:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2506   .text.TIM_GetPrescaler:00000000 TIM_GetPrescaler
-C:\cygwin64\tmp\ccMZCKhD.s:2515   .text.TIM_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2520   .text.TIM_GetFlagStatus:00000000 TIM_GetFlagStatus
-C:\cygwin64\tmp\ccMZCKhD.s:2532   .text.TIM_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2537   .text.TIM_ClearFlag:00000000 TIM_ClearFlag
-C:\cygwin64\tmp\ccMZCKhD.s:2547   .text.TIM_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2552   .text.TIM_GetITStatus:00000000 TIM_GetITStatus
-C:\cygwin64\tmp\ccMZCKhD.s:2569   .text.TIM_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccMZCKhD.s:2574   .text.TIM_ClearITPendingBit:00000000 TIM_ClearITPendingBit
+C:\cygwin64\tmp\ccs7LJAB.s:2445   .text.TIM_GetCapture2:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2450   .text.TIM_GetCapture2:00000000 TIM_GetCapture2
+C:\cygwin64\tmp\ccs7LJAB.s:2459   .text.TIM_GetCapture3:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2464   .text.TIM_GetCapture3:00000000 TIM_GetCapture3
+C:\cygwin64\tmp\ccs7LJAB.s:2473   .text.TIM_GetCapture4:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2478   .text.TIM_GetCapture4:00000000 TIM_GetCapture4
+C:\cygwin64\tmp\ccs7LJAB.s:2487   .text.TIM_GetCounter:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2492   .text.TIM_GetCounter:00000000 TIM_GetCounter
+C:\cygwin64\tmp\ccs7LJAB.s:2501   .text.TIM_GetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2506   .text.TIM_GetPrescaler:00000000 TIM_GetPrescaler
+C:\cygwin64\tmp\ccs7LJAB.s:2515   .text.TIM_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2520   .text.TIM_GetFlagStatus:00000000 TIM_GetFlagStatus
+C:\cygwin64\tmp\ccs7LJAB.s:2532   .text.TIM_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2537   .text.TIM_ClearFlag:00000000 TIM_ClearFlag
+C:\cygwin64\tmp\ccs7LJAB.s:2547   .text.TIM_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2552   .text.TIM_GetITStatus:00000000 TIM_GetITStatus
+C:\cygwin64\tmp\ccs7LJAB.s:2569   .text.TIM_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccs7LJAB.s:2574   .text.TIM_ClearITPendingBit:00000000 TIM_ClearITPendingBit
 
 UNDEFINED SYMBOLS
 RCC_APB2PeriphResetCmd

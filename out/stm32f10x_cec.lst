@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
  112              	.L3:
  113 001c 00780040 		.word	1073772544
  114              		.size	CEC_Init, .-CEC_Init
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 3
 
 
  115              		.section	.text.CEC_Cmd,"ax",%progbits
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
  169 0000 014B     		ldr	r3, .L18	@ tmp112,
  170 0002 5860     		str	r0, [r3, #4]	@ CEC_OwnAddress, MEM[(struct CEC_TypeDef *)1073772544B].OAR
  171 0004 7047     		bx	lr	@
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 4
 
 
  172              	.L19:
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
  226 0006 7047     		bx	lr	@
  227              	.L28:
  228              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 5
 
 
  229              	.L27:
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
  283 000a 054A     		ldreq	r2, .L38+4	@ D.6790,
  284 000c 1B0C     		lsrne	r3, r3, #16	@ CEC_FLAG, CEC_FLAG,
  285 000e 1268     		ldr	r2, [r2]	@ D.6791, *_2
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 6
 
 
  286 0010 1A42     		tst	r2, r3	@ D.6791, CEC_FLAG
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
  340              		.align	2
  341              	.L46:
  342 0010 00780040 		.word	1073772544
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 7
 
 
  343              		.size	CEC_GetITStatus, .-CEC_GetITStatus
@@ -388,52 +388,52 @@ ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 1
  367 0018 00780040 		.word	1073772544
  368              		.size	CEC_ClearITPendingBit, .-CEC_ClearITPendingBit
  369              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccqMywff.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccAhjhga.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_cec.c
-C:\cygwin64\tmp\ccqMywff.s:71     .text.CEC_DeInit:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:76     .text.CEC_DeInit:00000000 CEC_DeInit
-C:\cygwin64\tmp\ccqMywff.s:89     .text.CEC_Init:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:94     .text.CEC_Init:00000000 CEC_Init
-C:\cygwin64\tmp\ccqMywff.s:113    .text.CEC_Init:0000001c $d
-C:\cygwin64\tmp\ccqMywff.s:116    .text.CEC_Cmd:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:121    .text.CEC_Cmd:00000000 CEC_Cmd
-C:\cygwin64\tmp\ccqMywff.s:138    .text.CEC_Cmd:00000010 $d
-C:\cygwin64\tmp\ccqMywff.s:142    .text.CEC_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:147    .text.CEC_ITConfig:00000000 CEC_ITConfig
-C:\cygwin64\tmp\ccqMywff.s:157    .text.CEC_ITConfig:00000008 $d
-C:\cygwin64\tmp\ccqMywff.s:160    .text.CEC_OwnAddressConfig:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:165    .text.CEC_OwnAddressConfig:00000000 CEC_OwnAddressConfig
-C:\cygwin64\tmp\ccqMywff.s:175    .text.CEC_OwnAddressConfig:00000008 $d
-C:\cygwin64\tmp\ccqMywff.s:178    .text.CEC_SetPrescaler:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:183    .text.CEC_SetPrescaler:00000000 CEC_SetPrescaler
-C:\cygwin64\tmp\ccqMywff.s:193    .text.CEC_SetPrescaler:00000008 $d
-C:\cygwin64\tmp\ccqMywff.s:196    .text.CEC_SendDataByte:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:201    .text.CEC_SendDataByte:00000000 CEC_SendDataByte
-C:\cygwin64\tmp\ccqMywff.s:211    .text.CEC_SendDataByte:00000008 $d
-C:\cygwin64\tmp\ccqMywff.s:214    .text.CEC_ReceiveDataByte:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:219    .text.CEC_ReceiveDataByte:00000000 CEC_ReceiveDataByte
-C:\cygwin64\tmp\ccqMywff.s:230    .text.CEC_ReceiveDataByte:00000008 $d
-C:\cygwin64\tmp\ccqMywff.s:233    .text.CEC_StartOfMessage:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:238    .text.CEC_StartOfMessage:00000000 CEC_StartOfMessage
-C:\cygwin64\tmp\ccqMywff.s:249    .text.CEC_StartOfMessage:00000008 $d
-C:\cygwin64\tmp\ccqMywff.s:252    .text.CEC_EndOfMessageCmd:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:257    .text.CEC_EndOfMessageCmd:00000000 CEC_EndOfMessageCmd
-C:\cygwin64\tmp\ccqMywff.s:267    .text.CEC_EndOfMessageCmd:00000008 $d
-C:\cygwin64\tmp\ccqMywff.s:270    .text.CEC_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:275    .text.CEC_GetFlagStatus:00000000 CEC_GetFlagStatus
-C:\cygwin64\tmp\ccqMywff.s:294    .text.CEC_GetFlagStatus:0000001c $d
-C:\cygwin64\tmp\ccqMywff.s:298    .text.CEC_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:303    .text.CEC_ClearFlag:00000000 CEC_ClearFlag
-C:\cygwin64\tmp\ccqMywff.s:320    .text.CEC_ClearFlag:00000018 $d
-C:\cygwin64\tmp\ccqMywff.s:323    .text.CEC_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:328    .text.CEC_GetITStatus:00000000 CEC_GetITStatus
-C:\cygwin64\tmp\ccqMywff.s:342    .text.CEC_GetITStatus:00000010 $d
-C:\cygwin64\tmp\ccqMywff.s:345    .text.CEC_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccqMywff.s:350    .text.CEC_ClearITPendingBit:00000000 CEC_ClearITPendingBit
-C:\cygwin64\tmp\ccqMywff.s:367    .text.CEC_ClearITPendingBit:00000018 $d
+C:\cygwin64\tmp\ccAhjhga.s:71     .text.CEC_DeInit:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:76     .text.CEC_DeInit:00000000 CEC_DeInit
+C:\cygwin64\tmp\ccAhjhga.s:89     .text.CEC_Init:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:94     .text.CEC_Init:00000000 CEC_Init
+C:\cygwin64\tmp\ccAhjhga.s:113    .text.CEC_Init:0000001c $d
+C:\cygwin64\tmp\ccAhjhga.s:116    .text.CEC_Cmd:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:121    .text.CEC_Cmd:00000000 CEC_Cmd
+C:\cygwin64\tmp\ccAhjhga.s:138    .text.CEC_Cmd:00000010 $d
+C:\cygwin64\tmp\ccAhjhga.s:142    .text.CEC_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:147    .text.CEC_ITConfig:00000000 CEC_ITConfig
+C:\cygwin64\tmp\ccAhjhga.s:157    .text.CEC_ITConfig:00000008 $d
+C:\cygwin64\tmp\ccAhjhga.s:160    .text.CEC_OwnAddressConfig:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:165    .text.CEC_OwnAddressConfig:00000000 CEC_OwnAddressConfig
+C:\cygwin64\tmp\ccAhjhga.s:175    .text.CEC_OwnAddressConfig:00000008 $d
+C:\cygwin64\tmp\ccAhjhga.s:178    .text.CEC_SetPrescaler:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:183    .text.CEC_SetPrescaler:00000000 CEC_SetPrescaler
+C:\cygwin64\tmp\ccAhjhga.s:193    .text.CEC_SetPrescaler:00000008 $d
+C:\cygwin64\tmp\ccAhjhga.s:196    .text.CEC_SendDataByte:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:201    .text.CEC_SendDataByte:00000000 CEC_SendDataByte
+C:\cygwin64\tmp\ccAhjhga.s:211    .text.CEC_SendDataByte:00000008 $d
+C:\cygwin64\tmp\ccAhjhga.s:214    .text.CEC_ReceiveDataByte:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:219    .text.CEC_ReceiveDataByte:00000000 CEC_ReceiveDataByte
+C:\cygwin64\tmp\ccAhjhga.s:230    .text.CEC_ReceiveDataByte:00000008 $d
+C:\cygwin64\tmp\ccAhjhga.s:233    .text.CEC_StartOfMessage:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:238    .text.CEC_StartOfMessage:00000000 CEC_StartOfMessage
+C:\cygwin64\tmp\ccAhjhga.s:249    .text.CEC_StartOfMessage:00000008 $d
+C:\cygwin64\tmp\ccAhjhga.s:252    .text.CEC_EndOfMessageCmd:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:257    .text.CEC_EndOfMessageCmd:00000000 CEC_EndOfMessageCmd
+C:\cygwin64\tmp\ccAhjhga.s:267    .text.CEC_EndOfMessageCmd:00000008 $d
+C:\cygwin64\tmp\ccAhjhga.s:270    .text.CEC_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:275    .text.CEC_GetFlagStatus:00000000 CEC_GetFlagStatus
+C:\cygwin64\tmp\ccAhjhga.s:294    .text.CEC_GetFlagStatus:0000001c $d
+C:\cygwin64\tmp\ccAhjhga.s:298    .text.CEC_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:303    .text.CEC_ClearFlag:00000000 CEC_ClearFlag
+C:\cygwin64\tmp\ccAhjhga.s:320    .text.CEC_ClearFlag:00000018 $d
+C:\cygwin64\tmp\ccAhjhga.s:323    .text.CEC_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:328    .text.CEC_GetITStatus:00000000 CEC_GetITStatus
+C:\cygwin64\tmp\ccAhjhga.s:342    .text.CEC_GetITStatus:00000010 $d
+C:\cygwin64\tmp\ccAhjhga.s:345    .text.CEC_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccAhjhga.s:350    .text.CEC_ClearITPendingBit:00000000 CEC_ClearITPendingBit
+C:\cygwin64\tmp\ccAhjhga.s:367    .text.CEC_ClearITPendingBit:00000018 $d
 
 UNDEFINED SYMBOLS
 RCC_APB1PeriphResetCmd

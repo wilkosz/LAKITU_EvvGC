@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccZd3uS2.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccZd3uS2.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 1
  112              	.L5:
  113 0044 2288     		ldrh	r2, [r4]	@, wIstr
  114 0046 02F48052 		and	r2, r2, #4096	@ tmp184, wIstr,
-ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccZd3uS2.s 			page 3
 
 
  115 004a 1342     		tst	r3, r2	@ D.7124, tmp184
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 1
  169              		.size	pEpInt_IN, 28
  170              	pEpInt_IN:
  171 0000 00000000 		.word	EP1_IN_Callback
-ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccZd3uS2.s 			page 4
 
 
  172 0004 00000000 		.word	NOP_Process
@@ -212,25 +212,25 @@ ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 1
  200              	esof_counter:
  201 0000 00000000 		.space	4
  202              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccBAFVeh.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccZd3uS2.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_istr.c
-C:\cygwin64\tmp\ccBAFVeh.s:70     .text.USB_Istr:00000000 $t
-C:\cygwin64\tmp\ccBAFVeh.s:75     .text.USB_Istr:00000000 USB_Istr
-C:\cygwin64\tmp\ccBAFVeh.s:148    .text.USB_Istr:0000008c $d
+C:\cygwin64\tmp\ccZd3uS2.s:70     .text.USB_Istr:00000000 $t
+C:\cygwin64\tmp\ccZd3uS2.s:75     .text.USB_Istr:00000000 USB_Istr
+C:\cygwin64\tmp\ccZd3uS2.s:148    .text.USB_Istr:0000008c $d
                             *COM*:00000002 wIstr
-C:\cygwin64\tmp\ccBAFVeh.s:188    .data.pEpInt_OUT:00000000 pEpInt_OUT
-C:\cygwin64\tmp\ccBAFVeh.s:170    .data.pEpInt_IN:00000000 pEpInt_IN
-C:\cygwin64\tmp\ccBAFVeh.s:164    .bss.wCNTR:00000000 wCNTR
-C:\cygwin64\tmp\ccBAFVeh.s:200    .bss.esof_counter:00000000 esof_counter
-C:\cygwin64\tmp\ccBAFVeh.s:182    .bss.bIntPackSOF:00000000 bIntPackSOF
-C:\cygwin64\tmp\ccBAFVeh.s:161    .bss.wCNTR:00000000 $d
-C:\cygwin64\tmp\ccBAFVeh.s:167    .data.pEpInt_IN:00000000 $d
-C:\cygwin64\tmp\ccBAFVeh.s:183    .bss.bIntPackSOF:00000000 $d
-C:\cygwin64\tmp\ccBAFVeh.s:185    .data.pEpInt_OUT:00000000 $d
-C:\cygwin64\tmp\ccBAFVeh.s:197    .bss.esof_counter:00000000 $d
+C:\cygwin64\tmp\ccZd3uS2.s:188    .data.pEpInt_OUT:00000000 pEpInt_OUT
+C:\cygwin64\tmp\ccZd3uS2.s:170    .data.pEpInt_IN:00000000 pEpInt_IN
+C:\cygwin64\tmp\ccZd3uS2.s:164    .bss.wCNTR:00000000 wCNTR
+C:\cygwin64\tmp\ccZd3uS2.s:200    .bss.esof_counter:00000000 esof_counter
+C:\cygwin64\tmp\ccZd3uS2.s:182    .bss.bIntPackSOF:00000000 bIntPackSOF
+C:\cygwin64\tmp\ccZd3uS2.s:161    .bss.wCNTR:00000000 $d
+C:\cygwin64\tmp\ccZd3uS2.s:167    .data.pEpInt_IN:00000000 $d
+C:\cygwin64\tmp\ccZd3uS2.s:183    .bss.bIntPackSOF:00000000 $d
+C:\cygwin64\tmp\ccZd3uS2.s:185    .data.pEpInt_OUT:00000000 $d
+C:\cygwin64\tmp\ccZd3uS2.s:197    .bss.esof_counter:00000000 $d
 
 UNDEFINED SYMBOLS
 Resume

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  112 0000 30B5     		push	{r4, r5, lr}	@
  113 0002 184C     		ldr	r4, .L10	@ tmp116,
  114 0004 83B0     		sub	sp, sp, #12	@,,
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 3
 
 
  115 0006 0420     		movs	r0, #4	@,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  169 0010 0121     		movs	r1, #1	@,
  170 0012 FFF7FEBF 		b	RCC_APB1PeriphClockCmd	@
  171              		.size	Set_USBClock, .-Set_USBClock
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 4
 
 
  172 0016 00BF     		.section	.text.Enter_LowPowerMode,"ax",%progbits
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  226              		@ args = 0, pretend = 0, frame = 8
  227              		@ frame_needed = 0, uses_anonymous_args = 0
  228 0000 10B5     		push	{r4, lr}	@
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 5
 
 
  229 0002 4FF4A060 		mov	r0, #1280	@,
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  283 0014 0849     		ldr	r1, .L27+12	@,
  284 0016 0822     		movs	r2, #8	@,
  285 0018 FFF7FEFF 		bl	IntToUnicode	@
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 6
 
 
  286 001c 2046     		mov	r0, r4	@, Device_Serial1
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  340              	.L37:
  341 003e 0E46     		mov	r6, r1	@ D.7322, sendLength
  342 0040 0C46     		mov	r4, r1	@ D.7321, D.7322
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 7
 
 
  343 0042 E5E7     		b	.L31	@
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  397 0054 2846     		mov	r0, r5	@, len
  398 0056 F8BD     		pop	{r3, r4, r5, r6, r7, pc}	@
  399              	.L46:
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 8
 
 
  400 0058 9CF80010 		ldrb	r1, [ip]	@ zero_extendqisi2	@ D.7332, offset
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  454              		.thumb
  455              		.thumb_func
  456              		.type	ERR_Callback, %function
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 9
 
 
  457              	ERR_Callback:
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  511              	.L64:
  512 0006 00BF     		.align	2
  513              	.L63:
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 10
 
 
  514 0008 00000000 		.word	.LANCHOR1
@@ -561,67 +561,67 @@ ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 1
  531              	VCPconnectMode:
  532 0000 00       		.space	1
  533              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 hw_config.c
-C:\cygwin64\tmp\cc9fUaPq.s:70     .text.IntToUnicode:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:74     .text.IntToUnicode:00000000 IntToUnicode
-C:\cygwin64\tmp\cc9fUaPq.s:104    .text.Set_System:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:109    .text.Set_System:00000000 Set_System
-C:\cygwin64\tmp\cc9fUaPq.s:152    .text.Set_System:00000064 $d
+C:\cygwin64\tmp\ccJvEUuh.s:70     .text.IntToUnicode:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:74     .text.IntToUnicode:00000000 IntToUnicode
+C:\cygwin64\tmp\ccJvEUuh.s:104    .text.Set_System:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:109    .text.Set_System:00000000 Set_System
+C:\cygwin64\tmp\ccJvEUuh.s:152    .text.Set_System:00000064 $d
                             *COM*:00000008 EXTI_InitStructure
-C:\cygwin64\tmp\cc9fUaPq.s:156    .text.Set_USBClock:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:161    .text.Set_USBClock:00000000 Set_USBClock
-C:\cygwin64\tmp\cc9fUaPq.s:173    .text.Enter_LowPowerMode:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:178    .text.Enter_LowPowerMode:00000000 Enter_LowPowerMode
-C:\cygwin64\tmp\cc9fUaPq.s:189    .text.Enter_LowPowerMode:00000008 $d
-C:\cygwin64\tmp\cc9fUaPq.s:192    .text.Leave_LowPowerMode:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:197    .text.Leave_LowPowerMode:00000000 Leave_LowPowerMode
-C:\cygwin64\tmp\cc9fUaPq.s:216    .text.Leave_LowPowerMode:0000001c $d
-C:\cygwin64\tmp\cc9fUaPq.s:220    .text.USB_Interrupts_Config:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:225    .text.USB_Interrupts_Config:00000000 USB_Interrupts_Config
-C:\cygwin64\tmp\cc9fUaPq.s:252    .text.USB_Cable_Config:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:257    .text.USB_Cable_Config:00000000 USB_Cable_Config
-C:\cygwin64\tmp\cc9fUaPq.s:264    .text.Get_SerialNum:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:269    .text.Get_SerialNum:00000000 Get_SerialNum
-C:\cygwin64\tmp\cc9fUaPq.s:294    .text.Get_SerialNum:0000002c $d
-C:\cygwin64\tmp\cc9fUaPq.s:301    .text.CDC_Send_DATA:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:306    .text.CDC_Send_DATA:00000000 CDC_Send_DATA
-C:\cygwin64\tmp\cc9fUaPq.s:347    .text.CDC_Send_DATA:00000044 $d
+C:\cygwin64\tmp\ccJvEUuh.s:156    .text.Set_USBClock:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:161    .text.Set_USBClock:00000000 Set_USBClock
+C:\cygwin64\tmp\ccJvEUuh.s:173    .text.Enter_LowPowerMode:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:178    .text.Enter_LowPowerMode:00000000 Enter_LowPowerMode
+C:\cygwin64\tmp\ccJvEUuh.s:189    .text.Enter_LowPowerMode:00000008 $d
+C:\cygwin64\tmp\ccJvEUuh.s:192    .text.Leave_LowPowerMode:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:197    .text.Leave_LowPowerMode:00000000 Leave_LowPowerMode
+C:\cygwin64\tmp\ccJvEUuh.s:216    .text.Leave_LowPowerMode:0000001c $d
+C:\cygwin64\tmp\ccJvEUuh.s:220    .text.USB_Interrupts_Config:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:225    .text.USB_Interrupts_Config:00000000 USB_Interrupts_Config
+C:\cygwin64\tmp\ccJvEUuh.s:252    .text.USB_Cable_Config:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:257    .text.USB_Cable_Config:00000000 USB_Cable_Config
+C:\cygwin64\tmp\ccJvEUuh.s:264    .text.Get_SerialNum:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:269    .text.Get_SerialNum:00000000 Get_SerialNum
+C:\cygwin64\tmp\ccJvEUuh.s:294    .text.Get_SerialNum:0000002c $d
+C:\cygwin64\tmp\ccJvEUuh.s:301    .text.CDC_Send_DATA:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:306    .text.CDC_Send_DATA:00000000 CDC_Send_DATA
+C:\cygwin64\tmp\ccJvEUuh.s:347    .text.CDC_Send_DATA:00000044 $d
                             *COM*:00000004 packetSent
-C:\cygwin64\tmp\cc9fUaPq.s:350    .text.CDC_Receive_DATA:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:355    .text.CDC_Receive_DATA:00000000 CDC_Receive_DATA
-C:\cygwin64\tmp\cc9fUaPq.s:405    .text.CDC_Receive_DATA:00000060 $d
+C:\cygwin64\tmp\ccJvEUuh.s:350    .text.CDC_Receive_DATA:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:355    .text.CDC_Receive_DATA:00000000 CDC_Receive_DATA
+C:\cygwin64\tmp\ccJvEUuh.s:405    .text.CDC_Receive_DATA:00000060 $d
                             *COM*:00000040 receiveBuffer
-C:\cygwin64\tmp\cc9fUaPq.s:410    .text.usbIsConfigured:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:415    .text.usbIsConfigured:00000000 usbIsConfigured
-C:\cygwin64\tmp\cc9fUaPq.s:428    .text.usbIsConfigured:0000000c $d
-C:\cygwin64\tmp\cc9fUaPq.s:431    .text.usbIsConnected:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:436    .text.usbIsConnected:00000000 usbIsConnected
-C:\cygwin64\tmp\cc9fUaPq.s:449    .text.usbIsConnected:0000000c $d
-C:\cygwin64\tmp\cc9fUaPq.s:452    .text.ERR_Callback:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:457    .text.ERR_Callback:00000000 ERR_Callback
-C:\cygwin64\tmp\cc9fUaPq.s:470    .text.ERR_Callback:0000000c $d
-C:\cygwin64\tmp\cc9fUaPq.s:474    .text.SetVCPConnectMode:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:479    .text.SetVCPConnectMode:00000000 SetVCPConnectMode
-C:\cygwin64\tmp\cc9fUaPq.s:495    .text.SetVCPConnectMode:00000010 $d
-C:\cygwin64\tmp\cc9fUaPq.s:499    .text.GetVCPConnectMode:00000000 $t
-C:\cygwin64\tmp\cc9fUaPq.s:504    .text.GetVCPConnectMode:00000000 GetVCPConnectMode
-C:\cygwin64\tmp\cc9fUaPq.s:514    .text.GetVCPConnectMode:00000008 $d
+C:\cygwin64\tmp\ccJvEUuh.s:410    .text.usbIsConfigured:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:415    .text.usbIsConfigured:00000000 usbIsConfigured
+C:\cygwin64\tmp\ccJvEUuh.s:428    .text.usbIsConfigured:0000000c $d
+C:\cygwin64\tmp\ccJvEUuh.s:431    .text.usbIsConnected:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:436    .text.usbIsConnected:00000000 usbIsConnected
+C:\cygwin64\tmp\ccJvEUuh.s:449    .text.usbIsConnected:0000000c $d
+C:\cygwin64\tmp\ccJvEUuh.s:452    .text.ERR_Callback:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:457    .text.ERR_Callback:00000000 ERR_Callback
+C:\cygwin64\tmp\ccJvEUuh.s:470    .text.ERR_Callback:0000000c $d
+C:\cygwin64\tmp\ccJvEUuh.s:474    .text.SetVCPConnectMode:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:479    .text.SetVCPConnectMode:00000000 SetVCPConnectMode
+C:\cygwin64\tmp\ccJvEUuh.s:495    .text.SetVCPConnectMode:00000010 $d
+C:\cygwin64\tmp\ccJvEUuh.s:499    .text.GetVCPConnectMode:00000000 $t
+C:\cygwin64\tmp\ccJvEUuh.s:504    .text.GetVCPConnectMode:00000000 GetVCPConnectMode
+C:\cygwin64\tmp\ccJvEUuh.s:514    .text.GetVCPConnectMode:00000008 $d
                             *COM*:00000004 sendLength
                             *COM*:00000001 HSEStartUpStatus
-C:\cygwin64\tmp\cc9fUaPq.s:525    .bss.offset.7135:00000000 offset.7135
-C:\cygwin64\tmp\cc9fUaPq.s:526    .bss.offset.7135:00000000 $d
-C:\cygwin64\tmp\cc9fUaPq.s:531    .bss.VCPconnectMode:00000000 VCPconnectMode
-C:\cygwin64\tmp\cc9fUaPq.s:532    .bss.VCPconnectMode:00000000 $d
+C:\cygwin64\tmp\ccJvEUuh.s:525    .bss.offset.7135:00000000 offset.7135
+C:\cygwin64\tmp\ccJvEUuh.s:526    .bss.offset.7135:00000000 $d
+C:\cygwin64\tmp\ccJvEUuh.s:531    .bss.VCPconnectMode:00000000 VCPconnectMode
+C:\cygwin64\tmp\ccJvEUuh.s:532    .bss.VCPconnectMode:00000000 $d
 
 UNDEFINED SYMBOLS
 RCC_APB2PeriphClockCmd
 GPIO_Init
 GPIO_ResetBits
-ARM GAS  C:\cygwin64\tmp\cc9fUaPq.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccJvEUuh.s 			page 12
 
 
 Delay_ms

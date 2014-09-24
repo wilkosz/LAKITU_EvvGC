@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccsuywvG.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccsuywvG.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 1
  112              	PWR_PVDCmd:
  113              		@ args = 0, pretend = 0, frame = 0
  114              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccsuywvG.s 			page 3
 
 
  115              		@ link register save eliminated.
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 1
  169              	PWR_EnterSTOPMode:
  170              		@ args = 0, pretend = 0, frame = 0
  171              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccsuywvG.s 			page 4
 
 
  172              		@ link register save eliminated.
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 1
  226 0014 1369     		ldr	r3, [r2, #16]	@ D.6687, MEM[(struct SCB_Type *)3758157056B].SCR
  227 0016 43F00403 		orr	r3, r3, #4	@ D.6687, D.6687,
  228 001a 1361     		str	r3, [r2, #16]	@ D.6687, MEM[(struct SCB_Type *)3758157056B].SCR
-ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccsuywvG.s 			page 5
 
 
  229              	@ 338 "Libraries/CMSIS/Include/core_cmInstr.h" 1
@@ -295,37 +295,37 @@ ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 1
  280 000c 00700040 		.word	1073770496
  281              		.size	PWR_ClearFlag, .-PWR_ClearFlag
  282              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc4dIKQH.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccsuywvG.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_pwr.c
-C:\cygwin64\tmp\cc4dIKQH.s:71     .text.PWR_DeInit:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:76     .text.PWR_DeInit:00000000 PWR_DeInit
-C:\cygwin64\tmp\cc4dIKQH.s:89     .text.PWR_BackupAccessCmd:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:94     .text.PWR_BackupAccessCmd:00000000 PWR_BackupAccessCmd
-C:\cygwin64\tmp\cc4dIKQH.s:104    .text.PWR_BackupAccessCmd:00000008 $d
-C:\cygwin64\tmp\cc4dIKQH.s:107    .text.PWR_PVDCmd:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:112    .text.PWR_PVDCmd:00000000 PWR_PVDCmd
-C:\cygwin64\tmp\cc4dIKQH.s:122    .text.PWR_PVDCmd:00000008 $d
-C:\cygwin64\tmp\cc4dIKQH.s:125    .text.PWR_PVDLevelConfig:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:130    .text.PWR_PVDLevelConfig:00000000 PWR_PVDLevelConfig
-C:\cygwin64\tmp\cc4dIKQH.s:143    .text.PWR_PVDLevelConfig:00000010 $d
-C:\cygwin64\tmp\cc4dIKQH.s:146    .text.PWR_WakeUpPinCmd:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:151    .text.PWR_WakeUpPinCmd:00000000 PWR_WakeUpPinCmd
-C:\cygwin64\tmp\cc4dIKQH.s:161    .text.PWR_WakeUpPinCmd:00000008 $d
-C:\cygwin64\tmp\cc4dIKQH.s:164    .text.PWR_EnterSTOPMode:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:169    .text.PWR_EnterSTOPMode:00000000 PWR_EnterSTOPMode
-C:\cygwin64\tmp\cc4dIKQH.s:205    .text.PWR_EnterSTOPMode:00000034 $d
-C:\cygwin64\tmp\cc4dIKQH.s:209    .text.PWR_EnterSTANDBYMode:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:214    .text.PWR_EnterSTANDBYMode:00000000 PWR_EnterSTANDBYMode
-C:\cygwin64\tmp\cc4dIKQH.s:237    .text.PWR_EnterSTANDBYMode:00000020 $d
-C:\cygwin64\tmp\cc4dIKQH.s:241    .text.PWR_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:246    .text.PWR_GetFlagStatus:00000000 PWR_GetFlagStatus
-C:\cygwin64\tmp\cc4dIKQH.s:260    .text.PWR_GetFlagStatus:00000010 $d
-C:\cygwin64\tmp\cc4dIKQH.s:263    .text.PWR_ClearFlag:00000000 $t
-C:\cygwin64\tmp\cc4dIKQH.s:268    .text.PWR_ClearFlag:00000000 PWR_ClearFlag
-C:\cygwin64\tmp\cc4dIKQH.s:280    .text.PWR_ClearFlag:0000000c $d
+C:\cygwin64\tmp\ccsuywvG.s:71     .text.PWR_DeInit:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:76     .text.PWR_DeInit:00000000 PWR_DeInit
+C:\cygwin64\tmp\ccsuywvG.s:89     .text.PWR_BackupAccessCmd:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:94     .text.PWR_BackupAccessCmd:00000000 PWR_BackupAccessCmd
+C:\cygwin64\tmp\ccsuywvG.s:104    .text.PWR_BackupAccessCmd:00000008 $d
+C:\cygwin64\tmp\ccsuywvG.s:107    .text.PWR_PVDCmd:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:112    .text.PWR_PVDCmd:00000000 PWR_PVDCmd
+C:\cygwin64\tmp\ccsuywvG.s:122    .text.PWR_PVDCmd:00000008 $d
+C:\cygwin64\tmp\ccsuywvG.s:125    .text.PWR_PVDLevelConfig:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:130    .text.PWR_PVDLevelConfig:00000000 PWR_PVDLevelConfig
+C:\cygwin64\tmp\ccsuywvG.s:143    .text.PWR_PVDLevelConfig:00000010 $d
+C:\cygwin64\tmp\ccsuywvG.s:146    .text.PWR_WakeUpPinCmd:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:151    .text.PWR_WakeUpPinCmd:00000000 PWR_WakeUpPinCmd
+C:\cygwin64\tmp\ccsuywvG.s:161    .text.PWR_WakeUpPinCmd:00000008 $d
+C:\cygwin64\tmp\ccsuywvG.s:164    .text.PWR_EnterSTOPMode:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:169    .text.PWR_EnterSTOPMode:00000000 PWR_EnterSTOPMode
+C:\cygwin64\tmp\ccsuywvG.s:205    .text.PWR_EnterSTOPMode:00000034 $d
+C:\cygwin64\tmp\ccsuywvG.s:209    .text.PWR_EnterSTANDBYMode:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:214    .text.PWR_EnterSTANDBYMode:00000000 PWR_EnterSTANDBYMode
+C:\cygwin64\tmp\ccsuywvG.s:237    .text.PWR_EnterSTANDBYMode:00000020 $d
+C:\cygwin64\tmp\ccsuywvG.s:241    .text.PWR_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:246    .text.PWR_GetFlagStatus:00000000 PWR_GetFlagStatus
+C:\cygwin64\tmp\ccsuywvG.s:260    .text.PWR_GetFlagStatus:00000010 $d
+C:\cygwin64\tmp\ccsuywvG.s:263    .text.PWR_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccsuywvG.s:268    .text.PWR_ClearFlag:00000000 PWR_ClearFlag
+C:\cygwin64\tmp\ccsuywvG.s:280    .text.PWR_ClearFlag:0000000c $d
 
 UNDEFINED SYMBOLS
 RCC_APB1PeriphResetCmd

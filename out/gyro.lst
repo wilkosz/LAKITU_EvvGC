@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  112 0074 FFF7FEFF 		bl	Delay_ms	@
  113 0078 FFF7FEFF 		bl	I2C1_Start	@
  114 007c D020     		movs	r0, #208	@,
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 3
 
 
  115 007e FFF7FEFF 		bl	I2C1_SendByte	@
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  169 0136 1B20     		movs	r0, #27	@,
  170 0138 FFF7FEFF 		bl	I2C1_SendByte	@
  171 013c FFF7FEFF 		bl	I2C1_WaitAck	@
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 4
 
 
  172 0140 0020     		movs	r0, #0	@,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  226              		.thumb
  227              		.thumb_func
  228              		.type	MPU6050_get, %function
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 5
 
 
  229              	MPU6050_get:
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  283              	.L10:
  284 008c 00000000 		.word	I2Cerror
  285              		.size	MPU6050_get, .-MPU6050_get
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 6
 
 
  286              		.global	__aeabi_i2f
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  340              	MPU6050_Gyro_get:
  341              		@ args = 0, pretend = 0, frame = 8
  342              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 7
 
 
  343 0000 10B5     		push	{r4, lr}	@
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  397              		.align	2
  398              	.L18:
  399 008c 00000000 		.word	I2Cerror
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 8
 
 
  400 0090 00000000 		.word	.LANCHOR0
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  454 006a 0A4B     		ldr	r3, .L23	@,
  455 006c 0C49     		ldr	r1, .L23+12	@,
  456 006e 1860     		str	r0, [r3]	@ float	@, gyroADC_ROLL_offset
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 9
 
 
  457 0070 094B     		ldr	r3, .L23+4	@,
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  511              		.align	2
  512              		.set	.LANCHOR1,. + 0
  513              		.type	gyroADC_ROLL_offset, %object
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 10
 
 
  514              		.size	gyroADC_ROLL_offset, 4
@@ -552,37 +552,37 @@ ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 1
  522              	gyroADC_PITCH_offset:
  523 0000 00000000 		.space	4
  524              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccmPjTtN.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccbKVZwP.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gyro.c
-C:\cygwin64\tmp\ccmPjTtN.s:69     .text.MPU6050_Init:00000000 $t
-C:\cygwin64\tmp\ccmPjTtN.s:74     .text.MPU6050_Init:00000000 MPU6050_Init
-C:\cygwin64\tmp\ccmPjTtN.s:224    .text.MPU6050_get:00000000 $t
-C:\cygwin64\tmp\ccmPjTtN.s:229    .text.MPU6050_get:00000000 MPU6050_get
-C:\cygwin64\tmp\ccmPjTtN.s:284    .text.MPU6050_get:0000008c $d
-C:\cygwin64\tmp\ccmPjTtN.s:288    .text.MPU6050_ACC_get:00000000 $t
-C:\cygwin64\tmp\ccmPjTtN.s:293    .text.MPU6050_ACC_get:00000000 MPU6050_ACC_get
-C:\cygwin64\tmp\ccmPjTtN.s:330    .text.MPU6050_ACC_get:00000054 $d
-C:\cygwin64\tmp\ccmPjTtN.s:335    .text.MPU6050_Gyro_get:00000000 $t
-C:\cygwin64\tmp\ccmPjTtN.s:340    .text.MPU6050_Gyro_get:00000000 MPU6050_Gyro_get
-C:\cygwin64\tmp\ccmPjTtN.s:399    .text.MPU6050_Gyro_get:0000008c $d
-C:\cygwin64\tmp\ccmPjTtN.s:410    .text.MPU6050_Gyro_calibration:00000000 $t
-C:\cygwin64\tmp\ccmPjTtN.s:415    .text.MPU6050_Gyro_calibration:00000000 MPU6050_Gyro_calibration
-C:\cygwin64\tmp\ccmPjTtN.s:474    .text.MPU6050_Gyro_calibration:00000094 $d
-C:\cygwin64\tmp\ccmPjTtN.s:483    .bss.gyroADC_PITCH:00000000 $d
-C:\cygwin64\tmp\ccmPjTtN.s:487    .bss.gyroADC_PITCH:00000000 gyroADC_PITCH
-C:\cygwin64\tmp\ccmPjTtN.s:490    .bss.gyroADC_YAW_offset:00000000 $d
-C:\cygwin64\tmp\ccmPjTtN.s:494    .bss.gyroADC_YAW_offset:00000000 gyroADC_YAW_offset
-C:\cygwin64\tmp\ccmPjTtN.s:497    .bss.gyroADC_ROLL:00000000 $d
-C:\cygwin64\tmp\ccmPjTtN.s:501    .bss.gyroADC_ROLL:00000000 gyroADC_ROLL
-C:\cygwin64\tmp\ccmPjTtN.s:504    .bss.gyroADC_YAW:00000000 $d
-C:\cygwin64\tmp\ccmPjTtN.s:508    .bss.gyroADC_YAW:00000000 gyroADC_YAW
-C:\cygwin64\tmp\ccmPjTtN.s:511    .bss.gyroADC_ROLL_offset:00000000 $d
-C:\cygwin64\tmp\ccmPjTtN.s:515    .bss.gyroADC_ROLL_offset:00000000 gyroADC_ROLL_offset
-C:\cygwin64\tmp\ccmPjTtN.s:518    .bss.gyroADC_PITCH_offset:00000000 $d
-C:\cygwin64\tmp\ccmPjTtN.s:522    .bss.gyroADC_PITCH_offset:00000000 gyroADC_PITCH_offset
+C:\cygwin64\tmp\ccbKVZwP.s:69     .text.MPU6050_Init:00000000 $t
+C:\cygwin64\tmp\ccbKVZwP.s:74     .text.MPU6050_Init:00000000 MPU6050_Init
+C:\cygwin64\tmp\ccbKVZwP.s:224    .text.MPU6050_get:00000000 $t
+C:\cygwin64\tmp\ccbKVZwP.s:229    .text.MPU6050_get:00000000 MPU6050_get
+C:\cygwin64\tmp\ccbKVZwP.s:284    .text.MPU6050_get:0000008c $d
+C:\cygwin64\tmp\ccbKVZwP.s:288    .text.MPU6050_ACC_get:00000000 $t
+C:\cygwin64\tmp\ccbKVZwP.s:293    .text.MPU6050_ACC_get:00000000 MPU6050_ACC_get
+C:\cygwin64\tmp\ccbKVZwP.s:330    .text.MPU6050_ACC_get:00000054 $d
+C:\cygwin64\tmp\ccbKVZwP.s:335    .text.MPU6050_Gyro_get:00000000 $t
+C:\cygwin64\tmp\ccbKVZwP.s:340    .text.MPU6050_Gyro_get:00000000 MPU6050_Gyro_get
+C:\cygwin64\tmp\ccbKVZwP.s:399    .text.MPU6050_Gyro_get:0000008c $d
+C:\cygwin64\tmp\ccbKVZwP.s:410    .text.MPU6050_Gyro_calibration:00000000 $t
+C:\cygwin64\tmp\ccbKVZwP.s:415    .text.MPU6050_Gyro_calibration:00000000 MPU6050_Gyro_calibration
+C:\cygwin64\tmp\ccbKVZwP.s:474    .text.MPU6050_Gyro_calibration:00000094 $d
+C:\cygwin64\tmp\ccbKVZwP.s:483    .bss.gyroADC_PITCH:00000000 $d
+C:\cygwin64\tmp\ccbKVZwP.s:487    .bss.gyroADC_PITCH:00000000 gyroADC_PITCH
+C:\cygwin64\tmp\ccbKVZwP.s:490    .bss.gyroADC_YAW_offset:00000000 $d
+C:\cygwin64\tmp\ccbKVZwP.s:494    .bss.gyroADC_YAW_offset:00000000 gyroADC_YAW_offset
+C:\cygwin64\tmp\ccbKVZwP.s:497    .bss.gyroADC_ROLL:00000000 $d
+C:\cygwin64\tmp\ccbKVZwP.s:501    .bss.gyroADC_ROLL:00000000 gyroADC_ROLL
+C:\cygwin64\tmp\ccbKVZwP.s:504    .bss.gyroADC_YAW:00000000 $d
+C:\cygwin64\tmp\ccbKVZwP.s:508    .bss.gyroADC_YAW:00000000 gyroADC_YAW
+C:\cygwin64\tmp\ccbKVZwP.s:511    .bss.gyroADC_ROLL_offset:00000000 $d
+C:\cygwin64\tmp\ccbKVZwP.s:515    .bss.gyroADC_ROLL_offset:00000000 gyroADC_ROLL_offset
+C:\cygwin64\tmp\ccbKVZwP.s:518    .bss.gyroADC_PITCH_offset:00000000 $d
+C:\cygwin64\tmp\ccbKVZwP.s:522    .bss.gyroADC_PITCH_offset:00000000 gyroADC_PITCH_offset
 
 UNDEFINED SYMBOLS
 I2C1_Start

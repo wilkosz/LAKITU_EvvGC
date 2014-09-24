@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccdFViMo.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccdFViMo.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 1
  112              	.L11:
  113              		.align	2
  114              	.L10:
-ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccdFViMo.s 			page 3
 
 
  115 0048 00100240 		.word	1073876992
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 1
  169 005c 0133     		adds	r3, r3, #1	@ StartUpCounter.3, StartUpCounter.2,
  170 005e 0093     		str	r3, [sp]	@ StartUpCounter.3, StartUpCounter
  171 0060 019B     		ldr	r3, [sp, #4]	@ HSEStatus.4, HSEStatus
-ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccdFViMo.s 			page 4
 
 
  172 0062 002B     		cmp	r3, #0	@ HSEStatus.4
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 1
  226 00dc 03F00C03 		and	r3, r3, #12	@ D.6751, D.6751,
  227 00e0 082B     		cmp	r3, #8	@ D.6751,
  228 00e2 FAD1     		bne	.L25	@,
-ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccdFViMo.s 			page 5
 
 
  229 00e4 FFF7FEFF 		bl	SystemCoreClockUpdate	@
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 1
  283 0005 00       		.byte	0
  284 0006 00       		.byte	0
  285 0007 00       		.byte	0
-ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccdFViMo.s 			page 6
 
 
  286 0008 01       		.byte	1
@@ -317,21 +317,21 @@ ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 1
  299              	SystemCoreClock:
  300 0000 00A24A04 		.word	72000000
  301              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccA0gkOi.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccdFViMo.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 system_stm32f10x.c
-C:\cygwin64\tmp\ccA0gkOi.s:70     .text.SystemCoreClockUpdate:00000000 $t
-C:\cygwin64\tmp\ccA0gkOi.s:75     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
-C:\cygwin64\tmp\ccA0gkOi.s:115    .text.SystemCoreClockUpdate:00000048 $d
-C:\cygwin64\tmp\ccA0gkOi.s:122    .text.SystemInit:00000000 $t
-C:\cygwin64\tmp\ccA0gkOi.s:127    .text.SystemInit:00000000 SystemInit
-C:\cygwin64\tmp\ccA0gkOi.s:264    .text.SystemInit:00000128 $d
-C:\cygwin64\tmp\ccA0gkOi.s:277    .data.AHBPrescTable:00000000 AHBPrescTable
-C:\cygwin64\tmp\ccA0gkOi.s:299    .data.SystemCoreClock:00000000 SystemCoreClock
-C:\cygwin64\tmp\ccA0gkOi.s:273    .data.AHBPrescTable:00000000 $d
-C:\cygwin64\tmp\ccA0gkOi.s:295    .data.SystemCoreClock:00000000 $d
+C:\cygwin64\tmp\ccdFViMo.s:70     .text.SystemCoreClockUpdate:00000000 $t
+C:\cygwin64\tmp\ccdFViMo.s:75     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
+C:\cygwin64\tmp\ccdFViMo.s:115    .text.SystemCoreClockUpdate:00000048 $d
+C:\cygwin64\tmp\ccdFViMo.s:122    .text.SystemInit:00000000 $t
+C:\cygwin64\tmp\ccdFViMo.s:127    .text.SystemInit:00000000 SystemInit
+C:\cygwin64\tmp\ccdFViMo.s:264    .text.SystemInit:00000128 $d
+C:\cygwin64\tmp\ccdFViMo.s:277    .data.AHBPrescTable:00000000 AHBPrescTable
+C:\cygwin64\tmp\ccdFViMo.s:299    .data.SystemCoreClock:00000000 SystemCoreClock
+C:\cygwin64\tmp\ccdFViMo.s:273    .data.AHBPrescTable:00000000 $d
+C:\cygwin64\tmp\ccdFViMo.s:295    .data.SystemCoreClock:00000000 $d
 
 UNDEFINED SYMBOLS
 g_pfnVectors

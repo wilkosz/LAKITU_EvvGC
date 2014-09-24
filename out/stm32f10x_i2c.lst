@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  112 0000 F0B5     		push	{r4, r5, r6, r7, lr}	@
  113 0002 87B0     		sub	sp, sp, #28	@,,
  114 0004 0446     		mov	r4, r0	@ I2Cx, I2Cx
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 3
 
 
  115 0006 8688     		ldrh	r6, [r0, #4]	@, I2Cx_8(D)->CR2
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  169              		@ sp needed	@
  170 0082 F0BD     		pop	{r4, r5, r6, r7, pc}	@
  171              	.L8:
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 4
 
 
  172 0084 EE88     		ldrh	r6, [r5, #6]	@ I2C_InitStruct_20(D)->I2C_DutyCycle, I2C_InitStruct_20(D)->I2C_DutyCycle
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  226 0018 0381     		strh	r3, [r0, #8]	@ movhi	@ tmp113, I2C_InitStruct_2(D)->I2C_OwnAddress1
  227 001a 4381     		strh	r3, [r0, #10]	@ movhi	@ tmp113, I2C_InitStruct_2(D)->I2C_Ack
  228 001c 5DF8044B 		ldr	r4, [sp], #4	@,
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 5
 
 
  229 0020 7047     		bx	lr	@
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  283              	I2C_DMALastTransferCmd:
  284              		@ args = 0, pretend = 0, frame = 0
  285              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 6
 
 
  286              		@ link register save eliminated.
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  340              	.L38:
  341 0010 9BB2     		uxth	r3, r3	@ D.7062, I2Cx_4(D)->CR1
  342 0012 43F40073 		orr	r3, r3, #512	@ D.7062, D.7062,
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 7
 
 
  343 0016 0380     		strh	r3, [r0]	@ movhi	@ D.7062,* I2Cx
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  397 0000 8389     		ldrh	r3, [r0, #12]	@,
  398 0002 29B9     		cbnz	r1, .L47	@ NewState,
  399 0004 23F00103 		bic	r3, r3, #1	@ D.7072, I2Cx_4(D)->OAR2,
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 8
 
 
  400 0008 1B04     		lsls	r3, r3, #16	@ D.7072, D.7072,
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  454              		.section	.text.I2C_SendData,"ax",%progbits
  455              		.align	2
  456              		.global	I2C_SendData
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 9
 
 
  457              		.thumb
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  511 0002 0023     		movs	r3, #0	@ tmp120,
  512 0004 0193     		str	r3, [sp, #4]	@ tmp120, tmp
  513 0006 0190     		str	r0, [sp, #4]	@ I2Cx, tmp
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 10
 
 
  514 0008 019B     		ldr	r3, [sp, #4]	@ tmp.2, tmp
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  568 001c 7047     		bx	lr	@
  569              		.size	I2C_NACKPositionConfig, .-I2C_NACKPositionConfig
  570 001e 00BF     		.section	.text.I2C_SMBusAlertConfig,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 11
 
 
  571              		.align	2
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  625              		@ frame_needed = 0, uses_anonymous_args = 0
  626              		@ link register save eliminated.
  627 0000 B1F5006F 		cmp	r1, #2048	@ I2C_PECPosition,
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 12
 
 
  628 0004 0388     		ldrh	r3, [r0]	@,* I2Cx
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  682              		.thumb_func
  683              		.type	I2C_ARPCmd, %function
  684              	I2C_ARPCmd:
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 13
 
 
  685              		@ args = 0, pretend = 0, frame = 0
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  739 000e 1B0C     		lsrs	r3, r3, #16	@ D.7123, D.7123,
  740 0010 8383     		strh	r3, [r0, #28]	@ movhi	@ D.7123,
  741 0012 7047     		bx	lr	@
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 14
 
 
  742              	.L97:
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  796 0000 82B0     		sub	sp, sp, #8	@,,
  797 0002 0023     		movs	r3, #0	@ tmp127,
  798 0004 0A0F     		lsrs	r2, r1, #28	@ i2creg.7, I2C_FLAG,
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 15
 
 
  799 0006 0093     		str	r3, [sp]	@ tmp127, i2creg
@@ -898,7 +898,7 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  853 0004 9BB2     		uxth	r3, r3	@ D.7145, I2Cx_6(D)->CR2
  854 0006 80B2     		uxth	r0, r0	@ D.7145, I2Cx_6(D)->SR1
  855 0008 0840     		ands	r0, r1, r0	@ D.7144, I2C_IT, D.7145
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 16
 
 
  856 000a 06D0     		beq	.L106	@,
@@ -926,82 +926,82 @@ ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 1
  878 0006 7047     		bx	lr	@
  879              		.size	I2C_ClearITPendingBit, .-I2C_ClearITPendingBit
  880              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_i2c.c
-C:\cygwin64\tmp\ccsGfWNn.s:71     .text.I2C_DeInit:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:76     .text.I2C_DeInit:00000000 I2C_DeInit
-C:\cygwin64\tmp\ccsGfWNn.s:101    .text.I2C_DeInit:00000038 $d
-C:\cygwin64\tmp\ccsGfWNn.s:104    .text.I2C_Init:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:109    .text.I2C_Init:00000000 I2C_Init
-C:\cygwin64\tmp\ccsGfWNn.s:203    .text.I2C_Init:000000d0 $d
-C:\cygwin64\tmp\ccsGfWNn.s:208    .text.I2C_StructInit:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:213    .text.I2C_StructInit:00000000 I2C_StructInit
-C:\cygwin64\tmp\ccsGfWNn.s:232    .text.I2C_Cmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:237    .text.I2C_Cmd:00000000 I2C_Cmd
-C:\cygwin64\tmp\ccsGfWNn.s:255    .text.I2C_DMACmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:260    .text.I2C_DMACmd:00000000 I2C_DMACmd
-C:\cygwin64\tmp\ccsGfWNn.s:278    .text.I2C_DMALastTransferCmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:283    .text.I2C_DMALastTransferCmd:00000000 I2C_DMALastTransferCmd
-C:\cygwin64\tmp\ccsGfWNn.s:301    .text.I2C_GenerateSTART:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:306    .text.I2C_GenerateSTART:00000000 I2C_GenerateSTART
-C:\cygwin64\tmp\ccsGfWNn.s:324    .text.I2C_GenerateSTOP:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:329    .text.I2C_GenerateSTOP:00000000 I2C_GenerateSTOP
-C:\cygwin64\tmp\ccsGfWNn.s:347    .text.I2C_AcknowledgeConfig:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:352    .text.I2C_AcknowledgeConfig:00000000 I2C_AcknowledgeConfig
-C:\cygwin64\tmp\ccsGfWNn.s:370    .text.I2C_OwnAddress2Config:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:375    .text.I2C_OwnAddress2Config:00000000 I2C_OwnAddress2Config
-C:\cygwin64\tmp\ccsGfWNn.s:388    .text.I2C_DualAddressCmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:393    .text.I2C_DualAddressCmd:00000000 I2C_DualAddressCmd
-C:\cygwin64\tmp\ccsGfWNn.s:411    .text.I2C_GeneralCallCmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:416    .text.I2C_GeneralCallCmd:00000000 I2C_GeneralCallCmd
-C:\cygwin64\tmp\ccsGfWNn.s:434    .text.I2C_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:439    .text.I2C_ITConfig:00000000 I2C_ITConfig
-C:\cygwin64\tmp\ccsGfWNn.s:455    .text.I2C_SendData:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:460    .text.I2C_SendData:00000000 I2C_SendData
-C:\cygwin64\tmp\ccsGfWNn.s:468    .text.I2C_ReceiveData:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:473    .text.I2C_ReceiveData:00000000 I2C_ReceiveData
-C:\cygwin64\tmp\ccsGfWNn.s:482    .text.I2C_Send7bitAddress:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:487    .text.I2C_Send7bitAddress:00000000 I2C_Send7bitAddress
-C:\cygwin64\tmp\ccsGfWNn.s:501    .text.I2C_ReadRegister:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:506    .text.I2C_ReadRegister:00000000 I2C_ReadRegister
-C:\cygwin64\tmp\ccsGfWNn.s:525    .text.I2C_SoftwareResetCmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:530    .text.I2C_SoftwareResetCmd:00000000 I2C_SoftwareResetCmd
-C:\cygwin64\tmp\ccsGfWNn.s:547    .text.I2C_NACKPositionConfig:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:552    .text.I2C_NACKPositionConfig:00000000 I2C_NACKPositionConfig
-C:\cygwin64\tmp\ccsGfWNn.s:571    .text.I2C_SMBusAlertConfig:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:576    .text.I2C_SMBusAlertConfig:00000000 I2C_SMBusAlertConfig
-C:\cygwin64\tmp\ccsGfWNn.s:595    .text.I2C_TransmitPEC:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:600    .text.I2C_TransmitPEC:00000000 I2C_TransmitPEC
-C:\cygwin64\tmp\ccsGfWNn.s:618    .text.I2C_PECPositionConfig:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:623    .text.I2C_PECPositionConfig:00000000 I2C_PECPositionConfig
-C:\cygwin64\tmp\ccsGfWNn.s:642    .text.I2C_CalculatePEC:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:647    .text.I2C_CalculatePEC:00000000 I2C_CalculatePEC
-C:\cygwin64\tmp\ccsGfWNn.s:665    .text.I2C_GetPEC:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:670    .text.I2C_GetPEC:00000000 I2C_GetPEC
-C:\cygwin64\tmp\ccsGfWNn.s:679    .text.I2C_ARPCmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:684    .text.I2C_ARPCmd:00000000 I2C_ARPCmd
-C:\cygwin64\tmp\ccsGfWNn.s:702    .text.I2C_StretchClockCmd:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:707    .text.I2C_StretchClockCmd:00000000 I2C_StretchClockCmd
-C:\cygwin64\tmp\ccsGfWNn.s:725    .text.I2C_FastModeDutyCycleConfig:00000000 $t
-ARM GAS  C:\cygwin64\tmp\ccsGfWNn.s 			page 18
+C:\cygwin64\tmp\ccAIgbKl.s:71     .text.I2C_DeInit:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:76     .text.I2C_DeInit:00000000 I2C_DeInit
+C:\cygwin64\tmp\ccAIgbKl.s:101    .text.I2C_DeInit:00000038 $d
+C:\cygwin64\tmp\ccAIgbKl.s:104    .text.I2C_Init:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:109    .text.I2C_Init:00000000 I2C_Init
+C:\cygwin64\tmp\ccAIgbKl.s:203    .text.I2C_Init:000000d0 $d
+C:\cygwin64\tmp\ccAIgbKl.s:208    .text.I2C_StructInit:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:213    .text.I2C_StructInit:00000000 I2C_StructInit
+C:\cygwin64\tmp\ccAIgbKl.s:232    .text.I2C_Cmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:237    .text.I2C_Cmd:00000000 I2C_Cmd
+C:\cygwin64\tmp\ccAIgbKl.s:255    .text.I2C_DMACmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:260    .text.I2C_DMACmd:00000000 I2C_DMACmd
+C:\cygwin64\tmp\ccAIgbKl.s:278    .text.I2C_DMALastTransferCmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:283    .text.I2C_DMALastTransferCmd:00000000 I2C_DMALastTransferCmd
+C:\cygwin64\tmp\ccAIgbKl.s:301    .text.I2C_GenerateSTART:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:306    .text.I2C_GenerateSTART:00000000 I2C_GenerateSTART
+C:\cygwin64\tmp\ccAIgbKl.s:324    .text.I2C_GenerateSTOP:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:329    .text.I2C_GenerateSTOP:00000000 I2C_GenerateSTOP
+C:\cygwin64\tmp\ccAIgbKl.s:347    .text.I2C_AcknowledgeConfig:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:352    .text.I2C_AcknowledgeConfig:00000000 I2C_AcknowledgeConfig
+C:\cygwin64\tmp\ccAIgbKl.s:370    .text.I2C_OwnAddress2Config:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:375    .text.I2C_OwnAddress2Config:00000000 I2C_OwnAddress2Config
+C:\cygwin64\tmp\ccAIgbKl.s:388    .text.I2C_DualAddressCmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:393    .text.I2C_DualAddressCmd:00000000 I2C_DualAddressCmd
+C:\cygwin64\tmp\ccAIgbKl.s:411    .text.I2C_GeneralCallCmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:416    .text.I2C_GeneralCallCmd:00000000 I2C_GeneralCallCmd
+C:\cygwin64\tmp\ccAIgbKl.s:434    .text.I2C_ITConfig:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:439    .text.I2C_ITConfig:00000000 I2C_ITConfig
+C:\cygwin64\tmp\ccAIgbKl.s:455    .text.I2C_SendData:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:460    .text.I2C_SendData:00000000 I2C_SendData
+C:\cygwin64\tmp\ccAIgbKl.s:468    .text.I2C_ReceiveData:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:473    .text.I2C_ReceiveData:00000000 I2C_ReceiveData
+C:\cygwin64\tmp\ccAIgbKl.s:482    .text.I2C_Send7bitAddress:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:487    .text.I2C_Send7bitAddress:00000000 I2C_Send7bitAddress
+C:\cygwin64\tmp\ccAIgbKl.s:501    .text.I2C_ReadRegister:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:506    .text.I2C_ReadRegister:00000000 I2C_ReadRegister
+C:\cygwin64\tmp\ccAIgbKl.s:525    .text.I2C_SoftwareResetCmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:530    .text.I2C_SoftwareResetCmd:00000000 I2C_SoftwareResetCmd
+C:\cygwin64\tmp\ccAIgbKl.s:547    .text.I2C_NACKPositionConfig:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:552    .text.I2C_NACKPositionConfig:00000000 I2C_NACKPositionConfig
+C:\cygwin64\tmp\ccAIgbKl.s:571    .text.I2C_SMBusAlertConfig:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:576    .text.I2C_SMBusAlertConfig:00000000 I2C_SMBusAlertConfig
+C:\cygwin64\tmp\ccAIgbKl.s:595    .text.I2C_TransmitPEC:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:600    .text.I2C_TransmitPEC:00000000 I2C_TransmitPEC
+C:\cygwin64\tmp\ccAIgbKl.s:618    .text.I2C_PECPositionConfig:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:623    .text.I2C_PECPositionConfig:00000000 I2C_PECPositionConfig
+C:\cygwin64\tmp\ccAIgbKl.s:642    .text.I2C_CalculatePEC:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:647    .text.I2C_CalculatePEC:00000000 I2C_CalculatePEC
+C:\cygwin64\tmp\ccAIgbKl.s:665    .text.I2C_GetPEC:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:670    .text.I2C_GetPEC:00000000 I2C_GetPEC
+C:\cygwin64\tmp\ccAIgbKl.s:679    .text.I2C_ARPCmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:684    .text.I2C_ARPCmd:00000000 I2C_ARPCmd
+C:\cygwin64\tmp\ccAIgbKl.s:702    .text.I2C_StretchClockCmd:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:707    .text.I2C_StretchClockCmd:00000000 I2C_StretchClockCmd
+C:\cygwin64\tmp\ccAIgbKl.s:725    .text.I2C_FastModeDutyCycleConfig:00000000 $t
+ARM GAS  C:\cygwin64\tmp\ccAIgbKl.s 			page 18
 
 
-C:\cygwin64\tmp\ccsGfWNn.s:730    .text.I2C_FastModeDutyCycleConfig:00000000 I2C_FastModeDutyCycleConfig
-C:\cygwin64\tmp\ccsGfWNn.s:749    .text.I2C_CheckEvent:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:754    .text.I2C_CheckEvent:00000000 I2C_CheckEvent
-C:\cygwin64\tmp\ccsGfWNn.s:770    .text.I2C_GetLastEvent:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:775    .text.I2C_GetLastEvent:00000000 I2C_GetLastEvent
-C:\cygwin64\tmp\ccsGfWNn.s:787    .text.I2C_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:792    .text.I2C_GetFlagStatus:00000000 I2C_GetFlagStatus
-C:\cygwin64\tmp\ccsGfWNn.s:827    .text.I2C_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:832    .text.I2C_ClearFlag:00000000 I2C_ClearFlag
-C:\cygwin64\tmp\ccsGfWNn.s:842    .text.I2C_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:847    .text.I2C_GetITStatus:00000000 I2C_GetITStatus
-C:\cygwin64\tmp\ccsGfWNn.s:866    .text.I2C_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccsGfWNn.s:871    .text.I2C_ClearITPendingBit:00000000 I2C_ClearITPendingBit
+C:\cygwin64\tmp\ccAIgbKl.s:730    .text.I2C_FastModeDutyCycleConfig:00000000 I2C_FastModeDutyCycleConfig
+C:\cygwin64\tmp\ccAIgbKl.s:749    .text.I2C_CheckEvent:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:754    .text.I2C_CheckEvent:00000000 I2C_CheckEvent
+C:\cygwin64\tmp\ccAIgbKl.s:770    .text.I2C_GetLastEvent:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:775    .text.I2C_GetLastEvent:00000000 I2C_GetLastEvent
+C:\cygwin64\tmp\ccAIgbKl.s:787    .text.I2C_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:792    .text.I2C_GetFlagStatus:00000000 I2C_GetFlagStatus
+C:\cygwin64\tmp\ccAIgbKl.s:827    .text.I2C_ClearFlag:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:832    .text.I2C_ClearFlag:00000000 I2C_ClearFlag
+C:\cygwin64\tmp\ccAIgbKl.s:842    .text.I2C_GetITStatus:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:847    .text.I2C_GetITStatus:00000000 I2C_GetITStatus
+C:\cygwin64\tmp\ccAIgbKl.s:866    .text.I2C_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\ccAIgbKl.s:871    .text.I2C_ClearITPendingBit:00000000 I2C_ClearITPendingBit
 
 UNDEFINED SYMBOLS
 RCC_APB1PeriphResetCmd

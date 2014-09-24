@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 2
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
  112 0044 3CD0     		beq	.L22	@,
  113 0046 2A4B     		ldr	r3, .L23+32	@ tmp166,
  114 0048 9842     		cmp	r0, r3	@ DMAy_Channelx, tmp166
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 3
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 3
 
 
  115 004a 10D0     		beq	.L14	@,
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
  169              	.L23:
  170 00d0 08000240 		.word	1073872904
  171 00d4 1C000240 		.word	1073872924
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 4
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 4
 
 
  172 00d8 30000240 		.word	1073872944
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
  226              		.global	DMA_StructInit
  227              		.thumb
  228              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 5
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 5
 
 
  229              		.type	DMA_StructInit, %function
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
  283 0008 0160     		str	r1, [r0]	@ D.6794,* DMAy_Channelx
  284 000a 7047     		bx	lr	@
  285              	.L34:
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 6
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 6
 
 
  286 000c 1943     		orrs	r1, r1, r3	@, D.6794, DMA_IT, D.6794
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
  340 0014 00040240 		.word	1073873920
  341 0018 00000240 		.word	1073872896
  342              		.size	DMA_GetFlagStatus, .-DMA_GetFlagStatus
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 7
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 7
 
 
  343              		.section	.text.DMA_ClearFlag,"ax",%progbits
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
  397              	DMA_ClearITPendingBit:
  398              		@ args = 0, pretend = 0, frame = 0
  399              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 8
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 8
 
 
  400              		@ link register save eliminated.
@@ -435,37 +435,37 @@ ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 1
  411 0010 00000240 		.word	1073872896
  412              		.size	DMA_ClearITPendingBit, .-DMA_ClearITPendingBit
  413              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccpAUVA4.s 			page 9
+ARM GAS  C:\cygwin64\tmp\cc7MlCKF.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_dma.c
-C:\cygwin64\tmp\ccpAUVA4.s:71     .text.DMA_DeInit:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:76     .text.DMA_DeInit:00000000 DMA_DeInit
-C:\cygwin64\tmp\ccpAUVA4.s:170    .text.DMA_DeInit:000000d0 $d
-C:\cygwin64\tmp\ccpAUVA4.s:185    .text.DMA_Init:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:190    .text.DMA_Init:00000000 DMA_Init
-C:\cygwin64\tmp\ccpAUVA4.s:225    .text.DMA_StructInit:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:230    .text.DMA_StructInit:00000000 DMA_StructInit
-C:\cygwin64\tmp\ccpAUVA4.s:249    .text.DMA_Cmd:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:254    .text.DMA_Cmd:00000000 DMA_Cmd
-C:\cygwin64\tmp\ccpAUVA4.s:271    .text.DMA_ITConfig:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:276    .text.DMA_ITConfig:00000000 DMA_ITConfig
-C:\cygwin64\tmp\ccpAUVA4.s:291    .text.DMA_SetCurrDataCounter:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:296    .text.DMA_SetCurrDataCounter:00000000 DMA_SetCurrDataCounter
-C:\cygwin64\tmp\ccpAUVA4.s:304    .text.DMA_GetCurrDataCounter:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:309    .text.DMA_GetCurrDataCounter:00000000 DMA_GetCurrDataCounter
-C:\cygwin64\tmp\ccpAUVA4.s:318    .text.DMA_GetFlagStatus:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:323    .text.DMA_GetFlagStatus:00000000 DMA_GetFlagStatus
-C:\cygwin64\tmp\ccpAUVA4.s:340    .text.DMA_GetFlagStatus:00000014 $d
-C:\cygwin64\tmp\ccpAUVA4.s:344    .text.DMA_ClearFlag:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:349    .text.DMA_ClearFlag:00000000 DMA_ClearFlag
-C:\cygwin64\tmp\ccpAUVA4.s:362    .text.DMA_ClearFlag:0000000c $d
-C:\cygwin64\tmp\ccpAUVA4.s:366    .text.DMA_GetITStatus:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:371    .text.DMA_GetITStatus:00000000 DMA_GetITStatus
-C:\cygwin64\tmp\ccpAUVA4.s:388    .text.DMA_GetITStatus:00000014 $d
-C:\cygwin64\tmp\ccpAUVA4.s:392    .text.DMA_ClearITPendingBit:00000000 $t
-C:\cygwin64\tmp\ccpAUVA4.s:397    .text.DMA_ClearITPendingBit:00000000 DMA_ClearITPendingBit
-C:\cygwin64\tmp\ccpAUVA4.s:410    .text.DMA_ClearITPendingBit:0000000c $d
+C:\cygwin64\tmp\cc7MlCKF.s:71     .text.DMA_DeInit:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:76     .text.DMA_DeInit:00000000 DMA_DeInit
+C:\cygwin64\tmp\cc7MlCKF.s:170    .text.DMA_DeInit:000000d0 $d
+C:\cygwin64\tmp\cc7MlCKF.s:185    .text.DMA_Init:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:190    .text.DMA_Init:00000000 DMA_Init
+C:\cygwin64\tmp\cc7MlCKF.s:225    .text.DMA_StructInit:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:230    .text.DMA_StructInit:00000000 DMA_StructInit
+C:\cygwin64\tmp\cc7MlCKF.s:249    .text.DMA_Cmd:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:254    .text.DMA_Cmd:00000000 DMA_Cmd
+C:\cygwin64\tmp\cc7MlCKF.s:271    .text.DMA_ITConfig:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:276    .text.DMA_ITConfig:00000000 DMA_ITConfig
+C:\cygwin64\tmp\cc7MlCKF.s:291    .text.DMA_SetCurrDataCounter:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:296    .text.DMA_SetCurrDataCounter:00000000 DMA_SetCurrDataCounter
+C:\cygwin64\tmp\cc7MlCKF.s:304    .text.DMA_GetCurrDataCounter:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:309    .text.DMA_GetCurrDataCounter:00000000 DMA_GetCurrDataCounter
+C:\cygwin64\tmp\cc7MlCKF.s:318    .text.DMA_GetFlagStatus:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:323    .text.DMA_GetFlagStatus:00000000 DMA_GetFlagStatus
+C:\cygwin64\tmp\cc7MlCKF.s:340    .text.DMA_GetFlagStatus:00000014 $d
+C:\cygwin64\tmp\cc7MlCKF.s:344    .text.DMA_ClearFlag:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:349    .text.DMA_ClearFlag:00000000 DMA_ClearFlag
+C:\cygwin64\tmp\cc7MlCKF.s:362    .text.DMA_ClearFlag:0000000c $d
+C:\cygwin64\tmp\cc7MlCKF.s:366    .text.DMA_GetITStatus:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:371    .text.DMA_GetITStatus:00000000 DMA_GetITStatus
+C:\cygwin64\tmp\cc7MlCKF.s:388    .text.DMA_GetITStatus:00000014 $d
+C:\cygwin64\tmp\cc7MlCKF.s:392    .text.DMA_ClearITPendingBit:00000000 $t
+C:\cygwin64\tmp\cc7MlCKF.s:397    .text.DMA_ClearITPendingBit:00000000 DMA_ClearITPendingBit
+C:\cygwin64\tmp\cc7MlCKF.s:410    .text.DMA_ClearITPendingBit:0000000c $d
 
 NO UNDEFINED SYMBOLS

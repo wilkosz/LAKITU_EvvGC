@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccMZB90e.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccHtSNZS.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZB90e.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccMZB90e.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccHtSNZS.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccMZB90e.s 			page 1
  112 0064 0028     		cmp	r0, #0	@
  113 0066 FAD1     		bne	.L3	@
  114 0068 0548     		ldr	r0, .L7+4	@,
-ARM GAS  C:\cygwin64\tmp\ccMZB90e.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccHtSNZS.s 			page 3
 
 
  115 006a FFF7FEFF 		bl	ADC_StartCalibration	@
@@ -169,17 +169,17 @@ ARM GAS  C:\cygwin64\tmp\ccMZB90e.s 			page 1
  160 002c 00240140 		.word	1073816576
  161              		.size	readADC1, .-readADC1
  162              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccMZB90e.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccHtSNZS.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 adc.c
-C:\cygwin64\tmp\ccMZB90e.s:69     .text.ADC_Config:00000000 $t
-C:\cygwin64\tmp\ccMZB90e.s:74     .text.ADC_Config:00000000 ADC_Config
-C:\cygwin64\tmp\ccMZB90e.s:127    .text.ADC_Config:0000007c $d
-C:\cygwin64\tmp\ccMZB90e.s:131    .text.readADC1:00000000 $t
-C:\cygwin64\tmp\ccMZB90e.s:136    .text.readADC1:00000000 readADC1
-C:\cygwin64\tmp\ccMZB90e.s:160    .text.readADC1:0000002c $d
+C:\cygwin64\tmp\ccHtSNZS.s:69     .text.ADC_Config:00000000 $t
+C:\cygwin64\tmp\ccHtSNZS.s:74     .text.ADC_Config:00000000 ADC_Config
+C:\cygwin64\tmp\ccHtSNZS.s:127    .text.ADC_Config:0000007c $d
+C:\cygwin64\tmp\ccHtSNZS.s:131    .text.readADC1:00000000 $t
+C:\cygwin64\tmp\ccHtSNZS.s:136    .text.readADC1:00000000 readADC1
+C:\cygwin64\tmp\ccHtSNZS.s:160    .text.readADC1:0000002c $d
 
 UNDEFINED SYMBOLS
 GPIO_Init

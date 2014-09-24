@@ -54,6 +54,16 @@ float GyroData[NUMAXIS] = {0.0f, 0.0f, 0.0f};
 float Step[NUMAXIS]     = {0.0f, 0.0f, 0.0f};
 float RCSmooth[NUMAXIS] = {0.0f, 0.0f, 0.0f};
 
+float orientation[1000];
+int time[1000];
+float control_sig[1000];
+float setpoint[1000];
+int myprint = 0;
+float Kp_p = 4.0f;
+float Kp_y = 4.0f;
+int current_time = 0;
+unsigned long tAll;
+
 void roll_PID(void)
 {
     float Error_current = roll_setpoint + CameraOrient[ROLL] * 1000.0;
@@ -71,8 +81,13 @@ void pitch_PID(void)
     float Error_current = pitch_setpoint + CameraOrient[PITCH] * 1000.0;
 	float KP = Error_current * ((float)configData[0] / 1000.0);
     float KD = ((float)configData[3] / 100.0) * (Error_current - pitch_Error_last);
+    //orientation[myprint] = CameraOrient[PITCH];
+    //control_sig[myprint] = Output[PITCH];
+    //time[myprint] = current_time;
+	//current_time += tAll;
 
-	pitch_Error_last = Error_current;
+	//setpoint[myprint] = RCSmooth[PITCH];
+    pitch_Error_last = Error_current;
 
 	Output[PITCH] = KD + KP;
 	SetPitchMotor(KP + KD, configData[6]);
@@ -144,6 +159,12 @@ void Init_Orientation()
     LakituAngles[PITCH] = LAKITU_CT_VALUE;
     LakituAngles[ROLL] = LAKITU_CT_VALUE;
     LakituAngles[YAW] = LAKITU_CT_VALUE_YAW;
+    for(int i=0;i<1000;i++){
+    	orientation[i] = 0.0f;
+    	time[i] = 0.0f;
+    	control_sig[i] = 0.0f;
+    	setpoint[i] = 0.0f;
+    }
 }
 
 void Get_Orientation(float *SmoothAcc, float *Orient, float *AccData, float *GyroData, float dt)
@@ -232,21 +253,21 @@ void engineProcess(float dt)
 
 
     if(LAKITU_enable){
-    	RCSmooth[PITCH] = (LakituAngles[PITCH] - LAKITU_CT_VALUE)*D2R;
+    	RCSmooth[PITCH] = (-(LakituAngles[PITCH]-LAKITU_CT_VALUE))*D2R;
     	//Step[PITCH] = RCSmooth[PITCH];
     	//Step[PITCH] = Limit_Pitch(Step[PITCH], CameraOrient[PITCH]); // limit pitch to defined limits in header//RCSmooth[YAW] = (LakituAngles[YAW] - LAKITU_CT_VALUE_YAW)*D2R;
 
-    	Step[PITCH] = CameraOrient[PITCH]-RCSmooth[PITCH];
-    	pitchRCOffset += Step[PITCH] / 1000.0; //step is in radians the angle required
-    	pitch_angle_correction = constrain((CameraOrient[PITCH] + pitchRCOffset) * R2D, -CORRECTION_STEP, CORRECTION_STEP);
-    	pitch_setpoint += pitch_angle_correction; // Pitch return to zero after collision
+    	Step[PITCH] = Kp_p*(CameraOrient[PITCH]-RCSmooth[PITCH]);
+    	//pitchRCOffset += Step[PITCH] / 1000.0; //step is in radians the angle required
+    	//pitch_angle_correction = constrain((CameraOrient[PITCH] + pitchRCOffset) * R2D, -CORRECTION_STEP, CORRECTION_STEP);
+    	pitch_setpoint += Step[PITCH];//pitch_angle_correction; // Pitch return to zero after collision
 
     	RCSmooth[YAW] = (LakituAngles[YAW] - LAKITU_CT_VALUE_YAW)*D2R;
 
     	//turn on some gain scheduling;
-    	Step[YAW] = CameraOrient[YAW]-RCSmooth[YAW];
+    	Step[YAW] = Kp_y*(CameraOrient[YAW]-RCSmooth[YAW]);
     	yaw_setpoint += Step[YAW];
-    	yawRCOffset += Step[YAW] / 1000.0;
+    	//yawRCOffset += Step[YAW] / 1000.0;
 
     } else {
         pitchRCOffset += Step[PITCH] / 1000.0; //step is in radians the angle required
@@ -282,9 +303,15 @@ void engineProcess(float dt)
     yaw_PID();
 
     unsigned long tPID = StopWatchLap(&sw);
-    unsigned long tAll = StopWatchTotal(&sw);
+    tAll = StopWatchTotal(&sw);
     printcounter++;
-
+    //if (printcounter >= 100){
+    //	LakituAngles[PITCH] = 102.5;
+    //
+    //}
+    //if (printcounter%3 == 0){
+    //	myprint++;
+    //}
     //if (printcounter >= 500 || dt > 0.0021)
     if (printcounter >= 500)
     {
@@ -342,9 +369,14 @@ void engineProcess(float dt)
                    LakituAngles[ROLL],
                    LakituAngles[YAW]-LAKITU_CT_VALUE_YAW);
         }
-        print("%f,%f,%f,%f,%f\n",(LakituAngles[YAW]-LAKITU_CT_VALUE)*D2R,CameraOrient[YAW],Step[YAW],yawRCOffset,yaw_setpoint);
+        //print("%f,%f,%f,%f,%f\n",(LakituAngles[YAW]-LAKITU_CT_VALUE)*D2R,CameraOrient[YAW],Step[YAW],yawRCOffset,yaw_setpoint);
 
         printcounter = 0;
+        //if(myprint >= 950){
+        	//for(int i=0;i<950;i++){
+        	//print("%f,%f,%f,%4d,%d\n",setpoint[i],orientation[i],control_sig[i],time[i],i);
+        	//}
+        //}
     }
 
     LEDoff();

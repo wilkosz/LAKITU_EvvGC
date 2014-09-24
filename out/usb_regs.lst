@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  112              	SetISTR:
  113              		@ args = 0, pretend = 0, frame = 0
  114              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 3
 
 
  115              		@ link register save eliminated.
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  169              		@ args = 0, pretend = 0, frame = 0
  170              		@ frame_needed = 0, uses_anonymous_args = 0
  171              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 4
 
 
  172 0000 014B     		ldr	r3, .L17	@ tmp112,
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  226              		@ args = 0, pretend = 0, frame = 0
  227              		@ frame_needed = 0, uses_anonymous_args = 0
  228              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 5
 
 
  229 0000 014B     		ldr	r3, .L26	@ tmp113,
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  283 0006 00F5B840 		add	r0, r0, #23552	@ D.8095, D.8095,
  284 000a 0368     		ldr	r3, [r0]	@ D.8094, *_4
  285 000c 23F4EC43 		bic	r3, r3, #30208	@ tmp125, D.8094,
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 6
 
 
  286 0010 23F07003 		bic	r3, r3, #112	@ tmp125, tmp125,
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  340              		.thumb
  341              		.thumb_func
  342              		.type	SetEPRxStatus, %function
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 7
 
 
  343              	SetEPRxStatus:
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  397              		.global	GetEPTxStatus
  398              		.thumb
  399              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 8
 
 
  400              		.type	GetEPTxStatus, %function
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  454              		.global	SetEPRxValid
  455              		.thumb
  456              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 9
 
 
  457              		.type	SetEPRxValid, %function
@@ -538,7 +538,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  511 0010 1340     		ands	r3, r3, r2	@, tmp125, D.8148, tmp123
  512 0012 43F40043 		orr	r3, r3, #32768	@ D.8148, tmp125,
  513 0016 43F08003 		orr	r3, r3, #128	@ D.8148, D.8148,
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 10
 
 
  514 001a 0360     		str	r3, [r0]	@ D.8148, *_4
@@ -598,7 +598,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  568              		@ link register save eliminated.
  569 0000 8000     		lsls	r0, r0, #2	@ D.8166, bEpNum,
  570 0002 00F18040 		add	r0, r0, #1073741824	@ D.8167, D.8166,
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 11
 
 
  571 0006 00F5B840 		add	r0, r0, #23552	@ D.8167, D.8167,
@@ -658,7 +658,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  625              		.thumb_func
  626              		.type	GetRxStallStatus, %function
  627              	GetRxStallStatus:
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 12
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 12
 
 
  628              		@ args = 0, pretend = 0, frame = 0
@@ -718,7 +718,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  682              		.thumb
  683              		.thumb_func
  684              		.type	ToggleDTOG_RX, %function
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 13
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 13
 
 
  685              	ToggleDTOG_RX:
@@ -778,7 +778,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  739 0016 1340     		ands	r3, r3, r2	@, D.8212, D.8212, D.8210
  740 0018 43F44043 		orr	r3, r3, #49152	@ D.8210, D.8212,
  741 001c 43F08003 		orr	r3, r3, #128	@ D.8210, D.8210,
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 14
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 14
 
 
  742 0020 0360     		str	r3, [r0]	@ D.8210, *_5
@@ -838,7 +838,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  796              		.thumb
  797              		.thumb_func
  798              		.type	GetEPAddress, %function
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 15
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 15
 
 
  799              	GetEPAddress:
@@ -898,7 +898,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  853 0010 4900     		lsls	r1, r1, #1	@ D.8240, D.8240,
  854 0012 5B00     		lsls	r3, r3, #1	@ tmp134, tmp132,
  855 0014 1960     		str	r1, [r3]	@ D.8240, *_11
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 16
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 16
 
 
  856 0016 7047     		bx	lr	@
@@ -958,7 +958,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  910 0018 04300020 		.word	536883204
  911              		.size	GetEPRxAddr, .-GetEPRxAddr
  912              		.section	.text.SetEPTxCount,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 17
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 17
 
 
  913              		.align	2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  967              		.section	.text.SetEPRxCount,"ax",%progbits
  968              		.align	2
  969              		.global	SetEPRxCount
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 18
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 18
 
 
  970              		.thumb
@@ -1078,7 +1078,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1024 000c 0344     		add	r3, r3, r0	@ tmp129, tmp128
  1025 000e 5B00     		lsls	r3, r3, #1	@ tmp131, tmp129,
  1026 0010 1868     		ldr	r0, [r3]	@ *_11, *_11
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 19
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 19
 
 
  1027 0012 C0F30900 		ubfx	r0, r0, #0, #10	@, *_11,,
@@ -1138,7 +1138,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1081 0014 04F10054 		add	r4, r4, #536870912	@ tmp143, tmp142,
  1082 0018 4908     		lsrs	r1, r1, #1	@ D.8301, wBuf0Addr,
  1083 001a 5208     		lsrs	r2, r2, #1	@ D.8301, wBuf1Addr,
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 20
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 20
 
 
  1084 001c 04F54054 		add	r4, r4, #12288	@ tmp143, tmp143,
@@ -1198,7 +1198,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1138 0004 1268     		ldr	r2, [r2]	@ D.8316, MEM[(volatile unsigned int *)1073765456B]
  1139 0006 4908     		lsrs	r1, r1, #1	@ D.8317, wBuf1Addr,
  1140 0008 92B2     		uxth	r2, r2	@ D.8316, D.8316
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 21
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 21
 
 
  1141 000a 02EBC000 		add	r0, r2, r0, lsl #3	@, tmp131, D.8316, bEpNum,
@@ -1258,7 +1258,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1195 0012 7047     		bx	lr	@
  1196              	.L137:
  1197              		.align	2
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 22
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 22
 
 
  1198              	.L136:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1252 0050 1C68     		ldr	r4, [r3]	@ D.8341, MEM[(volatile unsigned int *)1073765456B]
  1253 0052 1D68     		ldr	r5, [r3]	@ D.8341, MEM[(volatile unsigned int *)1073765456B]
  1254 0054 A4B2     		uxth	r4, r4	@ D.8341, D.8341
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 23
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 23
 
 
  1255 0056 ADB2     		uxth	r5, r5	@ D.8341, D.8341
@@ -1378,7 +1378,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1309              		.thumb_func
  1310              		.type	SetEPDblBuf0Count, %function
  1311              	SetEPDblBuf0Count:
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 24
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 24
 
 
  1312              		@ args = 0, pretend = 0, frame = 0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1366              		.thumb
  1367              		.thumb_func
  1368              		.type	SetEPDblBuf1Count, %function
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 25
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 25
 
 
  1369              	SetEPDblBuf1Count:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1423              		.global	GetEPDblBuf0Count
  1424              		.thumb
  1425              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 26
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 26
 
 
  1426              		.type	GetEPDblBuf0Count, %function
@@ -1558,7 +1558,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1480              		@ args = 0, pretend = 0, frame = 0
  1481              		@ frame_needed = 0, uses_anonymous_args = 0
  1482              		@ link register save eliminated.
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 27
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 27
 
 
  1483 0000 0D4A     		ldr	r2, .L187	@ tmp137,
@@ -1618,7 +1618,7 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1537 0016 40F60F73 		movw	r3, #3855	@ D.8392,
  1538 001a 1340     		ands	r3, r3, r2	@, D.8392, D.8392, D.8390
  1539 001c 43F44043 		orr	r3, r3, #49152	@ D.8390, D.8392,
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 28
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 28
 
 
  1540 0020 43F08003 		orr	r3, r3, #128	@ D.8390, D.8390,
@@ -1665,162 +1665,162 @@ ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 1
  1581 0008 7047     		bx	lr	@
  1582              		.size	ByteSwap, .-ByteSwap
  1583 000a 00BF     		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 29
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 29
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_regs.c
-C:\cygwin64\tmp\cc7VhyR3.s:70     .text.SetCNTR:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:75     .text.SetCNTR:00000000 SetCNTR
-C:\cygwin64\tmp\cc7VhyR3.s:85     .text.SetCNTR:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:88     .text.GetCNTR:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:93     .text.GetCNTR:00000000 GetCNTR
-C:\cygwin64\tmp\cc7VhyR3.s:104    .text.GetCNTR:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:107    .text.SetISTR:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:112    .text.SetISTR:00000000 SetISTR
-C:\cygwin64\tmp\cc7VhyR3.s:122    .text.SetISTR:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:125    .text.GetISTR:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:130    .text.GetISTR:00000000 GetISTR
-C:\cygwin64\tmp\cc7VhyR3.s:141    .text.GetISTR:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:144    .text.GetFNR:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:149    .text.GetFNR:00000000 GetFNR
-C:\cygwin64\tmp\cc7VhyR3.s:160    .text.GetFNR:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:163    .text.SetDADDR:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:168    .text.SetDADDR:00000000 SetDADDR
-C:\cygwin64\tmp\cc7VhyR3.s:178    .text.SetDADDR:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:181    .text.GetDADDR:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:186    .text.GetDADDR:00000000 GetDADDR
-C:\cygwin64\tmp\cc7VhyR3.s:197    .text.GetDADDR:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:200    .text.SetBTABLE:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:205    .text.SetBTABLE:00000000 SetBTABLE
-C:\cygwin64\tmp\cc7VhyR3.s:217    .text.SetBTABLE:0000000c $d
-C:\cygwin64\tmp\cc7VhyR3.s:220    .text.GetBTABLE:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:225    .text.GetBTABLE:00000000 GetBTABLE
-C:\cygwin64\tmp\cc7VhyR3.s:236    .text.GetBTABLE:00000008 $d
-C:\cygwin64\tmp\cc7VhyR3.s:239    .text.SetENDPOINT:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:244    .text.SetENDPOINT:00000000 SetENDPOINT
-C:\cygwin64\tmp\cc7VhyR3.s:255    .text.GetENDPOINT:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:260    .text.GetENDPOINT:00000000 GetENDPOINT
-C:\cygwin64\tmp\cc7VhyR3.s:272    .text.SetEPType:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:277    .text.SetEPType:00000000 SetEPType
-C:\cygwin64\tmp\cc7VhyR3.s:293    .text.GetEPType:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:298    .text.GetEPType:00000000 GetEPType
-C:\cygwin64\tmp\cc7VhyR3.s:310    .text.SetEPTxStatus:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:315    .text.SetEPTxStatus:00000000 SetEPTxStatus
-C:\cygwin64\tmp\cc7VhyR3.s:338    .text.SetEPRxStatus:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:343    .text.SetEPRxStatus:00000000 SetEPRxStatus
-C:\cygwin64\tmp\cc7VhyR3.s:366    .text.SetDouBleBuffEPStall:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:371    .text.SetDouBleBuffEPStall:00000000 SetDouBleBuffEPStall
-C:\cygwin64\tmp\cc7VhyR3.s:396    .text.GetEPTxStatus:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:401    .text.GetEPTxStatus:00000000 GetEPTxStatus
-C:\cygwin64\tmp\cc7VhyR3.s:413    .text.GetEPRxStatus:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:418    .text.GetEPRxStatus:00000000 GetEPRxStatus
-C:\cygwin64\tmp\cc7VhyR3.s:430    .text.SetEPTxValid:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:435    .text.SetEPTxValid:00000000 SetEPTxValid
-C:\cygwin64\tmp\cc7VhyR3.s:453    .text.SetEPRxValid:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:458    .text.SetEPRxValid:00000000 SetEPRxValid
-C:\cygwin64\tmp\cc7VhyR3.s:476    .text.SetEP_KIND:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:481    .text.SetEP_KIND:00000000 SetEP_KIND
-C:\cygwin64\tmp\cc7VhyR3.s:497    .text.ClearEP_KIND:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:502    .text.ClearEP_KIND:00000000 ClearEP_KIND
-C:\cygwin64\tmp\cc7VhyR3.s:518    .text.Clear_Status_Out:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:523    .text.Clear_Status_Out:00000000 Clear_Status_Out
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 30
+C:\cygwin64\tmp\ccugLXYz.s:70     .text.SetCNTR:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:75     .text.SetCNTR:00000000 SetCNTR
+C:\cygwin64\tmp\ccugLXYz.s:85     .text.SetCNTR:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:88     .text.GetCNTR:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:93     .text.GetCNTR:00000000 GetCNTR
+C:\cygwin64\tmp\ccugLXYz.s:104    .text.GetCNTR:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:107    .text.SetISTR:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:112    .text.SetISTR:00000000 SetISTR
+C:\cygwin64\tmp\ccugLXYz.s:122    .text.SetISTR:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:125    .text.GetISTR:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:130    .text.GetISTR:00000000 GetISTR
+C:\cygwin64\tmp\ccugLXYz.s:141    .text.GetISTR:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:144    .text.GetFNR:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:149    .text.GetFNR:00000000 GetFNR
+C:\cygwin64\tmp\ccugLXYz.s:160    .text.GetFNR:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:163    .text.SetDADDR:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:168    .text.SetDADDR:00000000 SetDADDR
+C:\cygwin64\tmp\ccugLXYz.s:178    .text.SetDADDR:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:181    .text.GetDADDR:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:186    .text.GetDADDR:00000000 GetDADDR
+C:\cygwin64\tmp\ccugLXYz.s:197    .text.GetDADDR:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:200    .text.SetBTABLE:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:205    .text.SetBTABLE:00000000 SetBTABLE
+C:\cygwin64\tmp\ccugLXYz.s:217    .text.SetBTABLE:0000000c $d
+C:\cygwin64\tmp\ccugLXYz.s:220    .text.GetBTABLE:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:225    .text.GetBTABLE:00000000 GetBTABLE
+C:\cygwin64\tmp\ccugLXYz.s:236    .text.GetBTABLE:00000008 $d
+C:\cygwin64\tmp\ccugLXYz.s:239    .text.SetENDPOINT:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:244    .text.SetENDPOINT:00000000 SetENDPOINT
+C:\cygwin64\tmp\ccugLXYz.s:255    .text.GetENDPOINT:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:260    .text.GetENDPOINT:00000000 GetENDPOINT
+C:\cygwin64\tmp\ccugLXYz.s:272    .text.SetEPType:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:277    .text.SetEPType:00000000 SetEPType
+C:\cygwin64\tmp\ccugLXYz.s:293    .text.GetEPType:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:298    .text.GetEPType:00000000 GetEPType
+C:\cygwin64\tmp\ccugLXYz.s:310    .text.SetEPTxStatus:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:315    .text.SetEPTxStatus:00000000 SetEPTxStatus
+C:\cygwin64\tmp\ccugLXYz.s:338    .text.SetEPRxStatus:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:343    .text.SetEPRxStatus:00000000 SetEPRxStatus
+C:\cygwin64\tmp\ccugLXYz.s:366    .text.SetDouBleBuffEPStall:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:371    .text.SetDouBleBuffEPStall:00000000 SetDouBleBuffEPStall
+C:\cygwin64\tmp\ccugLXYz.s:396    .text.GetEPTxStatus:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:401    .text.GetEPTxStatus:00000000 GetEPTxStatus
+C:\cygwin64\tmp\ccugLXYz.s:413    .text.GetEPRxStatus:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:418    .text.GetEPRxStatus:00000000 GetEPRxStatus
+C:\cygwin64\tmp\ccugLXYz.s:430    .text.SetEPTxValid:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:435    .text.SetEPTxValid:00000000 SetEPTxValid
+C:\cygwin64\tmp\ccugLXYz.s:453    .text.SetEPRxValid:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:458    .text.SetEPRxValid:00000000 SetEPRxValid
+C:\cygwin64\tmp\ccugLXYz.s:476    .text.SetEP_KIND:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:481    .text.SetEP_KIND:00000000 SetEP_KIND
+C:\cygwin64\tmp\ccugLXYz.s:497    .text.ClearEP_KIND:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:502    .text.ClearEP_KIND:00000000 ClearEP_KIND
+C:\cygwin64\tmp\ccugLXYz.s:518    .text.Clear_Status_Out:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:523    .text.Clear_Status_Out:00000000 Clear_Status_Out
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 30
 
 
-C:\cygwin64\tmp\cc7VhyR3.s:539    .text.Set_Status_Out:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:544    .text.Set_Status_Out:00000000 Set_Status_Out
-C:\cygwin64\tmp\cc7VhyR3.s:560    .text.SetEPDoubleBuff:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:565    .text.SetEPDoubleBuff:00000000 SetEPDoubleBuff
-C:\cygwin64\tmp\cc7VhyR3.s:581    .text.ClearEPDoubleBuff:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:586    .text.ClearEPDoubleBuff:00000000 ClearEPDoubleBuff
-C:\cygwin64\tmp\cc7VhyR3.s:602    .text.GetTxStallStatus:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:607    .text.GetTxStallStatus:00000000 GetTxStallStatus
-C:\cygwin64\tmp\cc7VhyR3.s:622    .text.GetRxStallStatus:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:627    .text.GetRxStallStatus:00000000 GetRxStallStatus
-C:\cygwin64\tmp\cc7VhyR3.s:642    .text.ClearEP_CTR_RX:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:647    .text.ClearEP_CTR_RX:00000000 ClearEP_CTR_RX
-C:\cygwin64\tmp\cc7VhyR3.s:661    .text.ClearEP_CTR_TX:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:666    .text.ClearEP_CTR_TX:00000000 ClearEP_CTR_TX
-C:\cygwin64\tmp\cc7VhyR3.s:680    .text.ToggleDTOG_RX:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:685    .text.ToggleDTOG_RX:00000000 ToggleDTOG_RX
-C:\cygwin64\tmp\cc7VhyR3.s:701    .text.ToggleDTOG_TX:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:706    .text.ToggleDTOG_TX:00000000 ToggleDTOG_TX
-C:\cygwin64\tmp\cc7VhyR3.s:722    .text.ClearDTOG_RX:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:727    .text.ClearDTOG_RX:00000000 ClearDTOG_RX
-C:\cygwin64\tmp\cc7VhyR3.s:747    .text.ClearDTOG_TX:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:752    .text.ClearDTOG_TX:00000000 ClearDTOG_TX
-C:\cygwin64\tmp\cc7VhyR3.s:772    .text.SetEPAddress:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:777    .text.SetEPAddress:00000000 SetEPAddress
-C:\cygwin64\tmp\cc7VhyR3.s:794    .text.GetEPAddress:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:799    .text.GetEPAddress:00000000 GetEPAddress
-C:\cygwin64\tmp\cc7VhyR3.s:811    .text.SetEPTxAddr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:816    .text.SetEPTxAddr:00000000 SetEPTxAddr
-C:\cygwin64\tmp\cc7VhyR3.s:834    .text.SetEPTxAddr:0000001c $d
-C:\cygwin64\tmp\cc7VhyR3.s:837    .text.SetEPRxAddr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:842    .text.SetEPRxAddr:00000000 SetEPRxAddr
-C:\cygwin64\tmp\cc7VhyR3.s:860    .text.SetEPRxAddr:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:864    .text.GetEPTxAddr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:869    .text.GetEPTxAddr:00000000 GetEPTxAddr
-C:\cygwin64\tmp\cc7VhyR3.s:885    .text.GetEPTxAddr:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:888    .text.GetEPRxAddr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:893    .text.GetEPRxAddr:00000000 GetEPRxAddr
-C:\cygwin64\tmp\cc7VhyR3.s:909    .text.GetEPRxAddr:00000014 $d
-C:\cygwin64\tmp\cc7VhyR3.s:913    .text.SetEPTxCount:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:918    .text.SetEPTxCount:00000000 SetEPTxCount
-C:\cygwin64\tmp\cc7VhyR3.s:934    .text.SetEPTxCount:00000014 $d
-C:\cygwin64\tmp\cc7VhyR3.s:938    .text.SetEPCountRxReg:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:943    .text.SetEPCountRxReg:00000000 SetEPCountRxReg
-C:\cygwin64\tmp\cc7VhyR3.s:968    .text.SetEPRxCount:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:973    .text.SetEPRxCount:00000000 SetEPRxCount
-C:\cygwin64\tmp\cc7VhyR3.s:1006   .text.SetEPRxCount:0000003c $d
-C:\cygwin64\tmp\cc7VhyR3.s:1010   .text.GetEPTxCount:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1015   .text.GetEPTxCount:00000000 GetEPTxCount
-C:\cygwin64\tmp\cc7VhyR3.s:1032   .text.GetEPTxCount:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1036   .text.GetEPRxCount:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1041   .text.GetEPRxCount:00000000 GetEPRxCount
-C:\cygwin64\tmp\cc7VhyR3.s:1058   .text.GetEPRxCount:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1062   .text.SetEPDblBuffAddr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1067   .text.SetEPDblBuffAddr:00000000 SetEPDblBuffAddr
-C:\cygwin64\tmp\cc7VhyR3.s:1097   .text.SetEPDblBuffAddr:00000034 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1101   .text.SetEPDblBuf0Addr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1106   .text.SetEPDblBuf0Addr:00000000 SetEPDblBuf0Addr
-ARM GAS  C:\cygwin64\tmp\cc7VhyR3.s 			page 31
+C:\cygwin64\tmp\ccugLXYz.s:539    .text.Set_Status_Out:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:544    .text.Set_Status_Out:00000000 Set_Status_Out
+C:\cygwin64\tmp\ccugLXYz.s:560    .text.SetEPDoubleBuff:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:565    .text.SetEPDoubleBuff:00000000 SetEPDoubleBuff
+C:\cygwin64\tmp\ccugLXYz.s:581    .text.ClearEPDoubleBuff:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:586    .text.ClearEPDoubleBuff:00000000 ClearEPDoubleBuff
+C:\cygwin64\tmp\ccugLXYz.s:602    .text.GetTxStallStatus:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:607    .text.GetTxStallStatus:00000000 GetTxStallStatus
+C:\cygwin64\tmp\ccugLXYz.s:622    .text.GetRxStallStatus:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:627    .text.GetRxStallStatus:00000000 GetRxStallStatus
+C:\cygwin64\tmp\ccugLXYz.s:642    .text.ClearEP_CTR_RX:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:647    .text.ClearEP_CTR_RX:00000000 ClearEP_CTR_RX
+C:\cygwin64\tmp\ccugLXYz.s:661    .text.ClearEP_CTR_TX:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:666    .text.ClearEP_CTR_TX:00000000 ClearEP_CTR_TX
+C:\cygwin64\tmp\ccugLXYz.s:680    .text.ToggleDTOG_RX:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:685    .text.ToggleDTOG_RX:00000000 ToggleDTOG_RX
+C:\cygwin64\tmp\ccugLXYz.s:701    .text.ToggleDTOG_TX:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:706    .text.ToggleDTOG_TX:00000000 ToggleDTOG_TX
+C:\cygwin64\tmp\ccugLXYz.s:722    .text.ClearDTOG_RX:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:727    .text.ClearDTOG_RX:00000000 ClearDTOG_RX
+C:\cygwin64\tmp\ccugLXYz.s:747    .text.ClearDTOG_TX:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:752    .text.ClearDTOG_TX:00000000 ClearDTOG_TX
+C:\cygwin64\tmp\ccugLXYz.s:772    .text.SetEPAddress:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:777    .text.SetEPAddress:00000000 SetEPAddress
+C:\cygwin64\tmp\ccugLXYz.s:794    .text.GetEPAddress:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:799    .text.GetEPAddress:00000000 GetEPAddress
+C:\cygwin64\tmp\ccugLXYz.s:811    .text.SetEPTxAddr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:816    .text.SetEPTxAddr:00000000 SetEPTxAddr
+C:\cygwin64\tmp\ccugLXYz.s:834    .text.SetEPTxAddr:0000001c $d
+C:\cygwin64\tmp\ccugLXYz.s:837    .text.SetEPRxAddr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:842    .text.SetEPRxAddr:00000000 SetEPRxAddr
+C:\cygwin64\tmp\ccugLXYz.s:860    .text.SetEPRxAddr:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:864    .text.GetEPTxAddr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:869    .text.GetEPTxAddr:00000000 GetEPTxAddr
+C:\cygwin64\tmp\ccugLXYz.s:885    .text.GetEPTxAddr:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:888    .text.GetEPRxAddr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:893    .text.GetEPRxAddr:00000000 GetEPRxAddr
+C:\cygwin64\tmp\ccugLXYz.s:909    .text.GetEPRxAddr:00000014 $d
+C:\cygwin64\tmp\ccugLXYz.s:913    .text.SetEPTxCount:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:918    .text.SetEPTxCount:00000000 SetEPTxCount
+C:\cygwin64\tmp\ccugLXYz.s:934    .text.SetEPTxCount:00000014 $d
+C:\cygwin64\tmp\ccugLXYz.s:938    .text.SetEPCountRxReg:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:943    .text.SetEPCountRxReg:00000000 SetEPCountRxReg
+C:\cygwin64\tmp\ccugLXYz.s:968    .text.SetEPRxCount:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:973    .text.SetEPRxCount:00000000 SetEPRxCount
+C:\cygwin64\tmp\ccugLXYz.s:1006   .text.SetEPRxCount:0000003c $d
+C:\cygwin64\tmp\ccugLXYz.s:1010   .text.GetEPTxCount:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1015   .text.GetEPTxCount:00000000 GetEPTxCount
+C:\cygwin64\tmp\ccugLXYz.s:1032   .text.GetEPTxCount:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:1036   .text.GetEPRxCount:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1041   .text.GetEPRxCount:00000000 GetEPRxCount
+C:\cygwin64\tmp\ccugLXYz.s:1058   .text.GetEPRxCount:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:1062   .text.SetEPDblBuffAddr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1067   .text.SetEPDblBuffAddr:00000000 SetEPDblBuffAddr
+C:\cygwin64\tmp\ccugLXYz.s:1097   .text.SetEPDblBuffAddr:00000034 $d
+C:\cygwin64\tmp\ccugLXYz.s:1101   .text.SetEPDblBuf0Addr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1106   .text.SetEPDblBuf0Addr:00000000 SetEPDblBuf0Addr
+ARM GAS  C:\cygwin64\tmp\ccugLXYz.s 			page 31
 
 
-C:\cygwin64\tmp\cc7VhyR3.s:1124   .text.SetEPDblBuf0Addr:0000001c $d
-C:\cygwin64\tmp\cc7VhyR3.s:1127   .text.SetEPDblBuf1Addr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1132   .text.SetEPDblBuf1Addr:00000000 SetEPDblBuf1Addr
-C:\cygwin64\tmp\cc7VhyR3.s:1150   .text.SetEPDblBuf1Addr:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1154   .text.GetEPDblBuf0Addr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1159   .text.GetEPDblBuf0Addr:00000000 GetEPDblBuf0Addr
-C:\cygwin64\tmp\cc7VhyR3.s:1175   .text.GetEPDblBuf0Addr:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1178   .text.GetEPDblBuf1Addr:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1183   .text.GetEPDblBuf1Addr:00000000 GetEPDblBuf1Addr
-C:\cygwin64\tmp\cc7VhyR3.s:1199   .text.GetEPDblBuf1Addr:00000014 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1203   .text.SetEPDblBuffCount:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1208   .text.SetEPDblBuffCount:00000000 SetEPDblBuffCount
-C:\cygwin64\tmp\cc7VhyR3.s:1301   .text.SetEPDblBuffCount:000000ac $d
-C:\cygwin64\tmp\cc7VhyR3.s:1306   .text.SetEPDblBuf0Count:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1311   .text.SetEPDblBuf0Count:00000000 SetEPDblBuf0Count
-C:\cygwin64\tmp\cc7VhyR3.s:1360   .text.SetEPDblBuf0Count:00000058 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1364   .text.SetEPDblBuf1Count:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1369   .text.SetEPDblBuf1Count:00000000 SetEPDblBuf1Count
-C:\cygwin64\tmp\cc7VhyR3.s:1418   .text.SetEPDblBuf1Count:00000058 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1422   .text.GetEPDblBuf0Count:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1427   .text.GetEPDblBuf0Count:00000000 GetEPDblBuf0Count
-C:\cygwin64\tmp\cc7VhyR3.s:1444   .text.GetEPDblBuf0Count:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1448   .text.GetEPDblBuf1Count:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1453   .text.GetEPDblBuf1Count:00000000 GetEPDblBuf1Count
-C:\cygwin64\tmp\cc7VhyR3.s:1470   .text.GetEPDblBuf1Count:00000018 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1474   .text.GetEPDblBufDir:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1479   .text.GetEPDblBufDir:00000000 GetEPDblBufDir
-C:\cygwin64\tmp\cc7VhyR3.s:1513   .text.GetEPDblBufDir:00000038 $d
-C:\cygwin64\tmp\cc7VhyR3.s:1518   .text.FreeUserBuffer:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1523   .text.FreeUserBuffer:00000000 FreeUserBuffer
-C:\cygwin64\tmp\cc7VhyR3.s:1556   .text.ToWord:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1561   .text.ToWord:00000000 ToWord
-C:\cygwin64\tmp\cc7VhyR3.s:1569   .text.ByteSwap:00000000 $t
-C:\cygwin64\tmp\cc7VhyR3.s:1574   .text.ByteSwap:00000000 ByteSwap
+C:\cygwin64\tmp\ccugLXYz.s:1124   .text.SetEPDblBuf0Addr:0000001c $d
+C:\cygwin64\tmp\ccugLXYz.s:1127   .text.SetEPDblBuf1Addr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1132   .text.SetEPDblBuf1Addr:00000000 SetEPDblBuf1Addr
+C:\cygwin64\tmp\ccugLXYz.s:1150   .text.SetEPDblBuf1Addr:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:1154   .text.GetEPDblBuf0Addr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1159   .text.GetEPDblBuf0Addr:00000000 GetEPDblBuf0Addr
+C:\cygwin64\tmp\ccugLXYz.s:1175   .text.GetEPDblBuf0Addr:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:1178   .text.GetEPDblBuf1Addr:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1183   .text.GetEPDblBuf1Addr:00000000 GetEPDblBuf1Addr
+C:\cygwin64\tmp\ccugLXYz.s:1199   .text.GetEPDblBuf1Addr:00000014 $d
+C:\cygwin64\tmp\ccugLXYz.s:1203   .text.SetEPDblBuffCount:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1208   .text.SetEPDblBuffCount:00000000 SetEPDblBuffCount
+C:\cygwin64\tmp\ccugLXYz.s:1301   .text.SetEPDblBuffCount:000000ac $d
+C:\cygwin64\tmp\ccugLXYz.s:1306   .text.SetEPDblBuf0Count:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1311   .text.SetEPDblBuf0Count:00000000 SetEPDblBuf0Count
+C:\cygwin64\tmp\ccugLXYz.s:1360   .text.SetEPDblBuf0Count:00000058 $d
+C:\cygwin64\tmp\ccugLXYz.s:1364   .text.SetEPDblBuf1Count:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1369   .text.SetEPDblBuf1Count:00000000 SetEPDblBuf1Count
+C:\cygwin64\tmp\ccugLXYz.s:1418   .text.SetEPDblBuf1Count:00000058 $d
+C:\cygwin64\tmp\ccugLXYz.s:1422   .text.GetEPDblBuf0Count:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1427   .text.GetEPDblBuf0Count:00000000 GetEPDblBuf0Count
+C:\cygwin64\tmp\ccugLXYz.s:1444   .text.GetEPDblBuf0Count:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:1448   .text.GetEPDblBuf1Count:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1453   .text.GetEPDblBuf1Count:00000000 GetEPDblBuf1Count
+C:\cygwin64\tmp\ccugLXYz.s:1470   .text.GetEPDblBuf1Count:00000018 $d
+C:\cygwin64\tmp\ccugLXYz.s:1474   .text.GetEPDblBufDir:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1479   .text.GetEPDblBufDir:00000000 GetEPDblBufDir
+C:\cygwin64\tmp\ccugLXYz.s:1513   .text.GetEPDblBufDir:00000038 $d
+C:\cygwin64\tmp\ccugLXYz.s:1518   .text.FreeUserBuffer:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1523   .text.FreeUserBuffer:00000000 FreeUserBuffer
+C:\cygwin64\tmp\ccugLXYz.s:1556   .text.ToWord:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1561   .text.ToWord:00000000 ToWord
+C:\cygwin64\tmp\ccugLXYz.s:1569   .text.ByteSwap:00000000 $t
+C:\cygwin64\tmp\ccugLXYz.s:1574   .text.ByteSwap:00000000 ByteSwap
 
 NO UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  112              		.size	InitUart4BufferIRQ, .-InitUart4BufferIRQ
  113 002e 00BF     		.section	.text.USART_GetChar,"ax",%progbits
  114              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 3
 
 
  115              		.global	USART_GetChar
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  169              		.type	USART_Flush, %function
  170              	USART_Flush:
  171              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 4
 
 
  172              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  226              		.size	USART_PutChar, .-USART_PutChar
  227              		.section	.text.USART_PutStringDirect,"ax",%progbits
  228              		.align	2
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 5
 
 
  229              		.global	USART_PutStringDirect
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  283 001c 00000000 		.word	.LANCHOR1
  284              		.size	USART_PutString, .-USART_PutString
  285              		.section	.text.UART4_IRQHandler,"ax",%progbits
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 6
 
 
  286              		.align	2
@@ -358,7 +358,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  340 005e 6368     		ldr	r3, [r4, #4]	@ D.6860, RingBufferUART4RX.Write
  341 0060 2046     		mov	r0, r4	@, tmp170
  342 0062 2344     		add	r3, r3, r4	@ tmp177, tmp170
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 7
 
 
  343 0064 6568     		ldr	r5, [r4, #4]	@ D.6860, RingBufferUART4RX.Write
@@ -418,7 +418,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  397 000e 0448     		ldr	r0, .L67+8	@,
  398 0010 0021     		movs	r1, #0	@,
  399 0012 FFF7FEBF 		b	RingBufferInit	@
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 8
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 8
 
 
  400              	.L68:
@@ -478,7 +478,7 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  454 0070 2046     		mov	r0, r4	@, tmp125
  455 0072 40F22551 		movw	r1, #1317	@,
  456 0076 FFF7FEFF 		bl	USART_ITConfig	@
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 9
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 9
 
 
  457 007a 2046     		mov	r0, r4	@, tmp125
@@ -519,54 +519,54 @@ ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 1
  485      00000000 
  485      00000000 
  486              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 10
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usart.c
-C:\cygwin64\tmp\ccmmKWA3.s:69     .text.UART4EnableTxInterrupt:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:74     .text.UART4EnableTxInterrupt:00000000 UART4EnableTxInterrupt
-C:\cygwin64\tmp\ccmmKWA3.s:85     .text.UART4EnableTxInterrupt:0000000c $d
-C:\cygwin64\tmp\ccmmKWA3.s:88     .text.InitUart4BufferIRQ:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:93     .text.InitUart4BufferIRQ:00000000 InitUart4BufferIRQ
-C:\cygwin64\tmp\ccmmKWA3.s:114    .text.USART_GetChar:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:119    .text.USART_GetChar:00000000 USART_GetChar
-C:\cygwin64\tmp\ccmmKWA3.s:128    .text.USART_GetChar:00000008 $d
-C:\cygwin64\tmp\ccmmKWA3.s:131    .text.USART_Peek:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:136    .text.USART_Peek:00000000 USART_Peek
-C:\cygwin64\tmp\ccmmKWA3.s:145    .text.USART_Peek:00000008 $d
-C:\cygwin64\tmp\ccmmKWA3.s:148    .text.USART_Available:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:153    .text.USART_Available:00000000 USART_Available
-C:\cygwin64\tmp\ccmmKWA3.s:162    .text.USART_Available:00000008 $d
-C:\cygwin64\tmp\ccmmKWA3.s:165    .text.USART_Flush:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:170    .text.USART_Flush:00000000 USART_Flush
-C:\cygwin64\tmp\ccmmKWA3.s:183    .text.USART_Flush:00000010 $d
-C:\cygwin64\tmp\ccmmKWA3.s:186    .text.USART_PutCharDirect:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:191    .text.USART_PutCharDirect:00000000 USART_PutCharDirect
-C:\cygwin64\tmp\ccmmKWA3.s:206    .text.USART_PutCharDirect:00000010 $d
-C:\cygwin64\tmp\ccmmKWA3.s:209    .text.USART_PutChar:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:214    .text.USART_PutChar:00000000 USART_PutChar
-C:\cygwin64\tmp\ccmmKWA3.s:225    .text.USART_PutChar:0000000c $d
-C:\cygwin64\tmp\ccmmKWA3.s:228    .text.USART_PutStringDirect:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:233    .text.USART_PutStringDirect:00000000 USART_PutStringDirect
-C:\cygwin64\tmp\ccmmKWA3.s:256    .text.USART_PutStringDirect:00000020 $d
-C:\cygwin64\tmp\ccmmKWA3.s:259    .text.USART_PutString:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:264    .text.USART_PutString:00000000 USART_PutString
-C:\cygwin64\tmp\ccmmKWA3.s:283    .text.USART_PutString:0000001c $d
-C:\cygwin64\tmp\ccmmKWA3.s:286    .text.UART4_IRQHandler:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:291    .text.UART4_IRQHandler:00000000 UART4_IRQHandler
-C:\cygwin64\tmp\ccmmKWA3.s:378    .text.UART4_IRQHandler:0000009c $d
+C:\cygwin64\tmp\ccWG5Pcs.s:69     .text.UART4EnableTxInterrupt:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:74     .text.UART4EnableTxInterrupt:00000000 UART4EnableTxInterrupt
+C:\cygwin64\tmp\ccWG5Pcs.s:85     .text.UART4EnableTxInterrupt:0000000c $d
+C:\cygwin64\tmp\ccWG5Pcs.s:88     .text.InitUart4BufferIRQ:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:93     .text.InitUart4BufferIRQ:00000000 InitUart4BufferIRQ
+C:\cygwin64\tmp\ccWG5Pcs.s:114    .text.USART_GetChar:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:119    .text.USART_GetChar:00000000 USART_GetChar
+C:\cygwin64\tmp\ccWG5Pcs.s:128    .text.USART_GetChar:00000008 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:131    .text.USART_Peek:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:136    .text.USART_Peek:00000000 USART_Peek
+C:\cygwin64\tmp\ccWG5Pcs.s:145    .text.USART_Peek:00000008 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:148    .text.USART_Available:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:153    .text.USART_Available:00000000 USART_Available
+C:\cygwin64\tmp\ccWG5Pcs.s:162    .text.USART_Available:00000008 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:165    .text.USART_Flush:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:170    .text.USART_Flush:00000000 USART_Flush
+C:\cygwin64\tmp\ccWG5Pcs.s:183    .text.USART_Flush:00000010 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:186    .text.USART_PutCharDirect:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:191    .text.USART_PutCharDirect:00000000 USART_PutCharDirect
+C:\cygwin64\tmp\ccWG5Pcs.s:206    .text.USART_PutCharDirect:00000010 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:209    .text.USART_PutChar:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:214    .text.USART_PutChar:00000000 USART_PutChar
+C:\cygwin64\tmp\ccWG5Pcs.s:225    .text.USART_PutChar:0000000c $d
+C:\cygwin64\tmp\ccWG5Pcs.s:228    .text.USART_PutStringDirect:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:233    .text.USART_PutStringDirect:00000000 USART_PutStringDirect
+C:\cygwin64\tmp\ccWG5Pcs.s:256    .text.USART_PutStringDirect:00000020 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:259    .text.USART_PutString:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:264    .text.USART_PutString:00000000 USART_PutString
+C:\cygwin64\tmp\ccWG5Pcs.s:283    .text.USART_PutString:0000001c $d
+C:\cygwin64\tmp\ccWG5Pcs.s:286    .text.UART4_IRQHandler:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:291    .text.UART4_IRQHandler:00000000 UART4_IRQHandler
+C:\cygwin64\tmp\ccWG5Pcs.s:378    .text.UART4_IRQHandler:0000009c $d
                             *COM*:00000004 IrqCntUart4
-C:\cygwin64\tmp\ccmmKWA3.s:384    .text.InitUart4Buffer:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:389    .text.InitUart4Buffer:00000000 InitUart4Buffer
-C:\cygwin64\tmp\ccmmKWA3.s:403    .text.InitUart4Buffer:00000018 $d
-C:\cygwin64\tmp\ccmmKWA3.s:408    .text.Usart4Init:00000000 $t
-C:\cygwin64\tmp\ccmmKWA3.s:413    .text.Usart4Init:00000000 Usart4Init
-C:\cygwin64\tmp\ccmmKWA3.s:468    .text.Usart4Init:00000090 $d
-C:\cygwin64\tmp\ccmmKWA3.s:473    .bss.RingBufferUART4TX:00000000 $d
-C:\cygwin64\tmp\ccmmKWA3.s:477    .bss.RingBufferUART4TX:00000000 RingBufferUART4TX
-C:\cygwin64\tmp\ccmmKWA3.s:480    .bss.RingBufferUART4RX:00000000 $d
-C:\cygwin64\tmp\ccmmKWA3.s:484    .bss.RingBufferUART4RX:00000000 RingBufferUART4RX
+C:\cygwin64\tmp\ccWG5Pcs.s:384    .text.InitUart4Buffer:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:389    .text.InitUart4Buffer:00000000 InitUart4Buffer
+C:\cygwin64\tmp\ccWG5Pcs.s:403    .text.InitUart4Buffer:00000018 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:408    .text.Usart4Init:00000000 $t
+C:\cygwin64\tmp\ccWG5Pcs.s:413    .text.Usart4Init:00000000 Usart4Init
+C:\cygwin64\tmp\ccWG5Pcs.s:468    .text.Usart4Init:00000090 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:473    .bss.RingBufferUART4TX:00000000 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:477    .bss.RingBufferUART4TX:00000000 RingBufferUART4TX
+C:\cygwin64\tmp\ccWG5Pcs.s:480    .bss.RingBufferUART4RX:00000000 $d
+C:\cygwin64\tmp\ccWG5Pcs.s:484    .bss.RingBufferUART4RX:00000000 RingBufferUART4RX
 
 UNDEFINED SYMBOLS
 USART_ITConfig
@@ -579,7 +579,7 @@ RingBufferPut
 RingBufferSize
 RingBufferInit
 GPIO_Init
-ARM GAS  C:\cygwin64\tmp\ccmmKWA3.s 			page 11
+ARM GAS  C:\cygwin64\tmp\ccWG5Pcs.s 			page 11
 
 
 USART_ClockStructInit

@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccj83Web.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 1
   55              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   56              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   57              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccj83Web.s 			page 2
 
 
   58              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
@@ -72,665 +72,207 @@ ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 1
   66              	@ -mlittle-endian -mpic-data-is-text-relative -msched-prolog -mthumb
   67              	@ -munaligned-access -mvectorize-with-neon-quad
   68              	
-  69              		.global	__aeabi_fadd
-  70              		.global	__aeabi_f2d
-  71              		.global	__aeabi_fsub
-  72              		.global	__aeabi_i2f
-  73              		.global	__aeabi_fmul
-  74              		.section	.text.CommHandler,"ax",%progbits
-  75              		.align	2
-  76              		.global	CommHandler
-  77              		.thumb
-  78              		.thumb_func
-  79              		.type	CommHandler, %function
-  80              	CommHandler:
-  81              		@ args = 0, pretend = 0, frame = 0
-  82              		@ frame_needed = 0, uses_anonymous_args = 0
-  83 0000 70B5     		push	{r4, r5, r6, lr}	@
-  84 0002 FFF7FEFF 		bl	GetChar	@
-  85 0006 041E     		subs	r4, r0, #0	@ c,
-  86 0008 62DB     		blt	.L1	@,
-  87 000a FFF7FEFF 		bl	LEDon	@
-  88 000e A4F12403 		sub	r3, r4, #36	@ tmp208, c,
-  89 0012 5A2B     		cmp	r3, #90	@ tmp208,
-  90 0014 5CD8     		bhi	.L1	@
-  91 0016 DFE813F0 		tbh	[pc, r3, lsl #1]	@ tmp208
-  92              	.L5:
-  93 001a 4B01     		.2byte	(.L4-.L5)/2
-  94 001c 5B00     		.2byte	(.L1-.L5)/2
-  95 001e 5B00     		.2byte	(.L1-.L5)/2
-  96 0020 5B00     		.2byte	(.L1-.L5)/2
-  97 0022 5B00     		.2byte	(.L1-.L5)/2
-  98 0024 5B00     		.2byte	(.L1-.L5)/2
-  99 0026 5B00     		.2byte	(.L1-.L5)/2
- 100 0028 4501     		.2byte	(.L6-.L5)/2
- 101 002a 5B00     		.2byte	(.L1-.L5)/2
- 102 002c 3601     		.2byte	(.L7-.L5)/2
- 103 002e 5B00     		.2byte	(.L1-.L5)/2
- 104 0030 5B00     		.2byte	(.L1-.L5)/2
- 105 0032 5B00     		.2byte	(.L1-.L5)/2
- 106 0034 5B00     		.2byte	(.L1-.L5)/2
- 107 0036 5B00     		.2byte	(.L1-.L5)/2
- 108 0038 5B00     		.2byte	(.L1-.L5)/2
- 109 003a 5B00     		.2byte	(.L1-.L5)/2
- 110 003c 5B00     		.2byte	(.L1-.L5)/2
- 111 003e 5B00     		.2byte	(.L1-.L5)/2
- 112 0040 5B00     		.2byte	(.L1-.L5)/2
- 113 0042 5B00     		.2byte	(.L1-.L5)/2
- 114 0044 5B00     		.2byte	(.L1-.L5)/2
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 3
+  69              		.global	__aeabi_i2f
+  70              		.global	__aeabi_fmul
+  71              		.global	__aeabi_fadd
+  72              		.global	__aeabi_f2iz
+  73              		.global	__aeabi_fcmpge
+  74              		.global	__aeabi_fcmple
+  75              		.section	.text.CommHandler,"ax",%progbits
+  76              		.align	2
+  77              		.global	CommHandler
+  78              		.thumb
+  79              		.thumb_func
+  80              		.type	CommHandler, %function
+  81              	CommHandler:
+  82              		@ args = 0, pretend = 0, frame = 0
+  83              		@ frame_needed = 0, uses_anonymous_args = 0
+  84 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}	@
+  85 0004 FFF7FEFF 		bl	GetChar	@
+  86 0008 041E     		subs	r4, r0, #0	@ c,
+  87 000a 03DB     		blt	.L1	@,
+  88 000c FFF7FEFF 		bl	LEDon	@
+  89 0010 242C     		cmp	r4, #36	@ c,
+  90 0012 01D0     		beq	.L38	@,
+  91              	.L1:
+  92 0014 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}	@
+  93              	.L38:
+  94 0018 FFF7FEFF 		bl	CharAvailable	@
+  95 001c 0928     		cmp	r0, #9	@,
+  96 001e 1ADD     		ble	.L5	@,
+  97 0020 0027     		movs	r7, #0	@ tmp3,
+  98 0022 0125     		movs	r5, #1	@ ivtmp.5,
+  99 0024 B846     		mov	r8, r7	@ tmp2, tmp3
+ 100 0026 3E46     		mov	r6, r7	@ tmp1, tmp3
+ 101 0028 0024     		movs	r4, #0	@ ivtmp.4,
+ 102              	.L6:
+ 103 002a FFF7FEFF 		bl	GetChar	@
+ 104 002e 3038     		subs	r0, r0, #48	@,,
+ 105 0030 FFF7FEFF 		bl	__aeabi_i2f	@
+ 106 0034 022C     		cmp	r4, #2	@ ivtmp.4,
+ 107 0036 0146     		mov	r1, r0	@ tmp130,
+ 108 0038 12DD     		ble	.L39	@,
+ 109 003a E31E     		subs	r3, r4, #3	@ D.7207, ivtmp.4,
+ 110 003c 022B     		cmp	r3, #2	@ D.7207,
+ 111 003e 25D9     		bls	.L40	@,
+ 112 0040 092C     		cmp	r4, #9	@ ivtmp.4,
+ 113 0042 54D1     		bne	.L41	@,
+ 114 0044 FFF7FEFF 		bl	__aeabi_f2iz	@
+ARM GAS  C:\cygwin64\tmp\ccj83Web.s 			page 3
 
 
- 115 0046 5B00     		.2byte	(.L1-.L5)/2
- 116 0048 5B00     		.2byte	(.L1-.L5)/2
- 117 004a 5B00     		.2byte	(.L1-.L5)/2
- 118 004c 5B00     		.2byte	(.L1-.L5)/2
- 119 004e 5B00     		.2byte	(.L1-.L5)/2
- 120 0050 5B00     		.2byte	(.L1-.L5)/2
- 121 0052 5B00     		.2byte	(.L1-.L5)/2
- 122 0054 5B00     		.2byte	(.L1-.L5)/2
- 123 0056 5B00     		.2byte	(.L1-.L5)/2
- 124 0058 5B00     		.2byte	(.L1-.L5)/2
- 125 005a 5B00     		.2byte	(.L1-.L5)/2
- 126 005c 5B00     		.2byte	(.L1-.L5)/2
- 127 005e 5B00     		.2byte	(.L1-.L5)/2
- 128 0060 3201     		.2byte	(.L8-.L5)/2
- 129 0062 5B00     		.2byte	(.L1-.L5)/2
- 130 0064 5B00     		.2byte	(.L1-.L5)/2
- 131 0066 5B00     		.2byte	(.L1-.L5)/2
- 132 0068 5B00     		.2byte	(.L1-.L5)/2
- 133 006a 5B00     		.2byte	(.L1-.L5)/2
- 134 006c 5B00     		.2byte	(.L1-.L5)/2
- 135 006e 5B00     		.2byte	(.L1-.L5)/2
- 136 0070 5B00     		.2byte	(.L1-.L5)/2
- 137 0072 5B00     		.2byte	(.L1-.L5)/2
- 138 0074 5B00     		.2byte	(.L1-.L5)/2
- 139 0076 2701     		.2byte	(.L9-.L5)/2
- 140 0078 5B00     		.2byte	(.L1-.L5)/2
- 141 007a 5B00     		.2byte	(.L1-.L5)/2
- 142 007c 5B00     		.2byte	(.L1-.L5)/2
- 143 007e 5B00     		.2byte	(.L1-.L5)/2
- 144 0080 5B00     		.2byte	(.L1-.L5)/2
- 145 0082 5B00     		.2byte	(.L1-.L5)/2
- 146 0084 5B00     		.2byte	(.L1-.L5)/2
- 147 0086 5B00     		.2byte	(.L1-.L5)/2
- 148 0088 5B00     		.2byte	(.L1-.L5)/2
- 149 008a 5B00     		.2byte	(.L1-.L5)/2
- 150 008c 5B00     		.2byte	(.L1-.L5)/2
- 151 008e 5B00     		.2byte	(.L1-.L5)/2
- 152 0090 5B00     		.2byte	(.L1-.L5)/2
- 153 0092 1801     		.2byte	(.L10-.L5)/2
- 154 0094 0901     		.2byte	(.L11-.L5)/2
- 155 0096 FE00     		.2byte	(.L12-.L5)/2
- 156 0098 EF00     		.2byte	(.L13-.L5)/2
- 157 009a E000     		.2byte	(.L14-.L5)/2
- 158 009c 5B00     		.2byte	(.L1-.L5)/2
- 159 009e 5B00     		.2byte	(.L1-.L5)/2
- 160 00a0 D000     		.2byte	(.L15-.L5)/2
- 161 00a2 C000     		.2byte	(.L16-.L5)/2
- 162 00a4 BC00     		.2byte	(.L17-.L5)/2
- 163 00a6 B800     		.2byte	(.L18-.L5)/2
- 164 00a8 5B00     		.2byte	(.L1-.L5)/2
- 165 00aa 5B00     		.2byte	(.L1-.L5)/2
- 166 00ac 5B00     		.2byte	(.L1-.L5)/2
- 167 00ae 5B00     		.2byte	(.L1-.L5)/2
- 168 00b0 A900     		.2byte	(.L19-.L5)/2
- 169 00b2 9A00     		.2byte	(.L20-.L5)/2
- 170 00b4 5B00     		.2byte	(.L1-.L5)/2
- 171 00b6 8B00     		.2byte	(.L21-.L5)/2
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 4
+ 115 0048 0B28     		cmp	r0, #11	@,
+ 116 004a 28D0     		beq	.L42	@,
+ 117              	.L11:
+ 118 004c 0A2D     		cmp	r5, #10	@ ivtmp.5,
+ 119 004e 10D0     		beq	.L43	@,
+ 120              	.L26:
+ 121 0050 0134     		adds	r4, r4, #1	@ ivtmp.4, ivtmp.4,
+ 122 0052 0135     		adds	r5, r5, #1	@ ivtmp.5, ivtmp.5,
+ 123 0054 E9E7     		b	.L6	@
+ 124              	.L5:
+ 125 0056 2046     		mov	r0, r4	@, c
+ 126 0058 BDE8F041 		pop	{r4, r5, r6, r7, r8, lr}	@
+ 127 005c FFF7FEBF 		b	UnGetChar	@
+ 128              	.L39:
+ 129 0060 4CB1     		cbz	r4, .L44	@ ivtmp.4,
+ 130 0062 012C     		cmp	r4, #1	@ ivtmp.4,
+ 131 0064 10D0     		beq	.L45	@,
+ 132 0066 3046     		mov	r0, r6	@, tmp1
+ 133 0068 FFF7FEFF 		bl	__aeabi_fadd	@
+ 134 006c 0A2D     		cmp	r5, #10	@ ivtmp.5,
+ 135 006e 0646     		mov	r6, r0	@ tmp1,
+ 136 0070 EED1     		bne	.L26	@,
+ 137              	.L43:
+ 138 0072 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}	@
+ 139              	.L44:
+ 140 0076 2D49     		ldr	r1, .L50	@,
+ 141              	.L35:
+ 142 0078 FFF7FEFF 		bl	__aeabi_fmul	@
+ 143 007c 0146     		mov	r1, r0	@ D.7208,
+ 144 007e 3046     		mov	r0, r6	@, tmp1
+ 145 0080 FFF7FEFF 		bl	__aeabi_fadd	@
+ 146 0084 0646     		mov	r6, r0	@ tmp1,
+ 147 0086 E3E7     		b	.L26	@
+ 148              	.L45:
+ 149 0088 2949     		ldr	r1, .L50+4	@,
+ 150 008a F5E7     		b	.L35	@
+ 151              	.L40:
+ 152 008c 032C     		cmp	r4, #3	@ ivtmp.4,
+ 153 008e 40D0     		beq	.L46	@,
+ 154 0090 042C     		cmp	r4, #4	@ ivtmp.4,
+ 155 0092 35D0     		beq	.L47	@,
+ 156 0094 4046     		mov	r0, r8	@, tmp2
+ 157 0096 FFF7FEFF 		bl	__aeabi_fadd	@
+ 158 009a 8046     		mov	r8, r0	@ tmp2,
+ 159 009c D6E7     		b	.L11	@
+ 160              	.L42:
+ 161 009e 3046     		mov	r0, r6	@, tmp1
+ 162 00a0 2449     		ldr	r1, .L50+8	@,
+ 163 00a2 FFF7FEFF 		bl	__aeabi_fcmpge	@
+ 164 00a6 30B1     		cbz	r0, .L18	@,
+ 165 00a8 3046     		mov	r0, r6	@, tmp1
+ 166 00aa 2349     		ldr	r1, .L50+12	@,
+ 167 00ac FFF7FEFF 		bl	__aeabi_fcmple	@
+ 168 00b0 08B1     		cbz	r0, .L18	@,
+ 169 00b2 224B     		ldr	r3, .L50+16	@ tmp152,
+ 170 00b4 5E60     		str	r6, [r3, #4]	@ float	@ tmp1, LakituAngles
+ 171              	.L18:
+ARM GAS  C:\cygwin64\tmp\ccj83Web.s 			page 4
 
 
- 172 00b8 7C00     		.2byte	(.L22-.L5)/2
- 173 00ba 5B00     		.2byte	(.L1-.L5)/2
- 174 00bc 7100     		.2byte	(.L23-.L5)/2
- 175 00be 6B00     		.2byte	(.L24-.L5)/2
- 176 00c0 5B00     		.2byte	(.L1-.L5)/2
- 177 00c2 5B00     		.2byte	(.L1-.L5)/2
- 178 00c4 5B00     		.2byte	(.L1-.L5)/2
- 179 00c6 5B00     		.2byte	(.L1-.L5)/2
- 180 00c8 5B00     		.2byte	(.L1-.L5)/2
- 181 00ca 5B00     		.2byte	(.L1-.L5)/2
- 182 00cc 5B00     		.2byte	(.L1-.L5)/2
- 183 00ce 5C00     		.2byte	(.L25-.L5)/2
- 184              		.p2align 1
- 185              	.L1:
- 186 00d0 70BD     		pop	{r4, r5, r6, pc}	@
- 187              	.L25:
- 188 00d2 AD4B     		ldr	r3, .L78	@ tmp263,
- 189 00d4 AD48     		ldr	r0, .L78+4	@ tmp318,
- 190 00d6 1A68     		ldr	r2, [r3]	@ debugLAKITU, debugLAKITU
- 191 00d8 AD49     		ldr	r1, .L78+8	@ tmp319,
- 192 00da 82F00102 		eor	r2, r2, #1	@ debugLAKITU.26, debugLAKITU,
- 193 00de 002A     		cmp	r2, #0	@ debugLAKITU.26,
- 194 00e0 08BF     		it	eq	@
- 195 00e2 0146     		moveq	r1, r0	@,, tmp318
- 196 00e4 1A60     		str	r2, [r3]	@ debugLAKITU.26,
- 197 00e6 AB48     		ldr	r0, .L78+12	@,
- 198 00e8 BDE87040 		pop	{r4, r5, r6, lr}	@
- 199 00ec FFF7FEBF 		b	print	@
- 200              	.L24:
- 201 00f0 A948     		ldr	r0, .L78+16	@,
- 202 00f2 AA49     		ldr	r1, .L78+20	@,
- 203 00f4 BDE87040 		pop	{r4, r5, r6, lr}	@
- 204 00f8 FFF7FEBF 		b	print	@
- 205              	.L23:
- 206 00fc A84B     		ldr	r3, .L78+24	@ tmp248,
- 207 00fe 1C68     		ldr	r4, [r3]	@ bDeviceState.21, bDeviceState
- 208 0100 FFF7FEFF 		bl	GetVCPConnectMode	@
- 209 0104 2146     		mov	r1, r4	@, bDeviceState.21
- 210 0106 0246     		mov	r2, r0	@ tmp249,
- 211 0108 BDE87040 		pop	{r4, r5, r6, lr}	@
- 212 010c A548     		ldr	r0, .L78+28	@,
- 213 010e FFF7FEBF 		b	printUSART	@
- 214              	.L22:
- 215 0112 A54B     		ldr	r3, .L78+32	@ tmp244,
- 216 0114 9D48     		ldr	r0, .L78+4	@ tmp316,
- 217 0116 1A68     		ldr	r2, [r3]	@ debugSense, debugSense
- 218 0118 9D49     		ldr	r1, .L78+8	@ tmp317,
- 219 011a 82F00102 		eor	r2, r2, #1	@ debugSense.19, debugSense,
- 220 011e 002A     		cmp	r2, #0	@ debugSense.19,
- 221 0120 08BF     		it	eq	@
- 222 0122 0146     		moveq	r1, r0	@,, tmp316
- 223 0124 1A60     		str	r2, [r3]	@ debugSense.19,
- 224 0126 A148     		ldr	r0, .L78+36	@,
- 225 0128 BDE87040 		pop	{r4, r5, r6, lr}	@
- 226 012c FFF7FEBF 		b	print	@
- 227              	.L21:
- 228 0130 9F4B     		ldr	r3, .L78+40	@ tmp239,
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 5
+ 172 00b6 4046     		mov	r0, r8	@, tmp2
+ 173 00b8 0021     		movs	r1, #0	@,
+ 174 00ba FFF7FEFF 		bl	__aeabi_fcmpge	@
+ 175 00be 38B1     		cbz	r0, .L21	@,
+ 176 00c0 4046     		mov	r0, r8	@, tmp2
+ 177 00c2 1F49     		ldr	r1, .L50+20	@,
+ 178 00c4 FFF7FEFF 		bl	__aeabi_fcmple	@
+ 179 00c8 10B1     		cbz	r0, .L21	@,
+ 180 00ca 1C4B     		ldr	r3, .L50+16	@ tmp157,
+ 181 00cc C3F80080 		str	r8, [r3]	@ float	@ tmp2, LakituAngles
+ 182              	.L21:
+ 183 00d0 3846     		mov	r0, r7	@, tmp3
+ 184 00d2 0021     		movs	r1, #0	@,
+ 185 00d4 FFF7FEFF 		bl	__aeabi_fcmpge	@
+ 186 00d8 0028     		cmp	r0, #0	@
+ 187 00da B7D0     		beq	.L11	@
+ 188 00dc 3846     		mov	r0, r7	@, tmp3
+ 189 00de 1949     		ldr	r1, .L50+24	@,
+ 190 00e0 FFF7FEFF 		bl	__aeabi_fcmple	@
+ 191 00e4 0028     		cmp	r0, #0	@
+ 192 00e6 B1D0     		beq	.L11	@
+ 193 00e8 144B     		ldr	r3, .L50+16	@ tmp162,
+ 194 00ea 9F60     		str	r7, [r3, #8]	@ float	@ tmp3, LakituAngles
+ 195 00ec AEE7     		b	.L11	@
+ 196              	.L41:
+ 197 00ee 062C     		cmp	r4, #6	@ ivtmp.4,
+ 198 00f0 1AD0     		beq	.L48	@,
+ 199 00f2 072C     		cmp	r4, #7	@ ivtmp.4,
+ 200 00f4 0FD0     		beq	.L49	@,
+ 201 00f6 3846     		mov	r0, r7	@, tmp3
+ 202 00f8 FFF7FEFF 		bl	__aeabi_fadd	@
+ 203 00fc 0746     		mov	r7, r0	@ tmp3,
+ 204 00fe A5E7     		b	.L11	@
+ 205              	.L47:
+ 206 0100 0B49     		ldr	r1, .L50+4	@,
+ 207              	.L36:
+ 208 0102 FFF7FEFF 		bl	__aeabi_fmul	@
+ 209 0106 0146     		mov	r1, r0	@ D.7208,
+ 210 0108 4046     		mov	r0, r8	@, tmp2
+ 211 010a FFF7FEFF 		bl	__aeabi_fadd	@
+ 212 010e 8046     		mov	r8, r0	@ tmp2,
+ 213 0110 9EE7     		b	.L26	@
+ 214              	.L46:
+ 215 0112 0649     		ldr	r1, .L50	@,
+ 216 0114 F5E7     		b	.L36	@
+ 217              	.L49:
+ 218 0116 0649     		ldr	r1, .L50+4	@,
+ 219              	.L34:
+ 220 0118 FFF7FEFF 		bl	__aeabi_fmul	@
+ 221 011c 0146     		mov	r1, r0	@ D.7208,
+ 222 011e 3846     		mov	r0, r7	@, tmp3
+ 223 0120 FFF7FEFF 		bl	__aeabi_fadd	@
+ 224 0124 0746     		mov	r7, r0	@ tmp3,
+ 225 0126 93E7     		b	.L26	@
+ 226              	.L48:
+ 227 0128 0049     		ldr	r1, .L50	@,
+ 228 012a F5E7     		b	.L34	@
+ARM GAS  C:\cygwin64\tmp\ccj83Web.s 			page 5
 
 
- 229 0132 9648     		ldr	r0, .L78+4	@ tmp314,
- 230 0134 1A68     		ldr	r2, [r3]	@ debugRC, debugRC
- 231 0136 9649     		ldr	r1, .L78+8	@ tmp315,
- 232 0138 82F00102 		eor	r2, r2, #1	@ debugRC.16, debugRC,
- 233 013c 002A     		cmp	r2, #0	@ debugRC.16,
- 234 013e 08BF     		it	eq	@
- 235 0140 0146     		moveq	r1, r0	@,, tmp314
- 236 0142 1A60     		str	r2, [r3]	@ debugRC.16,
- 237 0144 9B48     		ldr	r0, .L78+44	@,
- 238 0146 BDE87040 		pop	{r4, r5, r6, lr}	@
- 239 014a FFF7FEBF 		b	print	@
- 240              	.L20:
- 241 014e 9A4B     		ldr	r3, .L78+48	@ tmp235,
- 242 0150 8E48     		ldr	r0, .L78+4	@ tmp312,
- 243 0152 1A68     		ldr	r2, [r3]	@ debugPerf, debugPerf
- 244 0154 8E49     		ldr	r1, .L78+8	@ tmp313,
- 245 0156 82F00102 		eor	r2, r2, #1	@ debugPerf.13, debugPerf,
- 246 015a 002A     		cmp	r2, #0	@ debugPerf.13,
- 247 015c 08BF     		it	eq	@
- 248 015e 0146     		moveq	r1, r0	@,, tmp312
- 249 0160 1A60     		str	r2, [r3]	@ debugPerf.13,
- 250 0162 9648     		ldr	r0, .L78+52	@,
- 251 0164 BDE87040 		pop	{r4, r5, r6, lr}	@
- 252 0168 FFF7FEBF 		b	print	@
- 253              	.L19:
- 254 016c 944B     		ldr	r3, .L78+56	@ tmp231,
- 255 016e 8748     		ldr	r0, .L78+4	@ tmp310,
- 256 0170 1A68     		ldr	r2, [r3]	@ debugOrient, debugOrient
- 257 0172 8749     		ldr	r1, .L78+8	@ tmp311,
- 258 0174 82F00102 		eor	r2, r2, #1	@ debugOrient.10, debugOrient,
- 259 0178 002A     		cmp	r2, #0	@ debugOrient.10,
- 260 017a 08BF     		it	eq	@
- 261 017c 0146     		moveq	r1, r0	@,, tmp310
- 262 017e 1A60     		str	r2, [r3]	@ debugOrient.10,
- 263 0180 9048     		ldr	r0, .L78+60	@,
- 264 0182 BDE87040 		pop	{r4, r5, r6, lr}	@
- 265 0186 FFF7FEBF 		b	print	@
- 266              	.L18:
- 267 018a 8F4B     		ldr	r3, .L78+64	@ tmp229,
- 268 018c 0022     		movs	r2, #0	@ tmp230,
- 269 018e 1A60     		str	r2, [r3]	@ tmp230, ConfigMode
- 270 0190 70BD     		pop	{r4, r5, r6, pc}	@
- 271              	.L17:
- 272 0192 8D4B     		ldr	r3, .L78+64	@ tmp227,
- 273 0194 0122     		movs	r2, #1	@ tmp228,
- 274 0196 1A60     		str	r2, [r3]	@ tmp228, ConfigMode
- 275 0198 70BD     		pop	{r4, r5, r6, pc}	@
- 276              	.L16:
- 277 019a 8C4D     		ldr	r5, .L78+68	@ tmp325,
- 278 019c 0024     		movs	r4, #0	@ i,
- 279              	.L32:
- 280 019e FFF7FEFF 		bl	GetChar	@
- 281 01a2 0028     		cmp	r0, #0	@ data
- 282 01a4 FBDB     		blt	.L32	@,
- 283 01a6 FE28     		cmp	r0, #254	@ data,
- 284 01a8 D8BF     		it	le
- 285 01aa 6055     		strble	r0, [r4, r5]	@ data, MEM[symbol: configData, index: _102, offset: 0B]
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 6
-
-
- 286 01ac 0134     		adds	r4, r4, #1	@ i, i,
- 287 01ae 0C2C     		cmp	r4, #12	@ i,
- 288 01b0 F5D1     		bne	.L32	@,
- 289 01b2 BDE87040 		pop	{r4, r5, r6, lr}	@
- 290 01b6 FFF7FEBF 		b	configSave	@
- 291              	.L15:
- 292 01ba 6420     		movs	r0, #100	@,
- 293 01bc FFF7FEFF 		bl	Delay_ms	@
- 294 01c0 7820     		movs	r0, #120	@,
- 295 01c2 FFF7FEFF 		bl	PutChar	@
- 296 01c6 824C     		ldr	r4, .L78+72	@ ivtmp.45,
- 297 01c8 04F10C05 		add	r5, r4, #12	@ D.7326, ivtmp.45,
- 298              	.L30:
- 299 01cc 14F8010F 		ldrb	r0, [r4, #1]!	@ zero_extendqisi2	@, MEM[base: _166, offset: 0B]
- 300 01d0 FFF7FEFF 		bl	PutChar	@
- 301 01d4 AC42     		cmp	r4, r5	@ ivtmp.45, D.7326
- 302 01d6 F9D1     		bne	.L30	@,
- 303 01d8 70BD     		pop	{r4, r5, r6, pc}	@
- 304              	.L14:
- 305 01da 7E4B     		ldr	r3, .L78+76	@ tmp218,
- 306 01dc 6B48     		ldr	r0, .L78+4	@ tmp308,
- 307 01de 1A68     		ldr	r2, [r3]	@ debugPrint, debugPrint
- 308 01e0 6B49     		ldr	r1, .L78+8	@ tmp309,
- 309 01e2 82F00102 		eor	r2, r2, #1	@ debugPrint.7, debugPrint,
- 310 01e6 002A     		cmp	r2, #0	@ debugPrint.7,
- 311 01e8 08BF     		it	eq	@
- 312 01ea 0146     		moveq	r1, r0	@,, tmp308
- 313 01ec 1A60     		str	r2, [r3]	@ debugPrint.7,
- 314 01ee 7A48     		ldr	r0, .L78+80	@,
- 315 01f0 BDE87040 		pop	{r4, r5, r6, lr}	@
- 316 01f4 FFF7FEBF 		b	print	@
- 317              	.L13:
- 318 01f8 784B     		ldr	r3, .L78+84	@ tmp214,
- 319 01fa 6448     		ldr	r0, .L78+4	@ tmp306,
- 320 01fc 1A68     		ldr	r2, [r3]	@ debugCnt, debugCnt
- 321 01fe 6449     		ldr	r1, .L78+8	@ tmp307,
- 322 0200 82F00102 		eor	r2, r2, #1	@ debugCnt.4, debugCnt,
- 323 0204 002A     		cmp	r2, #0	@ debugCnt.4,
- 324 0206 08BF     		it	eq	@
- 325 0208 0146     		moveq	r1, r0	@,, tmp306
- 326 020a 1A60     		str	r2, [r3]	@ debugCnt.4,
- 327 020c 7448     		ldr	r0, .L78+88	@,
- 328 020e BDE87040 		pop	{r4, r5, r6, lr}	@
- 329 0212 FFF7FEBF 		b	print	@
- 330              	.L12:
- 331 0216 7348     		ldr	r0, .L78+92	@,
- 332 0218 FFF7FEFF 		bl	print	@
- 333 021c 4FF47A70 		mov	r0, #1000	@,
- 334 0220 FFF7FEFF 		bl	Delay_ms	@
- 335 0224 BDE87040 		pop	{r4, r5, r6, lr}	@
- 336 0228 FFF7FEBF 		b	bootloader	@
- 337              	.L11:
- 338 022c 6E4B     		ldr	r3, .L78+96	@ tmp209,
- 339 022e 5748     		ldr	r0, .L78+4	@ tmp304,
- 340 0230 1A68     		ldr	r2, [r3]	@ debugAutoPan, debugAutoPan
- 341 0232 5749     		ldr	r1, .L78+8	@ tmp305,
- 342 0234 82F00102 		eor	r2, r2, #1	@ debugAutoPan.1, debugAutoPan,
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 7
-
-
- 343 0238 002A     		cmp	r2, #0	@ debugAutoPan.1,
- 344 023a 08BF     		it	eq	@
- 345 023c 0146     		moveq	r1, r0	@,, tmp304
- 346 023e 1A60     		str	r2, [r3]	@ debugAutoPan.1,
- 347 0240 6A48     		ldr	r0, .L78+100	@,
- 348 0242 BDE87040 		pop	{r4, r5, r6, lr}	@
- 349 0246 FFF7FEBF 		b	print	@
- 350              	.L10:
- 351 024a 694B     		ldr	r3, .L78+104	@ tmp267,
- 352 024c 4F48     		ldr	r0, .L78+4	@ tmp320,
- 353 024e 1A68     		ldr	r2, [r3]	@ LAKITU_enable, LAKITU_enable
- 354 0250 4F49     		ldr	r1, .L78+8	@ tmp321,
- 355 0252 82F00102 		eor	r2, r2, #1	@ LAKITU_enable.29, LAKITU_enable,
- 356 0256 002A     		cmp	r2, #0	@ LAKITU_enable.29,
- 357 0258 08BF     		it	eq	@
- 358 025a 0146     		moveq	r1, r0	@,, tmp320
- 359 025c 1A60     		str	r2, [r3]	@ LAKITU_enable.29,
- 360 025e 6548     		ldr	r0, .L78+108	@,
- 361 0260 BDE87040 		pop	{r4, r5, r6, lr}	@
- 362 0264 FFF7FEBF 		b	print	@
- 363              	.L9:
- 364 0268 6348     		ldr	r0, .L78+112	@,
- 365 026a FFF7FEFF 		bl	print	@
- 366 026e 4FF47A70 		mov	r0, #1000	@,
- 367 0272 FFF7FEFF 		bl	Delay_ms	@
- 368 0276 BDE87040 		pop	{r4, r5, r6, lr}	@
- 369 027a FFF7FEBF 		b	reboot	@
- 370              	.L8:
- 371 027e BDE87040 		pop	{r4, r5, r6, lr}	@
- 372 0282 FFF7FEBF 		b	printConfig	@
- 373              	.L7:
- 374 0286 5D4C     		ldr	r4, .L78+116	@ tmp258,
- 375 0288 5D49     		ldr	r1, .L78+120	@,
- 376 028a 2068     		ldr	r0, [r4]	@ float	@, testPhase
- 377 028c FFF7FEFF 		bl	__aeabi_fsub	@
- 378              	.L67:
- 379 0290 2060     		str	r0, [r4]	@ float	@, testPhase
- 380 0292 FFF7FEFF 		bl	__aeabi_f2d	@
- 381 0296 BDE87040 		pop	{r4, r5, r6, lr}	@
- 382 029a 0246     		mov	r2, r0	@ D.7330,
- 383 029c 0B46     		mov	r3, r1	@ D.7330,
- 384 029e 5948     		ldr	r0, .L78+124	@,
- 385 02a0 FFF7FEBF 		b	print	@
- 386              	.L6:
- 387 02a4 554C     		ldr	r4, .L78+116	@ tmp253,
- 388 02a6 5649     		ldr	r1, .L78+120	@,
- 389 02a8 2068     		ldr	r0, [r4]	@ float	@, testPhase
- 390 02aa FFF7FEFF 		bl	__aeabi_fadd	@
- 391 02ae EFE7     		b	.L67	@
- 392              	.L4:
- 393 02b0 FFF7FEFF 		bl	CharAvailable	@
- 394 02b4 0928     		cmp	r0, #9	@,
- 395 02b6 1EDD     		ble	.L42	@,
- 396 02b8 0125     		movs	r5, #1	@ ivtmp.36,
- 397 02ba 0024     		movs	r4, #0	@ ivtmp.35,
- 398 02bc 08E0     		b	.L43	@
- 399              	.L44:
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 8
-
-
- 400 02be E31E     		subs	r3, r4, #3	@ D.7326, ivtmp.35,
- 401 02c0 022B     		cmp	r3, #2	@ D.7326,
- 402 02c2 27D9     		bls	.L69	@,
- 403 02c4 092C     		cmp	r4, #9	@ ivtmp.35,
- 404 02c6 1BD1     		bne	.L70	@,
- 405              	.L48:
- 406 02c8 0A2D     		cmp	r5, #10	@ ivtmp.36,
- 407 02ca 13D0     		beq	.L71	@,
- 408              	.L54:
- 409 02cc 0134     		adds	r4, r4, #1	@ ivtmp.35, ivtmp.35,
- 410 02ce 0135     		adds	r5, r5, #1	@ ivtmp.36, ivtmp.36,
- 411              	.L43:
- 412 02d0 FFF7FEFF 		bl	GetChar	@
- 413 02d4 3038     		subs	r0, r0, #48	@,,
- 414 02d6 FFF7FEFF 		bl	__aeabi_i2f	@
- 415 02da 022C     		cmp	r4, #2	@ ivtmp.35,
- 416 02dc 0146     		mov	r1, r0	@ tmp272,
- 417 02de EEDC     		bgt	.L44	@,
- 418 02e0 002C     		cmp	r4, #0	@ ivtmp.35
- 419 02e2 3ED0     		beq	.L72	@
- 420 02e4 012C     		cmp	r4, #1	@ ivtmp.35,
- 421 02e6 32D0     		beq	.L73	@,
- 422 02e8 474E     		ldr	r6, .L78+128	@ tmp280,
- 423 02ea 7068     		ldr	r0, [r6, #4]	@ float	@, LakituAngles
- 424 02ec FFF7FEFF 		bl	__aeabi_fadd	@
- 425 02f0 7060     		str	r0, [r6, #4]	@ float	@, LakituAngles
- 426 02f2 E9E7     		b	.L48	@
- 427              	.L71:
- 428 02f4 70BD     		pop	{r4, r5, r6, pc}	@
- 429              	.L42:
- 430 02f6 2420     		movs	r0, #36	@,
- 431 02f8 BDE87040 		pop	{r4, r5, r6, lr}	@
- 432 02fc FFF7FEBF 		b	UnGetChar	@
- 433              	.L70:
- 434 0300 062C     		cmp	r4, #6	@ ivtmp.35,
- 435 0302 1BD0     		beq	.L74	@,
- 436 0304 072C     		cmp	r4, #7	@ ivtmp.35,
- 437 0306 0FD0     		beq	.L75	@,
- 438 0308 3F4E     		ldr	r6, .L78+128	@ tmp301,
- 439 030a B068     		ldr	r0, [r6, #8]	@ float	@, LakituAngles
- 440 030c FFF7FEFF 		bl	__aeabi_fadd	@
- 441 0310 B060     		str	r0, [r6, #8]	@ float	@, LakituAngles
- 442 0312 D9E7     		b	.L48	@
- 443              	.L69:
- 444 0314 032C     		cmp	r4, #3	@ ivtmp.35,
- 445 0316 7DD0     		beq	.L76	@,
- 446 0318 042C     		cmp	r4, #4	@ ivtmp.35,
- 447 031a 2BD0     		beq	.L77	@,
- 448 031c 3A4E     		ldr	r6, .L78+128	@ tmp291,
- 449 031e 3068     		ldr	r0, [r6]	@ float	@, LakituAngles
- 450 0320 FFF7FEFF 		bl	__aeabi_fadd	@
- 451 0324 3060     		str	r0, [r6]	@ float	@, LakituAngles
- 452 0326 CFE7     		b	.L48	@
- 453              	.L75:
- 454 0328 3849     		ldr	r1, .L78+132	@,
- 455 032a FFF7FEFF 		bl	__aeabi_fmul	@
- 456 032e 364E     		ldr	r6, .L78+128	@ tmp297,
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 9
-
-
- 457 0330 0146     		mov	r1, r0	@ D.7332,
- 458 0332 B068     		ldr	r0, [r6, #8]	@ float	@, LakituAngles
- 459 0334 FFF7FEFF 		bl	__aeabi_fadd	@
- 460 0338 B060     		str	r0, [r6, #8]	@ float	@, LakituAngles
- 461 033a C7E7     		b	.L54	@
- 462              	.L74:
- 463 033c 3449     		ldr	r1, .L78+136	@,
- 464 033e FFF7FEFF 		bl	__aeabi_fmul	@
- 465 0342 0021     		movs	r1, #0	@,
- 466 0344 FFF7FEFF 		bl	__aeabi_fadd	@
- 467 0348 2F4B     		ldr	r3, .L78+128	@ tmp294,
- 468 034a 9860     		str	r0, [r3, #8]	@ float	@, LakituAngles
- 469 034c BEE7     		b	.L54	@
- 470              	.L73:
- 471 034e 2F49     		ldr	r1, .L78+132	@,
- 472 0350 FFF7FEFF 		bl	__aeabi_fmul	@
- 473 0354 2C4E     		ldr	r6, .L78+128	@ tmp276,
- 474 0356 0146     		mov	r1, r0	@ D.7332,
- 475 0358 7068     		ldr	r0, [r6, #4]	@ float	@, LakituAngles
- 476 035a FFF7FEFF 		bl	__aeabi_fadd	@
- 477 035e 7060     		str	r0, [r6, #4]	@ float	@, LakituAngles
- 478 0360 B4E7     		b	.L54	@
- 479              	.L72:
- 480 0362 2B49     		ldr	r1, .L78+136	@,
- 481 0364 FFF7FEFF 		bl	__aeabi_fmul	@
- 482 0368 0021     		movs	r1, #0	@,
- 483 036a FFF7FEFF 		bl	__aeabi_fadd	@
- 484 036e 264B     		ldr	r3, .L78+128	@ tmp273,
- 485 0370 5860     		str	r0, [r3, #4]	@ float	@, LakituAngles
- 486 0372 ABE7     		b	.L54	@
- 487              	.L77:
- 488 0374 2549     		ldr	r1, .L78+132	@,
- 489 0376 FFF7FEFF 		bl	__aeabi_fmul	@
- 490 037a 234E     		ldr	r6, .L78+128	@ tmp287,
- 491 037c 0146     		mov	r1, r0	@ D.7332,
- 492 037e 3068     		ldr	r0, [r6]	@ float	@, LakituAngles
- 493 0380 FFF7FEFF 		bl	__aeabi_fadd	@
- 494 0384 3060     		str	r0, [r6]	@ float	@, LakituAngles
- 495 0386 A1E7     		b	.L54	@
- 496              	.L79:
- 497              		.align	2
- 498              	.L78:
- 499 0388 00000000 		.word	debugLAKITU
- 500 038c 04000000 		.word	.LC1
- 501 0390 00000000 		.word	.LC0
- 502 0394 44010000 		.word	.LC15
- 503 0398 10010000 		.word	.LC12
- 504 039c 20010000 		.word	.LC13
- 505 03a0 00000000 		.word	bDeviceState
- 506 03a4 E4000000 		.word	.LC11
- 507 03a8 00000000 		.word	debugSense
- 508 03ac CC000000 		.word	.LC10
- 509 03b0 00000000 		.word	debugRC
- 510 03b4 A8000000 		.word	.LC8
- 511 03b8 00000000 		.word	debugPerf
- 512 03bc 8C000000 		.word	.LC7
- 513 03c0 00000000 		.word	debugOrient
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 10
-
-
- 514 03c4 70000000 		.word	.LC6
- 515 03c8 00000000 		.word	ConfigMode
- 516 03cc 00000000 		.word	configData
- 517 03d0 FFFFFFFF 		.word	configData-1
- 518 03d4 00000000 		.word	debugPrint
- 519 03d8 5C000000 		.word	.LC5
- 520 03dc 00000000 		.word	debugCnt
- 521 03e0 44000000 		.word	.LC4
- 522 03e4 20000000 		.word	.LC3
- 523 03e8 00000000 		.word	debugAutoPan
- 524 03ec 08000000 		.word	.LC2
- 525 03f0 00000000 		.word	LAKITU_enable
- 526 03f4 58010000 		.word	.LC16
- 527 03f8 BC000000 		.word	.LC9
- 528 03fc 00000000 		.word	testPhase
- 529 0400 CDCCCC3D 		.word	1036831949
- 530 0404 28010000 		.word	.LC14
- 531 0408 00000000 		.word	LakituAngles
- 532 040c 00002041 		.word	1092616192
- 533 0410 0000C842 		.word	1120403456
- 534              	.L76:
- 535 0414 0449     		ldr	r1, .L80	@,
- 536 0416 FFF7FEFF 		bl	__aeabi_fmul	@
- 537 041a 0021     		movs	r1, #0	@,
- 538 041c FFF7FEFF 		bl	__aeabi_fadd	@
- 539 0420 024B     		ldr	r3, .L80+4	@ tmp284,
- 540 0422 1860     		str	r0, [r3]	@ float	@, LakituAngles
- 541 0424 52E7     		b	.L54	@
- 542              	.L81:
- 543 0426 00BF     		.align	2
- 544              	.L80:
- 545 0428 0000C842 		.word	1120403456
- 546 042c 00000000 		.word	LakituAngles
- 547              		.size	CommHandler, .-CommHandler
- 548              		.comm	ConfigMode,4,4
- 549              		.section	.rodata.str1.4,"aMS",%progbits,1
- 550              		.align	2
- 551              	.LC0:
- 552 0000 6F6E00   		.ascii	"on\000"
- 553 0003 00       		.space	1
- 554              	.LC1:
- 555 0004 6F666600 		.ascii	"off\000"
- 556              	.LC2:
- 557 0008 4175746F 		.ascii	"Autopan messages %s\015\012\000"
- 557      70616E20 
- 557      6D657373 
- 557      61676573 
- 557      2025730D 
- 558 001e 0000     		.space	2
- 559              	.LC3:
- 560 0020 7265626F 		.ascii	"rebooting into boot loader ...\015\012\000"
- 560      6F74696E 
- 560      6720696E 
- 560      746F2062 
- 560      6F6F7420 
- 561 0041 000000   		.space	3
- 562              	.LC4:
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 11
-
-
- 563 0044 636F756E 		.ascii	"counter messages %s\015\012\000"
- 563      74657220 
- 563      6D657373 
- 563      61676573 
- 563      2025730D 
- 564 005a 0000     		.space	2
- 565              	.LC5:
- 566 005c 64656275 		.ascii	"debug messages %s\015\012\000"
- 566      67206D65 
- 566      73736167 
- 566      65732025 
- 566      730D0A00 
- 567              	.LC6:
- 568 0070 4F726965 		.ascii	"Orientation messages %s\015\012\000"
- 568      6E746174 
- 568      696F6E20 
- 568      6D657373 
- 568      61676573 
- 569 008a 0000     		.space	2
- 570              	.LC7:
- 571 008c 70657266 		.ascii	"performance messages %s\015\012\000"
- 571      6F726D61 
- 571      6E636520 
- 571      6D657373 
- 571      61676573 
- 572 00a6 0000     		.space	2
- 573              	.LC8:
- 574 00a8 5243206D 		.ascii	"RC messages %s\015\012\000"
- 574      65737361 
- 574      67657320 
- 574      25730D0A 
- 574      00
- 575 00b9 000000   		.space	3
- 576              	.LC9:
- 577 00bc 7265626F 		.ascii	"rebooting...\015\012\000"
- 577      6F74696E 
- 577      672E2E2E 
- 577      0D0A00
- 578 00cb 00       		.space	1
- 579              	.LC10:
- 580 00cc 53656E73 		.ascii	"Sensor messages %s\015\012\000"
- 580      6F72206D 
- 580      65737361 
- 580      67657320 
- 580      25730D0A 
- 581 00e1 000000   		.space	3
- 582              	.LC11:
- 583 00e4 0D0A5959 		.ascii	"\015\012YY bDeviceState %3d  VCPConnectMode %d\015\012"
- 583      20624465 
- 583      76696365 
- 583      53746174 
- 583      65202533 
- 584 010e 00       		.ascii	"\000"
- 585 010f 00       		.space	1
- 586              	.LC12:
- 587 0110 56657273 		.ascii	"Version: %s\015\012\000"
- 587      696F6E3A 
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 12
-
-
- 587      2025730D 
- 587      0A00
- 588 011e 0000     		.space	2
- 589              	.LC13:
- 590 0120 302E342E 		.ascii	"0.4.5.2\000"
- 590      352E3200 
- 591              	.LC14:
- 592 0128 74657374 		.ascii	"test phase output %5.1f\015\012\000"
- 592      20706861 
- 592      7365206F 
- 592      75747075 
- 592      74202535 
- 593 0142 0000     		.space	2
- 594              	.LC15:
- 595 0144 416E676C 		.ascii	"Angle messages %s\015\012\000"
- 595      65206D65 
- 595      73736167 
- 595      65732025 
- 595      730D0A00 
- 596              	.LC16:
- 597 0158 5475726E 		.ascii	"Turning LAKITU control %s\015\012\000"
- 597      696E6720 
- 597      4C414B49 
- 597      54552063 
- 597      6F6E7472 
- 598              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccV78lT6.s 			page 13
+ 229              	.L51:
+ 230              		.align	2
+ 231              	.L50:
+ 232 012c 0000C842 		.word	1120403456
+ 233 0130 00002041 		.word	1092616192
+ 234 0134 0000F041 		.word	1106247680
+ 235 0138 00000C43 		.word	1124859904
+ 236 013c 00000000 		.word	LakituAngles
+ 237 0140 00003443 		.word	1127481344
+ 238 0144 0000B443 		.word	1135869952
+ 239              		.size	CommHandler, .-CommHandler
+ 240              		.comm	ConfigMode,4,4
+ 241              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  C:\cygwin64\tmp\ccj83Web.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 commhandler.c
-C:\cygwin64\tmp\ccV78lT6.s:75     .text.CommHandler:00000000 $t
-C:\cygwin64\tmp\ccV78lT6.s:80     .text.CommHandler:00000000 CommHandler
-C:\cygwin64\tmp\ccV78lT6.s:93     .text.CommHandler:0000001a $d
-C:\cygwin64\tmp\ccV78lT6.s:184    .text.CommHandler:000000d0 $t
-C:\cygwin64\tmp\ccV78lT6.s:499    .text.CommHandler:00000388 $d
+C:\cygwin64\tmp\ccj83Web.s:76     .text.CommHandler:00000000 $t
+C:\cygwin64\tmp\ccj83Web.s:81     .text.CommHandler:00000000 CommHandler
+C:\cygwin64\tmp\ccj83Web.s:232    .text.CommHandler:0000012c $d
                             *COM*:00000004 ConfigMode
-C:\cygwin64\tmp\ccV78lT6.s:535    .text.CommHandler:00000414 $t
-C:\cygwin64\tmp\ccV78lT6.s:545    .text.CommHandler:00000428 $d
-C:\cygwin64\tmp\ccV78lT6.s:550    .rodata.str1.4:00000000 $d
 
 UNDEFINED SYMBOLS
-__aeabi_fadd
-__aeabi_f2d
-__aeabi_fsub
 __aeabi_i2f
 __aeabi_fmul
+__aeabi_fadd
+__aeabi_f2iz
+__aeabi_fcmpge
+__aeabi_fcmple
 GetChar
 LEDon
-print
-GetVCPConnectMode
-printUSART
-configSave
-Delay_ms
-PutChar
-bootloader
-reboot
-printConfig
 CharAvailable
 UnGetChar
-debugLAKITU
-bDeviceState
-debugSense
-debugRC
-debugPerf
-debugOrient
-configData
-debugPrint
-debugCnt
-debugAutoPan
-LAKITU_enable
-testPhase
 LakituAngles

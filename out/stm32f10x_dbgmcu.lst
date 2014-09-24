@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccvpULqS.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccHRWGMw.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccvpULqS.s 			page 1
   55              	@ -fsplit-wide-types -fstrict-aliasing -fstrict-overflow
   56              	@ -fstrict-volatile-bitfields -fsync-libcalls -fthread-jumps
   57              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
-ARM GAS  C:\cygwin64\tmp\ccvpULqS.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccHRWGMw.s 			page 2
 
 
   58              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccvpULqS.s 			page 1
  112              		.thumb_func
  113              		.type	DBGMCU_Config, %function
  114              	DBGMCU_Config:
-ARM GAS  C:\cygwin64\tmp\ccvpULqS.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccHRWGMw.s 			page 3
 
 
  115              		@ args = 0, pretend = 0, frame = 0
@@ -140,19 +140,19 @@ ARM GAS  C:\cygwin64\tmp\ccvpULqS.s 			page 1
  131 0014 002004E0 		.word	-536600576
  132              		.size	DBGMCU_Config, .-DBGMCU_Config
  133              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccvpULqS.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccHRWGMw.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f10x_dbgmcu.c
-C:\cygwin64\tmp\ccvpULqS.s:71     .text.DBGMCU_GetREVID:00000000 $t
-C:\cygwin64\tmp\ccvpULqS.s:76     .text.DBGMCU_GetREVID:00000000 DBGMCU_GetREVID
-C:\cygwin64\tmp\ccvpULqS.s:87     .text.DBGMCU_GetREVID:00000008 $d
-C:\cygwin64\tmp\ccvpULqS.s:90     .text.DBGMCU_GetDEVID:00000000 $t
-C:\cygwin64\tmp\ccvpULqS.s:95     .text.DBGMCU_GetDEVID:00000000 DBGMCU_GetDEVID
-C:\cygwin64\tmp\ccvpULqS.s:106    .text.DBGMCU_GetDEVID:0000000c $d
-C:\cygwin64\tmp\ccvpULqS.s:109    .text.DBGMCU_Config:00000000 $t
-C:\cygwin64\tmp\ccvpULqS.s:114    .text.DBGMCU_Config:00000000 DBGMCU_Config
-C:\cygwin64\tmp\ccvpULqS.s:131    .text.DBGMCU_Config:00000014 $d
+C:\cygwin64\tmp\ccHRWGMw.s:71     .text.DBGMCU_GetREVID:00000000 $t
+C:\cygwin64\tmp\ccHRWGMw.s:76     .text.DBGMCU_GetREVID:00000000 DBGMCU_GetREVID
+C:\cygwin64\tmp\ccHRWGMw.s:87     .text.DBGMCU_GetREVID:00000008 $d
+C:\cygwin64\tmp\ccHRWGMw.s:90     .text.DBGMCU_GetDEVID:00000000 $t
+C:\cygwin64\tmp\ccHRWGMw.s:95     .text.DBGMCU_GetDEVID:00000000 DBGMCU_GetDEVID
+C:\cygwin64\tmp\ccHRWGMw.s:106    .text.DBGMCU_GetDEVID:0000000c $d
+C:\cygwin64\tmp\ccHRWGMw.s:109    .text.DBGMCU_Config:00000000 $t
+C:\cygwin64\tmp\ccHRWGMw.s:114    .text.DBGMCU_Config:00000000 DBGMCU_Config
+C:\cygwin64\tmp\ccHRWGMw.s:131    .text.DBGMCU_Config:00000014 $d
 
 NO UNDEFINED SYMBOLS

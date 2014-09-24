@@ -31,7 +31,8 @@ void CommHandler(void) //UART4 Interrupt handler implementation
         LEDon();
         switch (c)
         {
-         	case 'a':
+        /*
+        	case 'a':
                 debugAutoPan ^= 1;
                 print("Autopan messages %s\r\n", debugAutoPan ? "on" : "off");
                 break;
@@ -165,6 +166,8 @@ void CommHandler(void) //UART4 Interrupt handler implementation
                 testPhase -= 0.1;
                 print("test phase output %5.1f\r\n", testPhase);
                 break;
+
+
             case '~': {
             	debugLAKITU ^= 1;
                 print("Angle messages %s\r\n", debugLAKITU ? "on" : "off");
@@ -173,41 +176,54 @@ void CommHandler(void) //UART4 Interrupt handler implementation
             	LAKITU_enable ^= 1;
             	print("Turning LAKITU control %s\r\n", LAKITU_enable ? "on" : "off");
             }	break;
-            case '$': {
+           */
+           case '$': {
             		if (CharAvailable() >= LAKITU_LENGTH){
-            			for (int i = 0; i < LAKITU_LENGTH; i++){
+            		 float tmp1 =0.0f, tmp2=0.0f, tmp3= 0.0f;
+            		 for (int i = 0; i < LAKITU_LENGTH; i++){
             				float tmp_val = (float)(((int)GetChar())-ASCII2INT);
             				if(i<3){
             					if(i==0){
-            						LakituAngles[PITCH] = 0;
-            						LakituAngles[PITCH] += tmp_val*100.0;
+            						tmp1 += tmp_val*100.0;
             					}else if(i==1){
-            						LakituAngles[PITCH] += tmp_val*10.0;
+            						tmp1 += tmp_val*10.0;
             					}else{
-            						LakituAngles[PITCH] += tmp_val*1.0;
+            						tmp1 += tmp_val*1.0;
             					}
             				}else if(i>2 && i<6){
             					if(i==3){
-            						LakituAngles[ROLL] = 0;
-            						LakituAngles[ROLL] += tmp_val*100.0;
+
+            						tmp2 += tmp_val*100.0;
             					}else if(i==4){
-            						LakituAngles[ROLL] += tmp_val*10.0;
+            						tmp2 += tmp_val*10.0;
             					}else{
-            						LakituAngles[ROLL] += tmp_val*1.0;
+            						tmp2 += tmp_val*1.0;
             					}
             				}else if(i>5 && i<9){
             					if(i==6){
-            						LakituAngles[YAW] = 0;
-            						LakituAngles[YAW] += tmp_val*100.0;
-            					}else if(i==7){
-            						LakituAngles[YAW] += tmp_val*10.0;
-            					}else{
-            						LakituAngles[YAW] += tmp_val*1.0;
-            					}
-            				}else if(i==9 && tmp_val == 11){//handle last character
 
+            						tmp3 += tmp_val*100.0;
+            					}else if(i==7){
+            						tmp3 += tmp_val*10.0;
+            					}else{
+            						tmp3 += tmp_val*1.0;
+            					}
+
+            				}else if(i==9 && (int)tmp_val == 11){//handle last character
+            					if ((tmp1 >= 30.0) && (tmp1 <= 140.0)){
+            						LakituAngles[PITCH] = tmp1;
+            					}
+
+            					if ((tmp2 >= 0.0) && (tmp2 <= 180.0)){
+            						LakituAngles[ROLL] = tmp2;
+
+            					}
+            					if ((tmp3 >= 0.0) && (tmp3 <= 360.0)){
+            						LakituAngles[YAW] = tmp3;
+            					}
             				}
             		    }
+            		 	//print("%f,%f,%f,%f,%f,%f\n",tmp1,tmp2,tmp3,LakituAngles[PITCH],LakituAngles[ROLL],LakituAngles[YAW]);
             		} else {
             		    UnGetChar(c); // try again in next loop
             		}

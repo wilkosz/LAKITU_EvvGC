@@ -1,4 +1,4 @@
-ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 1
+ARM GAS  C:\cygwin64\tmp\ccLKa1I0.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 1
   55              	@ -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp -ftree-builtin-call-dce
   56              	@ -ftree-ccp -ftree-ch -ftree-coalesce-vars -ftree-copy-prop
   57              	@ -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
-ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 2
+ARM GAS  C:\cygwin64\tmp\ccLKa1I0.s 			page 2
 
 
   58              	@ -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
@@ -118,7 +118,7 @@ ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 1
  112              		@ frame_needed = 0, uses_anonymous_args = 0
  113 0000 08B5     		push	{r3, lr}	@
  114              	@ 342 "Libraries/CMSIS/Include/core_cmFunc.h" 1
-ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 3
+ARM GAS  C:\cygwin64\tmp\ccLKa1I0.s 			page 3
 
 
  115 0002 72B6     		cpsid i
@@ -178,7 +178,7 @@ ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 1
  169              		.global	DEBUG_LEDtoggle
  170              		.thumb
  171              		.thumb_func
-ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 4
+ARM GAS  C:\cygwin64\tmp\ccLKa1I0.s 			page 4
 
 
  172              		.type	DEBUG_LEDtoggle, %function
@@ -238,7 +238,7 @@ ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 1
  226              	@ 0 "" 2
  227              		.thumb
  228 002c 38BD     		pop	{r3, r4, r5, pc}	@
-ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 5
+ARM GAS  C:\cygwin64\tmp\ccLKa1I0.s 			page 5
 
 
  229              	.L21:
@@ -298,7 +298,7 @@ ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 1
  283              		.type	Rad2Deg, %function
  284              	Rad2Deg:
  285              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 6
+ARM GAS  C:\cygwin64\tmp\ccLKa1I0.s 			page 6
 
 
  286              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -357,44 +357,44 @@ ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 1
  339 0022 10BD     		pop	{r4, pc}	@
  340              		.size	Round, .-Round
  341              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\cygwin64\tmp\ccwkcNe4.s 			page 7
+ARM GAS  C:\cygwin64\tmp\ccLKa1I0.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 utils.c
-C:\cygwin64\tmp\ccwkcNe4.s:69     .text.LEDon:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:74     .text.LEDon:00000000 LEDon
-C:\cygwin64\tmp\ccwkcNe4.s:84     .text.LEDon:0000000c $d
-C:\cygwin64\tmp\ccwkcNe4.s:87     .text.LEDoff:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:92     .text.LEDoff:00000000 LEDoff
-C:\cygwin64\tmp\ccwkcNe4.s:102    .text.LEDoff:0000000c $d
-C:\cygwin64\tmp\ccwkcNe4.s:105    .text.LEDtoggle:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:110    .text.LEDtoggle:00000000 LEDtoggle
-C:\cygwin64\tmp\ccwkcNe4.s:129    .text.LEDtoggle:00000014 $d
-C:\cygwin64\tmp\ccwkcNe4.s:132    .text.DEBUG_LEDon:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:137    .text.DEBUG_LEDon:00000000 DEBUG_LEDon
-C:\cygwin64\tmp\ccwkcNe4.s:147    .text.DEBUG_LEDon:00000008 $d
-C:\cygwin64\tmp\ccwkcNe4.s:150    .text.DEBUG_LEDoff:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:155    .text.DEBUG_LEDoff:00000000 DEBUG_LEDoff
-C:\cygwin64\tmp\ccwkcNe4.s:165    .text.DEBUG_LEDoff:00000008 $d
-C:\cygwin64\tmp\ccwkcNe4.s:168    .text.DEBUG_LEDtoggle:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:173    .text.DEBUG_LEDtoggle:00000000 DEBUG_LEDtoggle
-C:\cygwin64\tmp\ccwkcNe4.s:192    .text.DEBUG_LEDtoggle:00000010 $d
-C:\cygwin64\tmp\ccwkcNe4.s:195    .text.Blink:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:200    .text.Blink:00000000 Blink
-C:\cygwin64\tmp\ccwkcNe4.s:232    .text.Blink:00000030 $d
-C:\cygwin64\tmp\ccwkcNe4.s:236    .text.Delay_us:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:241    .text.Delay_us:00000000 Delay_us
-C:\cygwin64\tmp\ccwkcNe4.s:257    .text.Delay_ms:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:262    .text.Delay_ms:00000000 Delay_ms
-C:\cygwin64\tmp\ccwkcNe4.s:279    .text.Rad2Deg:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:284    .text.Rad2Deg:00000000 Rad2Deg
-C:\cygwin64\tmp\ccwkcNe4.s:294    .text.Rad2Deg:0000000c $d
-C:\cygwin64\tmp\ccwkcNe4.s:297    .text.Deg2Rad:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:302    .text.Deg2Rad:00000000 Deg2Rad
-C:\cygwin64\tmp\ccwkcNe4.s:312    .text.Deg2Rad:0000000c $d
-C:\cygwin64\tmp\ccwkcNe4.s:318    .text.Round:00000000 $t
-C:\cygwin64\tmp\ccwkcNe4.s:323    .text.Round:00000000 Round
+C:\cygwin64\tmp\ccLKa1I0.s:69     .text.LEDon:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:74     .text.LEDon:00000000 LEDon
+C:\cygwin64\tmp\ccLKa1I0.s:84     .text.LEDon:0000000c $d
+C:\cygwin64\tmp\ccLKa1I0.s:87     .text.LEDoff:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:92     .text.LEDoff:00000000 LEDoff
+C:\cygwin64\tmp\ccLKa1I0.s:102    .text.LEDoff:0000000c $d
+C:\cygwin64\tmp\ccLKa1I0.s:105    .text.LEDtoggle:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:110    .text.LEDtoggle:00000000 LEDtoggle
+C:\cygwin64\tmp\ccLKa1I0.s:129    .text.LEDtoggle:00000014 $d
+C:\cygwin64\tmp\ccLKa1I0.s:132    .text.DEBUG_LEDon:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:137    .text.DEBUG_LEDon:00000000 DEBUG_LEDon
+C:\cygwin64\tmp\ccLKa1I0.s:147    .text.DEBUG_LEDon:00000008 $d
+C:\cygwin64\tmp\ccLKa1I0.s:150    .text.DEBUG_LEDoff:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:155    .text.DEBUG_LEDoff:00000000 DEBUG_LEDoff
+C:\cygwin64\tmp\ccLKa1I0.s:165    .text.DEBUG_LEDoff:00000008 $d
+C:\cygwin64\tmp\ccLKa1I0.s:168    .text.DEBUG_LEDtoggle:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:173    .text.DEBUG_LEDtoggle:00000000 DEBUG_LEDtoggle
+C:\cygwin64\tmp\ccLKa1I0.s:192    .text.DEBUG_LEDtoggle:00000010 $d
+C:\cygwin64\tmp\ccLKa1I0.s:195    .text.Blink:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:200    .text.Blink:00000000 Blink
+C:\cygwin64\tmp\ccLKa1I0.s:232    .text.Blink:00000030 $d
+C:\cygwin64\tmp\ccLKa1I0.s:236    .text.Delay_us:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:241    .text.Delay_us:00000000 Delay_us
+C:\cygwin64\tmp\ccLKa1I0.s:257    .text.Delay_ms:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:262    .text.Delay_ms:00000000 Delay_ms
+C:\cygwin64\tmp\ccLKa1I0.s:279    .text.Rad2Deg:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:284    .text.Rad2Deg:00000000 Rad2Deg
+C:\cygwin64\tmp\ccLKa1I0.s:294    .text.Rad2Deg:0000000c $d
+C:\cygwin64\tmp\ccLKa1I0.s:297    .text.Deg2Rad:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:302    .text.Deg2Rad:00000000 Deg2Rad
+C:\cygwin64\tmp\ccLKa1I0.s:312    .text.Deg2Rad:0000000c $d
+C:\cygwin64\tmp\ccLKa1I0.s:318    .text.Round:00000000 $t
+C:\cygwin64\tmp\ccLKa1I0.s:323    .text.Round:00000000 Round
 
 UNDEFINED SYMBOLS
 GPIO_SetBits
