@@ -3,7 +3,9 @@ Includes:
 
 Serial via UART4
 
-position control, with 12.5 degrees/s response time
+position control 
+
+response time of 1 second, measured from 12.5 degree step
 
 position commands $000000000;
 
