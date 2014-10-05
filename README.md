@@ -1,3 +1,12 @@
+# EvvGC LAKITU revision
+  Includes:
+  Serial via UART4
+  position control, with 12.5 degrees/s response time
+  position commands $000000000;
+  where fist '000' are pitch mapped 000->180 is -90->90
+  roll isn't implemented 
+  and last '000' are yaw mapped 000->360 is -180->180
+
 # EvvGC - Open Source 3 axis gimbal controller #
 
 #### NOTICE: BUILDABLE, currently in TESTING, runs on both 1.2 and 1.3 hardware
